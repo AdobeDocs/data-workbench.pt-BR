@@ -53,8 +53,7 @@ Para definir a configuração de exportação, dois novos arquivos de configura�
    >
    >Exemplo para geração de teclas SSH usando keygen:
    >
-   >
-   ```
+   >```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
