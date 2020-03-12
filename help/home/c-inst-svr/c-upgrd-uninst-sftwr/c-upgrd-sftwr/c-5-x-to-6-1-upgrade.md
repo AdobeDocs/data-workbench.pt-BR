@@ -180,8 +180,7 @@ A instalação do servidor de relatórios está concluída.
    >
    >Por exemplo, para iniciar o chinês simplificado, crie um atalho que passe na configuração da linha de comando.
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
