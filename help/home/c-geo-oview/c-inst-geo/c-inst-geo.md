@@ -5,7 +5,7 @@ title: Instalação da geografia da análise de big data
 topic: Data workbench
 uuid: 2c3d2e4a-97a7-4afc-b72d-c012db77e535
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
 
 ---
 
@@ -16,7 +16,7 @@ Este capítulo fornece as etapas para instalar a análise de big data em um serv
 
 Para concluir essas etapas, é necessário ter acesso aos arquivos no servidor da análise de big data.
 
-Se você se inscreveu em um dos dois serviços de dados opcionais, também deverá instalar o perfil do serviço de dados e seus arquivos de pesquisa. Para obter mais informações sobre esses serviços, consulte [Trabalhar com serviços](../../../home/c-geo-oview/c-wk-data-svcs/c-wk-data-svcs.md)de dados.
+Se você se inscreveu em um dos dois serviços de dados opcionais, também deverá instalar o perfil do serviço de dados e seus arquivos de pesquisa.
 
 Para obter informações sobre os requisitos do sistema para instalação, configuração e análise de big data operacional, consulte o documento Requisitos [!DNL Geography]do sistema ** mínimos.
 
