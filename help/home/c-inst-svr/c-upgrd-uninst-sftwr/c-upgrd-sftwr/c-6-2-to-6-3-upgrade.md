@@ -3,7 +3,7 @@ description: Atualização de componentes do servidor para o Análise de big dat
 title: Atualização do servidor DWB 6.2 para 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
@@ -22,26 +22,27 @@ Se você tiver perfis personalizados que têm prioridade sobre os arquivos padr�
    1. Altere o tipo de dados para **[!UICONTROL Proxy Password]** de &quot; [!DNL string"] para &quot; [!DNL EncryptedString]&quot; na seção Configuração *da* estação de trabalho.
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>de senha de proxy = string</i>)Usar arquivo de endereço = bool: true&quot;
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1. Adicione novas entradas para ativar as novas transformações do campo Nomear valor: *BuildNameValuePair* e *ExtractNameValuePairs*.
-    
-    Abra uma área de trabalho e clique com o botão direito do mouse em **Admin** > **Gerenciador de perfis**.
-    
-    Em **Contexto**, clique no arquivo **meta.cfg** na coluna **Base** e clique em **Tornar local**. Na coluna Tabela do usuário, clique com o botão direito do mouse e selecione **Open** > **in Workstation**.
-    
-    ![](assets/meta_cfg.png)
-    
-    * Na nova janela, clique em **metadata*** e adicione modelos secundários aceitáveis.
-    
-    ![](assets/meta_cfg_child.png)
-    
-    * Abra **transformação** e adicione novos modelos.
-    
-    ![](assets/meta_cfg_template.png)
+   1. Adicione novas entradas para ativar as novas transformações do campo Nomear valor: *BuildNameValuePair* e *ExtractNameValuePairs*.
+
+      Abra um espaço de trabalho e clique com o botão direito do mouse em **Admin** > Gerenciador **** de perfis.
+
+      Em **Contexto**, clique no arquivo **meta.cfg** na coluna **Base** e clique em **Tornar local**. Na coluna Tabela do usuário, clique com o botão direito do mouse e selecione **Abrir** > **na estação de trabalho**.
+
+      ![](assets/meta_cfg.png)
+
+      * Na nova janela, clique em **metadados** e adicione modelos filhos aceitáveis.
+
+         ![](assets/meta_cfg_child.png)
+
+      * Abra a **transformação** e adicione novos modelos.
+
+         ![](assets/meta_cfg_template.png)
 
 * **Atualização para melhorias** da Fast Merge. Adicione parâmetros ou altere valores aos seguintes arquivos de configuração para aproveitar as melhorias de velocidade na Análise de big data durante uma transformação.
 
