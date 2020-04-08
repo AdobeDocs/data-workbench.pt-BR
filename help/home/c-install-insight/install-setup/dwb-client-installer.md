@@ -3,7 +3,7 @@ description: O Análise de big data fornece um assistente de configuração para
 title: Assistente de configuração da estação de trabalho
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -14,9 +14,9 @@ O Análise de big data fornece um assistente de configuração para instalar o a
 
 ## Instalação da estação de trabalho usando o Assistente de configuração {#section-58da9bb6196c46eab3b54146913fdcb8}
 
-Inicie o assistente de instalação executável e percorra cada etapa para instalar o programa cliente da estação de trabalho. Após a instalação da estação de trabalho, você pode se conectar a servidores e perfis.
+Inicie o assistente de instalação executável e percorra cada etapa para instalar o programa do cliente da estação de trabalho. Após a instalação da estação de trabalho, você pode se conectar a servidores e perfis.
 
-1. Clique duas vezes no executável do instalador da estação de trabalho.
+1. Duplo clique no executável do instalador da estação de trabalho.
 1. Clique em **Sim** para permitir que o programa seja instalado no Windows.
 1. Selecione um **idioma** para o assistente de configuração.
 
@@ -36,7 +36,7 @@ Inicie o assistente de instalação executável e percorra cada etapa para insta
 
    **Instalações típicas** em uma pasta e um local padrão.
 
-   * Por padrão, os arquivos de programa são salvos em:
+   * Por padrão, os arquivos de Programa são salvos em:
 
       ```
       C:\Program Files\Adobe\Adobe Analytics\Data Workbench
@@ -52,12 +52,12 @@ Inicie o assistente de instalação executável e percorra cada etapa para insta
       >
       >Um arquivo genérico ***Insight.cfg*** sem detalhes do servidor será instalado inicialmente. É recomendável usar o arquivo ***Insight.cfg*** recém-instalado e personalizá-lo, em vez de mover um arquivo de uma instalação anterior. Como o caminho para a instalação da estação de trabalho foi alterado, recomenda-se a adição de fontes, a remoção da Pasta *do* usuário e a remoção de *TraceFileComponent *.
 
-1. (opcional) Selecione** Personalizado** para escolher o pacote de idiomas e o local do programa e dos arquivos de dados.
-1. Selecione o local para **os atalhos no menu** Iniciar.
+1. (opcional) Selecione **Personalizado** para escolher o pacote de idiomas e o local do programa e dos arquivos de dados.
+1. Selecione o local para **os atalhos no Menu** Start.
 
    ![](assets/6_4_workstation_wizard_folder.png)
 
-   Clique em **Não criar uma pasta** do menu Iniciar para não instalar um atalho no menu Iniciar do Windows.
+   Clique em **Não criar uma pasta** Menu Start para não instalar um atalho no Menu Start do Windows.
 
 1. Clique em **Próximo.** Será exibido um resumo dos caminhos e idiomas de localização do arquivo selecionado. Clique em **Instalar.**
 
@@ -77,7 +77,7 @@ Inicie o assistente de instalação executável e percorra cada etapa para insta
 
 1. **Configure conexões** com servidores no **[!DNL Insight.cfg]** arquivo.
 
-   Após a instalação da estação de trabalho, a área de trabalho Enhanced Workstation Configuration Experience será aberta com informações adicionais sobre a [inserção de informações](/help/home/c-get-started/c-insght-config-param.md) de conexão do servidor no arquivo *Insight.cfg* e uma opção para selecionar um perfil no menu suspenso. Você também pode exibir o status da conexão com seus servidores.
+   Após a instalação da estação de trabalho, a área de trabalho Enhanced Workstation Configuration Experience será aberta com informações adicionais sobre a [inserção de informações](/help/home/c-get-started/c-insght-config-param.md) de conexão do servidor no arquivo *Insight.cfg* e uma opção para selecionar um perfil no menu suspenso. Você também pode visualização o status da conexão com seus servidores.
 
    ![](assets/6_4_workstation_install_conf_conn.png)
 
@@ -85,7 +85,7 @@ Inicie o assistente de instalação executável e percorra cada etapa para insta
 
 A estrutura da pasta Análise de big data tem dois locais de instalação:
 
-* **Arquivos** de programas O **Insight.exe** e os arquivos de suporte do cliente (**Insight.ini**) agora estão localizados por padrão em
+* **Arquivos** de Programa O **Insight.exe** e os arquivos de suporte do cliente (**Insight.ini**) agora estão localizados por padrão em
 
    ```
    C:\Program Files\Adobe\Analytics\DataWorkbench
@@ -115,4 +115,4 @@ Inicie e siga as etapas para remover os arquivos da estação de trabalho do An�
 
 >[!NOTE]
 >
->Você pode iniciar o executável **unins000.exe** da pasta usando o atalho **Desinstalar análise** de big data no menu Iniciar ou em **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
+>Você pode iniciar o executável **unins000.exe** da pasta, usando o atalho **Desinstalar análise** de big data no menu Start ou em **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
