@@ -4,7 +4,7 @@ solution: Insight
 title: Configuração do Master Insight Server para Clustering
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -38,7 +38,7 @@ Use o procedimento a seguir para adicionar os nomes [!DNL Insight Servers’] co
 
 **Para adicionar o processamento[!DNL Insight Servers]ao arquivo de endereço**
 
-1. Inicie [!DNL Insight] e carregue o perfil de Configuração (se ele ainda não estiver aberto) clicando com o botão direito do mouse na barra de título e clicando em **[!UICONTROL Switch Profile]** > **[!UICONTROL Configuration]**.
+1. Start [!DNL Insight] e carregue o perfil de configuração (se ainda não estiver aberto) clicando com o botão direito do mouse na barra de título e clicando em **[!UICONTROL Switch Profile]** > **[!UICONTROL Configuration]**.
 
 1. Em [!DNL Insight], na guia [!DNL Admin] > [!DNL Dataset and Profile] , clique na **[!UICONTROL Servers Manager]** miniatura para abrir a área de trabalho do Gerenciador de servidores.
 
@@ -76,9 +76,9 @@ Use o procedimento a seguir para adicionar os nomes [!DNL Insight Servers’] co
 
    1. Na [!DNL Server Files Manager], clique com o botão direito do mouse na marca de seleção do arquivo na [!DNL Temp] coluna e selecione **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
-## Atualização do Arquivo de Controle de Acesso para um Cluster {#section-fce1367d92a445168c35e9ca506e7d6b}
+## Atualização do Arquivo de Controle de acesso para um Cluster {#section-fce1367d92a445168c35e9ca506e7d6b}
 
-Para usar [!DNL Insight Servers] em um cluster, cada um [!DNL Insight Server] no cluster (incluindo o mestre [!DNL Insight Server]) deve pertencer ao grupo de controle de acesso Servidores de Cluster. O grupo Servidores de Cluster identifica os servidores (por endereço IP) que podem participar do cluster. Embora esse arquivo seja mantido e administrado no mestre [!DNL Insight Server], ele é usado por todos os [!DNL Insight Servers] no cluster.
+Para usar [!DNL Insight Servers] em um cluster, cada um [!DNL Insight Server] no cluster (incluindo o mestre [!DNL Insight Server]) deve pertencer ao grupo de controles de acesso Servidores de Cluster. O grupo Servidores de Cluster identifica os servidores (por endereço IP) que podem participar do cluster. Embora esse arquivo seja mantido e administrado no mestre [!DNL Insight Server], ele é usado por todos os [!DNL Insight Servers] no cluster.
 
 **Para editar o arquivo de controle de acesso**
 
@@ -93,7 +93,7 @@ Para usar [!DNL Insight Servers] em um cluster, cada um [!DNL Insight Server] no
 
    1. Clique com o botão direito do mouse na marca de seleção na [!DNL Temp] coluna e clique em **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
 
-1. Expanda a estrutura Grupos de Controle de Acesso e, em seguida, expanda AccessGroup (Servidores de Cluster).
+1. Expanda a estrutura Grupos de Controles de acesso e, em seguida, expanda AccessGroup (Servidores de Cluster).
 1. Para cada um [!DNL Insight Server] no cluster (incluindo o mestre [!DNL Insight Server]), faça o seguinte:
 
    1. Clique com o botão direito do mouse **[!UICONTROL Members]** e clique em **[!UICONTROL Add New]** > **[!UICONTROL New Member]**.
@@ -114,7 +114,7 @@ Para usar [!DNL Insight Servers] em um cluster, cada um [!DNL Insight Server] no
 
 Você pode usar o procedimento a seguir para configurar a cópia central do [!DNL Synchronize.cfg] arquivo. A cópia central deste arquivo é mantida no arquivo mestre [!DNL Insight Server]. O processamento [!DNL Insight Servers] no cluster inicia a comunicação com o mestre [!DNL Insight Server] para recuperar uma cópia atualizada deste arquivo.
 
-O [!DNL Synchronize.cfg] arquivo especifica o local do mestre [!DNL Insight Server]. Ele também identifica o conjunto de arquivos administrativos que cada um dos processamentos [!DNL Insight Servers] no cluster recupera do mestre [!DNL Insight Server]. O processamento [!DNL Insight Servers] baixa automaticamente esses arquivos da página mestre [!DNL Insight Server] ao iniciá-los. Eles também recuperam dinamicamente cópias atualizadas desses arquivos do mestre [!DNL Insight Server] quando os arquivos mudam.
+O [!DNL Synchronize.cfg] arquivo especifica o local do mestre [!DNL Insight Server]. Ele também identifica o conjunto de arquivos administrativos que cada um dos processamentos [!DNL Insight Servers] no cluster recupera do mestre [!DNL Insight Server]. O processamento [!DNL Insight Servers] baixa automaticamente esses arquivos da página mestre [!DNL Insight Server] quando eles são start. Eles também recuperam dinamicamente cópias atualizadas desses arquivos do mestre [!DNL Insight Server] quando os arquivos mudam.
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ O [!DNL Synchronize.cfg] arquivo especifica o local do mestre [!DNL Insight Serv
 1. Expanda a estrutura do componente.
 1. No parâmetro Cluster Primary Server Address, especifique o endereço IP do mestre (primário) **[!UICONTROL Insight Server]**.
 
-   ![](assets/cfg_cluster_SyncFile_(CentralCopy).png)
+   ![](assets/cfg_cluster_SyncFile_CentralCopy.png)
 
    Para criar um log que registra cada vez que a sincronização ocorre entre o mestre [!DNL Insight Server] e o processamento [!DNL Insight Servers], verifique se o parâmetro Ativar log de sincronização está definido como &quot;true&quot;.
 
