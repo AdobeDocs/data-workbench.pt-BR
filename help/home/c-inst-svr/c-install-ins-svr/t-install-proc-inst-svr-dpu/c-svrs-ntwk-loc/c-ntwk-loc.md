@@ -1,17 +1,17 @@
 ---
-description: Conceitualmente, o arquivo de endereço tem o mesmo objetivo que o arquivo ETC\HOSTS em uma máquina em rede.
+description: Conceitualmente, o arquivo de endereço tem a mesma finalidade que o arquivo ETC&bsol;HOSTS em uma máquina em rede.
 solution: Insight
 title: Locais de rede
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # Locais de rede{#network-locations}
 
-Conceitualmente, o arquivo de endereço tem o mesmo objetivo que o arquivo ETC\HOSTS em uma máquina em rede.
+Conceitualmente, o arquivo de endereço tem a mesma finalidade que o arquivo ETC&amp;bsol;HOSTS em uma máquina em rede.
 
 No entanto, diferentemente do arquivo HOSTS, que descreve uma única coleção de nomes, o arquivo de endereço contém várias coleções de nomes chamadas locais de rede.
 
