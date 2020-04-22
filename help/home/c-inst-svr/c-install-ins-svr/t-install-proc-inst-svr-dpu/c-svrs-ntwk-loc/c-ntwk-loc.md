@@ -4,7 +4,7 @@ solution: Insight
 title: Locais de rede
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
 
 ---
 
@@ -53,4 +53,3 @@ Como mostrado no exemplo acima, a estrutura NetworkLocation consiste em três pa
   </tr> 
  </tbody> 
 </table>
-
