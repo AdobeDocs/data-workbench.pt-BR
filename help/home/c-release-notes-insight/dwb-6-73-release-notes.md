@@ -3,16 +3,12 @@ description: Novos recursos e correções no Análise de big data 6.73.
 title: Notas de versão do Análise de big data 6.73
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
 
 ---
 
 
 # Notas de versão do Análise de big data 6.73{#data-workbench-release-notes}
-
-Novos recursos e correções no Análise de big data 6.73.
-
-## Notas de versão do Análise de big data 6.73 {#topic-7655534554ac4a4b816af1bd73b06aad56757}
 
 Novos recursos e correções no Análise de big data 6.73.
 
@@ -37,7 +33,7 @@ Novos recursos e correções no Análise de big data 6.73.
 
 * A versão 6.73 da Análise de big data não se conecta aos servidores da Análise de big data versão 6.61 e anteriores. O motivo é que as versões mais antigas do servidor usam uma forma fraca de cifras não suportadas na versão 6.73. Para ativar o suporte para versões mais antigas
 
-   1. Substitua a lista de Ciphers SSL padrão no servidor com uma lista de criptografia forte suportada pelo OpenSSL versão 1.0.1h. Para substituir, adicione a chave ‘Ciphers SSL’ nos arquivos ‘Communications.cfg’ disponíveis nos diretórios ‘Components’ e ‘Components for Processing Servers’. Por exemplo: `SSL Ciphers = string: !aNULL:AESGCM`
+   1. Substitua a lista padrão de Ciphers SSL no servidor por uma lista cifrada forte suportada pelo OpenSSL versão 1.0.1h. Para substituir, adicione a chave ‘Ciphers SSL’ nos arquivos ‘Communications.cfg’ disponíveis nos diretórios ‘Components’ e ‘Components for Processing Servers’. Por exemplo: `SSL Ciphers = string: !aNULL:AESGCM`
 
       >[!NOTE]
       >
