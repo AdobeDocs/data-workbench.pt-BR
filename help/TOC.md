@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Ajuda do Análise de big data
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 + [Ajuda do Análise de big data](home/home.md)
 + Notas de versão {#release-notes}
    + [Visão geral das notas de versão](home/c-release-notes-insight/release-notes.md)
+   + [Notas de versão do Análise de big data 6.74](home/c-release-notes-insight/dwb-6-74-release-notes.md)
    + [Notas de versão do Análise de big data 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
    + [Notas de versão do Análise de big data 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
    + [Notas de versão do Análise de big data 6.7](home/c-release-notes-insight/dwb-6-7-release-notes.md)
@@ -30,7 +31,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
    + [Notas de versão do Análise de big data 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Atualização 6.11 da Data Workbench](home/c-release-notes-insight/c-6-1-1.md)
    + [Atualização de feeds de dados para abril MR 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [Notas de versão do Análise de big data 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [Notas de versão do Análise de big data 6.2](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [Notas de versão do Análise de big data 6.0 e 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + Instalação {#install}
    + [Requisitos da workstation](home/c-install-insight/c-data-workbench-client-install.md)
@@ -836,7 +837,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
       + [Dimensões e métricas do Perfil do Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
       + [Dimensões no perfil Histórico da Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
       + [Dimensões no perfil Status do Perfil da Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Dimensões no perfil Status do Servidor da Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [Dimensões no perfil Status do Servidor do Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
       + [Métricas no perfil de Monitoramento Histórico da Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + Painel {#dashboard}
    + [Oportunidades de negócio](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
