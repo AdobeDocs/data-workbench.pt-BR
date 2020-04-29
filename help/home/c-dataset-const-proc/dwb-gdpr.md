@@ -4,7 +4,7 @@ solution: Analytics
 title: Suporte para análise de big data para RGPD
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ O Regulamento RGPD identifica os papéis e obrigações das diferentes partes re
 * A Adobe atua como o processador **de** dados para fornecer o software e os serviços necessários para implementar os requisitos de RGPD com base em seu acordo com a Adobe.
 * Após a integração do Análise de big data com o serviço do RGPD e de acordo com os padrões do RGPD, os visitantes de um site (as pessoas **** com os dados) podem exercer seu &quot;direito de ser esquecido&quot; pela Adobe, o processador de dados. Para obter o direito de ser esquecido, você, como controlador de dados, pode fazer upload de IDs de visitante desafiadas para a Adobe a partir de uma interface do usuário ou API. Consulte a documentação do Fluxo de trabalho [GDPR do](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) Adobe Analytics para obter mais informações, incluindo a seção [enviar solicitações](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) de acesso e exclusão.
 
->[!Note]
+>[!NOTE]
 >
 >Para outras fontes de dados, sua organização será responsável pela limpeza de IDs de visitante desafiadas de outras fontes de registro, como CRM, POS, IVR e outras fontes de dados brutos. Os pacotes de serviços com escopo personalizado estarão disponíveis para fornecer suporte às organizações, _fornecendo um conjunto completo de arquivos de substituição para cada fonte_ de dados ou outras opções personalizadas.
 
