@@ -2,10 +2,9 @@
 description: O Portal de relatórios é composto de um conjunto de páginas do servidor de aplicativos (ASPs) e arquivos de suporte.
 solution: Analytics
 title: Instalar os arquivos de aplicativo do portal de relatórios
-topic: Data workbench
 uuid: 483a7401-1bb4-4a71-b8c7-e70ff1b129e7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 7521fe7f5fabe8e1be26e140ffff577a42fce88b
 
 ---
 
