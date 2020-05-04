@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Ajuda do Análise de big data
 translation-type: tm+mt
-source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
+source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [Notas de versão do Análise de big data 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Atualização 6.11 da Data Workbench](home/c-release-notes-insight/c-6-1-1.md)
    + [Atualização de feeds de dados para abril MR 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [Notas de versão do Análise de big data 6.2](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [Notas de versão do Análise de big data 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [Notas de versão do Análise de big data 6.0 e 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + Instalação {#install}
    + [Requisitos da workstation](home/c-install-insight/c-data-workbench-client-install.md)
@@ -966,6 +966,6 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [Alterações de configuração para novo Schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Configuração de dimensões derivadas](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Consultar API](https://www.adobe.io/)
-+ [Análise de big data com o feed de dados do Analytics](https://marketing.adobe.com/resources/help/en_US/insight/insight_sc_implementation.pdf)
++ [Análise de big data com o feed de dados do Analytics](home/assets/insight_sc_implementation.pdf)
 + [Integração da análise de big data com o Público alvo da Adobe](home/dwb-adobe-target.md)
 + [Glossário da análise de big data](dwb-glossary.md)
