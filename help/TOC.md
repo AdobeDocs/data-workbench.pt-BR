@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Ajuda do Análise de big data
 translation-type: tm+mt
-source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
+source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
 
 ---
 
@@ -966,6 +966,6 @@ source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
       + [Alterações de configuração para novo Schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Configuração de dimensões derivadas](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Consultar API](https://www.adobe.io/)
-+ [Análise de big data com o feed de dados do Analytics](home/assets/insight_sc_implementation.pdf)
++ [Análise de big data com o feed de dados do Analytics](home/assets/dwb-analytics-implementation.pdf)
 + [Integração da análise de big data com o Público alvo da Adobe](home/dwb-adobe-target.md)
 + [Glossário da análise de big data](dwb-glossary.md)
