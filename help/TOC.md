@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Ajuda do Análise de big data
 translation-type: tm+mt
-source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
+source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 
 ---
 
@@ -837,7 +837,7 @@ source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
       + [Dimensões e métricas do Perfil do Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
       + [Dimensões no perfil Histórico da Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
       + [Dimensões no perfil Status do Perfil da Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Dimensões no perfil Status do Servidor do Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [Dimensões no perfil Status do Servidor da Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
       + [Métricas no perfil de Monitoramento Histórico da Análise de big data](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + Painel {#dashboard}
    + [Oportunidades de negócio](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
@@ -966,6 +966,5 @@ source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
       + [Alterações de configuração para novo Schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Configuração de dimensões derivadas](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Consultar API](https://www.adobe.io/)
-+ [Análise de big data com o feed de dados do Analytics](home/assets/dwb-analytics-implementation.pdf)
 + [Integração da análise de big data com o Público alvo da Adobe](home/dwb-adobe-target.md)
 + [Glossário da análise de big data](dwb-glossary.md)
