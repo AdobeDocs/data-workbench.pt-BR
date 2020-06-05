@@ -4,7 +4,10 @@ solution: Analytics
 title: Suporte para análise de big data para RGPD
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
+source-git-commit: 279e71f3da3f0ebc29091e88b87666a22a36a8d6
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ O Regulamento RGPD identifica os papéis e obrigações das diferentes partes re
 
 >[!NOTE]
 >
->Para outras fontes de dados, sua organização será responsável pela limpeza de IDs de visitante desafiadas de outras fontes de registro, como CRM, POS, IVR e outras fontes de dados brutos. Os pacotes de serviços com escopo personalizado estarão disponíveis para fornecer suporte às organizações, _fornecendo um conjunto completo de arquivos de substituição para cada fonte_ de dados ou outras opções personalizadas.
+>Para outras fontes de dados, sua organização será responsável pela limpeza de IDs de visitante desafiadas de outras fontes de registro, como CRM, POS, IVR e outras fontes de dados brutos. Os pacotes de serviços com escopo personalizado estarão disponíveis para fornecer suporte às organizações, _fornecendo um conjunto completo de arquivos de substituição para cada fonte_ de dados que os contêineres de serviço em andamento precisam suportar ou manter.
 
 ## Atualização do DWB para implementação do RGPD
 
@@ -31,7 +34,7 @@ A consulta o aconselhará sobre o pacote de serviços apropriado para tornar as 
 
 Se necessário:
 
-* [Atualize para a versão](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) mais recente do Análise de big data. Para obter a maior segurança, novos certificados e recursos de segurança foram adicionados nas versões do DWB 6.7 necessárias para a integração do RGPD.
+* [Atualize para a versão](https://docs.adobe.com/content/help/pt-BR/data-workbench/using/release-notes/release-notes.html) mais recente do Análise de big data. Para obter a maior segurança, novos certificados e recursos de segurança foram adicionados nas versões do DWB 6.7 necessárias para a integração do RGPD.
 * Se estiver usando registros de eventos do TSV Analytics herdados, atualize para o feed [de dados do](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/log-proc-config-file/c-log-sources.html#section-9a824b4c3d5549e7952a7111232035b2)Avro.
 * Se estiver usando um UCP herdado (Unified Customer Process) com Transform para atualizar registros existentes, atualize para o processo atual. O processo atualizado gera diretamente um arquivo de pesquisa mestre para mapear IDs de visitante nas fontes.
 * Padronizar o fluxo de dados para acomodar o serviço RGPD.
