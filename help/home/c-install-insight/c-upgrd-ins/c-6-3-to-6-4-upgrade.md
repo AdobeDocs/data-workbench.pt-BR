@@ -3,7 +3,10 @@ description: Siga estas etapas para atualizar para o Análise de big data v6.4.
 title: Atualização de 6.3 para 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 0%
 
 ---
 
@@ -25,16 +28,16 @@ Siga estes requisitos e recomendações ao atualizar para o Análise de big data
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Isso permitirá direitos de &quot;lista branca&quot; para esses executáveis de interface.
+   Isso ativará os direitos permitidos para esses executáveis de interface.
 
 * **Atualize o certificado *Trust_ca_cert.pem*nos servidores**.
-* **Reorganização dos perfis** de atribuição.
+* **Reorganização de Perfis** de Atribuição.
 
    * A pasta *Atribuição* foi renomeada para ***Atribuição - Premium*** (encontrada na instalação padrão em *Perfis*\*Atribuição - Premium*).
 
    * O perfil *Premium* foi removido e o espaço de trabalho foi movido para a nova pasta ***Atribuição - Premium*** .
 
-* **Atualize as configurações *de Atribuição-Premium***. Se você personalizou perfis com configurações de parâmetros que substituem o perfil padrão *do Adobe SC* , é necessário atualizar os campos personalizados nesses arquivos de configuração:
+* **Atualize as configurações *de Atribuição-Premium***. Se você personalizou perfis com configurações de parâmetro que substituem o perfil padrão *Adobe SC* , é necessário atualizar os campos personalizados nesses arquivos de configuração:
 
    * **[!DNL Decoding Instructions.cfg]**
    * **[!DNL SC Fields.cfg]**
@@ -73,7 +76,7 @@ Siga estes requisitos e recomendações ao atualizar para o Análise de big data
 
    Os **[!DNL Meta.cfg]** arquivos em **[!DNL Base\Context and AdobeSC\Context]** pastas foram atualizados nesta versão.
 
-   Se você substituir o arquivo **meta.cfg** durante a instalação, sua cópia de perfil precisará ser atualizada com estes parâmetros e o vetor **de** metadados inserido adequadamente:
+   Se você substituir o arquivo **meta.cfg** durante a instalação, a cópia do perfil precisará ser atualizada com esses parâmetros e o vetor **de** metadados inserido adequadamente:
 
    ```
    94 = meta: 
@@ -131,7 +134,7 @@ Siga estes requisitos e recomendações ao atualizar para o Análise de big data
 
    Instale a nova versão da estação de trabalho (cliente) baixando e iniciando o ***InsightSetup.exe*** e seguindo as instruções de configuração. Por padrão, o assistente de instalação instalará seus arquivos em um novo local:
 
-   Os arquivos de programa agora são salvos por padrão em:
+   Os arquivos de Programa agora são salvos por padrão em:
 
    ```
    C:\Program Files\Adobe\Adobe Analytics\Data Workbench
