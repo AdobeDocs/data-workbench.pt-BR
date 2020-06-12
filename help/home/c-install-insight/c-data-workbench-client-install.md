@@ -5,7 +5,10 @@ title: Requisitos da workstation
 topic: Data workbench
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +32,9 @@ Verifique se essas tarefas foram concluídas antes de instalar a estação de tr
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Isso permitirá direitos de &quot;lista branca&quot; para esses executáveis de interface.
+   Isso ativará os direitos permitidos para esses executáveis de interface.
 
-* **Instale o Microsoft Excel para exportar dados de análise.** Para exportar dados de espaços de trabalho como arquivos do Microsoft Excel ( [!DNL .xls] ou [!DNL .xlsx]), o computador no qual você instala o Análise de big data deve ter o Excel instalado e registrado. Se o Excel não tiver sido registrado e o Análise de big data tentar acessá-lo pela primeira vez, o Excel exibirá uma caixa de diálogo de registro. Se não tiver certeza se a cópia está registrada, inicie o Excel manualmente e, se uma caixa de diálogo de registro for exibida, conclua o processo de registro.
+* **Instale o Microsoft Excel para exportar dados de análise.** Para exportar dados de espaços de trabalho como arquivos do Microsoft Excel ( [!DNL .xls] ou [!DNL .xlsx]), o computador no qual você instala o Análise de big data deve ter o Excel instalado e registrado. Se o Excel não tiver sido registrado e o Análise de big data tentar acessá-lo pela primeira vez, o Excel exibirá uma caixa de diálogo de registro. Se não tiver certeza se a cópia está registrada, start manualmente o Excel e, se uma caixa de diálogo de registro for exibida, conclua o processo de registro.
 
    >[!NOTE]
    >
@@ -40,7 +43,7 @@ Verifique se essas tarefas foram concluídas antes de instalar a estação de tr
 * **Instalação da Adobe[!DNL Acrobat]para impressão de espaços de trabalho dimensionados em PDF.** Para imprimir espaços de trabalho dimensionados no formato Adobe PDF, o computador no qual você instalou o Análise de big data deve ter a Adobe [!DNL Acrobat] instalada.
 
 * **Fornecimento de acesso a uma impressora para espaços de trabalho de impressão.** Para imprimir espaços de trabalho do Análise de big data, o computador no qual você instala o Análise de big data deve ter acesso a uma impressora. O Análise de big data pode imprimir espaços de trabalho em impressoras coloridas ou monocromáticas e não requer o postscript ou outros recursos avançados da impressora. Para obter resultados ideais, a Adobe recomenda a impressão de espaços de trabalho coloridos.
-* **Aplicar medidas de segurança.** Você deve seguir as políticas de segurança corporativas normais de sua empresa para computadores com a Análise de big data. Para atender aos fins principais, o Análise de big data exige apenas a capacidade de se conectar a um servidor (pelas portas 80 e 443) e a qualquer servidor que coleta dados. Você pode usar o hardware da Análise de big data para qualquer outra finalidade, desde que mantenha o software da Análise de big data e aloque pelo menos 10 GB de espaço de armazenamento para a Análise de big data.
+* **Aplicar medidas de segurança.** Você deve seguir as políticas de segurança corporativas normais da sua empresa para computadores da Análise de big data. Para atender aos fins principais, o Análise de big data exige apenas a capacidade de se conectar a um servidor (pelas portas 80 e 443) e a qualquer servidor que coleta dados. Você pode usar o hardware da Análise de big data para qualquer outra finalidade, desde que mantenha o software da Análise de big data e aloque pelo menos 10 GB de espaço no armazenamento para a Análise de big data.
 * Para renderizar as visualizações com precisão, o computador no qual você instala o workbench deve ter um adaptador **** gráfico apropriado instalado (consulte os requisitos do adaptador gráfico abaixo).
 
 **Requisitos do cliente da análise de big data**
@@ -84,7 +87,7 @@ Verifique se essas tarefas foram concluídas antes de instalar a estação de tr
 
 NTFS
 
-**Armazenamento em disco**
+**Armazenamento de disco**
 
 Pelo menos dez (10) GB ou mais de espaço livre na unidade de disco rígido
 
@@ -95,6 +98,6 @@ Acesso da impressora (impressoras coloridas ou em escala cinza) para imprimir es
 **Outro**
 
 * Mouse dedicado
-* Ambiente de trabalho de pouco brilho
+* ambiente de trabalho de brilho baixo
 * Monitor de superfície fosca
 
