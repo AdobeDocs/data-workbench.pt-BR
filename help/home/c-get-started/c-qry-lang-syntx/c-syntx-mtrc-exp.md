@@ -1,28 +1,31 @@
 ---
 description: As métricas podem ser editadas usando o Editor de métricas e salvas no diretório Métricas de um perfil.
 solution: Analytics
-title: Sintaxe para expressões de métrica
+title: Sintaxe para expressões de métricas
 topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 1%
 
 ---
 
 
-# Sintaxe para expressões de métrica{#syntax-for-metric-expressions}
+# Sintaxe para expressões de métricas{#syntax-for-metric-expressions}
 
 As métricas podem ser editadas usando o Editor de métricas e salvas no diretório Métricas de um perfil.
 
-Para obter mais informações, consulte [Criação e edição de métricas](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)derivadas. Expressões de métricas também podem ser usadas em planilhas. For more information, see [Worksheets](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). A sintaxe a seguir é usada para definir expressões de métrica.
+Para obter mais informações, consulte [Criação e edição de métricas](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)derivadas. Expressões de métricas também podem ser usadas em planilhas. Para obter mais informações, consulte [Planilhas](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). A sintaxe a seguir é usada para definir expressões de métricas.
 
 Notas:
 
-1. As palavras sublinhadas devem ser digitadas literalmente na expressão texto.
-1. O formulário {TEXT}? representa o texto opcional.
-1. O formulário {TEXT}* representa um texto que pode ocorrer zero ou mais vezes.
-1. O formulário {A| B| C|...} representa o texto que consiste exatamente em uma das opções fornecidas, como A ou B ou C....
-1. O formulário [A,B] representa um intervalo de números, de A até, mas não incluindo, B.
+1. As palavras sublinhadas devem ser digitadas literalmente no texto da expressão.
+1. O formulário `{TEXT}?` representa o texto opcional.
+1. O formulário `{TEXT}*` representa um texto que pode ocorrer zero ou mais vezes.
+1. O formulário `{A | B | C |...}` representa o texto que consiste exatamente em uma das opções fornecidas, como A ou B ou C....
+1. O formulário `[A,B)` representa um intervalo de números, de A até, mas não incluindo, B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -32,7 +35,7 @@ Notas:
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Métrica) </p> </td> 
-   <td colname="col2"> <p>O resultado de (Métrica) é o mesmo que o resultado de Métrica. Os parênteses especificam a ordem de operações em uma expressão. </p> <p>Exemplo: Média = (A + B) / 2 </p> </td> 
+   <td colname="col2"> <p>O resultado de (Métrica) é o mesmo que o resultado de Métrica. Os parênteses especificam a ordem das operações em uma expressão. </p> <p>Exemplo: Média = (A + B) / 2 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>A + B </p> </td> 
@@ -56,7 +59,7 @@ Notas:
   </tr> 
   <tr> 
    <td colname="col1"> <p>confidence(metric) </p> </td> 
-   <td colname="col2"> <p>Uma estimativa do desvio padrão da métrica. Isto é calculado usando uma técnica de amostragem conhecida como jaquetagem. </p> <p>Essa métrica consome muita memória e não deve ser usada em tabelas grandes. </p> <p>Para usar essa sintaxe, você deve ter uma dimensão de canivete (chamada "canivete") com as propriedades apropriadas. Para obter mais informações, entre em contato com os Serviços de consultoria da Adobe. </p> <p>Exemplo: confidence(Average_Score) </p> <p> <p>Observação:  Os tipos de métricas de confiança, incluindo confiança (métrica) e confiança (métrica, vida útil), são especialmente úteis ao usar a funcionalidade de experimentação controlada da Adobe. Se uma métrica saltasse de 12% para 16% durante um experimento controlado, você poderia usar uma chamada de confiança para calcular as probabilidades de que o salto fosse devido à variação aleatória. Isso pode ajudá-lo a evitar tirar conclusões erradas de evidências limitadas, e, inversamente, dar garantias de que uma mudança questionável é realmente real. </p> </p> </td> 
+   <td colname="col2"> <p>Uma estimativa do desvio padrão da métrica. Isto é calculado usando uma técnica de amostragem conhecida como jaquetagem. </p> <p>Essa métrica consome muita memória e não deve ser usada em tabelas grandes. </p> <p>Para usar essa sintaxe, você deve ter uma dimensão de canivete (chamada "canivete") com as propriedades apropriadas. Para obter mais informações, entre em contato com os Serviços de consultoria da Adobe. </p> <p>Exemplo: confidence(Average_Score) </p> <p> <p>Observação:  Os tipos de métricas de confiança, incluindo a confiança (métrica) e a confiança (métrica, Jacknife), são especialmente úteis ao usar a funcionalidade de experimentação controlada do Adobe. Se uma métrica saltasse de 12% para 16% durante um experimento controlado, você poderia usar uma chamada de confiança para calcular as probabilidades de que o salto fosse devido à variação aleatória. Isso pode ajudá-lo a evitar tirar conclusões erradas de evidências limitadas, e, inversamente, dar garantias de que uma mudança questionável é realmente real. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>confidence(metric, Jackfaca) </p> </td> 
@@ -75,8 +78,8 @@ Notas:
    <td colname="col2"> <p>"Métrica onde Filtro": Uma nova métrica filtrada pelo filtro fornecido. </p> <p>Exemplo: Jan_Sessions = Sessões[ Mês="Jan" ] </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Métrica por dimensão </p> </td> 
-   <td colname="col2"> <p>Uma métrica avaliada no "nível" da dimensão. O resultado de (M por X)[F] (o resultado da métrica "M por X" avaliada com o Filtro "F") é o resultado de M[F por X] (o resultado da Métrica "M" avaliada com o Filtro "F por X"). </p> <p>Exemplo: AB_Visitors = </p> <p>(Visitantes por sessão)[Página="A" e Página="B"] = </p> <p>Visitantes[(Page="A" e Page="B") por Sessão] = </p> <p>O número de Visitantes que visitaram as páginas A e B na mesma Sessão. </p> </td> 
+   <td colname="col1"> <p>Métrica por Dimension </p> </td> 
+   <td colname="col2"> <p>Uma métrica avaliada no "nível" da dimensão. O resultado de (M por X)[F] (o resultado da métrica "M por X" avaliada com o Filtro "F") é o resultado de M[F por X] (o resultado da Métrica "M" avaliada com o Filtro "F por X"). </p> <p>Exemplo: AB_Visitantes = </p> <p>(Visitantes por sessão)[Página="A" e Página="B"] = </p> <p>Visitantes[(Page="A" e Page="B") por Sessão] = </p> <p>O número de Visitantes que visitaram as páginas A e B na mesma sessão. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>número </p> </td> 
@@ -84,22 +87,22 @@ Notas:
   </tr> 
   <tr> 
    <td colname="col1"> <p>total (Métrica) </p> </td> 
-   <td colname="col2"> <p>Ignora qualquer dimensão sobre a qual a métrica é avaliada. A métrica tem o mesmo valor para cada elemento dessa dimensão. </p> <p>Exemplo: Pct_of_Visitors = Visitantes / total (Visitantes) </p> </td> 
+   <td colname="col2"> <p>Ignora qualquer dimensão sobre a qual a métrica é avaliada. A métrica tem o mesmo valor para cada elemento dessa dimensão. </p> <p>Exemplo: Pct_of_Visitantes = Visitantes / total(Visitantes) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>all(Métrica) </p> </td> 
-   <td colname="col2"> <p>Ignora os filtros que se aplicam à métrica. A métrica não é afetada pelas seleções e outros filtros. </p> <p>Exemplo: Benchmark_Sessions = all( Sessões ) </p> </td> 
+   <td colname="col2"> <p>Ignora filtros que se aplicam à métrica. A métrica não é afetada pelas seleções e outros filtros. </p> <p>Exemplo: Benchmark_Sessions = all( Sessões ) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>total(all(Metric)) </p> </td> 
-   <td colname="col2"> <p>Ignora todos os filtros e dimensões. Ele tem o mesmo valor em um determinado perfil, independentemente de quais filtros ou dimensões são aplicados. </p> <p>Exemplo: Dataset_Visitors = total(all(Visitors)) </p> </td> 
+   <td colname="col2"> <p>Ignora todos os filtros e dimensões. Ele tem o mesmo valor em um determinado perfil, independentemente dos filtros ou dimensões aplicados. </p> <p>Exemplo: Dataset_Visitantes = total(todos(Visitantes)) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>sum(One,Countable_Dimension) </p> </td> 
    <td colname="col2"> <p>Uma métrica que fornece a contagem de uma dimensão contável, como Visitante ou Sessão. </p> <p>Exemplo: Visitantes = sum(Um,Visitante) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>sum(Dimensão Numérica, Dimensão Contável_) </p> </td> 
+   <td colname="col1"> <p>sum(Numeric_ Dimension, Countable_ Dimension) </p> </td> 
    <td colname="col2"> <p>Uma métrica que fornece a soma de uma dimensão numérica sobre uma dimensão contável. Os valores ordinais (em oposição aos valores formatados) dos elementos da dimensão numérica são usados, portanto um fator de escala geralmente precisa ser aplicado ao resultado. </p> <p>Exemplo: Valor = sum(Session_Value, Session)*0.01 </p> </td> 
   </tr> 
   <tr> 
