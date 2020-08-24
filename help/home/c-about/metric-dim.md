@@ -1,40 +1,43 @@
 ---
-description: Criar dimensões definidas por atributos de métrica (Dims de métrica) usando um assistente passo a passo. Em seguida, teste, visualize e salve o novo Esmaecimento de métrica na lista Dimensões.
+description: Crie Dimension definidos pelos atributos de métrica (Dims de métrica) usando um assistente passo a passo. Em seguida, teste, pré-visualização e salve o novo Esmaecimento de métrica na lista de Dimension.
 title: Assistente de atenuação de métrica
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 translation-type: tm+mt
-source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
+source-git-commit: 35e6e9280ab36e8b39e89039b791199d1de54e03
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 2%
 
 ---
 
 
 # Assistente de atenuação de métrica{#metric-dim-wizard}
 
-Criar dimensões definidas por atributos de métrica (Dims de métrica) usando um assistente passo a passo. Em seguida, teste, visualize e salve o novo Esmaecimento de métrica na lista Dimensões.
+Crie Dimension definidos pelos atributos de métrica (Dims de métrica) usando um assistente passo a passo. Em seguida, teste, pré-visualização e salve o novo Esmaecimento de métrica na lista de Dimension.
 
-Um Esmaecimento de métrica converte uma métrica em uma nova dimensão. Por exemplo, um Esmaecimento de métrica com base em uma métrica de Exibições de página e nível de Visitante exibirá elementos de dimensão com base no total de Exibições de página para cada Visitante. Ela permite estender uma métrica definida no momento com base em elementos de dimensão para criar e salvar como uma nova dimensão.
+Um Esmaecimento de métrica converte uma métrica em uma nova dimensão. Por exemplo, um Esmaecimento de métrica com base em uma métrica de Visualizações de página e nível de Visitante exibirá elementos de dimensão com base no total de Visualizações de página para cada Visitante. Ela permite estender uma métrica definida no momento com base em elementos de dimensão para criar e salvar como uma nova dimensão.
 
-## Etapa 1: Selecionar dimensão e métrica {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
+## Step 1: Select Dimension and Metric {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
 1. Abra o Assistente de atenuação de métrica.
 
-   Em um espaço de trabalho, clique com o botão direito do mouse e selecione **[UICONTROL Tools]** > **[UICONTROL Create Metric Dim]**.
+   Em um espaço de trabalho, clique com o botão direito do mouse e selecione **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**.
 
 1. Nomeie o Esmaecimento da métrica.
 
    Como padrão, o campo Nome será preenchido automaticamente com base nas seleções Nível e Métrica.
 
-1. Selecione um Nível de Dimensão.
+1. Selecione um Nível de Dimension.
 
    O nível de dimensão é a dimensão pai que contém todos os valores de elementos constituintes para filtrar a entrada e definir um tipo de dimensão.
 
-   Os níveis de dimensão incluem:
+   Os níveis de Dimension incluem:
 
    * Clickthrough
    * Ocorrência
-   * Product
+   * Produto
    * Visita
-   * Visitante
+   * Visitante.
 
 1. Selecione uma métrica.
 
@@ -44,7 +47,7 @@ Um Esmaecimento de métrica converte uma métrica em uma nova dimensão. Por exe
 
 1. (opcional) Criar uma fórmula de métrica.
 
-   Clique na caixa para inserir uma fórmula de métrica personalizada. O valor de Visualização calculado aparecerá validando a expressão.
+   Clique na caixa para inserir uma fórmula de métrica personalizada. O valor de Pré-visualização calculado aparecerá validando a expressão.
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
@@ -69,7 +72,7 @@ Um Esmaecimento de métrica converte uma métrica em uma nova dimensão. Por exe
 
 1. Adicionar expressão de contagem de balde.
 
-   É possível definir um tamanho de métrica com vários intervalos ou cestos. Isso retorna subconjuntos de elementos com base no tamanho, como [0-4], [5-10],...). Os elementos do Nível de dimensão estão relacionados aos elementos cujo intervalo contém o valor da métrica. Consulte a descrição da expressão bucket em [Sintaxe para Expressões](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)de Dimensão.
+   É possível definir um tamanho de métrica com vários intervalos ou cestos. Isso retorna subconjuntos de elementos com base no tamanho, como [0-4], [5-10],...). Os elementos do Nível de Dimension estão relacionados aos elementos cujo intervalo contém o valor da métrica. Consulte a descrição da expressão bucket em [Sintaxe para Dimension Expressão](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
 1. Clique **[!UICONTROL Preview]** para abrir a tabela de valores de Métrica de Esmaecimento antes de salvar.
 
@@ -77,7 +80,7 @@ Um Esmaecimento de métrica converte uma métrica em uma nova dimensão. Por exe
 
    A tabela detalha os valores de métrica por tamanho de métrica.
 
-1. Clique **[!UICONTROL Show in Dimension Menu]** para adicionar a dimensão recém-criada à guia **Dimensão** no **Finder**.
+1. Clique **[!UICONTROL Show in Dimension Menu]** para adicionar a dimensão recém-criada à guia **Dimension** no **Finder**.
 
 1. Clique em **[!UICONTROL Next]**.
 
@@ -93,5 +96,5 @@ Um Esmaecimento de métrica converte uma métrica em uma nova dimensão. Por exe
 
 1. Clique em **[!UICONTROL Finish]** e salve.
 
-   Uma caixa de diálogo para salvar será aberta permitindo que você salve o arquivo. As opções selecionadas para exibir valores serão abertas no espaço de trabalho.
+   Uma caixa de diálogo para salvar será aberta permitindo que você salve o arquivo. As opções selecionadas para valores de visualização serão abertas no espaço de trabalho.
 
