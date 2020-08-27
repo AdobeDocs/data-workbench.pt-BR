@@ -1,14 +1,17 @@
 ---
 description: O Windows Certificate Store permite que você armazene o certificado do cliente e a chave privada no Windows Certificate Store para comunicação SSL com servidores.
-title: Windows Certificate Store
+title: Loja de certificados do Windows
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 0%
 
 ---
 
 
-# Windows Certificate Store{#windows-certificate-store}
+# Loja de certificados do Windows{#windows-certificate-store}
 
 O Windows Certificate Store permite que você armazene o certificado do cliente e a chave privada no Windows Certificate Store para comunicação SSL com servidores.
 
@@ -40,7 +43,7 @@ Em [Usando certificados](../../../../../home/c-inst-svr/c-install-ins-svr/t-inst
 </filepath>>\Certificates\
 ```
 
-O nome do certificado é `<Common Name>.pem` (como [!DNL Analytics Server 1.pem](não o [!DNL trust_ca_cert.pem] arquivo).
+O nome do certificado é `<Common Name>.pem` (como [!DNL Analytics Server 1.pem] (não o [!DNL trust_ca_cert.pem] arquivo).
 
 Antes que o certificado e a chave privada possam ser importados, eles devem ser convertidos de . [!DNL pem] para um [!DNL .pfx] formato, como [!DNL pkcs12.pfx] ).
 
@@ -58,18 +61,18 @@ Antes que o certificado e a chave privada possam ser importados, eles devem ser 
 
    Se solicitado, pressione **Enter** para ignorar a inserção de uma senha de exportação.
 
-1. Executar [!DNL certmgr.msc] a partir do prompt de execução, do menu Iniciar ou da linha de comando.
+1. Executar [!DNL certmgr.msc] a partir do prompt de execução, do menu start ou da linha de comando.
 1. Abra o repositório de certificados **pessoais** para o usuário atual.
 
    ![](assets/6_5_crypto_api_0.png)
 
-1. Clique com o botão direito do mouse em **Certificados** e clique em **Todas as tarefas** > **Importar**.
+1. Clique com o botão direito do mouse em **Certificados** e clique em **Todas as Tarefas** > **Importar**.
 
    Verifique se a opção Usuário **** atual está selecionada e clique em **Avançar**.
 
    ![](assets/6_5_crypto_api_4.png)
 
-1. Clique em **Procurar** e selecione o `<CommonName>.pfx` arquivo criado anteriormente. Será necessário alterar a caixa suspensa de extensão de arquivo de um Certificado X.509 para o **Personal Information Exchange** ou para **All Files** para visualizá-lo.
+1. Clique em **Procurar** e selecione o `<CommonName>.pfx` arquivo criado anteriormente. Será necessário alterar a caixa suspensa de extensão de arquivo de um Certificado X.509 para o **Personal Information Exchange** ou para **Todos os arquivos** para visualizá-lo.
 
    Selecione o arquivo e clique em **Abrir** e em **Avançar**.
 
@@ -79,7 +82,7 @@ Antes que o certificado e a chave privada possam ser importados, eles devem ser 
 
    Clique em **Próximo**.
 
-1. Certifique-se de que a opção **Colocar todos os certificados no seguinte repositório** esteja selecionada e que o repositório de certificados listado seja **Pessoal**. (Se você for um usuário avançado, poderá selecionar outra loja nesse ponto, mas será necessário alterar a configuração posteriormente.)
+1. Certifique-se de que a opção **Colocar todos os certificados na seguinte loja** esteja selecionada e que o repositório de certificados listado seja **Pessoal**. (Se você for um usuário avançado, poderá selecionar outra loja nesse ponto, mas será necessário alterar a configuração posteriormente.)
 
 1. Clique em **Avançar** e em **Concluir**. Você deve ver uma caixa de diálogo informando que a importação foi bem-sucedida e ver seu certificado na pasta Certificados da loja.
 
@@ -89,7 +92,7 @@ Antes que o certificado e a chave privada possam ser importados, eles devem ser 
 
 **Etapa 2: Edite o arquivo Insight.cfg.**
 
-O [!DNL Insight.cfg] arquivo deve ser editado para direcionar o Análise de big data para usar o recurso Windows Certificate Store. Cada entrada de servidor neste arquivo deve ter alguns parâmetros adicionais especificados. Se os parâmetros forem omitidos, a estação de trabalho usará a configuração de certificado existente como padrão. Se os parâmetros forem especificados, mas tiverem valores incorretos, a estação de trabalho informará um estado de erro e você precisará consultar o arquivo de log para obter informações sobre erros.
+O [!DNL Insight.cfg] arquivo deve ser editado para direcionar a Data Workbench a usar o recurso Windows Certificate Store. Cada entrada de servidor neste arquivo deve ter alguns parâmetros adicionais especificados. Se os parâmetros forem omitidos, a estação de trabalho usará a configuração de certificado existente como padrão. Se os parâmetros forem especificados, mas tiverem valores incorretos, a estação de trabalho informará um estado de erro e você precisará consultar o arquivo de log para obter informações sobre erros.
 
 1. Abra o arquivo **Insight.cfg** (localizado no diretório de instalação do **Insight** ).
 
@@ -109,11 +112,11 @@ O [!DNL Insight.cfg] arquivo deve ser editado para direcionar o Análise de big 
    >
    >O nome &quot;Pessoal&quot; no Gerenciador de certificados (certmgr.msc) se refere ao armazenamento de certificados chamado **My.** Consequentemente, se você importar seu certificado de comunicação SSL e sua chave (.PFX) para o repositório de certificados **Pessoal** , conforme recomendado, deverá definir a string **SSL CryptoAPI Cert Store Name** como &quot;My&quot;. A definição deste parâmetro para &quot;Pessoal&quot; não funcionará. Esta é uma peculiaridade do repositório de certificados do Windows.
 
-   Uma lista completa dos armazenamentos de sistema predefinidos pode ser obtida aqui: [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx). Seu sistema pode ter armazenamentos de certificados adicionais. Se quiser usar uma loja diferente de &quot;Pessoal&quot; (como **Meu**), você deve obter o nome canônico do repositório de certificados e fornecê-lo no [!DNL Insight.cfg] arquivo. (O nome da loja do sistema &quot;My&quot; é chamado inconsistentemente de &quot;My&quot; e &quot;MY&quot; pela documentação do Windows. O parâmetro não parece fazer distinção entre maiúsculas e minúsculas.)
+   Uma lista completa dos armazenamentos predefinidos do sistema pode ser obtida aqui: [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx). Seu sistema pode ter armazenamentos de certificados adicionais. Se quiser usar uma loja diferente de &quot;Pessoal&quot; (como **Meu**), você deve obter o nome canônico do repositório de certificados e fornecê-lo no [!DNL Insight.cfg] arquivo. (O nome da loja do sistema &quot;My&quot; é chamado inconsistentemente de &quot;My&quot; e &quot;MY&quot; pela documentação do Windows. O parâmetro não parece fazer distinção entre maiúsculas e minúsculas.)
 
 1. Depois de adicionar esses parâmetros e verificar se os valores correspondem à lista no Gerenciador de certificados do Windows, salve o [!DNL Insight.cfg] arquivo.
 
-Agora você pode iniciar a estação de trabalho (ou desconectar/reconectar ao servidor). A Análise de big data deve carregar seu certificado e sua chave do repositório de certificados e conectar-se normalmente.
+Agora você pode start a estação de trabalho (ou desconectar/reconectar ao servidor). A Data Workbench deve carregar o certificado e a chave do repositório de certificados e conectar-se normalmente.
 
 ## Saída de registro {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
 
