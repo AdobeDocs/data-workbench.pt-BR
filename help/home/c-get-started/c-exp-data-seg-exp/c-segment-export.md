@@ -1,14 +1,17 @@
 ---
 description: Crie cabeçalhos de exportação de coluna personalizados para seus arquivos de exportação de segmento para adicionar descrições facilmente compreendidas para segmentos exportados. Esse recurso de exportação também permite a saída como arquivos TSV e CSV.
-title: Exportação de segmentos com cabeçalhos personalizados
+title: Exportar segmentos com cabeçalhos personalizados
 uuid: 186e7868-13b2-42e1-b83f-5a752ee9b407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 5%
 
 ---
 
 
-# Exportação de segmentos com cabeçalhos personalizados{#segment-export-with-custom-headers}
+# Exportar segmentos com cabeçalhos personalizados{#segment-export-with-custom-headers}
 
 Crie cabeçalhos de exportação de coluna personalizados para seus arquivos de exportação de segmento para adicionar descrições facilmente compreendidas para segmentos exportados. Esse recurso de exportação também permite a saída como arquivos TSV e CSV.
 
@@ -39,7 +42,7 @@ Você pode criar cabeçalhos de coluna para seus arquivos de exportação.
 
    Uma janela de exportação será aberta.
 
-1. Clique com o botão direito do mouse no nome da exportação e clique em **[!UICONTROL Salvar como<export filename>]**.
+1. Clique com o botão direito do mouse no nome da exportação e clique em **Salvar como`<export filename>`**.
 
    ![](assets/segment_export_headers_7.png)
 
