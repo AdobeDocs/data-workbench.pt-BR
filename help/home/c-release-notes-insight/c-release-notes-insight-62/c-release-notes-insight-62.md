@@ -3,7 +3,7 @@ description: As notas de versão da Data Workbench 6.2 incluem novos recursos, r
 title: Notas de versão do Data Workbench 6.2
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 5%
@@ -52,7 +52,7 @@ Agora é possível marcar espaços de trabalho significativos para mover rapidam
 
 **Para excluir um marcador:**
 
-* No Painel Marcador, clique com o botão direito do mouse e selecione **[!UICONTROL Remover<bookmark title>]**para excluir um marcador selecionado ou selecione **[!UICONTROL Clear All Bookmarks]**para excluir todos os marcadores.
+* No Painel de marcadores, clique com o botão direito do mouse e selecione **Remover`<bookmark title>`** para excluir um marcador selecionado ou selecione **[!UICONTROL Clear All Bookmarks]** para excluir todos os marcadores.
 
 * Você também pode clicar com o botão direito do mouse na área de trabalho na visualização em miniatura dentro da área de trabalho e selecionar **[!UICONTROL Clear Bookmark]**.
 
