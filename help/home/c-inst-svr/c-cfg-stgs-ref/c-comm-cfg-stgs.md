@@ -4,9 +4,9 @@ solution: Insight
 title: Configurações de comunicações
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 5%
 
 ---
@@ -34,11 +34,11 @@ Preencha os parâmetros no seguinte arquivo:
  <tbody> 
   <tr> 
    <td colname="col1"> Arquivo de controle de acesso </td> 
-   <td colname="col2"> <p>Localização do arquivo <span class="filepath"> Controle de acesso.cfg </span> . O local padrão é a pasta <span class="filepath"> Controle de acesso </span> no diretório de instalação do <span class="keyword"> Insight Server </span> ou do <span class="wintitle"> Repeater </span> . </p> <p>Exemplo: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Localização do arquivo <span class="filepath"> Controle de acesso.cfg </span> . O local padrão é a pasta <span class="filepath"> Controle de acesso </span> no diretório de instalação do <span class="keyword"> Insight Server </span> ou do <span class="wintitle"> Repeater </span> . </p> <p>Exemplo: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Diretório de log de acesso </td> 
-   <td colname="col2"> <p>Pasta para a qual deseja mapear os logs de auditoria. </p> <p>Exemplo: <filepath></filepath> </p> <p> <p>Observação:  Você pode mapear logs de auditoria para outra unidade local (por exemplo: <span class="filepath"> string: P:\\Audit\\ </span>), mas não mapeie registros de auditoria para uma unidade de rede. </p> </p> </td> 
+   <td colname="col2"> <p>Pasta para a qual deseja mapear os logs de auditoria. </p> <p>Exemplo: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Observação:  Você pode mapear logs de auditoria para outra unidade local (por exemplo: <span class="filepath"> string: P:\\Audit\\ </span>), mas não mapeie registros de auditoria para uma unidade de rede. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Log de acesso detalhado </td> 
@@ -46,19 +46,19 @@ Preencha os parâmetros no seguinte arquivo:
   </tr> 
   <tr> 
    <td colname="col1"> Interface IP </td> 
-   <td colname="col2"> <p>Endereço IP a ser usado quando duas placas de rede estiverem disponíveis para acessar duas redes diferentes. </p> <p>Exemplo: I <filepath></filepath><i>&lt; <span class="filepath"> Endereço IP </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>Endereço IP a ser usado quando duas placas de rede estiverem disponíveis para acessar duas redes diferentes. </p> <p>Exemplo: <code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Porta </td> 
-   <td colname="col2"> <p>Porta não segura (HTTP) na qual o <span class="keyword"> Insight Server </span> ou o <span class="wintitle"> Repeater </span> escuta. A porta padrão é 80. Digitar um valor de 0 desativa conexões não seguras. </p> <p>Exemplo: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Porta não segura (HTTP) na qual o <span class="keyword"> Insight Server </span> ou o <span class="wintitle"> Repeater </span> escuta. A porta padrão é 80. Digitar um valor de 0 desativa conexões não seguras. </p> <p>Exemplo: <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ciphers SSL </td> 
-   <td colname="col2"> Alguns ambientes exigem mais segurança de comunicação do que outros. Se quiser usar um conjunto de criptografia SSL específico, você pode especificá-lo com este parâmetro. <p>Exemplo: <filepath></filepath> </p> </td> 
+   <td colname="col2"> Alguns ambientes exigem mais segurança de comunicação do que outros. Se quiser usar um conjunto de criptografia SSL específico, você pode especificá-lo com este parâmetro. <p>Exemplo: <code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Porta SSL </td> 
-   <td colname="col2"> <p>Porta segura (via SSL) na qual o <span class="keyword"> Insight Server </span> ou o <span class="wintitle"> Repeater </span> escuta. A porta padrão é 443. Digitar um valor de 0 desativa conexões seguras. </p> <p>Exemplo: <span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Porta segura (via SSL) na qual o <span class="keyword"> Insight Server </span> ou o <span class="wintitle"> Repeater </span> escuta. A porta padrão é 443. Digitar um valor de 0 desativa conexões seguras. </p> <p>Exemplo: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
