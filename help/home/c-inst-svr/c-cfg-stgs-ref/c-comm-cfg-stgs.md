@@ -4,7 +4,10 @@ solution: Insight
 title: Configurações de comunicações
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ Preencha os parâmetros no seguinte arquivo:
 
 >[!NOTE]
 >
->Antes de modificar quaisquer parâmetros não listados nesta tabela, entre em contato com a Adobe.
+>Antes de modificar quaisquer parâmetros não listados nesta tabela, entre em contato com o Adobe.
 
 <table id="table_C87F1150E53548F484A8C0CFE91F1079"> 
  <thead> 
@@ -31,7 +34,7 @@ Preencha os parâmetros no seguinte arquivo:
  <tbody> 
   <tr> 
    <td colname="col1"> Arquivo de controle de acesso </td> 
-   <td colname="col2"> <p>Localização do arquivo <span class="filepath"> Access Control.cfg </span> . O local padrão é a pasta <span class="filepath"> Controle de acesso </span> no diretório de instalação do <span class="keyword"> Insight Server </span> ou do <span class="wintitle"> Repeater </span> . </p> <p>Exemplo: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Localização do arquivo <span class="filepath"> Controle de acesso.cfg </span> . O local padrão é a pasta <span class="filepath"> Controle de acesso </span> no diretório de instalação do <span class="keyword"> Insight Server </span> ou do <span class="wintitle"> Repeater </span> . </p> <p>Exemplo: <filepath></filepath> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Diretório de log de acesso </td> 
@@ -59,7 +62,7 @@ Preencha os parâmetros no seguinte arquivo:
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
-   <td colname="col2"> Cabeçalho das configurações do servidor de registro. </td> 
+   <td colname="col2"> Cabeçalho para Configurações do servidor de registro. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Nome do cliente </td> 
@@ -82,8 +85,7 @@ Preencha os parâmetros no seguinte arquivo:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = string: /ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>Este parâmetro se aplica somente ao <span class="keyword"> Insight Server </span>. </p> <p>Permite que você visualize <span class="keyword"> o status do Relatório </span> na interface de Status Detalhado do <span class="keyword"> Insight Server </span>. </p> </td> 
+   <td colname="col2"> <p>Este parâmetro se aplica somente ao <span class="keyword"> Insight Server </span>. </p> <p>Permite que você visualização o <span class="keyword"> status do Relatório na interface de Status Detalhado do </span> Insight Server <span class="keyword"> </span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
