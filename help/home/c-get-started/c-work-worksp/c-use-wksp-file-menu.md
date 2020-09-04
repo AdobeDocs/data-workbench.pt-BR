@@ -1,16 +1,19 @@
 ---
 description: Informações sobre as opções de menu disponíveis no menu Arquivo do Workspace.
 solution: Analytics
-title: Menu Arquivo da Workspace
+title: Menu de arquivo do espaço de trabalho
 topic: Data workbench
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 1%
 
 ---
 
 
-# Menu Arquivo da Workspace{#workspace-file-menu}
+# Menu de arquivo do espaço de trabalho{#workspace-file-menu}
 
 Informações sobre as opções de menu disponíveis no menu Arquivo do Workspace.
 
@@ -40,7 +43,7 @@ Redimensiona as visualizações para a resolução de exibição que você está
 
 Define um tamanho de página de trabalho para um espaço de trabalho. Você pode selecionar Tela cheia, Padrão ou qualquer um dos tamanhos específicos para telas de computador, páginas impressas e relatórios. Tela cheia preenche sua tela específica e o Standard é uma configuração que pode ser configurada para se ajustar ao tamanho de tela padrão de sua organização. A configuração Padrão preenche a tela ao usar resolução 1024 x 768.
 
-Os espaços de trabalho que são copiados, salvos como [!DNL .png] arquivos ou impressos também usam esse tamanho de página para saída. Tamanhos de página maiores que a visualização da Análise de big data usam barras de rolagem, enquanto tamanhos menores são centralizados na tela e exibem uma borda cinza-clara ao redor do espaço de trabalho.
+Os espaços de trabalho que são copiados, salvos como [!DNL .png] arquivos ou impressos também usam esse tamanho de página para saída. Tamanhos de página maiores que a visualização de Data Workbench usam barras de rolagem, enquanto tamanhos menores são centralizados na tela e exibem uma borda cinza-clara ao redor do espaço de trabalho.
 
 **Descrição**
 
@@ -48,14 +51,14 @@ Permite criar ou editar uma descrição textual do espaço de trabalho. Este tex
 
 **Computação em segundo plano**
 
-(Aparece somente ao trabalhar online.) Mantém as consultas no espaço de trabalho selecionado em execução em segundo plano enquanto você continua trabalhando. Quando selecionada, a miniatura exibe as seguintes informações, que indicam o progresso das consultas:
+(Aparece somente ao trabalhar online.) Mantém os query no espaço de trabalho selecionado em execução em segundo plano enquanto você continua trabalhando. Quando selecionada, a miniatura exibe as seguintes informações, que indicam o progresso dos query:
 
-* Trabalhando: *n%* - indica que a consulta está sendo processada e a porcentagem do processamento concluído.
-* *n* MB Query Load - tamanho total do resultado da consulta. A Carga de consulta é proporcional à carga total de memória do servidor da Análise de big data, mas não se correlaciona diretamente. Como diretriz, uma carga de consulta de 10 MB ou mais pode sobrecarregar o sistema. A carga de consulta listada não leva em conta o agrupamento.
+* Trabalhando: *n%* - indica que o query está processando e a porcentagem do processamento que está concluído.
+* *n* MB Query Load - tamanho total do resultado do query. A carga do query é proporcional à carga total de memória do servidor da Data Workbench, mas não se correlaciona diretamente. Como diretriz, uma carga de query de 10 MB ou mais pode sobrecarregar o sistema. A carga do query listada não leva em conta o agrupamento.
 
 >[!NOTE]
 >
->Se a opção Calcular em segundo plano permanecer selecionada, as consultas no espaço de trabalho selecionado se tornarão consultas permanentes, continuando a ser atualizadas e usando a carga de memória. Certifique-se de limpar a seleção de Computação em segundo plano quando terminar de trabalhar no espaço de trabalho.
+>Se a opção Computar em segundo plano continuar selecionada, os query na área de trabalho selecionada se tornarão query em pé, continuando a ser atualizados e usando a carga de memória. Certifique-se de limpar a seleção de Computação em segundo plano quando terminar de trabalhar no espaço de trabalho.
 
 **Close**
 
@@ -63,11 +66,11 @@ Fecha a área de trabalho. Clique em **[!UICONTROL Close]** > **[!UICONTROL Save
 
 Você também pode salvar suas alterações, fechar a área de trabalho e retornar à [!DNL Worktop] usando qualquer um dos seguintes métodos:
 
-* Clique no logotipo da Análise de big data no canto superior esquerdo da área de trabalho.
+* Clique no logotipo da Data Workbench no canto superior esquerdo da área de trabalho.
 * Se o mouse tiver botões de navegação, clique no botão Voltar do mouse.
 
-Você também pode anular suas alterações fechando o espaço de trabalho sem salvar pressionando **[!UICONTROL `<Ctrl>`+<Backspace>]**.
+Você também pode anular suas alterações fechando o espaço de trabalho sem salvar pressionando **Ctrl+Backspace**.
 
 **Exportar para o Excel a partir do modelo**
 
-Se o Microsoft Excel estiver instalado no computador Análise de big data, inicia automaticamente o Microsoft Excel e exporta os dados de determinadas visualizações, legendas e anotações em texto para o arquivo Excel de modelo ( [!DNL .xls]ou [!DNL .xlsx]) selecionado. Consulte [Exportar para um Arquivo](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)do Excel de Modelo.
+Se o Microsoft Excel estiver instalado na máquina de Data Workbench, o start automaticamente o Microsoft Excel e exporta os dados de determinadas visualizações, legendas e anotações de texto para o arquivo Excel de modelo ( [!DNL .xls]ou [!DNL .xlsx]) selecionado. Consulte [Exportar para um Arquivo](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)do Excel de Modelo.
