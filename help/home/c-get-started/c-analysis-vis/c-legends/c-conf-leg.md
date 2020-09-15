@@ -5,7 +5,10 @@ title: Legendas de confiança
 topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +35,7 @@ A seguinte legenda de confiança exibe detalhes de confiança sobre a métrica d
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Métrica ou Fórmula </p> </td> 
-   <td colname="col2"> <p>O nome da métrica ou a expressão da métrica para a qual você deseja exibir informações de confiança. Quaisquer seleções feitas em seu espaço de trabalho são refletidas na legenda. Este exemplo exibe detalhes sobre a métrica de Conversão. </p> <p>Para obter informações sobre regras de sintaxe para inserir uma expressão, consulte <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> Sintaxe</a>de linguagem de consulta. </p> </td> 
+   <td colname="col2"> <p>O nome da métrica ou a expressão da métrica para a qual você deseja visualização informações de confiança. Quaisquer seleções feitas em seu espaço de trabalho são refletidas na legenda. Este exemplo exibe detalhes sobre a métrica de Conversão. </p> <p>Para obter informações sobre regras de sintaxe para inserir uma expressão, consulte Sintaxe <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> de idioma do</a>Query. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Valor medido </p> </td> 
@@ -40,7 +43,7 @@ A seguinte legenda de confiança exibe detalhes de confiança sobre a métrica d
   </tr> 
   <tr> 
    <td colname="col1"> <p>Desvio padrão </p> </td> 
-   <td colname="col2"> <p>O desvio padrão do Valor medido. Neste exemplo, o desvio padrão da taxa de conversão para a seleção atual é de 0,1%. </p> </td> 
+   <td colname="col2"> <p>O desvio padrão do Valor medido. Neste exemplo, o desvio padrão da taxa de conversão para a seleção atual é 0,1%. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>O valor "true" </p> </td> 
@@ -51,16 +54,17 @@ A seguinte legenda de confiança exibe detalhes de confiança sobre a métrica d
 
 >[!NOTE]
 >
->Ao analisar os resultados de qualquer cálculo, você deve levar em conta as seguintes advertências: >
+>Ao analisar os resultados de qualquer cálculo, você deve levar em conta as seguintes advertências:
 >* Os números são estimativas. Se você repetisse os mesmos cálculos com um conjunto de dados diferente, obteria um resultado diferente. Isso é conhecido como variação aleatória.
 >* Extrapolações para probabilidades maiores dependem de uma suposição de normalidade que não está correta para todas as métricas. Portanto, os valores para probabilidade de 99% são menos confiáveis que os valores para probabilidade de 90%.
+
 >
 >
 Se precisar de números mais exatos, consulte um especialista em estatísticas.
 
 ## Alterar métricas ou fórmulas {#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* Na legenda de confiança, clique no **[!UICONTROL Metric or Formula]** campo e digite a métrica ou a expressão desejada. Para obter as regras de sintaxe de expressão, consulte Sintaxe [de linguagem de](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)consulta.
+* Na legenda de confiança, clique no **[!UICONTROL Metric or Formula]** campo e digite a métrica ou expressão desejada. Para obter as regras de sintaxe de expressão, consulte Sintaxe [de idioma de](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)Query.
 
 ## Exportar para o Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
