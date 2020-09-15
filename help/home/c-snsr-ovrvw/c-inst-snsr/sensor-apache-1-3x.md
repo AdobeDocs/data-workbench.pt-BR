@@ -1,22 +1,25 @@
 ---
 description: Instruções detalhadas para instalar e configurar o Sensor para um Apache Server 1.3.x no RedHat Linux 7.x ou posterior, SUSE Linux 9.x ou posterior, Sun Solaris SPARC 2.6 ou posterior, Sun Solaris x86 9 ou posterior, FreeBSD 4 ou posterior ou Mac OS X PowerPC.
-title: Apache Server 1.3.x em Linux, Sun Solaris, FreeBSD ou Mac OS X
+title: Apache Server 1.3.x no Linux, Sun Solaris, FreeBSD ou Mac OS X
 uuid: bd46dd0f-fe36-4f8b-a87c-8ca7b64da609
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '1345'
+ht-degree: 2%
 
 ---
 
 
-# Apache Server 1.3.x em Linux, Sun Solaris, FreeBSD ou Mac OS X{#apache-server-x-on-linux-sun-solaris-freebsd-or-mac-os-x}
+# Apache Server 1.3.x no Linux, Sun Solaris, FreeBSD ou Mac OS X{#apache-server-x-on-linux-sun-solaris-freebsd-or-mac-os-x}
 
 Instruções detalhadas para instalar e configurar o Sensor para um Apache Server 1.3.x no RedHat Linux 7.x ou posterior, SUSE Linux 9.x ou posterior, Sun Solaris SPARC 2.6 ou posterior, Sun Solaris x86 9 ou posterior, FreeBSD 4 ou posterior ou Mac OS X PowerPC.
 
-Os arquivos de programa do Sensor são empacotados em um arquivo de instalação que você obtém do site de download da Adobe. Se você ainda não tiver o arquivo de instalação do Sensor para seu servidor Web específico, baixe-o (ou obtenha-o do seu representante da Adobe) antes de começar os procedimentos a seguir.
+Os arquivos de programa do Sensor são empacotados em um arquivo de instalação que você obtém do site de download do Adobe. Se você ainda não tiver o arquivo de instalação do Sensor para seu servidor Web específico, baixe-o (ou obtenha-o do representante do Adobe) antes de começar os procedimentos a seguir.
 
 Para instalar e configurar o Sensor, execute as seguintes etapas de alto nível:
 
-## Instale os arquivos de programa {#section-aae323e252394212bf4096d65fdd280c}
+## Instale os arquivos de Programa {#section-aae323e252394212bf4096d65fdd280c}
 
 Instruções para extrair e instalar os arquivos de programa do Sensor na máquina do servidor.
 
@@ -43,7 +46,7 @@ Instruções para extrair e instalar os arquivos de programa do Sensor na máqui
   <tr> 
    <th colname="col1" class="entry"> Arquivo </th> 
    <th colname="col2" class="entry"> Descrição </th> 
-   <th colname="col3" class="entry"> Diretório de destino </th> 
+   <th colname="col3" class="entry"> Diretório do público alvo </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -54,7 +57,7 @@ Instruções para extrair e instalar os arquivos de programa do Sensor na máqui
   </tr> 
   <tr> 
    <td colname="col1"> <p>txlogd </p> </td> 
-   <td colname="col2"> O programa transmissor </td> 
+   <td colname="col2"> O programa do transmissor </td> 
    <td colname="col3"> <p>/usr/local/bin </p> <p>--OU-- </p> <p>/usr/local/sbin </p> </td> 
   </tr> 
   <tr> 
@@ -74,7 +77,7 @@ Instruções para extrair e instalar os arquivos de programa do Sensor na máqui
 >
 >O pacote de instalação contém um arquivo de planilha chamado TestExperiment.xls. Esta planilha é uma ferramenta que os arquitetos usam para configurar um experimento controlado. O próprio sensor não usa esse arquivo, portanto, não é necessário instalar o arquivo na máquina em que o Sensor está sendo executado (embora você possa optar por fazê-lo). Em vez disso, copie o arquivo para um local onde seus arquitetos possam acessá-lo ou simplesmente extraia o arquivo do pacote de instalação, conforme necessário. Para obter mais informações sobre a experimentação controlada, consulte o Guia de Experimentos Controlados Insight.
 
-**Permissões nos arquivos de programas**
+**Permissões nos arquivos do Programa**
 
 Permissões incorretas nos arquivos de programa causam a maioria dos problemas encontrados ao instalar o Sensor.
 
@@ -89,7 +92,7 @@ Por padrão, os arquivos de programa no arquivo tar têm as seguintes permissõe
 | txlogd.conf | rw- rw- r— | chmod 664 |
 | trust_ca_cert.pem | rw- rw- r— | chmod 664 |
 
-## Editar o arquivo de configuração do sensor {#section-3f22a1c91d7d43b6b4c30f1b7448b17f}
+## Edit the Sensor configuration file {#section-3f22a1c91d7d43b6b4c30f1b7448b17f}
 
 O [!DNL txlogd.conf] arquivo contém os parâmetros de configuração do Sensor.
 
@@ -105,18 +108,18 @@ Para editar o arquivo de configuração do sensor
 1. Abra o arquivo /etc/txlogd.conf em um editor de texto e defina os parâmetros necessários, bem como quaisquer parâmetros opcionais desejados.
 1. Salve e feche o arquivo.
 
-## Inicie o transmissor e crie a fila de discos {#section-a453d912ec3d47aa8e40ccacf527119d}
+## Start o transmissor e crie a fila de discos {#section-a453d912ec3d47aa8e40ccacf527119d}
 
 Instruções para criar a fila de discos depois de configurar o arquivo txlogd.conf.
 
-1. Se o diretório no qual a fila de discos reside ainda não existir, crie-o. Certifique-se de que o diretório fornece ao módulo coletor e ao programa transmissor acesso de leitura/gravação ao arquivo.
-1. No computador em que o Sensor está instalado, execute o seguinte comando para iniciar o transmissor:
+1. Se o diretório no qual a fila de discos reside ainda não existir, crie-o. Verifique se o diretório fornece ao módulo coletor e ao programa transmissor acesso de leitura/gravação ao arquivo.
+1. No computador em que o Sensor está instalado, execute o seguinte comando para start do transmissor:
 
    ```
    /usr/local/bin/txlogd -ic -f /etc/txlogd.conf
    ```
 
-   * A opção &quot;i&quot; neste comando inicia o transmissor no modo interativo. Esse modo exibe mensagens do transmissor na tela e também permite que você interaja com o transmissor usando comandos do teclado.
+   * A opção &quot;i&quot; nesse comando start o transmissor no modo interativo. Esse modo exibe mensagens do transmissor na tela e também permite que você interaja com o transmissor usando comandos do teclado.
    * A opção &quot;c&quot; direciona o transmissor para criar a fila de discos.
    * A opção &quot;f&quot; especifica o local do arquivo de configuração.
 
@@ -148,15 +151,15 @@ Se o Sensor estiver capturando dados para vários servidores da Web no computado
    >
    >Essas linhas fazem distinção entre maiúsculas e minúsculas. Digite-os exatamente como aparecem acima.
 
-1. Reinicie o servidor da Web. O coletor é carregado com o servidor da Web e começará a coletar dados de eventos e gravá-los na fila de discos.
+1. Reinicie o servidor da Web. O coletor é carregado com o servidor da Web e começará a coletar dados do evento e gravá-los na fila do disco.
 
 ## Teste o sensor {#section-83d9f60b39a6474f9c76bee3e19b2575}
 
-Inicie o transmissor e verifique se ele consegue se conectar com êxito ao Insight Server e transmitir dados do evento para ele.
+Start o transmissor e verifique se ele consegue se conectar com êxito ao Insight Server e transmitir dados do evento para ele.
 
 >[!NOTE]
 >
->Para verificar se o transmissor pode enviar dados de evento com êxito ao Insight Server, verifique se o Insight Server de destino está instalado e em execução antes de iniciar o seguinte teste.
+>Para verificar se o transmissor pode enviar dados do evento com êxito ao Insight Server, verifique se o público alvo Insight Server está instalado e em execução antes de começar o teste a seguir.
 
 1. Se o transmissor ainda não estiver em execução, reinicie-o usando o seguinte comando:
 
@@ -165,13 +168,13 @@ Inicie o transmissor e verifique se ele consegue se conectar com êxito ao Insig
    ```
 
 1. Abra um navegador (em qualquer máquina) e solicite uma página do servidor da Web no qual o Sensor está sendo executado (certifique-se de selecionar uma página que o Sensor esteja monitorando).
-1. Depois de emitir a solicitação, verifique se há mensagens no console do transmissor indicando que ele está enviando dados do evento para o Insight Server de destino.
+1. Depois de emitir a solicitação, verifique se há mensagens no console do transmissor indicando que ele está enviando dados do evento para o público alvo Insight Server.
 1. Se o sensor não estiver transmitindo os dados com êxito, verifique se:
 
-   * O Servidor Insight de destino está em execução.
+   * O público alvo Insight Server está em execução.
    * Os parâmetros [!DNL ServerAddress] e [!DNL ServerPort] estão definidos corretamente em [!DNL txtlogd.conf].
 
-   * Se você especificou [!DNL ServerAddress] usando um nome de servidor, tente usar seu endereço IP numérico. O valor do [!DNL CertName] parâmetro corresponde exatamente ao nome comum que aparece no certificado digital do Insight Server de destino.
+   * Se você especificou [!DNL ServerAddress] usando um nome de servidor, tente usar seu endereço IP numérico. O valor do [!DNL CertName] parâmetro corresponde exatamente ao nome comum que aparece no certificado digital do público alvo Insight Server.
 
 ## Adicione o transmissor ao script de inicialização do sistema {#section-4e1ffa6e043941ab91411d91d596477a}
 
@@ -183,16 +186,16 @@ Adicione o seguinte comando (que inicia o transmissor) ao script de inicializaç
 /usr/local/bin/txlogd -f /etc/txlogd.conf
 ```
 
-Esse comando inicia o transmissor como um daemon. As mensagens de erro e de operação geradas pelo transmissor são gravadas no syslog.
+Esse comando start o transmissor como um daemon. As mensagens de erro e de operação geradas pelo transmissor são gravadas no syslog.
 
 >[!NOTE]
 >
->Alguns usuários do Solaris podem encontrar um erro &quot;não é possível adquirir mutex&quot;. Para que o Sensor funcione corretamente nesses sistemas, a seguinte linha precisa ser adicionada ou editada no arquivo /etc/system: >
+>Alguns usuários do Solaris podem encontrar um erro &quot;não é possível adquirir mutex&quot;. Para que o Sensor funcione corretamente nesses sistemas, a seguinte linha precisa ser adicionada ou editada no arquivo /etc/system:
 >
-```>
+>
+```
 >semsys:seminfo_semmnu=1024
->```>
->The default Solaris setting is 60. Based on tests conducted with Sensor, which uses three semaphores for each instance, Adobe recommends that you use 1024 as your setting. This number is high enough for Sensor to function along with any other applications on the server that may require semaphores, but does not affect performance. To support this recommendation, please note that Adrian Cockcroft stated the following in his book Sun Performance and Tuning (Prentice Hall, October 1994): “Databases tend to use lots of shared memory and semaphore settings. These do not affect performance; as long as they are big enough, the programs will run.”
-
-
+>```
+>
+>A configuração padrão do Solaris é 60. Com base nos testes realizados com o Sensor, que utiliza três semáforos para cada instância, o Adobe recomenda que você use 1024 como sua configuração. Esse número é alto o suficiente para que o Sensor funcione junto com quaisquer outros aplicativos no servidor que possam exigir pontos-e-vírgulas, mas não afeta o desempenho. Para apoiar esta recomendação, observe que Adrian Cockcroft declarou o seguinte em seu livro Sun Performance and Tuning (Prentice Hall, outubro de 1994): &quot;Os bancos de dados tendem a usar muita memória compartilhada e configurações de semáforo. Estes não afetam o desempenho; contanto que sejam grandes o suficiente, os programas correrão.&quot;
 
