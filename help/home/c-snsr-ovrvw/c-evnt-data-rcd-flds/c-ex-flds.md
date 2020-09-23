@@ -1,24 +1,27 @@
 ---
-description: O sensor, quando usado em um servidor, pode coletar campos de dados de eventos de qualquer solicitação HTTP válida ou cabeçalho de resposta ou variável disponível para ele por meio da API do servidor.
-solution: Insight
+description: O sensor, quando usado em um servidor, pode coletar campos de dados do evento de qualquer solicitação HTTP válida ou cabeçalho de resposta disponível por meio da API do servidor.
+solution: Analytics
 title: Campos extensíveis
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 1%
 
 ---
 
 
 # Campos extensíveis{#extensible-fields}
 
-O sensor, quando usado em um servidor, pode coletar campos de dados de eventos de qualquer solicitação HTTP válida ou cabeçalho de resposta ou variável disponível para ele por meio da API do servidor.
+O sensor, quando usado em um servidor, pode coletar campos de dados do evento de qualquer solicitação HTTP válida ou cabeçalho de resposta disponível por meio da API do servidor.
 
 Para coletar esses campos de dados, você deve especificar os campos de cabeçalho ou variáveis desejados no arquivo de [!DNL txlogd.conf] configuração para [!DNL Sensor].
 
 * [Cabeçalhos de solicitação](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)
 * [Variáveis de servidor](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-74b258bc3e8a4a93a0ee9fb01c067e4b)
 
-## Request Headers {#section-22766692b45546d8bfc93dbe3bc9368f}
+## Cabeçalhos de solicitação {#section-22766692b45546d8bfc93dbe3bc9368f}
 
 A seguir está a sintaxe para especificar um campo de cabeçalho de solicitação a ser coletado (por exemplo, Host, Accept-Encoding, Keep-Alive e assim por diante) em [!DNL txlogd.conf]:
 
@@ -63,4 +66,4 @@ A tabela a seguir inclui descrições dos componentes de uma entrada &quot;Speci
  </tbody> 
 </table>
 
-Para obter ajuda sobre como configurar [!DNL Sensor] a coleta de campos extensíveis de registro de dados de eventos, entre em contato com os Serviços de consultoria da Adobe.
+Para obter ajuda sobre como configurar [!DNL Sensor] a coleta de campos extensíveis de registro de dados de evento, entre em contato com os Serviços de consultoria de Adobe.
