@@ -1,17 +1,20 @@
 ---
-description: Lista de arquivos instalados com o Insight Server e os arquivos presentes depois que ele foi registrado e executado pela primeira vez.
-solution: Insight
-title: Estrutura do Diretório do Insight Server
+description: Lista de arquivos instalados com o Insight Server e os arquivos presentes depois de registrados e executados pela primeira vez.
+solution: Analytics
+title: Estrutura do diretório do servidor Insight
 uuid: 8339b275-f118-4d5d-937e-4df9f8a56b50
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 5%
 
 ---
 
 
-# Estrutura do Diretório do Insight Server{#insight-server-directory-structure}
+# Estrutura do diretório do servidor Insight{#insight-server-directory-structure}
 
-Lista de arquivos instalados com o Insight Server e os arquivos presentes depois que ele foi registrado e executado pela primeira vez.
+Lista de arquivos instalados com o Insight Server e os arquivos presentes depois de registrados e executados pela primeira vez.
 
 ## Arquivos incluídos no pacote de instalação {#section-daec17dab3e34c3c9e1ef65842cb91f1}
 
@@ -55,7 +58,7 @@ Os seguintes diretórios estão incluídos no pacote de [!DNL Insight Server] in
   </tr> 
   <tr> 
    <td colname="col1"> Events </td> 
-   <td colname="col2"> Registros diários de eventos contendo mensagens detalhadas de status de eventos, incluindo mensagens de erro. Os eventos capturados e registrados pelo <span class="keyword"> Insight Server também </span> são exibidos no Visualizador de eventos do Windows. </td> 
+   <td colname="col2"> Registros diários de eventos contendo mensagens detalhadas de status de evento, incluindo mensagens de erro. Eventos capturados e registrados pelo <span class="keyword"> Insight Server também </span> são exibidos no Visualizador de Eventos do Windows. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Logs </td> 
@@ -67,7 +70,7 @@ Os seguintes diretórios estão incluídos no pacote de [!DNL Insight Server] in
   </tr> 
   <tr> 
    <td colname="col1"> Perfis </td> 
-   <td colname="col2"> <p>Arquivos relacionados a cada perfil (configuração, espaço de trabalho e arquivos de visualização). Os perfis são preenchidos pelos dados de um conjunto de dados. Os conjuntos de dados incluem dados de eventos ("Dados de registro"); esses dados podem ser capturados por <span class="wintitle"> </span>Sensores instalados, transmitidos por beacons da Web ou por tags de página, ou por entradas de data warehouses. <span class="keyword"> Os </span> usuários do Insight com acesso a um determinado perfil podem usar o conjunto de dados processados para esse perfil, bem como os Espaços de trabalho e as visualizações definidos dentro desse perfil. </p> <p>Os espaços de trabalho são áreas de trabalho para administração ou análise do sistema. Uma Workspace pode conter várias interfaces que mostram detalhes diferentes sobre o desempenho do sistema. </p> </td> 
+   <td colname="col2"> <p>Arquivos relacionados a cada perfil (configuração, espaço de trabalho e arquivos de visualização). Perfis são preenchidos por dados de um conjunto de dados. Os conjuntos de dados incluem dados do evento ("Dados de registro"); esses dados podem ser capturados por <span class="wintitle"> </span>Sensores instalados, transmitidos por beacons da Web ou por tags de página, ou por entradas de data warehouses. <span class="keyword"> Os </span> usuários do Insight com acesso a um determinado perfil podem usar o conjunto de dados processados para esse perfil, bem como os Espaços de trabalho e as visualizações definidos dentro desse perfil. </p> <p>Os espaços de trabalho são áreas de trabalho para administração ou análise do sistema. Uma Workspace pode conter várias interfaces que mostram detalhes diferentes sobre o desempenho do sistema. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Software </td> 
@@ -98,11 +101,11 @@ Os diretórios listados abaixo são criados depois de [!DNL Insight Server] sere
   </tr> 
   <tr> 
    <td colname="col1"> Rastreamento </td> 
-   <td colname="col2"> Dados de log e evento sobre o <span class="keyword"> Insight Server </span>. Útil para solução de problemas. </td> 
+   <td colname="col2"> Dados de registro e evento sobre o <span class="keyword"> Insight Server </span>. Útil para solução de problemas. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Usuários </td> 
-   <td colname="col2"> Usuários nomeados ( <span class="keyword"> Insight </span>) com acesso aos perfis no servidor. Um diretório para cada usuário autorizado nomeado é criado no diretório Usuários\ quando o usuário acessa pela primeira vez o <span class="keyword"> Insight Server </span> via <span class="keyword"> Insight </span>. O diretório de cada usuário nomeado contém diretórios que correspondem a todos os perfis que o usuário acessou no <span class="keyword"> Insight Server </span> e seus arquivos de endereço locais. </td> 
+   <td colname="col2"> Usuários nomeados ( <span class="keyword"> Insight </span>) com acesso aos perfis no servidor. Um diretório para cada usuário autorizado nomeado é criado no diretório Usuários\ quando o usuário acessa pela primeira vez o <span class="keyword"> Insight Server </span> via <span class="keyword"> Insight </span>. O diretório de cada usuário nomeado contém diretórios correspondentes a todos os perfis que o usuário acessou no <span class="keyword"> Insight Server </span> e seus arquivos de endereço locais. </td> 
   </tr> 
  </tbody> 
 </table>
