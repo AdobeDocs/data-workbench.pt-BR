@@ -1,24 +1,27 @@
 ---
-description: Depois de executar o experimento até que o número mínimo de visitantes necessários tenham participado do experimento, você pode ter a certeza estatística suficiente para avaliar os resultados do experimento.
-solution: Insight,Analytics
-title: Avaliação do experimento
+description: Depois de executar o experimento até que o número mínimo de visitantes necessários tenha participado do experimento, você pode ter certeza estatística suficiente para avaliar os resultados do experimento.
+solution: Analytics,Analytics
+title: Avaliar o experimento
 topic: Data workbench
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 1%
 
 ---
 
 
-# Avaliação do experimento{#evaluating-the-experiment}
+# Avaliar o experimento{#evaluating-the-experiment}
 
-Depois de executar o experimento até que o número mínimo de visitantes necessários tenham participado do experimento, você pode ter a certeza estatística suficiente para avaliar os resultados do experimento.
+Depois de executar o experimento até que o número mínimo de visitantes necessários tenha participado do experimento, você pode ter certeza estatística suficiente para avaliar os resultados do experimento.
 
-Usando [!DNL Insight], compare as métricas ou os principais indicadores de desempenho definidos como parte da hipótese para determinar se o experimento foi um sucesso (ou seja, a hipótese foi validada com a confiança especificada).
+Usando [!DNL Insight], compare as métricas ou os principais indicadores de desempenho definidos como parte da hipótese para determinar se o experimento foi bem-sucedido (ou seja, a hipótese foi validada com a confiança especificada).
 
-No nosso experimento de exemplo, nossa hipótese está correta se a Conversão de visitante aumentar em pelo menos 1,5%, que é o critério de sucesso definido anteriormente.
+Em nosso experimento de exemplo, nossa hipótese está comprovada corretamente se a Conversão de Visitantes aumentar em pelo menos 1,5%, que é o critério de sucesso que definimos anteriormente.
 
-O exemplo de espaço de trabalho a seguir mostra que a Conversão para o grupo de teste index2 era, na verdade, 1,8% maior do que para o grupo de controle, provando nossa hipótese.
+O exemplo de espaço de trabalho a seguir mostra que a Conversão para o grupo de teste index2 era na verdade 1,8% maior do que para o grupo de controle, o que prova nossa hipótese.
 
 ![](assets/experimentresults.png)
 
@@ -36,7 +39,7 @@ Você pode usar seus relatórios, como mostrado no exemplo a seguir, para fazer 
 
 ## Tomar medidas com base nos resultados {#section-1623e26ced524fd9beab48ac1f9165d9}
 
-Depois que os resultados estiverem claros, você estará pronto para agir sobre esses resultados fazendo alterações no nível de produção nas páginas testadas, aplicando essas mesmas alterações em outras áreas do seu site, e certificando-se de documentar completamente o teste, seus resultados e as alterações que você fez.
+Depois que os resultados estiverem claros, você estará pronto para agir sobre esses resultados fazendo alterações no nível de produção nas páginas testadas, aplicando essas mesmas alterações em outras áreas do seu site, e certificando-se de documento completo do teste, seus resultados e as alterações que você fez.
 
 ## Monitoramento de suas ações {#section-1954311950c34637800cbd7c0711983f}
 
