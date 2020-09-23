@@ -1,15 +1,18 @@
 ---
 description: Por padrão, o Insight Server grava seu conjunto de dados (temp.db) na mesma unidade dos arquivos de programa do Insight Server.
-solution: Insight
-title: Configuração da localização do conjunto de dados (temp.db)
+solution: Analytics
+title: Configurar a localização do conjunto de dados (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 5%
 
 ---
 
 
-# Configuração da localização do conjunto de dados (temp.db){#configuring-the-location-of-the-dataset-temp-db}
+# Configurar a localização do conjunto de dados (temp.db){#configuring-the-location-of-the-dataset-temp-db}
 
 Por padrão, o Insight Server grava seu conjunto de dados (temp.db) na mesma unidade dos arquivos de programa do Insight Server.
 
@@ -47,5 +50,5 @@ Se você quiser manter [!DNL Insight Server] o conjunto de dados em uma unidade 
 
    >[!NOTE]
    >
-   >Observe o uso de barras invertidas duplas nos nomes de arquivos acima. Nos arquivos [!DNL Insight Server] de configuração, o caractere de barra invertida é um caractere de escape. É usado para expressar sequências de controle especiais (por exemplo, \t para um caractere de tabulação) no texto. Para representar um caractere de barra invertida real, você deve digitar a barra invertida duas vezes (por exemplo, \\) para substituir a função de escape. Isso se aplica somente ao editar arquivos de configuração em um editor de texto, como o Bloco de notas.
+   >Observe o uso das barras invertidas do duplo nos nomes de arquivos acima. Nos arquivos [!DNL Insight Server] de configuração, o caractere de barra invertida é um caractere de escape. É usado para expressar sequências de controle especiais (por exemplo, \t para um caractere de tabulação) no texto. Para representar um caractere de barra invertida real, você deve digitar a barra invertida duas vezes (por exemplo, \\) para substituir a função de escape. Isso se aplica somente ao editar arquivos de configuração em um editor de texto, como o Bloco de notas.
 
