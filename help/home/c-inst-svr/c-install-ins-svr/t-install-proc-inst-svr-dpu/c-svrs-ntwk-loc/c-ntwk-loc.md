@@ -1,10 +1,13 @@
 ---
 description: Conceitualmente, o arquivo de endereço tem a mesma finalidade que o arquivo ETC&bsol;HOSTS em uma máquina em rede.
-solution: Insight
+solution: Analytics
 title: Locais de rede
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 2%
 
 ---
 
