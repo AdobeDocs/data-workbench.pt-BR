@@ -1,10 +1,13 @@
 ---
 description: Informações sobre a configuração geral do Sensor com uma instância de servidor da Web em execução em um servidor da Web.
-solution: Insight
+solution: Analytics
 title: Trabalhar com várias instâncias de um servidor da Web
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 5%
 
 ---
 
@@ -31,5 +34,5 @@ Em qualquer caso, os dados ainda têm todas as informações de nome do host par
 
 >[!NOTE]
 >
->Normalmente, este tipo de segmentação é utilizado apenas na análise operacional e não proporciona grande utilização prática fora dessa área.
+>Normalmente, esse tipo de segmentação é usado apenas na análise operacional e não oferece muito uso prático fora dessa área.
 
