@@ -1,28 +1,31 @@
 ---
 description: Verifique se o coletor está sendo executado usando métodos diferentes.
-solution: Insight
-title: Confirmando se o coletor de dados está em execução
+solution: Analytics
+title: Confirmar se o coletor de dados está em execução
 uuid: e5b9b12a-b8a5-4c00-abe5-e824516d46b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 3%
 
 ---
 
 
-# Confirmando se o coletor de dados está em execução{#confirming-that-the-data-collector-is-running}
+# Confirmar se o coletor de dados está em execução{#confirming-that-the-data-collector-is-running}
 
 Verifique se o coletor está sendo executado usando métodos diferentes.
 
 **Frequência recomendada:** A cada 5 a 10 minutos
 
 * [Use a funcionalidade de teste de site no transmissor.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-a5a697c3252e40f184c0b662926170f2)
-* [Verifique se o [!DNL Sensor] está configurando um cookie.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
+* [Verifique [!DNL Sensor] se está configurando um cookie.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
 
 ## Usando o teste de site {#section-a5a697c3252e40f184c0b662926170f2}
 
-Uma maneira de verificar se o coletor está em execução é ativar a função Site Test no transmissor. Quando você ativa o Site Test, o transmissor envia periodicamente (a cada 60 segundos) uma solicitação GET para o servidor da Web no qual o coletor está sendo executado. Se o Site Test não receber uma resposta do servidor da Web, ele gravará uma mensagem de erro no syslog e enviará uma mensagem de erro para o [!DNL data workbench server] (que é gravada no arquivo de log do sensor).
+Uma maneira de verificar se o coletor está em execução é ativar a função Site Test no transmissor. Quando você ativa o Site Test, o transmissor envia periodicamente (a cada 60 segundos) uma solicitação de GET ao servidor da Web no qual o coletor está sendo executado. Se o Site Test não receber uma resposta do servidor da Web, ele gravará uma mensagem de erro no syslog e enviará uma mensagem de erro para o [!DNL data workbench server] (que é gravada no arquivo de log do sensor).
 
-Se o Site Test receber uma resposta do servidor da Web, ele procurará um pacote do servidor da Web no arquivo de fila. Se o pacote não for exibido (indicando que o coletor não estava sendo executado para capturar o evento), o Site Test gravará uma mensagem de erro no syslog e enviará uma mensagem de erro para a Adobe (que também é gravada no arquivo de log do sensor).
+Se o Site Test receber uma resposta do servidor da Web, ele procurará um pacote do servidor da Web no arquivo de fila. Se o pacote não for exibido (indicando que o coletor não estava sendo executado para capturar o evento), o Site Test grava uma mensagem de erro no syslog e envia uma mensagem de erro ao Adobe (que também é gravada no arquivo de log do sensor).
 
 Nas solicitações que o Site Test envia para o servidor da Web, o Site Test define o valor User-Agent como &quot; [!DNL Sensor] Test&quot;. Se você não quiser que essas solicitações apareçam em seu conjunto de dados, adicione o User-Agent &quot; [!DNL Sensor] Testar&quot; ao [!DNL Baseline Robots List.txt] arquivo ou ao [!DNL Extended Robots List.txt] arquivo na [!DNL Lookups] pasta na [!DNL data workbench server].
 
@@ -34,7 +37,7 @@ Nas solicitações que o Site Test envia para o servidor da Web, o Site Test def
 
    SiteTest http, *serverAddress*, *porta*, *recurso*
 
-   onde *serverAddress* é o nome ou endereço IP do servidor da Web, *port* é a porta de escuta HTTP do servidor e *resource* é o recurso específico que você deseja que o Site Test solicite ao testar o servidor. Observe que o *recurso* pode incluir uma string de consulta.
+   onde *serverAddress* é o nome ou endereço IP do servidor da Web, *port* é a porta de escuta HTTP do servidor e *resource* é o recurso específico que você deseja que o Site Test solicite ao testar o servidor. Observe que o *recurso* pode incluir uma string de query.
 
    Exemplo: SiteTest http,localhost,80,/index.jsp
 
