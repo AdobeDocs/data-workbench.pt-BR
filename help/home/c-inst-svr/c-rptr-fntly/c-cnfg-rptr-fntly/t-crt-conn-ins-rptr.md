@@ -1,15 +1,18 @@
 ---
 description: Se os firewalls de rede não impedirem o acesso ao servidor repetidor de máquinas Insight, você poderá criar uma conexão entre o servidor repetidor e o Insight para que você possa gerenciar o servidor repetidor usando o Insight.
-solution: Insight
-title: Criação de uma conexão entre o Insight e o Repórter
+solution: Analytics
+title: Criar uma conexão entre o Insight e o Repetidor
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 4%
 
 ---
 
 
-# Criação de uma conexão entre o Insight e o Repórter{#creating-a-connection-between-insight-and-repeater}
+# Criar uma conexão entre o Insight e o Repetidor{#creating-a-connection-between-insight-and-repeater}
 
 Se os firewalls de rede não impedirem o acesso ao servidor repetidor de máquinas Insight, você poderá criar uma conexão entre o servidor repetidor e o Insight para que você possa gerenciar o servidor repetidor usando o Insight.
 
