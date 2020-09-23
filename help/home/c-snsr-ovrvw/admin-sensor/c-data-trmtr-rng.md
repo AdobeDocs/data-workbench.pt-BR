@@ -1,15 +1,18 @@
 ---
 description: Verifique se o transmissor está sendo executado configurando alertas, verificando o status do sistema do Sensor e muito mais.
-solution: Insight
-title: Confirmando se o Transmissor de Dados está em execução
+solution: Analytics
+title: Confirmar se o transmissor de dados está em execução
 uuid: 8dd6307c-e7d2-4800-88c7-f93385b33ca5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 5%
 
 ---
 
 
-# Confirmando se o Transmissor de Dados está em execução{#confirming-that-the-data-transmitter-is-running}
+# Confirmar se o transmissor de dados está em execução{#confirming-that-the-data-transmitter-is-running}
 
 Verifique se o transmissor está sendo executado configurando alertas, verificando o status do sistema do Sensor e muito mais.
 
@@ -23,18 +26,18 @@ Verifique se o transmissor está sendo executado configurando alertas, verifican
 
 Uma maneira de verificar se o transmissor está em execução é verificar se o processo do [!DNL Sensor] transmissor está em execução em cada servidor Web onde uma [!DNL Sensor] instância está instalada. O processo do transmissor aparece como &quot;txlogd&quot; na lista de processos do servidor da Web. É possível realizar essa verificação usando uma ferramenta de monitoramento do sistema.
 
-## Configurando Alertas Administrativos no Servidor do Análise de big data {#section-d98e0f18b8fb45a78419fe75610a3b1e}
+## Configurando Alertas Administrativos no Data Workbench Server {#section-d98e0f18b8fb45a78419fe75610a3b1e}
 
 Outra maneira de verificar se o transmissor está em execução é configurar alertas administrativos automatizados no [!DNL data workbench server]. Quando os alertas administrativos são configurados, o [!DNL data workbench server] gera um alerta de email quando não recebeu dados de um configurado e conectado anteriormente [!DNL Sensor] dentro do período especificado no parâmetro Tempo limite de [!DNL Sensor] alerta (min) no [!DNL data workbench server’s] [!DNL Administrative Alerts.cfg] arquivo. Para obter mais informações sobre como configurar alertas administrativos, consulte o Guia *de Instalação e Administração de Produtos* do Servidor.
 
 ## Verificando o status do sistema do sensor {#section-de9d7e359242487a9fbead4ed65aebbc}
 
-Outra maneira de verificar se o transmissor está em execução é verificar manualmente o transmissor [!DNL Servers Manager] na Análise de big data.
+Outra maneira de verificar se o transmissor está funcionando é verificar manualmente a Data Workbench [!DNL Servers Manager] de entrada.
 
-**Para exibir o[!DNL Servers Manager]**
+**Para visualização a[!DNL Servers Manager]**
 
-* No Análise de big data, clique com o botão direito do mouse em um espaço de trabalho, clique em **[!UICONTROL Admin]**, em seguida, em [!DNL Manage], clique em **[!UICONTROL Servers]**.
+* Na Data Workbench, clique com o botão direito do mouse em um espaço de trabalho, clique em **[!UICONTROL Admin]**, em seguida, em [!DNL Manage], clique em **[!UICONTROL Servers]**.
 
 Se o ícone de um transmissor [!DNL Sensor] estiver verde, ele estará em execução.
 
-Para obter mais informações sobre o [!DNL Servers Manager], consulte o capítulo Interfaces administrativas do *Data Workbench[!DNL Sensor]Guide*.
+Para obter mais informações sobre o [!DNL Servers Manager], consulte o capítulo Interfaces administrativas do *Guia de[!DNL Sensor]Data Workbench*.
