@@ -1,11 +1,14 @@
 ---
 description: Esse arquivo funciona não apenas como uma planilha, mas também como um registro de suas decisões sobre o experimento.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Planilha de design de experimento
 topic: Data workbench
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ A planilha do projeto do experimento pode fornecer inferências estatísticas ú
 
 **Para projetar seu experimento usando o arquivo de projeto do experimento**
 
-1. Se você tiver acesso de administrador à Web ou aos servidores de aplicativos, navegue até a pasta de [!DNL Sensor] instalação em qualquer [!DNL Sensor] computador no cluster da Web. Se você não tiver acesso de administrador, entre em contato com seu gerente de conta da Adobe para solicitar o arquivo.
+1. Se você tiver acesso de administrador à Web ou aos servidores de aplicativos, navegue até a pasta de [!DNL Sensor] instalação em qualquer [!DNL Sensor] computador no cluster da Web. Se você não tiver acesso de administrador, entre em contato com seu gerente de conta do Adobe para solicitar o arquivo.
 1. Abra o arquivo VS Controlled Experiment Design.xls. (Se desejar, você pode renomear esse arquivo.)
 
    A planilha na página a seguir é um exemplo de como você completaria a planilha ao se preparar para testar a hipótese de exemplo usada em todo este guia.
@@ -37,7 +40,7 @@ A planilha do projeto do experimento pode fornecer inferências estatísticas ú
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Neste campo... </th> 
-   <th colname="col2" class="entry"> Especificar  </th> 
+   <th colname="col2" class="entry"> Especificar </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -51,14 +54,14 @@ A planilha do projeto do experimento pode fornecer inferências estatísticas ú
   </tr> 
   <tr> 
    <td colname="col1"> Métrica sendo estudada </td> 
-   <td colname="col2"> <p>O nome da métrica na qual o experimento se baseia. </p> <p>Exemplo: Conversão do visitante </p> </td> 
+   <td colname="col2"> <p>O nome da métrica na qual o experimento se baseia. </p> <p>Exemplo: Conversão de visitantes </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Definição de métrica </td> 
    <td colname="col2"> <p>A definição da métrica na qual o experimento se baseia. </p> <p>Formato: Visitantes[X]/Visitantes </p> <p>Exemplo: <span class="filepath"> Visitantes[URI='conversionpage.asp']/Visitantes</span></p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Hora de início prevista </td> 
+   <td colname="col1"> Tempo de Start pretendido </td> 
    <td colname="col2"> A data e a hora em que você deseja que o experimento comece. </td> 
   </tr> 
   <tr> 
@@ -78,23 +81,23 @@ A planilha do projeto do experimento pode fornecer inferências estatísticas ú
    <td colname="col2"> Cabeçalho para os valores de métrica que você espera para seu site. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Média de visitantes por dia </td> 
-   <td colname="col2"> O número médio de visitantes ao seu site por dia. </td> 
+   <td colname="col1"> Média de Visitantes por dia </td> 
+   <td colname="col2"> O número médio de visitantes do site por dia. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Conversão do visitante </td> 
-   <td colname="col2"> A taxa média de conversão do visitante para seu site. </td> 
+   <td colname="col1"> Conversão de visitantes </td> 
+   <td colname="col2"> A taxa de conversão média de visitantes para o seu site. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> O teste determinará se o nome da métrica para os grupos de teste é ... </td> 
    <td colname="col2"> Cabeçalho para como os valores da métrica devem ser comparados. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Maior que o valor do grupo de controle? </td> 
+   <td colname="col1"> Maior que o valor do Grupo de controle? </td> 
    <td colname="col2"> Defina esse campo como Verdadeiro se desejar concluir que a métrica do grupo de teste aumentou durante o experimento. Defina esse campo como Falso para reduzir o número de visitantes necessários para tirar conclusões. A Adobe recomenda que você a defina como Verdadeiro. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Menor que o valor do grupo de controle? </td> 
+   <td colname="col1"> Menor que o valor do Grupo de controle? </td> 
    <td colname="col2"> Defina esse campo como Verdadeiro se desejar concluir que a métrica do grupo de teste diminuiu durante o experimento. A Adobe recomenda que você a defina como Verdadeiro. </td> 
   </tr> 
   <tr> 
@@ -110,15 +113,15 @@ A planilha do projeto do experimento pode fornecer inferências estatísticas ú
    <td colname="col2"> O nível de energia desejado para os valores do grupo de teste. O nível de energia determina o número de falsos negativos. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> % de visitantes </td> 
+   <td colname="col1"> % de Visitantes </td> 
    <td colname="col2"> Cabeçalho para a porcentagem de valores de visitantes. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Grupo de teste </td> 
-   <td colname="col2"> Porcentagem de visitantes que você deseja incluir no grupo de teste. É possível reproduzir com esse número até que o valor no campo Total (normalmente 100%) na seção Visitantes seja igual ou maior que o valor no campo Visitantes mínimos obrigatórios (Grupos de controle e teste), ambos descritos na tabela a seguir. </td> 
+   <td colname="col2"> Porcentagem de visitantes que você deseja incluir no grupo de teste. É possível reproduzir com esse número até que o valor no campo Total (normalmente 100%) na seção Visitantes seja igual ou maior que o valor no campo Visitantes mínimos exigidos (Grupos de controle de teste), ambos descritos na tabela a seguir. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Grupo de controle </td> 
+   <td colname="col1"> grupo de controle </td> 
    <td colname="col2"> Porcentagem de visitantes que você deseja incluir no grupo de controle. </td> 
   </tr> 
   <tr> 
@@ -133,23 +136,23 @@ Os campos restantes são calculados com base nos valores inseridos e descritos n
 | Campo | Descrição |
 |---|---|
 | Métricas esperadas para seleções de aplicativos | Cabeçalho para os valores de métrica que você espera para seu site. |
-| Visitantes esperados por Período | Normalmente, esse campo é calculado automaticamente pela planilha. Ele se baseia no pressuposto de que, na maioria dos dias, o site recebe muito mais visitantes novos do que visitantes recorrentes. Se esse não for o caso, o cálculo dessa célula deve ser substituído pelo número real de visitantes esperado durante o experimento. |
+| Visitantes esperados por Período | Normalmente, esse campo é calculado automaticamente pela planilha. Baseia-se no pressuposto de que, na maioria dos dias, o website recebe muito mais visitantes novos do que visitantes de retorno. Se esse não for o caso, o cálculo dessa célula deve ser substituído pelo número real de visitantes esperados durante o experimento. |
 | Pontuação Z calculada para o erro Tipo I | A pontuação Z para um resultado falso positivo. Trata - se de um cálculo estatístico intermédio. |
 | Pontuação Z calculada para erro de tipo II | A pontuação Z para um resultado negativo falso. Trata - se de um cálculo estatístico intermédio. |
-| Visitantes mínimos obrigatórios (Grupos de controle+teste) | O número mínimo de visitantes necessários em seu experimento para atender ao nível de confiança, nível de energia e pontuação Z especificados, expresso como uma porcentagem do valor no campo Visitantes esperados por período. |
-| Visitantes mínimos obrigatórios (Grupos de controle+teste) | Número mínimo de visitantes necessários no seu experimento para atender ao nível de confiança, nível de energia e pontuação Z especificados. Esse valor deve ser menor ou igual ao valor no campo Total (normalmente 100%) na seção Visitantes. |
-| Tempo Mínimo de Experiência (Dias) | Número mínimo de dias necessários para executar o experimento para atender ao nível de confiança, nível de energia e pontuação Z especificados. Esse número calculado está sujeito aos mesmos problemas discutidos no campo Visitantes esperados por período. No caso de um site com muitos visitantes recorrentes, o campo Tempo Mínimo de Experiência (Dias) é o número esperado de dias para que um número de visitantes únicos seja igual ao valor no campo Visitantes Mínimos Obrigatórios. |
+| Mínimo de Visitantes necessários (Testar+Grupos de controle) | Número mínimo de visitantes necessários no seu experimento para atender ao nível de confiança, nível de energia e pontuação Z especificados, expresso como uma porcentagem do valor no campo Visitantes esperados por período. |
+| Mínimo de Visitantes necessários (Testar+Grupos de controle) | Número mínimo de visitantes necessários no seu experimento para atender ao nível de confiança, nível de energia e pontuação Z especificados. Esse valor deve ser menor ou igual ao valor no campo Total (normalmente 100%) na seção Visitantes. |
+| Tempo Mínimo de Experiência (Dias) | Número mínimo de dias necessários para executar o experimento para atender ao nível de confiança, nível de energia e pontuação Z especificados. Esse número calculado está sujeito aos mesmos problemas discutidos no campo Visitantes esperados por período. No caso de um site com muitos visitantes recorrentes, o campo Tempo Mínimo de Experiência (Dias) é o número esperado de dias para que um número de visitantes únicos seja igual ao valor no campo Visitantes Mínimos Necessários. |
 | Visitantes | Cabeçalho para os valores dos visitantes. |
 | Grupo de teste | Número de visitantes necessários no grupo de teste. |
-| Grupo de controle | Número de visitantes necessários no grupo de controle. |
-| Total (Normalmente 100%) | O número total de visitantes necessários para o experimento. Esse valor deve ser igual ou superior ao valor no campo Visitantes mínimos obrigatórios (Grupos de controle e teste). |
-| Precisão do grupo de teste (no nível de confiança do Target) | A porcentagem que indica que há uma chance igual ao nível de confiança especificado de que o valor medido da métrica calculada para o grupo de teste estará dentro dessa porcentagem do seu valor real. |
-| Precisão do grupo de controle (no nível de confiança do Target) | A porcentagem que indica que há uma chance igual ao nível de confiança especificado de que o valor medido da métrica calculada para o grupo de controle estará dentro dessa porcentagem do seu valor real. |
-| Pontuação Z (na precisão do Target) | Número de desvios padrão que um dado valor representa em relação à média do teste. |
-| Nível de confiança real (no intervalo de destino) | O nível de confiança obtido para o experimento. O nível de confiança mede a probabilidade da expectativa declarada ser verdadeira. |
-| Intervalo Real (no Nível de Confiança do Target) | O intervalo de confiança obtido para o experimento, que fornece um intervalo estimado de valores que provavelmente incluirá um parâmetro de população desconhecido. Esse intervalo é calculado a partir de um determinado conjunto de dados de amostra. |
+| grupo de controle | Número de visitantes necessários no grupo de controle. |
+| Total (Normalmente 100%) | O número total de visitantes necessários para o experimento. Esse valor deve ser igual ou superior ao valor no campo Visitantes mínimos obrigatórios (Testar+Grupos de controle). |
+| Precisão do grupo de teste (no nível de confiança do Público alvo) | A porcentagem que indica que há uma chance igual ao nível de confiança especificado de que o valor medido da métrica calculada para o grupo de teste estará dentro dessa porcentagem do seu valor real. |
+| Precisão do grupo de controle (no nível de confiança do Público alvo) | A porcentagem que indica que há uma chance igual ao nível de confiança especificado de que o valor medido da métrica calculada para o grupo de controle estará dentro dessa porcentagem do seu valor real. |
+| Pontuação Z (na precisão do Público alvo) | Número de desvios padrão que um dado valor representa em relação à média do teste. |
+| Nível de confiança real (no intervalo do Público alvo) | O nível de confiança obtido para o experimento. O nível de confiança mede a probabilidade da expectativa declarada ser verdadeira. |
+| Intervalo Real (no Nível de Confiança do Público alvo) | O intervalo de confiança obtido para o experimento, que fornece um intervalo estimado de valores que provavelmente incluirá um parâmetro de população desconhecido. Esse intervalo é calculado a partir de um determinado conjunto de dados de amostra. |
 
-É necessário observar o valor no campo Visitantes mínimos obrigatórios (Grupos de controle e teste). . .
+É necessário observar o valor no campo Visitantes mínimos obrigatórios (Testar+Grupos de controle). . .
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
@@ -157,9 +160,9 @@ e compare-o com o valor no campo Total na [!DNL Visitors] coluna.
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
-Para que seu experimento seja estatisticamente válido, o valor no campo Total (normalmente 100%) deve ser igual ou maior que o valor no campo Visitantes mínimos exigidos (Grupos de controle e teste).
+Para que seu experimento seja estatisticamente válido, o valor no campo Total (normalmente 100%) deve ser igual ou maior que o valor no campo Visitantes mínimos exigidos (Testar+Grupos de controle).
 
-Considerando as entradas fornecidas, o que a planilha de exemplo mostra é que 10.475 visitantes precisam participar deste experimento para atingir a taxa de confiança de 95% informada (que é a confiança mínima sugerida para qualquer experimento controlado, embora você possa aumentar esse número). O experimento, conforme projetado atualmente, inclui 30.000 visitantes, o que supera o número mínimo de visitantes necessário.
+Considerando as entradas fornecidas, o que a planilha de exemplo mostra é que 10.475 visitantes precisam participar deste experimento para atingir a taxa de confiança de 95% informada (que é a confiança mínima sugerida para qualquer experimento controlado, embora você possa aumentar esse número). O experimento, como foi projetado atualmente, inclui 30 mil visitantes, que superam bem o número mínimo de visitantes necessários.
 
 Se você mantiver o número de dias igual, poderá aumentar o nível de confiança, contanto que o número total de visitantes continue com o atendimento ou exceda o mínimo necessário.
 
