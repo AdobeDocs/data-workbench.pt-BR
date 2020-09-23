@@ -1,16 +1,19 @@
 ---
 description: Depois de implantar seu experimento, você deve validar se o experimento está funcionando corretamente.
-solution: Insight,Analytics
-title: Validação do experimento
+solution: Analytics,Analytics
+title: Validar o experimento
 topic: Data workbench
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 2%
 
 ---
 
 
-# Validação do experimento{#validating-the-experiment}
+# Validar o experimento{#validating-the-experiment}
 
 Depois de implantar seu experimento, você deve validar se o experimento está funcionando corretamente.
 
@@ -24,7 +27,7 @@ Para testar um grupo de experimentos específico para seu site, seu navegador de
 
 Sempre que quiser testar um novo grupo, certifique-se de limpar os cookies do site.
 
-Para se colocar em um grupo específico dentro de um experimento específico, solicite à página de teste uma string de consulta no seguinte formulário:
+Para se colocar em um grupo específico em um experimento específico, solicite à página de teste uma string de query no seguinte formulário:
 
 [!DNL http://] *&lt;[!DNL sitename/?Experiment Name=Group Name]>*
 
@@ -34,11 +37,11 @@ Por exemplo:
 
 Quando a solicitação de URL virtual é enviada para o servidor, o [!DNL Sensor] identifica como um membro do grupo especificado no experimento especificado e o redireciona para a raiz do site. Agora você pode navegar até o local apropriado no site para validar se o conteúdo correto é exibido para esse experimento e grupo.
 
-Se você digitar o seguinte no seu navegador, o navegador exibirá a página inicial do site e o colocará no grupo index2 no experimento New_Homepage:
+Se você digitar o seguinte no seu navegador, o navegador exibirá o home page do site e o colocará no grupo index2 no experimento New_Homepage:
 
 [!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
-Quando os visitantes no grupo index2 solicitam a página inicial, o link gráfico &quot;Solicitar uma demonstração&quot; é exibido acima na página, como no seguinte gráfico:
+Quando visitantes no grupo index2 solicitam o home page, o link gráfico &quot;Solicitar uma demonstração&quot; é exibido acima na página, como no seguinte gráfico:
 
 ![](assets/TestPage.png)
 
