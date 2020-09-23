@@ -1,10 +1,13 @@
 ---
 description: Instruções para concluir a instalação da funcionalidade do repetidor.
-solution: Insight
+solution: Analytics
 title: Próximas etapas
 uuid: 74ac9ef3-11c2-4af0-9901-edbbcc8ac0fb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 5%
 
 ---
 
