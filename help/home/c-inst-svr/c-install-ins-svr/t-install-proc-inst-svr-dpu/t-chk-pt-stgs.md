@@ -1,15 +1,18 @@
 ---
 description: Por padrão, o Insight Server escuta nas portas 80 (para HTTP) e 443 (para HTTPS).
-solution: Insight
-title: Verificando as configurações de porta
+solution: Analytics
+title: Verificar as configurações de porta
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '114'
+ht-degree: 7%
 
 ---
 
 
-# Verificando as configurações de porta{#checking-the-port-settings}
+# Verificar as configurações de porta{#checking-the-port-settings}
 
 Por padrão, o Insight Server escuta nas portas 80 (para HTTP) e 443 (para HTTPS).
 
