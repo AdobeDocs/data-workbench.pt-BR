@@ -1,16 +1,19 @@
 ---
 description: Você deve adicionar o campo x-experience ao arquivo Log Processing.cfg, que é usado para criar uma dimensão estendida.
-solution: Insight,Analytics
-title: Modificando o processamento de log.cfg
+solution: Analytics,Analytics
+title: Modificar o Log Processing.cfg
 topic: Data workbench
 uuid: 9105b09b-e3d5-4922-a205-b459553a4bec
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
 
-# Modificando o processamento de log.cfg{#modifying-log-processing-cfg}
+# Modificar o Log Processing.cfg{#modifying-log-processing-cfg}
 
 Você deve adicionar o campo x-experience ao arquivo Log Processing.cfg, que é usado para criar uma dimensão estendida.
 
@@ -18,7 +21,7 @@ Consulte [Modificando Transformation.cfg](../../../home/c-undst-ctrld-exp/c-vw-r
 
 **Para modificar o Log Processing.cfg**
 
-1. Em [!DNL Insight], abra o arquivo [!DNL Profile Manager] clicando com o botão direito do mouse em uma área de trabalho e clicando em **[!UICONTROL Admin]** > **[!UICONTROL Profile Manager]**, ou abrindo a área de trabalho Gerenciamento de perfil na [!DNL Admin] guia.
+1. Em [!DNL Insight], abra o arquivo [!DNL Profile Manager] clicando com o botão direito do mouse em um espaço de trabalho e clicando em **[!UICONTROL Admin]** > **[!UICONTROL Profile Manager]**, ou abrindo o espaço de trabalho Gerenciamento de Perfis na [!DNL Admin] guia.
 1. No [!DNL Profile Manager], clique em **[!UICONTROL Dataset]** para mostrar seu conteúdo.
 1. Clique com o botão direito do mouse na marca de seleção ao lado de [!DNL Log Processing.cfg] e clique em **[!UICONTROL Make Local]**. Uma marca de seleção para este arquivo é exibida na [!DNL User] coluna.
 1. Clique com o botão direito do mouse na marca de seleção recém-criada e clique em **[!UICONTROL Open]** > **[!UICONTROL in Insight]**. A [!DNL Log Processing.cfg] janela é exibida.
@@ -29,7 +32,7 @@ Consulte [Modificando Transformation.cfg](../../../home/c-undst-ctrld-exp/c-vw-r
    ![Informações da etapa](assets/logprocessing.png)
 
 1. Clique com o botão direito do mouse **[!UICONTROL (modified)]** na parte superior da janela e clique em **[!UICONTROL Save]**.
-1. Na [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção para [!DNL Log Processing.cfg] na [!DNL User] coluna, em seguida, clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>* para salvar as alterações feitas localmente no perfil de trabalho.
+1. Na [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção para [!DNL Log Processing.cfg] na [!DNL User] coluna, em seguida, clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>* para salvar as alterações feitas localmente no perfil que está funcionando.
 
    >[!NOTE]
    >
