@@ -1,10 +1,13 @@
 ---
 description: O arquivo de endereço instalado no Insight Server contém quatro locais de rede predefinidos.
-solution: Insight
+solution: Analytics
 title: O arquivo de endereço instalado no servidor Insight
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 2%
 
 ---
 
@@ -71,7 +74,7 @@ O procedimento a seguir descreve como configurar o arquivo de endereço para def
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Para este valor... </th> 
-   <th colname="col2" class="entry"> Especificar  </th> 
+   <th colname="col2" class="entry"> Especificar </th> 
   </tr> 
  </thead>
  <tbody> 
