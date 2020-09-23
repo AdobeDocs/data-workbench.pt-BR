@@ -1,25 +1,28 @@
 ---
 description: Informações sobre monitoramento de conjuntos de dados e adição de novos locais para armazenamento de dados de conjuntos de dados.
-solution: Insight
-title: Monitorando o espaço de dados do conjunto de dados
+solution: Analytics
+title: Monitorar o espaço de dados do conjunto de dados
 uuid: 0b7b95e7-b1bb-49cf-b465-fdbdc4ee214e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 2%
 
 ---
 
 
-# Monitorando o espaço de dados do conjunto de dados{#monitoring-dataset-data-space}
+# Monitorar o espaço de dados do conjunto de dados{#monitoring-dataset-data-space}
 
 Informações sobre monitoramento de conjuntos de dados e adição de novos locais para armazenamento de dados de conjuntos de dados.
 
 **Frequência recomendada:** A cada 5 a 10 minutos
 
-Por padrão, [!DNL Insight Server] grava seu conjunto de dados no [!DNL temp.db] arquivo na mesma unidade dos arquivos de [!DNL Insight Server] programa na Unidade de processamento de dados. A quantidade de dados do conjunto de dados por [!DNL Insight Server] máquina é limitada ao seguinte, o que ocorrer primeiro:
+Por padrão, [!DNL Insight Server] grava seu conjunto de dados no [!DNL temp.db] arquivo na mesma unidade dos arquivos de [!DNL Insight Server] programa na unidade de processamento de dados. A quantidade de dados do conjunto de dados por [!DNL Insight Server] máquina é limitada ao seguinte, o que ocorrer primeiro:
 
 * Quinhentos (500) milhões de registros de entrada de dados para esse conjunto de dados
 * Quinhentos (500) GB de dados de conjunto de dados armazenados
-* Um (1) MB de dados de conjunto de dados armazenados por qualquer dimensão de nível raiz (por exemplo, 5.000 registros por visitante em uma média de 200 bytes por registro)
+* Um (1) MB de dados de conjunto de dados armazenados por qualquer dimensão de nível raiz (por exemplo, 5.000 registros por Visitante em uma média de 200 bytes por registro)
 
 Se quiser manter [!DNL Insight Server] o conjunto de dados em uma unidade diferente, ou se a quantidade de dados que espera coletar exigir o uso de várias unidades, atualize o arquivo de configuração Arquivos de Disco ( [!DNL Disk Files.cfg]) para especificar onde deseja [!DNL Insight Server] gravar o(s) [!DNL temp.db] arquivo(s). O [!DNL Disk Files.cfg] arquivo lista os arquivos de disco (um vetor de sequências de caracteres) e especifica o local dos dados do conjunto de dados usados [!DNL Insight Server] durante o reprocessamento e a operação. Geralmente há um arquivo por unidade física.
 
@@ -31,10 +34,10 @@ Se quiser manter [!DNL Insight Server] o conjunto de dados em uma unidade difere
 
 1. Em [!DNL Insight], na guia [!DNL Admin] > [!DNL Dataset and Profile] , clique na **[!UICONTROL Servers Manager]** miniatura para abrir a área de trabalho do Gerenciador de servidores.
 1. Clique com o botão direito do mouse no ícone do [!DNL Insight Server] que deseja configurar e clique em **[!UICONTROL Server Files]**.
-1. No [!DNL Server Files Manager], clique em **[!UICONTROL Components]** para exibir o conteúdo. O [!DNL Disk Files.cfg] arquivo está localizado dentro deste diretório.
+1. No [!DNL Server Files Manager], clique **[!UICONTROL Components]** para visualização do conteúdo. O [!DNL Disk Files.cfg] arquivo está localizado dentro deste diretório.
 1. Clique com o botão direito do mouse na marca de seleção na coluna de nome *do* servidor para [!DNL Disk Files.cfg] e clique em **[!UICONTROL Make Local]**. Uma marca de seleção é exibida na [!DNL Temp] coluna para [!DNL Disk Files.cfg].
 1. Clique com o botão direito do mouse na marca de seleção recém-criada na [!DNL Temp] coluna e clique em **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
-1. Na [!DNL Disk Files.cfg] janela, clique **[!UICONTROL component]** para exibir seu conteúdo.
+1. Na [!DNL Disk Files.cfg] janela, clique **[!UICONTROL component]** para visualização do conteúdo.
 
    ![Informações da etapa](assets/cfg_diskfiles_examplevalues.png)
 
