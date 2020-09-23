@@ -1,27 +1,30 @@
 ---
 description: A funcionalidade de transformação é executada em uma máquina FSU do Insight Server para permitir a exportação de dados de origem de log para uso por outros aplicativos.
-solution: Insight
-title: Configurando a transformação
+solution: Analytics
+title: Configurar a transformação
 uuid: 0526704a-71b2-4094-9d3a-1ba84f4dc287
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 1%
 
 ---
 
 
-# Configurando a transformação{#configuring-transform}
+# Configurar a transformação{#configuring-transform}
 
 A funcionalidade de transformação é executada em uma máquina FSU do Insight Server para permitir a exportação de dados de origem de log para uso por outros aplicativos.
 
-[!DNL Transform] pode ler [!DNL .vsl] arquivos, arquivos de log, arquivos XML e dados ODBC e exportar os dados como [!DNL .vsl] arquivos, arquivos de texto ou arquivos de texto delimitados que podem ser usados pelas rotinas de carregamento do data warehouse, agências de auditoria ou outros destinos. A extração e transformação de dados podem ser realizadas de forma contínua ou programada. Cada [!DNL Insight Server] FSU que fornece saída de dados de eventos alterados deve ser executado [!DNL Transform].
+[!DNL Transform] pode ler [!DNL .vsl] arquivos, arquivos de log, arquivos XML e dados ODBC e exportar os dados como [!DNL .vsl] arquivos, arquivos de texto ou arquivos de texto delimitados que podem ser usados pelas rotinas de carregamento do data warehouse, agências de auditoria ou outros públicos alvos. A extração e transformação de dados podem ser executadas de forma contínua ou programada. Cada [!DNL Insight Server] FSU que fornece saída de dados de evento alterados deve ser executado [!DNL Transform].
 
 >[!NOTE]
 >
->Normalmente, [!DNL Transform] é instalado em um [!DNL Insight Server] FSU. No entanto, sua implementação pode exigir instalação em uma [!DNL Insight Server] DPU. Para obter mais informações, entre em contato com a Adobe.
+>Normalmente, [!DNL Transform] é instalado em um [!DNL Insight Server] FSU. No entanto, sua implementação pode exigir instalação em uma [!DNL Insight Server] DPU. Para obter mais informações, entre em contato com o Adobe.
 
-Para obter informações sobre os requisitos do sistema para instalação, configuração e operação [!DNL Transform], consulte o documento Requisitos ** mínimos do sistema.
+Para obter informações sobre os requisitos do sistema para instalação, configuração e operação [!DNL Transform], consulte o documento *Mínimo de requisitos* do sistema.
 
-A Adobe distribui a [!DNL Transform] funcionalidade como um perfil dentro do [!DNL .zip] arquivo para o pacote de [!DNL Insight Server] versão. O [!DNL Transform] perfil é um perfil interno que fornece funcionalidade adicional para [!DNL Insight Server]. Assim como com todos os outros perfis internos fornecidos pela Adobe, o perfil não deve ser alterado. Toda personalização deve ocorrer em seu conjunto de dados ou em perfis específicos de função ou em outros perfis que você criar.
+O Adobe distribui a [!DNL Transform] funcionalidade como um perfil dentro do [!DNL .zip] arquivo para o pacote de [!DNL Insight Server] versão. O [!DNL Transform] perfil é um perfil interno que oferece funcionalidade adicional para [!DNL Insight Server]. Assim como com todos os outros perfis internos fornecidos pelo Adobe, o perfil não deve ser alterado. Toda a personalização deve ocorrer em seu conjunto de dados ou em perfis específicos da função ou em outros perfis criados.
 
 O perfil consiste nos seguintes arquivos:
 
@@ -47,7 +50,7 @@ Todos esses arquivos estão localizados na [!DNL Dataset] pasta do perfil.
    >
    >Se você seguiu todas as etapas para instalar [!DNL Insight Server] (consulte [Insight Server](../../../home/c-inst-svr/c-msr-server/c-msr-server.md)), talvez já tenha uma [!DNL Transform] pasta no diretório Perfis.
 
-1. Use as seguintes etapas para atualizar o [!DNL profile.cfg] arquivo para o perfil com o qual você deseja usar [!DNL Transform]. O conjunto de dados é reprocessado após a conclusão dessas etapas.
+1. Use as seguintes etapas para atualizar o [!DNL profile.cfg] arquivo do perfil com o qual você deseja usar [!DNL Transform]. O conjunto de dados é reprocessado após a conclusão dessas etapas.
 
    1. Abra o [!DNL Profile Manager].
    1. Clique com o botão direito do mouse na marca de seleção ao lado de [!DNL profile.cfg] e clique em **[!UICONTROL Make Local]**. Uma marca de seleção para este arquivo é exibida na [!DNL User] coluna.
@@ -65,5 +68,5 @@ Todos esses arquivos estão localizados na [!DNL Dataset] pasta do perfil.
 
       >[!NOTE]
       >
-      >Não salve o arquivo de configuração modificado em nenhum dos perfis internos fornecidos pela Adobe (incluindo o perfil), pois suas alterações são substituídas quando você instala atualizações nesses perfis.
+      >Não salve o arquivo de configuração modificado em nenhum dos perfis internos fornecidos pelo Adobe (incluindo o perfil), pois suas alterações são substituídas quando você instala atualizações nesses perfis.
 
