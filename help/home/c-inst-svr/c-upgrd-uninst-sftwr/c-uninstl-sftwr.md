@@ -1,15 +1,18 @@
 ---
 description: Instruções para desinstalar o Insight Server, Transform ou Repeater.
-solution: Insight
-title: Desinstalação do software
+solution: Analytics
+title: Desinstalar o software
 uuid: 79cf0db6-0f99-40fa-a7b0-38dd8d7246bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 4%
 
 ---
 
 
-# Desinstalação do software{#uninstalling-your-software}
+# Desinstalar o software{#uninstalling-your-software}
 
 Instruções para desinstalar o Insight Server, Transform ou Repeater.
 
@@ -38,7 +41,7 @@ Instruções para desinstalar o Insight Server, Transform ou Repeater.
 
    1. Clique com o botão direito do mouse na marca de seleção recém-criada e clique em **[!UICONTROL Open]** > **[!UICONTROL in Insight]**. A [!DNL profile.cfg] janela é exibida.
 
-   1. Na [!DNL profile.cfg] janela, exclua a entrada de [!DNL Transform] perfil do vetor Diretórios.
+   1. Na [!DNL profile.cfg] janela, exclua a entrada do [!DNL Transform] perfil do vetor Diretórios.
 
    1. Clique com o botão direito do mouse **[!UICONTROL (modified)]** na parte superior da janela e clique em **[!UICONTROL Save]**.
 
