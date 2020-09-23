@@ -1,22 +1,25 @@
 ---
-description: Depois de adicionar o novo campo ao Log Processing.cfg e criar a nova transformação Dividir e a dimensão estendida, é possível exibir a nova dimensão estendida criada assim que o estágio de Entrada rápida do reprocessamento de dados terminar.
-solution: Insight,Analytics
-title: Exibição dos resultados do experimento
+description: Depois de adicionar o novo campo ao Log Processing.cfg e criar a nova transformação Dividir e a dimensão estendida, você pode visualização a nova dimensão estendida criada assim que o estágio de Entrada rápida do reprocessamento de dados terminar.
+solution: Analytics,Analytics
+title: Exibir os resultados do experimento
 topic: Data workbench
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 4%
 
 ---
 
 
-# Exibição dos resultados do experimento{#viewing-the-experiment-results}
+# Exibir os resultados do experimento{#viewing-the-experiment-results}
 
-Depois de adicionar o novo campo ao Log Processing.cfg e criar a nova transformação Dividir e a dimensão estendida, é possível exibir a nova dimensão estendida criada assim que o estágio de Entrada rápida do reprocessamento de dados terminar.
+Depois de adicionar o novo campo ao Log Processing.cfg e criar a nova transformação Dividir e a dimensão estendida, você pode visualização a nova dimensão estendida criada assim que o estágio de Entrada rápida do reprocessamento de dados terminar.
 
 Essa dimensão, por padrão, exibe o número de sessões para cada um dos grupos de experimentos.
 
-**Para exibir a dimensão do experimento**
+**Para visualização da dimensão do experimento**
 
 * Em qualquer espaço de trabalho em [!DNL Insight], abra uma tabela com a dimensão de experimento que você criou.
 
