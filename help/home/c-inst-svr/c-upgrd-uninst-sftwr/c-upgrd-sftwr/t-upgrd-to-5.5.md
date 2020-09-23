@@ -1,17 +1,20 @@
 ---
-description: Atualização de componentes do servidor para o Análise de big data 6.1 a partir da instalação 5.4.
-solution: Insight
+description: Atualização dos componentes do servidor para a Data Workbench 6.1 da instalação 5.4.
+solution: Analytics
 title: Atualização do servidor DWB 5.4 para 5.5
 uuid: 9cf9f493-f098-4c6d-a8b5-786833496557
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 2%
 
 ---
 
 
-# Atualização do servidor DWB: 5.4 a 5.5{#dwb-server-upgrade-to}
+# Atualização do servidor DWB: 5.4 para 5.5{#dwb-server-upgrade-to}
 
-Atualização de componentes do servidor para o Análise de big data 6.1 a partir da instalação 5.4.
+Atualização dos componentes do servidor para a Data Workbench 6.1 da instalação 5.4.
 
 Consequentemente, a atualização de [!DNL Insight] 5.4 para [!DNL Insight] 5.5 é relativamente simples.
 
@@ -23,7 +26,7 @@ Você também pode atualizar diretamente da versão [!DNL Insight] 5.3 para a [!
 
    1. Depois que o [!DNL Insight] cliente tiver atualizado, copie os arquivos [!DNL InsightServer.exe] e [!DNL InsightServer64.exe] os arquivos na pasta \Bin.
 
-   1. Aguarde até que [!DNL Insight Master Server] o sistema inicie e verifique a versão em execução por meio da [!DNL Connections] visualização.
+   1. Aguarde o start [!DNL Insight Master Server] e verifique a versão em execução por meio da [!DNL Connections] visualização.
 
 1. No cluster [!DNL Master Server] no [!DNL Insight] cliente:
 
