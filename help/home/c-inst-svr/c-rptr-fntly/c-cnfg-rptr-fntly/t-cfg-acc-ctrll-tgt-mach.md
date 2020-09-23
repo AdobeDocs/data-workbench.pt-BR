@@ -1,10 +1,10 @@
 ---
-description: As máquinas do Target Insight Server que executam o Insight Server Replication Service devem ser capazes de ler os arquivos de log neste servidor repetidor.
-solution: Insight
+description: As máquinas do Público alvo Insight Server que executam o Insight Server Replication Service devem ser capazes de ler os arquivos de log neste servidor repetidor.
+solution: Analytics
 title: Configurar o controle de acesso para máquinas de direcionamento
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Configurar o controle de acesso para máquinas de direcionamento{#configuring-access-control-for-target-machines}
 
-As máquinas do Target Insight Server que executam o Insight Server Replication Service devem ser capazes de ler os arquivos de log neste servidor repetidor.
+As máquinas do Público alvo Insight Server que executam o Insight Server Replication Service devem ser capazes de ler os arquivos de log neste servidor repetidor.
 
 O acesso às máquinas de público alvo é concedido usando o [!DNL Access Control.cfg] arquivo.
 
