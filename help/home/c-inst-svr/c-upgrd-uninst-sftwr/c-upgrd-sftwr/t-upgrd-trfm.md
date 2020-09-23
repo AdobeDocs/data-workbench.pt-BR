@@ -1,15 +1,18 @@
 ---
 description: Etapas para atualizar a pasta Transform.
-solution: Insight
-title: Atualização da transformação
+solution: Analytics
+title: Atualizar transformação
 uuid: 26e567bc-7571-4317-b77c-2631a163a4b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '73'
+ht-degree: 5%
 
 ---
 
 
-# Atualização da transformação{#upgrading-transform}
+# Atualizar transformação{#upgrading-transform}
 
 Etapas para atualizar a pasta Transform.
 
