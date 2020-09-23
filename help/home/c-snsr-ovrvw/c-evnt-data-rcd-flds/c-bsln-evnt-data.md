@@ -1,17 +1,20 @@
 ---
-description: Informações sobre os campos de registro de dados de evento da linha de base como registrados pelo Sensor.
-solution: Insight
-title: Campos de Registro de Dados de Evento de Linha de Base
+description: Informações sobre os campos de registro de dados do evento de linha de base, conforme registrados pelo Sensor.
+solution: Analytics
+title: Campos de registro de dados do eventos de linha de base
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 3%
 
 ---
 
 
-# Campos de Registro de Dados de Evento de Linha de Base{#baseline-event-data-record-fields}
+# Campos de registro de dados do eventos de linha de base{#baseline-event-data-record-fields}
 
-Informações sobre os campos de registro de dados de evento da linha de base como registrados pelo Sensor.
+Informações sobre os campos de registro de dados do evento de linha de base, conforme registrados pelo Sensor.
 
 <table id="table_E29606BB010E4DB48C463979B7BEC769"> 
  <thead> 
@@ -30,8 +33,8 @@ Informações sobre os campos de registro de dados de evento da linha de base co
    <td colname="col2"> <p>Os cookies enviados pelo cliente com a solicitação. </p> <p>Exemplo: v1st=42FDF66DE610CF36; ASPSESSIONIDQCATDAQC=GPIBKEIBFBFIPLOJMKCAAEPM; </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> <p>A string do referenciador HTTP enviada pelo cliente para o servidor com a solicitação. </p> <p>Exemplo: http://www.mysite.net/cgi-bin/websearch?qry </p> <p>Se você estiver usando tags de página, o cs(referrer) será o URL completo do documento que contém a imagem da tag, incluindo HTTP ou HTTPs. </p> <p>Além disso, você pode configurar os sensores Apache (1.3, 2.0 e 2.2) e IIS para capturar a porta usada para a solicitação, que pode identificar solicitações HTTP vs. HTTPS. </p> </td> 
+   <td colname="col1"> cs(quem indicou) </td> 
+   <td colname="col2"> <p>A string de quem indicou HTTP enviada pelo cliente para o servidor com a solicitação. </p> <p>Exemplo: http://www.mysite.net/cgi-bin/websearch?qry </p> <p>Se você estiver usando tags de página, o cs(quem indicou) será o URL completo do documento que contém a imagem da tag, incluindo HTTP ou HTTPs. </p> <p>Além disso, você pode configurar os sensores Apache (1.3, 2.0 e 2.2) e IIS para capturar a porta usada para a solicitação, que pode identificar solicitações HTTP vs. HTTPS. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -42,12 +45,12 @@ Informações sobre os campos de registro de dados de evento da linha de base co
    <td colname="col2"> <p>O tipo de método da solicitação HTTP </p> <p>Exemplo: GET </p> <p>Referência: http://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> <p>A parte da string de consulta do URI (tronco + string de consulta = URI) </p> <p>Isso é precedido por um ponto de interrogação (?) e pode conter um ou mais pares nome-valor separados por E comercial (&amp;). </p> <p>Exemplo: page=homepage </p> </td> 
+   <td colname="col1"> query cs-uri </td> 
+   <td colname="col2"> <p>A parte da string do query do URI (tronco + string do query = URI) </p> <p>Isso é precedido por um ponto de interrogação (?) e pode conter um ou mais pares nome-valor separados por E comercial (&amp;). </p> <p>Exemplo: page=homepage </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-stem </td> 
-   <td colname="col2"> <p>A parte do sistema do URI (tronco + string de consulta = URI) </p> <p>O sistema é o caminho real ou lógico para o recurso solicitado no servidor. </p> <p>Exemplo: /index.asp </p> </td> 
+   <td colname="col2"> <p>A parte do sistema do URI (tronco + string de query = URI) </p> <p>O sistema é o caminho real ou lógico para o recurso solicitado no servidor. </p> <p>Exemplo: /index.asp </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc(content-type) </td> 
@@ -80,4 +83,4 @@ Informações sobre os campos de registro de dados de evento da linha de base co
  </tbody> 
 </table>
 
-O [!DNL data workbench server] pode derivar várias variáveis dos campos de registro de dados de evento da linha de base. For more information, see the *Dataset Configuration Guide*.
+O [!DNL data workbench server] pode derivar várias variáveis dos campos de registro de dados do evento da linha de base. For more information, see the *Dataset Configuration Guide*.
