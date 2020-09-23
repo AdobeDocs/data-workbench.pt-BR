@@ -1,28 +1,31 @@
 ---
-description: Uma configuração típica do Site usa cookies para identificar de forma exclusiva os visitantes de seu site e acompanhar seu comportamento ao longo do tempo.
-solution: Insight,Analytics
-title: Como o Site Identifica Os Visitantes?
+description: Uma configuração típica do Site usa cookies para identificar exclusivamente visitantes ao seu site e acompanhar seu comportamento ao longo do tempo.
+solution: Analytics,Analytics
+title: Como o site identifica visitantes?
 topic: Data workbench
 uuid: e1e451b8-e827-4010-bda9-9147c3b09958
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 3%
 
 ---
 
 
-# Como o Site Identifica Os Visitantes?{#how-does-site-identify-visitors}
+# Como o site identifica visitantes?{#how-does-site-identify-visitors}
 
-Uma configuração típica do Site usa cookies para identificar de forma exclusiva os visitantes de seu site e acompanhar seu comportamento ao longo do tempo.
+Uma configuração típica do Site usa cookies para identificar exclusivamente visitantes ao seu site e acompanhar seu comportamento ao longo do tempo.
 
-A primeira vez que um determinado navegador (considerado um visitante) faz uma solicitação de seu site, [!DNL Sensor] trabalha com o servidor da Web para definir um cookie persistente (por padrão [!DNL cs(cookie)(v1st)]), que é interpretado internamente no sistema como [!DNL x-trackingid]. Este cookie é definido somente uma vez, na primeira solicitação feita ao seu site por esse visitante. Em seguida, ele é coletado desse visitante toda vez que o navegador fizer uma solicitação (página ou solicitação de objeto incorporado) do site no futuro.
+A primeira vez que um determinado navegador (considerado um visitante) faz uma solicitação de seu site, [!DNL Sensor] trabalha com o servidor da Web para definir um cookie persistente (por padrão [!DNL cs(cookie)(v1st)]), que é interpretado internamente no sistema como [!DNL x-trackingid]. Este cookie é definido apenas uma vez, na primeira solicitação feita ao seu site por esse visitante. Em seguida, ele é coletado desse visitante toda vez que o navegador fizer uma solicitação (página ou solicitação de objeto incorporado) do site no futuro.
 
-A aceitação de um cookie persistente fica à discrição do navegador. Se um usuário optar por bloquear cookies persistentes, suas solicitações de exibição de página ainda serão registradas, mas os dados de medição dessas solicitações não serão correlacionados a um visitante específico ou a suas sessões no site, a menos que você implemente um método alternativo de identificação do visitante, como o uso da transformação Hash nos campos IP e UserAgent.
+A aceitação de um cookie persistente fica à discrição do navegador. Se um usuário optar por bloquear cookies persistentes, suas solicitações de visualização de página ainda serão registradas, mas os dados de medição dessas solicitações não serão correlacionados a um visitante específico ou a suas sessões no site, a menos que você implemente um método alternativo de identificação de visitantes, como o uso da transformação Hash nos campos IP e UserAgent.
 
 >[!NOTE]
 >
 >Os experimentos do site podem ser analisados somente em conjuntos de dados nos quais o único método de identificação de visitante em uso é o método de cookie persistente [!DNL Sensor] definido. Sensores em execução em servidores J2EE (JBoss, Tomcat, WebLogic e WebSphere) não suportam experimentação controlada.
 
-Durante um experimento controlado, os usuários que não aceitam cookies podem ser colocados em diferentes grupos de experimentos de um clique para o seguinte. Isso se torna um problema somente se você executar sua análise de teste com o Filtro de sessão quebrada desativado [!DNL Insight], o que a Adobe não recomenda.
+Durante um experimento controlado, os usuários que não aceitam cookies podem ser colocados em diferentes grupos de experimentos de um clique para o seguinte. Isso se torna um problema somente se você executar sua análise de teste com o Filtro de sessão quebrada desativado [!DNL Insight], que Adobe não é recomendado.
 
 Para obter mais informações sobre o Filtro de sessão quebrada, consulte o * Guia do usuário [!DNL Insight] *.
 
