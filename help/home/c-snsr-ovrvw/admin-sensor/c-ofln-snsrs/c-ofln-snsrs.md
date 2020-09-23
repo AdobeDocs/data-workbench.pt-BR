@@ -1,15 +1,18 @@
 ---
 description: Planeje dois cenários em relação ao Sensor que está offline.
-solution: Insight
-title: Lidar com sensores off-line
+solution: Analytics
+title: Lidar com sensores offline
 uuid: a8be847d-e506-4fbc-9d57-a28ff0cbeff2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 11%
 
 ---
 
 
-# Lidar com sensores off-line{#dealing-with-offline-sensors}
+# Lidar com sensores offline{#dealing-with-offline-sensors}
 
 Planeje dois cenários em relação ao Sensor que está offline.
 
