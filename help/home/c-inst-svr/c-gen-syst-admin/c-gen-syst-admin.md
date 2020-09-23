@@ -1,21 +1,24 @@
 ---
-description: A Adobe recomenda que você administre e monitore regularmente a integridade geral de cada servidor no qual um produto de software da Adobe está instalado.
-solution: Insight
+description: O Adobe recomenda que você administre e monitore regularmente a integridade geral de cada servidor no qual um produto de software Adobe está instalado.
+solution: Analytics
 title: Administração geral de sistemas
 uuid: 36f87f65-3791-41fd-a4fb-b94f7fa32fac
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 5%
 
 ---
 
 
 # Administração geral de sistemas{#general-systems-administration}
 
-A Adobe recomenda que você administre e monitore regularmente a integridade geral de cada servidor no qual um produto de software da Adobe está instalado.
+O Adobe recomenda que você administre e monitore regularmente a integridade geral de cada servidor no qual um produto de software Adobe está instalado.
 
-Recomendações gerais e instruções para monitorar e administrar todos os seus computadores da Adobe são fornecidas.
+São fornecidas recomendações gerais e instruções para a monitorização e administração de todas as suas máquinas de Adobe.
 
-Para obter informações sobre como administrar produtos específicos de software da Adobe, consulte os capítulos individuais neste guia.
+Para obter informações sobre como administrar produtos específicos de software de Adobe, consulte os capítulos individuais neste guia.
 
 >[!NOTE]
 >
