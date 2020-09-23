@@ -1,15 +1,18 @@
 ---
 description: Informações sobre como resolver problemas do servidor da Web, como, por exemplo, se o servidor da Web estiver fora de rotação ou se o servidor da Web falhar.
-solution: Insight
-title: Compreensão das causas
+solution: Analytics
+title: Compreender as causas
 uuid: a2801040-c859-4bf8-90d7-daf3d4f633f3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 2%
 
 ---
 
 
-# Compreensão das causas{#understanding-the-causes}
+# Compreender as causas{#understanding-the-causes}
 
 Informações sobre como resolver problemas do servidor da Web, como, por exemplo, se o servidor da Web estiver fora de rotação ou se o servidor da Web falhar.
 
@@ -19,6 +22,6 @@ Quando um servidor da Web é tirado da rotação de um pool de servidores, mas e
 
 ## Quando um Servidor Web falha {#section-19280cf83ca44bd7b1ee11bfc74494d2}
 
-Quando um servidor da Web está completamente offline devido a alguma falha catastrófica, ou não está enviando dados ou pulsações, o tempo de início da página [!DNL data workbench server] para garantir que representa a última vez que os dados [!DNL data workbench server] recebidos de TODAS as fontes de dados são conhecidos. O próprio sistema continua processando dados, que ainda estão disponíveis para análise na Análise de big data, mas qualquer coisa na [!DNL data workbench server] qual se baseia a data de início não funciona. Por exemplo, a Hora de início aciona os relatórios e é usada para criar muitas dimensões derivadas no sistema. Quando o tempo de início for interrompido, o relatório não será acionado e essas dimensões derivadas específicas não estarão disponíveis.
+Quando um servidor da Web está completamente offline devido a alguma falha catastrófica, ou não está enviando dados ou pulsações, o tempo de início da página [!DNL data workbench server] para garantir que representa a última vez que os dados [!DNL data workbench server] recebidos de TODAS as fontes de dados são conhecidos. O próprio sistema continua processando dados, que ainda estão disponíveis para análise na Data Workbench, mas qualquer coisa no [!DNL data workbench server] que se baseia no tempo de início não funciona. Por exemplo, a Hora de início aciona o relatórios e é usada para criar muitas dimensões derivadas no sistema. Quando o tempo de início for interrompido, o relatórios não será acionado e essas dimensões derivadas específicas não estarão disponíveis.
 
 Por exemplo, se a WEB2 ficasse offline em 15 de junho e não enviasse dados por cinco dias, a data de início seria em 15 de junho. A dimensão de Ontem, por exemplo, seria 14 de junho, mesmo que a data de hoje seja 20 de junho.
