@@ -1,18 +1,21 @@
 ---
-description: Informações sobre as condições da operação de teste incluindo comparação, não vazia, intervalo, expressão regular e correspondência de sequência.
+description: Informações sobre condições de operação de teste incluindo comparação, não vazia, intervalo, expressão regular e correspondência de sequência.
 solution: Analytics
-title: Condições de funcionamento do ensaio
+title: Condições de funcionamento do teste
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 6%
 
 ---
 
 
-# Condições de funcionamento do ensaio{#test-operation-conditions}
+# Condições de funcionamento do teste{#test-operation-conditions}
 
-Informações sobre as condições da operação de teste incluindo comparação, não vazia, intervalo, expressão regular e correspondência de sequência.
+Informações sobre condições de operação de teste incluindo comparação, não vazia, intervalo, expressão regular e correspondência de sequência.
 
 * [Comparar](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac)
 * [Não vazio](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1decb9d887894073a1b6b3d985729ac8)
@@ -76,7 +79,7 @@ Os parâmetros da [!DNL Compare] condição estão descritos na tabela a seguir:
  </tbody> 
 </table>
 
-Este exemplo usa uma [!DNL Compare] condição para definir o [!DNL Log Entry Condition]. À medida que o servidor da análise de big data lê cada registro de dados de evento, ele compara os valores numéricos x-age e 55. Se para uma entrada de log específica, x-age for menor ou igual a 55, a entrada de log será incluída no processo de construção do conjunto de dados.
+Este exemplo usa uma [!DNL Compare] condição para definir o [!DNL Log Entry Condition]. À medida que o servidor da análise de big data lê cada registro de dados do evento, ele compara os valores numéricos x-age e 55. Se para uma entrada de log específica, x-age for menor ou igual a 55, a entrada de log será incluída no processo de construção do conjunto de dados.
 
 ![](assets/cfg_Condition_CompareCondition.png)
 
@@ -153,7 +156,7 @@ Este exemplo usa uma [!DNL Range] condição para definir o [!DNL Log Entry Cond
 
 ## Expressão regular {#section-ae9c016502cb44128760c58f2d2d5297}
 
-O teste de [!DNL Regular Expression] condição usa a correspondência de padrões de expressões regulares (consulte Expressões [](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)regulares) para determinar se o valor do campo de entrada especificado contém uma string que corresponde a um dos padrões especificados no parâmetro Correspondências.
+O teste de [!DNL Regular Expression] condição usa a correspondência regular de padrões do expressão (consulte [Expressões](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)regulares) para determinar se o valor do campo de entrada especificado contém uma string que corresponde a um dos padrões especificados no parâmetro Correspondências.
 
 Se a entrada for um vetor de strings, somente o primeiro valor no vetor será usado para o teste. A [!DNL Regular Expression] condição realiza comparações de sequências de caracteres completas. Se quiser identificar subsequências de caracteres, você deve anexar &quot; como prefixo e anexar &quot;.*&quot; à string.
 
@@ -185,7 +188,7 @@ Os parâmetros da [!DNL Regular Expression] condição estão descritos na tabel
   </tr> 
   <tr> 
    <td colname="col1"> Corresponde </td> 
-   <td colname="col2"> <p>Os padrões de expressão regular para corresponder ao valor do campo de entrada. </p> <p> <b> Para adicionar um padrão de expressão regular</b> 
+   <td colname="col2"> <p>Os padrões de expressão regulares que correspondem ao valor do campo de entrada. </p> <p> <b> Para adicionar um padrão de expressão regular</b> 
      <ol id="ol_6D6467FF74334DEA8E8625C3B155D11D"> 
       <li id="li_9E13A63558FF44749C2E49BD50B7F770">Clique com o botão direito do mouse em <span class="uicontrol"> Corresponde</span>. </li> 
       <li id="li_195A2F3B6B9442F5B1DACDE0FC96CE5C">Clique em <span class="uicontrol"> Adicionar novo</span> &gt; <span class="uicontrol"> Expressão</span>regular. </li> 
@@ -196,13 +199,13 @@ Os parâmetros da [!DNL Regular Expression] condição estão descritos na tabel
  </tbody> 
 </table>
 
-Este exemplo ilustra o uso da [!DNL Regular Expression] condição para corresponder a um campo de dados coletados do tráfego do site. A condição retorna true somente se o campo cs(referrer-query) contiver uma string que corresponda à campanha de expressão regular=C[1-9][0-9]{4}. Essa expressão regular corresponde a qualquer sequência que contenha &quot;campaign=C12345&quot;. No entanto, o padrão não corresponderia à string &quot;campaign=C0123&amp;&quot;, pois o primeiro caractere após &quot;C&quot; não está no intervalo de 1 a 9.
+Este exemplo ilustra o uso da [!DNL Regular Expression] condição para corresponder a um campo de dados coletados do tráfego do site. A condição retorna true somente se o campo cs(quem indicou-query) contiver uma string que corresponda à expressão regular `campaign=C[1-9][0-9]{4}`. Essa expressão regular corresponde a qualquer string contendo &quot;campanha=C12345&quot;. No entanto, o padrão não corresponderia à string &quot;campanha=C0123&amp;&quot; porque o primeiro caractere depois de &quot;C&quot; não está no intervalo de 1 a 9.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
 ## Correspondência de string {#section-f8d132085c6b4500bfbe4515b848142f}
 
-A [!DNL String Match] condição testa a igualdade da string. Ele pega um campo especificado como entrada e testa o valor desse campo em cada entrada de log em relação às strings especificadas no parâmetro Correspondências da operação. Se qualquer uma dessas strings de correspondência que diferenciam maiúsculas e minúsculas for igual ao valor no campo de entrada fornecido, a operação retornará true. Caso a condição não [!DNL StringCondition] contenha sequências de caracteres de correspondência, ela retornará false. Se a entrada for um vetor de strings, somente o primeiro valor (string) no vetor será usado para o teste.
+A [!DNL String Match] condição testa a igualdade da string. Ele pega um campo especificado como entrada e testa o valor desse campo em cada entrada de log em relação às strings especificadas no parâmetro Correspondências da operação. Se qualquer uma dessas strings de correspondência que diferenciam maiúsculas e minúsculas for igual ao valor no campo de entrada fornecido, a operação retornará true. No evento de que as strings não [!DNL StringCondition] contêm correspondência, a condição retorna false. Se a entrada for um vetor de strings, somente o primeiro valor (string) no vetor será usado para o teste.
 
 <table id="table_BD599BAA5DD54B278813B6C38AC8DE6B"> 
  <thead> 
