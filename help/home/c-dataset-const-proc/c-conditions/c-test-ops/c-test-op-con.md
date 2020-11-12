@@ -5,9 +5,9 @@ title: Condições de funcionamento do teste
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: 1630f34588e4984226b70c963618856496b42346
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1115'
 ht-degree: 6%
 
 ---
@@ -199,7 +199,7 @@ Os parâmetros da [!DNL Regular Expression] condição estão descritos na tabel
  </tbody> 
 </table>
 
-Este exemplo ilustra o uso da [!DNL Regular Expression] condição para corresponder a um campo de dados coletados do tráfego do site. A condição retorna true somente se o campo cs(quem indicou-query) contiver uma string que corresponda à expressão regular `campaign=C[1-9][0-9]{4}`. Essa expressão regular corresponde a qualquer string contendo &quot;campanha=C12345&quot;. No entanto, o padrão não corresponderia à string &quot;campanha=C0123&amp;&quot; porque o primeiro caractere depois de &quot;C&quot; não está no intervalo de 1 a 9.
+Este exemplo ilustra o uso da [!DNL Regular Expression] condição para corresponder a um campo de dados coletados do tráfego do site. A condição retorna true somente se o campo cs(quem indicou-query) contiver uma string que corresponda à expressão regular `campaign=C[1-9][0-9]{4}`. Essa expressão normal corresponde a qualquer string que contenha `campaign=C12345`. No entanto, o padrão não corresponderia à string `campaign=C0123&` porque o primeiro caractere depois de &quot;C&quot; não está no intervalo de 1 a 9.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
