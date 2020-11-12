@@ -1,16 +1,19 @@
 ---
 description: As fontes de log são arquivos que contêm os dados a serem usados para criar um conjunto de dados.
 solution: Analytics
-title: Fontes de registro
+title: Fontes de log
 topic: Data workbench
 uuid: ea21c3d7-9188-4ba8-bacd-052d678bd799
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '3664'
+ht-degree: 1%
 
 ---
 
 
-# Fontes de registro{#log-sources}
+# Fontes de log{#log-sources}
 
 As fontes de log são arquivos que contêm os dados a serem usados para criar um conjunto de dados.
 
@@ -18,7 +21,7 @@ Os dados disponíveis nas fontes de log são chamados de dados de evento porque 
 
 * **Dados coletados por [!DNL Sensors]: ** Os dados coletados por HTTP e servidores de aplicativos são transmitidos para servidores de análise de big data, que convertem os dados em arquivos de log ( [!DNL Sensors] [!DNL .vsl]) altamente compactados. Consulte Arquivos [de sensor](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009).
 
-* **Dados extraídos pelo Insight Server:** O servidor da análise de big data lê dados de eventos contidos em arquivos simples, arquivos XML ou bancos de dados compatíveis com ODBC e usa seus decodificadores para extrair os elementos desejados dos dados. Esses dados de evento não precisam ser residentes na memória, mas os registros que contêm os dados devem incluir uma ID de rastreamento. Consulte Arquivos [de](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)registro, Fontes [de registro](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)XML e Fontes [de dados](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)ODBC.
+* **Dados extraídos pelo Insight Server:** O servidor da análise de big data lê os dados do evento contidos em arquivos simples, arquivos XML ou bancos de dados compatíveis com ODBC e usa seus decodificadores para extrair os elementos desejados dos dados. Esses dados de evento não precisam ser residentes na memória, mas os registros que contêm os dados devem incluir uma ID de rastreamento. Consulte Arquivos [de](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)registro, Fontes [de registro](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)XML e Fontes [de dados](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)ODBC.
 
 **Para adicionar uma fonte de log**
 
@@ -53,9 +56,9 @@ c_sensor_files.xml
 
 ## Requisitos {#section-d5901a4872774ad5bd01a18db114f1f2}
 
-Os dados de eventos coletados por HTTP e servidores de aplicativos são transmitidos para servidores de análise de big data, que convertem os dados em arquivos de log ( [!DNL Sensors] [!DNL .vsl]) altamente compactados. O formato de [!DNL .vsl] arquivo é gerenciado pelo servidor da análise de big data e cada arquivo tem um nome do formato:
+Os dados de evento coletados por HTTP e servidores de aplicativos são transmitidos para servidores de análise de big data, que convertem os dados em arquivos de log ( [!DNL Sensors] [!DNL .vsl]) altamente compactados. O formato de [!DNL .vsl] arquivo é gerenciado pelo servidor da análise de big data e cada arquivo tem um nome do formato:
 
-AAAAMMDD-*SENSORID*.VSL
+AAAMMDD-*SENSORID*.VSL
 
 onde AAAMMDD é a data do arquivo, e *SENSORID* é o nome (atribuído pela organização) que indica qual [!DNL Sensor] coletou e transmitiu os dados ao servidor da análise de big data.
 
@@ -81,26 +84,26 @@ Para [!DNL Sensor] arquivos, os seguintes parâmetros estão disponíveis:
   </tr> 
   <tr> 
    <td colname="col1"> Servidor de registro </td> 
-   <td colname="col2">Informações (Endereço, Nome, Porta etc.) necessárias para se conectar a um servidor de arquivos. Se houver uma entrada no parâmetro Servidor de log, os Caminhos <span class="wintitle"> de</span> log serão interpretados como URIs. Caso contrário, serão interpretados como caminhos locais. Consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Configurando uma unidade</a>do servidor de arquivos do Insight Server. </td> 
+   <td colname="col2">Informações (Endereço, Nome, Porta etc.) necessárias para se conectar a um servidor de arquivos. Se houver uma entrada no parâmetro Servidor de log, os Caminhos <span class="wintitle"></span> de log serão interpretados como URIs. Caso contrário, serão interpretados como caminhos locais. Consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Configurando uma unidade</a>do servidor de arquivos do Insight Server. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ID de origem do registro </td> 
-   <td colname="col2"> <p>O valor desse parâmetro pode ser qualquer string. Se um valor for especificado, esse parâmetro permitirá que você diferencie entradas de log de diferentes fontes de log para identificação de origem ou processamento direcionado. O campo x-log-source-id é preenchido com um valor que identifica a fonte de log para cada entrada de log. Por exemplo, se você quiser identificar entradas de log de um <span class="wintitle"> Sensor</span> chamado VSensor01, você pode digitar <span class="filepath"> de VSensor01</span>, e essa string será transmitida para o campo x-log-source-id para cada entrada de log dessa fonte. </p> <p> Para obter informações sobre o campo x-log-source-id, consulte Campos <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> de registro de dados de</a>evento. </p> </td> 
+   <td colname="col2"> <p>O valor desse parâmetro pode ser qualquer string. Se um valor for especificado, esse parâmetro permitirá que você diferencie entradas de log de diferentes fontes de log para identificação de origem ou processamento direcionado. O campo x-log-source-id é preenchido com um valor que identifica a fonte de log para cada entrada de log. Por exemplo, se você quiser identificar entradas de log de um <span class="wintitle"> Sensor</span> chamado VSensor01, você pode digitar <span class="filepath"> de VSensor01</span>, e essa string será transmitida para o campo x-log-source-id para cada entrada de log dessa fonte. </p> <p> Para obter informações sobre o campo x-log-source-id, consulte Campos <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> de registro de dados do</a>Evento. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursivo </td> 
    <td colname="col2"> Verdadeiro ou falso. Se definido como true, todos os subdiretórios de cada caminho especificado em Caminhos <span class="wintitle"> de</span> registro serão pesquisados para localizar arquivos que correspondam ao nome do arquivo especificado ou ao padrão curinga. O valor padrão é false. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Usar Horários de Início/Término </td> 
-   <td colname="col2"> <p>Verdadeiro ou falso. Se for definido como true e a Hora de início ou Hora de término for especificada, todos os arquivos para essa fonte de log deverão ter nomes de arquivo começando com datas no formato ISO (AAAMMDD). Pressupõe-se que cada arquivo contenha dados de um dia GMT (por exemplo, o intervalo de tempo que começa em 0000 GMT em um dia e termina em 0000 GMT no dia seguinte). Se os arquivos de fontes de log contiverem dados que não correspondem a um dia GMT, esse parâmetro deverá ser definido como false para evitar resultados incorretos. </p> <p> <p>Observação: Por padrão, <span class="filepath"> os </span>arquivos .vsl que contêm dados coletados pelo <span class="wintitle"> sensor</span> atendem automaticamente aos requisitos de nomeação e intervalo de tempo descritos acima. Se você definir esse parâmetro como true, o servidor da análise de big data sempre processará dados de arquivos cujos nomes incluem datas ISO que se situam entre a Hora de início e a Hora de término especificadas. Se você definir esse parâmetro como falso, o servidor da análise de big data fará a leitura de todos os arquivos <span class="filepath"> .vsl</span> durante o processamento do log para determinar quais arquivos contêm dados dentro do intervalo Hora de início e Hora de término. </p> </p> <p> Para obter informações sobre os parâmetros Hora de início e Hora de término, consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> Filtros</a>de dados. </p> </td> 
+   <td colname="col1"> Usar Start/hora de término </td> 
+   <td colname="col2"> <p>Verdadeiro ou falso. Se definido como true e Hora do Start ou Hora de término for especificado, todos os arquivos para essa fonte de log deverão ter nomes de arquivo começando com datas no formato ISO (AAAMMDD). Pressupõe-se que cada arquivo contenha dados de um dia GMT (por exemplo, o intervalo de tempo que começa em 0000 GMT em um dia e termina em 0000 GMT no dia seguinte). Se os arquivos de fontes de log contiverem dados que não correspondem a um dia GMT, esse parâmetro deverá ser definido como false para evitar resultados incorretos. </p> <p> <p>Observação: Por padrão, <span class="filepath"> os </span>arquivos .vsl que contêm dados coletados pelo <span class="wintitle"> sensor</span> atendem automaticamente aos requisitos de nomeação e intervalo de tempo descritos acima. Se você definir esse parâmetro como true, o servidor da análise de big data sempre processará dados de arquivos cujos nomes incluem datas ISO que se situam entre a Hora do Start e a Hora de término especificados. Se você definir esse parâmetro como falso, o servidor da análise de big data fará a leitura de todos os arquivos <span class="filepath"> .vsl</span> durante o processamento do log para determinar quais arquivos contêm dados dentro do intervalo de Tempo de Start e Hora de término. </p> </p> <p> Para obter informações sobre os parâmetros Hora e Hora de término do Start, consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> Filtros</a>de dados. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Não use os parâmetros de configuração para fontes de [!DNL Sensor] dados para determinar quais entradas de log dentro de um arquivo de log devem ser incluídas em um conjunto de dados. Em vez disso, configure a fonte de dados para apontar para todos os arquivos de log dentro de um diretório. Em seguida, use os parâmetros Hora de início e Hora de término do para determinar quais entradas de log devem ser usadas na construção do conjunto de dados. [!DNL Log Processing.cfg] Consulte Filtros [de dados](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d).
+>Não use os parâmetros de configuração para fontes de [!DNL Sensor] dados para determinar quais entradas de log dentro de um arquivo de log devem ser incluídas em um conjunto de dados. Em vez disso, configure a fonte de dados para apontar para todos os arquivos de log dentro de um diretório. Em seguida, use os parâmetros Hora e Hora de término do Start para determinar quais entradas de log devem ser usadas na construção do conjunto de dados. [!DNL Log Processing.cfg] Consulte Filtros [de dados](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d).
 
 <!--
 c_log_files.xml
@@ -109,15 +112,16 @@ c_log_files.xml
 O arquivo que contém os dados do evento deve atender aos seguintes requisitos:
 
 * Cada registro de dados de evento no arquivo deve ser representado por uma linha.
-* Os campos em um registro devem ser separados, vazios ou não, por um delimitador ASCII. O servidor da análise de big data não exige o uso de um delimitador específico. Você pode usar qualquer caractere que não seja um caractere final de linha e não apareça em qualquer lugar dentro dos próprios dados do evento.
+* Os campos em um registro devem ser separados, vazios ou não, por um delimitador ASCII. O servidor da análise de big data não exige o uso de um delimitador específico. Você pode usar qualquer caractere que não seja um caractere final de linha e não apareça em nenhum lugar dentro dos próprios dados do evento.
 * Cada registro no arquivo deve conter:
 
    * Uma ID de rastreamento
    * Um carimbo de data e hora
 
-* Para especificar as horas de início e término do processamento de dados, cada nome de arquivo deve ser do formulário:
+* Para especificar start e horas de término para o processamento de dados, cada nome de arquivo deve ser do formulário:
 
    * [!DNL YYYYMMDD-SOURCE.log]
+
    onde *AAAMMDD* é o dia GMT (Greenwich Mean Time) de todos os dados do arquivo, e *SOURCE* é uma variável que identifica a fonte dos dados contidos no arquivo.
 
    >[!NOTE]
@@ -154,7 +158,7 @@ Para fontes de log de arquivos de log, os parâmetros na tabela a seguir estão 
   </tr> 
   <tr> 
    <td colname="col1"> Servidor de registro </td> 
-   <td colname="col2"> Informações (Endereço, Nome, Porta etc.) necessárias para se conectar a um servidor de arquivos. Se houver uma entrada no parâmetro Servidor de log, os Caminhos <span class="wintitle"> de</span> log serão interpretados como URIs. Caso contrário, serão interpretados como caminhos locais. Consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Configurando uma unidade</a>do servidor de arquivos do Insight Server. </td> 
+   <td colname="col2"> Informações (Endereço, Nome, Porta etc.) necessárias para se conectar a um servidor de arquivos. Se houver uma entrada no parâmetro Servidor de log, os Caminhos <span class="wintitle"></span> de log serão interpretados como URIs. Caso contrário, serão interpretados como caminhos locais. Consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Configurando uma unidade</a>do servidor de arquivos do Insight Server. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Compactado </td> 
@@ -162,15 +166,15 @@ Para fontes de log de arquivos de log, os parâmetros na tabela a seguir estão 
   </tr> 
   <tr> 
    <td colname="col1"> Grupo decodificador </td> 
-   <td colname="col2"> O nome do grupo do decodificador de arquivos de texto a ser aplicado à fonte de log do arquivo de log. Esse nome deve corresponder exatamente ao nome do grupo decodificador de arquivos de texto correspondente especificado no arquivo Incluir <span class="wintitle"> Conjunto de Dados de Processamento de</span> Log. Consulte <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"> Grupos</a>do decodificador de arquivos de texto. </td> 
+   <td colname="col2"> O nome do grupo do decodificador de arquivos de texto a ser aplicado à fonte de log do arquivo de log. Esse nome deve corresponder exatamente ao nome do grupo decodificador de arquivos de texto correspondente especificado no arquivo Incluir <span class="wintitle"> Conjunto de Dados de Processamento de</span> Log. See <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"> Text File Decoder Groups</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ID de origem do registro </td> 
-   <td colname="col2"> <p>O valor desse parâmetro pode ser qualquer string. Se um valor for especificado, esse parâmetro permitirá que você diferencie entradas de log de diferentes fontes de log para identificação de origem ou processamento direcionado. O campo x-log-source-id é preenchido com um valor que identifica a fonte de log para cada entrada de log. Por exemplo, se você deseja identificar entradas de log de uma fonte de arquivo de log chamada LogFile01, você pode digitar <span class="filepath"> de LogFile01</span>, e essa string seria passada para o campo x-log-source-id para cada entrada de log dessa fonte. </p> <p> Para obter informações sobre o campo x-log-source-id, consulte Campos <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> de registro de dados de</a>evento. </p> </td> 
+   <td colname="col2"> <p>O valor desse parâmetro pode ser qualquer string. Se um valor for especificado, esse parâmetro permitirá que você diferencie entradas de log de diferentes fontes de log para identificação de origem ou processamento direcionado. O campo x-log-source-id é preenchido com um valor que identifica a fonte de log para cada entrada de log. Por exemplo, se você deseja identificar entradas de log de uma fonte de arquivo de log chamada LogFile01, você pode digitar <span class="filepath"> de LogFile01</span>, e essa string seria passada para o campo x-log-source-id para cada entrada de log dessa fonte. </p> <p> Para obter informações sobre o campo x-log-source-id, consulte Campos <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> de registro de dados do</a>Evento. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Padrão de máscara </td> 
-   <td colname="col2"> <p>Uma expressão regular com um único subpadrão de captura que extrai um nome consistente usado para identificar a origem de uma série de arquivos de log. Somente o nome do arquivo é considerado. O caminho e a extensão não são considerados para a correspondência de expressões regulares. Se você não especificar um padrão <span class="wintitle"> de</span>máscara, uma máscara será gerada automaticamente. </p> <p> Para os arquivos <span class="filepath"> Logs\010105server1.log</span> e <span class="filepath"> Logs\010105server2.log</span>, o padrão <span class="wintitle"> da</span> máscara seria [0-9]{6}(.*). Este padrão extrai a string "server1" ou "server2" dos nomes de arquivo acima. </p> <p> Consulte <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Expressões</a>regulares. </p> </td> 
+   <td colname="col2"> <p>Uma expressão regular com um único subpadrão de captura que extrai um nome consistente usado para identificar a origem de uma série de arquivos de log. Somente o nome do arquivo é considerado. O caminho e a extensão não são considerados para a correspondência regular de expressões. Se você não especificar um padrão <span class="wintitle"> de</span>máscara, uma máscara será gerada automaticamente. </p> <p> Para os arquivos <span class="filepath"> Logs\010105server1.log</span> e <span class="filepath"> Logs\010105server2.log</span>, o padrão <span class="wintitle"> da</span> máscara seria <code>[0-9]{6}(.*)</code>. Este padrão extrai a string "server1" ou "server2" dos nomes de arquivo acima. </p> <p> Consulte <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Expressões</a>regulares. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursivo </td> 
@@ -181,8 +185,8 @@ Para fontes de log de arquivos de log, os parâmetros na tabela a seguir estão 
    <td colname="col2"> O caminho e o nome do arquivo que contém as entradas de log que não atendem às condições do decodificador. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Usar Horários de Início/Término </td> 
-   <td colname="col2"> <p>Verdadeiro ou falso. Se esse parâmetro for definido como true e a Hora de início ou Hora de término for especificada, todos os arquivos dessa fonte de log deverão ter nomes de arquivo que comecem com datas no formato ISO (AAAMMDD). Pressupõe-se que cada arquivo contenha dados de um dia GMT (por exemplo, o intervalo de tempo que começa em 0000 GMT em um dia e termina em 0000 GMT no dia seguinte). Se os nomes dos arquivos das fontes de log não começarem com datas ISO, ou se os arquivos contiverem dados que não correspondem a um dia GMT, esse parâmetro deverá ser definido como false para evitar resultados incorretos. </p> <p> <p>Observação:  Se os requisitos de nomeação e intervalo de tempo descritos acima forem cumpridos para os arquivos de log e você definir esse parâmetro como verdadeiro, o grupo decodificador de arquivos de texto especificado limitará os arquivos lidos àqueles cujos nomes têm datas ISO que estão entre a Hora de início e a Hora de término especificadas. Se você definir esse parâmetro como falso, o servidor da análise de big data fará a leitura de todos os arquivos de log durante o processamento do log para determinar quais arquivos contêm dados dentro do intervalo Hora de início e Hora de término. </p> </p> <p> Para obter informações sobre os parâmetros Hora de início e Hora de término, consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> Filtros</a>de dados. </p> </td> 
+   <td colname="col1"> Usar Start/hora de término </td> 
+   <td colname="col2"> <p>Verdadeiro ou falso. Se esse parâmetro for definido como true e a Hora ou Hora de término do Start for especificada, todos os arquivos dessa fonte de log deverão ter nomes de arquivo que comecem com datas no formato ISO (AAAMMDD). Pressupõe-se que cada arquivo contenha dados de um dia GMT (por exemplo, o intervalo de tempo que começa em 0000 GMT em um dia e termina em 0000 GMT no dia seguinte). Se os nomes dos arquivos das fontes de log não começarem com datas ISO, ou se os arquivos contiverem dados que não correspondem a um dia GMT, esse parâmetro deverá ser definido como false para evitar resultados incorretos. </p> <p> <p>Observação:  Se os requisitos de nomeação e intervalo de tempo descritos acima forem cumpridos para os arquivos de log e você definir esse parâmetro como true, o grupo decodificador de arquivos de texto especificado limitará os arquivos lidos àqueles cujos nomes têm datas ISO que se situam entre a Hora do Start e a Hora de término especificadas. Se você definir esse parâmetro como falso, o servidor da análise de big data fará a leitura de todos os arquivos de log durante o processamento do log para determinar quais arquivos contêm dados dentro do intervalo de Tempo de Start e Hora de término. </p> </p> <p> Para obter informações sobre os parâmetros Hora e Hora de término do Start, consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> Filtros</a>de dados. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -210,7 +214,7 @@ O arquivo que contém os dados do evento deve atender aos seguintes requisitos:
    * Uma ID de rastreamento
    * Um carimbo de data e hora
 
-* Para especificar as horas de início e término do processamento de dados, cada nome de arquivo deve ser do formulário
+* Para especificar start e horas de término para o processamento de dados, cada nome de arquivo deve ser do formulário
 
 [!DNL YYYYMMDD-SOURCE.log]
 
@@ -260,15 +264,15 @@ Para fontes de log XML, os parâmetros na tabela a seguir estão disponíveis.
   </tr> 
   <tr> 
    <td colname="col1"> Grupo decodificador </td> 
-   <td colname="col2"> O nome do grupo decodificador XML a ser aplicado à fonte de log XML. Esse nome deve corresponder exatamente ao nome do grupo decodificador XML correspondente especificado no arquivo de Inclusão <span class="wintitle"> do Conjunto de Dados de Processamento de</span> Log. Consulte Grupos <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> do decodificador de</a>XML. </td> 
+   <td colname="col2"> O nome do grupo decodificador XML a ser aplicado à fonte de log XML. Esse nome deve corresponder exatamente ao nome do grupo decodificador XML correspondente especificado no arquivo de Inclusão <span class="wintitle"> do Conjunto de Dados de Processamento de</span> Log. See <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> XML Decoder Groups</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ID de origem do registro </td> 
-   <td colname="col2"> <p>O valor desse campo pode ser qualquer string. Se um valor for especificado, esse campo permitirá que você diferencie entradas de log de diferentes fontes de log para identificação de origem ou processamento direcionado. O campo x-log-source-id é preenchido com um valor que identifica a fonte de log para cada entrada de log. Por exemplo, se você deseja identificar entradas de log de uma fonte de arquivo de log chamada XMLFile01, você pode digitar <span class="filepath"> de XMLFile01</span>, e essa string seria passada para o campo x-log-source-id para cada entrada de log dessa fonte. </p> <p> Para obter informações sobre o campo x-log-source-id, consulte Campos <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> de registro de dados de</a>evento. </p> </td> 
+   <td colname="col2"> <p>O valor desse campo pode ser qualquer string. Se um valor for especificado, esse campo permitirá que você diferencie entradas de log de diferentes fontes de log para identificação de origem ou processamento direcionado. O campo x-log-source-id é preenchido com um valor que identifica a fonte de log para cada entrada de log. Por exemplo, se você deseja identificar entradas de log de uma fonte de arquivo de log chamada XMLFile01, você pode digitar <span class="filepath"> de XMLFile01</span>, e essa string seria passada para o campo x-log-source-id para cada entrada de log dessa fonte. </p> <p> Para obter informações sobre o campo x-log-source-id, consulte Campos <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> de registro de dados do</a>Evento. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Padrão de máscara </td> 
-   <td colname="col2"> <p>Uma expressão regular com um único subpadrão de captura que extrai um nome consistente usado para identificar a origem de uma série de arquivos de log. Somente o nome do arquivo é considerado. O caminho e a extensão não são considerados para a correspondência de expressões regulares. Se você não especificar um padrão <span class="wintitle"> de</span>máscara, uma máscara será gerada automaticamente. </p> <p> Para os arquivos <span class="filepath"> Logs\010105server1.xml</span> e <span class="filepath"> Logs\010105server2.xml</span>, o padrão de máscara seria [0-9]{6}(.*). Este padrão extrai a string "server1" ou "server2" dos nomes de arquivo acima. </p> <p> Consulte <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Expressões</a>regulares. </p> </td> 
+   <td colname="col2"> <p>Uma expressão regular com um único subpadrão de captura que extrai um nome consistente usado para identificar a origem de uma série de arquivos de log. Somente o nome do arquivo é considerado. O caminho e a extensão não são considerados para a correspondência regular de expressões. Se você não especificar um padrão <span class="wintitle"> de</span>máscara, uma máscara será gerada automaticamente. </p> <p> Para os arquivos <span class="filepath"> Logs\010105server1.xml</span> e <span class="filepath"> Logs\010105server2.xml</span>, o padrão de máscara seria <code>[0-9]{6}(.*)</code>. Este padrão extrai a string "server1" ou "server2" dos nomes de arquivo acima. </p> <p> Consulte <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Expressões</a>regulares. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursivo </td> 
@@ -279,8 +283,8 @@ Para fontes de log XML, os parâmetros na tabela a seguir estão disponíveis.
    <td colname="col2"> O caminho e o nome do arquivo que contém as entradas de log que não atendem às condições do decodificador. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Usar Horários de Início/Término </td> 
-   <td colname="col2"> <p>Verdadeiro ou falso. Se esse parâmetro for definido como true e a Hora de início ou Hora de término for especificada, todos os arquivos dessa fonte de log deverão ter nomes de arquivo que comecem com datas no formato ISO (AAAMMDD). Pressupõe-se que cada arquivo contenha dados de um dia GMT (por exemplo, o intervalo de tempo que começa em 0000 GMT em um dia e termina em 0000 GMT no dia seguinte). Se os nomes dos arquivos das fontes de log não começarem com datas ISO, ou se os arquivos contiverem dados que não correspondem a um dia GMT, esse parâmetro deverá ser definido como false para evitar resultados incorretos. </p> <p> <p>Observação:  Se os requisitos de nomeação e intervalo de tempo descritos acima forem cumpridos para os arquivos XML e você definir esse parâmetro como true, o grupo decodificador XML especificado limitará os arquivos lidos àqueles cujos nomes têm datas ISO que estão entre a Hora de início e a Hora de término especificadas. Se você definir esse parâmetro como falso, o servidor da análise de big data fará a leitura de todos os arquivos XML durante o processamento do log para determinar quais arquivos contêm dados dentro do intervalo Hora de início e Hora de término. </p> </p> <p> Para obter informações sobre os parâmetros Hora de início e Hora de término, consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> Filtros</a>de dados. </p> </td> 
+   <td colname="col1"> Usar Start/hora de término </td> 
+   <td colname="col2"> <p>Verdadeiro ou falso. Se esse parâmetro for definido como true e a Hora ou Hora de término do Start for especificada, todos os arquivos dessa fonte de log deverão ter nomes de arquivo que comecem com datas no formato ISO (AAAMMDD). Pressupõe-se que cada arquivo contenha dados de um dia GMT (por exemplo, o intervalo de tempo que começa em 0000 GMT em um dia e termina em 0000 GMT no dia seguinte). Se os nomes dos arquivos das fontes de log não começarem com datas ISO, ou se os arquivos contiverem dados que não correspondem a um dia GMT, esse parâmetro deverá ser definido como false para evitar resultados incorretos. </p> <p> <p>Observação:  Se os requisitos de nomeação e intervalo de tempo descritos acima forem cumpridos para os arquivos XML e você definir esse parâmetro como true, o grupo decodificador XML especificado limita os arquivos lidos àqueles cujos nomes têm datas ISO que se situam entre a Hora do Start e a Hora de término especificadas. Se você definir esse parâmetro como falso, o servidor da análise de big data fará a leitura de todos os arquivos XML durante o processamento do log para determinar quais arquivos contêm dados dentro do intervalo de Tempo de Start e Hora de término. </p> </p> <p> Para obter informações sobre os parâmetros Hora e Hora de término do Start, consulte <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> Filtros</a>de dados. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -293,14 +297,14 @@ Para fontes de log XML, os parâmetros na tabela a seguir estão disponíveis.
 AVRO-log-file.xml
 -->
 
-O feed de dados Avro fornece uma maneira mais eficiente de integrar dados ao Análise de big data:
+O feed de dados Avro fornece uma maneira mais eficiente de integrar dados à Data Workbench:
 
 <!-- <a id="section_45E3105B971C4220AE9CF573BEBF6080"></a> -->
 
 * A Avro fornece um formato de fonte única para dados de tráfego e comércio.
 * O feed Avro é composto de dados de várias partes de origem fornecidas por dia. Ele fornece apenas campos preenchidos e recursos de monitoramento e notificação, acesso a dados históricos e recuperação automática.
-* O esquema, um layout autodefinidor dos arquivos de log Avro, está incluído no início de cada arquivo.
-* Novos campos são adicionados com informações de suporte para assimilar dados da Análise de big data sem qualquer alteração necessária ao decodificador. Dentre eles:
+* O schema, um layout autodefinidor de arquivos de log Avro, está incluído no início de cada arquivo.
+* Novos campos são adicionados com informações de suporte para assimilar dados de Data Workbench sem quaisquer alterações necessárias no decodificador. Dentre eles:
 
    * Evars: 1-250 (anteriormente 1-75)
    * Eventos personalizados: 1-1000 (versus 1-100)
@@ -323,11 +327,11 @@ Para abrir, clique com o botão direito do mouse em um espaço de trabalho e sel
 
 **Etapa 1:** **Selecione um Arquivo** de Log Avro.
 
-Nesta etapa, você pode selecionar um arquivo de origem para o esquema Avro. Os esquemas podem ser acessados de um arquivo de log (.log) ou de um arquivo de decodificador existente (.avro). Os esquemas podem ser extraídos de qualquer um dos arquivos.
+Nesta etapa, você pode selecionar um arquivo de origem para o schema Avro. Os schemas podem ser acessados de um arquivo de log (.log) ou de um arquivo de decodificador existente (.avro). Schemas podem ser extraídos de qualquer um dos arquivos.
 
-| **Arquivo de log Avro ** | Clique para abrir um arquivo de log (.log) para exibir o esquema na parte superior do arquivo de log e gerar o arquivo decodificador. |
+| **Arquivo de log Avro ** | Clique para abrir um arquivo de log (.log) para visualização do schema na parte superior do arquivo de log e gerar o arquivo decodificador. |
 |---|---|
-| **Arquivo Decodificador Avro** | Clique para abrir e editar o esquema de um arquivo de decodificador (.avro) existente. |
+| **Arquivo Decodificador Avro** | Clique para abrir e editar o schema de um arquivo de decodificador (.avro) existente. |
 
 **Etapa 2: Selecione Campos** de entrada.
 
