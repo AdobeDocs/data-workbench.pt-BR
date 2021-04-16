@@ -1,21 +1,22 @@
 ---
-description: É possível exibir os caminhos entre nós em um mapa de processos em cores.
-solution: Analytics
+description: Você pode exibir os caminhos entre nós em um mapa de processos em cores.
 title: Ativar um link de cor
-topic: Data workbench
 uuid: 7046128e-6d52-4875-9979-c4c7bad59c9d
+exl-id: d210e54a-5f5e-4bcf-b2d2-7a748d7b90ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 9%
 
 ---
 
-
 # Ativar um link de cor{#activate-a-color-link}
 
-É possível exibir os caminhos entre nós em um mapa de processos em cores.
+Você pode exibir os caminhos entre nós em um mapa de processos em cores.
 
-O esquema de cores depende da legenda de cores aberta no espaço de trabalho. Consulte Legendas [](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358)coloridas.
+O esquema de cores depende da legenda de cores aberta no espaço de trabalho. Consulte [Legendas de cores](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
 
 Clique com o botão direito do mouse em qualquer nó no mapa e clique em **[!UICONTROL Options]** > **[!UICONTROL Color Links]**.
 
-Um X à esquerda de Links coloridos indica que os links coloridos estão ativos no mapa. Quando Links de cores estão desativados, as setas entre nós aparecem cinza.
+Um X à esquerda de Links de cor indica que os links coloridos estão ativos no mapa. Quando os Links de cor estão desativados, as setas entre os nós aparecem em cinza.
