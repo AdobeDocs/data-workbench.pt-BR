@@ -1,29 +1,30 @@
 ---
-description: As chamadas estatísticas avaliam relacionamentos significativos para identificar oportunidades ocultas e variáveis de interesse para recursos mais avançados de mineração de dados no agrupamento de público-alvo e na pontuação de resposta do visitante.
-solution: Analytics
+description: As chamadas estatísticas avaliam relacionamentos significativos para identificar oportunidades ocultas e variáveis de interesse para recursos de mineração de dados mais avançados em clustering de público-alvo e pontuação de resposta do visitante.
 title: Chamadas estatísticas
-topic: Data workbench
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
+exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 23%
 
 ---
 
-
 # Chamadas estatísticas{#statistical-callouts}
 
-As chamadas estatísticas avaliam relacionamentos significativos para identificar oportunidades ocultas e variáveis de interesse para recursos mais avançados de mineração de dados no agrupamento de público-alvo e na pontuação de resposta do visitante.
+As chamadas estatísticas avaliam relacionamentos significativos para identificar oportunidades ocultas e variáveis de interesse para recursos de mineração de dados mais avançados em clustering de público-alvo e pontuação de resposta do visitante.
 
-As chamadas estatísticas expandem os algoritmos para que mais tipos de dados possam ser correlacionados, como variáveis binomiais (sim/não, 0/1 ou comprador/não-comprador), correlacionados a métricas contáveis (visitas, pedidos ou downloads).
+As chamadas estatísticas expandem os algoritmos para que mais tipos de dados possam ser correlacionados, como variáveis binômicas (sim/não, 0/1 ou comprador/não comprador), correlacionadas com métricas contáveis (visitas, pedidos ou downloads).
 
-Para adicionar avisos estatísticos:
+Para adicionar chamadas estatísticas:
 
 1. Em uma tabela, clique com o botão direito do mouse no cabeçalho da métrica.
-1. Selecione **[!UICONTROL Statistics]** e, em seguida, selecione ou desmarque as marcas de seleção para cada configuração necessária. Todos na opção Exibir chamada são selecionados como a configuração padrão.
+1. Selecione **[!UICONTROL Statistics]** e depois selecione ou desmarque as marcas de seleção para cada configuração necessária. Todas as chamadas de exibição são selecionadas como a configuração padrão.
 
    ![](assets/statistical_callouts.png)
 
-O texto explicativo pode retornar valores estatísticos fatorados nas colunas do conjunto de dados.
+A chamada pode retornar valores estatísticos fatorados nas colunas do conjunto de dados.
 
 <table id="table_B2A4F9D5938D4756A81ACF6F4D77E63D">
  <thead>
@@ -43,11 +44,11 @@ O texto explicativo pode retornar valores estatísticos fatorados nas colunas do
   </tr>
   <tr>
    <td colname="col1"> Mínimo </td>
-   <td colname="col2"><p> Identifica o valor Métrico mínimo em todos os elementos da dimensão. </p></td>
+   <td colname="col2"><p> Identifica o valor de Métrica mínimo em todos os elementos da dimensão. </p></td>
   </tr>
   <tr>
    <td colname="col1"> Média </td>
-   <td colname="col2"><p> A média é a média aritmética dos valores de Métrica dos elementos na Dimensão, calculada pela soma total dividida pela contagem (soma/contagem). </p></td>
+   <td colname="col2"><p> A média é a média aritmética dos valores de Métrica de elementos no Dimension, calculada pela soma total dividida pela contagem (soma/contagem). </p></td>
   </tr>
   <tr>
    <td colname="col1"> Desvio padrão </td>
@@ -59,8 +60,7 @@ O texto explicativo pode retornar valores estatísticos fatorados nas colunas do
   </tr>
   <tr>
    <td colname="col1"> Variação </td>
-   <td colname="col2"><p> Uma medida da variação dos valores de Métrica da média de Métrica para essa dimensão. É igual ao quadrado do desvio padrão. </p></td>
+   <td colname="col2"><p> Uma medida da variação dos valores de Métrica da média da Métrica para essa dimensão. É igual ao quadrado do desvio padrão. </p></td>
   </tr>
  </tbody>
 </table>
-
