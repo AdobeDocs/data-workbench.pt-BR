@@ -1,27 +1,28 @@
 ---
-description: Os mapas de processo podem ser configurados para funcionar com qualquer combinação de dimensão básica, dimensão de grupo, dimensão de nível e métrica que faça sentido para seu aplicativo e conjunto de dados.
-solution: Analytics
+description: Os mapas de processos podem ser configurados para funcionar com qualquer combinação de dimensão base, dimensão de grupo, dimensão de nível e métrica que faça sentido para seu aplicativo e conjunto de dados.
 title: Configurar um mapa de processos
-topic: Data workbench
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
+exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
 
-
 # Configurar um mapa de processos{#configure-a-process-map}
 
-Os mapas de processo podem ser configurados para funcionar com qualquer combinação de dimensão básica, dimensão de grupo, dimensão de nível e métrica que faça sentido para seu aplicativo e conjunto de dados.
+Os mapas de processos podem ser configurados para funcionar com qualquer combinação de dimensão base, dimensão de grupo, dimensão de nível e métrica que faça sentido para seu aplicativo e conjunto de dados.
 
-Depois de configurar um mapa de processo, ele é listado com outros mapas de processo no [!DNL Add Visualization menu].
+Depois de configurar um mapa de processos, ele é listado com outros mapas de processos no [!DNL Add Visualization menu].
 
-1. No [!DNL Profile Manager], clique em **[!UICONTROL Menu]**, em **[!UICONTROL Add Visualization]** e, em seguida, clique no tipo de mapa de processo que deseja configurar (Mapa de métrica 2D, Mapa de processo 2D ou Mapa de processo 3D).
+1. No [!DNL Profile Manager], clique em **[!UICONTROL Menu]**, clique em **[!UICONTROL Add Visualization]**, em seguida, clique no tipo de mapa de processos que deseja configurar (Mapa de Métricas 2D, Mapa de Processos 2D ou Mapa de Processos 3D).
 
-   Pelo menos um [!DNL *.vw] arquivo reside no diretório.
+   Pelo menos um arquivo [!DNL *.vw] reside no diretório.
 
 1. Clique com o botão direito do mouse na marca de seleção do arquivo desejado e clique em **[!UICONTROL Make Local]**.
-1. Clique com o botão direito do mouse na marca de seleção do arquivo na [!DNL User] coluna e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Clique com o botão direito do mouse na marca de seleção do arquivo na coluna [!DNL User] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Edite os parâmetros do arquivo usando o arquivo de amostra e a tabela a seguir como guias:
 
    ```
@@ -51,7 +52,7 @@ Depois de configurar um mapa de processo, ele é listado com outros mapas de pro
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Para este parâmetro... </th> 
-   <th colname="col2" class="entry"> Fornecer estas informações... </th> 
+   <th colname="col2" class="entry"> Fornecer essas informações... </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -60,7 +61,7 @@ Depois de configurar um mapa de processo, ele é listado com outros mapas de pro
    <td colname="col2"> <p>O nome da métrica cujo valor para um determinado nó é proporcional ao tamanho do nó. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>Nome da dimensão básica</i> </p> </td> 
+   <td colname="col1"> <p><i>Nome da dimensão base</i> </p> </td> 
    <td colname="col2"> <p>O nome da dimensão cujos elementos aparecem como nós no mapa de processos. </p> </td> 
   </tr> 
   <tr> 
@@ -69,25 +70,25 @@ Depois de configurar um mapa de processo, ele é listado com outros mapas de pro
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Nome da dimensão do grupo</i> </p> </td> 
-   <td colname="col2"> <p>O nome da dimensão que determina como os elementos da dimensão de nível são agrupados para formar as conexões entre nós. Uma conexão entre dois nós não pode abranger mais de um elemento de uma dimensão de grupo. Quando você faz uma seleção com base em um nó dentro de um mapa de processo, está selecionando todos os elementos da dimensão de grupo que envolveram esse nó. </p> </td> 
+   <td colname="col2"> <p>O nome da dimensão que determina como os elementos da dimensão de nível são agrupados para formar as conexões entre nós. Uma conexão entre dois nós não pode estender mais de um elemento de uma dimensão de grupo. Ao fazer uma seleção com base em um nó em um mapa de processos, você está selecionando todos os elementos da dimensão de grupo que envolveu esse nó. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>Nome da métrica para o mapa de métricas</i> </p> </td> 
-   <td colname="col2"> <p>Esse parâmetro se aplica somente a mapas de métrica 2D. </p> <p>O nome da métrica cujo valor determina a posição horizontal dos nós no mapa. </p> </td> 
+   <td colname="col1"> <p><i>Nome da métrica para mapa de métricas</i> </p> </td> 
+   <td colname="col2"> <p>Esse parâmetro se aplica somente aos mapas de métrica 2D. </p> <p>O nome da métrica cujo valor determina a posição horizontal dos nós no mapa. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Para obter mais informações sobre a dimensão básica, a dimensão de grupo, a dimensão de nível e a métrica para um mapa de processos, consulte [Mapas](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)de processos.
+>Para obter mais informações sobre a dimensão base, a dimensão de grupo, a dimensão de nível e a métrica para um mapa de processos, consulte [Mapas de processos](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
-1. No Bloco de notas, clique em **[!UICONTROL File]** > **[!UICONTROL Save As]** para salvar o arquivo com um novo nome com base na dimensão base, ou seja, nome *da dimensão* básica.vw.
+1. No Bloco de notas, clique em **[!UICONTROL File]** > **[!UICONTROL Save As]** para salvar o arquivo com um novo nome com base na dimensão base, ou seja, *Nome da dimensão base*.vw.
 
-   (Se você estiver configurando um mapa de métrica 2D, salve o arquivo com um nome baseado no nome da métrica para o mapa de métrica, ou seja, nome da *métrica para o mapa* de métrica.vw.) Certifique-se de salvar o arquivo no diretório apropriado do mapa de processos.
+   (Se você estiver configurando um mapa de métrica 2D, deverá salvar o arquivo com um nome baseado no nome da métrica para o mapa de métrica, ou seja, *Nome da métrica para mapa de métrica*.vw.) Salve o arquivo no diretório apropriado do mapa de processos.
 
    >[!NOTE]
    >
-   >Para certificar-se de que seu mapa de processos esteja salvo como um [!DNL *.vw] arquivo, na [!DNL Save As] janela, defina Salvar como tipo para Todos os arquivos.
+   >Para garantir que seu mapa de processos seja salvo como um arquivo [!DNL *.vw], na janela [!DNL Save As], defina o tipo Salvar como para Todos os arquivos.
 
-1. (Opcional) Para disponibilizar as alterações para todos os usuários do perfil de trabalho, no [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção do arquivo na [!DNL User] coluna e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Opcional) Para disponibilizar as alterações para todos os usuários do perfil de trabalho, no [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção do arquivo na coluna [!DNL User] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
