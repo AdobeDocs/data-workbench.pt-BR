@@ -1,26 +1,27 @@
 ---
 description: Etapas para instalar os arquivos de programa do Servidor de relatórios.
-solution: Analytics
-title: Instalação dos arquivos de programa de relatório
-topic: Data workbench
+title: Instalar arquivos do programa de relatório
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
+exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '142'
+ht-degree: 10%
 
 ---
 
-
-# Instalação dos arquivos de programa de relatório{#installing-the-report-program-files}
+# Instalar arquivos do programa de relatório{#installing-the-report-program-files}
 
 Etapas para instalar os arquivos de programa do Servidor de relatórios.
 
-O Servidor de Relatório é um cliente do Servidor de Análise de big data e está licenciado para execução em uma única máquina. Use o procedimento a seguir para instalar os arquivos de programa do Servidor de relatórios no computador. Instale o Servidor de relatórios em uma máquina separada do Servidor do Análise de big data.
+O Report Server é um cliente do Data Workbench Server e está licenciado para ser executado em uma única máquina. Use o procedimento a seguir para instalar os arquivos de programa do Servidor de Relatório em seu computador. Instale o Servidor de relatórios em uma máquina separada do Servidor do Data Workbench.
 
-1. Na máquina do Windows, crie um diretório no qual instalar o Servidor de relatórios.
+1. Na máquina Windows, crie um diretório no qual instalar o Servidor de Relatórios.
 
    Exemplo: [!DNL D:\Adobe\Report]
 
-1. Vá para o site de download fornecido pela Adobe e localize o arquivo de instalação para o Servidor de relatórios.
+1. Vá para o site de download fornecido pelo Adobe e localize o arquivo de instalação do Servidor de relatório.
 1. Extraia o conteúdo do arquivo de instalação para o diretório criado acima.
 1. Para exportar para o Excel em sistemas Windows 2008, crie um dos seguintes diretórios:
 
