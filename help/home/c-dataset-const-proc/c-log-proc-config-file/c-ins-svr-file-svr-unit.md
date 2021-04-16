@@ -1,16 +1,17 @@
 ---
 description: Informações sobre as unidades do servidor de arquivos do Insight Server e o processo de configuração do servidor de arquivos.
-solution: Analytics
-title: Configurando uma Unidade de Servidor de Arquivos do Data Workbench Server
-topic: Data workbench
+title: Configurar uma unidade de servidor de arquivos do servidor do Data Workbench
 uuid: ccb65952-f017-4434-b2f8-74c274450834
+exl-id: 19b8c08a-e9f2-47ab-ad9f-1fddfbd9d249
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1784'
+ht-degree: 1%
 
 ---
 
-
-# Configurando uma Unidade de Servidor de Arquivos do Data Workbench Server{#configuring-a-data-workbench-server-file-server-unit}
+# Configurar uma unidade de servidor de arquivos do servidor do Data Workbench{#configuring-a-data-workbench-server-file-server-unit}
 
 Informações sobre as unidades do servidor de arquivos do Insight Server e o processo de configuração do servidor de arquivos.
 
@@ -18,50 +19,50 @@ Informações sobre as unidades do servidor de arquivos do Insight Server e o pr
 c_abt_file_svr_units.xml
 -->
 
-Você pode configurar o servidor de análise de big data (InsightServer64.exe) para ser executado como uma Unidade de Servidor de Arquivos (FSU), completando os parâmetros no nó **[!UICONTROL Log Sources]** > **[!UICONTROL Log Server]** do [!DNL Log Processing.cfg] arquivo. Quando o servidor de análise de big data está configurado para ser executado como um FSU, ele armazena arquivos de origem (arquivos, arquivos de texto ou arquivos XML) que podem ser acessados rapidamente por vários servidores de processamento (DPUs). [!DNL .vsl] Quando as DPUs em um cluster de servidores de análise de big data acessam o FSU para ler os arquivos de log, elas dividem os arquivos de log entre elas e garantem que o mesmo arquivo não seja processado mais de uma vez.
+Você pode configurar o servidor do Data Workbench (InsightServer64.exe) para ser executado como uma Unidade de Servidor de Arquivos (FSU), completando os parâmetros no nó **[!UICONTROL Log Sources]** > **[!UICONTROL Log Server]** do arquivo [!DNL Log Processing.cfg]. Quando o servidor do Data Workbench é configurado para ser executado como um FSU, ele armazena arquivos de origem ( [!DNL .vsl] arquivos, arquivos de texto ou arquivos XML) que podem ser acessados rapidamente por vários servidores de processamento (DPUs). Quando os DPUs em um cluster de servidores do Data Workbench acessam o FSU para ler os arquivos de log, eles dividem os arquivos de log entre eles e garantem que o mesmo arquivo não seja processado mais de uma vez.
 
 >[!NOTE]
 >
->Ao configurar um FSU que serve um cluster de servidores de análise de big data que consiste de cinco a dez DPUs, você deve tornar o servidor mestre do cluster o FSU.
+>Ao configurar uma FSU que sirva um cluster de servidores do Data Workbench consistindo de cinco a dez DPUs, você deve tornar o servidor principal do cluster a FSU.
 
-Para obter informações sobre como instalar um cluster de servidores de análise de big data, consulte o Guia *de Instalação e Administração de Produtos para* Servidor.
+Para obter informações sobre como instalar um cluster de servidores do Data Workbench, consulte o *Server Products Installation and Administration Guide*.
 
 <!--
 c_file_svr_config_proc.xml
 -->
 
-Se o local for um local remoto, a máquina do servidor da análise de big data que está processando os dados se conecta à máquina remota designada para ler os registros.
+Se o local for um local remoto, a máquina do servidor do Data Workbench que está processando os dados se conecta à máquina remota designada para ler os logs.
 
-Na máquina do servidor de análise de big data designada para execução como FSU, o [!DNL Access Control.cfg] arquivo permite que as DPUs se conectem ao FSU e o [!DNL Communications.cfg] arquivo mapeia a localização dos arquivos de dados remotos. As etapas do processo para configurar um FSU são as seguintes:
+Na máquina do servidor do Data Workbench designada para executar como uma FSU, o arquivo [!DNL Access Control.cfg] permite que as DPUs se conectem à FSU e o arquivo [!DNL Communications.cfg] mapeia o local dos arquivos de dados remotos. As etapas do processo para configurar uma FSU são as seguintes:
 
-1. No [!DNL Log Processing.cfg] arquivo do servidor de análise de big data mestre, especifique o tipo de fonte de dados e o local da fonte. Consulte [Especificação da fonte](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#section-d2b545db7ab142ffb4be32e040395383)de dados.
+1. No arquivo [!DNL Log Processing.cfg] no servidor do Data Workbench principal, especifique o tipo de fonte de dados e o local da fonte. Consulte [Especificação da Fonte de Dados](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#section-d2b545db7ab142ffb4be32e040395383).
 
-1. No [!DNL Access Control.cfg] arquivo no FSU, edite as permissões para permitir que as DPUs se conectem ao FSU para ler os dados de log. Consulte [Editando as permissões na unidade](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#section-b4a54b591b4e4435a728a67f194057ef)do servidor de arquivos.
+1. No arquivo [!DNL Access Control.cfg] no FSU, edite as permissões para permitir que os DPUs se conectem ao FSU para ler os dados de log. Consulte [Editar as permissões na unidade do servidor de arquivos](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#section-b4a54b591b4e4435a728a67f194057ef).
 
-1. No [!DNL Communications.cfg] arquivo do FSU, edite as configurações para as entradas [!DNL LoggingServer] e [!DNL FileServer] para especificar o local dos arquivos de log. Consulte [Especificação do local dos arquivos](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#section-f9a649bf1b2544feb10ad8820384edb0)de log.
+1. No arquivo [!DNL Communications.cfg] no FSU, edite as configurações para as entradas [!DNL LoggingServer] e [!DNL FileServer] para especificar o local dos arquivos de log. Consulte [Especificando o Local dos Arquivos de Log](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#section-f9a649bf1b2544feb10ad8820384edb0).
 
-1. Se você estiver configurando seu perfil de conjunto de dados para ser executado em um cluster de servidores de análise de big data, também deverá tornar o FSU do cluster no servidor em que todas as dimensões do perfil são construídas:
-(Somente para clusters de servidores de análise de big data) Nos arquivos [!DNL Communications.cfg] e [!DNL cluster.cfg] no FSU, adicione entradas para um &quot;servidor normalizado&quot; para tornar o FSU o servidor dentro do cluster onde todas as dimensões são construídas. Consulte [Criação de um Servidor de Normalização Centralizado para um Cluster](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#section-2c1f57b683f94cc193bc069e886bba28).
+1. Se você estiver configurando seu perfil de conjunto de dados para ser executado em um cluster de servidores do Data Workbench, também deverá tornar o FSU do cluster no servidor, onde todas as dimensões do perfil são construídas:
+(Somente para clusters de servidores do Data Workbench) Nos arquivos [!DNL Communications.cfg] e [!DNL cluster.cfg] no FSU, adicione entradas para um &quot;servidor normalizado&quot; para tornar o FSU o servidor dentro do cluster em que todas as dimensões são construídas. Consulte [Criando um Servidor de Normalização Centralizado para um Cluster](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#section-2c1f57b683f94cc193bc069e886bba28).
 
-Para obter instruções sobre como configurar um perfil de conjunto de dados a ser processado por um cluster de servidores de análise de big data, consulte o Guia *de Instalação e Administração de Produtos para* Servidor.
+Para obter instruções para configurar um perfil de conjunto de dados a ser processado por um cluster de servidores do Data Workbench, consulte o *Guia de Instalação e Administração de Produtos de Servidor*.
 
 >[!NOTE]
 >
->As instruções a seguir pressupõem que todos os arquivos de registro residam no diretório padrão. Se desejar armazenar logs em outro diretório ou criar vários caminhos de log, entre em contato com os Serviços de consultoria da Adobe para discutir sua configuração específica.
+>As instruções a seguir pressupõem que todos os arquivos de log residam no diretório padrão. Se quiser armazenar logs em outro diretório ou criar vários caminhos de log, entre em contato com os Serviços de consultoria do Adobe para discutir sua configuração específica.
 
-## Especificação da fonte de dados {#section-d2b545db7ab142ffb4be32e040395383}
+## Especificação da Fonte de Dados {#section-d2b545db7ab142ffb4be32e040395383}
 
-Ao especificar fontes de dados remotas para um conjunto de dados, você deve especificar o tipo de fonte de dados e o local dos arquivos de log no servidor de análise de big data mestre.
+Ao especificar fontes de dados remotas para um conjunto de dados, você deve especificar o tipo de fonte de dados e o local dos arquivos de log no servidor do Data Workbench principal.
 
-**Especificação da fonte de dados e de seu local**
+**Especificação da fonte de dados e seu local**
 
-1. Open the [!DNL Log Processing.cfg] file. Consulte [Editando o arquivo](../../../home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md#task-6a2fa1b735cb4eefad730f0a3a7858e5)de configuração de processamento de log.
+1. Abra o arquivo [!DNL Log Processing.cfg]. Consulte [Editar o arquivo de configuração de processamento de log](../../../home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md#task-6a2fa1b735cb4eefad730f0a3a7858e5).
 
-1. Adicione uma fonte de dados XML, um arquivo de log [!DNL Sensor]ou um arquivo de log. See [Log Files](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e).
+1. Adicione um [!DNL Sensor], um arquivo de log ou uma fonte de dados XML. Consulte [Arquivos de Log](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e).
 
-1. Preencha o parâmetro Caminhos de registro. Consulte Arquivos [de](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)sensor, Arquivos [de](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)registro ou Fontes [de registro](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)XML. Certifique-se de especificar um URI válido.
+1. Preencha o parâmetro Caminhos de log . Consulte [Arquivos do sensor](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009), [Arquivos de log](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e) ou [Fontes de log XML](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887). Certifique-se de especificar um URI válido.
 
-1. Complete os parâmetros do Servidor de Log definidos na seguinte tabela:
+1. Complete os parâmetros do Servidor de Log definidos na tabela a seguir:
 
 <table id="table_5881B8DEFF984BC7A620CEEA3A637912"> 
  <thead> 
@@ -77,19 +78,19 @@ Ao especificar fontes de dados remotas para um conjunto de dados, você deve esp
   </tr> 
   <tr> 
    <td colname="col1"> Nome comum do servidor SSL </td> 
-   <td colname="col2"> <p> <span class="wintitle"> Nome</span> comum do servidor listado no certificado SSL do servidor de arquivos. </p> <p> Esse parâmetro é opcional se <span class="wintitle"> Usar SSL</span> estiver definido como falso. </p> </td> 
+   <td colname="col2"> <p> <span class="wintitle"> Servidor comum </span> nomeado no certificado SSL do servidor de arquivos. </p> <p> Esse parâmetro é opcional se <span class="wintitle"> Usar SSL</span> estiver definido como falso. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Endereço </td> 
-   <td colname="col2"> <p>Endereço da máquina do servidor de arquivos. Pode ser deixado em branco se o <span class="wintitle"> Nome</span> corresponder ao Nome <span class="wintitle"> Comum do Servidor</span>SSL. </p> <p> Por exemplo: <span class="filepath"> visual.mycompany.com</span> ou 192.168.1.90. </p> </td> 
+   <td colname="col2"> <p>Endereço da máquina do servidor de arquivos. Pode ser deixado em branco se <span class="wintitle"> Nome</span> corresponder a <span class="wintitle"> Nome Comum do Servidor SSL</span>. </p> <p> Por exemplo: <span class="filepath"> visual.mycompany.com</span> ou 192.168.1.90. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Porta </td> 
-   <td colname="col2"> Porta pela qual a máquina do servidor de análise de big data se comunica com o servidor de arquivos. </td> 
+   <td colname="col2"> Porta pela qual a máquina do servidor do Data Workbench se comunica com o servidor de arquivos. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Certificado de cliente SSL </td> 
-   <td colname="col2"> Nome do arquivo de certificado <span class="wintitle"> SSL para o servidor de análise de big data (</span> server_cert.pem<span class="filepath"></span>). </td> 
+   <td colname="col2"> Nome do arquivo <span class="wintitle"> certificado SSL</span> para o servidor do Data Workbench (<span class="filepath"> server_cert.pem</span>). </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Usar SSL </td> 
@@ -98,129 +99,129 @@ Ao especificar fontes de dados remotas para um conjunto de dados, você deve esp
  </tbody> 
 </table>
 
-Se um servidor proxy for necessário para que as DPUs se conectem ao FSU, você precisará concluir os seguintes parâmetros:
+Se for necessário um servidor proxy para que as DPUs se conectem à FSU, é necessário concluir os seguintes parâmetros:
 
 | Parâmetro | Descrição |
 |---|---|
-| Endereço proxy | O endereço de um servidor proxy que o servidor da análise de big data deve usar para acessar o servidor de arquivos. |
-| Senha do proxy | Opcional. A senha para o servidor proxy. |
-| Porta proxy | A porta do servidor proxy. O padrão é 8080. |
-| Nome do usuário proxy | Opcional. O nome de usuário do servidor proxy. |
+| Endereço Proxy | O endereço de um servidor proxy que o servidor do Data Workbench deve usar para acessar o servidor de arquivos. |
+| Senha do Proxy | Opcional. A senha para o servidor proxy. |
+| Porta de Proxy | A porta do servidor proxy. O padrão é 8080. |
+| Nome de usuário proxy | Opcional. O nome de usuário do servidor proxy. |
 
-Veja a seguir um exemplo de um definido [!DNL Log Server] no [!DNL Log Processing.cfg] arquivo. A Fonte de Log nº 1 é uma fonte LogFile que aponta para um diretório chamado Logs (observe o URI especificado no parâmetro Caminhos de Log) na máquina chamada FSU01.
+A seguir, um exemplo de [!DNL Log Server] definido no arquivo [!DNL Log Processing.cfg]. A Fonte de Log nº 1 é uma fonte LogFile que aponta para um diretório chamado Logs (observe o URI especificado no parâmetro Caminhos de Log) na máquina chamada FSU01.
 
 ![](assets/cfg_LogProcessing_LogServer.png)
 
-## Editando as permissões na unidade do servidor de arquivos {#section-b4a54b591b4e4435a728a67f194057ef}
+## Editar as permissões na unidade do servidor de arquivos {#section-b4a54b591b4e4435a728a67f194057ef}
 
-No processo anterior, você configurava um perfil para um dado conjunto de dados para ler arquivos de log de um FSU. Agora você deve editar as permissões no FSU para permitir conexões das DPUs que estão executando o perfil. As etapas a seguir o orientam na edição do arquivo de permissões [!DNL Access Control.cfg].
+No processo anterior, você configurou um perfil para um determinado conjunto de dados para ler arquivos de log de um FSU. Agora, você deve editar as permissões no FSU para permitir conexões das DPUs que estão executando o perfil. As etapas a seguir orientam você na edição do arquivo de permissões [!DNL Access Control.cfg].
 
 **Para editar permissões no FSU**
 
-1. Abra o [!DNL Server Files Manager] para a máquina do servidor da análise de big data que você está configurando como FSU e clique em **[!UICONTROL Access Control]** para mostrar seu conteúdo.
+1. Abra o [!DNL Server Files Manager] para a máquina do servidor do Data Workbench que você está configurando como FSU e clique em **[!UICONTROL Access Control]** para mostrar seu conteúdo.
 
-   Para obter informações sobre como abrir e trabalhar com o [!DNL Server Files Manager], consulte o Guia *do usuário da Análise de* big data.
+   Para obter informações sobre como abrir e trabalhar com o [!DNL Server Files Manager], consulte o *Guia do Usuário do Data Workbench*.
 
-1. Na [!DNL Server Files Manager] janela, clique **[!UICONTROL Access Control]** para mostrar seu conteúdo. O [!DNL Access Control.cfg] arquivo está localizado dentro deste diretório.
+1. Na janela [!DNL Server Files Manager], clique em **[!UICONTROL Access Control]** para mostrar seu conteúdo. O arquivo [!DNL Access Control.cfg] está localizado dentro desse diretório.
 
-1. Clique com o botão direito do mouse na marca de seleção na coluna de nome do servidor para [!DNL Access Control.cfg]e clique em **[!UICONTROL Make Local]**. Uma marca de seleção é exibida na [!DNL Temp] coluna para [!DNL Access Control.cfg].
+1. Clique com o botão direito do mouse na marca de seleção na coluna nome do servidor para [!DNL Access Control.cfg] e depois clique em **[!UICONTROL Make Local]**. Uma marca de seleção aparece na coluna [!DNL Temp] para [!DNL Access Control.cfg].
 
-1. Clique com o botão direito do mouse na marca de seleção recém-criada na [!DNL Temp] coluna e clique em **[!UICONTROL Open]** > **[!UICONTROL in Workstation]**.
+1. Clique com o botão direito do mouse na marca de seleção recém-criada na coluna [!DNL Temp] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Workstation]**.
 
-1. Na [!DNL Access Control] janela, clique **[!UICONTROL Access Control Groups]** para mostrar seu conteúdo.
+1. Na janela [!DNL Access Control], clique em **[!UICONTROL Access Control Groups]** para mostrar seu conteúdo.
 
-1. Clique com o botão direito do mouse no rótulo numérico da versão final [!DNL AccessGroup] na lista e clique em **[!UICONTROL Add new]** > **[!UICONTROL Group]**.
+1. Clique com o botão direito do mouse no rótulo numérico para o [!DNL AccessGroup] final na lista e clique em **[!UICONTROL Add new]** > **[!UICONTROL Group]**.
 
-1. Insira um [!DNL Name] para o novo [!DNL AccessGroup]. Exemplo: Conectando servidores.
+1. Insira um [!DNL Name] para o novo [!DNL AccessGroup]. Exemplo: Conectando Servidores.
 
-1. Clique com o botão direito do mouse **[!UICONTROL Member]** sob a nova [!DNL AccessGroup], em seguida, clique em **[!UICONTROL Add new]** > **[!UICONTROL Member]**.
+1. Clique com o botão direito do mouse **[!UICONTROL Member]** no novo [!DNL AccessGroup] e depois clique em **[!UICONTROL Add new]** > **[!UICONTROL Member]**.
 
-1. Insira o endereço IP da DPU do servidor da análise de big data que se conecta a esse servidor de arquivos.
-1. Repita as etapas 4 e 5 para quaisquer DPUs de servidor de análise de big data que se conectem a esse FSU, incluindo as DPUs de servidor de análise de big data em um cluster que devem acessar os arquivos de log.
-1. Clique com o botão direito do mouse **[!UICONTROL Read-Only Access]** sob a nova [!DNL AccessGroup], em seguida, clique em **[!UICONTROL Add new]** > **[!UICONTROL URI]**.
+1. Insira o endereço IP da DPU do servidor do Data Workbench que se conecta a esse servidor de arquivos.
+1. Repita as etapas 4 e 5 para quaisquer DPUs do servidor do Data Workbench que se conectem a essa FSU, incluindo as DPUs do servidor do Data Workbench em um cluster que deve acessar os arquivos de log.
+1. Clique com o botão direito do mouse **[!UICONTROL Read-Only Access]** no novo [!DNL AccessGroup] e depois clique em **[!UICONTROL Add new]** > **[!UICONTROL URI]**.
 
 1. Insira o local dos arquivos de log armazenados na máquina do servidor de arquivos. Use barras (/) na especificação do caminho. O local padrão é /Logs/.
-1. Clique com o botão direito do mouse **[!UICONTROL (modified)]** na parte superior da janela e clique em **[!UICONTROL Save]**.
+1. Clique com o botão direito do mouse **[!UICONTROL (modified)]** na parte superior da janela e depois clique em **[!UICONTROL Save]**.
 
-1. Na [!DNL Server Files Manager] janela, clique com o botão direito do mouse na marca de seleção para [!DNL Access Control.cfg] na [!DNL Temp] coluna e, em seguida, clique em **[!UICONTROL Save to]** > **[!UICONTROL server name]** para salvar as alterações feitas localmente no FSU do servidor da análise de big data.
+1. Na janela [!DNL Server Files Manager], clique com o botão direito do mouse na marca de seleção de [!DNL Access Control.cfg] na coluna [!DNL Temp] e clique em **[!UICONTROL Save to]** > **[!UICONTROL server name]** para salvar as alterações feitas localmente no FSU do servidor do Data Workbench.
 
-## Especificação do local dos arquivos de registro {#section-f9a649bf1b2544feb10ad8820384edb0}
+## Especificar o local dos arquivos de log {#section-f9a649bf1b2544feb10ad8820384edb0}
 
-É necessário editar o [!DNL Communications.cfg] arquivo no FSU para especificar o local dos arquivos de log.
+Você deve editar o arquivo [!DNL Communications.cfg] no FSU para especificar o local dos arquivos de log.
 
 **Especificação do local dos arquivos de log**
 
-1. Na [!DNL Server Files Manager] janela, clique **[!UICONTROL Components]** para mostrar seu conteúdo. O [!DNL Communications.cfg] arquivo está localizado dentro deste diretório.
+1. Na janela [!DNL Server Files Manager], clique em **[!UICONTROL Components]** para mostrar seu conteúdo. O arquivo [!DNL Communications.cfg] está localizado dentro desse diretório.
 
-1. Clique com o botão direito do mouse na marca de seleção na coluna de nome do servidor para [!DNL Communications.cfg]e clique em **[!UICONTROL Make Local]**. Uma marca de seleção é exibida na [!DNL Temp] coluna para [!DNL Communications.cfg].
+1. Clique com o botão direito do mouse na marca de seleção na coluna nome do servidor para [!DNL Communications.cfg] e depois clique em **[!UICONTROL Make Local]**. Uma marca de seleção aparece na coluna [!DNL Temp] para [!DNL Communications.cfg].
 
-1. Clique com o botão direito do mouse na marca de seleção recém-criada na [!DNL Temp] coluna e clique em **[!UICONTROL Open]** > **[!UICONTROL in Workstation.]**.
+1. Clique com o botão direito do mouse na marca de seleção recém-criada na coluna [!DNL Temp] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Workstation.]**.
 
-1. Na [!DNL Communications.cfg] janela, clique **[!UICONTROL component]** para mostrar seu conteúdo.
+1. Na janela [!DNL Communications.cfg], clique em **[!UICONTROL component]** para mostrar seu conteúdo.
 
-1. Na [!DNL Communications.cfg] janela, clique **[!UICONTROL Servers]** para mostrar seu conteúdo. Vários servidores podem ser exibidos: Servidores de arquivos, servidores de registro, servidores de inicialização, servidores de status, servidores de envio ou servidores de replicação.
+1. Na janela [!DNL Communications.cfg], clique em **[!UICONTROL Servers]** para mostrar seu conteúdo. Vários servidores podem aparecer: Servidores de arquivos, servidores de registro, servidores de inicialização, servidores de status, servidores de envio ou servidores replicados.
 
-1. (Somente para fontes de [!DNL Sensor] log) Localize o [!DNL LoggingServer], que é o local onde [!DNL Sensor] grava seus arquivos de log a serem processados pelo servidor da análise de big data, em seguida, clique em seu número para exibir o menu. Edite o parâmetro Diretório de log para refletir o local desejado dos arquivos de log. O diretório de log padrão é a pasta Logs no diretório de instalação do servidor do banco de dados.
+1. (Somente para [!DNL Sensor] fontes de log) Localize o [!DNL LoggingServer], que é onde [!DNL Sensor] grava seus arquivos de log a serem processados pelo servidor do Data Workbench, em seguida, clique em seu número para exibir o menu. Edite o parâmetro Diretório de log para refletir o local desejado dos arquivos de log. O diretório de log padrão é a pasta Logs no diretório de instalação do servidor do Data Workbench.
 
-   Não modifique nenhum outro parâmetro para o [!DNL LoggingServer].
+   Não modifique outros parâmetros para o [!DNL LoggingServer].
 
    ![](assets/cfg_Communications_LoggingServer.png)
 
-1. Localize o FileServer que especifica o local dos arquivos de log. Pode haver vários servidores de arquivos listados em Servidores, portanto, talvez seja necessário exibir o conteúdo de muitos deles (clicando no número do servidor) para encontrar o servidor desejado.
-1. Edite os parâmetros [!DNL Local Path] e URI do FileServer para refletir a localização dos arquivos de log. O exemplo a seguir mostra que os arquivos de log residem na pasta Logs dentro do diretório de instalação do servidor da análise de big data:
+1. Localize o FileServer que especifica o local dos arquivos de log. Pode haver vários servidores de arquivos listados em Servidores, portanto, talvez seja necessário visualizar o conteúdo de muitos deles (clicando no número do servidor) para encontrar o servidor desejado.
+1. Edite os parâmetros [!DNL Local Path] e URI do FileServer para refletir a localização dos arquivos de log. O exemplo a seguir mostra que os arquivos de log residem na pasta Logs no diretório de instalação do servidor do Data Workbench:
 
    ![](assets/cfg_Communications_FS.png)
 
    >[!NOTE]
    >
-   >Se os parâmetros [!DNL Local Path] e URI forem preenchidos como mostrado, você poderá acessar os arquivos de log no FSU a partir de qualquer servidor de análise de big data clicando [!DNL Logs] no [!DNL Server Files Manager].
+   >Se os parâmetros [!DNL Local Path] e URI forem preenchidos como mostrado, você poderá acessar os arquivos de log no FSU a partir de qualquer servidor do Data Workbench clicando em [!DNL Logs] no [!DNL Server Files Manager].
 
 1. Clique com o botão direito do mouse **[!UICONTROL (modified)]** na parte superior da janela de configuração e clique em **[!UICONTROL Save]**.
 
-1. Na [!DNL Server Files Manager] janela, clique com o botão direito do mouse na marca de seleção para [!DNL Communications.cfg] na [!DNL Temp] coluna, em seguida, clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>* para salvar as alterações feitas localmente no FSU do servidor da análise de big data.
+1. Na janela [!DNL Server Files Manager], clique com o botão direito do mouse na marca de seleção de [!DNL Communications.cfg] na coluna [!DNL Temp] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]*** para salvar as alterações feitas localmente no FSU do servidor do Data Workbench.
 
 ## Criando um Servidor de Normalização Centralizado para um Cluster {#section-2c1f57b683f94cc193bc069e886bba28}
 
-Se você estiver configurando seu perfil de conjunto de dados para ser executado em um cluster de servidores de análise de big data, você deverá tornar o FSU do cluster o servidor em que todas as dimensões do perfil são construídas.
+Se você estiver configurando seu perfil de conjunto de dados para ser executado em um cluster de servidores do Data Workbench, deverá tornar o FSU do cluster no servidor em que todas as dimensões do perfil são construídas.
 
-A Adobe recomenda enfaticamente que o FSU do cluster funcione como o servidor mestre do cluster e seu servidor de normalização centralizado.
+A Adobe recomenda enfaticamente que a FSU do cluster sirva como o servidor principal do cluster e seu servidor de normalização centralizado.
 
 Para tornar o FSU o servidor de normalização centralizado, você deve abrir e editar os arquivos [!DNL Communications.cfg] e [!DNL Cluster.cfg] no FSU.
 
-**Para tornar o FSU o servidor de normalização centralizado**
+**Para tornar a FSU o servidor de normalização centralizado**
 
-1. Adicione uma [!DNL NormalizeServer] entrada ao [!DNL Communications.cfg] arquivo no FSU.
+1. Adicione uma entrada [!DNL NormalizeServer] ao arquivo [!DNL Communications.cfg] no FSU.
 
    >[!NOTE]
    >
-   >Se você instalou o pacote de versão completo para o servidor de análise de big data v5.0 ou posterior, o [!DNL Communications.cfg] arquivo no FSU já deve ter uma [!DNL NormalizeServer] entrada. Você pode seguir as etapas abaixo para confirmar que a entrada existe.
+   >Se tiver instalado o pacote de versão completo para o servidor do Data Workbench v5.0 ou posterior, o arquivo [!DNL Communications.cfg] no FSU já deverá ter uma entrada [!DNL NormalizeServer]. Siga as etapas abaixo para confirmar que a entrada existe.
 
-   1. Abra o [!DNL Communications.cfg] arquivo na análise de big data, conforme descrito em [Especificação do local dos arquivos](#section-f9a649bf1b2544feb10ad8820384edb0)de log.
+   1. Abra o arquivo [!DNL Communications.cfg] no Data Workbench, conforme descrito em [Especificar o local dos arquivos de log](#section-f9a649bf1b2544feb10ad8820384edb0).
 
    1. Clique em **[!UICONTROL component]** para mostrar seu conteúdo.
-   1. Clique com o botão direito do mouse **[!UICONTROL Servers]** e clique em **[!UICONTROL Add New]** > **[!UICONTROL Centralized Normalization Server]**.
+   1. Clique com o botão direito do mouse em **[!UICONTROL Servers]** e clique em **[!UICONTROL Add New]** > **[!UICONTROL Centralized Normalization Server]**.
 
-   1. No parâmetro URI para o [!DNL NormalizeServer], digite [!DNL /Cluster/].
+   1. No parâmetro URI para [!DNL NormalizeServer], digite [!DNL /Cluster/].
 
       ![](assets/cfg_Communications_NormalizeServer.png)
 
    1. Clique com o botão direito do mouse **[!UICONTROL (modified)]** na parte superior da janela e clique em **[!UICONTROL Save]**.
 
-   1. Na [!DNL Server Files Manager] janela, clique com o botão direito do mouse na marca de seleção para [!DNL Communications.cfg] na [!DNL Temp] coluna e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server]**>* nome para salvar as alterações feitas localmente no FSU do servidor da análise de big data.
+   1. Na janela [!DNL Server Files Manager], clique com o botão direito do mouse na marca de seleção para [!DNL Communications.cfg] na coluna [!DNL Temp] e depois clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server]*** para salvar as alterações feitas localmente no FSU do servidor do Data Workbench.
 
-1. Defina o servidor de normalização centralizado no [!DNL Cluster.cfg] arquivo no servidor mestre em seu cluster de servidores de análise de big data.
+1. Defina o servidor de normalização centralizado no arquivo [!DNL Cluster.cfg] no servidor principal do cluster do Data Workbench Server.
 
    >[!NOTE]
    >
-   >Se o FSU no qual você está configurando seu servidor de normalização centralizado não for o servidor de análise de big data mestre em seu cluster, você deverá adicionar os endereços IP das DPUs no cluster ao grupo de [!DNL Cluster Servers] acesso no [!DNL Access Control.cfg] arquivo do FSU. Para obter instruções para adicionar servidores ao [!DNL Cluster Servers] grupo, consulte Atualização do Arquivo de Controle de Acesso para uma seção Cluster no Guia de Instalação e Administração de Produtos para *Servidor.*
+   >Se o FSU no qual você está configurando seu servidor de normalização centralizado não for o servidor principal do Data Workbench no cluster, você deverá adicionar os endereços IP dos DPUs no cluster ao grupo de acesso [!DNL Cluster Servers] no arquivo [!DNL Access Control.cfg] do FSU. Para obter instruções para adicionar servidores ao grupo [!DNL Cluster Servers], consulte Atualização do Arquivo de Controle de Acesso para um Cluster na seção *Server Products Installation and Administration Guide.*
 
-   1. Abra o [!DNL Profile Manager] seu perfil de conjunto de dados e clique **[!UICONTROL Dataset]** para mostrar seu conteúdo. O [!DNL Cluster.cfg] arquivo está localizado dentro deste diretório.
+   1. Abra o [!DNL Profile Manager] no perfil do conjunto de dados e clique em **[!UICONTROL Dataset]** para mostrar seu conteúdo. O arquivo [!DNL Cluster.cfg] está localizado dentro desse diretório.
 
-   1. Clique com o botão direito do mouse na marca de seleção ao lado de [!DNL Cluster.cfg]e clique em **[!UICONTROL Make Local]**. Uma marca de seleção para este arquivo é exibida na [!DNL User] coluna.
+   1. Clique com o botão direito do mouse na marca de seleção ao lado de [!DNL Cluster.cfg] e depois clique em **[!UICONTROL Make Local]**. Uma marca de verificação para este arquivo aparece na coluna [!DNL User].
 
    1. Clique com o botão direito do mouse na marca de seleção recém-criada e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 
-   1. Adicione o texto realçado no seguinte fragmento de arquivo:
+   1. Adicione o texto destacado no seguinte fragmento de arquivo:
 
       [!DNL Cluster = ClusterConfig:]
 
@@ -236,7 +237,7 @@ Para tornar o FSU o servidor de normalização centralizado, você deve abrir e 
 
       >[!NOTE]
       >
-      >Quando você insere o nome comum do FSU para o parâmetro SSL Server Common Name, o FSU usa seu [!DNL .address] arquivo para resolver o nome comum. Para obter informações sobre o [!DNL .address] arquivo, consulte o Guia *de Instalação e Administração de Produtos para* Servidor.
+      >Quando você insere o nome comum de FSU para o parâmetro Nome Comum do Servidor SSL, o FSU usa seu arquivo [!DNL .address] para resolver o nome comum. Para obter informações sobre o arquivo [!DNL .address], consulte o *Server Products Installation and Administration Guide*.
 
    1. Salve o arquivo.
-   1. Na [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção para [!DNL Cluster.cfg] na [!DNL User] coluna e, em seguida, clique em **[!UICONTROL Save to]** > ***[!UICONTROL dataset profile name]*** para salvar as alterações feitas localmente no perfil do conjunto de dados.
+   1. No [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção de [!DNL Cluster.cfg] na coluna [!DNL User] e clique em **[!UICONTROL Save to]** > ***[!UICONTROL dataset profile name]*** para salvar as alterações feitas localmente no perfil do conjunto de dados.
