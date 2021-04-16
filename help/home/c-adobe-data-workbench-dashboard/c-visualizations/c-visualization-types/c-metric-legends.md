@@ -1,20 +1,20 @@
 ---
-description: 'null'
-solution: Analytics
+description: Legendas de métricas
 title: Legendas de métricas
-topic: Data workbench
 uuid: c97847b1-eb84-4684-b831-38fecbaedf63
+exl-id: 0662674f-faed-4d12-bdf6-4c6d3a01092a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 8%
 
 ---
 
-
 # Legendas de métricas{#metric-legends}
 
-As visualizações de legenda de métrica permitem exibir os totais de métrica em um formato tabular. A primeira coluna contém o nome da métrica, enquanto a segunda coluna contém o valor da métrica. Uma barra de rolagem será exibida se todas as linhas não puderem ser exibidas na janela de uma só vez.
+As visualizações de legenda de métrica permitem exibir os totais de métrica em um formato de tabela. A primeira coluna contém o nome da métrica, enquanto a segunda contém o valor da métrica. Uma barra de rolagem será exibida no caso de todas as linhas não poderem ser exibidas simultaneamente na janela.
 
 As seleções não podem ser feitas dentro da legenda da métrica, pois nenhum valor de dimensão específico está sendo exibido.
 
 ![](assets/metric_legend.png)
-
