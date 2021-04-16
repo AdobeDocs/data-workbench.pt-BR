@@ -1,22 +1,23 @@
 ---
 description: Antes que o painel possa operar, você deve permitir que ele acesse o SQL Server.
-solution: Analytics
-title: Configuração do SQL Server
-topic: Data workbench
+title: Configurar o SQL Server
 uuid: bdd5f9f5-a69f-4001-9f80-901bd7eae129
+exl-id: 16116cc8-f539-4cf0-ab1d-f2bddd39b38c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 8%
 
 ---
 
-
-# Configuração do SQL Server{#configuring-the-sql-server}
+# Configurar o SQL Server{#configuring-the-sql-server}
 
 Antes que o painel possa operar, você deve permitir que ele acesse o SQL Server.
 
 1. Abra o SQL Management Studio como um Administrador.
-1. Adicione um novo logon clicando com o botão direito do mouse **[!UICONTROL Logins]** e selecionando **[!UICONTROL New Login]**.
-1. Insira o nome de identidade completo do pool de aplicativos.
+1. Adicione um novo logon clicando com o botão direito do mouse em **[!UICONTROL Logins]** e selecionando **[!UICONTROL New Login]**.
+1. Insira o nome completo da identidade do pool de aplicativos.
 
-   Por padrão, a identidade do pool de aplicativos é nomeada após o pool de aplicativos. Se você escolher `dashboard`, a identidade será nomeada `IIS AppPool\dashboard`. 1. Selecione **[!UICONTROL Server Roles]** e verifique a **[!UICONTROL dbcreator]** função.
-1. Click **[!UICONTROL OK]** to add the new user.
+   Por padrão, a identidade do pool de aplicativos é nomeada após o pool de aplicativos. Se você escolher `dashboard`, a identidade será chamada de `IIS AppPool\dashboard`. 1. Selecione **[!UICONTROL Server Roles]** e verifique a função **[!UICONTROL dbcreator]**.
+1. Clique em **[!UICONTROL OK]** para adicionar o novo usuário.
