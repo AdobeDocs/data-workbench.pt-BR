@@ -1,22 +1,21 @@
 ---
 description: Conceitualmente, o arquivo de endereço tem a mesma finalidade que o arquivo ETC&bsol;HOSTS em uma máquina em rede.
-solution: Analytics
 title: Locais de rede
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
+exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
 
 ---
 
-
 # Locais de rede{#network-locations}
 
 Conceitualmente, o arquivo de endereço tem a mesma finalidade que o arquivo ETC&amp;bsol;HOSTS em uma máquina em rede.
 
-No entanto, diferentemente do arquivo HOSTS, que descreve uma única coleção de nomes, o arquivo de endereço contém várias coleções de nomes chamadas locais de rede.
+No entanto, ao contrário do arquivo HOSTS, que descreve uma única coleção de nomes, o arquivo de endereço contém várias coleções de nomes chamadas locais de rede.
 
 Um local de rede é uma coleção nomeada de definições de endereço. Cada definição de endereço na coleção associa um nome comum a um endereço IP.
 
@@ -44,15 +43,15 @@ Como mostrado no exemplo acima, a estrutura NetworkLocation consiste em três pa
  <tbody> 
   <tr> 
    <td colname="col1"> Endereços </td> 
-   <td colname="col2"> Define zero ou mais Definições de endereço. Cada AddressDefintion associa um nome comum a um endereço IP. </td> 
+   <td colname="col2"> Define zero ou mais AddressDefinition. Cada AddressDefintion associa um nome comum a um endereço IP. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Nome </td> 
-   <td colname="col2"> Atribui um nome à NetworkLocation. O nome atribuído a uma NetworkLocation deve ser exclusivo no arquivo de endereço. </td> 
+   <td colname="col2"> Atribui um nome à NetworkLocation. O nome atribuído a uma NetworkLocation deve ser exclusivo no ficheiro de endereço. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Pai </td> 
-   <td colname="col2"> <p>Especifica o nome de outra NetworkLocation cujos membros estão incluídos nesta NetworkLocation. Este parâmetro permite que uma NetworkLocation estenda outra. </p> <p>Você pode definir o parâmetro Pai como "DNS" para estender uma NetworkLocation ao sistema DNS normal do cliente. </p> <p>Exemplo: Pai = string: DNS </p> <p>Quando DNS é o pai, os clientes tentam resolver um nome comum usando o sistema DNS do computador cliente quando não conseguem resolver o nome por meio da NetworkLocation. </p> </td> 
+   <td colname="col2"> <p>Especifica o nome de outra NetworkLocation cujos membros estão incluídos nesta NetworkLocation. Este parâmetro permite que uma NetworkLocation estenda outra. </p> <p>Você pode definir o parâmetro Pai como "DNS", para estender um NetworkLocation para o sistema DNS normal do cliente. </p> <p>Exemplo: Pai = cadeia de caracteres: DNS </p> <p>Quando o DNS é o pai, os clientes tentam resolver um nome comum usando o sistema DNS da máquina cliente quando não conseguem resolver o nome por meio da NetworkLocation. </p> </td> 
   </tr> 
  </tbody> 
 </table>
