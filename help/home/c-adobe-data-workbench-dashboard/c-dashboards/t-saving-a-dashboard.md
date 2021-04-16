@@ -1,32 +1,33 @@
 ---
-description: 'null'
-solution: Analytics
+description: Salvar um painel
 title: Salvar um painel
-topic: Data workbench
 uuid: 50dd713a-f7ce-4b53-8ba6-398643d2eef2
+exl-id: 4affc287-470b-47c6-af55-c0b6919321b0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 4%
 
 ---
-
 
 # Salvar um painel{#saving-a-dashboard}
 
 1. Para salvar um novo painel, selecione **[!UICONTROL Save]** ou **[!UICONTROL Save As…]** no Menu do painel na parte superior da interface do painel. Para um novo painel, ambas as opções têm o mesmo resultado.
 
-   Isso inicia a **[!UICONTROL Save New Dashboard]** janela onde você pode inserir um título, uma breve descrição e o local para armazenar o painel.
+   Isso inicia a janela **[!UICONTROL Save New Dashboard]**, onde é possível inserir um título, uma breve descrição e um local para armazenar o painel.
 
    >[!NOTE]
    >
-   >Os painéis podem ser privados ou compartilhados. Se um painel estiver rotulado **[!UICONTROL Private]** no **[!UICONTROL Visibility]** campo, somente você (ou um administrador do sistema) poderá exibir e editar o painel. Se um painel estiver rotulado **[!UICONTROL Shared]** no **[!UICONTROL Visibility]** campo, todos os usuários do sistema poderão exibir e editar o painel.
+   >Os painéis podem ser privados ou compartilhados. Se um painel for rotulado como **[!UICONTROL Private]** no campo **[!UICONTROL Visibility]**, somente você (ou um administrador do sistema) poderá visualizar e editar o painel. Se um painel for rotulado **[!UICONTROL Shared]** no campo **[!UICONTROL Visibility]**, todos os usuários do sistema poderão visualizar e editar o painel.
 
-1. No **[!UICONTROL Source]** campo, escolha uma miniatura de imagem para representar o painel. Por padrão, uma captura de tela do painel será tirada e usada como a miniatura do painel.
+1. No campo **[!UICONTROL Source]** , escolha uma miniatura de imagem para representar o painel. Por padrão, uma captura de tela do painel será capturada e usada como miniatura do painel.
 
-   Essa miniatura será usada se a **[!UICONTROL Captured Screenshot]** opção estiver selecionada. Se você quiser usar outro arquivo de imagem, selecione a **[!UICONTROL Image File]** opção e escolha a imagem que deseja que represente o painel.
+   Essa miniatura será usada se a opção **[!UICONTROL Captured Screenshot]** estiver selecionada. Se quiser usar outro arquivo de imagem, selecione a opção **[!UICONTROL Image File]** e escolha a imagem que deseja representar o painel.
 
    >[!NOTE]
    >
-   >Se o seu navegador não suportar captura de tela, uma captura de tela padrão será usada. Nesse caso, você pode selecionar um arquivo de imagem para representar o painel.
+   >Se o seu navegador não oferecer suporte à captura de captura de tela, uma captura de tela padrão será usada. Nesse caso, talvez você queira selecionar um arquivo de imagem para representar o painel.
 
    ![](assets/save.png)
 
