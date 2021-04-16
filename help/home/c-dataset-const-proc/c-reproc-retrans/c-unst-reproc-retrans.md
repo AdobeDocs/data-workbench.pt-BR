@@ -1,46 +1,47 @@
 ---
-description: Durante o reprocessamento, o servidor da análise de big data reconstrói seu conjunto de dados como você especificou nos arquivos de Configuração de Processamento de Log e Transformação de Conjunto de Dados.
-solution: Analytics
-title: Noções básicas sobre reprocessamento e retransformação
-topic: Data workbench
+description: Durante o reprocessamento, o servidor do Data Workbench reconstrói seu conjunto de dados como você especificou nos arquivos de Processamento de log e Configuração de conjunto de dados de transformação.
+title: Compreender como reprocessar e retransformar
 uuid: 0253bc8c-8883-41eb-8a9f-e0685613ff5c
+exl-id: 12c69935-a981-492c-9124-71f6f06ff77b
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 2%
 
 ---
 
+# Compreender como reprocessar e retransformar{#understanding-reprocessing-and-retransformation}
 
-# Noções básicas sobre reprocessamento e retransformação{#understanding-reprocessing-and-retransformation}
+Durante o reprocessamento, o servidor do Data Workbench reconstrói seu conjunto de dados como você especificou nos arquivos de Processamento de log e Configuração de conjunto de dados de transformação.
 
-Durante o reprocessamento, o servidor da análise de big data reconstrói seu conjunto de dados como você especificou nos arquivos de Configuração de Processamento de Log e Transformação de Conjunto de Dados.
+Para isso, o servidor do Data Workbench (InsightServer64.exe) deve concluir a fase de processamento de log e a fase de transformação da construção do conjunto de dados. Quando o processamento de log é concluído, ele aciona a transformação para ocorrer automaticamente, mas a transformação também pode ocorrer independentemente do processamento de log.
 
-Para isso, o servidor da análise de big data (InsightServer64.exe) deve concluir a fase de processamento de log e a fase de transformação da construção do conjunto de dados. Quando o processamento de log é concluído, ele aciona a transformação para ocorrer automaticamente, mas a transformação também pode ocorrer independentemente do processamento de log.
+Durante a fase de processamento de log, os usuários do Data Workbench não têm acesso aos dados no conjunto de dados. Durante a fase de transformação, os usuários do Data Workbench têm acesso a dados atualizados, mas os dados são coletados em vez de concluídos. A análise de dados pode continuar durante a transformação, mas as consultas serão concluídas somente assim que a transformação estiver ocorrendo.
 
-Durante a fase de processamento de log, os usuários da análise de big data não têm acesso aos dados no conjunto de dados. Durante a fase de transformação, os usuários da análise de big data têm acesso a dados atualizados, mas os dados são coletados em vez de concluídos. A análise de dados pode continuar durante a transformação, mas as consultas serão concluídas apenas tão rapidamente quanto a transformação ocorrer.
+## Reprocessando {#section-92f1e46bf1534b3dba39e9493190b8ab}
 
-## Reprocessamento {#section-92f1e46bf1534b3dba39e9493190b8ab}
-
-Cada vez que você conclui uma das seguintes tarefas, o processamento de log e, portanto, a transformação, ocorre automaticamente para reconstruir seu conjunto de dados conforme especificado nos arquivos de configuração do conjunto de dados:
+Cada vez que você conclui uma das seguintes tarefas, o processamento de log e, portanto, a transformação, ocorre automaticamente para reconstruir seu conjunto de dados conforme você especificou nos arquivos de configuração do conjunto de dados:
 
 * Adicione uma nova fonte de dados.
-* Adicione um novo servidor de análise de big data ao cluster no [!DNL Profile.cfg] arquivo.
-* Altere o [!DNL Cluster.cfg] arquivo.
-* Altere o [!DNL Log Processing.cfg] arquivo ou um [!DNL Log Processing Dataset Include] arquivo, incluindo, mas não limitado, o seguinte:
+* Adicione um novo servidor do Data Workbench ao cluster no arquivo [!DNL Profile.cfg].
+* Altere o arquivo [!DNL Cluster.cfg].
+* Altere o arquivo [!DNL Log Processing.cfg] ou [!DNL Log Processing Dataset Include], incluindo, mas não limitado a, o seguinte:
 
    * Adicionar um novo parâmetro
    * Alterar uma transformação
-   * Alterar os parâmetros Hora de início ou Hora de término
+   * Alterar os parâmetros Hora de Início ou Hora de Término
 
-* Atualize seu [!DNL Insight Server.exe] arquivo.
+* Atualize seu arquivo [!DNL Insight Server.exe].
 
-Você também pode iniciar o reprocessamento a qualquer momento inserindo qualquer caractere ou combinação de caracteres no parâmetro Reprocessar do arquivo e salvando o arquivo. [!DNL Log Processing.cfg]
+Você também pode iniciar o reprocessamento a qualquer momento inserindo qualquer caractere ou combinação de caracteres no parâmetro Reprocessar do arquivo [!DNL Log Processing.cfg] e salvando o arquivo.
 
 >[!NOTE]
 >
->Para que o reprocessamento ocorra, o parâmetro Pausar no [!DNL Log Processing Mode.cfg] arquivo deve ser definido como falso. O valor padrão desse parâmetro é falso, portanto, alterar o parâmetro pode não ser necessário. Para obter mais informações sobre [!DNL Log Processing Mode.cfg], consulte Arquivos [de configuração](/help/home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md)adicionais.
+>Para que o reprocessamento ocorra, o parâmetro Pause no arquivo [!DNL Log Processing Mode.cfg] deve ser definido como false. O valor padrão deste parâmetro é falso, portanto, alterar o parâmetro pode não ser necessário. Para obter mais informações sobre [!DNL Log Processing Mode.cfg], consulte [Arquivos de Configuração Adicionais](/help/home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md).
 
 ## Retransformação {#section-02446744549940ada8eba0573ec5575f}
 
-Cada vez que você altera qualquer informação no [!DNL Transformation.cfg] arquivo ou em um [!DNL Transformation Dataset Include] arquivo, como alterar uma transformação ou definir uma nova dimensão, a transformação ocorre automaticamente.
+Cada vez que você altera qualquer informação no arquivo [!DNL Transformation.cfg] ou em um arquivo [!DNL Transformation Dataset Include], como alterar uma transformação ou definir uma nova dimensão, a transformação ocorre automaticamente.
 
-Sempre que você alterar arquivos de pesquisa referenciados no [!DNL Transformation.cfg] arquivo ou em um [!DNL Transformation Dataset Include] arquivo (incluindo arquivos de pesquisa para [!DNL Categorize], [!DNL FlatFileLookup]e [!DNL ODBCLookup] transformações), deve iniciar a transformação inserindo qualquer caractere ou combinação de caracteres no parâmetro Reprocessar do [!DNL Transformation.cfg] arquivo e salvando o arquivo.
+Sempre que você alterar arquivos de pesquisa referenciados no arquivo [!DNL Transformation.cfg] ou em um arquivo [!DNL Transformation Dataset Include] (incluindo arquivos de pesquisa para [!DNL Categorize], [!DNL FlatFileLookup] e [!DNL ODBCLookup] transformações), deverá iniciar a transformação inserindo qualquer caractere ou combinação de caracteres no parâmetro Reprocessar do arquivo [!DNL Transformation.cfg] e salvando o arquivo.
