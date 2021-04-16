@@ -1,25 +1,26 @@
 ---
-description: O Coeficiente de Correlação de Pearson é usado na Matriz de Correlação como o algoritmo para exibir a força da dependência linear entre duas variáveis.
-solution: Analytics
-title: Sobre o Coeficiente de Correlação Pearson
-topic: Data workbench
+description: O coeficiente de correlação Pearson é usado na Matriz de correlação como o algoritmo para exibir a força da dependência linear entre duas variáveis.
+title: Sobre o coeficiente de correlação Pearson
 uuid: d4c37302-3d0e-4411-b4e2-fc4b0c53cbcd
+exl-id: 92a030c7-406a-4ffa-b279-fc60d207496c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 6%
 
 ---
 
+# Sobre o coeficiente de correlação Pearson{#about-the-pearson-correlation-coefficient}
 
-# Sobre o Coeficiente de Correlação Pearson{#about-the-pearson-correlation-coefficient}
+O coeficiente de correlação Pearson é usado na Matriz de correlação como o algoritmo para exibir a força da dependência linear entre duas variáveis.
 
-O Coeficiente de Correlação de Pearson é usado na Matriz de Correlação como o algoritmo para exibir a força da dependência linear entre duas variáveis.
+Essa correlação linear é uma medida estatística da dependência linear, ou correlação, entre duas variáveis para renderizar um valor entre +1 e -1 inclusive, representando uma dependência positiva ou negativa.
 
-Esta correlação linear é uma medida estatística da dependência linear, ou correlação, entre duas variáveis para renderizar um valor entre +1 e -1, inclusive, representando uma dependência positiva ou negativa.
-
-Aqui está o Coeficiente de Correlação Pearson
+Aqui está o coeficiente de correlação Pearson
 
 ![](assets/correlation_matrix_pearson_equation.png)
 
-O valor da Pearson é visualizado na Matriz de correlação, que descreve a correlação entre duas métricas definidas. Essas métricas podem ser comparadas entre si em qualquer dimensão contável ou não contável no conjunto de dados.
+O valor de Pearson é visualizado na Matriz de correlação, que descreve a correlação entre duas métricas definidas. Essas métricas podem ser comparadas entre si em qualquer dimensão contável ou não contável no conjunto de dados.
 
-É possível destacar essas comparações por meio da contraste de cores usando o seletor de cores, ou comparando valores em um mapa de texto e mapa de calor, ou ambos.
+Você pode destacar essas comparações usando o seletor de cores ou comparando valores em um mapa de texto e mapa de calor, ou ambos.
