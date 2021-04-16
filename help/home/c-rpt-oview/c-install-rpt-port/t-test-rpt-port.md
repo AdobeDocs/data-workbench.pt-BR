@@ -1,33 +1,33 @@
 ---
-description: Etapas para abrir o Portal de relatórios e garantir que você possa visualizar com êxito os relatórios do seu perfil.
-solution: Analytics
+description: Etapas para abrir o portal de relatórios e garantir que você possa exibir os relatórios do seu perfil com êxito.
 title: Testar o portal de relatórios
-topic: Data workbench
 uuid: eee0df5e-78e0-49b2-853c-40f1b332328b
+exl-id: 197ff815-9234-4dce-b30f-b9cacf259634
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 6%
 
 ---
 
-
 # Testar o portal de relatórios{#test-the-report-portal}
 
-Etapas para abrir o Portal de relatórios e garantir que você possa visualizar com êxito os relatórios do seu perfil.
+Etapas para abrir o portal de relatórios e garantir que você possa exibir os relatórios do seu perfil com êxito.
 
 >[!NOTE]
 >
->Não é possível fazer logon no [!DNL Report Portal] até que os relatórios sejam exibidos na pasta Saída.
+>Você não pode fazer logon no [!DNL Report Portal] até que os relatórios sejam exibidos na pasta Saída.
 
-1. No navegador da Web, abra o arquivo usando o [!DNL Report Portal] seguinte formato de URI:
+1. No navegador da Web, abra o [!DNL Report Portal] usando o seguinte formato de URI:
 
    http://*ServerAddress*/*PortalName*
 
    Exemplo: [!DNL http://localhost/VisualReportPortal]
 
 1. Se [!DNL Report Portal] solicitar credenciais de logon, digite um nome de conta e uma senha (por exemplo, conta &quot;teste&quot; e senha &quot;usuário&quot; para a conta padrão).
-1. Quando a mensagem [!DNL Report Portal] for exibida, verifique se:
+1. Quando o [!DNL Report Portal] for exibido, verifique se:
 
    * O portal contém uma guia para cada conjunto de relatórios na pasta de saída.
    * Cada guia exibe o relatório de resumo do conjunto de relatórios.
-   * O menu em cada guia lista as subpastas individuais (se houver) do conjunto de relatórios e exibe o conteúdo dessas pastas.
-
+   * O menu em cada guia lista as subpastas individuais (se houver) para o conjunto de relatórios e exibe o conteúdo dessas pastas.
