@@ -1,22 +1,20 @@
 ---
 description: Etapas para copiar um painel.
-solution: Analytics
 title: Fazer uma cópia de um painel
-topic: Data workbench
 uuid: ba47ded4-8676-48a7-853f-6321ea6eb601
+exl-id: e922a9db-81f7-4ef9-a0af-a7ece15bd7a1
 translation-type: tm+mt
-source-git-commit: 99971eae6cf9c65a7a4a972b21a2b8ed4502c007
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 20%
 
 ---
 
-
 # Fazer uma cópia de um painel{#making-a-copy-of-a-dashboard}
 
 Etapas para copiar um painel.
 
 1. Carregue o painel do qual deseja fazer uma cópia.
-1. Selecione **[!UICONTROL Save As…]** no menu painel na parte superior da interface do painel.
-1. Quando a **[!UICONTROL Save Dashboard As…]** janela for exibida, digite um novo nome para a cópia do painel.
+1. Selecione **[!UICONTROL Save As…]** no menu do painel, na parte superior da interface do painel.
+1. Quando a janela **[!UICONTROL Save Dashboard As…]** for exibida, insira um novo nome para a cópia do painel.
