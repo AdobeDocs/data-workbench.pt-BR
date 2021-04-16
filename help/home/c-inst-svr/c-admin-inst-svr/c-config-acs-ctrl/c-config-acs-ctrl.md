@@ -1,23 +1,22 @@
 ---
-description: O arquivo de configuração do Controle de acesso, Controle de acesso.cfg, define os grupos de controles de acesso pelos quais o Insight Server concede permissões para arquivos com base nos atributos (OU, CN, e assim por diante) do certificado da conexão de entrada.
-solution: Analytics
+description: O arquivo de configuração Controle de acesso, Access Control.cfg, define os grupos de controle de acesso pelos quais o Insight Server concede permissões a arquivos com base nos atributos (OU, CN, e assim por diante) do certificado da conexão de entrada.
 title: Configurar o controle de acesso
 uuid: e0206b43-3c8c-48ec-b663-814f5b663b96
+exl-id: 2836c907-fc74-4d35-badc-b8f06cd6989f
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 4%
 
 ---
 
-
 # Configurar o controle de acesso{#configuring-access-control}
 
-O arquivo de configuração do Controle de acesso, Controle de acesso.cfg, define os grupos de controles de acesso pelos quais o Insight Server concede permissões para arquivos com base nos atributos (OU, CN, e assim por diante) do certificado da conexão de entrada.
+O arquivo de configuração Controle de acesso, Access Control.cfg, define os grupos de controle de acesso pelos quais o Insight Server concede permissões a arquivos com base nos atributos (OU, CN, e assim por diante) do certificado da conexão de entrada.
 
-**Frequência recomendada:** Conforme necessário
+**Frequência recomendada:** conforme necessário
 
-[!DNL Insight Server] fornece grupos de controles de acesso configuráveis para gerenciar a segurança das conexões com [!DNL Insight Server]. Os grupos de controles de acesso identificam os usuários com permissão para realizar funções administrativas por meio [!DNL Insight].
+[!DNL Insight Server] O fornece grupos de controle de acesso configuráveis para gerenciar a segurança das conexões com o  [!DNL Insight Server]. Os grupos de controle de acesso identificam usuários que podem executar funções administrativas por meio de [!DNL Insight].
 
-Se precisar fornecer acesso a novos usuários ou máquinas, como ao adicionar uma máquina a um [!DNL Insight Server] cluster, basta editar o arquivo de configuração do Controle de acesso.
+Se precisar fornecer acesso a novos usuários ou máquinas, como ao adicionar uma máquina a um cluster [!DNL Insight Server], basta editar o arquivo de configuração Controle de Acesso.
