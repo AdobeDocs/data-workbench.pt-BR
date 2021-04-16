@@ -1,39 +1,38 @@
 ---
-description: O sensor, quando usado em um servidor, pode coletar campos de dados do evento de qualquer solicitação HTTP válida ou cabeçalho de resposta disponível por meio da API do servidor.
-solution: Analytics
+description: O sensor, quando usado em um servidor, pode coletar campos de dados do evento de qualquer solicitação HTTP ou cabeçalho de resposta ou variável HTTP válida disponível para ele por meio da API do servidor.
 title: Campos extensíveis
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
+exl-id: e783d073-cf06-4415-80e1-567b55fdee12
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 1%
 
 ---
 
-
 # Campos extensíveis{#extensible-fields}
 
-O sensor, quando usado em um servidor, pode coletar campos de dados do evento de qualquer solicitação HTTP válida ou cabeçalho de resposta disponível por meio da API do servidor.
+O sensor, quando usado em um servidor, pode coletar campos de dados do evento de qualquer solicitação HTTP ou cabeçalho de resposta ou variável HTTP válida disponível para ele por meio da API do servidor.
 
-Para coletar esses campos de dados, você deve especificar os campos de cabeçalho ou variáveis desejados no arquivo de [!DNL txlogd.conf] configuração para [!DNL Sensor].
+Para coletar esses campos de dados, você deve especificar os campos de cabeçalho ou variáveis desejados no arquivo de configuração [!DNL txlogd.conf] para [!DNL Sensor].
 
 * [Cabeçalhos de solicitação](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)
 * [Variáveis de servidor](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-74b258bc3e8a4a93a0ee9fb01c067e4b)
 
 ## Cabeçalhos de solicitação {#section-22766692b45546d8bfc93dbe3bc9368f}
 
-A seguir está a sintaxe para especificar um campo de cabeçalho de solicitação a ser coletado (por exemplo, Host, Accept-Encoding, Keep-Alive e assim por diante) em [!DNL txlogd.conf]:
+A seguir está a sintaxe para especificar um campo de cabeçalho de solicitação a ser coletado (por exemplo, Host, Aceitar-Codificação, Manter-Vivo e assim por diante) em [!DNL txlogd.conf]:
 
 ```
 LogHeader RequestHeaderName
 ```
 
-Os dados coletados são registrados por [!DNL Sensor] um campo chamado &quot;cs(RequestHeaderName)&quot; nos [!DNL .vsl] arquivos criados pelo [!DNL data workbench server]. Por exemplo, para coletar o valor do cabeçalho da solicitação específica do cabeçalho da solicitação &quot;Host&quot;, digite &quot;Host LogHeader&quot; em [!DNL txlogd.conf]. Os dados são registrados no campo &quot;cs(Host)&quot; no registro de dados do evento.
+Os dados coletados são registrados por [!DNL Sensor] em um campo chamado &quot;cs(RequestHeaderName)&quot; nos arquivos [!DNL .vsl] criados pelo [!DNL data workbench server]. Por exemplo, para coletar o valor do cabeçalho da solicitação específico do cabeçalho da solicitação &quot;Host&quot;, você digita &quot;LogHeader Host&quot; em [!DNL txlogd.conf]. Os dados são registrados no campo &quot;cs(Host)&quot; no registro de dados do evento.
 
-## Variáveis de servidor {#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
+## Variáveis do servidor {#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
 
-[!DNL Sensor] pode coletar campos de dados de cabeçalhos de resposta ou variáveis de servidor acessíveis por API usando entradas SpecialLogField que você incluir no [!DNL txlogd.conf] arquivo. Você também pode usar entradas &quot;SpecialLogField&quot; além ou em vez de entradas &quot;LogHeader&quot; para coletar cabeçalhos de solicitação. Consulte Cabeçalhos [de solicitação](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f). A opção de cabeçalhos de solicitação permanece disponível para compatibilidade com versões anteriores.
+[!DNL Sensor] O pode coletar campos de dados de cabeçalhos de resposta ou variáveis de servidor acessíveis para API usando entradas SpecialLogField que você inclui no  [!DNL txlogd.conf] arquivo. Você também pode usar entradas &quot;SpecialLogField&quot; além ou em vez de entradas &quot;LogHeader&quot; para coletar cabeçalhos de solicitação. Consulte [Cabeçalhos de Solicitação](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f). A opção de cabeçalhos de solicitação permanece disponível para compatibilidade com versões anteriores.
 
 A seguir está a sintaxe para especificar um &quot;SpecialLogField&quot; em [!DNL txlogd.conf]:
 
@@ -53,17 +52,17 @@ A tabela a seguir inclui descrições dos componentes de uma entrada &quot;Speci
  <tbody> 
   <tr> 
    <td colname="col1"> cs(log field) </td> 
-   <td colname="col2"> O nome do campo no qual os dados coletados são registrados no registro de dados do evento e os arquivos <span class="filepath"> .vsl </span> criados pelo servidor da análise de big data <span class="keyword"> </span>. </td> 
+   <td colname="col2"> O nome do campo no qual os dados coletados são registrados no registro de dados do evento e os arquivos <span class="filepath"> .vsl </span> criados pelo <span class="keyword"> servidor do Data Workbench </span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> serverVariable </td> 
-   <td colname="col2"> <p>Qualquer variável de servidor disponível para o <span class="wintitle"> Sensor </span> por meio da API do servidor </p> <p>Exemplo: response.p3p </p> </td> 
+   <td colname="col2"> <p>Qualquer variável de servidor que esteja disponível para <span class="wintitle"> Sensor </span> por meio da API do servidor </p> <p>Exemplo: response.p3p </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> estágio </td> 
-   <td colname="col2"> <p>Vys_log ou vys_cookie </p> <p>A especificação do estágio exige que você saiba quais variáveis de servidor estão disponíveis para vys_log e vys_cookie. </p> <p>Exemplo: Para a serverVariable response.p3p, você deve digitar vys_log. </p> </td> 
+   <td colname="col2"> <p>Vys_log ou vys_cookie </p> <p>A especificação do estágio requer que você saiba quais variáveis de servidor estão disponíveis para vys_log e vys_cookie. </p> <p>Exemplo: Para serverVariable response.p3p, você deve inserir vys_log. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Para obter ajuda sobre como configurar [!DNL Sensor] a coleta de campos extensíveis de registro de dados de evento, entre em contato com os Serviços de consultoria de Adobe.
+Para obter ajuda na configuração [!DNL Sensor] para coletar campos extensíveis de registro de dados do evento, entre em contato com os Serviços de consultoria do Adobe.
