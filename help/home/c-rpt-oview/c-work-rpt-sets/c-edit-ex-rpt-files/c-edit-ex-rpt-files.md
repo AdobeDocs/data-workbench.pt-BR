@@ -1,14 +1,15 @@
 ---
 description: Etapas para editar arquivos Report.cfg existentes usando a Área de trabalho ou um editor de texto.
-solution: Analytics
 title: Editar arquivos Report.cfg existentes
-topic: Data workbench
 uuid: 494b9eef-42f3-4ed9-8b43-f5c09af33f2e
+exl-id: 69038c0c-bb01-4e61-aad6-1be0bdec8a6d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 2%
 
 ---
-
 
 # Editar arquivos Report.cfg existentes{#editing-existing-report-cfg-files}
 
@@ -16,43 +17,44 @@ Etapas para editar arquivos Report.cfg existentes usando a Área de trabalho ou 
 
 >[!NOTE]
 >
->* Você deve estar trabalhando online para editar [!DNL Report.cfg] arquivos. Para trabalhar online, na barra de título, clique com o botão direito do mouse [!DNL Worktop]na barra de título e clique em **[!UICONTROL Work Online]**.
+>* Você deve estar trabalhando online para editar arquivos [!DNL Report.cfg]. Para trabalhar online, no [!DNL Worktop], clique com o botão direito do mouse na barra de título e clique em **[!UICONTROL Work Online]**.
    >
    >
-* Se o **[!UICONTROL Allow Report Regeneration]** parâmetro no [!DNL Report.cfg] arquivo estiver definido como [!DNL True], ao fazer alterações nesse arquivo e salvar o arquivo de volta no servidor, o [!DNL Report] regera automaticamente os relatórios nesse conjunto. Embora regenere os relatórios, eles não reenviam os relatórios por email. Para obter etapas para fazer isso, consulte [Reenviando relatórios por email](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md#task-b0a21f1c925f4e5d82560581ae4cf607).
+* Se o parâmetro **[!UICONTROL Allow Report Regeneration]** no arquivo [!DNL Report.cfg] estiver definido como [!DNL True], quando você fizer alterações nesse arquivo e salvar esse arquivo de volta no servidor, [!DNL Report] automaticamente gera os relatórios nesse conjunto. Embora regenere os relatórios, ele não reenvia os relatórios por email. Para obter etapas para fazer isso, consulte [Reenviar relatórios por email](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md#task-b0a21f1c925f4e5d82560581ae4cf607).
+
 >
 
 
 
-É possível editar um existente [!DNL Report.cfg] do editor de texto [!DNL Worktop] ou usando um editor de texto.
+Você pode editar um [!DNL Report.cfg] existente no [!DNL Worktop] ou usando um editor de texto.
 
-Editar um [!DNL Report.cfg] arquivo usando a [!DNL Reports] guia do [!DNL Worktop] permite que você edite apenas os parâmetros, vetores e itens de vetor que já existem no arquivo. Se precisar adicionar um parâmetro ou vetor ao arquivo, edite-o usando um editor de texto, como o Bloco de notas.
+Editar um arquivo [!DNL Report.cfg] usando a guia [!DNL Reports] do [!DNL Worktop] permite editar apenas os parâmetros, vetores e itens de vetor que já existem no arquivo. Se precisar adicionar um parâmetro ou vetor ao arquivo, edite-o usando um editor de texto, como o Bloco de notas.
 
-* [Para editar um Report.cfg existente usando a área de trabalho](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#section-7bce3bca006149c79be7678430f21945)
+* [Para editar um Report.cfg existente usando a Área de trabalho](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#section-7bce3bca006149c79be7678430f21945)
 * [Para editar um Report.cfg existente usando um editor de texto](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#section-06f3d2a8d7f34bc2841180caf10a1eb7)
 
-## Para editar um Report.cfg existente usando a área de trabalho {#section-7bce3bca006149c79be7678430f21945}
+## Para editar um Report.cfg existente usando a Área de Trabalho {#section-7bce3bca006149c79be7678430f21945}
 
 >[!NOTE]
 >
->Você deve estar trabalhando on-line para editar o formulário [!DNL Report.cfg] do [!DNL Worktop].
+>Você deve estar trabalhando online para editar o [!DNL Report.cfg] do [!DNL Worktop].
 
-1. Na análise de big data, na [!DNL Reports] guia, selecione a subpasta (guia ou subdiretório suspenso) para o conjunto de relatórios que deseja configurar.
-1. Clique em **[!UICONTROL Report.cfg]**. Os parâmetros do [!DNL Report.cfg] conjunto de relatórios são exibidos.
+1. No Data Workbench, na guia [!DNL Reports], selecione a subpasta (subdiretório guia ou suspenso) para o conjunto de relatórios que deseja configurar.
+1. Clique em **[!UICONTROL Report.cfg]**. Os parâmetros de [!DNL Report.cfg] para esse conjunto de relatórios são exibidos.
 
-1. Edite os parâmetros de configuração conforme desejado. Para obter informações sobre esses parâmetros, consulte Parâmetros [](../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff)Report.cfg.
-1. Salve o arquivo clicando com o botão direito do mouse **[!UICONTROL Report.cfg (modified)]** na parte superior dos parâmetros e clicando em **[!UICONTROL Save to]***&lt; **[!UICONTROL server location]**>*.
+1. Edite os parâmetros de configuração conforme desejado. Para obter informações sobre esses parâmetros, consulte [Parâmetros Report.cfg](../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
+1. Salve o arquivo clicando com o botão direito do mouse em **[!UICONTROL Report.cfg (modified)]** na parte superior dos parâmetros e clicando em **[!UICONTROL Save to]***&lt; **[!UICONTROL server location]**>*.
 
 ## Para editar um Report.cfg existente usando um editor de texto {#section-06f3d2a8d7f34bc2841180caf10a1eb7}
 
-1. Abra o arquivo clicando com o botão direito do mouse [!DNL Reports Manager] em um espaço de trabalho e clicando em **[!UICONTROL Admin]** > **[!UICONTROL Profile]** > **[!UICONTROL Reports Manager]**.
+1. Abra o [!DNL Reports Manager] clicando com o botão direito do mouse em um espaço de trabalho e clicando em **[!UICONTROL Admin]** > **[!UICONTROL Profile]** > **[!UICONTROL Reports Manager]**.
 
-1. Clique na pasta do conjunto de relatórios.
-1. Clique com o botão direito do mouse na marca de seleção ao lado [!DNL Report.cfg] do conjunto de relatórios e clique em **[!UICONTROL Make Local]**.
+1. Clique na pasta do seu conjunto de relatórios.
+1. Clique com o botão direito do mouse na marca de seleção ao lado de [!DNL Report.cfg] para este conjunto de relatórios e clique em **[!UICONTROL Make Local]**.
 
-1. Na [!DNL User] coluna, clique com o botão direito do mouse na marca de seleção ao lado [!DNL Report.cfg] desse conjunto de relatórios e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. O [!DNL Report.cfg] arquivo é aberto.
+1. Na coluna [!DNL User] , clique com o botão direito do mouse na marca de seleção ao lado de [!DNL Report.cfg] para este conjunto de relatórios e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. O arquivo [!DNL Report.cfg] é aberto.
 
-   A amostra [!DNL Report.cfg] mostrada em [Configurar o conjunto](../../../../home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md#task-cfb2fd0c28bc48c2acdd582fe0d670d0) de relatórios contém apenas os parâmetros incluídos no [!DNL Report.cfg] arquivo por padrão. O exemplo a seguir inclui todos os parâmetros disponíveis para o [!DNL Report.cfg] arquivo que você pode usar como modelos para as entradas de parâmetro:
+   A amostra [!DNL Report.cfg] mostrada em [Configurar o conjunto de relatórios](../../../../home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md#task-cfb2fd0c28bc48c2acdd582fe0d670d0) contém apenas os parâmetros incluídos no arquivo [!DNL Report.cfg] por padrão. O exemplo a seguir inclui todos os parâmetros disponíveis para o arquivo [!DNL Report.cfg] que você pode usar como modelos para suas entradas de parâmetro:
 
    ```
    Attachments = vector: 1 items
@@ -98,7 +100,6 @@ Editar um [!DNL Report.cfg] arquivo usando a [!DNL Reports] guia do [!DNL Workto
    Workspace Path = string: 
    ```
 
-1. Edite os parâmetros de configuração conforme desejado. Para obter informações sobre esses parâmetros, consulte Parâmetros [](../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff)Report.cfg.
+1. Edite os parâmetros de configuração conforme desejado. Para obter informações sobre esses parâmetros, consulte [Parâmetros Report.cfg](../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
 1. Salve e feche o arquivo.
-1. No [!DNL Reports Manager], clique com o botão direito do mouse na marca de seleção na [!DNL User] coluna do [!DNL Report.cfg] arquivo e selecione **[!UICONTROL Save to]***&lt; **[!UICONTROL profile name]**>*.
-
+1. No [!DNL Reports Manager], clique com o botão direito do mouse na marca de seleção na coluna [!DNL User] do arquivo [!DNL Report.cfg] e selecione **[!UICONTROL Save to]***&lt; **[!UICONTROL profile name]***.
