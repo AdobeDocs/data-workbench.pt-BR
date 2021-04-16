@@ -1,14 +1,15 @@
 ---
-description: 'null'
-solution: Analytics
+description: Mover painéis e pastas
 title: Mover painéis e pastas
-topic: Data workbench
 uuid: 7b878f40-4964-4b03-94d3-8387ac84470c
+exl-id: 7b983ab5-d77f-4c74-b880-b4f2abe02b90
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '41'
+ht-degree: 29%
 
 ---
-
 
 # Mover painéis e pastas{#moving-dashboards-and-folders}
 
@@ -16,4 +17,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/move_folder.png)
 
-   As alterações serão atualizadas ao vivo no servidor à medida que você fizer manipulações.
+   As alterações serão atualizadas ao vivo no servidor à medida que você faz manipulações.
