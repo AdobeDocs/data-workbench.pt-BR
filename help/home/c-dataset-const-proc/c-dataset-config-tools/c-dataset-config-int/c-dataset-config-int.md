@@ -1,28 +1,28 @@
 ---
 description: As interfaces de configuração do conjunto de dados mostram as relações entre os componentes (fontes de log, campos, transformações e dimensões) do conjunto de dados.
-solution: Analytics
-title: Trabalhar Com Interfaces De Configuração De Conjunto De Dados
-topic: Data workbench
+title: Trabalhar com interfaces de configuração de conjunto de dados
 uuid: c29faccd-0402-4982-9e5b-7379e2590246
+exl-id: cc2b876f-8d65-4b36-920a-dde3928795bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 10%
 
 ---
 
-
-# Trabalhar Com Interfaces De Configuração De Conjunto De Dados{#working-with-dataset-configuration-interfaces}
+# Trabalhar com interfaces de configuração de conjunto de dados{#working-with-dataset-configuration-interfaces}
 
 As interfaces de configuração do conjunto de dados mostram as relações entre os componentes (fontes de log, campos, transformações e dimensões) do conjunto de dados.
 
-Algumas interfaces fornecem opções para exibir informações sobre, pesquisar ou editar componentes do conjunto de dados.
+Algumas interfaces fornecem opções para visualizar informações sobre, pesquisar ou editar componentes do conjunto de dados.
 
 **Para abrir as interfaces de configuração do conjunto de dados**
 
-É possível abrir as interfaces para a configuração do conjunto de dados usando um dos seguintes métodos:
+Você pode abrir as interfaces para a configuração do conjunto de dados usando um dos seguintes métodos:
 
-* **Menu Admin:** Clique com o botão direito do mouse em um espaço de trabalho, clique em **[!UICONTROL Admin]** e na opção de menu apropriada.
+* **Menu Admin:** Clique com o botão direito do mouse em um espaço de trabalho, clique em  **[!UICONTROL Admin]**, em seguida, clique na opção de menu apropriada.
 
-   -OU-
+   -OR-
 
-* **Guia Admin:** Clique para abrir a miniatura apropriada do espaço de trabalho em **[!UICONTROL Admin]** > **[!UICONTROL Dataset and Profile tab]**.
-
+* **Guia Admin:** clique em para abrir a miniatura do espaço de trabalho apropriada em  **[!UICONTROL Admin]** >  **[!UICONTROL Dataset and Profile tab]**.
