@@ -1,22 +1,23 @@
 ---
-description: As variáveis de sequência de consulta podem ser adicionadas a uma solicitação JavaScript para coletar medidas adicionais quando uma solicitação é feita.
-solution: Analytics
+description: As variáveis da sequência de consulta podem ser adicionadas a uma solicitação do JavaScript para coletar medidas adicionais quando uma solicitação é feita.
 title: Adquirir informações adicionais
-topic: Data workbench
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 4%
 
 ---
 
-
 # Adquirir informações adicionais{#acquiring-additional-information}
 
-As variáveis de sequência de consulta podem ser adicionadas a uma solicitação JavaScript para coletar medidas adicionais quando uma solicitação é feita.
+As variáveis da sequência de consulta podem ser adicionadas a uma solicitação do JavaScript para coletar medidas adicionais quando uma solicitação é feita.
 
 Essas variáveis podem ser adicionadas manualmente ou por script na própria página.
 
-Informações adicionais que podem ser adquiridas de uma página podem ser adicionadas ao objeto incorporado por meio de um script usando o seguinte código como exemplo:
+Informações adicionais que podem ser adquiridas de uma página podem ser adicionadas ao objeto incorporado por meio do script usando o seguinte código como exemplo:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -36,11 +37,10 @@ v["_2"] = "visa";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-Neste exemplo, as variáveis de script para v_1 e v_2 podem ser derivadas de outra função dentro da sua página da Web. As variáveis foram inseridas como exemplos. Além das medidas de linha de base adquiridas com cada solicitação, as seguintes medidas estendidas seriam adquiridas com a solicitação do URL acima:
+Neste exemplo, as variáveis de script para v_1 e v_2 podem ser derivadas de outra função na página da Web. As variáveis foram inseridas como exemplos. Além das medidas de linha de base adquiridas com cada solicitação, as seguintes medidas estendidas seriam adquiridas com a solicitação do URL acima:
 
 | Dados Coletados | Explicação | Exemplo |
 |---|---|---|
 | v_pn= | Valor associado à variável da string de consulta v_pn | v_pn=Formulário de aplicativo |
 | v_1= | Valor associado à variável da string de consulta v_1 | v_1=99.99 |
 | v_2= | Valor associado à variável da string de consulta v_2 | v_2=visa |
-
