@@ -1,20 +1,21 @@
 ---
-description: Captura de atividade em links de sites de terceiros para habilitar a análise de Saída do Target.
-solution: Analytics
-title: Rastreamento de saídas para links externos
-topic: Data workbench
+description: Captura de atividades em links de sites de terceiros para permitir a análise de Saída do Target.
+title: Rastrear saídas para links externos
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
+exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 6%
 
 ---
 
+# Rastrear saídas para links externos{#tracking-exits-to-external-links}
 
-# Rastreamento de saídas para links externos{#tracking-exits-to-external-links}
+Captura de atividades em links de sites de terceiros para permitir a análise de Saída do Target.
 
-Captura de atividade em links de sites de terceiros para habilitar a análise de Saída do Target.
-
-As páginas da Web podem conter links para sites de terceiros, e a atividade nesses links pode ser capturada para habilitar a análise de saída do Target, especialmente no caso de o site de terceiros ser responsável pelo pagamento de taxas de referência quando tais referências forem recebidas. Como o evento click é gravado nos arquivos de log do sistema de terceiros por padrão, é necessário fazer modificações no link para que o evento click seja capturado localmente. O link de terceiros presente em seu site deve ser modificado da seguinte forma:
+As páginas da Web podem conter links para sites de terceiros e a atividade nesses links pode ser capturada para habilitar a análise de Saída do Target, especialmente no caso de o site de terceiros ser responsável por pagar taxas de referência quando tais referências forem recebidas. Como o evento click é gravado nos arquivos de log do sistema de terceiros por padrão, as modificações precisam ser feitas no link para que o evento click seja capturado localmente. O link de terceiros presente no seu site deve ser modificado da seguinte maneira:
 
 ```
 <A HREF=”http://www.myserver.com/PageExit.htm?v_eurl=http://www.othersite.com”>
@@ -51,9 +52,8 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-Ao fazer a solicitação para o [!DNL PageExit.htm] arquivo, o valor v_eurl é coletado para fins de análise. Além disso, quando [!DNL PageExit.htm] é carregado, ele redireciona imediatamente para o local de destino v_eurl especificado.
+Ao fazer a solicitação para o arquivo [!DNL PageExit.htm], o valor v_eurl é coletado para fins de análise. Além disso, quando [!DNL PageExit.htm] é carregado, ele redireciona imediatamente para o local de destino v_eurl especificado.
 
 | Dados Coletados | Explicação | Exemplo |
 |---|---|---|
 | v_eurl | Valor associado à variável da string de consulta v_eurl. Esse valor representa o URL de destino do link presente na página HTML. | v_eurl=www.othersite.com |
-
