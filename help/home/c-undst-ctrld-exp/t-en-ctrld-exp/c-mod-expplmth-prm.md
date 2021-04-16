@@ -1,24 +1,22 @@
 ---
-description: 'null'
-solution: Analytics,Analytics
+description: Modificar o parâmetro ExpPartialMatch (opcional)
 title: Modificar o parâmetro ExpPartialMatch (opcional)
-topic: Data workbench
 uuid: 15ed33cc-5ec8-45b2-a4eb-d1941962ca9d
+exl-id: 8ad45368-85a4-4865-b66b-52c29c28799c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 14%
+source-wordcount: '82'
+ht-degree: 18%
 
 ---
 
-
 # Modificar o parâmetro ExpPartialMatch (opcional){#modifying-the-exppartialmatch-parameter-optional}
 
-Se você quiser habilitar seus experimentos controlados para remapear o site inteiro ou um subdiretório inteiro do site para outro local, você pode definir o parâmetro ExpPartialMatch no [!DNL txlogd.conf] arquivo como &quot;ativado&quot;. O padrão é &quot;off&quot;.
+Se quiser permitir que seus experimentos controlados remapeiem todo o site ou um subdiretório inteiro do site para outro local, você pode definir o parâmetro ExpPartialMatch no arquivo [!DNL txlogd.conf] como &quot;ativado&quot;. O padrão é &quot;off&quot;.
 
-Veja a seguir um exemplo do parâmetro ExpPartialMatch:
+A seguir, um exemplo do parâmetro ExpPartialMatch :
 
 [!DNL ExpPartialMatch off]
 
-Tenha muito cuidado ao definir esse parâmetro como &quot;ligado&quot;, pois pode resultar em um remapeamento inadvertido de todo o seu site.
+Tenha muito cuidado ao definir esse parâmetro como &quot;ativado&quot;, pois isso pode resultar em um remapeamento inadvertido de todo o seu site.
