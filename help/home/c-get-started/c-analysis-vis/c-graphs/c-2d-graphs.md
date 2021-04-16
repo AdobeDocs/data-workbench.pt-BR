@@ -1,18 +1,19 @@
 ---
-description: Gráficos bidimensionais (2D) exibem uma métrica em duas dimensões.
-solution: Analytics
+description: Os gráficos bidimensionais (2D) exibem uma métrica em duas dimensões.
 title: Gráficos 2D
-topic: Data workbench
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
+exl-id: 9767124b-8507-4b25-842b-8e2729e57461
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 5%
 
 ---
 
-
 # Gráficos 2D{#d-graphs}
 
-Gráficos bidimensionais (2D) exibem uma métrica em duas dimensões.
+Os gráficos bidimensionais (2D) exibem uma métrica em duas dimensões.
 
 Considere o exemplo a seguir:
 
@@ -24,11 +25,11 @@ Considere o exemplo a seguir:
 
 **Para aumentar ou diminuir o zoom no gráfico**
 
-* Com o ponteiro do mouse em qualquer lugar na janela do gráfico, pressione ambos os botões do mouse ao mesmo tempo e empurre o mouse para longe de sua janela para aumentar o zoom e para diminuir o zoom. Você também pode usar a roda do mouse, se disponível.
+* Com o ponteiro do mouse em qualquer lugar na janela de gráfico, pressione ambos os botões do mouse ao mesmo tempo e empurre o mouse para longe de seu para ampliar e em direção ao zoom. Você também pode usar o mouse, se disponível.
 
-**Dimensionamento do eixo vertical**
+**Para dimensionar o eixo vertical**
 
 1. Mova o mouse sobre o eixo vertical para realçar um plano do gráfico.
 1. Enquanto o plano está realçado, clique e arraste o mouse para cima ou para baixo para dimensionar o eixo vertical do gráfico.
 
-Consulte [Aplicar zoom em visualizações](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+Consulte [Zoom em Visualizações](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
