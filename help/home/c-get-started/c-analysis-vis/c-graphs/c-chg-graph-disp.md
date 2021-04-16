@@ -1,18 +1,19 @@
 ---
-description: Por padrão, as visualizações de gráficos exibem barras, mas é possível exibir facilmente as barras como linhas e vice-versa.
-solution: Analytics
+description: Por padrão, as visualizações de gráfico exibem barras, mas é possível exibir facilmente as barras como linhas e vice-versa.
 title: Alterar uma exibição de gráfico
-topic: Data workbench
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
+exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 4%
 
 ---
 
-
 # Alterar uma exibição de gráfico{#change-a-graph-display}
 
-Por padrão, as visualizações de gráficos exibem barras, mas é possível exibir facilmente as barras como linhas e vice-versa.
+Por padrão, as visualizações de gráfico exibem barras, mas é possível exibir facilmente as barras como linhas e vice-versa.
 
 Ambos os tipos de exibição são mostrados no exemplo a seguir.
 
@@ -26,12 +27,11 @@ Clique com o botão direito do mouse no rótulo da dimensão na parte inferior d
 
 **Sobreposição de gradiente em um gráfico**
 
-Você pode clicar com o botão direito do mouse e selecionar uma Sobreposição **de** gradiente no menu para exibir melhor os elementos do gráfico.
+Clique com o botão direito do mouse e selecione uma **Sobreposição de gradiente** no menu para exibir melhor os elementos do gráfico.
 
 ![](assets/6_51_gradient_graph.png)
 
-* **Nenhuma sobreposição** de gradiente. Selecione para mostrar barras sem sobreposição de gradiente aplicada.
-* **Plano de fundo da esquerda**. Selecione para mostrar a gradação de cores em todas as barras da esquerda para a direita.
-* **Fundo da direita**. Selecione para mostrar a gradação de cores em todas as barras da direita para a esquerda.
+* **Sem sobreposição** de gradiente. Selecione para mostrar barras sem sobreposição de gradiente aplicada.
+* **Plano de fundo da esquerda**. Selecione para mostrar a gradação de cores em todas as barras, da esquerda para a direita.
+* **Plano de fundo da direita**. Selecione para mostrar a gradação de cores em todas as barras, da direita para a esquerda.
 * **Cilindro**. Selecione para mostrar a gradação de cores do centro de cada barra até a borda de cada barra.
-
