@@ -1,23 +1,22 @@
 ---
-description: Planeje dois cenários em relação ao Sensor que está offline.
-solution: Analytics
+description: Planeje dois cenários com relação ao sensor que está offline.
 title: Lidar com sensores offline
 uuid: a8be847d-e506-4fbc-9d57-a28ff0cbeff2
+exl-id: f655c2ad-da3a-47cc-a62c-0a2937cdc0e4
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 11%
 
 ---
 
-
 # Lidar com sensores offline{#dealing-with-offline-sensors}
 
-Planeje dois cenários em relação ao Sensor que está offline.
+Planeje dois cenários com relação ao sensor que está offline.
 
-**Frequência recomendada:** Conforme necessário
+**Frequência recomendada:** conforme necessário
 
-Esses cenários são o servidor da Web que está sendo tirado da rotação de outros servidores, e o servidor da Web fica totalmente inativo por causa de uma falha.
+Esses cenários são o servidor Web sendo tirado da rotação de outros servidores, e o servidor Web fica inativo por causa de uma falha.
 
-O primeiro conceito a ser entendido é o tempo &quot;A Partir&quot; no [!DNL data workbench server].
+O primeiro conceito a entender é o tempo &quot;A partir de&quot; no [!DNL data workbench server].
