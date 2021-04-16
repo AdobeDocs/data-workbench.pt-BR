@@ -1,22 +1,23 @@
 ---
-description: Exibir uma lista de ações e teclas de atalho da interface do usuário do cliente do Data Workbench.
-solution: Analytics
+description: Exiba uma lista de ações e teclas de atalho da interface do usuário do cliente do Data Workbench.
 title: Referência rápida
-topic: Data workbench
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
+exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 6%
 
 ---
 
-
 # Referência rápida{#quick-reference}
 
-Exibir uma lista de ações e teclas de atalho da interface do usuário do cliente do Data Workbench.
+Exiba uma lista de ações e teclas de atalho da interface do usuário do cliente do Data Workbench.
 
-Consulte também Atalhos [de teclado](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
+Consulte também [Atalhos de teclado](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
 
-## Ações para o cliente da Análise de big data {#section-dfea35452c2e4f0b92229a4974bc24fa}
+## Ações para o cliente do Data Workbench {#section-dfea35452c2e4f0b92229a4974bc24fa}
 
 Use essas ações ao executar tarefas na interface do usuário do cliente.
 
@@ -36,11 +37,11 @@ Use essas ações ao executar tarefas na interface do usuário do cliente.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Clique no logotipo da Análise de big data no canto superior esquerdo da área de trabalho </td> 
-   <td colname="col2"> <p>Salva suas alterações </p> </td> 
+   <td colname="col1"> Clique no logotipo da Data Workbench no canto superior esquerdo do espaço de trabalho </td> 
+   <td colname="col2"> <p>Salva as alterações </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Ctrl + Delete </td> 
+   <td colname="col1"> Ctrl + Excluir </td> 
    <td colname="col2"> Fecha sem salvar as alterações </td> 
   </tr> 
  </tbody> 
@@ -54,9 +55,9 @@ Use essas ações ao executar tarefas na interface do usuário do cliente.
 
 | Ação | Resultado |
 |---|---|
-| Clique + arraste | Adicionar à hierarquia de páginas |
+| Clique + arraste | Adicionar à hierarquia da página |
 | Ctrl + Alt + clique + arrastar | Adicionar página a um gráfico de barras |
-| Ctrl + Alt + clique + arrastar | Adicionar à tabela de páginas |
+| Ctrl + Alt + clique + arrastar | Adicionar à tabela da página |
 
 | Ação | Resultado |
 |---|---|
@@ -65,7 +66,7 @@ Use essas ações ao executar tarefas na interface do usuário do cliente.
 | Ctrl + selecionar | Adiciona texto à seleção |
 | Shift + selecionar | Remove o texto da seleção |
 
-## Atalhos de teclado para o cliente do Análise de big data {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
+## Atalhos de teclado para o cliente Data Workbench {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
 
 Use essas teclas de atalho para espaços de trabalho e arquivos de configuração.
 
@@ -79,7 +80,7 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
  <tbody> 
   <tr> 
    <td colname="col1"> Ctrl + N </td> 
-   <td colname="col2"> <p>Abre um novo espaço de trabalho. </p> <p>Se você estiver limitado à criação de um único tipo de espaço de trabalho em branco, o novo espaço de trabalho será aberto imediatamente. </p> <p>Se você tiver direitos para abrir vários tipos de espaços de trabalho com base em sua implementação, Ctrl + N exibirá um menu que permite escolher o tipo de espaço de trabalho a ser criado. </p> </td> 
+   <td colname="col2"> <p>Abre um novo espaço de trabalho. </p> <p>Se você estiver limitado à criação de um único tipo de espaço de trabalho em branco, o novo espaço de trabalho será aberto imediatamente. </p> <p>Se você tiver direitos para abrir vários tipos de espaços de trabalho com base em sua implementação, Ctrl + N exibirá um menu que permitirá que você escolha o tipo de espaço de trabalho a ser criado. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ctrl + O </td> 
@@ -93,7 +94,7 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
 | Ctrl + X | Corta texto |
 | Ctrl + Z | Desfazer ação para caracteres digitados anteriormente |
 | Ctrl + Shift + Z | Refazer ação para caracteres digitados |
-| Ctrl+A | Seleciona todos |
+| Ctrl+A | Seleciona tudo |
 
 <table id="table_A01C514C99F043338D183A6839E03DEA"> 
  <thead> 
@@ -105,21 +106,21 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b>Visualização</b>em tela cheia. O Workspace preenche a tela e se adapta ao novo tamanho. </td> 
-   <td colname="col2"><b>Ctrl mais</b> <p>Ctrl + (no teclado numérico) </p> <p><i>ou</i> </p> <p>Ctrl Shift + (no teclado) </p> </td> 
+   <td colname="col1"><b>Exibição em tela cheia</b>. O Workspace preenche a tela e se atualiza para o novo tamanho. </td> 
+   <td colname="col2"><b>Ctrl +</b> <p>Ctrl + (no teclado numérico) </p> <p><i>ou</i> </p> <p>Ctrl Shift + (no teclado) </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
-     <li id="li_452B4C119B1A40038A408CFFC53653A9">Arquivo &gt; Tamanho da página &gt; Tela de preenchimento <p><i>seguido por</i> </p> </li> 
-     <li id="li_DE9B8B31B9F24A6AA68A1D0DB886B501">Arquivo &gt; Refazer área de trabalho </li> 
+     <li id="li_452B4C119B1A40038A408CFFC53653A9">Arquivo &gt; Tamanho da página &gt; Tela de preenchimento <p><i>seguida de</i> </p> </li> 
+     <li id="li_DE9B8B31B9F24A6AA68A1D0DB886B501">Arquivo &gt; Atualizar espaço de trabalho </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>Exibição</b>de janela. O Workspace é exibido em uma exibição de janela padrão e se adapta ao novo tamanho. </td> 
+   <td colname="col1"><b>Exibição</b> de janela. O Workspace é exibido em uma exibição de janela padrão e é atualizado para o novo tamanho. </td> 
    <td colname="col2"><b>Ctrl menos</b> <p>Ctrl - </p> </td> 
    <td colname="col3"> 
     <ul id="ul_3474B9EFD69343C09BC84E485D896C28"> 
-     <li id="li_820BAED76FF24A5785E6D89C5C692DD5">Arquivo &gt; Tamanho da página &gt; Padrão <p><i>seguido por</i> </p> </li> 
-     <li id="li_337789F282CE4C2C990C67B115782454">Arquivo &gt; Refazer área de trabalho </li> 
+     <li id="li_820BAED76FF24A5785E6D89C5C692DD5">Arquivo &gt; Tamanho da página &gt; Padrão <p><i>seguida de</i> </p> </li> 
+     <li id="li_337789F282CE4C2C990C67B115782454">Arquivo &gt; Atualizar espaço de trabalho </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -130,9 +131,9 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
 | Ctrl + P | Imprime um espaço de trabalho. |
 | Ctrl + W | Fecha um espaço de trabalho sem salvar. |
 | Ctrl + S | Salva um espaço de trabalho. |
-| Ctrl + O | Abre um arquivo de visualização. É o mesmo que selecionar Adicionar > Abrir no menu da área de trabalho. |
-| Ctrl + E | Abra uma configuração (por padrão) ou outros arquivos. É o mesmo que selecionar Adicionar > Editar no menu da área de trabalho. Selecione Todos para abrir outros arquivos. |
-| Menu de arquivos usados com frequência | Clique em **Adicionar > Abrir** de uma área de trabalho para abrir arquivos abertos recentemente (salva os últimos dez) ou arquivos que você &quot;fixe&quot; no novo menu. No menu, você pode clicar no ícone de pino na lista para salvar a visualização. |
+| Ctrl + O | Abre um arquivo de visualização. É o mesmo que selecionar Adicionar > Abrir no menu do espaço de trabalho. |
+| Ctrl + E | Abra uma configuração (por padrão) ou outros arquivos. É o mesmo que selecionar Adicionar > Editar no menu do espaço de trabalho. Selecione Tudo para abrir outros arquivos. |
+| Menu de arquivos mais usados | Clique em **Adicionar > Abrir** de um espaço de trabalho para abrir arquivos recém-abertos (salva os últimos dez) ou arquivos que você &quot;fixa&quot; no novo menu. No menu, você pode clicar no ícone de pino na lista para salvar a visualização. |
 
 <table id="table_99414A5999F94A2EAB2BBBA27EE487F5"> 
  <thead> 
@@ -152,4 +153,3 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
   </tr> 
  </tbody> 
 </table>
-
