@@ -1,62 +1,63 @@
 ---
-description: Siga estas etapas para atualizar para a análise de big data v6.1 a partir da instalação da análise de big data v6.0x.
-solution: Analytics
-title: Atualização do Análise de big data 6.0 para 6.1
-topic: Data workbench
+description: Siga estas etapas para atualizar para o Data Workbench v6.1 a partir da sua instalação do Data Workbench v6.0x.
+title: Atualização do Data Workbench 6.0 para 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
+exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
 translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '753'
+ht-degree: 1%
 
 ---
 
+# Atualização do Data Workbench 6.0 para 6.1{#data-workbench-to-upgrade}
 
-# Atualização do Análise de big data 6.0 para 6.1{#data-workbench-to-upgrade}
+Siga estas etapas para atualizar para o Data Workbench v6.1 a partir da sua instalação do Data Workbench v6.0x.
 
-Siga estas etapas para atualizar para a análise de big data v6.1 a partir da instalação da análise de big data v6.0x.
+**Etapa 1**:  [Atualização do servidor](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md#section-7845393f76214aa7ad53ac4b2cca9e5b)
 
-**Etapa 1**: Atualização [do servidor](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md#section-7845393f76214aa7ad53ac4b2cca9e5b)
+**Etapa 2**:  [Atualização do servidor de relatórios](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md#section-afd9560a446242e9b06490e5f98aaaec)
 
-**Etapa 2**: Atualização do Servidor [de relatórios](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md#section-afd9560a446242e9b06490e5f98aaaec)
-
-**Etapa 3**: Atualização [do cliente](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md#section-c896e57ecd2847afb18f4d8ef7cc0e06)
+**Etapa 3**:  [Atualização do cliente](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md#section-c896e57ecd2847afb18f4d8ef7cc0e06)
 
 >[!IMPORTANT]
 >
->Os componentes servidor, servidor de relatório e cliente são atualizados para serem executados em sistemas operacionais Windows de 64 bits.
+>Os componentes servidor, servidor de relatórios e cliente são atualizados para serem executados em sistemas operacionais Windows de 64 bits.
 
 ## Atualização do servidor {#section-7845393f76214aa7ad53ac4b2cca9e5b}
 
-Siga estas etapas para atualizar os **[!UICONTROL Server v6.1]** componentes:
+Siga estas etapas para atualizar os componentes **[!UICONTROL Server v6.1]**:
 
-1. Usando o **[!UICONTROL Software and Docs]** perfil, abra a área de trabalho **[!UICONTROL Start Here]** e baixe todos os pacotes de servidor necessários para uma pasta local.
+1. Usando o perfil **[!UICONTROL Software and Docs]**, abra o espaço de trabalho **[!UICONTROL Start Here]** e baixe todos os pacotes de servidor necessários para uma pasta local.
 
-   * Baixe **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** pastas zip e extraia todos os arquivos.
+   * Baixe **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** as pastas zip e extraia todos os arquivos.
 
-      O pacote Servidor inclui **[!UICONTROL Lookup]** e **[!UICONTROL Profile]** pastas com **[!UICONTROL Base]** e **[!UICONTROL Transform]** perfis para atualizar o servidor.
+      O pacote Server inclui **[!UICONTROL Lookup]** e **[!UICONTROL Profile]** pastas com perfis **[!UICONTROL Base]** e **[!UICONTROL Transform]** para atualizar o servidor.
 
-      * Baixe as **[!UICONTROL Profiles]** pastas.
-      * Baixe as **[!UICONTROL Lookup]** pastas.
-      * Baixe o pacote **[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]** .
-      * Baixe arquivos adicionais **[!UICONTROL Sensor]**, **[!UICONTROL Documentation]** e **[!UICONTROL Dashboard]** conforme necessário para o seu sistema.
+      * Baixe as pastas **[!UICONTROL Profiles]**.
+      * Baixe as pastas **[!UICONTROL Lookup]**.
+      * Baixe o pacote **[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]**.
+      * Baixe arquivos adicionais **[!UICONTROL Sensor]**, **[!UICONTROL Documentation]** e **[!UICONTROL Dashboard]** conforme necessário para seu sistema.
 
-1. Pare o **[!UICONTROL Adobe Insight Server]** serviço.
+1. Pare o serviço **[!UICONTROL Adobe Insight Server]**.
 
    ![](assets/install_server_download1.png)
 
-1. Do **[!UICONTROL Server]** pacote baixado:
+1. No pacote baixado **[!UICONTROL Server]**:
 
-   1. Substitua a [!DNL Server\Bin] pasta para atualizar os arquivos [!DNL InsightServer64.exe] e os arquivos de suporte.
+   1. Substitua a pasta [!DNL Server\Bin] para atualizar o [!DNL InsightServer64.exe] e os arquivos de suporte.
 
-   1. Substitua a [!DNL Server\Profiles] pasta. É possível substituir todos os arquivos.
-   1. Atualize a [!DNL Server\Lookups] pasta. Você desejará adicionar os arquivos recém-baixados aos arquivos personalizados já localizados na pasta.
-   1. Substitua a [!DNL Server\Software] pasta para atualizar [!DNL Insight.exe] e [!DNL ReportServer.exe]
-   1. Atualize a [!DNL Server\Scripts] pasta a ser atualizada [!DNL TnTSend.exe].
+   1. Substitua a pasta [!DNL Server\Profiles]. Você pode substituir todos os arquivos.
+   1. Atualize a pasta [!DNL Server\Lookups]. Você desejará adicionar os arquivos recém-baixados aos arquivos personalizados já localizados na pasta .
+   1. Substitua a pasta [!DNL Server\Software] para atualizar [!DNL Insight.exe] e [!DNL ReportServer.exe]
+   1. Atualize a pasta [!DNL Server\Scripts] para atualizar [!DNL TnTSend.exe].
 
-1. Se você usar **[!UICONTROL DeviceAtlas]**, será necessário [atualizar o pacote](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) localizado na [!DNL Server\Lookups] pasta.
+1. Se você usar **[!UICONTROL DeviceAtlas]**, será necessário [atualizar o pacote](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) localizado na pasta [!DNL Server\Lookups].
 
-1. Configure o [!DNL Profile.cfg] arquivo para garantir que o vetor seja atualizado para refletir o número de itens para cada perfil.
+1. Configure o arquivo [!DNL Profile.cfg] para garantir que o vetor seja atualizado para refletir o número de itens para cada perfil.
 
-   Por exemplo, para ativar o **[!UICONTROL Predictive Analytics]** perfil, você precisará atualizar essa configuração.
+   Por exemplo, para ativar o perfil **[!UICONTROL Predictive Analytics]**, será necessário atualizar essa configuração.
 
    ```
    Directories = vector: 5 items 
@@ -67,52 +68,52 @@ Siga estas etapas para atualizar os **[!UICONTROL Server v6.1]** componentes:
        4 = string: Profile Name\\
    ```
 
-1. Configure e salve o arquivo PAServer.cfg para o recurso Análise preditiva.
+1. Configure e salve o arquivo PAServer.cfg para o recurso de Análise preditiva.
 
-   Se você quiser enviar trabalhos do Predictive Analytics para os servidores, será necessário configurar o [!DNL Server > Predictive Analytics > Dataset > PAServer.cfg] arquivo para gerenciar envios por clusters do servidor.
+   Caso deseje enviar trabalhos do Predictive Analytics para os servidores, será necessário configurar o arquivo [!DNL Server > Predictive Analytics > Dataset > PAServer.cfg] para gerenciar os envios de cluster do lado do servidor.
 
-   O perfil personalizado deve herdar as configurações do perfil de configuração do Predictive Analytics, permitindo que você configure e salve o [!DNL PAServer.cfg] arquivo com base na implementação do site.
+   O perfil personalizado deve herdar as configurações do perfil de configuração do Predictive Analytics, permitindo configurar e salvar o arquivo [!DNL PAServer.cfg] com base na implementação do site.
 
 1. Defina as **[!UICONTROL Log Source ID]**.
 
-   O **[!UICONTROL Recording of Rows per Log Source]** foi adicionado **[!UICONTROL v6.04]** e definido no [!DNL Log Processing.cfg] arquivo do perfil personalizado adicionando um nome exclusivo **[!UICONTROL Log Source ID]**.
+   O **[!UICONTROL Recording of Rows per Log Source]** foi adicionado em **[!UICONTROL v6.04]** e definido no arquivo [!DNL Log Processing.cfg] do perfil personalizado ao adicionar um nome exclusivo **[!UICONTROL Log Source ID]**.
 
    ```
    Log Processing.cfg
    Log Source ID = string: <Name your ID Here>
    ```
 
-   Se você não tiver a ID da Fonte de Log definida, você receberá o seguinte erro:
+   Se você não tiver a ID da fonte de log definida, aparecerá o seguinte erro:
 
    ```
    Missing Log Source ID in log processing.cfg.  
    Log Source ID must be defined for all log sources.
    ```
 
-1. Como o [!DNL EventMessages.dll] foi atualizado, é necessário cancelar o registro e, em seguida, registrá-lo **[!UICONTROL Adobe Insight Server]** no cluster.
+1. Como o [!DNL EventMessages.dll] foi atualizado, é necessário cancelar o registro e, em seguida, registrar o **[!UICONTROL Adobe Insight Server]** no cluster.
 
    * [!DNL InsightServer64.exe /unregserver]
    * [!DNL InsightServer64.exe /regserver]
 
-1. Inicie o **[!UICONTROL Adobe Insight Server]** serviço no cluster.
+1. Inicie o serviço **[!UICONTROL Adobe Insight Server]** no cluster.
 
-A instalação do servidor agora está concluída.
+A instalação do servidor foi concluída.
 
-## Atualização do Servidor de Relatório {#section-afd9560a446242e9b06490e5f98aaaec}
+## Atualização do servidor de relatórios {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >
->Antes de atualizar para **[!UICONTROL Report Server v6.1]**, é necessário primeiro atualizar para **[!UICONTROL Server v6.1]**.
+>Antes de atualizar para **[!UICONTROL Report Server v6.1]**, primeiro atualize para **[!UICONTROL Server v6.1]**.
 
-1. Usando o **[!UICONTROL Software and Docs]** perfil, baixe **[!UICONTROL v6.1]** do **[!UICONTROL Report Server]** pacote para uma pasta local.
+1. Usando o perfil **[!UICONTROL Software and Docs]**, baixe **[!UICONTROL v6.1]** do pacote **[!UICONTROL Report Server]** para uma pasta local.
 
 1. Copie **[!UICONTROL Report Server 6.1]** do pacote baixado e substitua os pacotes de perfil.
 
    >[!NOTE]
    >
-   >O [!DNL Insight.zbin] arquivo na [!DNL install] pasta é um arquivo de backup usado para localização e deve estar presente no [!DNL install] diretório. Esse arquivo ou outros [!DNL .zbin] arquivos serão usados dependendo das configurações de linha de comando passadas ao iniciar.
+   >O arquivo [!DNL Insight.zbin] na pasta [!DNL install] é um arquivo de backup usado para localização e deve estar presente no diretório [!DNL install]. Esse arquivo ou outros arquivos [!DNL .zbin] serão usados dependendo das configurações da linha de comando passadas ao iniciar.
 
-1. (opcional) A análise de big data suporta atualmente inglês (-en-us) e chinês (-zh-cn). É necessário definir uma fonte para suportar caracteres de byte único e duplo:
+1. (opcional) No momento, o Data Workbench suporta inglês (-en-us) e chinês (-zh-cn). É necessário definir uma fonte para suportar caracteres de byte único e duplo:
 
    ```
    Report Server.cfg - Add Fonts 
@@ -123,11 +124,11 @@ A instalação do servidor agora está concluída.
 
    O sistema operacional Windows também deve ter as fontes listadas instaladas.
 
-1. Configurar [!DNL Report Server v6.1] para localização.
+1. Configure [!DNL Report Server v6.1] para localização.
 
-   1. Pare o **[!UICONTROL Adobe Insight Report Server]** serviço.
+   1. Pare o serviço **[!UICONTROL Adobe Insight Report Server]**.
    1. Inicie um prompt de comando como um &quot;Administrador&quot;.
-   1. Navegue até a [!DNL install] pasta Servidor de relatórios.
+   1. Navegue até a pasta [!DNL install] do Servidor de Relatórios.
    1. Exclua o serviço Servidor de relatórios usando o seguinte comando:
 
       ```
@@ -143,7 +144,7 @@ A instalação do servidor agora está concluída.
 
 1. Para verificar se o Servidor de relatórios está sendo executado com as configurações corretas, abra **[!UICONTROL Windows Service Manager]** e clique com o botão direito do mouse em **[!UICONTROL Adobe Insight Report Server - Properties]**. O caminho para o executável exibirá as configurações atualizadas da linha de comando.
 
-A instalação do servidor de relatórios está concluída.
+A instalação do servidor de relatórios foi concluída.
 
 ## Atualização do cliente {#section-c896e57ecd2847afb18f4d8ef7cc0e06}
 
@@ -151,8 +152,8 @@ A instalação do servidor de relatórios está concluída.
 >
 >Antes de atualizar para **[!UICONTROL Client v6.1]**, o administrador deve primeiro atualizar para **[!UICONTROL Insight Server v6.1.]**
 
-1. Inicie [!DNL Insight.exe] mas não se conecte a nenhum perfil.
-1. Edite o [!DNL Insight.cfg] arquivo.
+1. Inicie [!DNL Insight.exe], mas não se conecte a nenhum perfil.
+1. Edite o arquivo [!DNL Insight.cfg].
 
    ```
    Update Software = bool: true
@@ -160,29 +161,29 @@ A instalação do servidor de relatórios está concluída.
 
 1. Conecte-se ao seu perfil.
 
-   Permita que o cliente sincronize com o servidor e seu cliente será atualizado com os perfis de cliente v6.1mais recentes, executáveis e arquivos de configuração.
+   Permitir que o cliente sincronize com o servidor e seu cliente será atualizado com os perfis de cliente v6.1mais recentes, executáveis e arquivos de configuração.
 
    >[!NOTE]
    >
-   >O [!DNL Insight.zbin] arquivo na [!DNL install] pasta é um arquivo de backup usado para localização e deve estar presente. Esse arquivo ou outros [!DNL .zbin] arquivos serão usados dependendo das configurações de linha de comando passadas ao iniciar.
+   >O arquivo [!DNL Insight.zbin] na pasta [!DNL install] é um arquivo de backup usado para localização e deve estar presente. Esse arquivo ou outros arquivos [!DNL .zbin] serão usados dependendo das configurações da linha de comando passadas ao iniciar.
 
-   Consulte [configuração de idiomas](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md#concept-86d7602cd6ec416b8d4a518f325e001e) localizados para adicionar um [!DNL insight.zbin] arquivo necessário para configurações localizadas.
+   Consulte [configuração de idiomas localizados](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md#concept-86d7602cd6ec416b8d4a518f325e001e) para adicionar um arquivo [!DNL insight.zbin] necessário para configurações localizadas.
 
 **Configurações adicionais do cliente**
 
-Antes de configurar [!DNL Insight.exe] e suportar arquivos, você deve sair do aplicativo cliente.
+Antes de configurar [!DNL Insight.exe] e arquivos de suporte, você deve sair do aplicativo cliente.
 
-Para instalar o chinês simplificado:
+Para instalar o idioma chinês simplificado:
 
-1. Crie um atalho que passe na configuração da linha de comando para o [!DNL Insight.exe] arquivo.
+1. Crie um atalho que passe na configuração da linha de comando para o arquivo [!DNL Insight.exe].
 
    ```
    Insight.exe -zh-cn
    ```
 
-1. Configure [!DNL Insight.cfg] para suportar caracteres de fonte de byte único e duplo.
+1. Configure [!DNL Insight.cfg] para suportar caracteres de fonte de um e dois bytes.
 
-   Atualmente, a análise de big data suporta inglês e chinês simplificado. Você pode selecionar fontes para suportar ambos os idiomas:
+   Atualmente, o Data Workbench oferece suporte para inglês e chinês simplificado. Você pode selecionar fontes para oferecer suporte a ambos os idiomas:
 
    ```
    Fonts = vector: 2 items 
@@ -192,18 +193,18 @@ Para instalar o chinês simplificado:
 
    O sistema operacional Windows também deve ter as fontes solicitadas instaladas.
 
-1. Inicie o atalho que você criou para sincronizar perfis e a atualização. [!DNL zbin] arquivo.
+1. Inicie o atalho criado para sincronizar perfis e o atualizado . [!DNL zbin] arquivo.
 
 Para usar o Editor de método de entrada (IME).
 
 O IME permite inserir caracteres internacionais.
 
-1. Atualize o [!DNL Insight.cfg] arquivo com estas configurações:
+1. Atualize o arquivo [!DNL Insight.cfg] com estas configurações:
 
    ```
    Localized IME = bool: true
    ```
 
-1. Inicie o atalho criado para sincronizar perfis e o [!DNL .zbin] arquivo atualizado.
+1. Inicie o atalho criado para sincronizar perfis e o arquivo [!DNL .zbin] atualizado.
 
 A instalação do cliente está concluída.
