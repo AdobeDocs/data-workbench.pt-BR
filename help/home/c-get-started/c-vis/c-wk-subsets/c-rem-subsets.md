@@ -1,20 +1,20 @@
 ---
 description: Etapas para remover um subconjunto de dados.
-solution: Analytics
 title: Remover um subconjunto
-topic: Data workbench
 uuid: 46fc03ce-293d-476b-9413-43ed2017a779
+exl-id: 85983333-ff51-4186-9923-ca5397741447
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '27'
+ht-degree: 22%
 
 ---
-
 
 # Remover um subconjunto{#remove-a-subset}
 
 Etapas para remover um subconjunto de dados.
 
-* Ao trabalhar online, clique com o botão direito do mouse na área de trabalho e clique em **[!UICONTROL Data]** > **[!UICONTROL Subset]** > **[!UICONTROL All]**.
+* Ao trabalhar online, clique com o botão direito do mouse no espaço de trabalho e clique em **[!UICONTROL Data]** > **[!UICONTROL Subset]** > **[!UICONTROL All]**.
 
    ![](assets/mnu_Subset_All.png)
-
