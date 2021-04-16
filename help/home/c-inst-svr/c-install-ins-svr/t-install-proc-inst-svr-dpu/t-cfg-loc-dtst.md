@@ -1,34 +1,33 @@
 ---
 description: Por padrão, o Insight Server grava seu conjunto de dados (temp.db) na mesma unidade dos arquivos de programa do Insight Server.
-solution: Analytics
 title: Configurar a localização do conjunto de dados (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
+exl-id: 6812883f-ad51-4314-8c80-e95c3fe84664
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 5%
 
 ---
 
-
 # Configurar a localização do conjunto de dados (temp.db){#configuring-the-location-of-the-dataset-temp-db}
 
 Por padrão, o Insight Server grava seu conjunto de dados (temp.db) na mesma unidade dos arquivos de programa do Insight Server.
 
-Por exemplo, se você instalar [!DNL Insight Server] na unidade C, ele grava o conjunto de dados na unidade C.
+Por exemplo, se você instalar [!DNL Insight Server] na unidade C, ele gravará o conjunto de dados na unidade C.
 
-Se você quiser manter [!DNL Insight Server] o conjunto de dados em uma unidade diferente, ou se a quantidade de dados que espera coletar exigir o uso de várias unidades, atualize o [!DNL Disk Files.cfg] arquivo para especificar onde deseja [!DNL Insight Server] gravar o [!DNL temp.db] arquivo.
+Se quiser que [!DNL Insight Server] mantenha o conjunto de dados em uma unidade diferente ou se a quantidade de dados que espera coletar exigir o uso de várias unidades, atualize o arquivo [!DNL Disk Files.cfg] para especificar onde deseja que [!DNL Insight Server] grave o arquivo [!DNL temp.db].
 
-**Para configurar o local de temp.db**
+**Para configurar o local do temp.db**
 
-1. Navegue até a [!DNL Components] pasta no diretório em que você instalou [!DNL Insight Server].
+1. Navegue até a pasta [!DNL Components] no diretório em que você instalou [!DNL Insight Server].
 
    Exemplo: [!DNL C:\Adobe\Server\Components]
 
-1. Abra o [!DNL Disk Files.cfg] arquivo em um editor de texto, como o Bloco de notas.
+1. Abra o arquivo [!DNL Disk Files.cfg] em um editor de texto, como o Bloco de notas.
 
-   Por padrão, esse arquivo contém uma única entrada na estrutura Arquivos de Disco, como mostrado abaixo.
+   Por padrão, esse arquivo contém uma única entrada na estrutura Arquivos de disco, como mostrado abaixo.
 
    ```
    component = DiskSpaceManagerComponent:
@@ -37,7 +36,7 @@ Se você quiser manter [!DNL Insight Server] o conjunto de dados em uma unidade 
      Detect Disk Corruption = bool: true
    ```
 
-1. Para alterar o local de [!DNL temp.db], modifique a definição de Arquivos de Disco. O exemplo a seguir ilustra como você editaria a configuração para espalhar o [!DNL temp.db] arquivo pelas unidades C, D e E:
+1. Para alterar o local de [!DNL temp.db], modifique a definição Arquivos de Disco. O exemplo a seguir ilustra como você editaria a configuração para espalhar o arquivo [!DNL temp.db] entre as unidades C, D e E:
 
    ```
    component = DiskSpaceManagerComponent:
@@ -50,5 +49,4 @@ Se você quiser manter [!DNL Insight Server] o conjunto de dados em uma unidade 
 
    >[!NOTE]
    >
-   >Observe o uso das barras invertidas do duplo nos nomes de arquivos acima. Nos arquivos [!DNL Insight Server] de configuração, o caractere de barra invertida é um caractere de escape. É usado para expressar sequências de controle especiais (por exemplo, \t para um caractere de tabulação) no texto. Para representar um caractere de barra invertida real, você deve digitar a barra invertida duas vezes (por exemplo, \\) para substituir a função de escape. Isso se aplica somente ao editar arquivos de configuração em um editor de texto, como o Bloco de notas.
-
+   >Observe o uso de barras invertidas duplas nos nomes de arquivo acima. Nos arquivos de configuração [!DNL Insight Server], o caractere de barra invertida é um caractere de escape. É usado para expressar sequências de controle especiais (por exemplo, \t para um caractere de tabulação) no texto. Para representar um caractere de barra invertida real, você deve digitar a barra invertida duas vezes (por exemplo, \\) para substituir a função de escape. Isso se aplica somente ao editar arquivos de configuração em um editor de texto, como o Bloco de notas.
