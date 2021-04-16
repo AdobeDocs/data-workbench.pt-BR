@@ -1,33 +1,33 @@
 ---
-description: Etapas para instalar os arquivos de pesquisa IP Geo-Intelligence ou IP Geo-location.
-solution: Analytics
-title: Instalação dos arquivos de pesquisa do serviço de dados
-topic: Data workbench
+description: Etapas para instalar os arquivos de pesquisa de GeoIntelligence ou GeoLocation de IP.
+title: Instalar os arquivos de pesquisa do serviço de dados
 uuid: a3fe8a14-2c74-4105-bc5b-2298f0f4b61e
+exl-id: b19904f4-ead0-4bed-a79f-864c78bc0e1d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 6%
 
 ---
 
+# Instalar os arquivos de pesquisa do serviço de dados{#installing-the-data-service-lookup-files}
 
-# Instalação dos arquivos de pesquisa do serviço de dados{#installing-the-data-service-lookup-files}
+Etapas para instalar os arquivos de pesquisa de GeoIntelligence ou GeoLocation de IP.
 
-Etapas para instalar os arquivos de pesquisa IP Geo-Intelligence ou IP Geo-location.
+O arquivo de pesquisa (Lookups\*nome do perfil*\*nome do arquivo de dados*) fornecido com o perfil do serviço de dados é um arquivo binário ( [!DNL .bin]) que contém dados geograficamente relacionados com base no endereço IP. Você deve substituir esse arquivo periodicamente para garantir que tenha os dados geográficos mais recentes. Consulte [Atualizando arquivos do serviço de dados](../../../../home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md#concept-2b3d11e4cb814fc09add5de58a87045c).
 
-O arquivo de pesquisa (Pesquisas\*nome do perfil*\*nome do arquivo de dados*) fornecido com o perfil do serviço de dados é um arquivo binário ( [!DNL .bin]) que contém dados geograficamente relacionados com base no endereço IP. É necessário substituir esse arquivo periodicamente para garantir que você tenha os dados geográficos mais recentes. Consulte [Atualização de arquivos](../../../../home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md#concept-2b3d11e4cb814fc09add5de58a87045c)do serviço de dados.
-
-**Para instalar os arquivos de pesquisa de GeoIntelligence de IP ou GeoLocation**
+**Para instalar os arquivos de pesquisa de geolocalização de IP ou geolocalização de IP**
 
 >[!NOTE]
 >
->Todos os seus arquivos [!DNL IP Geo-location] ou [!DNL IP Geo-intelligence] de dados devem se encaixar na memória física disponível do servidor de análise de big data.
+>Todos os arquivos de dados [!DNL IP Geo-location] ou [!DNL IP Geo-intelligence] devem se encaixar na memória física disponível do servidor do Data Workbench.
 
-1. Abra a pasta Pesquisas a partir do [!DNL .zip] arquivo recebido da Adobe.
-1. Copie a pasta IP Geo-Intelligence ou IP Geo-location para a pasta Pesquisas no diretório de instalação do servidor da análise de big data (você deseja acabar com um ...\Lookups\IP Geo-intelligence or a ...\Lookups\IP Geo-location folder on your data workbench server as shown in the following example. Os nomes das outras pastas dentro da pasta Pesquisas podem diferir dos mostrados.
+1. Abra a pasta Pesquisas do arquivo [!DNL .zip] que você recebeu do Adobe.
+1. Copie a pasta IP Geo-intelligence ou IP GeoLocation para a pasta Lookups no diretório de instalação do servidor do Data Workbench (você deseja acabar com um ...\Lookups\IP Geo-intelligence or a ...\Lookups\IP Geo-location folder on your data workbench server as shown in the following example. Os nomes das outras pastas dentro da pasta Pesquisas podem ser diferentes dos mostrados.
 
    ![Informações da etapa](assets/Geo_installLookups_dirIP.png)
 
    >[!NOTE]
    >
-   >Periodicamente, a Adobe envia arquivos que contêm arquivos atualizados [!DNL IP Geo-intelligence] ou de [!DNL IP Geo-location] pesquisa. Quando você recebe esses arquivos, é necessário carregá-los no servidor da análise de big data, conforme orientado pela Adobe. Para obter instruções, consulte a seção a seguir.
-
+   >Periodicamente, o Adobe envia arquivos contendo arquivos de pesquisa atualizados [!DNL IP Geo-intelligence] ou [!DNL IP Geo-location]. Ao receber esses arquivos, você precisa carregá-los no servidor do Data Workbench, conforme determinado pelo Adobe. Para obter instruções, consulte a seção a seguir.
