@@ -1,24 +1,25 @@
 ---
-description: Usando uma anotação de imagem, é possível copiar uma imagem de qualquer fonte e colá-la diretamente em um espaço de trabalho.
-solution: Analytics
+description: Usando uma anotação de imagem, você pode copiar uma imagem de qualquer origem e colá-la diretamente em um espaço de trabalho.
 title: Anotações de imagem
-topic: Data workbench
 uuid: 62a655f6-120b-4cf4-adaa-aa04f721a7dc
+exl-id: 905d3e9e-0d24-456e-af45-c29f12ed986d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 1%
 
 ---
 
-
 # Anotações de imagem{#image-annotations}
 
-Usando uma anotação de imagem, é possível copiar uma imagem de qualquer fonte e colá-la diretamente em um espaço de trabalho.
+Usando uma anotação de imagem, você pode copiar uma imagem de qualquer origem e colá-la diretamente em um espaço de trabalho.
 
-Você pode redimensionar, inverter o esquema de cores ou escurecer a imagem.
+Você pode então redimensionar, inverter o esquema de cores ou escurecer a imagem.
 
 ## Adicionar uma imagem {#section-bcb71217e75f4135a90a222b27479c9a}
 
-1. Copie qualquer imagem para a área de transferência clicando com o botão direito do mouse na imagem e clicando em **[!UICONTROL Copy]**.
+1. Copie qualquer imagem na área de transferência clicando com o botão direito do mouse na imagem e clicando em **[!UICONTROL Copy]**.
 1. Clique com o botão direito do mouse na anotação da imagem e clique em **[!UICONTROL Paste Image]**.
 
 ![](assets/mnu_Image_Paste.png)
@@ -47,7 +48,6 @@ Você pode redimensionar, inverter o esquema de cores ou escurecer a imagem.
 
 **Para ativar ou desativar a opção Ajustar à janela**
 
-A [!DNL Fit to Window] opção, quando selecionada, permite que a anotação expanda ou diminua automaticamente para ajustar o tamanho da imagem. A [!DNL Fit to Window] opção é ativada por padrão.
+A opção [!DNL Fit to Window], quando selecionada, permite que a anotação expanda ou diminua automaticamente para ajustar ao tamanho da imagem. A opção [!DNL Fit to Window] é ativada por padrão.
 
-* Clique com o botão direito do mouse na anotação, clique **[!UICONTROL Fit to Window]**. Quando ativado, um X é exibido à esquerda de [!DNL Fit to Window].
-
+* Clique com o botão direito do mouse na anotação e clique em **[!UICONTROL Fit to Window]**. Quando ativado, um X é exibido à esquerda de [!DNL Fit to Window].
