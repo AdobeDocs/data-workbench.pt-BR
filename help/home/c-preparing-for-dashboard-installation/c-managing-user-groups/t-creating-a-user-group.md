@@ -1,18 +1,19 @@
 ---
-description: 'null'
-solution: Analytics
-title: Criando um grupo de usuários
-topic: Data workbench
+description: Criar um grupo de usuários
+title: Criar um grupo de usuários
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
+exl-id: 8af9d635-ff07-486f-845a-44541d577fad
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 9%
 
 ---
 
+# Criar um grupo de usuários{#creating-a-user-group}
 
-# Criando um grupo de usuários{#creating-a-user-group}
-
-1. Clique em **[!UICONTROL Create Group]** para exibir o **[!UICONTROL New Group]** formulário.
+1. Clique em **[!UICONTROL Create Group]** para exibir o formulário **[!UICONTROL New Group]**.
 
    ![](assets/create_user_group.png)
 
@@ -33,15 +34,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Acesso ao perfil</strong></td> 
-    <td class="chdesc stentry"> Selecione os perfis aos quais este grupo terá acesso.</td> 
+    <td class="chdesc stentry"> Selecione a quais perfis este grupo terá acesso.</td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Permissões</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrador</span>: Salve, visualize, modifique e exclua todos os painéis de todos os perfis. Os privilégios de administrador permitem que um usuário faça logon na área de administração e execute todas as funções administrativas. </p> <p> <span class="uicontrol"> Somente</span>leitura: Restringir permissões a somente leitura para painéis. O usuário não pode adicionar ou modificar visualizações ou salvar painéis. </p> <p> <b>Nenhuma permissão marcada </b>(padrão): Nenhuma permissão marcada concede aos usuários regulares permissões para o grupo. Esses usuários podem criar e modificar visualizações, salvar painéis e exibir os painéis aos quais eles têm acesso. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrador</span>: Salve, visualize, modifique e exclua todos os painéis de todos os perfis. Os privilégios de administrador permitem que um usuário faça logon na área de administração e execute todas as funções administrativas. </p> <p> <span class="uicontrol"> Somente</span> leitura: Restrinja permissões para somente leitura de painéis. O usuário não pode adicionar ou modificar visualizações ou salvar painéis. </p> <p> <b>Nenhuma permissão marcada  </b>(padrão): Nenhuma permissão marcada concede permissões regulares aos usuários do grupo. Esses usuários podem criar e modificar visualizações, salvar painéis e visualizar os painéis aos quais têm acesso. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Usuários/membros do grupo disponíveis</strong></td> 
-    <td class="chdesc stentry">Arraste e solte usuários da lista de Usuários <span class="uicontrol"> disponíveis na</span> seção <span class="uicontrol"> </span>Membros do grupo. Os membros do grupo podem ser modificados a qualquer momento. </td> 
+    <td class="chdesc stentry">Arraste e solte usuários da lista de <span class="uicontrol"> Usuários Disponíveis</span> na seção <span class="uicontrol"> Membros do Grupo </span>. Os membros do grupo podem ser modificados a qualquer momento. </td> 
     </tr> 
     </table>
 
