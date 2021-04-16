@@ -1,17 +1,15 @@
 ---
 description: Métricas, dimensões e filtros fornecem uma estrutura em que os cálculos são feitos sobre os dados processados em um conjunto de dados do Data Workbench.
-solution: Analytics
 title: Métricas, dimensões e filtros do Data Workbench
-topic: Data workbench
 uuid: 3c0300a0-ae19-4817-aab8-7294e0eabdd9
-translation-type: ht
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
-workflow-type: ht
+exl-id: 687d9695-e70c-49ff-ac11-1537e6309e16
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 100%
 
 ---
-
 
 # Métricas, dimensões e filtros do Data Workbench {#data-workbench-metrics-dimensions-and-filters}
 
