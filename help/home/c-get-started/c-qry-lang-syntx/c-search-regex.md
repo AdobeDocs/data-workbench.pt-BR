@@ -1,20 +1,21 @@
 ---
-description: A análise de big data utiliza expressões regulares (regex) para operações de pesquisa e classificação.
-solution: Analytics
+description: O Data Workbench utiliza expressões regulares (regex) para operações de pesquisa e classificação.
 title: Expressões regulares
-topic: Data workbench
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
+exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 3%
 
 ---
 
+# Expressões regulares{#regular-expressions}
 
-# Regular expressions{#regular-expressions}
+O Data Workbench utiliza expressões regulares (regex) para operações de pesquisa e classificação.
 
-A análise de big data utiliza expressões regulares (regex) para operações de pesquisa e classificação.
-
-No **[!UICONTROL Search]** campo, é possível realizar uma pesquisa seguindo a instrução &quot;re:&quot; usando expressões comuns, por exemplo:
+No campo **[!UICONTROL Search]**, é possível executar uma pesquisa seguindo a instrução &quot;re:&quot; usando expressões comuns, por exemplo:
 
 ```
 <b>re: *.s</b>
@@ -43,6 +44,6 @@ No **[!UICONTROL Search]** campo, é possível realizar uma pesquisa seguindo a 
  </tbody> 
 </table>
 
-Expressões regulares comuns adicionais também podem ser usadas para criar strings de pesquisa mais complexas. Expressões regulares são usadas em todos os campos de pesquisa da Análise de big data, incluindo os painéis da entidade de consulta.
+Expressões regulares comuns adicionais também podem ser usadas para criar strings de pesquisa mais complexas. Expressões regulares são usadas em todos os campos de pesquisa de Data Workbench, incluindo os painéis da entidade de consulta.
 
-Consulte informações detalhadas em expressões [](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)regulares.
+Consulte informações detalhadas em [expressões regulares](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
