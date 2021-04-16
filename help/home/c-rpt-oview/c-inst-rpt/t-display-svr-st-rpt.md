@@ -1,30 +1,31 @@
 ---
-description: A interface de Status Detalhado no análise de big data é útil para solucionar erros ou outros problemas com as máquinas do Servidor do Análise de big data e do Servidor de relatórios clientes do Servidor do Análise de big data.
-solution: Analytics
-title: Exibindo o Status do Servidor de Relatório
-topic: Data workbench
+description: A interface de Status Detalhado no Data Workbench é útil para solucionar erros ou outros problemas com as máquinas do Servidor do Data Workbench e do Servidor de Relatório que são clientes do Servidor do Data Workbench.
+title: Exibir o status do servidor de relatórios
 uuid: 5260266d-5bd1-4905-9619-f67f6e1bc54c
+exl-id: 3a717a81-7c5d-432d-b214-4ae0455b19b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 6%
 
 ---
 
+# Exibir o status do servidor de relatórios{#displaying-report-server-status}
 
-# Exibindo o Status do Servidor de Relatório{#displaying-report-server-status}
+A interface de Status Detalhado no Data Workbench é útil para solucionar erros ou outros problemas com as máquinas do Servidor do Data Workbench e do Servidor de Relatório que são clientes do Servidor do Data Workbench.
 
-A interface de Status Detalhado no análise de big data é útil para solucionar erros ou outros problemas com as máquinas do Servidor do Análise de big data e do Servidor de relatórios clientes do Servidor do Análise de big data.
+Para visualizar o status do Relatório na interface [!DNL Master Server Detailed Status], é necessário adicionar um servidor de status de relatório ao vetor [!DNL Servers] no arquivo [!DNL Communications.cfg] do servidor do Data Workbench. O procedimento a seguir descreve como adicionar o servidor de status do relatório ao arquivo [!DNL Communications.cfg] :
 
-Para exibir o status do Relatório na [!DNL Master Server Detailed Status] interface, é necessário adicionar um servidor de status de relatório ao [!DNL Servers] vetor no arquivo do servidor do análise de big data [!DNL Communications.cfg] . O procedimento a seguir descreve como adicionar o servidor de status do relatório ao [!DNL Communications.cfg] arquivo:
-
-Para obter mais informações sobre [!DNL Detailed Status] interfaces, consulte o capítulo Interfaces administrativas do Guia *do usuário da Análise de* big data.
+Para obter mais informações sobre as interfaces [!DNL Detailed Status], consulte o capítulo Interfaces Administrativas do *Guia do Usuário do Data Workbench*.
 
 **Para adicionar uma[!DNL Report Status Server]**
 
-1. Navegue até a pasta Componentes no diretório em que você instalou o servidor da análise de big data (InsightServer64.exe).
+1. Navegue até a pasta Componentes no diretório em que você instalou o servidor do Data Workbench (InsightServer64.exe).
 
    Exemplo: [!DNL C:\Adobe\Server\Components]
 1. Abra [!DNL Communications.cfg] em um editor de texto, como o Bloco de notas.
-1. Localize o [!DNL Servers] vetor e adicione o servidor de status de relatório a esse vetor, como destacado no seguinte fragmento de arquivo.
+1. Localize o vetor [!DNL Servers] e adicione o servidor de status do relatório a esse vetor, como destacado no fragmento de arquivo a seguir.
 
    ```
     . . .
@@ -43,5 +44,5 @@ Para obter mais informações sobre [!DNL Detailed Status] interfaces, consulte 
          URI = string: /ReportStatus.vsp
    ```
 
-1. Atualize a contagem de itens para o [!DNL Servers] vetor (ou seja, aumente o valor de itens em um), como realçado no fragmento de arquivo na etapa anterior.
+1. Atualize a contagem de itens para o vetor [!DNL Servers] (ou seja, incremente o valor de itens por um), conforme realçado no fragmento de arquivo na etapa anterior.
 1. Salve o arquivo.
