@@ -1,34 +1,35 @@
 ---
-description: Semelhante à transformação AppendURI, a transformação PrependURI afeta o campo interno usado pelo servidor da análise de big data para construir a dimensão URI.
-solution: Analytics
+description: Semelhante à transformação AppendURI , a transformação PrependURI afeta o campo interno usado pelo servidor do Data Workbench para criar a dimensão URI.
 title: PrependURI
-topic: Data workbench
 uuid: 3f2fb1a7-83f7-481e-b892-0937acd379f9
+exl-id: c39d9241-ed66-446e-b59d-fdb11942d0e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 6%
 
 ---
 
-
 # PrependURI{#prependuri}
 
-Semelhante à transformação AppendURI, a transformação PrependURI afeta o campo interno usado pelo servidor da análise de big data para construir a dimensão URI.
+Semelhante à transformação AppendURI , a transformação PrependURI afeta o campo interno usado pelo servidor do Data Workbench para criar a dimensão URI.
 
-A [!DNL PrependURI] transformação funciona adicionando o valor no campo de entrada identificado à frente do valor atualmente no URI.
+A transformação [!DNL PrependURI] funciona adicionando o valor no campo de entrada identificado à frente do valor atualmente no URI.
 
 | Parâmetro | Descrição | Padrão |
 |---|---|---|
-| Nome | Nome descritivo da transformação. Você pode digitar qualquer nome aqui. |  |
-| Comentários | Opcional. Notas sobre a transformação. |  |
-| Condição | As condições em que essa transformação é aplicada. |  |
-| Padrão | O valor padrão a ser usado se a condição for cumprida e o valor de entrada não estiver disponível. |  |
+| Nome | Nome descritivo da transformação. Você pode inserir qualquer nome aqui. |  |
+| Comentários | Opcional. Observações sobre a transformação. |  |
+| Condição | Condições de aplicação desta transformação. |  |
+| Padrão | O valor padrão a ser usado se a condição for atendida e o valor de entrada não estiver disponível. |  |
 | Entrada | O nome do campo cujo valor é anexado ao URI. |  |
 
-O exemplo a seguir simplesmente abre o campo s-dns no URI, estendendo a representação da dimensão URI para incluir o domínio solicitado pelo dispositivo cliente.
+O exemplo a seguir simplesmente prepara o campo s-dns no URI, estendendo a representação da dimensão do URI para incluir o domínio solicitado pelo dispositivo cliente.
 
 ![](assets/cfg_TransformationType_PrependURI.png)
 
-Neste exemplo, como antecipar o campo s-dns para o URI
+Neste exemplo, anexando o campo s-dns ao URI
 
 * [!DNL /modelview.asp&id=login]
 
