@@ -1,10 +1,9 @@
 ---
-description: O sensor é um aplicativo de software de aquisição de dados leve e de baixo impacto que coleta dados de forma confiável, segura e contínua da Web, do aplicativo e dos servidores de coleta de dados a serem transmitidos para qualquer servidor de análise de big data.
-solution: Analytics
+description: Sensor é um aplicativo de software de aquisição de dados leve e de baixo impacto que coleta de maneira confiável, segura e contínua dados de eventos da Web, do aplicativo e dos servidores de coleta de dados a serem transmitidos para qualquer servidor do Data Workbench.
 title: Visão geral do sensor
 uuid: 75833d47-dda1-4fdc-9a07-e63342a15b11
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%
@@ -14,6 +13,6 @@ ht-degree: 0%
 
 # Visão geral do sensor{#sensor-overview}
 
-O sensor é um aplicativo de software de aquisição de dados leve e de baixo impacto que coleta dados de forma confiável, segura e contínua da Web, do aplicativo e dos servidores de coleta de dados a serem transmitidos para qualquer servidor de análise de big data.
+Sensor é um aplicativo de software de aquisição de dados leve e de baixo impacto que coleta de maneira confiável, segura e contínua dados de eventos da Web, do aplicativo e dos servidores de coleta de dados a serem transmitidos para qualquer servidor do Data Workbench.
 
-[!DNL Sensor’s] a instrumentação garante uma medição consistentemente precisa dos eventos que ocorrem no seu canal da Internet.
+[!DNL Sensor’s] A instrumentação garante uma medição consistente e precisa dos eventos que ocorrem em seu canal de Internet.
