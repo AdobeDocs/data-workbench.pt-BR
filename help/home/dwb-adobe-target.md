@@ -1,59 +1,60 @@
 ---
-description: Integre o Análise de big data ao Adobe Target. Exporte segmentos de dados e preencha automaticamente os arquivos de exportação.
-solution: Analytics
-title: Integração do Análise de big data com o Adobe Target
-topic: Data workbench
+description: Integre o Data Workbench ao Adobe Target. Exportar segmentos de dados e preencher automaticamente arquivos de exportação.
+title: Integração do Data Workbench com o Adobe Target
+exl-id: e7c41e7a-aae6-4b5c-8b14-7ae97b62d70b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 1%
 
 ---
 
+# Integração do Data Workbench com o Adobe Target
 
-# Integração do Análise de big data com o Adobe Target
+A integração do Adobe Data Workbench com o Adobe Target ficou mais fácil com os recursos do Data Workbench para exportar segmentos de dados e preencher automaticamente arquivos de exportação.
 
-A integração do Adobe Data Workbench com o Adobe Target ficou mais fácil com os recursos do Análise de big data para exportar segmentos de dados e preencher automaticamente arquivos de exportação.
+A Adobe Data Workbench oferece integração de ciclo fechado com a Adobe Target para compartilhar dados e gerar relatórios. No Data Workbench, é possível analisar populações para segmentos significativos usando todos os dados disponíveis, incluindo conversões offline por canais como telefone, loja e assim por diante.
 
-O Adobe Data Workbench fornece integração de ciclo fechado com o Adobe Target para compartilhar dados e gerar relatórios. Na Análise de big data, é possível analisar populações de segmentos significativos usando todos os dados disponíveis, incluindo conversões offline por canais como telefone, loja e assim por diante.
+Por exemplo, um visitante procura sapatos em seu site, mas não converte. Em vez disso, o visitante baixa um cupom por 20% da próxima compra e, em seguida, compra uma camisa em sua loja. Usando o Data Workbench, você pode coletar os dados e enviar esses dados de perfil para o Target para mostrar que o visitante comprou uma camisa offline. Você pode então direcionar uma campanha oferecendo uma gravata para o visitante, quando normalmente o Target pode tentar comercializar sapatos para o visitante.
 
-Por exemplo, um visitante procura sapatos em seu site, mas não converte. Em vez disso, o visitante baixa um cupom por 20% da próxima compra e compra uma camisa em sua loja. Usando o Análise de big data, você pode coletar esses dados e depois enviar os dados do perfil de volta para o Target para mostrar que o visitante comprou uma camisa offline. Você pode então direcionar uma campanha oferecendo uma gravata para o visitante, quando normalmente o Target pode tentar recomercializar sapatos para esse visitante.
+## Configurar o Data Workbench com o Adobe Target
 
-## Configurar o Análise de big data com o Adobe Target
-
-1. Clique com o botão direito do mouse no cabeçalho da [!UICONTROL Detail Table] janela.
+1. Clique com o botão direito do mouse no cabeçalho na janela [!UICONTROL Detail Table].
 
    ![](assets/insight-to-tnt.png)
 
-1. Selecione **[!UICONTROL New Target Export]** e digite o nome de um novo arquivo de exportação sob o **[!UICONTROL Save As]** comando no menu.
+1. Selecione **[!UICONTROL New Target Export]** e insira o nome de um novo arquivo de exportação no comando **[!UICONTROL Save As]** no menu .
 
 1. Clique em **[!UICONTROL Save Export File]**.
 
    Uma janela de modelo de exportação será aberta.
 
-   Todas as informações do Adobe Target são preenchidas automaticamente. Ele constrói a lista de parâmetros com base no que você colocou na exportação do segmento. Quando concluído, o Análise de big data enviará os dados para o servidor do Adobe Target.
+   Todas as informações do Adobe Target são preenchidas automaticamente. Ela constrói a lista de parâmetros com base no que você coloca na exportação do segmento. Quando concluído, o Data Workbench enviará os dados para o servidor do Adobe Target.
 
-   **Observação:** O arquivo Modelo deve ser configurado pelo [!UICONTROL Profile Architect]. É necessário inserir [!UICONTROL Client Name], [!UICONTROL Domain Postfix], [!UICONTROL Mbox Host]e [!UICONTROL Mbox Name] . Se você tiver vários sites, preencha vários modelos e salve-os no servidor. Os modelos do Gerenciador de perfis estão localizados em `Context\FileNew\Detail Table\Export\Copy`.
+   **Observação:** o arquivo Modelo deve ser configurado pelo  [!UICONTROL Profile Architect]. Os [!UICONTROL Client Name], [!UICONTROL Domain Postfix], [!UICONTROL Mbox Host] e [!UICONTROL Mbox Name] precisam ser inseridos. Se você tiver vários sites, preencha vários modelos e salve-os no servidor. Os modelos do Gerenciador de perfis estão localizados em `Context\FileNew\Detail Table\Export\Copy`.
 
    ![](assets/insight-to-tnt1.png)
 
-1. Especifique o parâmetro de [!UICONTROL mboxPC] consulta.
+1. Especifique o parâmetro de consulta [!UICONTROL mboxPC].
 
-   Se o nome do atributo Análise de big data for diferente de [!UICONTROL mboxPC], edite o Parâmetro de consulta apropriado e renomeie-o para _mboxPC_.
+   Se o nome do atributo de Data Workbench for diferente de [!UICONTROL mboxPC], você deverá editar o Parâmetro de Consulta apropriado e renomeá-lo para _mboxPC_.
 
    ![](assets/insight-to-tnt2.png)
 
-   Quando você salvar o arquivo de exportação no servidor, a exportação será iniciada. Quando concluído, o [!UICONTROL TnTSend.exe] aplicativo iniciará e começará a enviar dados para a conta do Target.
+   Quando você salva o arquivo de exportação no servidor, a exportação é iniciada. Quando concluído, o aplicativo [!UICONTROL TnTSend.exe] será iniciado e começará a enviar dados para a conta do Target.
 
-## Configuração do Análise de big data para o Target
+## Configuração do Data Workbench para Target
 
 Conclua as seguintes tarefas no Adobe Target:
 
-A análise de big data está transmitindo perfis de usuário para o Adobe Target. Para configurar a exportação para o Target, é necessário configurar e ativar sua API e fornecer os parâmetros **[!UICONTROL clientname]** e **[!UICONTROL domain postfix]** para o arquivo de configuração de exportação (`export.cfg`).
+O Data Workbench está transmitindo perfis de usuário ao Adobe Target. Para configurar a exportação para o Target, você precisa configurar e habilitar sua API e fornecer os parâmetros **[!UICONTROL clientname]** e **[!UICONTROL domain postfix]** para o arquivo de configuração de exportação (`export.cfg`).
 
-Uma nova opção booleana chamada **[!UICONTROL Oneshot]** foi adicionada aos arquivos de exportação de segmento. Esta opção está incluída no arquivo de modelo distribuído com o novo perfil. Se [!UICONTROL Oneshot] for definido como _true_, o `.export` arquivo será renomeado para `.export.done-TIMESTAMP` depois que a exportação for concluída, garantindo que o segmento nunca será exportado mais de uma vez. Isso é importante ao exportar para o Adobe Target.
+Uma nova opção booleana chamada **[!UICONTROL Oneshot]** foi adicionada a arquivos de exportação de segmentos. Essa opção é incluída no arquivo de modelo distribuído com o novo perfil. Se [!UICONTROL Oneshot] estiver definido como _true_, o arquivo `.export` será renomeado para `.export.done-TIMESTAMP` após a conclusão da exportação, garantindo que o segmento nunca será exportado mais de uma vez. Isso é importante ao exportar para o Adobe Target.
 
-**Observação:** Uma chamada do Análise de big data para o Adobe Target conta como uma [!UICONTROL mbox] chamada, exigindo uma chamada para cada perfil enviado. Consequentemente, os custos aumentam se forem necessárias várias chamadas entre as duas soluções.
+**Observação:** uma chamada do Data Workbench para o Adobe Target conta como uma  [!UICONTROL mbox] chamada, exigindo uma chamada para cada perfil enviado. Consequentemente, os custos aumentam se várias chamadas forem necessárias entre as duas soluções.
 
-Uma configuração incompleta produz a seguinte mensagem de erro no registro:
+Uma configuração incompleta produz a seguinte mensagem de erro no log:
 
 ```
 TNT-040615-133212-Adobe-Target-Product-Test.log:
@@ -61,20 +62,20 @@ TnT Configuration left out these empty fields:
 ClientName,MboxHost,MboxName
 ```
 
-## Configuração do Adobe Target para análise de big data
+## Configuração do Adobe Target para Data Workbench
 
-No Adobe Target, nenhuma configuração especial é necessária para que um cliente envie dados de perfil. As informações de perfil para um usuário são normalmente passadas na [!UICONTROL mbox] solicitação regular e os servidores tornarão os parâmetros de perfil disponíveis para uma configuração de campanha direcionada como funcionalidade padrão sem qualquer configuração adicional.
+No Adobe Target, nenhuma configuração especial é necessária para um cliente enviar dados de perfil. As informações de perfil de um usuário normalmente são passadas na solicitação regular [!UICONTROL mbox] e os servidores tornarão os parâmetros de perfil disponíveis para uma configuração de campanha direcionada como funcionalidade padrão sem qualquer configuração adicional.
 
-O Adobe Target tem a integração do Análise de big data integrada, que pode ser ativada na página Detalhes do superusuário cliente. Habilitar a opção superará os segmentos compartilhados a partir da Análise de big data no Adobe Target para que fiquem disponíveis para definição de metas.
+O Adobe Target tem integração do Data Workbench incorporada, que pode ser ativada na página Detalhes do cliente do superusuário. Ativar a opção exibirá segmentos que são compartilhados a partir do Data Workbench no Adobe Target para torná-lo disponível para direcionamento.
 
 ## Definir relatórios de log HTTP em ExportIntegration.exe
 
-Reduza os relatórios longos para [!UICONTROL HTTP.log] quando usar [!UICONTROL ExportIntegration.exe] para exportar arquivos de integração do Adobe Target.
+Reduza os relatórios longos para [!UICONTROL HTTP.log] ao usar [!UICONTROL ExportIntegration.exe] para exportar arquivos de integração do Adobe Target.
 
-Um novo arquivo de [!UICONTROL httpLoggingEI.cfg] configuração (localizado em `server\Admin\Export\httpLoggingEI.cfg`) permite reduzir o logon profundo no arquivo para [!UICONTROL HTTP.log] ao exportar dados usando [!UICONTROL ExportIntegration.exe]. Isso permite que você pare o registro detalhado de solicitações/respostas.
+Um novo arquivo de configuração [!UICONTROL httpLoggingEI.cfg] (localizado em `server\Admin\Export\httpLoggingEI.cfg`) permite reduzir o log detalhado para o arquivo [!UICONTROL HTTP.log] para ao exportar dados usando [!UICONTROL ExportIntegration.exe]. Isso permite interromper o registro detalhado de solicitação/resposta.
 
-O registro em log detalhado já foi capturado em [!UICONTROL TnTSend.log] arquivos.
+O registro detalhado já está capturado nos arquivos [!UICONTROL TnTSend.log].
 
-_True_ define o registro detalhado e _False_ interrompe o registro detalhado no [!UICONTROL HTTP.log] arquivo.
+__ O Truesets indica o registro detalhado e o log detalhado  __ Falsestops para o  [!UICONTROL HTTP.log] arquivo.
 
-Na configuração Falso, somente uma mensagem de aviso será enviada para o [!UICONTROL HTTP.log] arquivo (conteúdo de informações não enviado).
+Na configuração Falso , somente uma mensagem de aviso será enviada para o arquivo [!UICONTROL HTTP.log] (Conteúdo de informações não enviado).
