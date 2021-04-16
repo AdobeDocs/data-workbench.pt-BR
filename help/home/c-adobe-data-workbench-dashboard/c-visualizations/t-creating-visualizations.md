@@ -1,20 +1,21 @@
 ---
 description: Etapas para adicionar uma visualização à tela do painel.
-solution: Analytics
-title: Criação de visualizações
-topic: Data workbench
+title: Criar visualizações
 uuid: d8eb60ac-cc99-4af3-b9c4-946b0a7274ca
+exl-id: 139e24ed-5b22-4d52-8e0a-cef0fe523a49
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 4%
 
 ---
 
-
-# Criação de visualizações{#creating-visualizations}
+# Criar visualizações{#creating-visualizations}
 
 Etapas para adicionar uma visualização à tela do painel.
 
-1. Vá para o **[!UICONTROL Add Visualization]** menu na parte superior da interface do painel. Você verá uma lista de visualizações disponíveis que podem ser criadas.
+1. Vá para o menu **[!UICONTROL Add Visualization]** na parte superior da interface do painel. Você verá uma lista de visualizações disponíveis que podem ser criadas.
 
    ![](assets/create_visualization1.png)
 
@@ -25,4 +26,3 @@ Etapas para adicionar uma visualização à tela do painel.
    >[!NOTE]
    >
    >Cancelar a janela de configuração inicial remove a visualização da tela do painel.
-
