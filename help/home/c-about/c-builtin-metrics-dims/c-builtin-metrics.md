@@ -1,31 +1,31 @@
 ---
-description: A análise de big data inclui métricas incorporadas.
-solution: Analytics
-title: Métricas incorporadas
-topic: Data workbench
+description: O Data Workbench inclui métricas incorporadas.
+title: Métricas embutidas
 uuid: 1e4d91dc-0130-4296-8395-fd2ddb03f6ef
+exl-id: a8a2a8dd-dc13-4eb3-92ce-09f02252ecf0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 1%
 
 ---
 
+# Métricas embutidas{#built-in-metrics}
 
-# Métricas incorporadas{#built-in-metrics}
+O Data Workbench inclui métricas incorporadas.
 
-A análise de big data inclui métricas incorporadas.
-
-A tabela a seguir lista as métricas incorporadas disponíveis para a análise de big data:
+A tabela a seguir lista as métricas internas disponíveis para o Data Workbench:
 
 | Métrica integrada | Descrição |
 |---|---|
-| A partir de | A partir do tempo do conjunto de dados em intervalos de 100 nanossegundos desde 1º de janeiro de 1600 00:00 UTC. O carimbo de data e hora de início é a última hora no conjunto de dados para a qual todos os dados foram definitivamente processados. |
-| Bytes de log lidos | A quantidade total de dados compactados (em bytes) processados até o momento durante a fase de processamento do log. |
-| Total de bytes de log | A quantidade total de dados compactados (em bytes) em arquivos de log que correspondem aos critérios de fontes de log configuradas e o intervalo de datas de início e término do conjunto de dados. Se o processamento de log for pausado no arquivo de configuração do Modo de processamento de log, o Total de bytes de log será igual ao Total de bytes de log lidos. |
-| Andamento do processamento do log | A porcentagem de conclusão da fase de processamento de log do processamento de dados do Insight Server. |
+| Em | A partir do tempo do conjunto de dados em intervalos de 100 nanossegundos desde 1º de janeiro de 1600 00:00 UTC. O carimbo de data e hora de início é o último horário no conjunto de dados para o qual todos os dados foram definitivamente processados. |
+| Bytes de Log Lidos | A quantidade total de dados compactados (em bytes) que foi processada até o momento durante a fase de processamento de log. |
+| Total de Bytes de Log | A quantidade total de dados compactados (em bytes) em arquivos de log que correspondem aos critérios das fontes de log configuradas e ao intervalo de datas inicial e final do conjunto de dados. Se o processamento de log estiver pausado no arquivo de configuração do Modo de Processamento de Log, o Total de Bytes de Log será igual ao Total de Bytes de Log Lidos. |
+| Andamento do processamento de log | A porcentagem de conclusão da fase de processamento de log do processamento de dados do Servidor Insight. |
 | Total de entradas de log decodificadas | O número de entradas nos arquivos de log que foram decodificados com êxito como parte da fase de processamento de log do processamento de dados do Insight Server. |
-| Total de entradas de log filtradas | O número de entradas nos arquivos de log que depois de decodificados foram aceitas pelo filtro do robô e as condições de entrada do log e outros filtros que são aplicados como parte da fase de processamento do log do processamento de dados do Insight Server. |
-| Total de entradas de log | O número de entradas nos arquivos de log que foram processadas até o momento pela fase de processamento de log do processamento de dados do Insight Server. |
-| Total de entradas de log processadas | O número de entradas de log filtradas que foram incorporadas ao conjunto de dados da Adobe. |
+| Total de Entradas de Log Filtradas | O número de entradas nos arquivos de log que após serem decodificados foram aceitas pelo filtro do robô e as condições de entrada do log e outros filtros que são aplicados como parte da fase de processamento de log do processamento de dados do Insight Server. |
+| Total de Entradas de Log | O número de entradas nos arquivos de log que foram processados até o momento pela fase de processamento de log do processamento de dados do Insight Server. |
+| Total de Entradas de Log Processadas | O número de entradas de log filtradas que foram incorporadas ao conjunto de dados do Adobe. |
 | Andamento da transformação | A porcentagem de conclusão da fase de transformação do processamento de dados do Insight Server. |
-| Bytes de Log Descompactados Lidos | A quantidade total de dados descompactados (em bytes) processados até o momento durante a fase de processamento do log. |
-
+| Bytes de Log Descompactados Lidos | A quantidade total de dados descompactados (em bytes) que foi processada até o momento durante a fase de processamento de log. |
