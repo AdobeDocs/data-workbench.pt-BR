@@ -1,30 +1,30 @@
 ---
-description: Os elementos dentro de uma dimensão podem ser codificados por cores como uma série dentro de um gráfico de linha para que cada elemento possa ser rastreado mais facilmente em outras visualizações no espaço de trabalho.
-solution: Analytics
+description: Os elementos em uma dimensão podem ser codificados por cores como uma série em um gráfico de linhas, de modo que cada elemento possa ser mais facilmente rastreado em outras visualizações no espaço de trabalho.
 title: Alterar uma série
-topic: Data workbench
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
+exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 3%
 
 ---
 
-
 # Alterar uma série{#change-a-series}
 
-Os elementos dentro de uma dimensão podem ser codificados por cores como uma série dentro de um gráfico de linha para que cada elemento possa ser rastreado mais facilmente em outras visualizações no espaço de trabalho.
+Os elementos em uma dimensão podem ser codificados por cores como uma série em um gráfico de linhas, de modo que cada elemento possa ser mais facilmente rastreado em outras visualizações no espaço de trabalho.
 
-O recurso de série se aplica aos gráficos somente quando o gráfico de linhas é exibido como linhas, não barras.
+O recurso de série se aplica a gráficos somente quando o gráfico de linha é exibido como linhas, não como barras.
 
-Quando uma série está ativa, os dados dos diferentes elementos da dimensão são mostrados em cores alternadas. É útil adicionar uma tabela ao espaço de trabalho mostrando a mesma dimensão para fornecer uma legenda de série para a dimensão selecionada. Consulte [Uso de legendas](../../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12)de séries.
+Quando uma série está ativa, os dados para os diferentes elementos da dimensão são mostrados em cores alternadas. É útil adicionar uma tabela ao espaço de trabalho que mostra a mesma dimensão para fornecer uma legenda de série para a dimensão selecionada. Consulte [Uso de legendas de séries](../../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12).
 
 ![](assets/vis_LineGraph_Series.png)
 
 **Para ativar uma série**
 
-* Clique com o botão direito do mouse em um elemento ou no rótulo da dimensão e clique em **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
+* Clique com o botão direito do mouse em um elemento ou no rótulo da dimensão e clique em **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]***.
 
 **Para desativar uma série**
 
 * Clique com o botão direito do mouse em um elemento ou no rótulo da dimensão e clique em **[!UICONTROL Change Series]** > **[!UICONTROL None]**.
-
