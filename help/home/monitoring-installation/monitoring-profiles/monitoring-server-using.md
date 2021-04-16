@@ -1,30 +1,30 @@
 ---
-description: O perfil de status do servidor da análise de big data fornece informações atuais sobre a integridade do servidor da análise de big data com base no servidor, em vez de métricas de perfil ou dados históricos.
-solution: Analytics
-title: Área de trabalho Status do Servidor do Análise de big data
-topic: Data workbench
+description: O perfil de status do servidor do Data Workbench fornece informações atuais sobre a integridade do servidor do Data Workbench com base no servidor em vez de métricas de perfil ou dados históricos.
+title: Espaço de trabalho Status do servidor do Data Workbench
 uuid: d8bba770-86d3-40e6-bae0-8d635891e481
+exl-id: 53f72bbe-9f2c-471c-aea9-575944d299b0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 9%
 
 ---
 
+# Espaço de trabalho Status do servidor do Data Workbench{#data-workbench-server-status-workspace}
 
-# Área de trabalho Status do Servidor do Análise de big data{#data-workbench-server-status-workspace}
+O perfil de status do servidor do Data Workbench fornece informações atuais sobre a integridade do servidor do Data Workbench com base no servidor em vez de métricas de perfil ou dados históricos.
 
-O perfil de status do servidor da análise de big data fornece informações atuais sobre a integridade do servidor da análise de big data com base no servidor, em vez de métricas de perfil ou dados históricos.
+## Status Geral {#section-65d1fa393cfd450cbacef3cba823fcc1}
 
-## Status geral {#section-65d1fa393cfd450cbacef3cba823fcc1}
-
-Abra a exibição Conjunto de dados de Status Geral no perfil de Status do Servidor da análise de big data.
+Abra a visualização Conjunto de dados de Status Geral no perfil de Status do Servidor do Data Workbench.
 
 ![](assets/Managing_Server_Status.png)
 
-Para obter informações adicionais sobre as dimensões usadas no perfil de Status do Servidor da análise de big data, consulte as [Dimensões no perfil](../../../home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md#concept-8cbeb91e99bc42e2b52b22d551423f8a) de Status do Insight Server.
+Para obter informações de referência adicionais sobre as dimensões usadas no perfil de status do servidor do Data Workbench, consulte o [Dimension no perfil de status do servidor Insight](../../../home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md#concept-8cbeb91e99bc42e2b52b22d551423f8a) .
 
 ## Status do disco {#section-36406f5f1262457e89ff13ad917f621f}
 
-Exibir o uso atual do disco, incluindo o uso interno do temp.db.
+Visualizar o uso atual do disco, incluindo o uso interno de temp.db.
 
 ![](assets/Managing_Server_DiskStatus.png)
-
