@@ -1,41 +1,41 @@
 ---
-description: A transformação do URI Unescape evita a escape de todos os caracteres em uma string que foram escapados.
-solution: Analytics
+description: A transformação do URI de escape evita o escape de qualquer caractere em uma string que foi escapada.
 title: UnescapeURI
-topic: Data workbench
 uuid: 25e87cc7-812d-4d77-be94-16093e8955fe
+exl-id: abf20906-5052-4bbe-9ffb-522b850669a6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 6%
 
 ---
 
-
 # UnescapeURI{#unescapeuri}
 
-A transformação do URI Unescape evita a escape de todos os caracteres em uma string que foram escapados.
+A transformação do URI de escape evita o escape de qualquer caractere em uma string que foi escapada.
 
 >[!NOTE]
 >
->Os caracteres com escape substituem os caracteres não seguros em uma string de URI. Eles são representados por um triplete que consiste em um sinal de porcentagem seguido por dois dígitos hexadecimais (por exemplo, %20).
+>Os caracteres com escape substituem os caracteres não seguros em uma string de URI. Eles são representados por um triplet que consiste em um sinal de porcentagem seguido por dois dígitos hexadecimais (por exemplo, %20).
 
 | Parâmetro | Descrição | Padrão |
 |---|---|---|
-| Nome | Nome descritivo da transformação. Você pode digitar qualquer nome aqui. |  |
-| Comentários | Opcional. Notas sobre a transformação. |  |
-| Condição | As condições em que essa transformação é aplicada. |  |
-| Padrão | O valor padrão a ser usado se a condição for cumprida e o valor de entrada não estiver disponível. |  |
-| Entrada | A string de URI a ser sem escape. |  |
-| Saída | O nome do campo no qual a sequência de caracteres sem escape deve ser armazenada. |  |
+| Nome | Nome descritivo da transformação. Você pode inserir qualquer nome aqui. |  |
+| Comentários | Opcional. Observações sobre a transformação. |  |
+| Condição | Condições de aplicação desta transformação. |  |
+| Padrão | O valor padrão a ser usado se a condição for atendida e o valor de entrada não estiver disponível. |  |
+| Entrada | A cadeia de caracteres do URI a ser removida. |  |
+| Saída | O nome do campo no qual a cadeia de caracteres sem escape deve ser armazenada. |  |
 
-A transformação a seguir não escapa do valor docname em um campo de cabeçalho HTTP e armazena a saída no campo x-docname-unescape:
+A transformação a seguir remove o escape do valor docname em um campo de cabeçalho HTTP e armazena a saída no campo x-docname-unescaped:
 
 ![](assets/cfg_TransformationType_UnescapeURI.png)
 
-Se o valor do docname fosse
+Se o valor de docname fosse
 
 * [!DNL mysite.net/lending%20and%20leasing%20forms/document%20library/credit%20application.doc]
 
 então o valor de x-docname-unescape seria
 
 * [!DNL mysite.net/lending and leasing forms/document library/credit application.doc]
-
