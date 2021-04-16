@@ -1,33 +1,34 @@
 ---
-description: A análise de big data suporta projeções de latitude e de longitude e projeções Universal Transverse Mercator (UTM) para todas as fontes de camada de imagem do terreno.
-solution: Analytics
-title: Especificar informações de projeção para imagens de terreno
-topic: Data workbench
+description: O Data Workbench suporta projeções de latitude e longitude e projeções de Universal Transverse Mercator (UTM) para todas as fontes de camada de imagem do terreno.
+title: Especificar informações de projeção para imagens do terreno
 uuid: cc1e1e35-6b23-4121-a9f5-489001cb2ef8
+exl-id: 2638c5d4-164d-411b-8464-0a3af81b6537
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 3%
 
 ---
 
+# Especificar informações de projeção para imagens do terreno{#specify-projection-information-for-terrain-images}
 
-# Especificar informações de projeção para imagens de terreno{#specify-projection-information-for-terrain-images}
+O Data Workbench suporta projeções de latitude e longitude e projeções de Universal Transverse Mercator (UTM) para todas as fontes de camada de imagem do terreno.
 
-A análise de big data suporta projeções de latitude e de longitude e projeções Universal Transverse Mercator (UTM) para todas as fontes de camada de imagem do terreno.
+As informações de projeção são necessárias para bitmaps brutos não projetados e imagens gerais, não projetadas. Você pode especificar informações de projeção para imagens com informações de projeção incorporadas, embora isso geralmente não seja necessário, pois os parâmetros da projeção são determinados automaticamente a partir de dados geodésicos incorporados na própria imagem. As seções a seguir fornecem detalhes sobre como especificar esses formatos de projeção no arquivo [!DNL Terrain Images.cfg].
 
-As informações de projeção são necessárias para bitmaps brutos não projetados e imagens gerais, não projetadas. Você pode especificar informações de projeção para imagens com informações de projeção incorporadas, embora geralmente não sejam necessárias, pois os parâmetros da projeção são determinados automaticamente a partir de dados geodésicos incorporados à própria imagem. As seções a seguir fornecem detalhes sobre como especificar esses formatos de projeção no [!DNL Terrain Images.cfg] arquivo.
+## Projeções de latitude e longitude {#section-6e335357ec28462ba39c565e0a5986c7}
 
-## Projeções de latitude Latitude {#section-6e335357ec28462ba39c565e0a5986c7}
+O formato de projeção de latitude e longitude (LatLonProjection) no arquivo [!DNL Terrain Images.cfg] é definido por quatro parâmetros para latitude e longitude.
 
-O formato de projeção de latitude e longitude (LatLonProjection) no [!DNL Terrain Images.cfg] arquivo é definido por quatro parâmetros para latitude e longitude.
+Para especificar um LatLonProjection para imagens não projetadas (bitmaps brutos não projetados e imagens gerais, não projetadas), você pode inserir configurações para LatLonProjection dentro da janela [!DNL Terrain Images.cfg] no Data Workbench.
 
-Para especificar uma LatLonProjection para imagens não projetadas (bitmaps brutos não projetados e imagens gerais, não projetadas), você pode inserir configurações para LatLonProjection dentro da janela na Análise de big data. [!DNL Terrain Images.cfg]
+Para especificar um LatLonProjection para imagens com informações de projeção incorporadas, você deve abrir o arquivo [!DNL Terrain Images.cfg] em um editor de texto como o Notepad, definir o parâmetro Informações de projeção como LatLonProjection e adicionar configurações para [!DNL LatLonProjection].
 
-Para especificar um LatLonProjection para imagens com informações de projeção incorporadas, você deve abrir o [!DNL Terrain Images.cfg] arquivo em um editor de texto como o Notepad, definir o parâmetro Informações de projeção como LatLonProjection e adicionar configurações para o [!DNL LatLonProjection].
+**Especificação de LatLonProjection para imagens não projetadas**
 
-**Especificação de uma LatLonProjection para imagens não projetadas**
-
-1. Abra o [!DNL Terrain Images.cfg] arquivo no Análise de big data e adicione uma fonte de camada de imagem de terreno conforme descrito em [Para definir uma camada](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f)de imagem de terreno.
-1. Edite os parâmetros de Informações de projeção usando a seguinte tabela de parâmetros como guia:
+1. Abra o arquivo [!DNL Terrain Images.cfg] no Data Workbench e adicione uma fonte de camada de imagem do terreno conforme descrito em [Para definir uma camada de imagem do terreno](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f).
+1. Edite os parâmetros de Informações de projeção usando a tabela de parâmetros a seguir como guia:
 
 <table id="table_32F6EADB2DA34592ABD6FFAC9E00BB27"> 
  <thead> 
@@ -47,7 +48,7 @@ Para especificar um LatLonProjection para imagens com informações de projeçã
   </tr> 
   <tr> 
    <td colname="col1"> <p>Lon0 </p> </td> 
-   <td colname="col2"> <p>A longitude da borda esquerda da imagem, em graus, onde os números positivos são orientais e os números negativos são longitudes ocidentais. </p> </td> 
+   <td colname="col2"> <p>A longitude da borda esquerda da imagem, em graus, onde os números positivos são leste e os números negativos são longitudes ocidentais. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Lon1 </p> </td> 
@@ -56,18 +57,18 @@ Para especificar um LatLonProjection para imagens com informações de projeçã
  </tbody> 
 </table>
 
-1. Salve o arquivo clicando com o botão direito do mouse **[!UICONTROL (modified)]** na parte superior da janela e clicando em **[!UICONTROL Save]**.
-1. Para salvar as alterações feitas localmente no computador servidor do Análise de big data, no [!DNL Server Files Manager], clique com o botão direito do mouse na marca de seleção para [!DNL Terrain Images.cfg] na [!DNL Temp] coluna e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+1. Salve o arquivo clicando com o botão direito do mouse em **[!UICONTROL (modified)]** na parte superior da janela e clicando em **[!UICONTROL Save]**.
+1. Para salvar as alterações feitas localmente no computador do servidor do Data Workbench, no [!DNL Server Files Manager], clique com o botão direito do mouse na marca de seleção [!DNL Terrain Images.cfg] na coluna [!DNL Temp] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]***.
 
-**Especificação de uma LatLonProjection para imagens em informações de projeção incorporadas**
+**Especificação de LatLonProjection para imagens em informações de projeção incorporadas**
 
-No [!DNL Server Files Manager], clique em **[!UICONTROL Components]** para exibir o conteúdo. O [!DNL Terrain Images.cfg] arquivo está localizado dentro deste diretório.
+No [!DNL Server Files Manager], clique em **[!UICONTROL Components]** para visualizar seu conteúdo. O arquivo [!DNL Terrain Images.cfg] está localizado dentro desse diretório.
 
-Clique com o botão direito do mouse na marca de seleção na coluna de nome do servidor para [!DNL Terrain Images.cfg]e clique em **[!UICONTROL Make Local]**. Uma marca de seleção é exibida na [!DNL Temp] coluna para [!DNL Terrain Images.cfg].
+Clique com o botão direito do mouse na marca de seleção na coluna nome do servidor para [!DNL Terrain Images.cfg] e depois clique em **[!UICONTROL Make Local]**. Uma marca de seleção aparece na coluna [!DNL Temp] para [!DNL Terrain Images.cfg].
 
-Clique com o botão direito do mouse na marca de seleção recém-criada na [!DNL Temp] coluna e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. O [!DNL Terrain Images.cfg] arquivo é exibido em uma janela do Bloco de notas.
+Clique com o botão direito do mouse na marca de seleção recém-criada na coluna [!DNL Temp] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. O arquivo [!DNL Terrain Images.cfg] aparece em uma janela Bloco de notas.
 
-Edite os parâmetros de Informações de projeção usando o seguinte fragmento de arquivo de amostra como guia. Certifique-se de especificar o tipo de projeção, conforme realçado abaixo. Para obter descrições dos parâmetros, consulte a tabela LatLonProjection Parameters no procedimento anterior.
+Edite os parâmetros de Informações de projeção usando o seguinte fragmento de arquivo de amostra como guia. Certifique-se de especificar o tipo de projeção, como destacado abaixo. Para obter descrições dos parâmetros, consulte a tabela LatLonProjection Parameters no procedimento anterior.
 
 ```
 Projection Info = LatLonProjection:
@@ -77,18 +78,18 @@ Projection Info = LatLonProjection:
   Lon1 = double: 180
 ```
 
-## Projeções Universais de Mercador Transversal {#section-606df0ed1c2d4a6bac3ff0fa2cfb3e82}
+## Projeções Universais Transversas de Mercator {#section-606df0ed1c2d4a6bac3ff0fa2cfb3e82}
 
-A projeção do Universal Transverse Mercator (UTM) é definida por oito parâmetros. Ao especificar uma projeção Universal Transverse Mercator para uma camada de imagem do terreno, seus arquivos de imagem do terreno devem ser alinhados com falso (projetado) norte em direção à parte superior da imagem e falso leste à direita da imagem.
+A projeção Universal Transverse Mercator (UTM) é definida por oito parâmetros. Ao especificar uma projeção universal transversa de Mercator para uma camada de imagem do terreno, seus arquivos de imagem do terreno devem ser alinhados com false (projetado) norte, em direção à parte superior da imagem, e false, para leste, à direita da imagem.
 
-Para especificar uma projeção de UTM para qualquer fonte de imagem de terreno, abra o [!DNL Terrain Images.cfg] arquivo em um editor de texto como o Notepad, defina o parâmetro Informações de projeção como &quot;TransverseMercatorProjection&quot; e adicione configurações para a projeção de UTM.
+Para especificar uma projeção UTM para qualquer fonte de imagem do terreno, você deve abrir o arquivo [!DNL Terrain Images.cfg] em um editor de texto, como o Notepad, definir o parâmetro Informações da projeção como &quot;TransverseMercatorProjection&quot; e adicionar configurações para a projeção UTM.
 
-**Especificação de uma projeção Mercator Universal Transversal**
+**Especificar uma projeção universal transversa de Mercator**
 
-1. No [!DNL Server Files Manager], clique em **[!UICONTROL Components]** para exibir o conteúdo. O [!DNL Terrain Images.cfg] arquivo está localizado dentro deste diretório.
-1. Clique com o botão direito do mouse na marca de seleção na coluna de nome do servidor para [!DNL Terrain Images.cfg]e clique em **[!UICONTROL Make Local]**. Uma marca de seleção aparece na [!DNL Temp] coluna para [!DNL Terrain Images.cfg.]
-1. Clique com o botão direito do mouse na marca de seleção recém-criada na [!DNL Temp] coluna e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. O [!DNL Terrain Images.cfg] arquivo é exibido em uma janela do Bloco de notas.
-1. Edite os parâmetros de Informações de projeção usando a seguinte tabela de parâmetros e fragmentos de arquivo de amostra como guias. Certifique-se de especificar o tipo de projeção, conforme realçado abaixo.
+1. No [!DNL Server Files Manager], clique em **[!UICONTROL Components]** para visualizar seu conteúdo. O arquivo [!DNL Terrain Images.cfg] está localizado dentro desse diretório.
+1. Clique com o botão direito do mouse na marca de seleção na coluna nome do servidor para [!DNL Terrain Images.cfg] e depois clique em **[!UICONTROL Make Local]**. Uma marca de seleção aparece na coluna [!DNL Temp] para [!DNL Terrain Images.cfg.]
+1. Clique com o botão direito do mouse na marca de seleção recém-criada na coluna [!DNL Temp] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. O arquivo [!DNL Terrain Images.cfg] aparece em uma janela Bloco de notas.
+1. Edite os parâmetros de Informações de projeção usando o fragmento de arquivo de amostra a seguir e a tabela de parâmetros como guias. Certifique-se de especificar o tipo de projeção, como destacado abaixo.
 
    ```
    Projection Info = TransverseMercatorProjection:
@@ -111,29 +112,28 @@ Para especificar uma projeção de UTM para qualquer fonte de imagem de terreno,
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Nivelamento Inverso Elipsoide, Eixo Semimajante Elipsoide </p> </td> 
-   <td colname="col2"> <p>Os parâmetros do elipsoide utilizados para a projeção. O eixo semimajar é especificado em metros. </p> </td> 
+   <td colname="col1"> <p>Elipsoide Nivelamento Inverso, Eixo Semimajante Ellipsoide </p> </td> 
+   <td colname="col2"> <p>Os parâmetros do elipsoid usado para a projeção. O eixo semimajor é especificado em metros. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Falsa emulação </p> </td> 
-   <td colname="col2"> <p>A falsa leitura do meridiano central da projeção, em metros. Para a UTM, são sempre 500.000. </p> </td> 
+   <td colname="col1"> <p>False </p> </td> 
+   <td colname="col2"> <p>A falsa conversão do meridiano central da projeção, em metros. Para o UTM, são sempre 500.000. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Falso Norte </p> </td> 
-   <td colname="col2"> <p>O falso norte do equador na projeção, em metros. Para a UTM, é 0 para as zonas do hemisfério Norte e 10 mil para as zonas do hemisfério Sul. </p> </td> 
+   <td colname="col1"> <p>Falsa Nórdica </p> </td> 
+   <td colname="col2"> <p>O falso nada do equador na projeção, em metros. Para UTM, é 0 para zonas do hemisfério norte e 10.000 para zonas do hemisfério sul. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Coordenadas do Canto Noroeste, Coordenadas do Canto Sudeste </p> </td> 
    <td colname="col2"> <p>As coordenadas (em metros projetados) dos cantos superior esquerdo e inferior direito da imagem. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Prime Meridiano </p> </td> 
-   <td colname="col2"> <p>A longitude do meridiano central da projeção, especificada em graus a leste de Greenwich. Números negativos podem ser usados para especificar graus oeste. </p> </td> 
+   <td colname="col1"> <p>Prime Meridian </p> </td> 
+   <td colname="col2"> <p>A longitude do meridiano central da projeção, especificada em graus a leste de Greenwich. Podem ser utilizados números negativos para especificar graus ocidentais. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Fator de escala </p> </td> 
-   <td colname="col2"> <p>A relação entre o raio do cilindro de projeção e o eixo do semimajador do elipsoide. Para projeções do Universal Transverse Mercator (UTM), é sempre 0,9996. </p> </td> 
+   <td colname="col1"> <p>Fator de Escala </p> </td> 
+   <td colname="col2"> <p>A relação entre o raio do cilindro de projeção e o eixo semimajante do elipsoide. Para projeções de Mercator Universal Transverse (UTM), é sempre 0,9996. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
