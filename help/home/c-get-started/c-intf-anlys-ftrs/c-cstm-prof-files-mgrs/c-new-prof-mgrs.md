@@ -1,42 +1,43 @@
 ---
 description: O Gerenciador de perfis exibe todos os diretórios associados ao seu perfil de trabalho.
-solution: Analytics
 title: Criar um gerenciador de perfis
-topic: Data workbench
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
+exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
-
 
 # Criar um gerenciador de perfis{#create-a-profile-manager}
 
 O Gerenciador de perfis exibe todos os diretórios associados ao seu perfil de trabalho.
 
-Talvez você queira acessar um subdiretório do [!DNL Profile Manager] sem precisar navegar por toda a estrutura do diretório. Por exemplo, as opções de menu [!DNL Metrics] e de menu disponíveis no [!DNL Workspaces] [!DNL Manage] menu da janela da área de trabalho permitem abrir as pastas Métricas e Espaços de Trabalho do Gerenciador de Perfis, respectivamente.
+Talvez você queira acessar um subdiretório do [!DNL Profile Manager] sem precisar navegar por toda a estrutura de diretório. Por exemplo, as opções de menu [!DNL Metrics] e [!DNL Workspaces] disponíveis no menu [!DNL Manage] do menu da janela do espaço de trabalho permitem abrir as pastas Métricas e espaços de trabalho do Gerenciador de perfis , respectivamente.
 
-Para obter mais informações sobre o [!DNL Profile Manager], consulte [O gerenciador](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)de perfis.
+Para obter mais informações sobre o [!DNL Profile Manager], consulte [O gerenciador de perfis](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
 
 Por padrão, você tem acesso aos seguintes gerentes:
 
-* **[!DNL Metrics Manager]:**Exibe o conteúdo da pasta Métricas do Gerenciador de perfis. Você pode abrir, editar, remover ou copiar as métricas definidas em cada perfil.
-* **[!DNL Reports Manager]:**Exibe o conteúdo da pasta Relatórios do Gerenciador de perfis. Você pode abrir, editar, remover ou copiar espaços de trabalho ou[!DNL report.cfg]arquivos de relatório.
+* **[!DNL Metrics Manager]:** Exibe o conteúdo da pasta Métricas do Gerenciador de perfis. Você pode abrir, editar, remover ou copiar as métricas definidas em cada perfil.
+* **[!DNL Reports Manager]:** Exibe o conteúdo da pasta Relatórios do Gerenciador de perfis. Você pode abrir, editar, remover ou copiar espaços de trabalho do relatório ou arquivos [!DNL report.cfg].
 
-* **[!DNL Workspaces Manager]:**Exibe o conteúdo da pasta de espaços de trabalho do Gerenciador de perfis. Todos os arquivos para configurar as guias[!DNL Worktop]do estão localizados aqui. Consulte[Personalizar guias](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)de desktop.
+* **[!DNL Workspaces Manager]:** Exibe o conteúdo da pasta Espaços de trabalho do Gerenciador de perfis. Todos os arquivos para configurar as guias do [!DNL Worktop] estão localizados aqui. Consulte [Personalizando Guias da Área de Trabalho](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md).
 
-A Análise de big data permite criar gerenciadores de perfil adicionais que exibem um subdiretório do [!DNL Profile Manager]. Cada gerente criado deve ter um [!DNL .vw] arquivo que especifique o [!DNL Profile Manager] diretório cujo conteúdo ele mostra e as propriedades dessa janela. Você pode usar o [!DNL .vw] arquivo para qualquer um dos gerentes fornecidos como modelo.
+O Data Workbench permite criar gerenciadores de perfil adicionais que exibem um subdiretório do [!DNL Profile Manager]. Cada gerenciador criado deve ter um arquivo [!DNL .vw] que especifique o diretório [!DNL Profile Manager] cujo conteúdo será exibido e as propriedades dessa janela. Você pode usar o arquivo [!DNL .vw] para qualquer um dos gerentes fornecidos como um modelo.
 
 **Para criar um Gerenciador de perfis**
 
-1. No [!DNL Profile Manager], clique no **[!UICONTROL Menu]** diretório para exibir seu conteúdo.
-1. No diretório Menu, clique no **[!UICONTROL Admin]** diretório e, em seguida, no **[!UICONTROL Profile]** diretório. Os [!DNL .vw] arquivos dos gerentes existentes estão localizados aqui.
-1. Na coluna nome *do* perfil, clique com o botão direito do mouse na marca de seleção de um dos [!DNL .vw] arquivos (por exemplo, [!DNL Workspaces.vw]) e clique em **[!UICONTROL Make Local]**.
+1. No [!DNL Profile Manager], clique no diretório **[!UICONTROL Menu]** para visualizar seu conteúdo.
+1. No diretório Menu , clique no diretório **[!UICONTROL Admin]** e, em seguida, no diretório **[!UICONTROL Profile]**. Os arquivos [!DNL .vw] dos gerentes existentes estão localizados aqui.
+1. Na coluna *nome do perfil*, clique com o botão direito do mouse na marca de seleção para um dos arquivos [!DNL .vw] (por exemplo, [!DNL Workspaces.vw]) e clique em **[!UICONTROL Make Local]**.
 
-   Uma marca de seleção para o arquivo é exibida na [!DNL User] coluna.
+   Uma marca de seleção para o arquivo aparece na coluna [!DNL User].
 
-1. Clique com o botão direito do mouse na marca de seleção do [!DNL .vw] arquivo na [!DNL User] coluna e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. No [!DNL Profile Path] campo, digite o [!DNL Profile Manager] diretório para o qual deseja criar um novo gerente. Certifique-se de incluir a barra (/) após o nome do diretório.
+1. Clique com o botão direito do mouse na marca de seleção do arquivo [!DNL .vw] na coluna [!DNL User] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. No campo [!DNL Profile Path], digite o diretório [!DNL Profile Manager] para o qual deseja criar um novo gerenciador. Certifique-se de incluir a barra (/) após o nome do diretório.
 
    ```
    window = simpleBorderWindow:
@@ -50,9 +51,8 @@ A Análise de big data permite criar gerenciadores de perfil adicionais que exib
      size = v3d: (830, 900, 0)
    ```
 
-1. No Bloco de notas, clique em **[!UICONTROL File]** > **[!UICONTROL Save As]** para salvar o arquivo editado na pasta **\User\*nome do perfil de trabalho*\Menu\Admin\Profile Management.
+1. No Bloco de notas, clique em **[!UICONTROL File]** > **[!UICONTROL Save As]** para salvar o arquivo editado na *pasta de instalação do Data Workbench*\User\*nome do perfil de trabalho*\Menu\Admin\Profile Management.
 
-   Certifique-se de alterar o nome do [!DNL .vw] arquivo para refletir o diretório no [!DNL Profile Manager] qual ele corresponde.
+   Certifique-se de alterar o nome do arquivo [!DNL .vw] para refletir o diretório no [!DNL Profile Manager] ao qual ele corresponde.
 
-1. (Opcional) Para disponibilizar as alterações para todos os usuários do perfil de trabalho, clique com o botão direito do mouse na marca de seleção do [!DNL .vw] arquivo na [!DNL User] coluna e clique em **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
-
+1. (Opcional) Para disponibilizar as alterações para todos os usuários do perfil de trabalho, clique com o botão direito do mouse na marca de seleção do arquivo [!DNL .vw] na coluna [!DNL User] e clique em **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**.
