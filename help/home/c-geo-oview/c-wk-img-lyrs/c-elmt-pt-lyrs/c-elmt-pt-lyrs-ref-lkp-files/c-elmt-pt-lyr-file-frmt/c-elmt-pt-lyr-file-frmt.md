@@ -1,20 +1,21 @@
 ---
-description: Formatação de informações sobre o arquivo de camada de ponto de elemento.
-solution: Analytics
-title: Formato de Arquivo de Camada de Ponto de Elemento
-topic: Data workbench
+description: Formatação de informações sobre o arquivo de camada do ponto de elemento.
+title: Formato de arquivo de camada de ponto de elemento
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
+exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 5%
 
 ---
 
+# Formato de arquivo de camada de ponto de elemento{#element-point-layer-file-format}
 
-# Formato de Arquivo de Camada de Ponto de Elemento{#element-point-layer-file-format}
+Formatação de informações sobre o arquivo de camada do ponto de elemento.
 
-Formatação de informações sobre o arquivo de camada de ponto de elemento.
-
-Cada arquivo de camada de ponto de elemento [!DNL .layer] que faz referência a um arquivo de pesquisa deve ser formatado usando o seguinte modelo:
+Cada arquivo de camada [!DNL .layer] de ponto de elemento que faz referência a um arquivo de pesquisa deve ser formatado usando o seguinte modelo:
 
 ```
 Layer = ElementPointLayer:
@@ -44,7 +45,7 @@ Layer = ElementPointLayer:
    <td colname="col2"> Caminho para o arquivo de pesquisa contendo dados de latitude e longitude. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Coluna Longitude </td> 
+   <td colname="col1"> Coluna de longitude </td> 
    <td colname="col2"> O nome da coluna no arquivo de pesquisa que contém os dados de longitude. </td> 
   </tr> 
   <tr> 
@@ -56,16 +57,16 @@ Layer = ElementPointLayer:
    <td colname="col2"> Opcional. O nome da coluna no arquivo de pesquisa que contém os nomes dos locais representados pelos dados de latitude e longitude. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Coluna Chave </td> 
-   <td colname="col2"> <p>O nome da coluna no arquivo de pesquisa que contém os dados de chave comuns, que permite que o servidor de análise de big data integre os dados no arquivo de pesquisa ao conjunto de dados. Essa deve ser a primeira coluna no arquivo de pesquisa. </p> <p>Cada linha nesta coluna é um elemento de uma dimensão. Essa dimensão deve ser definida no arquivo <span class="filepath"> Transformation.cfg</span> ou um conjunto de dados de transformação incluir o arquivo e especificada no parâmetro Dimension desse arquivo. Para obter mais informações sobre arquivos de configuração de transformação, consulte o Guia <i>de Configuração de</i>Conjunto de Dados. </p> </td> 
+   <td colname="col1"> Coluna-chave </td> 
+   <td colname="col2"> <p>O nome da coluna no arquivo de pesquisa que contém os dados de chave comuns, que permite que o servidor do Data Workbench integre os dados no arquivo de pesquisa ao conjunto de dados. Esta deve ser a primeira coluna no arquivo de pesquisa. </p> <p>Cada linha nesta coluna é um elemento de uma dimensão. Essa dimensão deve ser definida no arquivo <span class="filepath"> Transformation.cfg</span> ou em um arquivo de inclusão do conjunto de dados de transformação e especificado no parâmetro Dimension desse arquivo. Para obter mais informações sobre arquivos de configuração de transformação, consulte o <i>Guia de Configuração do Conjunto de Dados</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimensão </td> 
-   <td colname="col2">O nome da dimensão (definido em um arquivo de configuração de transformação) que contém elementos que correspondem às linhas de dados na coluna <span class="wintitle"> Chave</span> . </td> 
+   <td colname="col2">O nome da dimensão (definido em um arquivo de configuração de transformação) que contém elementos que correspondem às linhas de dados na coluna <span class="wintitle"> Chave</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Métrica </td> 
-   <td colname="col2"> O nome da métrica que é avaliada sobre a dimensão especificada no parâmetro Dimensão. </td> 
+   <td colname="col2"> O nome da métrica que é avaliada pela dimensão especificada no parâmetro Dimension. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Escala </td> 
@@ -73,21 +74,21 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Cor do canal </td> 
-   <td colname="col2"> Opcional. O vetor de cor RGB, que é expresso como (vermelho, verde, azul). Para cada cor no vetor, você pode inserir um valor de 0,0 a 1,0. Por exemplo, (1.0, 0.0, 0.0) é vermelho vivo e (0.5, 0.5, 0.5, 0.5) é cinza. </td> 
+   <td colname="col2"> Opcional. O vetor de cores RGB, que é expresso como (vermelho, verde, azul). Para cada cor no vetor, você pode inserir um valor de 0,0 a 1,0. Por exemplo, (1,0, 0,0, 0,0) é vermelho vivo e (0,5, 0,5, 0,5) é cinza. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Modo de renderização </td> 
    <td colname="col2"> <p>Opcional. Valor inteiro que representa o modo de renderização a ser usado para a camada. Os três modos disponíveis são os seguintes: 
      <ul id="ul_CBB26B32505846A39FEB85E831E1C7AB"> 
-      <li id="li_B31528A8858C4418ABCDFF0B4EFB25D7">Modo de renderização 1. O tamanho dos pontos é definido no espaço da tela (os pontos permanecem em um tamanho constante em relação à tela do computador). Os pontos são renderizados usando polígonos, portanto, não há limite máximo no tamanho do ponto. Esse é o modo de renderização padrão. </li> 
-      <li id="li_CA0C3E0DBF004ADBB4D7819C0BF192FC">Modo de renderização 2. O tamanho do ponto é definido no espaço mundial (os pontos permanecem em um tamanho constante em relação ao globo). Os pontos são renderizados usando polígonos, portanto, não há limite máximo no tamanho do ponto. </li> 
+      <li id="li_B31528A8858C4418ABCDFF0B4EFB25D7">Modo de renderização 1. O tamanho dos pontos é definido no espaço da tela (os pontos permanecem com um tamanho constante em relação à tela do computador). Os pontos são renderizados usando polígonos, de modo que não há limite máximo no tamanho do ponto. Este é o modo de renderização padrão. </li> 
+      <li id="li_CA0C3E0DBF004ADBB4D7819C0BF192FC">Modo de renderização 2. O tamanho do ponto é definido no espaço mundial (os pontos permanecem em um tamanho constante em relação ao globo). Os pontos são renderizados usando polígonos, de modo que não há limite máximo no tamanho do ponto. </li> 
       <li id="li_8F8729976DDB434D869E81D4381E2688">Modo de renderização 3. O tamanho do ponto é definido no espaço da tela. Os pontos são renderizados usando pontos suaves do OpenGL. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-O [!DNL Zip Points.layer] arquivo é formatado da seguinte forma:
+O arquivo [!DNL Zip Points.layer] é formatado da seguinte maneira:
 
 ```
 Layer = ElementPointLayer:
@@ -100,4 +101,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
