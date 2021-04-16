@@ -1,22 +1,21 @@
 ---
-description: Você deve garantir que as máquinas nas quais os produtos para servidor Adobe estão instalados atendam aos requisitos mínimos do sistema, conforme definido no documento Requisitos mínimos do sistema.
-solution: Analytics
+description: Você deve garantir que as máquinas nas quais os produtos de servidor Adobe estão instalados atendam aos requisitos mínimos do sistema, conforme definido no documento Requisitos mínimos do sistema.
 title: Confirmar se os sistemas estão íntegros
 uuid: 6d132865-36ab-40fc-be24-e031f356fce2
+exl-id: 543f7592-dd3c-47ba-b174-5f12e9586378
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
 
 ---
 
-
 # Confirmar se os sistemas estão íntegros{#confirming-your-systems-are-healthy}
 
-Você deve garantir que as máquinas nas quais os produtos para servidor Adobe estão instalados atendam aos requisitos mínimos do sistema, conforme definido no documento Requisitos mínimos do sistema.
+Você deve garantir que as máquinas nas quais os produtos de servidor Adobe estão instalados atendam aos requisitos mínimos do sistema, conforme definido no documento Requisitos mínimos do sistema.
 
-**Frequência recomendada:** A cada 5 a 10 minutos
+**Frequência recomendada:** a cada 5-10 minutos
 
 Você também deve monitorar seus sistemas de acordo com as práticas recomendadas para operar esse hardware específico, incluindo, mas não se limitando a, monitorar o seguinte:
 
@@ -25,9 +24,9 @@ Você também deve monitorar seus sistemas de acordo com as práticas recomendad
 * Mensagens do sistema de hardware
 * Temperatura interna do sistema
 * Uso de memória
-* Condições da alimentação elétrica
+* Condições de alimentação elétrica
 * Desempenho e erros do controlador de disco ou RAID
 
-O Adobe recomenda que você configure sua ferramenta de gerenciamento para alertar os administradores quando qualquer parâmetro do sistema em uma máquina de servidor exceder o limite definido.
+O Adobe recomenda configurar sua ferramenta de gerenciamento para alertar os administradores sobre quando qualquer parâmetro de sistema em uma máquina de servidor exceder o limite definido.
 
-Para [!DNL Insight Server] máquinas, o Adobe também recomenda que você configure cada uma [!DNL Insight Server] para indicar quando atinge o limite mínimo de espaço em disco definido. Para obter mais informações sobre esses alertas, consulte [Configuração de alertas](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa)administrativos.
+Para máquinas [!DNL Insight Server], o Adobe também recomenda que você configure cada [!DNL Insight Server] para indicar quando ele atinge o limite mínimo de espaço em disco definido. Para obter mais informações sobre esses alertas, consulte [Configurar Alertas Administrativos](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa).
