@@ -1,18 +1,19 @@
 ---
-description: 'null'
-solution: Analytics
-title: Editando uma conexão de perfil
-topic: Data workbench
+description: Editar uma conexão do perfil
+title: Editar uma conexão do perfil
 uuid: 7c268fd0-0a6e-4a2c-bc09-6579857f5750
+exl-id: c3df7418-eded-4323-9921-507845c14cc6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 21%
 
 ---
 
+# Editar uma conexão do perfil{#editing-a-profile-connection}
 
-# Editando uma conexão de perfil{#editing-a-profile-connection}
-
-1. Clique no ícone de engrenagem ![](assets/edit_icon.png) no final da linha para obter a conexão do perfil que deseja editar.
+1. Clique no ícone de engrenagem ![](assets/edit_icon.png) no final da linha para a conexão do perfil que você deseja editar.
 
    ![](assets/edit_profile_connection.png)
 
