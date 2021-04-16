@@ -1,16 +1,16 @@
 ---
-description: Informação conceptual sobre tarefas administrativas.
-solution: Analytics
-title: Administração do Servidor de Relatório
-topic: Data workbench
+description: Informações conceituais sobre tarefas administrativas.
+title: Administrar servidor de relatórios
 uuid: e07b53c3-9ded-4510-ba0b-47ce4cca3303
+exl-id: 90340a2a-c907-41b1-828d-506548da4413
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '16'
+ht-degree: 37%
 
 ---
 
+# Administrar servidor de relatórios{#administering-report-server}
 
-# Administração do Servidor de Relatório{#administering-report-server}
-
-Informação conceptual sobre tarefas administrativas.
-
+Informações conceituais sobre tarefas administrativas.
