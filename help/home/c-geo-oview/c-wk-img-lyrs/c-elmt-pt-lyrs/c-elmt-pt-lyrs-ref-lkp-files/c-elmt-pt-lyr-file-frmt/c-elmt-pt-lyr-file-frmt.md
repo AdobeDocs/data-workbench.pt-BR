@@ -3,7 +3,6 @@ description: Formatação de informações sobre o arquivo de camada do ponto de
 title: Formato de arquivo de camada de ponto de elemento
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '418'
