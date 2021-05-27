@@ -3,7 +3,6 @@ description: O portal de relatórios é composto de um conjunto de páginas do s
 title: Instalar os arquivos do aplicativo do portal de relatórios
 uuid: 483a7401-1bb4-4a71-b8c7-e70ff1b129e7
 exl-id: 0eb7805c-d8f6-4cfd-834e-babc1818ebc0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '232'
