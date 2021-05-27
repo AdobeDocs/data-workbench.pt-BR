@@ -3,7 +3,6 @@ description: As operações booleanas combinam os resultados das operações de 
 title: Operações booleanas
 uuid: 01143bc2-c867-434c-8028-86d4708e8b80
 exl-id: 5b01e614-5603-43ff-9be4-aa329cca1645
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '525'
