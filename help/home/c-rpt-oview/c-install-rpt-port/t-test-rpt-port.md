@@ -3,7 +3,6 @@ description: Etapas para abrir o portal de relatórios e garantir que você poss
 title: Testar o portal de relatórios
 uuid: eee0df5e-78e0-49b2-853c-40f1b332328b
 exl-id: 197ff815-9234-4dce-b30f-b9cacf259634
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '143'
