@@ -3,7 +3,6 @@ description: As tarefas administrativas para a funcionalidade do repetidor são 
 title: Administrar repetidor
 uuid: 4fbfce3a-2610-4dcd-a585-cb7ee07b90db
 exl-id: 5c7a4f95-be4b-4c2c-8dea-19037ba0b5cc
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '232'
