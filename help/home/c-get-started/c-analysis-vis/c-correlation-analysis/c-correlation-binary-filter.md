@@ -3,7 +3,6 @@ description: Um Filtro binário na Matriz de correlação permite que você rest
 title: Filtro binário na matriz de correlação
 uuid: 61c3ca37-cfa2-49dc-87de-4e9a44647eca
 exl-id: e693fc72-5697-4c47-a498-e0d4d875c688
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '210'
