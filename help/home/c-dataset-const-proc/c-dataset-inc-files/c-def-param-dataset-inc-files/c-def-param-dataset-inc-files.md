@@ -3,7 +3,6 @@ description: Ao configurar seu conjunto de dados, você pode definir variáveis,
 title: Definir parâmetros nos arquivos de inclusão do conjunto de dados
 uuid: 1eb7d48c-a107-4b32-abca-55d30586813f
 exl-id: 80bb77e1-a157-4e16-9519-6d0e2ce17fe1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '493'
