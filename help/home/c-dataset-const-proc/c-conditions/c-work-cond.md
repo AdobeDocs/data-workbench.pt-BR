@@ -3,7 +3,6 @@ description: Informações sobre adicionar, remover ou copiar uma condição.
 title: Trabalhar com condições
 uuid: b6f52b40-26aa-429b-9ff5-3f3b9c9d57a9
 exl-id: 0792b308-aa0b-4741-be0c-4f7cc28f3e09
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '350'
