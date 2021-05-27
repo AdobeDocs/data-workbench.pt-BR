@@ -3,7 +3,6 @@ description: Para usar um cluster, você deve designar um servidor Insight no cl
 title: Instalar o servidor Insight principal
 uuid: a73214f3-b175-4e9e-8802-7a8451d86d3a
 exl-id: 710f1ffe-f620-4920-b4f9-a644cc68d4cc
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '197'
