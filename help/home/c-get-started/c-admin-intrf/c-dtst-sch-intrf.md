@@ -3,7 +3,6 @@ description: A interface do Esquema do conjunto de dados exibe as dimensões est
 title: Interface do esquema do conjunto de dados
 uuid: 3726e568-d3ea-47f8-8ac4-582c97fbbe0a
 exl-id: a8d4cf02-4ff7-4fcc-9062-425c1fe1fb28
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '414'
