@@ -3,7 +3,6 @@ description: Atualização dos componentes do servidor para o Data Workbench 6.1
 title: Atualização do servidor DWB 5.4 para 5.5
 uuid: 9cf9f493-f098-4c6d-a8b5-786833496557
 exl-id: dd8c2a89-6a40-4ebf-a964-eb4851ab94a5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '192'
