@@ -3,7 +3,6 @@ description: Etapas para salvar uma dimensão de um mapa de processos.
 title: Salvar uma dimensão de um mapa de processos
 uuid: 9af8e5c5-9c20-47c5-8c30-221583b0b3c2
 exl-id: bd328918-1b5b-4c58-9d14-693f92e88c69
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '145'
