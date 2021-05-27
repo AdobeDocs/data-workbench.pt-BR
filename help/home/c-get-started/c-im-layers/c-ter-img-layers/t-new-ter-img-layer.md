@@ -3,7 +3,6 @@ description: Etapas para disponibilizar qualquer camada de terreno para exibi√ß√
 title: Disponibilizar uma nova camada de imagem do terreno
 uuid: 8fb98a3e-6335-4922-a1e6-35c92b19e2ec
 exl-id: bf0e6b37-4c8a-4d50-8bc9-eb70ca1cbb23
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '183'
