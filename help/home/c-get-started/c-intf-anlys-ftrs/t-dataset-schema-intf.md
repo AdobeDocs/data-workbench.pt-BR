@@ -3,7 +3,6 @@ description: Etapas para alterar a visualização padrão.
 title: Configurar a interface do esquema do conjunto de dados
 uuid: 953909e8-3382-43cf-98c0-d4785c6d1dda
 exl-id: 0227663f-4789-4780-b753-d0deb35f6144
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '265'
