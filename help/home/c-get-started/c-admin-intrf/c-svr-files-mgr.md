@@ -3,7 +3,6 @@ description: O Gerenciador de Arquivos do Servidor permite que você administre 
 title: Gerenciador de arquivos do servidor
 uuid: 62625b9d-587f-4a78-8328-2270869909f8
 exl-id: 9ac7e95d-47e5-4862-a16e-bee0df1d3d15
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '856'
@@ -61,7 +60,7 @@ A tabela a seguir lista as tarefas que podem ser concluídas usando o [!DNL Serv
    <td colname="col1"> <p>Para ver detalhes sobre um diretório </p> </td> 
    <td colname="col2"> <p>Clique com o botão direito do mouse na célula ao lado do diretório, no nome do servidor ou na coluna <span class="wintitle"> Temp</span>. Você verá as seguintes informações: </p> 
     <ul id="ul_2DA5C8D0E95F4BCC8F7E25D05F00EB02"> 
-     <li id="li_3FDECC14D62543B183C3509C338DF432">Path. O caminho do diretório. </li> 
+     <li id="li_3FDECC14D62543B183C3509C338DF432">Caminho. O caminho do diretório. </li> 
      <li id="li_9CF3989FD9E2427995F070E043FAD02C">Dir. O nome do diretório. </li> 
      <li id="li_68AAA11907404D0BBF407ECD7CA2E467">De. A localização do diretório, Remoto ou Temporário. </li> 
      <li id="li_CB4AEEC89E424868B758465EC0B701B5">Data (somente na coluna Temp). Data de criação ou data da última revisão para a cópia local. </li> 
