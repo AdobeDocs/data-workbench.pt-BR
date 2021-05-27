@@ -3,7 +3,6 @@ description: O processamento de arquivos XML como fontes de log para definir dec
 title: Grupos do decodificador de XML
 uuid: 8fc9ab80-9a71-4fe2-a646-e830ffeb67b9
 exl-id: 0b0534b7-8596-4528-a643-8a9b41dcaa33
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1295'
@@ -54,7 +53,7 @@ A tabela a seguir descreve o parâmetro Tables e todos os subparâmetros que voc
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Path </td> 
+   <td colname="col1"> Caminho </td> 
    <td colname="col2"> <p>O nível no arquivo XML estruturado para o qual a tabela do decodificador contém informações. Para uma tabela de decodificador XML secundário, o caminho é relativo ao caminho da tabela pai. Observe que os caminhos fazem distinção entre maiúsculas e minúsculas. </p> <p> Por exemplo, se o arquivo XML contiver a estrutura: </p> 
 
     &amp;lt;visitor&amp;gt;
@@ -120,8 +119,8 @@ Uma tabela que mostra a saída desse decodificador para nosso arquivo XML de amo
 | x-rowtype | cs—uri-stem | x-email | x-is-register | x-event-time | x-tracking-id |
 |---|---|---|---|---|---|
 | VISITANTE |  | foo@bar.com | 1 |  | 1 |
-| PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 3 |
-| PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 3 |
+| PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 1 |
+| PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 1 |
 
 Você pode criar uma tabela como a acima no Data Workbench usando uma interface do visualizador de campo. Para obter informações sobre a interface do visualizador de campo, consulte [Ferramentas de configuração do conjunto de dados](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
