@@ -3,7 +3,6 @@ description: Para detectar erros do sistema e do aplicativo o mais r√°pido poss√
 title: Monitorar eventos para erros
 uuid: 09bb34db-e24d-4bc5-84d2-7fc37df60681
 exl-id: 88f48594-5c73-4ae3-8014-b8543e689426
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '148'
