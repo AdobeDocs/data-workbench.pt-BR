@@ -3,7 +3,6 @@ description: A projeção Universal Transverse Mercator (UTM) é definida por oi
 title: Projeções Universais Transversas de Mercator
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '333'
