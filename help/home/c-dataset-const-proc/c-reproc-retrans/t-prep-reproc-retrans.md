@@ -3,7 +3,6 @@ description: Etapas para garantir que o reprocessamento ou a retransformação o
 title: Preparar para reprocessar ou retransformar
 uuid: 69a5878e-707a-4100-89ba-bae0b8a16c84
 exl-id: f3746edf-416e-45c2-896c-48a3c875318c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '218'
