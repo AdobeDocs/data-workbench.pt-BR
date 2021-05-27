@@ -3,7 +3,6 @@ description: Você pode criar um segmento dos elementos de qualquer dimensão co
 title: Configurar segmentos para exportar
 uuid: 651be834-ee41-4487-8c5a-30d94580f6a0
 exl-id: 4f53e02c-3f00-44b3-9f6d-a2f23903b3fa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '865'
