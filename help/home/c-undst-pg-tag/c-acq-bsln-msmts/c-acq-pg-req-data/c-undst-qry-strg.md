@@ -3,7 +3,6 @@ description: A sequência de consulta (cs-uri-query) é frequentemente usada por
 title: Compreender a sequência de consulta
 uuid: 7403277d-fbce-4e98-bd42-894142e38d0d
 exl-id: b5281e5f-3eb7-4d6a-a7b3-9958cb430621
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '341'
