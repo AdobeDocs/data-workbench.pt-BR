@@ -3,7 +3,6 @@ description: Depois que o Data Workbench tiver sido instalado e estiver conectad
 title: Abrir o Data Workbench
 uuid: d1da143d-6302-4467-a989-842b54b87c2e
 exl-id: 898c9dc7-969c-4e62-be6b-1d2e0086b1d6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '172'
