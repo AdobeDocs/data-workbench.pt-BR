@@ -3,7 +3,6 @@ description: Os painéis podem ser privados ou compartilhados.
 title: Compartilhamento de painéis e controles de acesso
 uuid: 8bc64cfb-3cda-4d28-8a34-cbefd38f1b70
 exl-id: 31a73d26-2382-4abe-9e11-22da1dca4e25
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '115'
