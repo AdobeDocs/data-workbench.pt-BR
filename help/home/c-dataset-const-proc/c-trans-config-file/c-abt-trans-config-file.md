@@ -3,7 +3,6 @@ description: O arquivo Transformation.cfg controla a fase de transformação da 
 title: Sobre o arquivo de configuração de transformação
 uuid: 56e11b71-1a86-47d4-8d2a-2795532b0770
 exl-id: 860562d7-6ed3-486b-9f62-1bd06878bf7e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '176'
