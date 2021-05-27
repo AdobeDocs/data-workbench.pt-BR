@@ -3,7 +3,6 @@ description: Quando você move seu mouse sobre o mapa, quaisquer dados disponív
 title: Trabalhar com globos
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
 exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '227'
