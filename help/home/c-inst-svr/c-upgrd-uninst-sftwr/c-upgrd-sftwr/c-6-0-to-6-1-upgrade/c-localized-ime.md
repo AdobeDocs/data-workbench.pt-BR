@@ -3,7 +3,6 @@ description: O Data Workbench agora é compatível com o Editor de método de en
 title: Instalação do editor de método de entrada
 uuid: 2a4dc6de-9dd7-4280-b410-fb88a135fe45
 exl-id: 3fcc58f5-29a9-427e-831a-44d527614b56,0bdc7d95-b49a-4ca5-9fde-9c1ce2cd14ec,e4e1c016-0544-434a-b82e-fdd2a4af316c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '249'
