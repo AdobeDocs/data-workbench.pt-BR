@@ -3,7 +3,6 @@ description: No Data Workbench, uma camada de imagem do terreno exibe imagens do
 title: Trabalhar com camadas de imagem do terreno
 uuid: 2f23a2c8-f551-4b84-bd87-5d7053910ab3
 exl-id: 22026b41-4e12-4247-b019-461ae223bd07
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1021'
