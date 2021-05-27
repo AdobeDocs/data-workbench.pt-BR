@@ -3,7 +3,6 @@ description: Os cálculos estatísticos da Pontuação de propensão são defini
 title: Calcular a pontuação de propensão
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
 exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '320'
