@@ -3,7 +3,6 @@ description: Expressões regulares são usadas em todos os campos de pesquisa do
 title: Expressões regulares
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1418'
@@ -100,7 +99,7 @@ A correspondência literal permite procurar uma única string, mas colchetes, tr
 
 Considere os exemplos a seguir:
 
-| Padrão | String | Correspondência |
+| Padrão | String | Corresponder |
 |---|---|---|
 | Win9`[58]` | OS=Win95 | Win95 |
 | Win95 | 8 | OS=Win98 | Win98 |
@@ -178,7 +177,7 @@ Considere os seguintes exemplos de extração de padrão:
   <tr> 
    <th colname="col1" class="entry"> Padrão </th> 
    <th colname="col2" class="entry"> String </th> 
-   <th colname="col3" class="entry"> Correspondência </th> 
+   <th colname="col3" class="entry"> Corresponder </th> 
    <th colname="col4" class="entry"> Extração </th> 
   </tr> 
  </thead>
