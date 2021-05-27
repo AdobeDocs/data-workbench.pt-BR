@@ -3,7 +3,6 @@ description: Antes de gerar relatórios e alertas, você deve configurar o Servi
 title: Configuração da conexão com o servidor Insight
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
 exl-id: a398a665-fe09-448a-977c-b0f9de4add09
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
