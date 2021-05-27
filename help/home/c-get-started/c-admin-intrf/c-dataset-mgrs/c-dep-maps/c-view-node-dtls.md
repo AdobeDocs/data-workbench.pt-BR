@@ -3,7 +3,6 @@ description: Informações sobre a exibição de informações de identificaçã
 title: Ver detalhes do nó
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '262'
