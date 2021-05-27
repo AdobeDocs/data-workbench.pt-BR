@@ -3,7 +3,6 @@ description: Etapas para instalar e configurar o software do Servidor de relató
 title: Visão geral da instalação
 uuid: ffc72aa1-98d8-41dc-b4e5-6f70ff43430e
 exl-id: 4ddc0761-a999-49ed-b0e4-12cf34e2688c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '157'
