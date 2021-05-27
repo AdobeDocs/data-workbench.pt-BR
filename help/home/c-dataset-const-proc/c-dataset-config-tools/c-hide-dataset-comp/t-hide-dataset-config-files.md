@@ -3,7 +3,6 @@ description: Se não quiser herdar um arquivo de configuração de um perfil int
 title: Ocultar arquivos de configuração do conjunto de dados
 uuid: eb33cf54-e067-4af2-a10e-7ffe43910e4f
 exl-id: 327847d1-421a-4ed1-9a5f-2491765a34bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '319'
