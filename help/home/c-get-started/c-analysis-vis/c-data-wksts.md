@@ -3,7 +3,6 @@ description: Texto ou expressões podem ser inseridos em qualquer célula de uma
 title: Trabalhar com dados em planilhas
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '710'
