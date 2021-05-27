@@ -3,7 +3,6 @@ description: Os painéis podem ter dois níveis de visibilidade Privado e Compar
 title: Controlar acesso ao painel
 uuid: f992cb93-232c-4f21-8f95-91c7fa2535eb
 exl-id: 1243e3cb-fbf0-4d55-803e-9e8281846692
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '169'
