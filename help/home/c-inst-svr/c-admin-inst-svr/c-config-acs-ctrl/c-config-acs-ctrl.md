@@ -3,7 +3,6 @@ description: O arquivo de configuração Controle de acesso, Access Control.cfg,
 title: Configurar o controle de acesso
 uuid: e0206b43-3c8c-48ec-b663-814f5b663b96
 exl-id: 2836c907-fc74-4d35-badc-b8f06cd6989f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '132'
