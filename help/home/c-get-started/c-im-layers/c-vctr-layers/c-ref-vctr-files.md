@@ -3,7 +3,6 @@ description: Você pode criar uma camada de vetor que faz referência a um ou ma
 title: Definir camadas de vetor que fazem referência a arquivos vetoriais
 uuid: fe6639fb-98fb-4246-9cc1-1a928df6ae0a
 exl-id: d78fa7ea-e2a9-42b7-9071-5f72409c5b7a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '281'
