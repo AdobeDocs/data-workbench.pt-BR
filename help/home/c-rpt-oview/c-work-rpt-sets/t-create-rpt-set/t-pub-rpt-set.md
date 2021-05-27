@@ -3,7 +3,6 @@ description: A etapa final na criação de um conjunto de relatórios é publica
 title: Publicar o conjunto de relatórios no servidor do Data Workbench
 uuid: 373323f8-d6d7-4696-b361-ce514f0ccff0
 exl-id: 1cf6ba28-94f0-48d2-b2d0-2de7e38620f7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '120'
