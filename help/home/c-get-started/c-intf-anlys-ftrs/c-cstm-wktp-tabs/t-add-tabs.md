@@ -3,7 +3,6 @@ description: Adicione uma guia à área de trabalho para acessar rapidamente um 
 title: Adicionar uma guia à bancada
 uuid: 3c8b459d-4824-4678-871d-1a577235957a
 exl-id: 30201eb9-1006-42b0-9d73-0962e41192ce
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '224'
