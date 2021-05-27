@@ -3,7 +3,6 @@ description: O Data Workbench permite criar novas métricas, filtros e dimensõe
 title: Expandir métricas, dimensões e filtros
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
 exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '211'
