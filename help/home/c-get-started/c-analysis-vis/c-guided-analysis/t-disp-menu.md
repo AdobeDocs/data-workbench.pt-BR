@@ -3,7 +3,6 @@ description: Etapas para exibir informações ou opções de uma dimensão.
 title: Exibir o menu Dimensão
 uuid: e2c4fa8d-3559-45bd-8ec5-d064c763b20b
 exl-id: 55b2cb3a-d82e-4e42-b1b6-079ca3667be8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '89'
