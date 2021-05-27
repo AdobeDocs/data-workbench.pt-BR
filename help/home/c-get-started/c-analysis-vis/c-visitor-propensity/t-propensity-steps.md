@@ -3,7 +3,6 @@ description: Siga estas etapas para usar a visualização de Pontuação de prop
 title: Configurar a pontuação de propensão
 uuid: afc9aada-3bf9-4ce6-8c43-a955771065b4
 exl-id: e16a7062-636e-44a9-a07d-343d48bf1b4c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '536'
