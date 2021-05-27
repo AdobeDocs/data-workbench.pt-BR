@@ -3,7 +3,6 @@ description: As notas de versão do Data Workbench 6.1 incluem novos recursos, r
 title: Notas de versão do Data Workbench 6.1
 uuid: 5bfb558a-ce85-4b4a-95dc-ccef337c4d1b
 exl-id: ed37a00f-b4cd-428e-abb7-7c52d5cfd2f9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '693'
@@ -73,4 +72,4 @@ Em uma visualização **[!UICONTROL Funnel]**, é possível clicar com o botão 
    Solução alternativa: Nenhum
 * Não é possível iniciar [!DNL Insight.exe] se o diretório de instalação for nomeado com caracteres que não sejam em inglês.
 
-   Solução alternativa: Mantenha os nomes padrão ou renomeie usando somente caracteres em inglês no caminho da pasta para iniciar executáveis.
+   Solução alternativa: Mantenha os nomes padrão ou renomeie usando apenas caracteres em inglês no caminho da pasta para iniciar executáveis.
