@@ -3,7 +3,6 @@ description: Para configurar o Portal de relatórios, você deve mapear seus arq
 title: Mapear as páginas do portal de relatórios para diretórios virtuais
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '204'
