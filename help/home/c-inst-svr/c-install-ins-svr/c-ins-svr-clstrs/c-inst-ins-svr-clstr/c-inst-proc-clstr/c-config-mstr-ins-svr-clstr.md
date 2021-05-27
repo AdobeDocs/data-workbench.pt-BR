@@ -3,7 +3,6 @@ description: Informações sobre como configurar o cluster no Principal Insight 
 title: Configurar o servidor Insight principal para clustering
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 exl-id: 28126ba4-6d81-4ca4-895c-4e8b1a54a693
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1244'
