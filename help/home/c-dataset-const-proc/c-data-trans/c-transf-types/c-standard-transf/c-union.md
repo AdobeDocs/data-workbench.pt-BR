@@ -3,7 +3,6 @@ description: A transformação Union utiliza um conjunto de entradas e cria um v
 title: União
 uuid: 2f8bd332-727e-4a4e-a3e7-a52ea2b0a33a
 exl-id: 841b5133-d587-409c-b39e-47169beb2ddf
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '262'
