@@ -3,7 +3,6 @@ description: Informações sobre configurações específicas da Web definidas n
 title: Configurações específicas da Web para transformação
 uuid: 282f0f4d-43d7-41cf-bae8-5cac6b4d81a0
 exl-id: 737f5e7a-7ab3-4ff7-8d92-7ccd87c28743
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '2035'
