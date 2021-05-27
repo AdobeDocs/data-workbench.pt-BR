@@ -3,7 +3,6 @@ description: Informações sobre a configuração geral do Sensor com uma instâ
 title: Trabalhar com várias instâncias de um servidor da Web
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
 exl-id: a371f9ed-6c27-4b3d-843f-ae5621013410
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '278'
