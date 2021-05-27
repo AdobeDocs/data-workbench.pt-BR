@@ -3,7 +3,6 @@ description: Quaisquer dados que você deseja exportar devem ser definidos como 
 title: Criar dimensões para usar com exportação de segmentos
 uuid: 7fdc043e-b2c5-4eac-adf4-bf60df6a3953
 exl-id: 0f16c242-10f6-4014-b848-ea001e9d085c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '164'
