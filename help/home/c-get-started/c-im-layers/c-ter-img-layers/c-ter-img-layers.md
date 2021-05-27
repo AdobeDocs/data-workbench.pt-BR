@@ -3,7 +3,6 @@ description: Uma camada de imagem do terreno exibe imagens do terreno da Terra.
 title: Camadas de imagem do terreno
 uuid: 17968293-1ad2-4040-a174-d33f418af9b7
 exl-id: 754211a7-0b1f-4353-86f8-9c634d70cd83
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '992'
