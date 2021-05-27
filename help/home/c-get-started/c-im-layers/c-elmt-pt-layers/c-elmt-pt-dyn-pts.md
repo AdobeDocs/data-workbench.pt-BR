@@ -3,7 +3,6 @@ description: Ao criar uma camada de ponto de elemento usando pontos dinâmicos, 
 title: Definir camadas de pontos de elemento usando pontos dinâmicos
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
 exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '454'
