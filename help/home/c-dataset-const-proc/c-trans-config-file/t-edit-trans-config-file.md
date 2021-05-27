@@ -3,7 +3,6 @@ description: Etapas para editar o arquivo Transformation.cfg para um perfil de c
 title: Editar o arquivo de configuração de transformação
 uuid: 77b9e566-4a9a-4ea1-b5ab-63a4574c0fdb
 exl-id: 3fab17a4-d356-4548-b977-f5d409870753
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1135'
