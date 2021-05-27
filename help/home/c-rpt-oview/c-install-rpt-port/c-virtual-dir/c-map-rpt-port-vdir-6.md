@@ -3,7 +3,6 @@ description: Etapas para mapear o portal de relatórios para um diretório virtu
 title: Mapear o portal de relatórios para um diretório virtual (IIS 6.0)
 uuid: e09d23d7-09de-4180-8260-60527f47aa98
 exl-id: 39335705-7391-49af-a63d-c0fe4ca3f8f0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '546'
