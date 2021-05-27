@@ -4,9 +4,8 @@ title: Ajuda do Data Workbench
 feature: Noções básicas do Reports & Analytics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-translation-type: ht
 source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 100%
 
@@ -36,7 +35,7 @@ O Data Workbench inclui esses recursos de análise preditiva, visualizações de
 
 ## Mais guias do usuário do Analytics
 
-[Guias do usuário do Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/home.html)
+[Guias do usuário do Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 
 ## Notas de versão e novos recursos do Data Workbench
 
