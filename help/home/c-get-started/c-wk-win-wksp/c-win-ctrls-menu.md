@@ -3,7 +3,6 @@ description: O menu Controles da janela permite que você controle uma janela in
 title: Menu de controles da janela
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
 exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '418'
