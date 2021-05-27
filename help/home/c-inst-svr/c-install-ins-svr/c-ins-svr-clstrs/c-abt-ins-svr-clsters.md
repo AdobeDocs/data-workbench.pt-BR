@@ -3,7 +3,6 @@ description: Um cluster do Servidor Insight é necessário quando a quantidade d
 title: Sobre os clusters do servidor Insight
 uuid: d65e0fe5-f87d-4d8e-a208-9192e9d62fb5
 exl-id: b26e0f63-76db-461d-91e7-0968624aa0f7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '320'
@@ -21,7 +20,7 @@ A primeira etapa na implementação de um cluster [!DNL Insight Server] é aloca
 
 >[!NOTE]
 >
->Se você estiver usando uma [!DNL Insight Server] Unidade de Servidor de Arquivos (FSU), o Adobe recomenda que você configure a FSU como seu [!DNL Insight Server] principal. Para obter informações sobre como configurar uma FSU, consulte o *Guia de Configuração de Conjunto de Dados*.
+>Se você estiver usando uma [!DNL Insight Server] Unidade de Servidor de Arquivos (FSU), o Adobe recomenda configurar o FSU como seu [!DNL Insight Server] principal. Para obter informações sobre como configurar uma FSU, consulte o *Guia de Configuração de Conjunto de Dados*.
 
 O principal [!DNL Insight Server] gerencia a comunicação entre o outro [!DNL Insight Servers] no cluster (chamado de servidores de processamento ou, às vezes, servidores de query) e as instâncias de [!DNL Insight] e [!DNL Report]. Para um determinado conjunto de dados, o processamento do arquivo de log ocorre no (um ou mais) designado [!DNL Insight Servers] (principal ou processando), conforme especificado nos arquivos de configuração [!DNL Insight Server]. Ao trabalhar em um ambiente em cluster, [!DNL Insight] as instalações são configuradas para acessar o [!DNL Insight Server] principal, mas as consultas podem ser tratadas por qualquer um dos [!DNL Insight Servers] no cluster.
 
