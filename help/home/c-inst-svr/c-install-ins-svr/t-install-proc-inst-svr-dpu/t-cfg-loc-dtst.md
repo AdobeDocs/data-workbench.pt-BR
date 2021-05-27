@@ -3,7 +3,6 @@ description: Por padrão, o Insight Server grava seu conjunto de dados (temp.db)
 title: Configurar a localização do conjunto de dados (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
 exl-id: 6812883f-ad51-4314-8c80-e95c3fe84664
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '251'
