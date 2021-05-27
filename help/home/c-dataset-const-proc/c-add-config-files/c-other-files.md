@@ -3,7 +3,6 @@ description: O diret√≥rio do conjunto de dados inclui arquivos adicionais que s√
 title: Outros arquivos
 uuid: 87d83fa5-df25-4da1-8b11-16639902d8d7
 exl-id: 0a1fb37c-00ac-46d4-9d0a-904ebd3ccfba
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '238'
