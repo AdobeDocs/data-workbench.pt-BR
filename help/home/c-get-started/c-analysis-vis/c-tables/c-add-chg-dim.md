@@ -3,7 +3,6 @@ description: É possível adicionar várias dimensões a uma tabela para obter u
 title: Adicionar, alterar e mover uma dimensão
 uuid: d8e67374-3b2b-4548-9322-e83c52941331
 exl-id: d2249f39-f4ab-4ec6-a2fb-90f8ecb2e3d1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '217'
