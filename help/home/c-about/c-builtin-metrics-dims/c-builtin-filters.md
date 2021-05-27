@@ -3,7 +3,6 @@ description: Os filtros de perfil restringem o escopo dos dados disponíveis em 
 title: Filtros de perfil embutidos
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '486'
