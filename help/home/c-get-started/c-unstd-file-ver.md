@@ -3,7 +3,6 @@ description: A área de trabalho facilita determinar onde cada espaço de trabal
 title: Controle de versão de arquivo
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
 exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '296'
