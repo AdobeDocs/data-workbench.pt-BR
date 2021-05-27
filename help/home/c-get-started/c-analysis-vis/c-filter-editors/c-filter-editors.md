@@ -3,7 +3,6 @@ description: Um editor de filtro é uma visualização especial para criar e edi
 title: Editores de filtro
 uuid: c4e99e44-1927-4131-92e9-111c76bdc3e2
 exl-id: 9009c760-8726-4234-b85b-727aeae761bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '275'
