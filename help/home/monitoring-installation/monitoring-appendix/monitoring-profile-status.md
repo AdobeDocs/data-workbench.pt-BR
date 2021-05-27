@@ -3,7 +3,6 @@ description: As seguintes dimensões estão disponíveis para uso no perfil de s
 title: Dimensões no perfil de status do perfil do Data Workbench
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
 exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1047'
