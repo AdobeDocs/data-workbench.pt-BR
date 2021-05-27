@@ -3,7 +3,6 @@ description: Os mapas de dependência permitem visualizar e gerenciar a configur
 title: Mapas de dependências
 uuid: c869267c-5fa9-43b8-b4d4-06c7a36bfa8e
 exl-id: 4618c735-f507-4abc-a4b4-d52a37c64c60,733407ca-3326-406a-a642-a3ea3d3f6b8b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '488'
