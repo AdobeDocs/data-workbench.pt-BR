@@ -3,7 +3,6 @@ description: Se os clientes puderem acessar um servidor Insight por meio de vár
 title: Vários endereços IP para um servidor Insight
 uuid: 6ed00b47-8ba3-4127-a5db-7e684e573d9c
 exl-id: 71654a60-af82-45f2-826b-29ecc7127b0b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
