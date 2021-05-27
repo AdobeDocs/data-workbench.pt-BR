@@ -3,7 +3,6 @@ description: É possível exportar os dados em determinadas janelas para um arqu
 title: Exportar dados da janela
 uuid: 71a93f35-1096-41ae-8808-e5b94813a52c
 exl-id: ab931453-d366-4d3a-990e-7a368328da2d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '376'
