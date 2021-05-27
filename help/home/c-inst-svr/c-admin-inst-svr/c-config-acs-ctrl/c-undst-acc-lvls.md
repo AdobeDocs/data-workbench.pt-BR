@@ -3,7 +3,6 @@ description: Os níveis de acesso descrevem quais URIs na máquina um grupo de u
 title: Compreender níveis de acesso
 uuid: e9091ae1-9a34-4e00-a928-20d04119ee9e
 exl-id: 64e2dc39-1ca1-425b-bec7-acb10a8819c0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '665'
