@@ -2,7 +2,6 @@
 description: Instruções para criar dimensões estendidas e descrever os tipos de dimensões estendidas que você pode definir para criação durante a fase de transformação da construção do conjunto de dados.
 title: Dimensões estendidas
 uuid: 465682c2-5b08-4b94-817f-ff7b405142af
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '134'
