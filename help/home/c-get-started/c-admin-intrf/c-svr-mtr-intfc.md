@@ -3,7 +3,6 @@ description: A interface do Monitor do Servidor é útil para solucionar problem
 title: Interface do monitor do servidor
 uuid: 609dd8ea-31a9-44c1-ab75-ca783ec85650
 exl-id: fb8baae9-ac1e-4355-ba38-fef6621e22bb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '362'
