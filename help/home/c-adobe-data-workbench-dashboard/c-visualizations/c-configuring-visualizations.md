@@ -3,7 +3,6 @@ description: Mostra como configurar Título, Perfil, Dimension, Métrica, Filtro
 title: Configurar visualizações
 uuid: aca77188-8f28-4554-8913-412b252f688c
 exl-id: 153adf94-5689-4917-9d71-625caef49903
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '795'
@@ -79,7 +78,7 @@ As visualizações no painel não são projetadas para exibir a totalidade dos d
 
 ![](assets/display_top.png)
 
-## Ordenar por {#section-f686249e20444359bff87c00cc2ba29f}
+## Classificar por {#section-f686249e20444359bff87c00cc2ba29f}
 
 Isso permite especificar como os dados devem ser classificados quando forem exibidos na visualização. (Esse campo não é aplicável para tabelas, legendas de métricas e visualizações de Rich Text.) Há várias opções de classificação:
 
