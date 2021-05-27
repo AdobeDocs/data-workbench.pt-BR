@@ -3,7 +3,6 @@ description: Por padrão, o Insight Server escuta nas portas 80 (para HTTP) e 44
 title: Verificar as configurações de porta
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
 exl-id: 924860e3-5afa-4c0f-bb7a-d38d5c1355b7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '114'
