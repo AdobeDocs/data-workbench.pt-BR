@@ -3,7 +3,6 @@ description: Os sites arquitetados com o Flash exigem atenção especial em rela
 title: Rastrear atividade do visitante no conteúdo de mídia avançada em flash
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '713'
