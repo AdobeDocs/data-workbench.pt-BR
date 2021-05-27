@@ -3,7 +3,6 @@ description: Você deve monitorar regularmente o espaço em disco disponível pa
 title: Monitorar o espaço em disco
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 exl-id: c2198edc-3961-4845-97cf-0ebe039f9a66
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '124'
