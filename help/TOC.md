@@ -7,7 +7,7 @@ feature: Data Workbench
 user-guide-title: Ajuda do Data Workbench
 user-guide-description: Saiba mais sobre os recursos de vários canais do Data Workbench. Inclui Cliente do Data Workbench, Instalação, guias de Configuração de conjuntos de dados e muito mais.
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -142,7 +142,7 @@ ht-degree: 100%
       + [Visualização de corda de associação](home/c-get-started/c-analysis-vis/associations-chord.md)
       + [Visualização de tabela de associação](home/c-get-started/c-analysis-vis/associations-visualization.md)
       + Cluster do visitante {#visitor-cluster}
-         + [Visão geral de cluster do visitante ](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
+         + [Visão geral de cluster do visitante](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
          + [Geração de cluster 2.0](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-clustering-2.md)
          + [Criar clusters](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-defining-clusters.md)
          + [Explorar clusters](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-exploring-clusters.md)
@@ -713,7 +713,7 @@ ht-degree: 100%
             + [Adicionar uma DPU do servidor Insight a um cluster existente](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-dpu-ex-clstr.md)
             + [Adicionar uma FSU do servidor Insight a um cluster existente](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md)
    + Administrar o servidor do Data Workbench {#admin-dwb-server}
-      + [Administrar o servidor do Data Workbench ](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
+      + [Administrar o servidor do Data Workbench](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
       + [Revalidar o certificado digital](home/c-inst-svr/c-admin-inst-svr/c-reval-dgtl-cert.md)
       + [Confirmar se o serviço está sendo executado](home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md)
       + Controle de acesso {#access-control}
@@ -738,7 +738,7 @@ ht-degree: 100%
       + [Configurar a transformação](home/c-inst-svr/c-tfm/t-config-tfm.md)
       + [Próximas etapas](home/c-inst-svr/c-tfm/c-nxt-stps-tfm.md)
    + Serviço de replicação do servidor Insight {#insight-server-replication-service}
-      + [Serviço de replicação do servidor Insight ](home/c-inst-svr/c-ins-svr-rep-svc/c-ins-svr-rep-svc.md)
+      + [Serviço de replicação do servidor Insight](home/c-inst-svr/c-ins-svr-rep-svc/c-ins-svr-rep-svc.md)
       + [Instalar serviço de replicação](home/c-inst-svr/c-ins-svr-rep-svc/c-inst-rep-svc.md)
       + [Configurar o serviço de replicação](home/c-inst-svr/c-ins-svr-rep-svc/t-config-rep-svc.md)
       + [Próximas etapas](home/c-inst-svr/c-ins-svr-rep-svc/c-nxt-stps-rep-svc.md)
@@ -759,7 +759,7 @@ ht-degree: 100%
    + Atualizar e desinstalar {#upgrade-uninstall}
       + [Atualizar e desinstalar o software da Adobe](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-uninst-sftwr.md)
       + Atualizar o servidor Insight {#upgrade-insight-server}
-         + [Atualizar o servidor Insight ](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
+         + [Atualizar o servidor Insight](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [Atualização do servidor DWB: 6.2 para 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
          + [Atualização do servidor DWB: 5.4 para 5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [Atualizar transformação](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
