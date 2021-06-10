@@ -5,7 +5,7 @@ feature: Noções básicas do Reports & Analytics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
 ht-degree: 100%
 
@@ -29,13 +29,13 @@ O Data Workbench inclui esses recursos de análise preditiva, visualizações de
 * [Árvores de decisão](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees.md)
 * [Matriz de correlação](/help/home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
 * [Geração de cluster](/help/home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
-* [Exibição de corda](/help/home/c-get-started/c-analysis-vis/c-chord-visualization.md)
+* [Exibição de acorde](/help/home/c-get-started/c-analysis-vis/c-chord-visualization.md)
 * [Perfil de atribuição](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
 * [Integração e exportação do Perfil de marketing principal](/help/home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
 
 ## Mais guias do usuário do Analytics
 
-[Guias do usuário do Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+[Guias do usuário do Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/home.html)
 
 ## Notas de versão e novos recursos do Data Workbench
 
