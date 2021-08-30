@@ -3,9 +3,9 @@ description: Após configurar o DWB, é possível implementar esses recursos.
 title: Implementação de recursos do Data Workbench
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ Após configurar o DWB, é possível implementar esses recursos.
 
 * Para implementar a **Visualização de globo**, consulte [Globos](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
 
-* Para implementar **Espaços de trabalho para Atribuição**, consulte [Atribuição baseada em regras](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html) e [Atribuição de melhor ajuste](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html).
+* Para implementar **Espaços de trabalho para Atribuição**, consulte [Atribuição baseada em regras](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en) e [Atribuição de melhor ajuste](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en).
 
 * Para implementar espaços de trabalho **Predictive Analytics**, consulte [Visualizações](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html) e a visualização listada abaixo.
 
-* Para implementar **Inteligência preditiva com visualizações de Clustering**, consulte [Clustering](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html).
+* Para implementar **Inteligência preditiva com visualizações de Clustering**, consulte [Clustering](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en).
 
 * Para implementar **Inteligência preditiva com Pontuação de propensão**, consulte [Pontuação de propensão](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html).
 

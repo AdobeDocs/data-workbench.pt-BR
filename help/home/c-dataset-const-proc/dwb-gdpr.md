@@ -2,9 +2,9 @@
 description: A Adobe Data Workbench fornece ferramentas e processos para preparar seus dados para estar em conformidade com os Regulamentos Gerais de Proteção de Dados (GDPR).
 title: Alinhamento do Data Workbench com o GDPR
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ O Regulamento GDPR identifica as funções e obrigações das diferentes partes 
 
 * Sua organização atua como o **controlador de dados** para determinar o contexto e a retenção de dados pessoais com base em suas necessidades e restrições. O Adobe processa e armazena esses dados em seu nome.
 * O Adobe atua como o **processador de dados** para fornecer o software e os serviços necessários para implementar os requisitos do GDPR com base no seu contrato com o Adobe.
-* Após a integração do Data Workbench com o serviço GDPR e de acordo com os padrões do GDPR, os visitantes de um site (o **titulares de dados**) podem exercer seu &quot;direito de ser esquecido&quot; pelo Adobe, o processador de dados. Para obter o direito de ser esquecido, você, como controlador de dados, pode fazer upload de IDs de visitante desafiadas para o Adobe a partir de uma interface do usuário ou API. Consulte a documentação [Fluxo de trabalho do GDPR do Adobe Analytics](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) para obter mais informações, incluindo a seção [enviar solicitações de acesso e exclusão](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+* Após a integração do Data Workbench com o serviço GDPR e de acordo com os padrões do GDPR, os visitantes de um site (o **titulares de dados**) podem exercer seu &quot;direito de ser esquecido&quot; pelo Adobe, o processador de dados. Para obter o direito de ser esquecido, você, como controlador de dados, pode fazer upload de IDs de visitante desafiadas para o Adobe a partir de uma interface do usuário ou API. Consulte a documentação [Fluxo de trabalho do GDPR do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=en) para obter mais informações, incluindo a seção [enviar solicitações de acesso e exclusão](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 >[!NOTE]
 >
