@@ -3,9 +3,9 @@ description: Informações para gerar relatórios como arquivos Excel.
 title: Gerar relatórios como arquivos do Microsoft Excel
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '474'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ Se esses requisitos forem atendidos, [!DNL Report Server] inicia automaticamente
 
 A menos que você tenha especificado um [!DNL Custom Title] para a visualização, o tipo de janela (por exemplo, Tabela de filmes) é usado como o nome da planilha.
 
-Para obter mais informações sobre como especificar [!DNL Custom Titles] para visualizações, consulte o [Guia do Cliente do Data Workbench](https://docs.adobe.com/content/help/pt-BR/data-workbench/using/client/t-open-ins.html).
+Para obter mais informações sobre como especificar [!DNL Custom Titles] para visualizações, consulte o [Guia do Cliente do Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=pt-BR).
 
 ## Usando um arquivo de modelo {#section-40ab11916f464b1a88214ab969da6751}
 

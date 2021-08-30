@@ -3,9 +3,9 @@ description: Informações sobre os parâmetros Report.cfg.
 title: Parâmetros do Report.cfg
 uuid: 7a20f4f6-99e6-401a-ba3c-c508881c0f0d
 exl-id: 31e4de5f-f7e8-4a35-b5c6-6ad8ef79a259
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2348'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Se precisar adicionar mais parâmetros a um arquivo [!DNL Report.cfg], faça iss
   </tr> 
   <tr> 
    <td colname="col1"> Anexos </td> 
-   <td colname="col2"> <p><i>Opcional</i>. Identificador de seção para o nome e tipo de conteúdo de qualquer anexo que sai com relatórios distribuídos por email, incluindo o número de anexos. </p> <p>Para adicionar um novo anexo: 
+   <td colname="col2"> <p><i>Opcional</i>. Identificador de seção para o nome e o tipo de conteúdo de qualquer anexo que sai com relatórios distribuídos por email, incluindo o número de anexos. </p> <p>Para adicionar um novo anexo: 
      <ol id="ol_CBDC1E95D34A4D08A862680127438433"> 
       <li id="li_784C48C540534F4CBB35BBDA6BC5F48E">Abra o arquivo <span class="filepath"> Report.cfg </span> no Data Workbench. </li> 
       <li id="li_0709ADDDDF2E469FAB10761B46173136">Clique com o botão direito do mouse em <span class="uicontrol"> Attachments </span> e clique em <span class="uicontrol"> Add new child </span> &gt; <span class="uicontrol"> Attachment </span>. </li> 
@@ -92,7 +92,7 @@ Se precisar adicionar mais parâmetros a um arquivo [!DNL Report.cfg], faça iss
   </tr> 
   <tr> 
    <td colname="col1"> Filtrar fórmula </td> 
-   <td colname="col2"> <p><i>Opcional</i>. Filtro que é aplicado a cada espaço de trabalho no conjunto de relatórios. </p> <p>Para obter mais informações, consulte a sintaxe <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Filter_Expressions" format="http" scope="external"> para criar filtros </a>. </p> </td> 
+   <td colname="col2"> <p><i>Opcional</i>. Filtro que é aplicado a cada espaço de trabalho no conjunto de relatórios. </p> <p>Para obter mais informações, consulte a sintaxe <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Filter_Expressions" format="http" scope="external"> para criar filtros </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Correção gama </td> 

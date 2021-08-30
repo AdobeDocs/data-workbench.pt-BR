@@ -3,9 +3,9 @@ description: Novos recursos introduzidos no Data Workbench 6.0.4, incluindo corr
 title: Notas de versão do Data Workbench 6.0
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1677'
 ht-degree: 2%
 
 ---
@@ -258,7 +258,7 @@ Para usar o novo feed de dados do SiteCatalyst:
 
 Novos recursos introduzidos no Data Workbench 6.0.4, incluindo correções de erros e problemas conhecidos.
 
-Para visualizar os recursos e correções anteriores com base em cada versão anterior, consulte os [arquivos da nota de versão](https://docs.adobe.com/content/help/pt-BR/data-workbench/using/release-notes/release-notes.html).
+Para visualizar os recursos e correções anteriores com base em cada versão anterior, consulte os [arquivos da nota de versão](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html).
 
 ## Novos recursos {#section-2-1225066ea8f44cf68e42e019d0bca816}
 

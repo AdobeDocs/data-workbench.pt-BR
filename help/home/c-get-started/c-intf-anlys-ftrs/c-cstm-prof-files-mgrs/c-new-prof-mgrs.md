@@ -3,9 +3,9 @@ description: O Gerenciador de perfis exibe todos os diretórios associados ao se
 title: Criar um gerenciador de perfis
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
 exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ O Gerenciador de perfis exibe todos os diretórios associados ao seu perfil de t
 
 Talvez você queira acessar um subdiretório do [!DNL Profile Manager] sem precisar navegar por toda a estrutura de diretório. Por exemplo, as opções de menu [!DNL Metrics] e [!DNL Workspaces] disponíveis no menu [!DNL Manage] do menu da janela do espaço de trabalho permitem abrir as pastas Métricas e espaços de trabalho do Gerenciador de perfis , respectivamente.
 
-Para obter mais informações sobre o [!DNL Profile Manager], consulte [O gerenciador de perfis](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
+Para obter mais informações sobre o [!DNL Profile Manager], consulte [O gerenciador de perfis](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
 
 Por padrão, você tem acesso aos seguintes gerentes:
 

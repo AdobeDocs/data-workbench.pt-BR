@@ -3,9 +3,9 @@ description: Informações sobre os parâmetros Report Server.cfg.
 title: Parâmetros do Report Server.cfg
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
 exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 2%
 
 ---
@@ -166,7 +166,7 @@ A tabela a seguir fornece descrições dos parâmetros do arquivo [!DNL Report S
   </tr> 
   <tr> 
    <td colname="col1"> Intervalo de Status </td> 
-   <td colname="col2"> <p>A frequência (em segundos) com a qual o <span class="wintitle"> Servidor de Relatório </span> gera e envia informações de status para o servidor do Data Workbench a ser exibido em <span class="wintitle"> Status Detalhado </span>. </p> <p>O valor padrão é de 120 segundos. Não é recomendável definir esse valor como um valor pequeno, como dois minutos, pois uma fila de relatórios pode levar horas para ser executada. Nesse caso, você pode considerar uma configuração de 600 a 1200 segundos. </p> <p>Para obter mais informações sobre <span class="wintitle"> Status Detalhado </span>, consulte o capítulo Interfaces Administrativas do <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Guia do Usuário do Insight </a>. </p> </td> 
+   <td colname="col2"> <p>A frequência (em segundos) com a qual o <span class="wintitle"> Servidor de Relatório </span> gera e envia informações de status para o servidor do Data Workbench a ser exibido em <span class="wintitle"> Status Detalhado </span>. </p> <p>O valor padrão é de 120 segundos. Não é recomendável definir esse valor como um valor pequeno, como dois minutos, pois uma fila de relatórios pode levar horas para ser executada. Nesse caso, você pode considerar uma configuração de 600 a 1200 segundos. </p> <p>Para obter mais informações sobre <span class="wintitle"> Status Detalhado </span>, consulte o capítulo Interfaces Administrativas do <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Guia do Usuário do Insight </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Intervalo de atualização </td> 

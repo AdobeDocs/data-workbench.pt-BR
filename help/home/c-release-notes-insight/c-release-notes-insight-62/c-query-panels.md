@@ -2,9 +2,9 @@
 description: Use os painéis do Localizador no Data Workbench para selecionar métricas, dimensões e filtros. Esses painéis fornecem suporte de pesquisa, opções de classificação e recursos de arrastar e soltar.
 title: Localizadores
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ O **Localizador** inclui os seguintes recursos:
     <ul id="ul_0F6F377E9906472E99008EBE7483F689"> 
      <li id="li_75857895EDB045C8B2960393854B257D"> <p>Correspondência de padrão (pesquisa glob simples). Comece a digitar o nome de uma dimensão, métrica ou entidade de filtro necessária no campo Pesquisar e somente as strings correspondentes contidas em qualquer lugar do nome serão filtradas e exibidas no painel Localizadores . </p> <p>Por exemplo, digite: </p> <code><b>Search:</b>click</code> <p>Você pode obter os seguintes resultados no Localizador do Dimension: </p> <p><img placement="break" id="image_7CBAAABA92BB47658B7F9F5C0263CF20" src="assets/finders_glob_search.png" /> </p> <p>A correspondência padrão permite usar caracteres curingas, como . (ponto), "?" e "*" (estrela). </p> </li> 
      <li id="li_044F9EC1399B44CD81E1852F85137704"> <p>Expressões regulares. Expressões regulares mais complexas também são compatíveis com recursos de pesquisa adicionados. Adicione o prefixo "re:" antes do termo de pesquisa (sem espaços) para interpretar como uma expressão regular. </p> <p>Por exemplo, digite: </p> <code><b>Search:</b>re.*ip</code> <p>Você pode obter os seguintes resultados no Localizador do Dimension: </p> <p><img placement="break" id="image_F47DB90B36504997AA1C509855B89A47" src="assets/finders_regex_search.png" /> </p> </li> 
-    </ul> <p>Para obter informações de pesquisa aprofundadas, consulte <a href="https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external"> expressões regulares</a>. </p> </td> 
+    </ul> <p>Para obter informações de pesquisa aprofundadas, consulte <a href="https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external"> expressões regulares</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>Tipo de Dimension</b> </td> 

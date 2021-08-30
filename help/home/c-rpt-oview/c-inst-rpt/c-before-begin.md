@@ -3,9 +3,9 @@ description: Para que alguns dos recursos do Servidor de relatórios funcionem, 
 title: Antes de começar
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Para que alguns dos recursos do Servidor de relatórios funcionem, você deve fo
 
 ## Requisitos básicos do servidor de relatórios {#section-e891eaee79fe4fa98e658426dc3b2777}
 
-Os relatórios enviados podem estar na forma de imagens .PNG ou planilhas .XLS colocadas em um sistema de arquivos ou como emails. Os requisitos de hardware são idênticos ao [cliente do Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements).
+Os relatórios enviados podem estar na forma de imagens .PNG ou planilhas .XLS colocadas em um sistema de arquivos ou como emails. Os requisitos de hardware são idênticos ao [cliente do Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements).
 
 Existem os seguintes requisitos para o Servidor de relatórios:
 

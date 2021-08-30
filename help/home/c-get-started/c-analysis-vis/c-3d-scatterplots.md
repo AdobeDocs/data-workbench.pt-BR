@@ -3,9 +3,9 @@ description: Um Gráfico de dispersão 3D gráfico os elementos de uma dimensão
 title: Gráficos de dispersão 3D
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Um Gráfico de dispersão 3D gráfico os elementos de uma dimensão de dados (como Dias ou Site de referência) em uma grade tridimensional em que os eixos x, y e z representam várias métricas.
 
-Como o [Gráfico de dispersão 2D](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Scatter_Plots), essa visualização é útil ao tentar entender a relação entre um grande número de itens diferentes usando métricas diferentes.
+Como o [Gráfico de dispersão 2D](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots), essa visualização é útil ao tentar entender a relação entre um grande número de itens diferentes usando métricas diferentes.
 
 **Para usar a visualização do Gráfico de dispersão 3D:**
 

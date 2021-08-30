@@ -1,23 +1,23 @@
 ---
 description: Documentação do Data Workbench
 title: Ajuda do Data Workbench
-feature: Noções básicas do Reports & Analytics
+feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
-workflow-type: ht
-source-wordcount: '273'
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '266'
 ht-degree: 100%
 
 ---
 
-# Ajuda do Data Workbench {#data-workbench-help}
+# Ajuda do Data Workbench{#data-workbench-help}
 
 ![Banner](/help/home/assets/doc_banner_workbench.png)
 
 [O Data Workbench](http://www.adobe.com/br/solutions/digital-analytics/data-workbench.html) faz parte do [Adobe Analytics](http://www.adobe.com/br/solutions/digital-analytics.html). Ele oferece funcionalidades altamente flexíveis e eficientes projetadas para coletar, processar, analisar e visualizar dados de interações de clientes online e offline em todos os dados: Web, CRM, POS e outros. Relatório interativos no Data Workbench permitem que você analise e reaja à informações estatísticas pertinentes para monitorar e prever as tendências dos clientes.
 
-* ![ícone do analytics](assets/analytics-icon-24.png) [Documentação do Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/home.html)
+* ![ícone do analytics](assets/analytics-icon-24.png) [Documentação do Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html?lang=pt-BR)
 * ![ícone de pdf](assets/pdf_icon.png) [Baixe toda a documentação do Data Workbench em PDF](/help/home/assets/data-workbench.pdf)
 
 ## Principais tópicos
@@ -35,7 +35,7 @@ O Data Workbench inclui esses recursos de análise preditiva, visualizações de
 
 ## Mais guias do usuário do Analytics
 
-[Guias do usuário do Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/home.html)
+[Guias do usuário do Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
 
 ## Notas de versão e novos recursos do Data Workbench
 

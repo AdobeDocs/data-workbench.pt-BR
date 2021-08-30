@@ -3,10 +3,10 @@ description: Você pode criar vários espaços de trabalho para um único conjun
 title: Criar espaços de trabalho do servidor de relatórios
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
 exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 10%
+source-wordcount: '185'
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Você pode criar vários espaços de trabalho para um único conjunto de relatórios diretamente na Área de trabalho.
 
-Para obter informações sobre o Data Workbench e usar a interface, consulte o [Guia do Cliente do Data Workbench](https://docs.adobe.com/content/help/pt-BR/data-workbench/using/client/t-open-ins.html).
+Para obter informações sobre o Data Workbench e usar a interface, consulte o [Guia do Cliente do Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=pt-BR).
 
 **Para criar um espaço de trabalho de relatório usando o[!DNL Worktop]**
 

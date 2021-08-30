@@ -3,9 +3,9 @@ description: A configuração do conjunto de dados refere-se ao processo de edi�
 title: Entender a configuração do conjunto de dados
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ Embora não seja necessário para todos os conjuntos de dados, esses arquivos pe
 
 * **Server.cfg:** o  [!DNL Server.cfg] arquivo especifica o tamanho padrão do cache de dados (em bytes) para máquinas do Data Workbench que se conectam ao servidor do Data Workbench. Consulte [Arquivos de Configuração Adicionais](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Transform.cfg e Transform Mode.cfg:** Esses arquivos estarão disponíveis somente se você tiver licenciado a funcionalidade de transformação de dados a ser usada com seu aplicativo Adobe. O arquivo [!DNL Transform.cfg] contém os parâmetros que definem as fontes de log e as transformações de dados para a funcionalidade de transformação. As transformações definidas manipulam os dados de origem e os produzem em um formato especificado. O arquivo [!DNL Insight Transform Mode.cfg] permite pausar o processamento de dados em um conjunto de dados, especificar fontes offline ou especificar a frequência na qual o Servidor Insight que está executando a funcionalidade de transformação salva seus arquivos de estado. Consulte [Funcionalidade de transformação](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
+* **Transform.cfg e Transform Mode.cfg:** Esses arquivos estarão disponíveis somente se você tiver licenciado a funcionalidade de transformação de dados a ser usada com seu aplicativo Adobe. O arquivo [!DNL Transform.cfg] contém os parâmetros que definem as fontes de log e as transformações de dados para a funcionalidade de transformação. As transformações definidas manipulam os dados de origem e os produzem em um formato especificado. O arquivo [!DNL Insight Transform Mode.cfg] permite pausar o processamento de dados em um conjunto de dados, especificar fontes offline ou especificar a frequência na qual o Servidor Insight que está executando a funcionalidade de transformação salva seus arquivos de estado. Consulte [Funcionalidade de transformação](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
 <!--
 c_next_steps.xml

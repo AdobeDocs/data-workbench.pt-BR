@@ -3,9 +3,9 @@ description: Os filtros de perfil restringem o escopo dos dados disponíveis em 
 title: Filtros de perfil embutidos
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Os usuários podem criar eles mesmos subconjuntos de dados ou acessar subconjunt
 >
 >É possível criar vários subconjuntos de dados e alterá-los para exibir partes diferentes dos dados. Lembre-se de desativar o Subconjunto de dados quando quiser exibir todos os dados. Caso contrário, seus valores de métrica não serão representativos de todos os dados no conjunto de dados.
 
-## Filtro de Sessão Interrompido {#section-1608e97da6464b11aea27cbb7f3160e4}
+## Filtro de Sessão Quebrada {#section-1608e97da6464b11aea27cbb7f3160e4}
 
 O Filtro de sessão quebrada é uma fórmula de métrica que pode ser facilmente modificada para atender a quaisquer requisitos de filtragem. Nos perfis padrão do Site, o Filtro de Sessão Quebrada é configurado para incluir todos os visitantes que têm um Sinalizador Visitado definido como 1. O valor 1 indica a presença de um cookie de rastreamento para esse visitante.
 
@@ -51,4 +51,4 @@ entity = derived_filter:
 
 Por padrão, os espaços de trabalho têm o filtro Sessão quebrada aplicado à sua seleção e aos seus benchmarks, e ele pode ser alternado clicando com o botão direito do mouse no espaço de trabalho e clicando em Dados > Filtro de sessão quebrada.
 
-O Filtro de Sessão Quebrada pode ser referenciado em expressões de filtro como Broken_Session_Filter, mesmo se não estiver habilitado para o espaço de trabalho atual. Consulte [expressões de filtro](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) para obter mais informações.
+O Filtro de Sessão Quebrada pode ser referenciado em expressões de filtro como Broken_Session_Filter, mesmo se não estiver habilitado para o espaço de trabalho atual. Consulte [expressões de filtro](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) para obter mais informações.

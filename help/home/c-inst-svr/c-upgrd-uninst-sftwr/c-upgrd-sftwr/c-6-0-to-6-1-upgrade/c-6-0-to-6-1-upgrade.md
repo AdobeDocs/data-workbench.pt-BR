@@ -3,9 +3,9 @@ description: Siga estas etapas para atualizar para o Data Workbench v6.1 a parti
 title: Atualização do Data Workbench 6.0 para 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Siga estas etapas para atualizar os componentes **[!UICONTROL Server v6.1]**:
    1. Substitua a pasta [!DNL Server\Software] para atualizar [!DNL Insight.exe] e [!DNL ReportServer.exe]
    1. Atualize a pasta [!DNL Server\Scripts] para atualizar [!DNL TnTSend.exe].
 
-1. Se você usar **[!UICONTROL DeviceAtlas]**, será necessário [atualizar o pacote](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) localizado na pasta [!DNL Server\Lookups].
+1. Se você usar **[!UICONTROL DeviceAtlas]**, será necessário [atualizar o pacote](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) localizado na pasta [!DNL Server\Lookups].
 
 1. Configure o arquivo [!DNL Profile.cfg] para garantir que o vetor seja atualizado para refletir o número de itens para cada perfil.
 
