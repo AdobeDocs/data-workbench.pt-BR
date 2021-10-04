@@ -3,9 +3,9 @@ description: Abra a Atribuição de melhor ajuste no menu Premium e siga estas e
 title: Criar um modelo de atribuição de melhor ajuste
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Consulte uma visão geral de [Melhor atribuição de ajuste](../../../../home/c-
 
    >[!NOTE]
    >
-   >A Atribuição de melhor ajuste é um recurso do Adobe Analytics Premium que requer a ativação do Premium no seu perfil. Ele requer que você atualize seu certificado e adicione o perfil Premium ao arquivo profile.cfg. Consulte [Atualização do servidor DWB: 6.2 a 6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html) para DWB 6.3.
+   >A Atribuição de melhor ajuste é um recurso do Adobe Analytics Premium que requer a ativação do Premium no seu perfil. Ele requer que você atualize seu certificado e adicione o perfil Premium ao arquivo profile.cfg. Consulte [Atualização do servidor DWB: 6.2 a 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) para DWB 6.3.
 
 1. Defina a métrica **[!UICONTROL Success]** .
 
@@ -108,54 +108,54 @@ Quando concluído, um gráfico exibirá um modelo de atribuição calculado por 
 
 O menu **Options** fornece recursos avançados para configurar e exibir a análise de Melhor Ajuste da Atribuição.
 
-<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Menu Opções </th> 
-   <th colname="col2" class="entry"> Descrição </th> 
+<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Menu Opções </th>
+   <th colname="col2" class="entry"> Descrição </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Definir filtro de treinamento  </span> </td> 
-   <td colname="col2"> O Filtro de treinamento é usado com a Janela de sucesso para filtrar a população ao criar o modelo de atribuição. Isso fornecerá um subconjunto de dados que inclui apenas os visitantes que você deseja analisar. <p>Observação: Os usuários experientes também podem aproveitar a flexibilidade dos filtros para se concentrar além da linha de tempo das janelas Sucesso e Toque. Por exemplo, além de selecionar um intervalo de tempo, você pode selecionar um conjunto de <i>Domínios de referência</i> para examinar apenas a atribuição para usuários desses domínios. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Mostrar descrição de filtro complexo  </span> </td> 
-   <td colname="col2"> Exibe o código de filtro para o Filtro de treinamento, a Janela de sucesso e a Janela de toque. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Salvar modelo  </span> </td> 
-   <td colname="col2"> Salva o modelo de atribuição atual para uso futuro. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Modelo de carga  </span> </td> 
-   <td colname="col2"> Abre um modelo de atribuição salvo anteriormente. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Exibição da apresentação  </span> </td> 
-   <td colname="col2"> Oculta a barra de menu superior para apresentação. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Opções &gt; </b> Avançado inclui recursos para definir o tamanho do conjunto de treinamento e especificar a abordagem a ser adotada em caso de desequilíbrio de classe. </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Avançado &gt; Tamanho do conjunto de treinamento  </span> </td> 
-   <td colname="col2"> <p>Define o tamanho do conjunto de treinamento. </p> <p>Observação:  O tamanho de treinamento padrão é Grande para 250.000 visitantes. </p> 
-    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD"> 
-     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Minúsculo = 50.000 </li> 
-     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Pequeno = 75.000 </li> 
-     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normal = 100.000 </li> 
-     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Grande = 250,00 </li> 
-     <li id="li_34B60233C84F48F1BCB8040C5195411A">Enorme = 500.000 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>Avançado &gt; Saldo de classe  </b> </td> 
-   <td colname="col2"> <p>Identifica e define o número de registros de entrada a serem gerados para um problema de desequilíbrio de classe com base no tamanho do conjunto de dados. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Definir filtro de treinamento  </span> </td>
+   <td colname="col2"> O Filtro de treinamento é usado com a Janela de sucesso para filtrar a população ao criar o modelo de atribuição. Isso fornecerá um subconjunto de dados que inclui apenas os visitantes que você deseja analisar. <p>Observação: Os usuários experientes também podem aproveitar a flexibilidade dos filtros para se concentrar além da linha de tempo das janelas Sucesso e Toque. Por exemplo, além de selecionar um intervalo de tempo, você pode selecionar um conjunto de <i>Domínios de referência</i> para examinar apenas a atribuição para usuários desses domínios. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Mostrar descrição de filtro complexo  </span> </td>
+   <td colname="col2"> Exibe o código de filtro para o Filtro de treinamento, a Janela de sucesso e a Janela de toque. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Salvar modelo  </span> </td>
+   <td colname="col2"> Salva o modelo de atribuição atual para uso futuro. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Modelo de carga  </span> </td>
+   <td colname="col2"> Abre um modelo de atribuição salvo anteriormente. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Exibição da apresentação  </span> </td>
+   <td colname="col2"> Oculta a barra de menu superior para apresentação. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>Opções &gt; </b> Avançado inclui recursos para definir o tamanho do conjunto de treinamento e especificar a abordagem a ser adotada em caso de desequilíbrio de classe. </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Avançado &gt; Tamanho do conjunto de treinamento  </span> </td>
+   <td colname="col2"> <p>Define o tamanho do conjunto de treinamento. </p> <p>Observação:  O tamanho de treinamento padrão é Grande para 250.000 visitantes. </p>
+    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
+     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Minúsculo = 50.000 </li>
+     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Pequeno = 75.000 </li>
+     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normal = 100.000 </li>
+     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Grande = 250,00 </li>
+     <li id="li_34B60233C84F48F1BCB8040C5195411A">Enorme = 500.000 </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><b>Avançado &gt; Saldo de classe  </b> </td>
+   <td colname="col2"> <p>Identifica e define o número de registros de entrada a serem gerados para um problema de desequilíbrio de classe com base no tamanho do conjunto de dados. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 | Opções Redefinir e Remover | Descrição |
