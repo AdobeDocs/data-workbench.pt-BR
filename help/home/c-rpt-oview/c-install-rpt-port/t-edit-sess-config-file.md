@@ -3,7 +3,7 @@ description: O Portal de relatórios usa as informações em um arquivo de confi
 title: Editar o arquivo de configuração da sessão
 uuid: c1bcd4d2-9bf5-425a-bda2-7f805983cdc6
 exl-id: 98cf2e11-afb8-4530-aaa4-ea3c913effc1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -30,8 +30,8 @@ Ao instalar [!DNL Report Portal], é necessário editar esse arquivo, conforme i
 1. Salve o arquivo.
 1. Para verificar se os arquivos [!DNL Report Portal] foram instalados corretamente e podem ser acessados por meio de seu diretório virtual designado, abra a seguinte página no navegador:
 
-   http://*YourServerAddress*/*YourPortalName*
+   https://*YourServerAddress*/*YourPortalName*
 
-   Exemplo: [!DNL http://localhost/VisualReportPortal]
+   Exemplo: [!DNL https://localhost/VisualReportPortal]
 
    Se as [!DNL Report Portal] ASPs tiverem sido instaladas corretamente, você deverá ver a página de logon do portal. Se você não vir esta página, verifique se os ASPs estão ativados no IIS e verifique novamente os mapeamentos de diretório virtual.

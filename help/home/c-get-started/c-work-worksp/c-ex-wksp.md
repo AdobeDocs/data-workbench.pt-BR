@@ -3,7 +3,7 @@ description: Você pode exportar um espaço de trabalho como um arquivo de image
 title: Exportar um espaço de trabalho
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -41,10 +41,9 @@ Para exportar espaços de trabalho e janelas individuais para o Microsoft Excel,
 
 >[!NOTE]
 >
->* Ao exportar dados como arquivos do Excel, você está abrindo uma nova instância do Excel. Para obter mais informações sobre esse processo, consulte [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
+>* Ao exportar dados como arquivos do Excel, você está abrindo uma nova instância do Excel. Para obter mais informações sobre esse processo, consulte [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
 >* Embora o Data Workbench seja compatível com mais de 256 colunas e 65.536 linhas de dados, as versões do Microsoft Excel anteriores ao 8.0 não são compatíveis.
 >
-
 
 
 Se esses requisitos forem atendidos, o Data Workbench inicia automaticamente o Microsoft Excel e exporta os dados para uma nova pasta de trabalho do Excel. Os dados não são exportados das seguintes visualizações: gráficos, navegadores de caminhos, mapas de processos, gráficos de dispersão e globos.

@@ -3,7 +3,7 @@ description: Etapas para abrir o portal de relatórios e garantir que você poss
 title: Testar o portal de relatórios
 uuid: eee0df5e-78e0-49b2-853c-40f1b332328b
 exl-id: 197ff815-9234-4dce-b30f-b9cacf259634
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 6%
@@ -20,9 +20,9 @@ Etapas para abrir o portal de relatórios e garantir que você possa exibir os r
 
 1. No navegador da Web, abra o [!DNL Report Portal] usando o seguinte formato de URI:
 
-   http://*ServerAddress*/*PortalName*
+   https://*ServerAddress*/*PortalName*
 
-   Exemplo: [!DNL http://localhost/VisualReportPortal]
+   Exemplo: [!DNL https://localhost/VisualReportPortal]
 
 1. Se [!DNL Report Portal] solicitar credenciais de logon, digite um nome de conta e uma senha (por exemplo, conta &quot;teste&quot; e senha &quot;usuário&quot; para a conta padrão).
 1. Quando o [!DNL Report Portal] for exibido, verifique se:

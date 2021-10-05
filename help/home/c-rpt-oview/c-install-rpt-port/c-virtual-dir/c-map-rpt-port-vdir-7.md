@@ -3,7 +3,7 @@ description: Etapas para mapear o portal de relatórios para um diretório virtu
 title: Mapear o portal de relatórios para um diretório virtual (IIS 7.0 ou superior)
 uuid: 9d18fb85-f9d7-48b6-a19b-1e7b68a5adca
 exl-id: 2fa3439a-1fe5-4a20-83db-d233ae8b5263
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%
@@ -61,4 +61,4 @@ Atualmente, a maioria dos clientes de Serviço Gerenciado tem servidores com o s
 * Você não precisa mais do [!DNL ReportPortalSetup.xml], então ele pode ser excluído.
 * Por uma questão de padronização, coloque o conteúdo desse arquivo zip em [!DNL E:\Portal].
 * Para determinar o servidor SMTP para clientes de serviços gerenciados, você pode consultar aqui.
-* Coloque uma solicitação com NetOps para alterar a entrada de nome de domínio no IIS para o servidor de relatório para algo mais amigável - por exemplo, [!DNL reports.clientname.insight.omniture.com], para que o URL geral do portal seja [!DNL http://reports.clientname.insight.omniture.com/Portal]. Configure seu arquivo [!DNL email.asa] assim que essa alteração for implementada.
+* Coloque uma solicitação com NetOps para alterar a entrada de nome de domínio no IIS para o servidor de relatório para algo mais amigável - por exemplo, [!DNL reports.clientname.insight.omniture.com], para que o URL geral do portal seja [!DNL https://reports.clientname.insight.omniture.com/Portal]. Configure seu arquivo [!DNL email.asa] assim que essa alteração for implementada.

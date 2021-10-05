@@ -3,7 +3,7 @@ description: Os sites arquitetados com o Flash exigem atenção especial em rela
 title: Rastrear atividade do visitante no conteúdo de mídia avançada em flash
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
@@ -21,11 +21,11 @@ Para facilitar o rastreamento da atividade do Visitante em seu filme [!DNL Flash
 1. Adicione o seguinte código de ActionScript ao seu filme. Este código representa uma função que pode ser chamada por eventos no filme [!DNL Flash] que você deseja rastrear.
 
    ```
-   // FLASH TAG CODE BEGIN 
-   var FLASHTAGURI = "[PATH_TO_WEB_SERVER]/flashtag.txt"; 
-   function tag(PAGENAME,VARIABLES) { 
-   loadVariablesNum(FLASHTAGURI+”?”+"PAGENAME="+PAGENAME+"&"+VARIABLES,0); 
-   } 
+   // FLASH TAG CODE BEGIN
+   var FLASHTAGURI = "[PATH_TO_WEB_SERVER]/flashtag.txt";
+   function tag(PAGENAME,VARIABLES) {
+   loadVariablesNum(FLASHTAGURI+”?”+"PAGENAME="+PAGENAME+"&"+VARIABLES,0);
+   }
    // FLASH TAG CODE END
    ```
 
@@ -33,7 +33,7 @@ Para facilitar o rastreamento da atividade do Visitante em seu filme [!DNL Flash
 1. Na função na Etapa 1, substitua o espaço reservado \[[!DNL PATH_TO_WEB_SERVER]\] pelo caminho relativo totalmente qualificado para o local do arquivo [!DNL flashtag.txt]. Por exemplo:
 
    ```
-   var FLASHTAGURI = http://www.mysite.com/flashtag/flashtag.txt”;
+   var FLASHTAGURI = https://www.mysite.com/flashtag/flashtag.txt”;
    ```
 
 1. Adicione o seguinte código de ActionScript a todos os eventos a serem rastreados. Este código representa uma chamada de função usada para capturar dados sobre o evento:
@@ -63,86 +63,86 @@ Para facilitar o rastreamento da atividade do Visitante em seu filme [!DNL Flash
    Sua configuração de rastreamento de visitantes no conteúdo de mídia avançada [!DNL Flash] agora está concluída. Quando o evento for chamado, a função tag [!DNL (PAGENAME,VARIABLES)] será chamada, resultando em uma solicitação HTTP sendo feita para o arquivo a seguir. Esta função será chamada além de outras funções que podem ser acionadas conforme definido no filme [!DNL Flash]:
 
    ```
-   http://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
+   https://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
 A solicitação HTTP resultante da função [!DNL Flash] Tag ActionScript resulta na coleta das seguintes informações em relação a cada evento no filme [!DNL Flash]. A última linha na tabela (W3C Name cs-uri-query) representa as informações coletadas para as variáveis adicionais especificadas na chamada de função.
 
-<table id="table_A7ED9D38F36B4405947B2F48EA94D3C4"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Nome W3C </th> 
-   <th colname="col2" class="entry"> Dados Coletados </th> 
-   <th colname="col3" class="entry"> Explicação </th> 
-   <th colname="col4" class="entry"> Exemplo </th> 
-  </tr> 
+<table id="table_A7ED9D38F36B4405947B2F48EA94D3C4">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Nome W3C </th>
+   <th colname="col2" class="entry"> Dados Coletados </th>
+   <th colname="col3" class="entry"> Explicação </th>
+   <th colname="col4" class="entry"> Exemplo </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> Identificador de rastreamento (visitante único) </td> 
-   <td colname="col3"> Identificador lido de um cookie colocado no navegador do usuário pelo <span class="wintitle"> Sensor </span> na solicitação inicial do Visitante </td> 
-   <td colname="col4"> v1st=3C94007B4E01F9C2 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Data </p> <p>Hora </p> </td> 
-   <td colname="col2"> Carimbo de data e hora </td> 
-   <td colname="col3"> Hora em que a solicitação foi processada pelo servidor (com precisão de 100ns; a precisão depende do ambiente do servidor e do NTP) </td> 
-   <td colname="col4"> 2002-11-21 17:21:45.123 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> sc(content-Type) </td> 
-   <td colname="col2"> Tipo de conteúdo </td> 
-   <td colname="col3"> Tipo de objeto retornado do servidor </td> 
-   <td colname="col4"> Texto/html </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> sc-status </td> 
-   <td colname="col2"> Código de status de resposta HTTP </td> 
-   <td colname="col3"> Código numérico gerado pelo servidor que anota o status da resposta do servidor HTTP </td> 
-   <td colname="col4"> 200 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs-uri-stem </td> 
-   <td colname="col2"> Etapa URI </td> 
-   <td colname="col3"> A parte do sistema do URI solicitada pelo cliente </td> 
-   <td colname="col4"> /flashtag/flashtag.txt </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> c-ip </td> 
-   <td colname="col2"> IP do cliente </td> 
-   <td colname="col3"> Endereço IP do cliente requerente </td> 
-   <td colname="col4"> 127.0.0.1 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> s-dns </td> 
-   <td colname="col2"> Nome de domínio do servidor </td> 
-   <td colname="col3"> Nome do domínio do servidor da Web que processa a solicitação </td> 
-   <td colname="col4"> www.mysite.com </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> URL de referência </td> 
-   <td colname="col3"> Conteúdo do campo do referenciador HTTP enviado pelo cliente </td> 
-   <td colname="col4"></td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs(user-agent) </td> 
-   <td colname="col2"> Agente do usuário </td> 
-   <td colname="col3"> Dispositivo usado para fazer uma solicitação ao servidor HTTP </td> 
-   <td colname="col4"> Mozilla/4.0+(compatível;+MSIE+6.0; +Windows+NT+5.1) </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs(cookie) </td> 
-   <td colname="col2"> Cookies do cliente do domínio </td> 
-   <td colname="col3"> Conteúdo de todos os cookies do usuário para o site </td> 
-   <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x1038058778312282052 </p> <p>KL_PVKL972 0 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> String de consulta </td> 
-   <td colname="col3"> A parte da sequência de consulta, se houver, do URI solicitado pelo cliente </td> 
-   <td colname="col4"> PAGENAME=/about_us/index.swf&amp;var1=value1&amp;var2=value2 </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> x-trackingid </td>
+   <td colname="col2"> Identificador de rastreamento (visitante único) </td>
+   <td colname="col3"> Identificador lido de um cookie colocado no navegador do usuário pelo <span class="wintitle"> Sensor </span> na solicitação inicial do Visitante </td>
+   <td colname="col4"> v1st=3C94007B4E01F9C2 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Data </p> <p>Hora </p> </td>
+   <td colname="col2"> Carimbo de data e hora </td>
+   <td colname="col3"> Hora em que a solicitação foi processada pelo servidor (com precisão de 100ns; a precisão depende do ambiente do servidor e do NTP) </td>
+   <td colname="col4"> 2002-11-21 17:21:45.123 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> sc(content-Type) </td>
+   <td colname="col2"> Tipo de conteúdo </td>
+   <td colname="col3"> Tipo de objeto retornado do servidor </td>
+   <td colname="col4"> Texto/html </td>
+  </tr>
+  <tr>
+   <td colname="col1"> sc-status </td>
+   <td colname="col2"> Código de status de resposta HTTP </td>
+   <td colname="col3"> Código numérico gerado pelo servidor que anota o status da resposta do servidor HTTP </td>
+   <td colname="col4"> 200 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs-uri-stem </td>
+   <td colname="col2"> Etapa URI </td>
+   <td colname="col3"> A parte do sistema do URI solicitada pelo cliente </td>
+   <td colname="col4"> /flashtag/flashtag.txt </td>
+  </tr>
+  <tr>
+   <td colname="col1"> c-ip </td>
+   <td colname="col2"> IP do cliente </td>
+   <td colname="col3"> Endereço IP do cliente requerente </td>
+   <td colname="col4"> 127.0.0.1 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> s-dns </td>
+   <td colname="col2"> Nome de domínio do servidor </td>
+   <td colname="col3"> Nome do domínio do servidor da Web que processa a solicitação </td>
+   <td colname="col4"> www.mysite.com </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs(referrer) </td>
+   <td colname="col2"> URL de referência </td>
+   <td colname="col3"> Conteúdo do campo do referenciador HTTP enviado pelo cliente </td>
+   <td colname="col4"></td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs(user-agent) </td>
+   <td colname="col2"> Agente do usuário </td>
+   <td colname="col3"> Dispositivo usado para fazer uma solicitação ao servidor HTTP </td>
+   <td colname="col4"> Mozilla/4.0+(compatível;+MSIE+6.0; +Windows+NT+5.1) </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs(cookie) </td>
+   <td colname="col2"> Cookies do cliente do domínio </td>
+   <td colname="col3"> Conteúdo de todos os cookies do usuário para o site </td>
+   <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x1038058778312282052 </p> <p>KL_PVKL972 0 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs-uri-query </td>
+   <td colname="col2"> String de consulta </td>
+   <td colname="col3"> A parte da sequência de consulta, se houver, do URI solicitado pelo cliente </td>
+   <td colname="col4"> PAGENAME=/about_us/index.swf&amp;var1=value1&amp;var2=value2 </td>
+  </tr>
+ </tbody>
 </table>

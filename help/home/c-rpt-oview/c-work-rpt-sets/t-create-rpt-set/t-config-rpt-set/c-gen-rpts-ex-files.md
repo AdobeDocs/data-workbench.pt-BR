@@ -3,7 +3,7 @@ description: Informações para gerar relatórios como arquivos Excel.
 title: Gerar relatórios como arquivos do Microsoft Excel
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 4%
@@ -22,9 +22,9 @@ Os seguintes requisitos devem ser atendidos:
    >[!NOTE]
    >
    >
-   >    
-   >    
-   >    * Ao gerar relatórios como arquivos do Excel, você está abrindo uma nova instância do Excel. Para obter mais informações sobre esse processo, consulte [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
+   >
+   >
+   >    * Ao gerar relatórios como arquivos do Excel, você está abrindo uma nova instância do Excel. Para obter mais informações sobre esse processo, consulte [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
    >    * Embora o Data Workbench seja compatível com mais de 256 colunas e 65.536 linhas de dados, o Microsoft Excel não oferece.
 
 

@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: Validar o experimento
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
@@ -19,7 +19,7 @@ Conforme discutido em [Modificando o parâmetro ExpCookieURL (Opcional)](../../h
 
 A página virtual padrão é [!DNL /setcookie.htm], mas você deve usar o valor definido no parâmetro ExpCookieURL .
 
-## Solicitando a página de teste {#section-8aed3b48d47f4e6c8869c0216f8781b1}
+## Solicitar a página de teste {#section-8aed3b48d47f4e6c8869c0216f8781b1}
 
 Para testar um grupo de experimentos específico para seu site, seu navegador deve ser configurado para aceitar cookies e você ainda não deve ter um cookie para esse site.
 
@@ -27,17 +27,17 @@ Sempre que quiser testar um novo grupo, certifique-se de limpar os cookies do si
 
 Para se colocar em um grupo específico em um experimento específico, solicite uma string de consulta à página de teste no seguinte formulário:
 
-[!DNL http://] *&lt;>>*[!DNL sitename/?Experiment Name=Group Name]
+[!DNL https://] *&lt;>>*[!DNL sitename/?Experiment Name=Group Name]
 
 Por exemplo:
 
-[!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
+[!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
 Quando a solicitação de URL virtual é enviada para o servidor, [!DNL Sensor] identifica você como um membro do grupo especificado no experimento especificado e redireciona você para a raiz do site. Agora você pode navegar até o local apropriado no site para validar se o conteúdo correto é exibido para esse experimento e grupo.
 
 Se você digitasse o seguinte no navegador, o navegador exibiria a página inicial do site e o colocaria no grupo index2 dentro do experimento New_Homepage:
 
-[!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
+[!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
 Quando os visitantes do grupo index2 solicitam a página inicial, o link gráfico &quot;Solicitar uma demonstração&quot; é exibido mais alto na página, como no gráfico a seguir:
 

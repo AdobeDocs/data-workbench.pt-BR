@@ -3,7 +3,7 @@ description: Tabelas que contêm a lista de variáveis constantes e personalizad
 title: Planilha Mapeamento da variável de tag da página
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
 exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 13%
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 Tabelas que contêm a lista de variáveis constantes e personalizadas.
 
-## Variáveis constantes {#section-d28c9bc798314c25b4f9c9a64534b317}
+## Variáveis de constante {#section-d28c9bc798314c25b4f9c9a64534b317}
 
 | Nome da variável | Descrição abreviada da variável | Informações adicionais  |
 |---|---|---|
@@ -42,12 +42,12 @@ Tabelas que contêm a lista de variáveis constantes e personalizadas.
 | v_pe | Erro de página | v_pe=&quot;Validation_Error&quot; |
 | v_c | Campanha Click-through | v_c=&quot;Campanha 1&quot; |
 | v_ca | Ativo da campanha Click-through | v_ca=&quot;72890ab&quot; |
-| v_cr | Referenciador de campanha Click-through | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
+| v_cr | Referenciador de campanha Click-through | v_cr=https://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
 | v_ic | Campanha de impressão | v_c=&quot;Campanha 1&quot; |
 | v_ica | Impression Campaign Asset | v_ca=&quot;72890ab&quot; |
-| v_icr | Referenciador de campanha de impressão | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
+| v_icr | Referenciador de campanha de impressão | v_cr=https://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
 | v_ln | Nome do link | v_ln=&quot;Sobre%20Us&quot; |
-| v_eurl | URL de saída | V_eurl=&quot;http://www.offsite.com/ |
+| v_eurl | URL de saída | V_eurl=&quot;https://www.offsite.com/ |
 | v_1 | variável personalizada 1 |  |
 | v_2 | variável personalizada 2 |  |
 | v_3 | variável personalizada 3 |  |

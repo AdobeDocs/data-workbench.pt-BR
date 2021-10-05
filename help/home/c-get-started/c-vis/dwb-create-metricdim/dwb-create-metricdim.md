@@ -3,7 +3,7 @@ description: Use o assistente de atenuação de métrica para criar um novo Dime
 title: Assistente de atenuação de métrica
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
 exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 3%
@@ -60,7 +60,7 @@ Uma atenuação de métrica converte uma métrica em uma nova dimensão. Por exe
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   O formato define como a métrica será apresentada quando aberta em uma visualização. Esses formatos são selecionados [printf standards](http://www.cplusplus.com/reference/cstdio/printf/), definidos abaixo:
+   O formato define como a métrica será apresentada quando aberta em uma visualização. Esses formatos são selecionados [printf standards](https://www.cplusplus.com/reference/cstdio/printf/), definidos abaixo:
 
    ```
    %[flags][width][.precision][length][specifier]

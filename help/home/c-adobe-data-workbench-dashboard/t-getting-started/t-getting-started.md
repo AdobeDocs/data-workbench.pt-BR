@@ -3,7 +3,7 @@ description: Para começar a usar o painel do Adobe data workbench, siga estas e
 title: Introdução
 uuid: 9e2ed5fd-29d7-4e06-ad55-c4a35a9043c8
 exl-id: acaa7563-d462-4838-b2b5-3c010382da34
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
@@ -21,9 +21,9 @@ Para começar a usar o painel do Adobe data workbench, siga estas etapas.
    Embora muitas variações de navegadores possam funcionar, somente os seguintes navegadores da Web são oficialmente compatíveis:
 
    * Google Chrome 15 e superior (disponível em [https://www.google.com/chrome/](https://www.google.com/intl/pt-BR/chrome/))
-   * Microsoft Internet Explorer 9 e superior (disponível em [http://www.microsoft.com/windows/ie/](http://www.microsoft.com/windows/ie/))
-   * Mozilla Firefox 3.6 e superior (disponível em [http://www.mozilla.org/en-US/firefox/all-older.html](http://www.mozilla.org/en-US/firefox/all-older.html))
-   * Safari 5.1 e superior (disponível em [http://www.apple.com/safari](http://www.apple.com/safari))
+   * Microsoft Internet Explorer 9 e superior (disponível em [https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/ie/))
+   * Mozilla Firefox 3.6 e superior (disponível em [https://www.mozilla.org/en-US/firefox/all-older.html](https://www.mozilla.org/en-US/firefox/all-older.html))
+   * Safari 5.1 e superior (disponível em [https://www.apple.com/safari](https://www.apple.com/safari))
 
    Além de um navegador compatível, nenhum software adicional precisa ser baixado para usar o painel. 1. Solicite uma conta.
 

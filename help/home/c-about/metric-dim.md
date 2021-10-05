@@ -3,7 +3,7 @@ description: Crie Dimension definidos por atributos de métrica (Dims de métric
 title: Assistente de atenuação de métrica
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 2%
@@ -60,7 +60,7 @@ Uma atenuação de métrica converte uma métrica em uma nova dimensão. Por exe
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   O formato define como a métrica será apresentada quando aberta em uma visualização. Esses formatos são selecionados [printf standards](http://www.cplusplus.com/reference/cstdio/printf/), definidos abaixo:
+   O formato define como a métrica será apresentada quando aberta em uma visualização. Esses formatos são selecionados [printf standards](https://www.cplusplus.com/reference/cstdio/printf/), definidos abaixo:
 
    ```
    %[flags][width][.precision][length][specifier]

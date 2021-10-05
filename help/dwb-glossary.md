@@ -3,14 +3,14 @@ description: Glossário do Data Workbench
 title: Glossário do Data Workbench
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 100%
 
 ---
 
-# Glossário do Data Workbench {#data-workbench-glossary}
+# Glossário do Data Workbench{#data-workbench-glossary}
 
 **Alerta**
 
@@ -62,11 +62,11 @@ Uma variável comum que forma uma relação entre as linhas em dois conjuntos ta
 
 **Intervalo de confiança**
 
-Um intervalo de valores que tem uma probabilidade específica de conter a taxa ou tendência. Os intervalos de confiança de 80% (valor p = 0,20), 95% (valor p = 0,05) e 99% (valor p = 0,01) são os intervalos mais usados. (Fonte: `http://www.nci.nih.gov/statistics/glossary`)
+Um intervalo de valores que tem uma probabilidade específica de conter a taxa ou tendência. Os intervalos de confiança de 80% (valor p = 0,20), 95% (valor p = 0,05) e 99% (valor p = 0,01) são os intervalos mais usados. (Fonte: `https://www.nci.nih.gov/statistics/glossary`)
 
 **Nível de confiança**
 
-A probabilidade de o erro de amostragem em um resultado de pesquisa ficar em um intervalo especificado, normalmente expresso em termos de erros padrão (por exemplo, 1 erro padrão é igual a 68% de probabilidade, 2 erros padrão é igual a 95,4% de probabilidade). (Fonte: `http://www.magazine.org/research/3410.cfm`)
+A probabilidade de o erro de amostragem em um resultado de pesquisa ficar em um intervalo especificado, normalmente expresso em termos de erros padrão (por exemplo, 1 erro padrão é igual a 68% de probabilidade, 2 erros padrão é igual a 95,4% de probabilidade). (Fonte: `https://www.magazine.org/research/3410.cfm`)
 
 **Mapa de conversões**
 
@@ -238,7 +238,7 @@ Uma relação entre duas dimensões de dados em que um único elemento em uma di
 
 **Ordinal**
 
-Ser ou denotar uma ordem numérica em uma série. (Fonte: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Se uma dimensão é classificada normalmente no Data Workbench, os elementos da dimensão são exibidos na ordem em que são representados internamente.
+Ser ou denotar uma ordem numérica em uma série. (Fonte: `https://wordnet.princeton.edu/perl/webwn?s=ordinal`) Se uma dimensão é classificada normalmente no Data Workbench, os elementos da dimensão são exibidos na ordem em que são representados internamente.
 
 **Outliers**
 

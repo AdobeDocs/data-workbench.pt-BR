@@ -3,7 +3,7 @@ description: A etapa final é executar o painel pela primeira vez para permitir 
 title: Inicializar o painel
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 A etapa final é executar o painel pela primeira vez para permitir que ele seja inicializado.
 
-1. Abra um navegador da Web e insira o URL do site recém-implantado (por exemplo, http://localhost/dashboard).
+1. Abra um navegador da Web e insira o URL do site recém-implantado (por exemplo, https://localhost/dashboard).
 1. A conexão pela primeira vez configurará as tabelas do banco de dados; portanto, você pode experimentar um pequeno atraso.
 1. As credenciais de logon inicial são:
 
