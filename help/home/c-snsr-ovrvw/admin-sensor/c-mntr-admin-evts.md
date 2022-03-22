@@ -1,12 +1,12 @@
 ---
 description: Para detectar erros do Sensor o mais rápido possível e repará-los antes que eles causem problemas importantes ou paralisações, você deve monitorar regularmente seus registros de Evento .
-title: Monitorar eventos administrativos
+title: Monitorar eventos administrativos (Sensor)
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 1%
+source-wordcount: '1093'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 Para detectar erros do Sensor o mais rápido possível e repará-los antes que eles causem problemas importantes ou paralisações, você deve monitorar regularmente seus registros de Evento .
 
-**Frequência recomendada:** pelo menos por hora
+**Frequência recomendada:** Pelo menos por hora
 
-Você pode monitorar esses eventos usando o Visualizador de Eventos do Windows ou o arquivo Syslog do Unix e os arquivos [!DNL *.sensor-log] localizados por padrão na pasta [!DNL Logs] no diretório de instalação [!DNL Sensor]. Esses arquivos indicam a presença de erros durante a coleta de dados, especialmente se um [!DNL Sensor] não puder se conectar ao target [!DNL data workbench server] e iniciar o enfileiramento de dados.
+Você pode monitorar esses eventos usando o Visualizador de Eventos do Windows ou o arquivo de Syslog do Unix e o [!DNL *.sensor-log] os arquivos localizados na [!DNL Logs] na pasta [!DNL Sensor] diretório de instalação. Esses arquivos indicam a presença de erros durante a coleta de dados, especialmente se uma [!DNL Sensor] não é possível se conectar ao destino [!DNL data workbench server] e inicia o enfileiramento de dados.
 
 ## Monitorar eventos no Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
@@ -24,19 +24,19 @@ O sensor registra erros no registro de aplicativos do Visualizador de eventos do
 
 As mensagens são registradas como &quot;Informações&quot;, &quot;Aviso&quot; ou &quot;Erro&quot;, dependendo de sua gravidade.
 
-**Para abrir o Visualizador** de Eventos do Windows:
+**Para abrir o Visualizador de Eventos do Windows**:
 
 * Clique em **Iniciar > Painel de controle > Ferramentas administrativas > Visualizador de eventos**.
 
 ## Monitorar eventos no Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
-O sensor registra erros no daemon [!DNL syslog].
+O sensor registra erros na [!DNL syslog] daemon.
 
 O daemon syslog grava mensagens de erro em arquivos de log com base nas regras especificadas no arquivo syslog.conf. Os erros são registrados com os sinalizadores &quot;LOG_DAEMON&quot; e &quot;LOG_NOTICE&quot; ou &quot;LOG_ERR&quot;, dependendo da gravidade.
 
 **Para abrir o syslog do Unix**
 
-O syslog Unix geralmente está localizado em [!DNL /var/adm/messages] ou [!DNL /var/log/messages].
+O syslog do Unix geralmente está localizado em [!DNL /var/adm/messages] ou [!DNL /var/log/messages].
 
 Navegue até o local apropriado e abra o syslog.
 
@@ -62,9 +62,9 @@ Sua ferramenta de gerenciamento de rede pode ser configurada para monitorar as m
 
 Nos seus registros de eventos, você deve prestar especial atenção e endereçar imediatamente quaisquer mensagens relacionadas ao tamanho da fila.
 
-Por exemplo, mensagens como &quot;[!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; precisam de atenção.
+Por exemplo, mensagens como &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; precisa de atenção.
 
-## Respondendo a mensagens de evento do sensor {#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## Responder mensagens de evento do sensor {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
 Tabelas que descrevem eventos do Sensor e ações sugeridas para as plataformas de servidor da Web compatíveis.
 
@@ -139,7 +139,7 @@ Tabelas que descrevem eventos do Sensor e ações sugeridas para as plataformas 
    <td colname="col2"> Entre em contato com o Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Erro do sensor 4022: Não é possível mapear o bloco de memória de comprimento &lt;x&gt; no deslocamento &lt;y&gt; </td> 
+   <td colname="col1"> Erro do sensor 4022: Não é possível mapear o bloco de memória de comprimento &lt;x&gt; em offset &lt;y&gt; </td> 
    <td colname="col2"> Entre em contato com o Adobe ClientCare. </td> 
   </tr> 
   <tr> 
@@ -193,10 +193,10 @@ Tabelas que descrevem eventos do Sensor e ações sugeridas para as plataformas 
 
 | Mensagem de evento | Ação sugerida |
 |---|---|
-| Erro do sensor 3015: A seção ns/server/[server]/module/[module] está ausente no arquivo de configuração do AOLServer. | Este é um erro de configuração. Correto, como indicado no erro. |
+| Erro do sensor 3015: ns/server/[server]/module/[módulo] está ausente no arquivo de configuração do AOLServer. | Este é um erro de configuração. Correto, como indicado no erro. |
 | Erro do sensor 3019: vys-cookie não foi chamado antes de vys-log. Entre em contato com o suporte. Entre em contato com o Adobe ClientCare. | Entre em contato com o suporte. Entre em contato com o Adobe ClientCare. |
-| Erro do sensor 3020: VisualSciencesConfig ausente como primeira entrada na seção [section] no arquivo de configuração AOLServer. | Este é um erro de configuração. Correto, como indicado no erro. |
-| Erro do sensor 3021: VisualSciencesConfig está sem um valor na seção [section] no arquivo de configuração AOLServer. | Este é um erro de configuração. Correto, como indicado no erro. |
+| Erro do sensor 3020: VisualSciencesConfig ausente como primeira entrada em [seção] no arquivo de configuração do AOLServer. | Este é um erro de configuração. Correto, como indicado no erro. |
+| Erro do sensor 3021: VisualSciencesConfig não tem um valor em [seção] no arquivo de configuração do AOLServer. | Este é um erro de configuração. Correto, como indicado no erro. |
 
 **Servidores Web iPlanet e Java System**
 

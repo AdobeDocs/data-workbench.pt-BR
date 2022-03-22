@@ -1,12 +1,12 @@
 ---
 description: Tabelas
-title: Tabelas
+title: Tabelas do painel
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 1%
+source-wordcount: '212'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,6 @@ As tabelas são as visualizações orientadas por detalhes mais disponíveis no 
 
 A ordem das colunas pode ser reorganizada clicando e arrastando um cabeçalho de coluna para outro local na área do cabeçalho da coluna. A classificação pode ser executada a qualquer momento clicando no cabeçalho apropriado da coluna. Clicar novamente no cabeçalho da coluna reverterá a ordem de classificação.
 
-As seleções podem ser feitas em tabelas clicando em uma linha específica. Pressionar e manter pressionada a tecla **[!UICONTROL Control]** manterá as seleções ao clicar em itens adicionais. Pressionar e manter pressionada a tecla **[!UICONTROL Control]** ao clicar também alterna o valor de uma seleção. Isso é útil para remover apenas uma seleção de um grupo de itens já selecionados. Um intervalo de linhas pode ser selecionado clicando primeiro em uma linha para selecioná-la, depois pressionando a tecla **[!UICONTROL Shift]** ao clicar na última linha.
+As seleções podem ser feitas em tabelas clicando em uma linha específica. Pressionar e manter pressionada a **[!UICONTROL Control]** a tecla manterá as seleções ao clicar em itens adicionais. Pressionar e manter pressionada a **[!UICONTROL Control]** ao clicar em , também alterna o valor de uma seleção. Isso é útil para remover apenas uma seleção de um grupo de itens já selecionados. É possível selecionar um intervalo de linhas clicando primeiro em uma linha para selecioná-la, depois pressionando a tecla **[!UICONTROL Shift]** ao clicar na última linha.
 
 ![](assets/table.png)

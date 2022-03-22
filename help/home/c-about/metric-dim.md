@@ -1,11 +1,11 @@
 ---
 description: Crie Dimension definidos por atributos de métrica (Dims de métrica) usando um assistente passo a passo. Em seguida, teste, visualize e salve a nova atenuação de métrica na sua lista de Dimension.
-title: Assistente de atenuação de métrica
+title: Assistente de atenuação de métrica (Dimension)
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '486'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Uma atenuação de métrica converte uma métrica em uma nova dimensão. Por exe
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Você pode adicionar sua própria [expressão de métrica](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) ou recortar e colar de outro editor de métricas ou visualização. Erros de sintaxe, erros de fórmula, filtros indefinidos e outros erros são relatados no assistente.
+   Você pode adicionar seu próprio [expressão de métrica](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) ou recorte e cole de outro editor de métricas ou visualização. Erros de sintaxe, erros de fórmula, filtros indefinidos e outros erros são relatados no assistente.
 
 1. Clique em **[!UICONTROL Next]**.
 
@@ -60,18 +60,18 @@ Uma atenuação de métrica converte uma métrica em uma nova dimensão. Por exe
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   O formato define como a métrica será apresentada quando aberta em uma visualização. Esses formatos são selecionados [printf standards](https://www.cplusplus.com/reference/cstdio/printf/), definidos abaixo:
+   O formato define como a métrica será apresentada quando aberta em uma visualização. Esses formatos são selecionados [padrões printf](https://www.cplusplus.com/reference/cstdio/printf/), definido abaixo:
 
    ```
    %[flags][width][.precision][length][specifier]
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   No campo **[!UICONTROL Preview]**, um valor será exibido com base na métrica e no formato selecionados.
+   No **[!UICONTROL Preview]** , um valor será exibido com base na métrica e no formato selecionados.
 
 1. Adicionar expressão Contagem de Bucket.
 
-   Você pode definir uma escala de métrica com vários intervalos ou compartimentos. Isso retorna subconjuntos de elementos com base no tamanho, como [0-4], [5-10],...). Os elementos do Nível de Dimension estão relacionados aos elementos cujo intervalo contém o valor da métrica. Consulte a descrição da expressão de bucket em [Sintaxe para expressões de Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Você pode definir uma escala de métrica com vários intervalos ou compartimentos. Isso retorna subconjuntos de elementos com base no tamanho, como [0-4], [5-10],...). Os elementos do Nível de Dimension estão relacionados aos elementos cujo intervalo contém o valor da métrica. Consulte a descrição da expressão de bucket em [Sintaxe para expressões Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
 1. Clique em **[!UICONTROL Preview]** para abrir a tabela de valores de atenuação de métrica antes de salvar.
 
@@ -79,7 +79,7 @@ Uma atenuação de métrica converte uma métrica em uma nova dimensão. Por exe
 
    A tabela detalha os valores de métrica por escuta de métrica.
 
-1. Clique em **[!UICONTROL Show in Dimension Menu]** para adicionar a dimensão recém-criada à guia **Dimension** no **Localizador**.
+1. Clique em **[!UICONTROL Show in Dimension Menu]** para adicionar a dimensão recém-criada à variável **Dimension** na guia no **Localizador**.
 
 1. Clique em **[!UICONTROL Next]**.
 
