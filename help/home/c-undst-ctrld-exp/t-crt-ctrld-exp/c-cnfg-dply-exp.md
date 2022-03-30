@@ -1,10 +1,10 @@
 ---
 description: Após definir seu objetivo, hipótese e detalhes do experimento, bem como criar o conteúdo do teste, é necessário configurar o Sensor para implantar o experimento controlado.
-solution: Analytics,Analytics
+solution: Analytics
 title: Configurar e implantar o experimento
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 exl-id: 957c2ea2-72a5-4bb2-af1d-65187613c26d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Após definir seu objetivo, hipótese e detalhes do experimento, bem como criar 
 
 ## Configurar o arquivo de configuração de experimento {#section-037fe7dea9c94aee9cdc354dafdb7c03}
 
-Para configurar o experimento, você deve concluir a planilha de configuração do experimento fornecida pelo Adobe (chamada [!DNL TestExperiment.xls] por padrão). Esse arquivo configura [!DNL Sensor] para executar o experimento e é a versão do Excel do arquivo de texto que você especificou em [Modificando o parâmetro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+Para configurar o experimento, você deve concluir a planilha de configuração do experimento fornecida pelo Adobe (chamada de [!DNL TestExperiment.xls] por padrão). Este arquivo configura [!DNL Sensor] para executar o experimento e é a versão em Excel do arquivo de texto especificado em [Modificar o parâmetro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
 Esse arquivo pode conter informações sobre vários experimentos, que podem ser executados ao mesmo tempo ou em momentos diferentes e usar grupos e porcentagens diferentes, mas esses experimentos não estão correlacionados de forma alguma.
 
@@ -35,9 +35,9 @@ Você deve concluir este arquivo antes do início do experimento e não modifica
 >
 >Qualquer experimento é prontamente inválido se a definição do experimento mudar após o início do experimento.
 
-1. Se você tiver acesso de administrador à Web ou aos servidores de aplicativos, navegue até a pasta de instalação [!DNL Sensor] em qualquer máquina [!DNL Sensor] no cluster da Web para acessar o arquivo [!DNL TestExperiment.xls]. Se você não tiver acesso de administrador, entre em contato com o gerente de conta do Adobe para solicitar o arquivo [!DNL TestExperiment.xls].
+1. Se você tiver acesso de administrador à Web ou aos servidores de aplicativos, navegue até o [!DNL Sensor] pasta de instalação em qualquer [!DNL Sensor] em seu cluster da Web para acessar o [!DNL TestExperiment.xls] arquivo. Se você não tiver acesso de administrador, entre em contato com o gerente de conta do Adobe para solicitar o [!DNL TestExperiment.xls] arquivo.
 
-1. Abra o arquivo [!DNL TestExperiment.xls] (é possível renomear esse arquivo, se desejar) e preencha os seguintes campos:
+1. Abra o [!DNL TestExperiment.xls] (é possível renomear esse arquivo, se desejar) e preencher os seguintes campos:
 
 <table id="table_FDD6AE631C614F97AD7AE8829E53CCAC"> 
  <thead> 
@@ -49,7 +49,7 @@ Você deve concluir este arquivo antes do início do experimento e não modifica
  <tbody> 
   <tr> 
    <td colname="col1"> Experimento </td> 
-   <td colname="col2"> <p>Um nome descritivo para o experimento. Cada nome de experimento deve ser exclusivo e não pode conter espaços. </p> <p>Os nomes de experimento são usados ao exibir os resultados dos experimentos no <span class="keyword"> Insight </span>. Os nomes aparecem como a primeira metade dos nomes dos elementos na dimensão de experimento controlado. A segunda metade do nome do elemento é o nome do grupo do campo Group neste arquivo. Cada grupo é nomeado no seguinte formato usando o nome do experimento seguido pelo nome do grupo: </p> <p><i>Nome do grupo.ExperimentName</i> </p> <p>Por exemplo: <span class="filepath"> New_Homepage.Control </span> </p> </td> 
+   <td colname="col2"> <p>Um nome descritivo para o experimento. Cada nome de experimento deve ser exclusivo e não pode conter espaços. </p> <p>Nomes de experimento são usados ao exibir os resultados de experimentos em <span class="keyword"> Insight </span>. Os nomes aparecem como a primeira metade dos nomes dos elementos na dimensão de experimento controlado. A segunda metade do nome do elemento é o nome do grupo do campo Group neste arquivo. Cada grupo é nomeado no seguinte formato usando o nome do experimento seguido pelo nome do grupo: </p> <p><i>Nome do grupo.ExperimentName</i> </p> <p>Por exemplo: <span class="filepath"> New_Homepage.Control </span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Início </td> 
@@ -63,11 +63,11 @@ Você deve concluir este arquivo antes do início do experimento e não modifica
   </tr> 
   <tr> 
    <td colname="col1"> Stop </td> 
-   <td colname="col2"> <p>A data e hora em que você deseja que o experimento termine. Quando a data e a hora de parada ocorrer, o <span class="wintitle"> Sensor </span> deixará de enviar os valores de cookie identificados como um grupo de teste para os URIs de teste e enviará todos os cookies para os URIs do grupo de controle. </p> <p>Formato: DD/MM/AAAA H:MM </p> <p>Consulte as notas para o campo <span class="wintitle"> Iniciar </span>. </p> </td> 
+   <td colname="col2"> <p>A data e hora em que você deseja que o experimento termine. Quando ocorrer a data e hora de interrupção, <span class="wintitle"> Sensor </span> O parará de enviar os valores do cookie identificados como um grupo de teste para os URIs de teste e enviará todos os cookies para os URIs do grupo de controle. </p> <p>Formato: DD/MM/AAAA H:MM </p> <p>Veja as notas para a <span class="wintitle"> Iniciar </span> campo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Grupo </td> 
-   <td colname="col2"> <p>Um nome descritivo para cada grupo de visitantes no experimento. Os nomes de grupo não podem conter espaços. </p> <p>Os nomes de grupo são usados ao exibir os resultados dos experimentos no <span class="keyword"> Insight </span>. Para obter mais informações, consulte a descrição do campo Experimento . </p> <p>Um grupo de controle pode ser definido implicitamente ou explicitamente com base no valor inserido no campo Percentage . </p> <p> <p>Observação:  Para atender ao número de visitantes necessários durante o período de tempo definido para que a experiência seja estatisticamente válida, talvez seja necessário diminuir o nível de confiança ou aumentar o período de tempo. Por exemplo, se o intervalo de tempo for de cinco dias, o nível de confiança será de 98% e o número de visitantes necessários exceder o número esperado para esse período de tempo, será necessário aumentar o período ou diminuir o nível de confiança até que o número de visitantes esperado exceda o número necessário para executar um experimento estatisticamente válido. </p> </p> </td> 
+   <td colname="col2"> <p>Um nome descritivo para cada grupo de visitantes no experimento. Os nomes de grupo não podem conter espaços. </p> <p>Nomes de grupo são usados ao exibir os resultados de experimentos em <span class="keyword"> Insight </span>. Para obter mais informações, consulte a descrição do campo Experimento . </p> <p>Um grupo de controle pode ser definido implicitamente ou explicitamente com base no valor inserido no campo Percentage . </p> <p> <p>Observação: Para atender ao número de visitantes necessários durante o período de tempo definido para que a experiência seja estatisticamente válida, talvez seja necessário diminuir o nível de confiança ou aumentar o período de tempo. Por exemplo, se o intervalo de tempo for de cinco dias, o nível de confiança será de 98% e o número de visitantes necessários exceder o número esperado para esse período de tempo, será necessário aumentar o período ou diminuir o nível de confiança até que o número de visitantes esperado exceda o número necessário para executar um experimento estatisticamente válido. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Porcentagem </td> 
@@ -75,7 +75,7 @@ Você deve concluir este arquivo antes do início do experimento e não modifica
   </tr> 
   <tr> 
    <td colname="col1"> URL original </td> 
-   <td colname="col2"> <p>O URI do conteúdo a ser remapeado, seguido por $. Esse valor diferencia maiúsculas e minúsculas. </p> <p>Formato: index.asp$ </p> <p>Os URIs originais podem ser especificados usando um cifrão ($) no final do URI para indicar que é necessária uma correspondência exata do nome do arquivo. Por exemplo, a expressão <span class="filepath"> /product/product_view.asp$ </span> corresponde somente a essa página exata, enquanto <span class="filepath"> /product </span> corresponde a qualquer página no diretório <span class="filepath"> /product </span> e pode ser usada para remapear toda a subárvore. As entradas de URL originais que não especificam o caractere $ no final do nome do arquivo são ignoradas pelo experimento, a menos que o parâmetro ExpPartialMatch tenha sido definido como "on". Para obter mais informações sobre esse parâmetro, consulte <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> Modificando o Parâmetro ExpPartialMatch (Opcional) </a>. </p> <p>A funcionalidade de experimento controlado ignora qualquer sequência de consulta anexada ao fluxo de URI. Por exemplo, a página </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 não  </span> é um URI válido, mas a página  <span class="filepath"> /product/product_view.asp  </span> é um URI válido. </p> </td> 
+   <td colname="col2"> <p>O URI do conteúdo a ser remapeado, seguido por $. Esse valor diferencia maiúsculas e minúsculas. </p> <p>Formato: index.asp$ </p> <p>Os URIs originais podem ser especificados usando um cifrão ($) no final do URI para indicar que é necessária uma correspondência exata do nome do arquivo. Por exemplo, a expressão <span class="filepath"> /product/product_view.asp$ </span> corresponde somente a página exata, enquanto <span class="filepath"> /produto </span> corresponde a qualquer página no <span class="filepath"> /produto </span> e pode ser usado para remapear toda a subárvore. As entradas de URL originais que não especificam o caractere $ no final do nome do arquivo são ignoradas pelo experimento, a menos que o parâmetro ExpPartialMatch tenha sido definido como "on". Para obter mais informações sobre esse parâmetro, consulte <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> Modificar o parâmetro ExpPartialMatch (opcional) </a>. </p> <p>A funcionalidade de experimento controlado ignora qualquer sequência de consulta anexada ao fluxo de URI. Por exemplo, a página </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 </span> não é um URI válido, mas a página <span class="filepath"> /product/product_view.asp </span> é um URI válido. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> URL remapeado </td> 
@@ -84,7 +84,7 @@ Você deve concluir este arquivo antes do início do experimento e não modifica
  </tbody> 
 </table>
 
-Este é um exemplo de uma planilha [!DNL TextExperiment.xls] concluída:
+Este é um exemplo de um arquivo concluído [!DNL TextExperiment.xls] planilha:
 
 ![](assets/TestExperimentSpreadsheet.png)
 
@@ -99,7 +99,7 @@ Este exemplo indica que o experimento &quot;New_Homepage&quot; começa em 1º de
 >Embora o arquivo de amostra acima tenha um grupo de controle explícito definido, não é necessário definir explicitamente um grupo de controle — o experimento cria automaticamente o grupo de controle. Se a soma das porcentagens para todos os grupos em um experimento for menor que 100%, um grupo de controle implícito será atribuído a usuários que não se enquadram em um dos grupos explícitos.
 
 1. Para inserir comentários para fornecer informações adicionais sobre experimentos específicos, comece a célula com um sinal de número (#) e siga os comentários. Comentários podem ser inseridos em qualquer lugar do arquivo.
-1. Depois de concluir as variáveis na planilha de configuração do experimento, salve as alterações e salve o arquivo no formato de texto delimitado por tabulação ( [!DNL *.txt]) usando o nome especificado no parâmetro ExpFile no arquivo de configuração [!DNL Sensor]. Consulte [Modificando o parâmetro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+1. Depois de concluir as variáveis na planilha de configuração de experimento, salve as alterações e salve o arquivo no formato de texto delimitado por tabulação ( [!DNL *.txt]) usando o nome especificado no parâmetro ExpFile na função [!DNL Sensor] arquivo de configuração. Consulte [Modificar o parâmetro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
    Este é um exemplo de um arquivo de texto de configuração experimental:
 
@@ -117,9 +117,9 @@ Você deve implantar o arquivo de configuração de experiência em cada máquin
 
 **Para implantar o conteúdo de teste**
 
-* Em cada aplicativo ou servidor da Web que esteja executando um [!DNL Sensor] que esteja servindo páginas envolvidas no experimento, use seu processo de publicação existente para implantar o conteúdo de teste no local apropriado.
+* Em cada aplicativo ou servidor da Web que executa um [!DNL Sensor] que esteja servindo páginas envolvidas no experimento, use seu processo de publicação existente para implantar o conteúdo de teste no local apropriado.
 
-   Por exemplo, se você quiser publicar a página de grupo de teste [!DNL index2.asp] na pasta de teste do seu site ( [!DNL mysite.com]), publique o arquivo em [!DNL www.mysite.com/test].
+   Por exemplo, se você quiser publicar a página de grupo de teste [!DNL index2.asp] para a pasta de teste do seu site ( [!DNL mysite.com]), você deve publicar o arquivo em [!DNL www.mysite.com/test].
 
    >[!NOTE]
    >
@@ -127,6 +127,6 @@ Você deve implantar o arquivo de configuração de experiência em cada máquin
 
 **Para implantar seu experimento**
 
-* Em cada aplicativo ou servidor da Web que esteja executando um [!DNL Sensor] que esteja servindo páginas envolvidas no experimento, coloque o arquivo de texto de configuração do experimento no diretório especificado no parâmetro ExpFile no arquivo de configuração [!DNL Sensor]. Consulte [Modificando o parâmetro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+* Em cada aplicativo ou servidor da Web que executa um [!DNL Sensor] que esteja servindo páginas envolvidas no experimento, coloque o arquivo de texto de configuração do experimento no diretório especificado no parâmetro ExpFile na [!DNL Sensor] arquivo de configuração. Consulte [Modificar o parâmetro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
 [!DNL Sensor] seleciona aleatoriamente os visitantes do site para cada grupo com base nas porcentagens definidas no arquivo e retorna o conteúdo do grupo de controle ou teste para eles, conforme apropriado.

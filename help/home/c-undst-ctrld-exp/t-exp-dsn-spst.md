@@ -1,10 +1,10 @@
 ---
 description: Esse arquivo funciona não apenas como uma planilha, mas também como um registro de suas decisões sobre o experimento.
-solution: Analytics,Analytics
+solution: Analytics
 title: Planilha de design de experimento
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -21,7 +21,7 @@ A planilha de design experimental pode fornecer inferências estatísticas útei
 
 **Para projetar seu experimento usando o arquivo de design de experimento**
 
-1. Se você tiver acesso de administrador aos servidores da Web ou de aplicativos, navegue até a pasta de instalação [!DNL Sensor] em qualquer máquina [!DNL Sensor] no cluster da Web. Se você não tiver acesso de administrador, entre em contato com o gerente de conta do Adobe para solicitar o arquivo.
+1. Se você tiver acesso de administrador à Web ou aos servidores de aplicativos, navegue até o [!DNL Sensor] pasta de instalação em qualquer [!DNL Sensor] no seu cluster da Web. Se você não tiver acesso de administrador, entre em contato com o gerente de conta do Adobe para solicitar o arquivo.
 1. Abra o arquivo VS Controlled Experiment Design.xls. (Se desejar, é possível renomear esse arquivo.)
 
    A planilha na página a seguir é um exemplo de como você preencheria a planilha ao se preparar para testar a hipótese de exemplo usada em todo este guia.
@@ -154,7 +154,7 @@ Você precisa ver o valor no campo Mínimo de visitantes necessários (Grupos de
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-e compare-a com o valor no campo Total na coluna [!DNL Visitors].
+e compare-o com o valor no campo Total na variável [!DNL Visitors] coluna.
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
@@ -164,4 +164,4 @@ Considerando as informações fornecidas, o que a planilha de exemplo mostra é 
 
 Se você mantiver o mesmo número de dias, poderá aumentar o nível de confiança, desde que o número total de visitantes continue a atender ou exceda o mínimo necessário.
 
-1. Salve o arquivo para seus registros e use as informações do arquivo para configurar o experimento usando a planilha de configuração de experimento. Para obter mais informações sobre essa planilha, consulte [Configuração e implantação do experimento](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).
+1. Salve o arquivo para seus registros e use as informações do arquivo para configurar o experimento usando a planilha de configuração de experimento. Para obter mais informações sobre esta planilha, consulte [Configurar e implantar o experimento](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).

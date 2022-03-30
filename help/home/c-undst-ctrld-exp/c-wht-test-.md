@@ -1,10 +1,10 @@
 ---
 description: Os resultados dos testes devem ser claros e significativos para que você se sinta confiante em tomar decisões em dólares com base nesses resultados.
-solution: Analytics,Analytics
+solution: Analytics
 title: O que devo testar?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Os resultados dos testes devem ser claros e significativos para que você se sinta confiante em tomar decisões em dólares com base nesses resultados.
 
-Embora você possa testar vários layouts de página com [!DNL Sensor] e Site, o Adobe sugere que você se concentre em testar o alto valor, iniciativas estratégicas de negócios ou funcionalidades novas ou reprojetadas de sites que atendam às metas definidas para seu site, bem como para sua empresa. Você pode testar esses problemas, como as melhores garantias de preço, funcionalidade de personalização, ofertas de mercado (por exemplo, pacotes ou pacotes), design criativo e processos de aplicativo.
+Embora você possa testar vários layouts de página com [!DNL Sensor] e Site, Adobe sugere que você se concentre em testar iniciativas de negócios estratégicas de alto valor ou novas funcionalidades de site ou reprojetadas que atendam às metas definidas para seu site, bem como para sua empresa. Você pode testar esses problemas, como as melhores garantias de preço, funcionalidade de personalização, ofertas de mercado (por exemplo, pacotes ou pacotes), design criativo e processos de aplicativo.
 
 Os seguintes conceitos são mais importantes ao desenvolver seu experimento controlado:
 
@@ -33,10 +33,10 @@ Vários tipos de experimentos com muitas metas diferentes podem ser executados u
 Para atingir essas metas, o Site oferece suporte aos seguintes tipos de metodologias para experimentação e teste controlados:
 
 * **Substituição de página:** Substitua o URL estático X por um URL estático Y. Essa metodologia é de uso limitado em um ambiente dinâmico.
-* **Substituição dinâmica de URI:** essa é uma variante de Substituição de página que substitui a página estática X pela página dinâmica Y para renderizar o conteúdo dinâmico.
+* **Substituição dinâmica de URI:** Essa é uma variante de Substituição de página que substitui a página estática X pela página dinâmica Y para renderizar o conteúdo dinâmico.
 * **Substituição de objeto:** Substitua o objeto fixo X pelo objeto fixo Y.
-* **Substituição de conteúdo:** substitua o conjunto de conteúdo X (vários objetos, páginas, tabela e assim por diante) pelo conjunto de conteúdo Y.
-* **Substituição da variável de experimento:** substitua o objeto JavaScript /writeCookie_X.js pelo objeto JavaScript /writeCookie_Y.js para gravar um cookie que pode ser usado por um sistema de back-end para fornecer conteúdo específico.
+* **Substituição de conteúdo:** Substitua o conjunto de conteúdo X (vários objetos, páginas, tabela e assim por diante) pelo conjunto de conteúdo Y.
+* **Substituição da variável de experimento:** Substitua o objeto JavaScript /writeCookie_X.js pelo objeto JavaScript /writeCookie_Y.js para gravar um cookie que pode ser usado por um sistema de back-end para fornecer conteúdo específico.
 
 >[!NOTE]
 >
@@ -44,4 +44,4 @@ Para atingir essas metas, o Site oferece suporte aos seguintes tipos de metodolo
 >
 >`https://www.omniture.com/index.asp?id=1`
 >
->Por exemplo, em seu experimento controlado, você pode especificar que o URI do grupo de controle [!DNL index.asp] seja substituído pelo URI do grupo de teste [!DNL index2.asp] para determinar qual design de página resultaria em mais valor.
+>Por exemplo, em seu experimento controlado, você pode especificar que o URI do grupo de controle [!DNL index.asp] ser substituído pelo URI do grupo de teste [!DNL index2.asp] para determinar qual design de página resultaria em mais valor.

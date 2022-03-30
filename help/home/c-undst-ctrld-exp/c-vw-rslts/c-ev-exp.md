@@ -1,10 +1,10 @@
 ---
 description: Depois de executar o experimento até que o número mínimo necessário de visitantes tenha participado, você pode ter certeza estatística suficiente para avaliar os resultados de seu experimento.
-solution: Analytics,Analytics
+solution: Analytics
 title: Avaliar o experimento
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 exl-id: 5add2168-f6bc-45c5-bf1d-1191a38c5bac
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Depois de executar o experimento até que o número mínimo necessário de visitantes tenha participado, você pode ter certeza estatística suficiente para avaliar os resultados de seu experimento.
 
-Ao usar [!DNL Insight], compare as métricas ou os indicadores-chave de desempenho que tiverem sido definidos como parte da hipótese para determinar se o experimento foi um sucesso (ou seja, a hipótese foi validada com a confiança especificada).
+Usando [!DNL Insight], compare as métricas que tiverem sido definidas ou os principais indicadores de desempenho como parte da hipótese para determinar se o experimento foi bem-sucedido (ou seja, a hipótese foi validada com a confiança especificada).
 
 Em nosso experimento de exemplo, nossa hipótese está comprovada corretamente se a Conversão do visitante aumentar em pelo menos 1,5%, que é o critério de sucesso definido anteriormente.
 
@@ -27,7 +27,7 @@ O exemplo do espaço de trabalho a seguir mostra que a Conversão do grupo de te
 * [Realizar ação com base nos resultados](../../../home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md#section-1623e26ced524fd9beab48ac1f9165d9)
 * [Monitorar suas ações](../../../home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md#section-1954311950c34637800cbd7c0711983f)
 
-## Resumir os resultados do experimento {#section-24a496c080a04e929764094acb00bab7}
+## Resumo dos resultados do experimento {#section-24a496c080a04e929764094acb00bab7}
 
 Usando [!DNL Insight], você pode criar relatórios detalhados para resumir e ilustrar os resultados de seu experimento.
 

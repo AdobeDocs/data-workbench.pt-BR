@@ -1,10 +1,10 @@
 ---
 description: Após adicionar o novo campo ao Log Processing.cfg e criar a nova transformação Split e a dimensão estendida, é possível visualizar a nova dimensão estendida criada assim que o estágio Entrada rápida do reprocessamento de dados terminar.
-solution: Analytics,Analytics
+solution: Analytics
 title: Exibir os resultados do experimento
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%
