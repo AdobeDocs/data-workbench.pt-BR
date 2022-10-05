@@ -3,7 +3,7 @@ description: Um conjunto de perfis padrão para cada aplicativo foi criado para 
 title: Perfis da linha de base
 uuid: ff76ff7e-ccde-4d99-9109-8612a4a83183
 exl-id: f1bd5c1d-5f79-4b8c-9928-97169d553631
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Perfis da linha de base{#baseline-profiles}
+
+{{eol}}
 
 Um conjunto de perfis padrão para cada aplicativo foi criado para permitir que um ou mais perfis sejam instalados em um determinado momento.
 
@@ -20,9 +22,9 @@ O sistema de gerenciamento de perfil permite substituir as configurações de um
 
 Perfis para mercados verticais ou tipos específicos de empresas ou indústrias também podem estar disponíveis no Adobe ClientCare. Veja a seguir descrições dos perfis da linha de base:
 
-* O **perfil base** inclui arquivos de configuração que são enviados com o Servidor Insight. O perfil Base não deve ser modificado pelo usuário ou pelo Administrador. Qualquer alteração feita no perfil básico está sujeita a ser substituída quando o Adobe lançar uma próxima versão do Insight Server ou outro aplicativo de software.
-* O **Traffic profile** inclui um conjunto de métricas, dimensões e filtros fundamentais para análises da Web. Também inclui espaços de trabalho de modelo, relatórios e painéis que facilitam a análise, a criação de relatórios e a compreensão geral das tendências e padrões gerais da atividade do site na Internet. Este perfil funciona &quot;pronto para uso&quot; com uma instalação de linha de base do Site.
-* O **Perfil de valor** inclui um conjunto de métricas e dimensões e espaços de trabalho, relatórios e painéis de modelo associados ao valor comercial e ao modelo de conversão integrados do Site. Esse perfil permite que os usuários identifiquem eventos de valor no site e associem um valor monetário a esses eventos.
+* O **Perfil base** O inclui arquivos de configuração fornecidos com o servidor Insight. O perfil Base não deve ser modificado pelo usuário ou pelo Administrador. Qualquer alteração feita no perfil básico está sujeita a ser substituída quando o Adobe lançar uma próxima versão do Insight Server ou outro aplicativo de software.
+* O **Perfil de tráfego** O inclui um conjunto de métricas, dimensões e filtros fundamentais para análises da Web. Também inclui espaços de trabalho de modelo, relatórios e painéis que facilitam a análise, a criação de relatórios e a compreensão geral das tendências e padrões gerais da atividade do site na Internet. Este perfil funciona &quot;pronto para uso&quot; com uma instalação de linha de base do Site.
+* O **Perfil de valor** O inclui um conjunto de métricas e dimensões e espaços de trabalho, relatórios e painéis do modelo associados ao valor comercial e ao modelo de conversão integrados do Site. Esse perfil permite que os usuários identifiquem eventos de valor no site e associem um valor monetário a esses eventos.
 
    Esse perfil expande seus recursos de análise do site fornecendo um Business Value Model, um método avançado para medir e rastrear a quantidade de valor gerada pelo site. Os eventos de valor e seu valor relativo são definidos por meio de uma interface de arrastar e soltar simples no Site. O Site usa essas definições para calcular o valor comercial gerado por cada sessão, e essas informações são usadas para definir métricas como valor, eventos de valor, conversão e assim por diante. Essas métricas permitem que você responda perguntas como:
 
@@ -32,11 +34,11 @@ Perfis para mercados verticais ou tipos específicos de empresas ou indústrias 
 
    Depois de definir um Modelo de valor comercial no site, você pode usar as métricas e dimensões de valor em sua análise.
 
-* O **Perfil de marketing** inclui um conjunto de métricas e dimensões e espaços de trabalho de modelo, relatórios e painéis associados à análise de campanhas de marketing da Internet, incluindo análise de pesquisa e análise de referenciador estendida.
+* O **Perfil de marketing** O inclui um conjunto de métricas e dimensões e espaços de trabalho de modelo, relatórios e painéis associados à análise de campanhas de marketing da Internet, incluindo análise de pesquisa e análise de referenciador estendida.
 
 O Adobe também fornece os seguintes perfis opcionais para usar:
 
-* O **IP Geo-location profile** inclui dimensões e arquivos de camada relacionados à análise da localização dos visitantes com base nos dados de geolocalização de IP fornecidos ao Adobe pela Quova, Inc. e incorporados ao Data Workbench.
+* O **Perfil de geolocalização de IP** inclui dimensões e arquivos de camada relacionados à análise da localização dos visitantes com base nos dados de localização geográfica de IP fornecidos à Adobe pela Quova, Inc. e incorporados ao Data Workbench.
 * O perfil de GeoIntelligence de IP inclui dimensões e arquivos de camada relacionados à análise das localizações do visitante com base nos dados de geo-inteligência de IP fornecidos ao Adobe pela Digital Envoy, Inc. e incorporados ao Data Workbench.
 
 Para obter informações sobre os perfis IP-Geo-location e IP Geo-Intelligence, entre em contato com a equipe de suporte do Adobe. As seções a seguir descrevem as métricas e dimensões definidas em cada um dos perfis da linha de base.

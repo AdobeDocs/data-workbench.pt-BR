@@ -3,7 +3,7 @@ description: O perfil Tráfego contém as seguintes dimensões para ajudar a ide
 title: Dimensões de perfil de tráfego
 uuid: 9c0dabfc-67c9-4772-99ac-4c503c06ea78
 exl-id: 1e7d2904-aa5d-4848-a398-5d4669953be9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 8%
@@ -12,22 +12,24 @@ ht-degree: 8%
 
 # Dimensões de perfil de tráfego{#traffic-profile-dimensions}
 
+{{eol}}
+
 O perfil Tráfego contém as seguintes dimensões para ajudar a identificar as ações do visitante.
 
-As dimensões na tabela a seguir são definidas no conjunto de dados de transformação para incluir arquivos na pasta Traffic\Dataset\Transformation directory.
+As dimensões na tabela a seguir são definidas no conjunto de dados de transformação para incluir arquivos no diretório Tráfego\Conjunto de Dados\Transformação.
 
 | Nome | Tipo | Nível | Descrição |
 |---|---|---|---|
 | Dia | Simples | Sessão | O dia da primeira entrada de log da sessão. |
 | Dia da semana | Simples | Sessão | O dia da semana da primeira entrada de log de uma sessão. |
-| Duração exata da página (oculta) | Numérico | Exibição da Página | A duração, em milissegundos, da visualização da página, medida pela subtração do tempo da próxima visualização da página a partir do momento dessa visualização. A duração exata da última exibição de página em uma sessão é sempre 0. |
+| Duração exata da página (oculta) | Numérico | Exibição de página | A duração, em milissegundos, da visualização da página, medida pela subtração do tempo da próxima visualização da página a partir do momento dessa visualização. A duração exata da última exibição de página em uma sessão é sempre 0. |
 | Hora | Simples | Sessão | A hora da primeira entrada de log de uma sessão. |
 | Hora do dia | Simples | Sessão | A hora do dia da primeira entrada de log de uma sessão. |
 | Mês | Simples | Sessão | O mês da primeira entrada de log de uma sessão. |
-| Exibição da Página | Contável | Sessão | Uma entrada de log ou &quot;Registro de dados do evento&quot; que satisfaz a condição de exibição de página. |
+| Exibição de página | Contável | Sessão | Uma entrada de log ou &quot;Registro de dados do evento&quot; que satisfaz a condição de exibição de página. |
 | Referenciador | Simples | Sessão | O domínio de segundo nível do referenciador da primeira entrada de log da sessão (ou Nenhum se for um domínio de referenciador interno). |
-| Sessão | Contável | Visitante | Um período de atividade contígua relacionada por um Visitante. É delimitado por um período de 30 minutos de inatividade e um domínio de referenciador externo ou uma Duração máxima de sessão de 48 horas. Ambos os tempos limite e o conjunto de domínios considerados internos podem ser configurados no arquivo [!DNL Transformation.cfg]. |
-| URI | Simples | Exibição da Página | O fluxo de URI de uma exibição de página. A dimensão URI pode ser redefinida usando as transformações ReplaceURI, PrependURI e AppendURI . |
+| Sessão | Contável | Visitante | Um período de atividade contígua relacionada por um Visitante. É delimitado por um período de 30 minutos de inatividade e um domínio de referenciador externo ou uma Duração máxima de sessão de 48 horas. Ambos os tempos limite e o conjunto de domínios considerados internos podem ser configurados na variável [!DNL Transformation.cfg] arquivo. |
+| URI | Simples | Exibição de página | O fluxo de URI de uma exibição de página. A dimensão URI pode ser redefinida usando as transformações ReplaceURI, PrependURI e AppendURI . |
 | Visitante | Contável | N/D | Um valor exclusivo de x-trackingid. Geralmente corresponde a um navegador exclusivo se cookies persistentes forem usados. Caso contrário, o x-trackingid pode ser baseado no número de IP ou em algum outro identificador exclusivo, como x.509 common name. |
 | Semana | Simples | Sessão | A semana da primeira entrada de log de uma sessão. |
 
@@ -64,7 +66,7 @@ As dimensões na tabela a seguir são definidas no diretório Dimension do perfi
   <tr> 
    <td colname="col1"> Próximo URI </td> 
    <td colname="col2"> Derivada (ShiftDim com base na dimensão URI) </td> 
-   <td colname="col03"> Exibição da Página </td> 
+   <td colname="col03"> Exibição de página </td> 
    <td colname="col3"> O URI do URI seguinte após o URI atualmente selecionado. Essa dimensão derivada é usada para realizar análises sobre o que os visitantes fazem depois de qualquer URI. </td> 
   </tr> 
   <tr> 
@@ -76,7 +78,7 @@ As dimensões na tabela a seguir são definidas no diretório Dimension do perfi
   <tr> 
    <td colname="col1"> Página </td> 
    <td colname="col2"> Derivado (RenomearDim com base na dimensão URI) </td> 
-   <td colname="col03"> Exibição da Página </td> 
+   <td colname="col03"> Exibição de página </td> 
    <td colname="col3"> O nome de cada página visitada durante uma sessão. Inicialmente, o nome de cada página é igual ao URI, mas pode ser alterado para facilitar a interpretação. </td> 
   </tr> 
   <tr> 
@@ -92,7 +94,7 @@ As dimensões na tabela a seguir são definidas no diretório Dimension do perfi
    <td colname="col3"> A primeira frase de pesquisa na sessão de um visitante, como passada por um mecanismo de pesquisa quando um visitante pesquisou a partir de um mecanismo de pesquisa nomeado. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Termo de Pesquisa </td> 
+   <td colname="col1"> Termo de pesquisa </td> 
    <td colname="col2"> Muitas para muitas </td> 
    <td colname="col03"> Sessão </td> 
    <td colname="col3"> Cada termo de pesquisa como passado por um mecanismo de pesquisa quando um visitante tem um click-through do referenciador de pesquisa de um mecanismo de pesquisa nomeado. </td> 
@@ -136,7 +138,7 @@ As dimensões na tabela a seguir são definidas no diretório Dimension do perfi
   <tr> 
    <td colname="col1"> URI </td> 
    <td colname="col2"> Herdado do URI do Dimension incorporado </td> 
-   <td colname="col03"> Exibição da Página </td> 
+   <td colname="col03"> Exibição de página </td> 
    <td colname="col3"> O URI de cada página exibida. </td> 
   </tr> 
   <tr> 

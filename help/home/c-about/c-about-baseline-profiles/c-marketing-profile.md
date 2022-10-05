@@ -3,7 +3,7 @@ description: A dimensão Campanha é definida no perfil de Marketing do Site par
 title: Dimensões de perfil de marketing
 uuid: 034b4318-58e6-4638-9b13-fac83ff9f826
 exl-id: 93804fba-a44b-4cdc-8d67-d4ec0656e742
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Dimensões de perfil de marketing{#marketing-profile-dimensions}
+
+{{eol}}
 
 A dimensão Campanha é definida no perfil de Marketing do Site para fornecer recursos de análise de campanha.
 

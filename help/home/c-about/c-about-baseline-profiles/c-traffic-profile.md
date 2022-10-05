@@ -3,7 +3,7 @@ description: O perfil Tráfego contém as seguintes métricas para identificar o
 title: Métricas de perfil de tráfego
 uuid: 7dfa18ef-d2cd-44ae-8c56-a0630a9d5cf2
 exl-id: 38f191e5-5b30-4fe0-a680-bcb33fe52eca
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Métricas de perfil de tráfego{#traffic-profile-metrics}
+
+{{eol}}
 
 O perfil Tráfego contém as seguintes métricas para identificar o tráfego do visitante.
 
@@ -25,7 +27,7 @@ O perfil Tráfego contém as seguintes métricas para identificar o tráfego do 
  <tbody> 
   <tr> 
    <td colname="col1"> Entradas </td> 
-   <td colname="col2">Fórmula: <span class="filepath"> Page_Views[no shift(None,Page_View, Session,-1)]</span><p>Nível: Exibição da página </p></td> 
+   <td colname="col2">Fórmula: <span class="filepath"> Page_Views[sem shift(None,Page_View, Session,-1)]</span><p>Nível: Exibição da página </p></td> 
    <td colname="col3"> O número de sessões que entraram no site em cada página. Essa métrica é avaliada somente pela dimensão Página . </td> 
   </tr> 
   <tr> 
@@ -45,7 +47,7 @@ O perfil Tráfego contém as seguintes métricas para identificar o tráfego do 
   </tr> 
   <tr> 
    <td colname="col1"> Duração da exibição de página </td> 
-   <td colname="col2"> <p>Fórmula: <span class="filepath"> soma (exato_page_duration, page_view)*0.1/Page_Views[any Exact_Page_Duration]</span></p> <p>Nível: Exibição da página </p> </td> 
+   <td colname="col2"> <p>Fórmula: <span class="filepath"> soma (exato_page_duration, page_view)*0.1/Page_Views[any_Exact_Page_Duration]</span></p> <p>Nível: Exibição da página </p> </td> 
    <td colname="col3"> O tempo médio (MM:SS) gasto em uma página ou grupo de páginas específico. Essa métrica é avaliada somente pela dimensão Página . </td> 
   </tr> 
   <tr> 
@@ -55,7 +57,7 @@ O perfil Tráfego contém as seguintes métricas para identificar o tráfego do 
   </tr> 
   <tr> 
    <td colname="col1"> Exibições de página </td> 
-   <td colname="col2">Fórmula: <span class="filepath"> soma(Um, Page_View)</span><p>Nível: Exibição da página </p></td> 
+   <td colname="col2">Fórmula: <span class="filepath"> sum(One, Page_View)</span><p>Nível: Exibição da página </p></td> 
    <td colname="col3"> O número de exibições da página. Uma exibição de página é uma solicitação de uma página definida (o acesso a imagens e outros tipos de conteúdo filtrado não são contados). </td> 
   </tr> 
   <tr> 
@@ -65,12 +67,12 @@ O perfil Tráfego contém as seguintes métricas para identificar o tráfego do 
   </tr> 
   <tr> 
    <td colname="col1"> Pct das sessões </td> 
-   <td colname="col2">Fórmula: <span class="filepath"> Sessões/total(Sessões)</span><p>Nível: Sessão </p></td> 
+   <td colname="col2">Fórmula: <span class="filepath"> Sessões/total (Sessões)</span><p>Nível: Sessão </p></td> 
    <td colname="col3"> A porcentagem de sessões. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Pct de visitantes </td> 
-   <td colname="col2">Fórmula: <span class="filepath"> Visitantes/total(Visitantes) </span><p>Nível: Visitante </p></td> 
+   <td colname="col2">Fórmula: <span class="filepath"> Visitantes/total (Visitantes) </span><p>Nível: Visitante </p></td> 
    <td colname="col3"> A porcentagem de visitantes. </td> 
   </tr> 
   <tr> 
@@ -96,7 +98,7 @@ O perfil Tráfego contém as seguintes métricas para identificar o tráfego do 
   <tr> 
    <td colname="col1"> Duração da sessão </td> 
    <td colname="col2"> <p>Fórmula: <span class="filepath"> (soma (Exact_Page_Duration, Session)*.1/Sessions)[Session_ Duration &lt;= '01:00:00']</span></p> <p>Nível: Sessão </p> </td> 
-   <td colname="col3">A duração média (MM:SS) que um visitante gasta em uma sessão. <p><p>Observação: Você pode usar essa métrica com o recurso <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Exportar segmento</a>. </p></p></td> 
+   <td colname="col3">A duração média (MM:SS) que um visitante gasta em uma sessão. <p><p>Observação: É possível usar essa métrica com a variável <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Exportar segmento</a> recurso. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sessões por exibição de página </td> 
@@ -105,22 +107,22 @@ O perfil Tráfego contém as seguintes métricas para identificar o tráfego do 
   </tr> 
   <tr> 
    <td colname="col1"> Sessões </td> 
-   <td colname="col2"> <p>Fórmula: <span class="filepath"> soma(Uma, Sessão)</span></p> <p>Nível: Sessão </p> </td> 
+   <td colname="col2"> <p>Fórmula: <span class="filepath"> sum(One, Session)</span></p> <p>Nível: Sessão </p> </td> 
    <td colname="col3"> Uma contagem de sessões de visitante. Uma sessão é um período de atividade para um visitante de um site. As sessões individuais para cada visitante são identificadas usando cookies, tempos limite e outras heurísticas. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SCI80 </td> 
-   <td colname="col2"> <p>Fórmula: <span class="filepath"> confidence(Sessions) * 1.281551 / Sessions</span></p> <p>Nível: Visitante </p> </td> 
+   <td colname="col2"> <p>Fórmula: <span class="filepath"> confidence(Sessions) * 1.281551 / Sessões</span></p> <p>Nível: Visitante </p> </td> 
    <td colname="col3"> Uma medida de confiança da métrica Sessões conforme relatado pelo Data Workbench. Matematicamente, é uma porcentagem +/- especificando o intervalo no qual a resposta real será de 80% das vezes. Em princípio, a duplicação da percentagem SCI80 dará um intervalo dentro do qual a resposta efetiva será de 99% das vezes. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> UVCI90 </td> 
-   <td colname="col2"> <p>Fórmula: <span class="filepath"> ((raw(Visitors) + .68)^0.5 * 1.281551 + 1.2269) + raw(Visitors))*( Visitors/raw(Visitors))</span></p> <p>Nível: Visitante </p> </td> 
+   <td colname="col2"> <p>Fórmula: <span class="filepath"> ((bruto(Visitantes) + .68)^0.5 * 1.281551 + 1.2269) + bruto(Visitantes))*( Visitantes/bruto(Visitantes))</span></p> <p>Nível: Visitante </p> </td> 
    <td colname="col3"> Uma medida do maior número de visitantes possíveis, conforme relatado pelo Insight. Matematicamente, ele especifica o número mais alto de visitantes com uma probabilidade de 90%. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> VCI80 </td> 
-   <td colname="col2">Fórmula: <span class="filepath"> ((raw(Visitors) + .68)^0.5 * 1.281551 + 1.2269) / raw(Visitors)</span><p>Nível: Visitante </p></td> 
+   <td colname="col2">Fórmula: <span class="filepath"> ((Visitantes brutos) + .68)^0.5 * 1.281551 + 1.2269) / bruta (Visitantes)</span><p>Nível: Visitante </p></td> 
    <td colname="col3"> Uma medida de confiança da métrica Visitantes conforme relatado pelo Insight. Matematicamente, é uma porcentagem +/- especificando o intervalo no qual a resposta real será de 80% das vezes. Em princípio, dobrar a porcentagem de VCI80 dará um intervalo dentro do qual a resposta real ficará em 99% das vezes. </td> 
   </tr> 
   <tr> 
@@ -130,7 +132,7 @@ O perfil Tráfego contém as seguintes métricas para identificar o tráfego do 
   </tr> 
   <tr> 
    <td colname="col1"> Visitantes por sessão </td> 
-   <td colname="col2"> <p>Fórmula: <span class="filepath"> Visitantes por Sessão </span></p> <p>Nível: Sessão </p> </td> 
+   <td colname="col2"> <p>Fórmula: <span class="filepath"> Visitantes por sessão </span></p> <p>Nível: Sessão </p> </td> 
    <td colname="col3"> O número de visitantes que tiveram uma sessão. </td> 
   </tr> 
  </tbody> 
