@@ -3,7 +3,7 @@ description: As seguintes dimensões estão disponíveis para uso no perfil Hist
 title: Dimensões no perfil histórico do Data Workbench
 uuid: 6d93fba4-986b-46a4-9479-aeb54853dff5
 exl-id: 9df1f317-a985-4132-b32e-f2263e0c23b2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dimensões no perfil histórico do Data Workbench{#dimensions-in-the-data-workbench-historic-profile}
+
+{{eol}}
 
 As seguintes dimensões estão disponíveis para uso no perfil Histórico do Data Workbench.
 
@@ -22,7 +24,7 @@ As seguintes dimensões estão disponíveis para uso no perfil Histórico do Dat
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Bloco</b> </td> 
-   <td colname="col2">Essa é a única contável nessa configuração, ela é a raiz de todas as dimensões. Um bloco pode ser considerado um servidor. Ele está usando o campo x-trackingid . <p>Observação:  A ID de bloco é um hash do nome do servidor mais o nome do host, portanto, haverá aproximadamente um bloco por servidor por perfil. </p></td> 
+   <td colname="col2">Essa é a única contável nessa configuração, ela é a raiz de todas as dimensões. Um bloco pode ser considerado um servidor. Ele está usando o campo x-trackingid . <p>Observação: A ID de bloco é um hash do nome do servidor mais o nome do host, portanto, haverá aproximadamente um bloco por servidor por perfil. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Ping</b> </td> 
@@ -82,19 +84,19 @@ As seguintes dimensões estão disponíveis para uso no perfil Histórico do Dat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Estimativa de segundos de varredura</b> </td> 
-   <td colname="col2"> O campo x-estimated-sweep-dekaseconds é usado neste Dimension numérico. Esse é o tempo estimado de varredura dos servidores dividido por dez (resolução reduzida de medição de varredura para tornar a dimensão mais razoavelmente dimensionada). <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> O campo x-estimated-sweep-dekaseconds é usado neste Dimension numérico. Esse é o tempo estimado de varredura dos servidores dividido por dez (resolução reduzida de medição de varredura para tornar a dimensão mais razoavelmente dimensionada). <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>MegaBytes de Entrada Rápida por Minuto</b> </td> 
-   <td colname="col2"> O valor cs-uri-query(bj) é usado para essa dimensão. A Última linha de um bloco é usada como o valor da dimensão. Se o conjunto de dados estiver em Fast Input, esse valor numérico será exibido na MB por minuto, no qual o sistema está inserindo dados. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> O valor cs-uri-query(bj) é usado para essa dimensão. A Última linha de um bloco é usada como o valor da dimensão. Se o conjunto de dados estiver em Fast Input, esse valor numérico será exibido na MB por minuto, no qual o sistema está inserindo dados. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>MegaBytes de Mesclagem Rápida por Minuto</b> </td> 
-   <td colname="col2">O valor cs-uri-query(bk) é usado para essa dimensão. A Última linha de um bloco é usada como o valor da dimensão. Se o conjunto de dados estiver em Fast Merge Este valor Numérico de Mesclagem exibirá o MB por minuto no qual o sistema está se mesclando. <p><p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></p></td> 
+   <td colname="col2">O valor cs-uri-query(bk) é usado para essa dimensão. A Última linha de um bloco é usada como o valor da dimensão. Se o conjunto de dados estiver em Fast Merge Este valor Numérico de Mesclagem exibirá o MB por minuto no qual o sistema está se mesclando. <p><p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Campo GigaBytes</b> </td> 
-   <td colname="col2">O valor cs-uri-query(bg) é usado para essa dimensão. O valor é dividido por 1000 e arredondado para o número inteiro mais próximo. Esse valor Numérico de Dimension exibirá a quantidade de espaço que os Campos no conjunto de dados estão usando. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">O valor cs-uri-query(bg) é usado para essa dimensão. O valor é dividido por 1000 e arredondado para o número inteiro mais próximo. Esse valor Numérico de Dimension exibirá a quantidade de espaço que os Campos no conjunto de dados estão usando. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Grupo</b> </td> 
@@ -102,7 +104,7 @@ As seguintes dimensões estão disponíveis para uso no perfil Histórico do Dat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Host</b> </td> 
-   <td colname="col2"> O valor cs-uri-query(b) é usado para essa dimensão. O valor da dimensão Simples é a Última Linha de um Bloco. </td> 
+   <td colname="col2"> O valor cs-uri-query(b) é usado para essa dimensão. O valor da dimensão Simples é a Última Linha para um Bloco. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Último ping</b> </td> 
@@ -110,31 +112,31 @@ As seguintes dimensões estão disponíveis para uso no perfil Histórico do Dat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Carga média</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(i) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a carga média nos servidores do sistema que está sendo monitorado. <p><p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(i) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a carga média nos servidores do sistema que está sendo monitorado. <p><p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem de Leitura de Log</b> </td> 
-   <td colname="col2">o valor cs-uri-query(be) é usado para essa dimensão numérica, criada no nível de Ping. Essa dimensão é usada para calcular a porcentagem de logs que estão sendo lidos. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">o valor cs-uri-query(be) é usado para essa dimensão numérica, criada no nível de Ping. Essa dimensão é usada para calcular a porcentagem de logs que estão sendo lidos. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem do Arquivo da Página de Memória</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando o valor cs-uri-query(o), criado no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1". Essa dimensão é usada para calcular a porcentagem do uso de memória do arquivo de página. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando o valor cs-uri-query(o), criado no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1". Essa dimensão é usada para calcular a porcentagem do uso de memória do arquivo de página. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Total de megabytes físicos de memória</b> </td> 
-   <td colname="col2">Esta é uma dimensão Numérica usando o valor cs-uri-query(ag), criado no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">Esta é uma dimensão Numérica usando o valor cs-uri-query(ag), criado no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem física da memória</b> </td> 
-   <td colname="col2">Esta é uma dimensão Numérica usando o valor cs-uri-query(ag), criado no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1. Essa dimensão é usada para calcular a porcentagem do uso de memória física de cada Servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">Esta é uma dimensão Numérica usando o valor cs-uri-query(ag), criado no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1. Essa dimensão é usada para calcular a porcentagem do uso de memória física de cada Servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem de Consulta de Memória</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando o valor cs-uri-query(s) no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1. Essa dimensão é usada para calcular a porcentagem do uso de memória de consulta de cada Servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando o valor cs-uri-query(s) no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1. Essa dimensão é usada para calcular a porcentagem do uso de memória de consulta de cada Servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Conexões de rede</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando o valor cs-uri-query(q) criado no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1. Isso é usado para mostrar o número de conexões de rede que existem para um determinado servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando o valor cs-uri-query(q) criado no nível Ping. Está condicionado em cs-uri-query(k) não estando vazio e cs-uri-query(a) correspondendo a "1. Isso é usado para mostrar o número de conexões de rede que existem para um determinado servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Linhas de saída</b> </td> 
@@ -146,11 +148,11 @@ As seguintes dimensões estão disponíveis para uso no perfil Histórico do Dat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Segundos da Latência da Pesquisa</b> </td> 
-   <td colname="col2">O valor cs-uri-query(m) é dividido por 10 para reduzir o tamanho da dimensão e copiado para o campo x-poll-latency-centiseconds. Esta é uma dimensão Numérica criada no nível de Ping, condicionada pelo fato de cs-uri-query(k) não estar vazia e cs-uri-query(a) corresponder a "1"/ Essa dimensão é usada para calcular a latência da pesquisa. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">O valor cs-uri-query(m) é dividido por 10 para reduzir o tamanho da dimensão e copiado para o campo x-poll-latency-centiseconds. Esta é uma dimensão Numérica criada no nível de Ping, condicionada pelo fato de cs-uri-query(k) não estar vazia e cs-uri-query(a) corresponder a "1"/ Essa dimensão é usada para calcular a latência da pesquisa. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>ID do modo de processamento</b> </td> 
-   <td colname="col2"> O valor cs-uri-query(bb) é usado para esse Dimension Simple, criado no nível Ping. Está condicionado que cs-uri-query(bb) não está vazio e que cs-uri-query(a) corresponde à ID de modo de processamento "2" permite ver em que modo de processamento o sistema está (Fast Input, Fast Merge, Tempo Real). <p>Observação:  Essa dimensão é oculta e re-exposta com valores amigáveis na dimensão do cliente Modo de processamento. </p></td> 
+   <td colname="col2"> O valor cs-uri-query(bb) é usado para esse Dimension Simple, criado no nível Ping. Está condicionado que cs-uri-query(bb) não está vazio e que cs-uri-query(a) corresponde à ID de modo de processamento "2" permite ver em que modo de processamento o sistema está (Fast Input, Fast Merge, Tempo Real). <p>Observação: Essa dimensão é oculta e re-exposta com valores amigáveis na dimensão do cliente Modo de processamento. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Perfil</b> </td> 
@@ -174,11 +176,11 @@ As seguintes dimensões estão disponíveis para uso no perfil Histórico do Dat
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem de Espaço de Banco de Dados Temp</b> </td> 
-   <td colname="col2">Dimension numérico criado usando o valor cs-uri-query(an), criado no nível de Ping. Está condicionado que cs-uri-query(k) não está vazio e cs-uri-query(a) corresponde a "1". Ele é usado para calcular a porcentagem do espaço de banco de dados Temp usado em um determinado servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">Dimension numérico criado usando o valor cs-uri-query(an), criado no nível de Ping. Está condicionado que cs-uri-query(k) não está vazio e cs-uri-query(a) corresponde a "1". Ele é usado para calcular a porcentagem do espaço de banco de dados Temp usado em um determinado servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem de transformação</b> </td> 
-   <td colname="col2">o valor cs-uri-query(bf) é usado para essa dimensão numérica. Ele é criado no nível do Ping. Essa dimensão é usada para calcular a porcentagem da transformação completa de dados. <p><p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></p></td> 
+   <td colname="col2">o valor cs-uri-query(bf) é usado para essa dimensão numérica. Ele é criado no nível do Ping. Essa dimensão é usada para calcular a porcentagem da transformação completa de dados. <p><p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Versão do Data Workbench</b> </td> 

@@ -3,7 +3,7 @@ description: Você pode criar um segmento dos elementos de qualquer dimensão co
 title: Configurar segmentos para exportar
 uuid: 651be834-ee41-4487-8c5a-30d94580f6a0
 exl-id: 4f53e02c-3f00-44b3-9f6d-a2f23903b3fa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 6%
@@ -12,17 +12,19 @@ ht-degree: 6%
 
 # Configurar segmentos para exportar{#configure-segments-for-export}
 
+{{eol}}
+
 Você pode criar um segmento dos elementos de qualquer dimensão contável e, em seguida, exportar os dados desse segmento em um lote ou em tempo real, em um arquivo delimitado por tabulação.
 
 Toda vez que você esporta um segmento, ocorre a saída de métricas e dados de dimensão para todos os elementos da dimensão incluídos nesse segmento. É possível controlar como os dados de saída são formatados para que outros sistemas possam fazer upload dos dados facilmente.
 
 >[!NOTE]
 >
->Não é possível exportar dimensões de relatório, pois elas usam um arquivo [!DNL report time.metric] para referência. Como solução alternativa, se você colocar um [!DNL report time.metric] codificado no perfil, a exportação do segmento pode usá-lo como um ponto de referência para as dimensões do relatório. No entanto, o [!DNL report time.metric] não é atualizado automaticamente com base na Hora de início do perfil, portanto, quando você deseja alterar a referência da dimensão de relatório, é necessário alterar o arquivo [!DNL report time.metric] codificado.
+>Não é possível exportar dimensões de relatório, pois elas usam um [!DNL report time.metric] para referência. Como solução alternativa, se você colocar um código fixo [!DNL report time.metric] no perfil, a exportação do segmento pode usá-lo como ponto de referência para as dimensões do relatório. No entanto, a variável [!DNL report time.metric] O não atualiza automaticamente com base na Hora de início do perfil, de modo que, quando quiser alterar a referência da dimensão do relatório, altere a dimensão do código fixo [!DNL report time.metric] arquivo.
 
-Para configurar um segmento para exportação, você deve abrir e editar um arquivo [!DNL .export].
+Para configurar um segmento para exportação, você deve abrir e editar um [!DNL .export] arquivo.
 
-1. Na coluna [!DNL Profile Manager], clique no diretório **[!UICONTROL Export]** na coluna [!DNL File] para exibir seu conteúdo.
+1. No [!DNL Profile Manager], clique no botão **[!UICONTROL Export]** no [!DNL File] para mostrar seu conteúdo.
 
        Se o diretório Export não existir, crie-o da seguinte maneira:
    
@@ -30,16 +32,16 @@ Para configurar um segmento para exportação, você deve abrir e editar um arqu
    1. Abra o diretório do perfil com o qual você está trabalhando.
    1. No diretório Profile , crie um novo diretório chamado &quot;Export&quot;.
 
-1. No [!DNL Profile Manager], clique com o botão direito do mouse na célula vazia na coluna [!DNL User] do diretório Export e clique em **[!UICONTROL Create]** > **[!UICONTROL New Segment Export]**.
+1. No [!DNL Profile Manager], clique com o botão direito do mouse na célula vazia no [!DNL User] para o diretório Export e clique em **[!UICONTROL Create]** > **[!UICONTROL New Segment Export]**.
 
-   Um arquivo chamado [!DNL New Segment Export.export] aparece na coluna [!DNL File] para Exportar.
+   Um arquivo chamado [!DNL New Segment Export.export] aparece no [!DNL File] para Exportar.
 
-1. Renomeie o novo arquivo clicando com o botão direito do mouse na coluna [!DNL User] do arquivo e digitando o novo nome no parâmetro Arquivo .
-1. Abra o novo arquivo clicando com o botão direito do mouse na coluna [!DNL User] do arquivo e clicando em **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
+1. Renomeie o novo arquivo clicando com o botão direito do mouse no [!DNL User] para o arquivo e digitando o novo nome no parâmetro Arquivo .
+1. Abra o novo arquivo clicando com o botão direito do mouse no [!DNL User] para o arquivo e clicando em **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
 
-   A janela de configuração do arquivo [!DNL .export] é exibida.
+   A janela de configuração do [!DNL .export] é exibido.
 
-1. Clique em **[!UICONTROL Query]** e modifique os campos do arquivo [!DNL .export] conforme descrito na tabela a seguir:
+1. Clique em **[!UICONTROL Query]** e modifique os campos do [!DNL .export] conforme descrito na tabela a seguir:
 
 <table id="table_C2EC8FCD3FA04DE78D2CADFA3F7FD8E3"> 
  <thead> 
@@ -51,7 +53,7 @@ Para configurar um segmento para exportação, você deve abrir e editar um arqu
  <tbody> 
   <tr> 
    <td colname="col1"> Comando </td> 
-   <td colname="col2"> <p>Opcional. Um programa a ser executado após a criação do Arquivo de saída. Este campo deve referenciar um executável (um arquivo <span class="filepath"> .exe </span>), não um comando shell. </p> <p>Observação:  A exportação do segmento falhará se houver um espaço no parâmetro de comando. </p> </td> 
+   <td colname="col2"> <p>Opcional. Um programa a ser executado após a criação do Arquivo de saída. Este campo deve referenciar um executável (um <span class="filepath"> .exe </span> arquivo), não um comando shell. </p> <p>Observação: A exportação do segmento falhará se houver um espaço no parâmetro de comando. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Filtro </td> 
@@ -63,7 +65,7 @@ Para configurar um segmento para exportação, você deve abrir e editar um arqu
   </tr> 
   <tr> 
    <td colname="col1"> Arquivo de saída </td> 
-   <td colname="col2"> <p>Caminho e nome do arquivo dos dados exportados. Se o perfil estiver sendo executado em um cluster de servidores Data Workbench, cada servidor de Data Workbench gravará um Arquivo de Saída contendo uma parte dos dados. </p> <p>O diretório de instalação do servidor do Data Workbench contém um diretório Exportações, onde é possível salvar o arquivo de saída. Por exemplo, você pode inserir <span class="filepath"> Exportações\Visitor Segment.txt </span>, onde <span class="filepath"> Visitor Segment.txt </span> é o nome do arquivo que contém os dados exportados. </p> </td> 
+   <td colname="col2"> <p>Caminho e nome do arquivo dos dados exportados. Se o perfil estiver sendo executado em um cluster de servidores Data Workbench, cada servidor de Data Workbench gravará um Arquivo de Saída contendo uma parte dos dados. </p> <p>O diretório de instalação do servidor do Data Workbench contém um diretório Exportações, onde é possível salvar o arquivo de saída. Por exemplo, você pode inserir <span class="filepath"> Exportações\Segmento do visitante.txt </span>, onde <span class="filepath"> Visitor Segment.txt </span> é o nome do arquivo que contém os dados exportados. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Formato de saída </td> 
@@ -71,7 +73,7 @@ Para configurar um segmento para exportação, você deve abrir e editar um arqu
   </tr> 
   <tr> 
    <td colname="col1"> Hora de Término da Programação </td> 
-   <td colname="col2"> <p>Opcional. A data e hora de término da programação, incluindo o fuso horário. </p> <p>Formato: Fuso horário AAAA-MM-DD hh:mm </p> <p>Exemplo: 2013-08-01 12:01 EDT </p> <p>As exportações programadas param neste momento; no entanto, o arquivo de saída ainda é gerado novamente sempre que sua definição é alterada. Este campo não tem sentido sem definir a Programação a Cada. Para obter mais informações sobre as configurações de fuso horário, consulte o <i>Guia de Configuração de Conjunto de Dados</i>. </p> </td> 
+   <td colname="col2"> <p>Opcional. A data e hora de término da programação, incluindo o fuso horário. </p> <p>Formato: Fuso horário AAAA-MM-DD hh:mm </p> <p>Exemplo: 2013-08-01 12:01 EDT </p> <p>As exportações programadas param neste momento; no entanto, o arquivo de saída ainda é gerado novamente sempre que sua definição é alterada. Este campo não tem sentido sem definir a Programação a Cada. Para obter mais informações sobre as configurações de fuso horário, consulte o <i>Guia de configuração do conjunto de dados</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Agendar a cada </td> 
@@ -79,7 +81,7 @@ Para configurar um segmento para exportação, você deve abrir e editar um arqu
   </tr> 
   <tr> 
    <td colname="col1"> Hora de Início da Programação </td> 
-   <td colname="col2"> <p>Opcional. A data e hora de início da programação, incluindo o fuso horário. </p> <p>Formato: Fuso horário AAAA-MM-DD hh:mm </p> <p>Exemplo: 2013-08-01 12:01 EDT </p> <p>As exportações programadas começam nesse momento e a programação é relativa a esse momento. Este campo não tem significado sem definir <span class="wintitle"> Agendar a cada </span>. Para obter mais informações sobre as configurações de fuso horário, consulte o <i>Guia de Configuração de Conjunto de Dados</i>. </p> </td> 
+   <td colname="col2"> <p>Opcional. A data e hora de início da programação, incluindo o fuso horário. </p> <p>Formato: Fuso horário AAAA-MM-DD hh:mm </p> <p>Exemplo: 2013-08-01 12:01 EDT </p> <p>As exportações programadas começam nesse momento e a programação é relativa a esse momento. Este campo não tem sentido sem definir <span class="wintitle"> Agendar a cada </span>. Para obter mais informações sobre as configurações de fuso horário, consulte o <i>Guia de configuração do conjunto de dados</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Limite de Tempo (s) </td> 
@@ -88,17 +90,17 @@ Para configurar um segmento para exportação, você deve abrir e editar um arqu
  </tbody> 
 </table>
 
-1. Clique com o botão direito do mouse **[!UICONTROL (New)]** na parte superior da janela e depois clique em **[!UICONTROL Save]**.
-1. Para disponibilizar esse arquivo para todos os usuários do perfil de trabalho, clique com o botão direito do mouse na marca de seleção do arquivo [!DNL .export] criado na coluna [!DNL User] e depois clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. Clique com o botão direito do mouse **[!UICONTROL (New)]** na parte superior da janela, em seguida, clique em **[!UICONTROL Save]**.
+1. Para disponibilizar esse arquivo para todos os usuários do perfil de trabalho, clique com o botão direito do mouse na marca de seleção do arquivo criado [!DNL .export] no [!DNL User] e, em seguida, clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
-   >Salvar o arquivo [!DNL .export] no servidor do Data Workbench faz com que a exportação seja executada uma vez imediatamente, mesmo que a Hora de Início da Programação esteja definida como uma data e hora futuras.
+   >Salvar o [!DNL .export] para o servidor do Data Workbench faz com que a exportação seja executada uma vez imediatamente, mesmo que a Hora de início da programação esteja definida como uma data e hora futuras.
 
-   A seguir, há um arquivo de amostra [!DNL .export].
+   Veja a seguir uma amostra [!DNL .export] arquivo.
 
    ![](assets/vis_Segment_Export_File.png)
 
    >[!NOTE]
    >
-   >O arquivo [!DNL Visitor Segment.export] mostrado na amostra refere-se ao filtro de Segmento do visitante. Modificar a definição desse filtro altera a definição da exportação.
+   >O [!DNL Visitor Segment.export] o arquivo exibido na amostra refere-se ao filtro Segmento do visitante . Modificar a definição desse filtro altera a definição da exportação.

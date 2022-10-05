@@ -3,7 +3,7 @@ description: A transformação Nivelar pega um vetor de sequências de caractere
 title: Flatten
 uuid: 00b06a5c-506b-45fe-9773-44d65b8ec233
 exl-id: 63f3e4bc-238f-4e15-8ae5-2f805bd080d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Nivelar{#flatten}
+
+{{eol}}
 
 A transformação Nivelar pega um vetor de sequências de caracteres e mapeia cada valor em seu próprio campo.
 
@@ -28,7 +30,7 @@ Considerações para [!DNL Flatten]
 * Se o vetor de entrada contiver mais valores do que os campos de saída definidos, os valores de entrada extras serão simplesmente soltos.
 * Se o vetor de entrada contiver menos valores do que existem campos de saída definidos, os campos de saída extras receberão o valor padrão (se definido) ou uma string vazia, se nenhum valor padrão for definido.
 
-Aqui, a transformação [!DNL Flatten] é usada para pegar um vetor de produtos (x-products) e separá-los em quatro campos (x-product1, ..., x-product4).
+Aqui, o [!DNL Flatten] a transformação é usada para pegar um vetor de produtos (x-products) e separá-los em quatro campos (x-product1, ..., x-product4).
 
 ![](assets/cfg_TransformationType_Flatten.png)
 

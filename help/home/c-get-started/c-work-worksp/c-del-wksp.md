@@ -3,7 +3,7 @@ description: Informações sobre a exclusão de espaços de trabalho da bancada.
 title: Excluir um espaço de trabalho
 uuid: 85fd84d6-0602-4ff4-a55a-44077f3f3151
 exl-id: 17ea8b7b-9ecb-44a5-844c-f7daec52dc8e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Excluir um espaço de trabalho{#deleting-a-workspaces}
+
+{{eol}}
 
 Informações sobre a exclusão de espaços de trabalho da bancada.
 

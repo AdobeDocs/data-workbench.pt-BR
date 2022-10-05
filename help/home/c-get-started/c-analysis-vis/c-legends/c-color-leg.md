@@ -3,7 +3,7 @@ description: As legendas de cores visualizam códigos de cores por métricas com
 title: Legendas de cores
 uuid: 4f5ad93e-9128-464c-b5b7-9db454fa71a6
 exl-id: 0ecf5237-8d64-46a6-b73b-e59de69e5988
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Legendas de cores{#color-legends}
+
+{{eol}}
 
 As legendas de cores visualizam códigos de cores por métricas como Conversão e Retenção e podem ser usadas em quase todos os espaços de trabalho.
 

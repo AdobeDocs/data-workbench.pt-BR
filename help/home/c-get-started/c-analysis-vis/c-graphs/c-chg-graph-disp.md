@@ -3,7 +3,7 @@ description: Por padrão, as visualizações de gráfico exibem barras, mas é p
 title: Alterar uma exibição de gráfico
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
 exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Alterar uma exibição de gráfico{#change-a-graph-display}
+
+{{eol}}
 
 Por padrão, as visualizações de gráfico exibem barras, mas é possível exibir facilmente as barras como linhas e vice-versa.
 
@@ -26,11 +28,11 @@ Clique com o botão direito do mouse no rótulo da dimensão na parte inferior d
 
 **Sobreposição de gradiente em um gráfico**
 
-Clique com o botão direito do mouse e selecione uma **Sobreposição de gradiente** no menu para exibir melhor os elementos do gráfico.
+Você pode clicar com o botão direito do mouse e selecionar uma **Sobreposição de gradiente** no menu para exibir melhor os elementos do gráfico.
 
 ![](assets/6_51_gradient_graph.png)
 
-* **Sem sobreposição** de gradiente. Selecione para mostrar barras sem sobreposição de gradiente aplicada.
+* **Sem sobreposição de gradiente**. Selecione para mostrar barras sem sobreposição de gradiente aplicada.
 * **Plano de fundo da esquerda**. Selecione para mostrar a gradação de cores em todas as barras, da esquerda para a direita.
-* **Plano de fundo da direita**. Selecione para mostrar a gradação de cores em todas as barras, da direita para a esquerda.
+* **Fundo da Direita**. Selecione para mostrar a gradação de cores em todas as barras, da direita para a esquerda.
 * **Cilindro**. Selecione para mostrar a gradação de cores do centro de cada barra até a borda de cada barra.

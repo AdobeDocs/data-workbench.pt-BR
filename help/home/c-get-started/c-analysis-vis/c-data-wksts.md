@@ -3,7 +3,7 @@ description: Texto ou expressões podem ser inseridos em qualquer célula de uma
 title: Trabalhar com dados em planilhas
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 3%
@@ -12,11 +12,13 @@ ht-degree: 3%
 
 # Trabalhar com dados em planilhas{#work-with-data-in-worksheets}
 
+{{eol}}
+
 Texto ou expressões podem ser inseridos em qualquer célula de uma planilha.
 
-Todas as expressões em uma planilha são precedidas por um sinal de igual (=), a menos que use [!DNL eval( )], que trata o texto na célula referenciada como uma expressão.
+Todas as expressões em uma planilha são precedidas por um sinal de igual (=), a menos que seja usado [!DNL eval( )], que trata o texto na célula referenciada como uma expressão.
 
-Para obter uma lista completa das regras de sintaxe de métrica, dimensão e filtro, consulte [Sintaxe de idioma de consulta](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+Para obter uma lista completa das regras de métrica, dimensão e sintaxe de filtro, consulte [Sintaxe do idioma da consulta](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **Digitação de dados em uma planilha**
 
@@ -34,7 +36,7 @@ O Data Workbench atualiza automaticamente as referências na nova célula para f
 
 1. Selecione as células que contêm os dados que você deseja copiar.
 1. Clique com o botão direito do mouse nas células que contêm os dados que você deseja copiar e clique em **[!UICONTROL Copy]**.
-1. Clique com o botão direito do mouse na primeira célula na qual deseja começar a colar os dados copiados e clique em **[!UICONTROL Paste]**. Os dados são colados na primeira célula e abaixo dela.
+1. Clique com o botão direito do mouse na primeira célula em que deseja começar a colar os dados copiados e clique em **[!UICONTROL Paste]**. Os dados são colados na primeira célula e abaixo dela.
 
 O Data Workbench atualiza automaticamente as referências na nova célula para fazer referência às colunas e linhas apropriadas.
 
@@ -89,18 +91,18 @@ O Data Workbench atualiza automaticamente as referências na nova célula para f
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indicador </p> </td> 
-   <td colname="col2"> <p>Cria um indicador de métrica usando esta célula. Para obter mais informações, consulte <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Criando Indicadores de Métrica</a>. </p> <p>Clique em <span class="uicontrol"> Padrão</span> para remover a formatação selecionada. </p> </td> 
+   <td colname="col2"> <p>Cria um indicador de métrica usando esta célula. Para obter mais informações, consulte <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Criação de indicadores de métrica</a>. </p> <p>Clique em <span class="uicontrol"> Padrão</span> para remover a formatação selecionada. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Célula de Entrada </p> </td> 
-   <td colname="col2"> <p>Transforma a célula selecionada em uma célula de entrada. Para obter mais informações, consulte <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Criando células de entrada</a>. </p> <p>Clique em <span class="uicontrol"> Padrão</span> para remover a formatação selecionada. </p> </td> 
+   <td colname="col2"> <p>Transforma a célula selecionada em uma célula de entrada. Para obter mais informações, consulte <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Criação de células de entrada</a>. </p> <p>Clique em <span class="uicontrol"> Padrão</span> para remover a formatação selecionada. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Atalhos de teclado {#section-05301f4d2c60418e86902635a7aeee20}
 
-Em planilhas, é possível usar muitos dos atalhos básicos do teclado de edição que podem ser usados em qualquer editor de texto, como o Bloco de notas ou o Microsoft Word.
+Em planilhas, você pode usar muitos dos atalhos básicos de teclado de edição que podem ser usados em qualquer editor de texto, como o Bloco de notas ou o Microsoft Word.
 
 A tabela a seguir lista os atalhos básicos de teclado que podem ser usados ao inserir dados em uma planilha.
 

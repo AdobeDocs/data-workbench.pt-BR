@@ -3,7 +3,7 @@ description: Depois de instalar os arquivos de programa Insight, baixe e instale
 title: Download e instalação do certificado digital (Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 39%
@@ -11,6 +11,8 @@ ht-degree: 39%
 ---
 
 # Download e instalação do certificado digital{#downloading-and-installing-the-digital-certificate}
+
+{{eol}}
 
 Depois de instalar os arquivos de programa Insight, baixe e instale o certificado digital fornecido a você pelo Adobe.
 
@@ -240,7 +242,7 @@ As instruções a seguir descrevem os procedimentos a seguir para a utilização
       ```
 
    1. O certificado tem o CN, O, OU, etc. conforme necessário para este cliente nos servidores [!DNL Access Control.cfg] arquivo.
-   1. O certificado foi emitido com um *Objetivo **** de *cliente* (ou ambos *server* **e** *cliente*).
+   1. O certificado foi emitido com um *propósito&#42;&#42;&#42;* de *cliente* (ou ambos *server* **e** *cliente*).
 
       Para verificar se um certificado tem um código de finalidade de servidor e/ou cliente, os seguintes comandos podem ser usados:
 

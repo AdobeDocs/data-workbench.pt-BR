@@ -2,7 +2,7 @@
 description: Uma visão geral dos elementos, procedimentos e terminologia básicos que você precisa entender ao trabalhar com o Data Workbench.
 title: Cliente do Data Workbench
 uuid: 3f99e681-e68f-4aee-aa42-e72a1444b029
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 
 
 # Cliente do Data Workbench{#data-workbench-client}
+
+{{eol}}
 
 Uma visão geral dos elementos, procedimentos e terminologia básicos que você precisa entender ao trabalhar com o Data Workbench.
 

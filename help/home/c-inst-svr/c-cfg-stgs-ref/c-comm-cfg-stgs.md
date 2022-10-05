@@ -3,7 +3,7 @@ description: Instruções para configurar comunicações para o Insight Server o
 title: Configurações de comunicações
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 exl-id: a35788d1-de36-4350-a107-eee392e44503
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Configurações de comunicações{#communications-configuration-settings}
+
+{{eol}}
 
 Instruções para configurar comunicações para o Insight Server ou o Repetidor.
 
@@ -32,11 +34,11 @@ Complete os parâmetros no seguinte arquivo:
  <tbody> 
   <tr> 
    <td colname="col1"> Arquivo de controle de acesso </td> 
-   <td colname="col2"> <p>Localização do arquivo <span class="filepath"> Access Control.cfg </span>. O local padrão é a pasta <span class="filepath"> Controle de acesso </span> no diretório de instalação <span class="keyword"> do Insight Server </span> ou <span class="wintitle"> Repetidor </span>. </p> <p>Exemplo: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
+   <td colname="col2"> <p>Localização do <span class="filepath"> Access Control.cfg </span> arquivo. O local padrão é o <span class="filepath"> Controle de acesso </span> na pasta <span class="keyword"> Servidor Insight </span> ou <span class="wintitle"> Repetidor </span> diretório de instalação. </p> <p>Exemplo: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Diretório de log de acesso </td> 
-   <td colname="col2"> <p>Pasta para a qual deseja mapear os logs de auditoria. </p> <p>Exemplo: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Observação:  Você pode mapear logs de auditoria para outra unidade local (por exemplo: <span class="filepath"> cadeia de caracteres: P:\\Audit\\ </span>), mas não mapeie logs de auditoria para uma unidade de rede. </p> </p> </td> 
+   <td colname="col2"> <p>Pasta para a qual deseja mapear os logs de auditoria. </p> <p>Exemplo: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Observação: Você pode mapear logs de auditoria para outra unidade local (por exemplo: <span class="filepath"> sequência de caracteres: P:\\Audit\\ </span>), mas não mapeie logs de auditoria para uma unidade de rede. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Detalhe do Log de Acesso </td> 
@@ -47,8 +49,8 @@ Complete os parâmetros no seguinte arquivo:
    <td colname="col2"> <p>Endereço IP a ser usado quando duas placas de rede estiverem disponíveis para acessar duas redes diferentes. </p> <p>Exemplo: <code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Porta </td> 
-   <td colname="col2"> <p>Porta não segura (HTTP) na qual o <span class="keyword"> Servidor Insight </span> ou <span class="wintitle"> Repetidor </span> escuta. A porta padrão é 80. Inserir um valor de 0 desativa conexões não seguras. </p> <p>Exemplo: <code>Port = int: 80</code> </p> </td> 
+   <td colname="col1"> Port </td> 
+   <td colname="col2"> <p>Porta não segura (HTTP) na qual <span class="keyword"> Servidor Insight </span> ou <span class="wintitle"> Repetidor </span> escuta. A porta padrão é 80. Inserir um valor de 0 desativa conexões não seguras. </p> <p>Exemplo: <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Cifras SSL </td> 
@@ -56,7 +58,7 @@ Complete os parâmetros no seguinte arquivo:
   </tr> 
   <tr> 
    <td colname="col1"> Porta SSL </td> 
-   <td colname="col2"> <p>Porta segura (via SSL) na qual o <span class="keyword"> Servidor Insight </span> ou <span class="wintitle"> Repetidor </span> escuta. A porta padrão é 443. Inserir um valor de 0 desativa as conexões seguras. </p> <p>Exemplo: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
+   <td colname="col2"> <p>Porta segura (via SSL) na qual a variável <span class="keyword"> Servidor Insight </span> ou <span class="wintitle"> Repetidor </span> escuta. A porta padrão é 443. Inserir um valor de 0 desativa as conexões seguras. </p> <p>Exemplo: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
@@ -70,20 +72,20 @@ Complete os parâmetros no seguinte arquivo:
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Caminho local = string: Logs\\ </p> </td> 
    <td colname="col2"> <p>Pasta na qual deseja armazenar os arquivos de log. </p> <p>Exemplo: </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Para acessar essa pasta no <span class="wintitle"> Gerenciador de Arquivos do Servidor </span>, o local especificado nesse parâmetro deve corresponder ao local especificado no parâmetro Caminhos de Log no arquivo <span class="filepath"> Log Processing.cfg </span>. Para obter mais informações sobre como modificar o diretório Logs no arquivo <span class="filepath"> Log Processing.cfg </span>, consulte o capítulo Log Processing Configuration File do <i>Dataset Configuration Guide</i>. </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Para acessar essa pasta no <span class="wintitle"> Gerenciador de arquivos do servidor </span>, o local especificado nesse parâmetro deve corresponder ao local especificado no parâmetro Caminhos de log na variável <span class="filepath"> Log Processing.cfg </span> arquivo. Para obter mais informações sobre como modificar o diretório Logs no <span class="filepath"> Log Processing.cfg </span> consulte o capítulo Arquivo de configuração de processamento de log do <i>Guia de configuração do conjunto de dados</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Caminho local = string: Auditoria\\ </p> </td> 
    <td colname="col2"> <p>Pasta para a qual deseja mapear os logs de auditoria. </p> <p>Exemplo: </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Observação:  <p>Você pode mapear logs de auditoria para outra unidade local (por exemplo: <span class="filepath"> cadeia de caracteres: P:\\Audit\\ </span>), mas não mapeie logs de auditoria para uma unidade de rede. </p> <p>Para poder acessar esta pasta a partir do <span class="wintitle"> Gerenciador de Arquivos do Servidor </span>, o local especificado neste parâmetro deve corresponder ao local que você está no parâmetro Diretório de Log de Acesso neste arquivo. </p> </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Observação:  <p>Você pode mapear logs de auditoria para outra unidade local (por exemplo: <span class="filepath"> sequência de caracteres: P:\\Audit\\ </span>), mas não mapeie logs de auditoria para uma unidade de rede. </p> <p>Para acessar essa pasta no <span class="wintitle"> Gerenciador de arquivos do servidor </span>, o local especificado neste parâmetro deve corresponder ao local que você está no parâmetro Diretório de Log de Acesso neste arquivo. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>n=</i>NormalizeServer: </td> 
-   <td colname="col2"> <p>Esse parâmetro se aplica somente a <span class="keyword"> Servidor Insight </span>. </p> <p>Para obter mais informações sobre como especificar o Servidor de Normalização Centralizado para seu cluster <span class="keyword"> Insight Server </span>, consulte o capítulo Arquivo de Configuração de Processamento de Log do <i>Guia de Configuração de Conjunto de Dados</i>. </p> </td> 
+   <td colname="col1"> <i>n=</i>NormalizarServidor: </td> 
+   <td colname="col2"> <p>Esse parâmetro se aplica somente a <span class="keyword"> Servidor Insight </span>. </p> <p>Para obter mais informações sobre como especificar o Servidor de normalização centralizado para o seu <span class="keyword"> Servidor Insight </span> cluster, consulte o capítulo Arquivo de configuração de processamento de log do <i>Guia de configuração do conjunto de dados</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = string: /ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>Esse parâmetro se aplica somente a <span class="keyword"> Servidor Insight </span>. </p> <p>Permite exibir o status <span class="keyword"> do Relatório </span> na interface de Status Detalhado do <span class="keyword"> Servidor Insight </span>. </p> </td> 
+   <td colname="col2"> <p>Esse parâmetro se aplica somente a <span class="keyword"> Servidor Insight </span>. </p> <p>Permite que você visualize <span class="keyword"> do relatório </span> na interface de Status Detalhado para <span class="keyword"> Servidor Insight </span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,7 +4,7 @@ solution: Analytics
 title: Determinar o número de visitantes necessários
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 exl-id: c23f4c21-21e5-4694-a500-efe1369cd4bf
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 6%
@@ -12,6 +12,8 @@ ht-degree: 6%
 ---
 
 # Determinar o número de visitantes necessários{#determining-the-number-of-visitors-needed}
+
+{{eol}}
 
 Para criar um experimento estatisticamente significativo, você deve determinar por quanto tempo precisa executar o experimento para incluir visitantes suficientes para avaliar efetivamente os resultados das alterações no seu site.
 

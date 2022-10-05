@@ -3,7 +3,7 @@ description: Vários tipos de dimensões estão disponíveis no servidor do Data
 title: Tipos de dimensão
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
 exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 68%
@@ -11,6 +11,8 @@ ht-degree: 68%
 ---
 
 # Tipos de dimensão{#dimension-types}
+
+{{eol}}
 
 Vários tipos de dimensões estão disponíveis no servidor do Data Workbench. Dessa forma, é importante saber o tipo de dimensão ao usar uma dimensão para criar métricas, filtros ou dimensões derivadas.
 

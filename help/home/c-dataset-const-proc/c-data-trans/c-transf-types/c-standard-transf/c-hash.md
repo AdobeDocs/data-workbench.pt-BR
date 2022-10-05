@@ -3,14 +3,16 @@ description: A transformação Hash cria uma string quase exclusiva que represen
 title: Hash
 uuid: 13bc14e6-75e2-4711-8f98-50fd18802be5
 exl-id: 6912a1d2-9ae8-42ba-94bd-a7a28cbdfae6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 # Hash{#hash}
+
+{{eol}}
 
 A transformação Hash cria uma string quase exclusiva que representa um número de 64 bits a partir dos valores de entrada.
 
@@ -18,7 +20,7 @@ Essa transformação fornece o mesmo valor de hash quando são fornecidas as mes
 
 >[!NOTE]
 >
->O valor resultante é quase exclusivo porque a transformação usa um número de 64 bits como o espaço de possíveis valores de hash. Para um milhão de entradas exclusivas para a transformação [!DNL hash], há uma chance de 1 em 38.000.000 de obter um valor de hash duplicado.
+>O valor resultante é quase exclusivo porque a transformação usa um número de 64 bits como o espaço de possíveis valores de hash. Para um milhão de entradas exclusivas para a [!DNL hash] há uma chance de 1 em 38.000.000 de obter um valor de hash duplicado.
 
 | Parâmetro | Descrição | Padrão |
 |---|---|---|

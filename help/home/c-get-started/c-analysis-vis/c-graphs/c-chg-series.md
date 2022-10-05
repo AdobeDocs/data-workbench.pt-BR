@@ -3,7 +3,7 @@ description: Os elementos em uma dimensão podem ser codificados por cores como 
 title: Alterar uma série
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
 exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Alterar uma série{#change-a-series}
+
+{{eol}}
 
 Os elementos em uma dimensão podem ser codificados por cores como uma série em um gráfico de linhas, de modo que cada elemento possa ser mais facilmente rastreado em outras visualizações no espaço de trabalho.
 
@@ -22,7 +24,7 @@ Quando uma série está ativa, os dados para os diferentes elementos da dimensã
 
 **Para ativar uma série**
 
-* Clique com o botão direito do mouse em um elemento ou no rótulo da dimensão e clique em **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]***.
+* Clique com o botão direito do mouse em um elemento ou no rótulo da dimensão e clique em **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 **Para desativar uma série**
 

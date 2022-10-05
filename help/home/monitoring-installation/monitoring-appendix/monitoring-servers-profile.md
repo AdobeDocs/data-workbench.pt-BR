@@ -3,7 +3,7 @@ description: As seguintes dimensões estão disponíveis para uso no perfil de s
 title: Dimensões no perfil de status do servidor do Data Workbench
 uuid: 4cfe882a-2797-4af9-bd6d-75bc31ee909c
 exl-id: 002f6b95-f151-41d9-ae28-9c01c1f621ee
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dimensões no perfil de status do servidor do Data Workbench{#dimensions-in-the-data-workbench-server-status-profile}
+
+{{eol}}
 
 As seguintes dimensões estão disponíveis para uso no perfil de status do servidor do Data Workbench.
 
@@ -50,15 +52,15 @@ As seguintes dimensões estão disponíveis para uso no perfil de status do serv
   </tr> 
   <tr> 
    <td colname="col1"> <b>Ambiente</b> </td> 
-   <td colname="col2">O valor cs-uri-query(c) é usado para a ID do ambiente. A Última linha de um bloco é usada como o valor da dimensão. Este Dimension Simples exibirá o Ambiente no qual seus Servidores estão sendo executados (desde que esteja configurado corretamente). <p><p>Observação:  Essa dimensão é definida em insight_monitor_agent.cfg. </p></p></td> 
+   <td colname="col2">O valor cs-uri-query(c) é usado para a ID do ambiente. A Última linha de um bloco é usada como o valor da dimensão. Este Dimension Simples exibirá o Ambiente no qual seus Servidores estão sendo executados (desde que esteja configurado corretamente). <p><p>Observação: Essa dimensão é definida em insight_monitor_agent.cfg. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Estimativa de segundos de varredura</b> </td> 
-   <td colname="col2"> O campo x-estimated-sweep-dekaseconds é usado neste Dimension numérico. Esse é o tempo estimado de varredura dos servidores dividido por dez (resolução reduzida de medição de varredura para tornar a dimensão mais razoavelmente dimensionada). <p><p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></p></td> 
+   <td colname="col2"> O campo x-estimated-sweep-dekaseconds é usado neste Dimension numérico. Esse é o tempo estimado de varredura dos servidores dividido por dez (resolução reduzida de medição de varredura para tornar a dimensão mais razoavelmente dimensionada). <p><p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Host</b> </td> 
-   <td colname="col2"> O valor cs-uri-query(b) é usado para essa dimensão. O valor da dimensão Simples é a Última Linha de um Bloco. </td> 
+   <td colname="col2"> O valor cs-uri-query(b) é usado para essa dimensão. O valor da dimensão Simples é a Última Linha para um Bloco. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Último ping</b> </td> 
@@ -66,31 +68,31 @@ As seguintes dimensões estão disponíveis para uso no perfil de status do serv
   </tr> 
   <tr> 
    <td colname="col1"> <b>Carga média</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(i) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a carga média nos servidores do sistema que está sendo monitorado. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(i) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a carga média nos servidores do sistema que está sendo monitorado. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem do Arquivo da Página de Memória</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(o) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a porcentagem do uso de memória do arquivo de página. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(o) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a porcentagem do uso de memória do arquivo de página. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Total de megabytes físicos de memória</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(ag) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(ag) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem física da memória</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(ag) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a porcentagem do uso de memória física de cada Servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(ag) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a porcentagem do uso de memória física de cada Servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem de Consulta de Memória</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um valor de consulta cs-uri-s de um determinado servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a porcentagem do uso de memória de consulta de cada Servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um valor de consulta cs-uri-s de um determinado servidor. Está condicionado em cs-uri-query(k) não estar vazio. Essa dimensão é usada para calcular a porcentagem do uso de memória de consulta de cada Servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Conexões de rede</b> </td> 
-   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(q) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Isso é usado para mostrar o número de conexões de rede que existem para um determinado servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Esta é uma dimensão Numérica usando a Última linha para um determinado valor cs-uri-query(q) de servidor. Está condicionado em cs-uri-query(k) não estar vazio. Isso é usado para mostrar o número de conexões de rede que existem para um determinado servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Segundos da Latência da Pesquisa</b> </td> 
-   <td colname="col2"> Essa dimensão é usada para calcular a latência da pesquisa. O valor cs-uri-query(m) é dividido por 10 para reduzir o tamanho da dimensão e copiado para o campo x-poll-latency-centiseconds. Esta é uma dimensão numérica que utiliza a Última linha para um determinado servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> Essa dimensão é usada para calcular a latência da pesquisa. O valor cs-uri-query(m) é dividido por 10 para reduzir o tamanho da dimensão e copiado para o campo x-poll-latency-centiseconds. Esta é uma dimensão numérica que utiliza a Última linha para um determinado servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Sucesso da verificação rápida</b> </td> 
@@ -98,7 +100,7 @@ As seguintes dimensões estão disponíveis para uso no perfil de status do serv
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem de Espaço de Banco de Dados Temp</b> </td> 
-   <td colname="col2"> A última linha do valor cs-uri-query(an) é copiada para o campo x-temp-db-space-percentage . Este é um Dimension numérico usado para calcular a porcentagem do espaço de banco de dados Temp usado em um determinado servidor. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> A última linha do valor cs-uri-query(an) é copiada para o campo x-temp-db-space-percentage . Este é um Dimension numérico usado para calcular a porcentagem do espaço de banco de dados Temp usado em um determinado servidor. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Versão do Insight</b> </td> 
@@ -106,7 +108,7 @@ As seguintes dimensões estão disponíveis para uso no perfil de status do serv
   </tr> 
   <tr> 
    <td colname="col1"> <b>Grupo</b> </td> 
-   <td colname="col2"> Agrupamento de palavra que oferece outra maneira de filtrar o conjunto de dados resultante. <p>Observação:  Essa dimensão é definida em insight_monitor_agent.cfg. </p></td> 
+   <td colname="col2"> Agrupamento de palavra que oferece outra maneira de filtrar o conjunto de dados resultante. <p>Observação: Essa dimensão é definida em insight_monitor_agent.cfg. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Métricas</b> </td> 

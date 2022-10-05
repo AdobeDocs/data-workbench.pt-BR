@@ -3,18 +3,20 @@ description: A condição Comparar e a condição Intervalo exigem que você esp
 title: Tipos de teste para operações de teste
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
 exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 2%
 
 ---
 
 # Tipos de teste para operações de teste{#test-types-for-test-operations}
 
+{{eol}}
+
 A condição Comparar e a condição Intervalo exigem que você especifique o tipo de comparação a ser feita para a condição.
 
-A tabela a seguir descreve os tipos disponíveis ( [!DNL LEXICAL], [!DNL NUMERIC] e [!DNL DATETIME]).
+A tabela a seguir descreve os tipos disponíveis ( [!DNL LEXICAL], [!DNL NUMERIC]e [!DNL DATETIME]).
 
 <table id="table_1B3AD8BDF0414D0AB8EE0E6D1B53E2CE"> 
  <thead> 
@@ -35,7 +37,7 @@ A tabela a seguir descreve os tipos disponíveis ( [!DNL LEXICAL], [!DNL NUMERIC
    <td colname="col2"> <p>Primeiro, transforma o campo de entrada em uma data. Se o campo de entrada não puder ser transformado em uma data válida, o teste de condição retornará false. Se o campo puder ser transformado em uma data, o teste retornará true somente se a data de entrada cair na ou após a data mínima especificada e na ou antes da data máxima especificada. </p> </td> 
    <td colname="col3"> <p>Se as datas mín. e máx. não forem válidas, o conjunto de dados não será construído. </p> <p> Se as datas mín. ou máx. não forem fornecidas, o sistema substituirá apropriadamente a data mín. (1 de janeiro de 1600) ou a data máx. (em algum momento do século 24). </p> <p> O Adobe recomenda usar um dos seguintes formatos para <span class="wintitle"> DATETIME</span>: </p> 
     <ul id="ul_44F469CC5D974382AF70D7B1975CF077"> 
-     <li id="li_DB5FD4AFD6B34436ACD7C13282F64956"> 1 de janeiro de 2013 HH:MM:SS EDT </li> 
+     <li id="li_DB5FD4AFD6B34436ACD7C13282F64956"> 1 de janeiro de 2013 HH:MM:EDT </li> 
      <li id="li_307580C3F97D495BB16F1212DB38CE37"> 1 de janeiro de 2013 HH:MM:SS GMT </li> 
     </ul> <p> O padrão do fuso horário é GMT, caso não esteja especificado. </p> </td> 
   </tr> 

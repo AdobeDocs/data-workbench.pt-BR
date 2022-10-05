@@ -1,59 +1,63 @@
 ---
-description: Reúna e descreva as perguntas de negócios apropriadas ao seu ambiente de marketing ao implementar o Análise de big data.
-title: Descoberta e requisitos da análise de big data
+description: Reúna e descreva as perguntas comerciais apropriadas ao seu ambiente de marketing ao implementar o Data Workbench.
+title: Detecção e requisitos do Data Workbench
 uuid: 436f0c32-b4e2-41dd-a8e9-531e0a195276
-translation-type: tm+mt
-source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
+exl-id: 25cc2940-800a-4ad2-a7bb-c343e3d65500
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 8%
 
 ---
 
+# Detecção e requisitos do Data Workbench{#data-workbench-discovery-and-requirements}
 
-# Descoberta e requisitos da análise de big data{#data-workbench-discovery-and-requirements}
+{{eol}}
 
-Reúna e descreva as perguntas de negócios apropriadas ao seu ambiente de marketing ao implementar o Análise de big data.
+Reúna e descreva as perguntas comerciais apropriadas ao seu ambiente de marketing ao implementar o Data Workbench.
 
-Esta seção permite que você colete informações sobre as perguntas e tarefas necessárias para desenvolver soluções no Análise de big data (DWB), que podem resolver essas perguntas de forma precisa, inequívoca e independente de tecnologia, fornecendo referências à terminologia comercial e à solução Adobe Analytics Premium. Esta seção fornece informações sobre estes objetivos e os requisitos associados.
+Esta seção permite coletar informações sobre as perguntas e tarefas necessárias para projetar soluções no Data Workbench (DWB), que podem resolver essas perguntas com precisão, sem ambiguidade e de maneira independente da tecnologia, fornecendo referências à terminologia comercial e à solução Adobe Analytics Premium. Esta seção fornece informações sobre esses objetivos e os requisitos associados.
 
 ## Fase 1: Principais objetivos/objetivos de negócios {#section-bb8f3d6071bf48d9a546ac2b80341e1d}
 
-As tabelas a seguir solicitam que você identifique sua base de clientes e analise a construção da implementação do DWB.
+As tabelas a seguir solicitam que você identifique a base do cliente e analise a construção da implementação do DWB.
 
-* Como entender a sua base de clientes
-* Entendendo casos específicos de negócios (por exemplo, eficácia do Self-Service e de outros canais de dados/fontes de dados offline)
+* Noções básicas sobre a base de clientes
+* Noções básicas sobre casos de negócios específicos (por exemplo, eficácia do Self-Service e de outros canais de dados/fontes de dados offline)
 
-**Noções básicas sobre a sua base de clientes**
+**Noções básicas sobre a base do cliente**
 
-Entenda por que os clientes usam seu site, os desafios que você enfrenta e como a DWB o ajudará com base em seu modelo de negócios. Por exemplo, como medir, monitorar e analisar seus clientes para venda cruzada de outros produtos e serviços, obter a lista de usuários ativos e a penetração de contas e outras metas.
+Entenda por que os clientes usam seu site, os desafios que você enfrenta e como o DWB ajudará você com base em seu modelo de negócios. Por exemplo, como medir, monitorar e analisar seus clientes para venda cruzada de outros produtos e serviços, obter a lista de usuários ativos e a penetração de contas e outros objetivos.
 
 | ID | Pergunta/requisito comercial | Prioridade | Fase | Dependências |
 |---|---|---|---|---|
-| 1a | Pergunta Comercial Específica 1 | Alto/Médio/Baixo | 1 | Chave comum, dependendo de alguma outra chave etc. |
-| 1b | Pergunta Comercial Específica 2 | Alto | 1 | Qualquer dependência |
+| 1 bis | Questão Comercial Específica 1 | Alto/Médio/Baixo | 1 | Chave comum, dependente de alguma outra chave etc. |
+| 1b | Questão Comercial Específica 2 | Alto | 1 | Qualquer dependência |
 
-Construção de análise
+Construção de Análise
 
 <table id="table_6CA959E521964E27804BB2A65EC4BBDE"> 
  <tbody> 
   <tr> 
-   <td colname="col1">Fonte(s) de dados da Análise do espaço de trabalho</td> 
-   <td colname="col2"> Adicionar nome da área de trabalho </td> 
+   <td colname="col1">Fontes de dados da Analysis Workspace</td> 
+   <td colname="col2"> Adicionar nome do Workspace </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dimensões e métricas do espaço de trabalho necessárias </p> </td> 
-   <td colname="col2"> <p>Identificar dimensões: </p> <p>Identificar métricas: </p> </td> 
+   <td colname="col1"> <p>Dimension e métricas do Workspace necessárias </p> </td> 
+   <td colname="col2"> <p>Identifique Dimension: </p> <p>Identificar métricas: </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Filtros, sinalizadores e ferramentas do espaço de trabalho necessários </td> 
+   <td colname="col1"> Filtros, sinalizadores e ferramentas do Workspace necessários </td> 
    <td colname="col2"> <p>Identificar segmentos: </p> <p>Identificar ferramentas: </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Que ações podem ser derivadas dessa análise? </td> 
-   <td colname="col2"> Entenda as tarefas e o conteúdo usando espaços de trabalho DWB específicos. </td> 
+   <td colname="col1"> Quais ações podem ser derivadas dessa análise? </td> 
+   <td colname="col2"> Entenda tarefas e conteúdo usando espaços de trabalho DWB específicos. </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Fase 2: Entendendo casos de negócios específicos {#section-309d7ec6f631458c9c9e6bd2cef2fa4c}
+## Fase 2: Noções básicas sobre casos de negócios específicos {#section-309d7ec6f631458c9c9e6bd2cef2fa4c}
 
 Entenda outras fontes de dados e canais e saiba como eles se relacionarão aos seus casos comerciais.
 
@@ -70,7 +74,7 @@ Entenda outras fontes de dados e canais e saiba como eles se relacionarão aos s
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 2a </td> 
+   <td colname="col1"> 2 bis </td> 
    <td colname="col2"> Requisito de negócio específico 1 </td> 
    <td colname="col3"> <p>Alto/Médio/Baixo </p> </td> 
    <td colname="col04"> 1 </td> 
@@ -79,7 +83,7 @@ Entenda outras fontes de dados e canais e saiba como eles se relacionarão aos s
   </tr> 
   <tr> 
    <td colname="col1"> 2b </td> 
-   <td colname="col2"> <p>Requisito de negócio específico 2 </p> </td> 
+   <td colname="col2"> <p>Requisito de Empresa Específico 2 </p> </td> 
    <td colname="col3"> Alto/Médio/Baixo </td> 
    <td colname="col04"> 1 </td> 
    <td colname="col4"> <p>Qualquer dependência </p> </td> 
@@ -93,22 +97,22 @@ Entenda outras fontes de dados e canais e saiba como eles se relacionarão aos s
 <table id="table_680C5D257CBF42519EFB8B96A00543C5"> 
  <tbody> 
   <tr> 
-   <td colname="col1">Fonte(s) de dados da Análise do espaço de trabalho
+   <td colname="col1">Fontes de dados da Analysis Workspace
      </td> 
    <td colname="col2">
-     Nome da área de trabalho de amostra </td> 
+     Nome da área de trabalho de exemplo </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dimensões e métricas do espaço de trabalho necessárias </p> </td> 
-   <td colname="col2"> <p>Dimensões: Defina as dimensões necessárias. </p> <p>Métricas: Defina as métricas necessárias. </p> </td> 
+   <td colname="col1"> <p>Dimension e métricas do Workspace necessárias </p> </td> 
+   <td colname="col2"> <p>Dimension: Defina as dimensões necessárias. </p> <p>Métricas: Defina as métricas necessárias. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Filtros, sinalizadores e ferramentas do espaço de trabalho necessários </td> 
-   <td colname="col2"> <p>Segmentos: Identifique seus segmentos de clientes. </p> <p>Ferramentas: Selecione as ferramentas necessárias. </p> </td> 
+   <td colname="col1"> Filtros, sinalizadores e ferramentas do Workspace necessários </td> 
+   <td colname="col2"> <p>Segmentos: Identifique os segmentos do cliente. </p> <p>Ferramentas: Selecione as ferramentas necessárias. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Que ações podem ser derivadas dessa análise? </td> 
-   <td colname="col2"> O que entender desta área de trabalho </td> 
+   <td colname="col1"> Quais ações podem ser derivadas dessa análise? </td> 
+   <td colname="col2"> O que entender desse espaço de trabalho </td> 
   </tr> 
  </tbody> 
 </table>
@@ -117,7 +121,7 @@ Entenda outras fontes de dados e canais e saiba como eles se relacionarão aos s
 
 | Fontes de dados | Prioridade | Com que frequência os dados são recebidos? |
 |---|---|---|
-| Conjunto de relatórios de Nome do Site 1 (RSID) | 1 | Por hora |
+| Conjunto de relatórios Nome Site 1 (RSID) | 1 | Por hora |
 | Nome do site 2 (se houver) (RSID) | 1 | Por hora |
-| Fonte de dados 1 (se aplicável) | 2 | Diariamente? |
+| Fonte de Dados 1 (Se aplicável) | 2 | Diariamente? |
 | Fonte de dados 2 (se aplicável) | 3 | Diariamente? |

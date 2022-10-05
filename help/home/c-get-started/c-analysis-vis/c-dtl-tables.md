@@ -3,7 +3,7 @@ description: As tabelas de detalhes permitem exibir informações adicionais sob
 title: Tabela de detalhes
 uuid: 2becff5e-c78d-4ac7-8cda-814ad0193efd
 exl-id: d7f0b768-f341-41e8-904b-ec98a25f7aa9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Tabela de detalhes{#detail-table}
+
+{{eol}}
 
 As tabelas de detalhes permitem exibir informações adicionais sobre um subconjunto de dados, que é definido pelas seleções feitas em outras visualizações.
 
@@ -55,9 +57,9 @@ Para visualizar os detalhes descritos acima, você deve concluir as seguintes et
 
 1. Clique com o botão direito do mouse na tabela de detalhes e clique em **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
 1. Clique com o botão direito do mouse na tabela de detalhes e clique em **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
-1. Clique com o botão direito do mouse no cabeçalho **[!UICONTROL Visitors]** nível e clique em **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
-1. Clique com o botão direito do mouse no cabeçalho Visitors level e clique em **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
-1. Clique com o botão direito do mouse no cabeçalho Visitors level e clique em **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
+1. Clique com o botão direito do mouse no **[!UICONTROL Visitors]** título e clique em nível **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
+1. Clique com o botão direito do mouse no cabeçalho Nível de visitantes e clique em **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
+1. Clique com o botão direito do mouse no cabeçalho Nível de visitantes e clique em **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
 1. Clique com o botão direito do mouse no cabeçalho do nível Visualizações de página e clique em **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
 
 A amostra de espaço de trabalho a seguir mostra os detalhes relacionados para uma amostragem aleatória de seis visitantes do site durante o período especificado.
@@ -78,16 +80,16 @@ A amostra de espaço de trabalho a seguir mostra os detalhes relacionados para u
 
 ## Adicionar atributos e métricas {#section-cdda2df3c9a448d5b9770686c8b8efb3}
 
-* Clique com o botão direito do mouse em um cabeçalho de atributo ou métrica e clique em **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]*** ou **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]***.
+* Clique com o botão direito do mouse em um cabeçalho de atributo ou métrica e clique em **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* ou **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
 ## Remover atributos e métricas {#section-4002ac957a2846678f9940270987d651}
 
-* Clique com o botão direito do mouse na coluna que deseja remover e clique em **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]*** ou **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]***.
+* Clique com o botão direito do mouse na coluna que deseja remover e clique em **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]**>* ou **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
 ## Exportar para o Microsoft Excel {#section-a9eaba63c88a4598836a34669ba8cac1}
 
-Para obter informações sobre como exportar janelas, consulte [Exportar Dados da Janela](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Para obter informações sobre como exportar janelas, consulte [Exportar dados da janela](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

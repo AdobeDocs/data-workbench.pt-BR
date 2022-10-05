@@ -3,7 +3,7 @@ description: As legendas de métricas permitem que você veja as métricas de li
 title: Legendas de métricas
 uuid: 72de7b0e-0a71-4465-baaf-d515fe474e0d
 exl-id: 1f2e58e2-44ea-4760-a504-2ed3a80c8b19
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 7%
@@ -12,9 +12,11 @@ ht-degree: 7%
 
 # Legendas de métricas{#metric-legends}
 
+{{eol}}
+
 As legendas de métricas permitem que você veja as métricas de linha de base relacionadas ao seu perfil e às estatísticas relacionadas ao conjunto de dados (ou à seleção atual, se houver).
 
-As legendas de métricas no aplicativo Adobe exibem as métricas relevantes para o conjunto de dados, como na legenda de métrica [!DNL Site] a seguir.
+As legendas de métricas no aplicativo Adobe exibem as métricas relevantes para o conjunto de dados, como no seguinte [!DNL Site] legenda da métrica.
 
 ![](assets/lgd_MetricLegend.png)
 
@@ -34,8 +36,8 @@ As legendas de métricas são, na verdade, um caso especial de uma visualizaçã
 
 ## Exportar para o Microsoft Excel {#section-03b07062fb43422c902ff65cb66bbd27}
 
-Para obter informações sobre como exportar janelas, consulte [Exportar Dados da Janela](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Para obter informações sobre como exportar janelas, consulte [Exportar dados da janela](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
 
 ## Exportar para um arquivo TSV {#section-51a0a6f9cd05448caf149ddc927aa665}
 
-Para obter informações sobre como exportar janelas, consulte [Exportar Dados da Janela](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Para obter informações sobre como exportar janelas, consulte [Exportar dados da janela](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

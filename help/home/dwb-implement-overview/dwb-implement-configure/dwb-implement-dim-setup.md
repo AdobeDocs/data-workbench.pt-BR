@@ -3,7 +3,7 @@ description: Esta seção explica os diferentes tipos de Dimension e como config
 title: Configuração de dimensão
 uuid: 5b40cb43-7790-4b87-a0bb-be395a420157
 exl-id: 04afd773-e938-49f7-83c9-1d706a6dc525
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Configuração de dimensão{#dimension-setup}
+
+{{eol}}
 
 Esta seção explica os diferentes tipos de Dimension e como configurá-los no DWB.
 
@@ -20,7 +22,7 @@ No nível mais básico, as dimensões são categorias em que os dados no conjunt
 
 Prática recomendada: Dimension no schema de dados pode ser fornecido com qualquer nome. Os nomes de Dimension usados e explicados neste curso são considerados uma prática recomendada. Dimension pode ser nomeado de forma diferente. À medida que você aumenta a exposição a outros conjuntos de dados, começará a ver diferenças nos conjuntos de dados. É importante entender o propósito das dimensões em vez de seu nome. Por exemplo, seja chamado de &quot;Visitante&quot;, &quot;Cliente&quot;, &quot;Pessoa&quot;, &quot;Consumidor&quot; ou &quot;Usuário&quot;, é importante entender que esses são termos comumente usados para se referir à dimensão contável de mais alto nível que está sendo usada para coletar informações sobre uma pessoa singular.
 
-Para obter informações completas, consulte o guia [Configuração do conjunto de dados](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html).
+Para obter informações completas, consulte o [Configuração do conjunto de dados](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) guia.
 
 ## Tipos de Dimension no DWB {#section-a4fbb7bf2bde44528ac0f94a96465862}
 
@@ -69,7 +71,7 @@ Muitas dimensões para muitas têm uma relação muitos para muitos com uma dime
 **4) Dimension numéricas**
 
 As dimensões numéricas são um tipo de dimensão simples que tem um valor numérico. Geralmente, dimensões numéricas são criadas para serem usadas em métricas. Exemplos de dimensões numéricas incluem &quot;Receita&quot;, &quot;Pedidos&quot; e &quot;Unidades&quot;. No exemplo acima, os &quot;Pedidos de clientes&quot; são uma dimensão numérica.
-**5)** Dimensões denormal Dimensões denormal são dimensões que têm uma relação um para um com uma dimensão contável. As dimensões denormal geralmente são usadas com dimensões com alta cardinalidade (muitos elementos únicos) como dados de identificação. Por exemplo, um visitante só pode ter uma ID de usuário e uma ID de usuário só podem pertencer a um visitante. Portanto, essa é uma relação um para um e pode ser uma dimensão desnormalizada.
+**5) Dimension denormal** Dimensões denormal são dimensões que têm uma relação um para um com uma dimensão contável pai. As dimensões denormal geralmente são usadas com dimensões com alta cardinalidade (muitos elementos únicos) como dados de identificação. Por exemplo, um visitante só pode ter uma ID de usuário e uma ID de usuário só podem pertencer a um visitante. Portanto, essa é uma relação um para um e pode ser uma dimensão desnormalizada.
 
 Por exemplo, a ID de usuário da Web do Geometrixx é uma dimensão denormal no nível do cliente. Como é denormal, ele tem uma relação um para um com sua dimensão principal, o que significa que cada ID de usuário da Web tem um cliente e cada cliente tem apenas uma ID de usuário da Web. Assim, a métrica &quot;Clientes&quot; só pode ser &quot;1&quot; para cada elemento da ID de usuário da Web do Geometrixx.
 
@@ -79,7 +81,7 @@ As dimensões de hora permitem criar um conjunto de dimensões de hora local per
 
 >[!NOTE]
 >
->Os % escape usados para a formatação de exibição são iguais à biblioteca C padrão *strftime*.
+>O % escape usado para a formatação de exibição é o mesmo da biblioteca C padrão *duração*.
 
 ## Definir dimensões estendidas {#section-38ee124ec74b43fb95f13194a9582b97}
 
@@ -97,7 +99,7 @@ Etapas para definir Dimension estendido:
    * [Dimensões desnormalizadas](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-denormal-dim.html)
    * [Dimensões de tempo](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-time-dim.html)
 
-1. Para qualquer dimensão estendida que você definir, é possível adicionar uma ou mais linhas de comentário ao parâmetro Comentários para descrever ainda mais a dimensão ou adicionar observações sobre seu uso. Para adicionar um comentário, clique com o botão direito do mouse no rótulo *Comentários* e clique* Adicionar novo > Linha de comentário*.
+1. Para qualquer dimensão estendida que você definir, é possível adicionar uma ou mais linhas de comentário ao parâmetro Comentários para descrever ainda mais a dimensão ou adicionar observações sobre seu uso. Para adicionar um comentário, clique com o botão direito do mouse no *Comentários* e clique em * Adicionar novo > Linha de comentário*.
 
 1. Depois de definir as dimensões estendidas no arquivo de configuração, salve o arquivo localmente e salve-o no perfil do conjunto de dados no servidor DWB.
 

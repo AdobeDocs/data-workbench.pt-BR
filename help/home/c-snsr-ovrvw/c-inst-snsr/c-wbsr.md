@@ -3,7 +3,7 @@ description: Instruções detalhadas para instalar e configurar o Sensor para We
 title: WebSphere no AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # WebSphere no AIX{#websphere-on-aix}
 
+{{eol}}
+
 Instruções detalhadas para instalar e configurar o Sensor para WebSphere 5.x em execução no AIX 5.1 ou posterior.
 
-Os arquivos de programa para [!DNL Sensor] são empacotados em um arquivo de instalação que você obtém do site de download do Adobe. Se você ainda não tiver o arquivo de instalação [!DNL Sensor] para seu servidor da Web específico, baixe-o (ou obtenha-o do representante do Adobe) antes de começar os seguintes procedimentos.
+Os arquivos de programa para [!DNL Sensor] são embaladas em um arquivo de instalação obtido do site de download do Adobe. Se você ainda não tiver a variável [!DNL Sensor] arquivo de instalação para seu servidor da Web específico, baixe-o (ou obtenha-o do representante do Adobe) antes de começar os procedimentos a seguir.
 
 >[!NOTE]
 >
->O [!DNL Sensor] para servidores WebSphere não suporta experimentação controlada. Para obter informações sobre experimentação controlada, consulte o *Guia de Experimentos Controlados de Data Workbench.*
+>O [!DNL Sensor] para servidores WebSphere não suporta experimentação controlada. Para obter informações sobre a experimentação controlada, consulte o *Guia de experimentos controlados pela Data Workbench.*
 
 ## Instalar os arquivos do programa {#section-86f69127278c41bc90b97b68bb40bc6e}
 
@@ -99,7 +101,7 @@ Para redefinir as permissões para as configurações padrão recomendadas, use 
 
 Se quiser usar permissões além dos padrões recomendados, revise as informações em Permissões de arquivo UNIX do sensor, para ter certeza de que entende como esses arquivos são usados.
 
-## Edite o arquivo de Configuração do sensor {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Editar o arquivo de Configuração do sensor {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 O arquivo txlogd.conf contém os parâmetros de configuração do Sensor.
 
@@ -145,7 +147,7 @@ Para servidores WebSphere, o coletor opera como um filtro no contêiner de servl
 Para adicionar o coletor à aplicação web, adicione o filtro ao descritor de implantação web.xml da aplicação web e reinicie a aplicação web.
 
 1. Usando um editor de texto, abra o arquivo web.xml para o servidor da Web cujos eventos o Sensor captura.
-1. Adicione os seguintes elementos `<filter>` e `<filter-mapping>` ao arquivo do descritor. Se você não instalou o txlogd.conf no diretório /etc, é necessário inserir o caminho correto para esse arquivo no elemento `<param-value>` .
+1. Adicione o seguinte `<filter>` e `<filter-mapping>` elementos para o arquivo descritor. Se você não instalou o txlogd.conf no diretório /etc, é necessário inserir o caminho correto para esse arquivo no `<param-value>` elemento.
 
    ```
    <filter>
@@ -190,7 +192,7 @@ Procedimento para editar o script de inicialização do Websphere para declarar 
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Salve o arquivo [!DNL setupCmdLine.sh].
+1. Salve as [!DNL setupCmdLine.sh] arquivo.
 
 ## Teste o sensor {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
@@ -240,7 +242,7 @@ Por exemplo, o coletor J2EE pode ser usado para capturar dados de custo por cliq
 
 Quando um Sensor da Plataforma J2EE recebe uma solicitação, ele chama uma classe de coletor que importa a função appendToLog . A função appendToLog anexa à solicitação inicial os parâmetros da string de consulta especificados na função appendToLog . Isso resulta no URI da solicitação inicial contendo pares de nome-valor de sequência de consulta adicionais que correspondem aos nomes e valores dos dados que estão sendo capturados. Por exemplo, CPC=20 seria anexado à solicitação inicial quando o valor de um determinado posicionamento de anúncio ou link de click-through é 20 centavos. O Insight Server processa esses valores no conjunto de dados para análise. Um benefício adicional para essa metodologia de coleta é que ela permite a coleta de dados adicionais sem criar entradas de log extras, como pode ser criado usando metodologias de marcação de página.
 
-Para obter mais informações sobre o processamento, consulte o *Guia de Configuração de Conjunto de Dados*.
+Para obter mais informações sobre o processamento, consulte o *Guia de configuração do conjunto de dados*.
 
 1. Adicione o seguinte código à parte superior da página .jsp da qual deseja capturar dados:
 

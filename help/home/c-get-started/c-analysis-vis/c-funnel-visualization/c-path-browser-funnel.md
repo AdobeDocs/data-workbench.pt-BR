@@ -3,7 +3,7 @@ description: Na visualização Funil , é possível abrir um Navegador de caminh
 title: Adicionar um navegador de caminho
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
 exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Adicionar um navegador de caminho{#adding-a-path-browser}
+
+{{eol}}
 
 Na visualização Funil , é possível abrir um Navegador de caminhos para identificar fallout de visitante detalhado adicional e caminhos.
 

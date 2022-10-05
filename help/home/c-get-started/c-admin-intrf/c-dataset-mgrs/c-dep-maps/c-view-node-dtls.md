@@ -3,7 +3,7 @@ description: Informações sobre a exibição de informações de identificaçã
 title: Ver detalhes do nó
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Ver detalhes do nó{#view-node-details}
+
+{{eol}}
 
 Informações sobre a exibição de informações de identificação sobre um componente de perfil.
 
@@ -36,7 +38,7 @@ O tipo e o nome da transformação, o nome do arquivo no qual a transformação 
 
 >[!NOTE]
 >
->As informações de desempenho para a transformação são exibidas somente se a opção [!DNL Show Performance Data] estiver habilitada para o mapa de dependência. Para obter mais informações, consulte [Exibição dos dados de desempenho](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>As informações de desempenho para a transformação são exibidas somente se a variável [!DNL Show Performance Data] está ativada para o mapa de dependências. Para obter mais informações, consulte [Exibição de dados de desempenho](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Dimensão estendida**
 
@@ -46,7 +48,7 @@ O nome e o tipo da dimensão estendida, o nome do arquivo no qual a dimensão é
 
 >[!NOTE]
 >
->As informações de desempenho da dimensão estendida são exibidas somente se a opção [!DNL Show Performance Data] estiver habilitada para o mapa de dependência. Para obter mais informações, consulte [Exibição dos dados de desempenho](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>As informações de desempenho da dimensão estendida são exibidas somente se a variável [!DNL Show Performance Data] está ativada para o mapa de dependências. Para obter mais informações, consulte [Exibição de dados de desempenho](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Métrica**
 

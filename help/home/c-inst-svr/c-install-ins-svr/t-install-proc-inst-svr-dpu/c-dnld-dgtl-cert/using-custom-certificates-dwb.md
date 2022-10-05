@@ -1,31 +1,35 @@
 ---
-description: Instruções para uso de certificados personalizados.
-title: Uso de certificados personalizados na Análise de big data
+description: Instruções para usar certificados personalizados.
+title: Usar certificados personalizados no Data Workbench
 uuid: c3a2db27-bdb2-44b3-95dd-65eedd05c957
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: f813d599-723f-4b5d-a0b5-f4d71c1b1a22
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 1%
 
 ---
 
+# Usar certificados personalizados no Data Workbench{#using-custom-certificates-in-data-workbench}
 
-# Uso de certificados personalizados na Análise de big data{#using-custom-certificates-in-data-workbench}
+{{eol}}
 
-Instruções para uso de certificados personalizados.
+Instruções para usar certificados personalizados.
 
-Um certificado usado pelo cliente ou servidor da Análise de big data precisa ser assinado por uma autoridade de certificação (autoridade de certificação) confiável. Os clientes do Análise de big data recebem certificados assinados pela CA do Visual Sciences. Esses certificados são confiáveis pelo software Análise de big data, já que o [!DNL trust_ca_cert.pem] (fornecido junto com o software Insight e armazenado no diretório **Certificados** tanto dos servidores quanto dos clientes) contém um Certificado *CA* raiz para a CA do Visual Sciences. Esses certificados são usados para licenciamento do software e autenticação quando clientes e servidores se comunicam entre si usando SSL. Somente certificados emitidos pela CA do Visual Sciences podem ser usados para licenciamento, mas outros certificados podem ser usados para comunicação e autenticação. Certificados emitidos por CAs que não sejam Visual Sciences são referidos abaixo como certificados *personalizados.*
+Um certificado usado pelo cliente ou servidor do Data Workbench precisa ser assinado por uma autoridade de certificação confiável (autoridade de certificação). Os clientes do Data Workbench recebem certificados assinados pela CA da Visual Sciences. Esses certificados são confiáveis pelo software Data Workbench, já que a variável [!DNL trust_ca_cert.pem] (fornecido junto com o software Insight e armazenado no **Certificados** diretório de servidores e clientes) contém um *Certificado CA raiz* para a CA da Visual Sciences. Esses certificados são usados para licenciamento do software e autenticação quando clientes e servidores se comunicam usando SSL. Somente certificados emitidos pela CA da Visual Sciences podem ser usados para licenciamento, mas outros certificados podem ser usados para comunicação e autenticação. Os certificados emitidos por CA que não a Visual Sciences são a seguir referidos como *certificados personalizados.*
 
-**Observação importante:** Para servidores e clientes, o software Análise de big data usa os arquivos de certificado instalados no diretório ou certificados **Certificados** do cliente ou servidor explicitamente identificados em sua configuração. No entanto, você também pode usar o Windows Certificate Store [](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md#concept-4acb13b7de9340ea8cde8ad84b93358d) para clientes.
+**Observação importante:** Para servidores e clientes, o software Data Workbench usa os arquivos de certificado instalados no cliente ou no servidor **Certificados** diretório ou certificados explicitamente identificados em sua configuração. No entanto, também é possível usar a variável [Windows Certificate Store](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md#concept-4acb13b7de9340ea8cde8ad84b93358d) para clientes.
 
-As instruções a seguir descrevem os procedimentos a serem seguidos para usar certificados personalizados para comunicação entre clientes e servidores da Análise de big data. Nem todos os pormenores são um requisito difícil e podem ser utilizadas variações diferentes no processo. No entanto, os procedimentos abaixo foram testados para funcionar.
+As instruções a seguir descrevem os procedimentos a seguir para a utilização de certificados personalizados para a comunicação entre clientes e servidores do Data Workbench. Nem todos os detalhes são um requisito difícil e podem ser utilizadas diferentes variações no processo. No entanto, os procedimentos abaixo foram testados para funcionar.
 
 ## Configuração de certificados de cliente personalizados {#section-2083fd41973e451fa404e7a4ae4da591}
 
-1. Adicione o certificado da CA emissora ao [!DNL trust_cert_ca.pem], que está instalado no diretório **Certificados** do cliente e o de cada servidor em cada cluster que deve ser acessado usando este certificado personalizado.
+1. Adicionar o certificado da autoridade de certificação emissora ao [!DNL trust_cert_ca.pem], que é instalado no **Certificados** diretório do cliente e de cada servidor em cada cluster que deve ser acessado usando este certificado personalizado.
 
 1. Obtenha um certificado personalizado para cada servidor no cluster com as seguintes condições:
 
    1. O certificado é formatado como um [!DNL .pem] certificado.
-   1. O certificado contém sua chave e não é criptografado (isto é, não tem senha/senha).
+   1. O certificado contém sua chave e é não criptografado (ou seja, não tem senha/senha).
 
       Um certificado contém sua chave com uma das seguintes linhas:
 
@@ -41,8 +45,8 @@ As instruções a seguir descrevem os procedimentos a serem seguidos para usar c
       openssl x509 -in password-protected-cert.pem >> no-password.pem
       ```
 
-   1. O certificado tem o CN, O, OU, etc. conforme necessário para este cliente no arquivo dos servidores [!DNL Access Control.cfg] .
-   1. O certificado foi emitido com uma *finalidade **** de *cliente* (ou *servidor* **e** *cliente*).
+   1. O certificado tem o CN, O, OU, etc. conforme necessário para este cliente nos servidores [!DNL Access Control.cfg] arquivo.
+   1. O certificado foi emitido com um *propósito&#42;&#42;&#42;* de *cliente* (ou ambos *server* **e** *cliente*).
 
       Para verificar se um certificado tem um código de finalidade de servidor e/ou cliente, os seguintes comandos podem ser usados:
 
@@ -57,10 +61,10 @@ As instruções a seguir descrevem os procedimentos a serem seguidos para usar c
       custom_communications_cert.pem: OK
       ```
 
-      Para um certificado de cliente, somente o segundo comando é necessário para ceder [!DNL OK].
+      Para um certificado de cliente, somente o segundo comando é necessário para fornecer [!DNL OK].
 
-1. Coloque o certificado no diretório **Certificados** do cliente.
-1. Em [!DNL Insight.cfg] serverInfo *para cada cluster que você deseja usar este certificado, verifique se o certificado* do cliente ** personalizado está nomeado, como:
+1. Coloque o certificado no **Certificados** diretório.
+1. Em [!DNL Insight.cfg] nos termos do *serverInfo* para cada cluster que deseja usar este certificado, verifique se *certificado de cliente personalizado* é nomeado, como:
 
    ```
    Servers = vector: 1 items 
@@ -69,15 +73,15 @@ As instruções a seguir descrevem os procedimentos a serem seguidos para usar c
    <my_custom_client_cert.pem>
    ```
 
-## Configuração de certificados de servidor personalizados {#setting-up-custom-server-certificates}
+## Configurar certificados de servidor personalizados {#setting-up-custom-server-certificates}
 
-Esta seção supõe que você tem um cluster que está ativo e em execução, usando certificados emitidos pelo Visual Sciences, e a configuração segue práticas comuns (como o diretório *Componentes para Servidores* de Processamento no mestre é sincronizado com os diretórios *Componentes* de todas as DPUs).
+Esta seção parte do princípio que você tem um cluster em execução, usando certificados emitidos pela Visual Sciences e a configuração segue práticas comuns (como *Componentes para servidores de processamento* no principal é sincronizado com o *Componentes* diretórios de todas as DPUs).
 
-1. Adicione o certificado da CA emissora ao [!DNL trust_cert_ca.pem] que está instalado em todos os servidores do cluster e todos os clientes que precisam se comunicar com este cluster.
+1. Adicionar o certificado da autoridade de certificação emissora ao [!DNL trust_cert_ca.pem] que é instalado em cada servidor no cluster e em todos os clientes que precisam se comunicar com esse cluster.
 1. Obtenha um certificado personalizado para cada servidor no cluster com estes requisitos:
 
    1. O certificado personalizado é formatado como um [!DNL .pem] certificado.
-   1. O certificado contém sua chave e não é criptografado (isto é, não tem senha/senha).
+   1. O certificado contém sua chave e é não criptografado (ou seja, não tem senha/senha).
 
       Um certificado contém sua chave se tiver uma linha como:
 
@@ -94,7 +98,7 @@ Esta seção supõe que você tem um cluster que está ativo e em execução, us
       ```
 
    1. O certificado tem o mesmo CN que o [!DNL server_cert.pem] atualmente instalado no servidor.
-   1. O certificado foi emitido com uma finalidade de *servidor* e *cliente*.
+   1. O certificado foi emitido com o objetivo de *server* e *cliente*.
 
       Para verificar se um certificado tem um código de finalidade de servidor e/ou cliente, os seguintes comandos podem ser usados:
 
@@ -109,11 +113,11 @@ Esta seção supõe que você tem um cluster que está ativo e em execução, us
       custom_communications_cert.pem: OK
       ```
 
-      Para um certificado de cliente, somente o segundo comando é necessário para ceder [!DNL OK].
+      Para um certificado de cliente, somente o segundo comando é necessário para fornecer [!DNL OK].
 
-1. Instale o certificado personalizado de cada servidor no diretório **Certificados** do servidor como [!DNL custom_communications_cert.pem].
+1. Instale o certificado personalizado de cada servidor na **Certificados** diretório do servidor como [!DNL custom_communications_cert.pem].
 
-1. Usando um editor de texto, adicione a seguinte linha ao arquivo **Communications.cfg** nos diretórios *Components* e *Components for Processing Servers (Componentes para processamento de servidores* ), logo abaixo da primeira linha ([!DNL component = CommServer]):
+1. Usando um editor de texto, adicione a seguinte linha em **Communications.cfg** em ambas as *Componentes* e *Componentes para servidores de processamento* diretórios , logo abaixo da primeira linha ([!DNL component = CommServer]):
 
    ```
    Certificate = string: Certificates\\custom_communications_cert.pem
@@ -123,10 +127,10 @@ Esta seção supõe que você tem um cluster que está ativo e em execução, us
 
 **Sobre o Aviso de Falha de Certificado**
 
-Quando o servidor ou cliente do Insight está procurando um certificado de **licença** no diretório **Certificados** , ele tenta validar todos os certificados (exceto [!DNL trust_ca_cert.pem]) em relação a uma cópia codificada do certificado CA do Insight, que falha em qualquer certificado personalizado presente no diretório. O servidor emite este aviso:
+Quando o servidor ou cliente do Insight está procurando um **licença** no **Certificados** , ele tenta validar todos os certificados (exceto [!DNL trust_ca_cert.pem]), contra uma cópia codificada do certificado CA Insight, que falha em qualquer certificado personalizado presente no diretório. O servidor emite este aviso:
 
 ```
 Certificate failed to verify. Error 20 at 0 depth. Desc: unable to get local issuer certificate. Cert details:
 ```
 
-Este aviso pode ser ignorado com segurança.
+Esse aviso pode ser ignorado com segurança.

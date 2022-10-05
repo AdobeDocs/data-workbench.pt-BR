@@ -3,7 +3,7 @@ description: Uma legenda de valor exibe eventos de valor definidos.
 title: Legendas de valor
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
 exl-id: b28ba604-93ef-4081-ae55-937fb537c068
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 2%
@@ -12,11 +12,13 @@ ht-degree: 2%
 
 # Legendas de valor{#value-legends}
 
+{{eol}}
+
 Uma legenda de valor exibe eventos de valor definidos.
 
-A legenda de valor é configurada somente nos aplicativos HBX e [!DNL Site], mas pode ser configurada para outros aplicativos. Para obter mais informações, entre em contato com os Serviços de consultoria do Adobe.
+A legenda do valor é configurada somente no HBX e [!DNL Site] , mas podem ser configurados para outros aplicativos. Para obter mais informações, entre em contato com os Serviços de consultoria do Adobe.
 
-Em HBX e [!DNL Site], um evento de valor é definido como uma sessão que gerou valor de negócios. Por exemplo, os registros de dados de evento associados a exibições de página específicas (por exemplo, uma página de agradecimento de pedido ou uma página de conclusão de aplicativo) podem representar eventos de valor para uma organização comercial.
+Em HBX e [!DNL Site], um evento de valor é definido como uma sessão que gerou valor comercial. Por exemplo, os registros de dados de evento associados a exibições de página específicas (por exemplo, uma página de agradecimento de pedido ou uma página de conclusão de aplicativo) podem representar eventos de valor para uma organização comercial.
 
 Com eventos de valor, você pode medir e rastrear a quantidade de valor gerada pelo site. Você pode avaliar o valor comercial em dólares para cada evento e responder perguntas como:
 
@@ -45,7 +47,7 @@ Ao criar um evento de valor, você arrasta páginas de site que representam o va
 
    ![](assets/lgd_ValueLegend.png)
 
-1. Adicione eventos de valor à legenda a partir de mapas de processos, tabelas de página URI ou exibições de hierarquia de página:
+1. Adicione eventos de valor à legenda a partir de mapas de processo, tabelas de página URI ou exibições de hierarquia de página:
 
    * Em um mapa de processos, arraste os nós do mapa de processos para a legenda.
    * Em uma tabela de página URI, pressione Ctrl+Alt e arraste uma página da tabela para a legenda.
@@ -57,7 +59,7 @@ Ao criar um evento de valor, você arrasta páginas de site que representam o va
 
 1. Na legenda do valor, atribua um valor comercial a cada sessão para a qual o evento ocorre:
 
-   1. Na coluna [!DNL Value per Event] , clique na célula que corresponde à página que você adicionou como um evento de valor.
+   1. No [!DNL Value per Event] , clique na célula que corresponde à página que você adicionou como um evento de valor.
    1. Digite o valor do dólar a ser atribuído para o valor desse evento e pressione Enter.
 
    ![](assets/lgd_ValueLegend_Value.png)
@@ -74,8 +76,8 @@ Depois de definir pelo menos um evento de valor, a dimensão Segmento de valor f
 
 >[!NOTE]
 >
->O servidor do Data Workbench calcula métricas em todo o conjunto de dados acessíveis ao perfil que você está usando. Por padrão, o [!DNL Data Workbench Server] calcula métricas como Valor, Eventos de valor, Valor médio e Conversão em todos os dados no conjunto de dados de análise, mesmo se os dados não forem da mesma fonte lógica.
+>O servidor do Data Workbench calcula métricas em todo o conjunto de dados acessíveis ao perfil que você está usando. Por padrão, a variável [!DNL Data Workbench Server] O calcula métricas como Valor, Eventos de valor, Valor médio e Conversão em todos os dados do conjunto de dados de análise, mesmo se os dados não forem da mesma fonte lógica.
 
 ## Exportar para o Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 
-Para obter informações sobre como exportar janelas, consulte [Exportar Dados da Janela](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Para obter informações sobre como exportar janelas, consulte [Exportar dados da janela](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

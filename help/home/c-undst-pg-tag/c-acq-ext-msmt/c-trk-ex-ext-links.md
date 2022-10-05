@@ -3,7 +3,7 @@ description: Captura de atividades em links de sites de terceiros para permitir 
 title: Rastrear saídas para links externos
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # Rastrear saídas para links externos{#tracking-exits-to-external-links}
+
+{{eol}}
 
 Captura de atividades em links de sites de terceiros para permitir a análise de Saída do Target.
 
@@ -20,7 +22,7 @@ As páginas da Web podem conter links para sites de terceiros e a atividade ness
 <A HREF=”https://www.myserver.com/PageExit.htm?v_eurl=https://www.othersite.com”>
 ```
 
-O arquivo referenciado [!DNL PageExit.htm] deve ser criado e deve ser estruturado para conter o seguinte script:
+O referenciado [!DNL PageExit.htm] O arquivo deve ser criado e deve ser estruturado para conter o seguinte script:
 
 ```
 <html>
@@ -51,7 +53,7 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-Ao fazer a solicitação para o arquivo [!DNL PageExit.htm], o valor v_eurl é coletado para fins de análise. Além disso, quando [!DNL PageExit.htm] é carregado, ele redireciona imediatamente para o local de destino v_eurl especificado.
+Ao fazer o pedido de [!DNL PageExit.htm] , o valor v_eurl é coletado para fins de análise. Além disso, quando [!DNL PageExit.htm] for carregado, redirecionará imediatamente para o local de destino v_eurl especificado.
 
 | Dados Coletados | Explicação | Exemplo |
 |---|---|---|

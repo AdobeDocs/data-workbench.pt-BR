@@ -3,14 +3,16 @@ description: Uma dimensão de tempo permite criar um conjunto de dimensões de h
 title: Dimensões de tempo
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
 # Dimensões de tempo{#time-dimensions}
+
+{{eol}}
 
 Uma dimensão de tempo permite criar um conjunto de dimensões de hora local periódicas ou absolutas (como Dia, Dia da semana, Hora do dia, Tempo de reserva, etc.) com base em qualquer campo de carimbo de data/hora especificado para o parâmetro Tempo de entrada (época de 1970).
 
@@ -57,7 +59,7 @@ As dimensões de tempo são definidas pelos seguintes parâmetros:
   </tr> 
   <tr> 
    <td colname="col1"> Tempo de entrada (época de 1970) </td> 
-   <td colname="col2"> <p>O nome do campo de carimbo de data e hora a ser usado como entrada. </p> <p> <p>Observação:  Os valores do campo devem representar o número de segundos desde 1º de janeiro de 1970, às 00:00:01. Se o tempo de entrada não for um tempo válido (1970 a 2037), o processo de transformação falhará e o servidor do Data Workbench gerará um erro. </p> </p> </td> 
+   <td colname="col2"> <p>O nome do campo de carimbo de data e hora a ser usado como entrada. </p> <p> <p>Observação: Os valores do campo devem representar o número de segundos desde 1º de janeiro de 1970, em 00:00:01. Se o tempo de entrada não for um tempo válido (1970 a 2037), o processo de transformação falhará e o servidor do Data Workbench gerará um erro. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

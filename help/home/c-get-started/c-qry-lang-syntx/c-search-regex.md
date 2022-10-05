@@ -3,7 +3,7 @@ description: O Data Workbench utiliza expressões regulares (regex) para operaç
 title: Expressões regulares
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # Expressões regulares{#regular-expressions}
 
+{{eol}}
+
 O Data Workbench utiliza expressões regulares (regex) para operações de pesquisa e classificação.
 
-No campo **[!UICONTROL Search]**, é possível executar uma pesquisa seguindo a instrução &quot;re:&quot; usando expressões comuns, por exemplo:
+No **[!UICONTROL Search]** é possível realizar uma pesquisa após a instrução &quot;re:&quot; usando expressões comuns, por exemplo:
 
 ```
 <b>re: *.s</b>

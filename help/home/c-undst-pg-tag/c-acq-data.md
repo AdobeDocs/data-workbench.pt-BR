@@ -3,7 +3,7 @@ description: O sensor permite adquirir dados de solicitação da Web (dados de e
 title: Que tipo de dados posso adquirir?
 uuid: 5ac864b8-4017-4d80-b491-7a5976225eb2
 exl-id: 97d87084-cac3-4a94-89e0-f01a66e20324
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Que tipo de dados posso adquirir?{#what-kind-of-data-can-i-acquire}
+
+{{eol}}
 
 O sensor permite adquirir dados de solicitação da Web (dados de evento ou log), bem como dados de medição estendida.
 
@@ -35,9 +37,9 @@ Os seguintes tópicos estão descritos:
 * [!DNL Sensor] carimbos de data e hora registram entradas em unidades de 100ns, permitindo novos tipos de funcionalidade analítica.
 * [!DNL Sensor] permite que os proprietários do site adicionem dados (medidas) às entradas de log após a implementação inicial para consideração em análise e relatório.
 
-Para obter mais informações sobre como adquirir dados de medição estendida, consulte [Adquirir medidas de linha de base](../../home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-bsln-msmts.md#concept-ed9b4b21693a4bafac75d60708b9b6fe).
+Para obter mais informações sobre como adquirir dados de mensuração estendida, consulte [Adquirir medidas de linha de base](../../home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-bsln-msmts.md#concept-ed9b4b21693a4bafac75d60708b9b6fe).
 
-## Dados de medição estendida {#section-b7f0285de49e432b9db8fda85fa735ba}
+## Dados de avaliação estendida {#section-b7f0285de49e432b9db8fda85fa735ba}
 
 [!DNL Sensor] também suporta o uso de tags de página (ou solicitações de objeto incorporado) para adquirir dados de medição que não estão disponíveis para seus servidores da Web como parte de sua operação normal. Tags de página geralmente são usadas para medir:
 
@@ -47,8 +49,8 @@ Para obter mais informações sobre como adquirir dados de medição estendida, 
 * Informações detalhadas sobre o navegador de um visitante, incluindo medidas como tempo de carregamento de página, resolução de tela, quais campos de formulário o visitante preencheu e assim por diante.
 * Outros dados que de outra forma não são enviados pelos navegadores para os servidores da Web.
 
-[!DNL Sensor] coleta informações colocadas em qualquer solicitação do GET feita em um servidor da Web em execução  [!DNL Sensor]. Essas solicitações podem vir de solicitações de objetos incorporados de qualquer tipo, seja para simplesmente medir que a solicitação foi feita em um determinado momento por um determinado navegador ou para passar outros dados de medição para o fluxo de coleta de dados, de modo que possa ser processada para fins de análise e relatórios.
+[!DNL Sensor] coleta qualquer informação colocada em qualquer solicitação do GET feita em um servidor da Web em execução [!DNL Sensor]. Essas solicitações podem vir de solicitações de objetos incorporados de qualquer tipo, seja para simplesmente medir que a solicitação foi feita em um determinado momento por um determinado navegador ou para passar outros dados de medição para o fluxo de coleta de dados, de modo que possa ser processada para fins de análise e relatórios.
 
-[!DNL Sensor] O oferece o melhor dos mundos de aquisição de dados do lado do cliente e do lado do servidor — ele adquire seus dados de log da Web do lado do servidor e coleta medições do lado do cliente, de terceiros ou de substituição de cache realizadas por solicitações de objetos incorporados. Em outras palavras, [!DNL Sensor] adquire os dados de solicitação normalmente conhecidos dos seus servidores da Web (medições do lado do servidor) e quaisquer dados de medição adicionais que você coleta usando tags de página (medidas do lado do cliente) que enviam seus dados para qualquer servidor da Web que esteja executando [!DNL Sensor]. Esses servidores da Web podem ser dedicados à coleta de medidas do lado do cliente, mas não precisam ser.
+[!DNL Sensor] O oferece o melhor dos mundos de aquisição de dados do lado do cliente e do lado do servidor — ele adquire seus dados de log da Web do lado do servidor e coleta medições do lado do cliente, de terceiros ou de substituição de cache realizadas por solicitações de objetos incorporados. Por outras palavras, [!DNL Sensor] adquire os dados de solicitação normalmente conhecidos dos seus servidores da Web (medições do lado do servidor) e quaisquer dados de medição adicionais que você coletar por meio do uso de tags de página (medidas do lado do cliente) que enviam seus dados para qualquer servidor da Web em execução [!DNL Sensor]. Esses servidores da Web podem ser dedicados à coleta de medidas do lado do cliente, mas não precisam ser.
 
-Para obter mais informações sobre como adquirir dados de medição estendida, consulte [Adquirir Medições Estendidas](../../home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-ext-msmt.md#concept-d171a6d2bde843cdb65bcfe69c6a4944).
+Para obter mais informações sobre como adquirir dados de mensuração estendida, consulte [Adquirir medidas estendidas](../../home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-ext-msmt.md#concept-d171a6d2bde843cdb65bcfe69c6a4944).

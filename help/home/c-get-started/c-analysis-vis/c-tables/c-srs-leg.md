@@ -3,7 +3,7 @@ description: Os elementos em uma dimensão podem ser codificados por cores como 
 title: Ativar uma legenda de série
 uuid: 7c9cb699-940b-47f3-ae6f-e9a8023b8501
 exl-id: c8c3f327-13b2-494d-b7d1-8a7a49e301c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Ativar uma legenda de série{#enable-a-series-legend}
+
+{{eol}}
 
 Os elementos em uma dimensão podem ser codificados por cores como uma série, para que cada elemento possa ser acompanhado mais facilmente entre outras visualizações no espaço de trabalho.
 

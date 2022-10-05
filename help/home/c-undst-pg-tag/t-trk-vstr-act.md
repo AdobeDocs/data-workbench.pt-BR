@@ -3,7 +3,7 @@ description: Os sites arquitetados com o Flash exigem atenção especial em rela
 title: Rastrear atividade do visitante no conteúdo de mídia avançada em flash
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # Rastrear atividade do visitante no conteúdo de mídia avançada em flash{#tracking-visitor-activity-within-flash-rich-media-content}
 
+{{eol}}
+
 Os sites arquitetados com o Flash exigem atenção especial em relação à captura de ações de visitantes realizadas dentro do conteúdo de mídia avançada.
 
-Usando o ActionScript [!DNL Flash], você pode fazer alterações simples em seus filmes existentes [!DNL Flash] para permitir o rastreamento de todas as interações do visitante com o filme, como cliques de botão ou movimentos do mouse.
+Usando [!DNL Flash] ActionScript, você pode fazer alterações simples em seu [!DNL Flash] filmes para permitir o rastreamento de todas as interações do visitante com o filme, como cliques no botão ou movimentos do mouse.
 
-Para facilitar o rastreamento da atividade do Visitante em seu filme [!DNL Flash], siga as etapas listadas abaixo:
+Para facilitar o rastreamento de atividades do Visitante no [!DNL Flash] filme, siga as etapas listadas abaixo:
 
-1. Adicione o seguinte código de ActionScript ao seu filme. Este código representa uma função que pode ser chamada por eventos no filme [!DNL Flash] que você deseja rastrear.
+1. Adicione o seguinte código de ActionScript ao seu filme. Esse código representa uma função que pode ser chamada pelos eventos no [!DNL Flash] filme que você deseja rastrear.
 
    ```
    // FLASH TAG CODE BEGIN
@@ -29,8 +31,8 @@ Para facilitar o rastreamento da atividade do Visitante em seu filme [!DNL Flash
    // FLASH TAG CODE END
    ```
 
-1. Crie um arquivo em branco chamado [!DNL flashtag.txt] e coloque o arquivo em seus servidores da Web.
-1. Na função na Etapa 1, substitua o espaço reservado \[[!DNL PATH_TO_WEB_SERVER]\] pelo caminho relativo totalmente qualificado para o local do arquivo [!DNL flashtag.txt]. Por exemplo:
+1. Criar um arquivo em branco com o nome [!DNL flashtag.txt] e coloque o arquivo nos servidores da Web.
+1. Na função na Etapa 1, substitua o \[[!DNL PATH_TO_WEB_SERVER]\] espaço reservado com o caminho relativo ou totalmente qualificado para o local da [!DNL flashtag.txt] arquivo. Por exemplo:
 
    ```
    var FLASHTAGURI = https://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,7 +46,7 @@ Para facilitar o rastreamento da atividade do Visitante em seu filme [!DNL Flash
 
    Este exemplo ilustra o uso do evento on(release); no entanto, a função tag() pode ser referenciada por meio de qualquer evento que você queira rastrear, como um evento on(press), on(rolover), on(rollout) ou on (keypress) .
 
-   O espaço reservado \[[!DNL PUT_PAGE_NAME_HERE]\] deve ser substituído por uma string que representa o nome da página ou evento que você está rastreando. A variável \[[!DNL PUT_PAGE_NAME_HERE]\]pode ser modificada manualmente ou por meio de referência de variável para indicar um nome exclusivo para a página ou evento dentro do aplicativo [!DNL Flash]. O valor que substitui o espaço reservado \[[!DNL PUT_PAGE_NAME_HERE]\] pode consistir em um nome simples ou pode ser estruturado para representar uma estrutura hierárquica semelhante a um URI completo. Por exemplo:
+   O \[[!DNL PUT_PAGE_NAME_HERE]\] espaço reservado deve ser substituído por uma sequência que represente o nome da página ou evento que você está rastreando. O \[[!DNL PUT_PAGE_NAME_HERE]A variável \]pode ser modificada manualmente ou por meio de referência de variável para indicar um nome exclusivo para a página ou evento no [!DNL Flash] aplicativo. O valor que substitui o \[[!DNL PUT_PAGE_NAME_HERE]\] espaço reservado pode consistir em um nome simples ou pode ser estruturado para representar uma estrutura hierárquica semelhante a um URI completo. Por exemplo:
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
@@ -52,7 +54,7 @@ Para facilitar o rastreamento da atividade do Visitante em seu filme [!DNL Flash
 
    A Adobe recomenda que, antes da implantação do código, você compile uma especificação escrita para nomes de página e nomes de evento para facilitar o alinhamento das necessidades comerciais e das tarefas de desenvolvimento e reduzir o potencial para ciclos de desenvolvimento adicionais.
 
-1. Se desejar, variáveis adicionais podem ser coletadas e associadas a páginas ou eventos no filme [!DNL Flash]. Para fazer isso, substitua o espaço reservado \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] por um conjunto de pares name=value separados por um E comercial (&amp;). Por exemplo:
+1. Se desejar, variáveis adicionais podem ser coletadas e associadas a páginas ou eventos no [!DNL Flash] filme. Para fazer isso, substitua o \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] espaço reservado com um conjunto de pares name=value separados por um E comercial (&amp;). Por exemplo:
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
@@ -60,13 +62,13 @@ Para facilitar o rastreamento da atividade do Visitante em seu filme [!DNL Flash
 
    As variáveis podem ser modificadas manualmente ou por meio de referência de variável para indicar atributos adicionais a serem coletados e associados à página ou evento. Se não houver variáveis adicionais aplicáveis para coletar, remova \[[!DNL PUT_ADDITIONAL_VAR_HERE]\].
 
-   Sua configuração de rastreamento de visitantes no conteúdo de mídia avançada [!DNL Flash] agora está concluída. Quando o evento for chamado, a função tag [!DNL (PAGENAME,VARIABLES)] será chamada, resultando em uma solicitação HTTP sendo feita para o arquivo a seguir. Esta função será chamada além de outras funções que podem ser acionadas conforme definido no filme [!DNL Flash]:
+   Sua configuração de rastreamento de visitantes no [!DNL Flash] o conteúdo de mídia avançada agora está concluído. Quando o evento é chamado, a tag [!DNL (PAGENAME,VARIABLES)] será chamada, resultando em uma solicitação HTTP sendo feita para o arquivo a seguir. Essa função será chamada além de outras funções que podem ser acionadas, conforme definido em seu [!DNL Flash] filme:
 
    ```
    https://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-A solicitação HTTP resultante da função [!DNL Flash] Tag ActionScript resulta na coleta das seguintes informações em relação a cada evento no filme [!DNL Flash]. A última linha na tabela (W3C Name cs-uri-query) representa as informações coletadas para as variáveis adicionais especificadas na chamada de função.
+A solicitação HTTP resultante do [!DNL Flash] A função de ActionScript de tag resulta na coleta das seguintes informações em relação a cada evento dentro do [!DNL Flash] filme. A última linha na tabela (W3C Name cs-uri-query) representa as informações coletadas para as variáveis adicionais especificadas na chamada de função.
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4">
  <thead>
@@ -81,14 +83,14 @@ A solicitação HTTP resultante da função [!DNL Flash] Tag ActionScript result
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Identificador de rastreamento (visitante único) </td>
-   <td colname="col3"> Identificador lido de um cookie colocado no navegador do usuário pelo <span class="wintitle"> Sensor </span> na solicitação inicial do Visitante </td>
+   <td colname="col3"> Identificador lido de um cookie colocado no navegador do usuário por <span class="wintitle"> Sensor </span> na solicitação inicial do visitante </td>
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Data </p> <p>Hora </p> </td>
    <td colname="col2"> Carimbo de data e hora </td>
    <td colname="col3"> Hora em que a solicitação foi processada pelo servidor (com precisão de 100ns; a precisão depende do ambiente do servidor e do NTP) </td>
-   <td colname="col4"> 2002-11-21 17:21:45.123 </td>
+   <td colname="col4"> 2002-11-21 17:21:45 123 </td>
   </tr>
   <tr>
    <td colname="col1"> sc(content-Type) </td>

@@ -3,7 +3,7 @@ description: Este documento descreve os perfis com seus campos, dimensões e mé
 title: Dimensões e métricas do perfil do Data Workbench
 uuid: 42ef154f-fd8b-4609-8685-96d9dbf32a3d
 exl-id: cfad9897-2ea3-47e4-aa36-416e0fde9358
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Dimensões e métricas do perfil do Data Workbench{#data-workbench-profile-dimensions-and-metrics}
+
+{{eol}}
 
 Este documento descreve os perfis com seus campos, dimensões e métricas empregados pelo Perfil de monitoramento do Data Workbench.
 
@@ -25,6 +27,6 @@ Esses perfis fornecem dimensões e métricas que permitem exibir dados de estado
 * [Dimension no perfil histórico do Insight](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 * [Métricas no perfil de monitoramento histórico do Insight](../../../home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md#concept-8fece88b1f014637bbc7c8372ee93203)
 
-Os perfis de status permitem ver como o Data Workbench está sendo executado atualmente de uma perspectiva operacional. O perfil **Status do perfil** e o perfil **Status do servidor** coletam dados do Status detalhado e dos servidores do Data Workbench. Todos os dados coletados são colocados no campo `cs-uri-query` para uso.
+Os perfis de status permitem ver como o Data Workbench está sendo executado atualmente de uma perspectiva operacional. O **Status do perfil** e o **Status do servidor** O perfil coleta dados do Status detalhado e dos servidores do Data Workbench. Todos os dados coletados são colocados na variável `cs-uri-query` campo para uso.
 
-Os **Historic profiles** permitem avaliar o impacto das alterações de configuração e hardware usando dados históricos. O perfil histórico pode ser o mais útil, pois permite avaliar o impacto das alterações de configuração e hardware ao longo do tempo.
+O **Perfis históricos** permite avaliar o impacto das alterações de configuração e hardware usando dados históricos. O perfil histórico pode ser o mais útil, pois permite avaliar o impacto das alterações de configuração e hardware ao longo do tempo.

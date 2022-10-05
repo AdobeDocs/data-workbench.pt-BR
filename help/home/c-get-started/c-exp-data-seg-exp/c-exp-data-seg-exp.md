@@ -3,7 +3,7 @@ description: O recurso de exportação de segmento permite criar um segmento dos
 title: Exportar dados usando exportação de segmento
 uuid: a6468e76-fe5a-4807-806e-015063f9627a
 exl-id: 46540d63-3b6e-4cfc-ba34-8caffadab99c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 38%
@@ -11,6 +11,8 @@ ht-degree: 38%
 ---
 
 # Exportar dados usando exportação de segmento{#exporting-data-using-segment-export}
+
+{{eol}}
 
 O recurso de exportação de segmento permite criar um segmento dos elementos de qualquer dimensão contável e, em seguida, exportar os dados desse segmento em um lote ou em tempo real, em um arquivo delimitado por tabulação.
 

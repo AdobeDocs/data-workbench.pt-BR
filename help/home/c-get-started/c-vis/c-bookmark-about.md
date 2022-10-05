@@ -3,7 +3,7 @@ description: Você pode marcar espaços de trabalho significativos para mover ra
 title: Adicionar marcadores
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 exl-id: ba05d7ee-49c6-42a0-a490-9c59fcaaddc5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Adicionar marcadores{#add-a-bookmarks}
 
+{{eol}}
+
 Você pode marcar espaços de trabalho significativos para mover rapidamente entre visualizações e relatórios empregados no seu fluxo de trabalho.
 
-1. Marque um espaço de trabalho clicando no ícone de Marcador ![](assets/bookmark_icon.png) no canto superior direito da barra de ferramentas.
+1. Marcar um espaço de trabalho clicando no ícone Marcador ![](assets/bookmark_icon.png) no canto superior direito da barra de ferramentas.
 
    Antes de ter um espaço de trabalho marcado, esse ícone aparece como apenas um livro. O ícone de marcador muda para um livro com uma página marcada depois que um espaço de trabalho é marcado.
 
@@ -22,7 +24,7 @@ Você pode marcar espaços de trabalho significativos para mover rapidamente ent
 
    ![](assets/bookmarks_panel.png)
 
-1. Para abrir um espaço de trabalho marcado, clique em um nome de espaço de trabalho no **[!UICONTROL Bookmark Panel]**.
+1. Para abrir um espaço de trabalho marcado, clique em um nome de espaço de trabalho na **[!UICONTROL Bookmark Panel]**.
 
    ![](assets/bookmarks_panel_left.png)
 

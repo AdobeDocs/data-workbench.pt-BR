@@ -3,7 +3,7 @@ description: Etapas para criar um subconjunto.
 title: Criar subconjuntos
 uuid: e2f8d91b-ea66-46e1-9add-685aebe1d59e
 exl-id: 5386638a-43a0-4702-85c4-e72944a4201a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Criar subconjuntos{#create-subsets}
+
+{{eol}}
 
 Etapas para criar um subconjunto.
 
@@ -27,4 +29,4 @@ Etapas para criar um subconjunto.
 
    ![](assets/mnu_Subset.png)
 
-Um X é exibido à esquerda da opção [!DNL Subset menu] e à esquerda do nível do subconjunto.
+Um X é exibido à esquerda da [!DNL Subset menu] e à esquerda do nível do subconjunto.

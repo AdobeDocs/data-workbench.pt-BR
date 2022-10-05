@@ -3,7 +3,7 @@ description: Ao criar uma camada de ponto de elemento usando pontos dinâmicos, 
 title: Definir camadas de ponto de elemento usando pontos dinâmicos
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
 exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 7%
@@ -12,21 +12,23 @@ ht-degree: 7%
 
 # Definir camadas de ponto de elemento usando pontos dinâmicos{#defining-element-point-layers-using-dynamic-points}
 
+{{eol}}
+
 Ao criar uma camada de ponto de elemento usando pontos dinâmicos, os dados de latitude e longitude são incorporados em cada elemento da dimensão.
 
 Para definir uma camada de ponto de elemento usando pontos dinâmicos, você deve criar ou já ter disponível o seguinte:
 
-* **Uma dimensão**, definida no  [!DNL Transformation.cfg] arquivo ou em um conjunto de dados de transformação, inclui um arquivo, no qual cada elemento contém a string &quot;latitude, longitude&quot; ou &quot;latitude, longitude, nome&quot;.
+* **Uma dimensão**, definido no [!DNL Transformation.cfg] arquivo ou conjunto de dados de transformação inclui o arquivo , no qual cada elemento contém a string &quot;latitude, longitude&quot; ou &quot;latitude, longitude, nome&quot;.
 
-   Para obter etapas para criar uma dimensão, consulte o *Guia de Configuração de Conjunto de Dados*.
+   Para obter etapas para criar uma dimensão, consulte a *Guia de configuração do conjunto de dados*.
 
-* **Um** arquivo de camada que especifica a dimensão relacionada.
+* **Um arquivo de camada** que especifica a dimensão relacionada.
 
    Para obter mais informações sobre o formato necessário do arquivo de camada, consulte [Formato de arquivo de camada de ponto de elemento](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981).
 
 >[!NOTE]
 >
->Ao usar [!DNL Dynamic Points], é essencial garantir que a cardinalidade da dimensão especificada no arquivo de camada seja razoável. Se cada linha de um conjunto de dados tiver uma latitude e longitude diferentes, a dimensão preenche rapidamente e a maioria das linhas se encaixa em um elemento de Elementos pequenos. Como o elemento Elementos pequenos não tem latitude e longitude, ele não aparece no globo.
+>Ao usar [!DNL Dynamic Points], é essencial garantir que a cardinalidade da dimensão especificada no arquivo da camada seja razoável. Se cada linha de um conjunto de dados tiver uma latitude e longitude diferentes, a dimensão preenche rapidamente e a maioria das linhas se encaixa em um elemento de Elementos pequenos. Como o elemento Elementos pequenos não tem latitude e longitude, ele não aparece no globo.
 
 ## Formato de arquivo de camada de ponto de elemento {#section-bbcc2baa2f754dba81eba93339a97cbd}
 
@@ -72,7 +74,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Cor do canal </td> 
-   <td colname="col2"> Opcional. O vetor de cores RGB, que é expresso como (vermelho, verde, azul). Para cada cor no vetor, você pode inserir um valor de 0,0 a 1,0. Por exemplo, (1,0, 0,0, 0,0) é vermelho vivo e (0,5, 0,5, 0,5) é cinza. </td> 
+   <td colname="col2"> Opcional. O vetor de cor RGB, que é expresso como (vermelho, verde, azul). Para cada cor no vetor, você pode inserir um valor de 0,0 a 1,0. Por exemplo, (1,0, 0,0, 0,0) é vermelho vivo e (0,5, 0,5, 0,5) é cinza. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Modo de renderização </td> 
@@ -86,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-O arquivo [!DNL IP Coordinates.layer] é formatado da seguinte maneira:
+O [!DNL IP Coordinates.layer] O arquivo é formatado da seguinte maneira:
 
 ```
 Layer = ElementPointLayer:

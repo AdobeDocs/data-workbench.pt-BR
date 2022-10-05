@@ -3,7 +3,7 @@ description: Como outras transformações, a transformação CrossRows é aplica
 title: CrossRows
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # CrossRows{#crossrows}
 
+{{eol}}
+
 Como outras transformações, a transformação CrossRows é aplicada às linhas de dados (entradas de log) nas fontes de log.
 
-Para cada linha de dados, a transformação pega o valor do campo de entrada especificado, executa um conjunto de etapas de processamento e registra o resultado no campo de saída especificado. No entanto, quando a transformação [!DNL CrossRows] funciona em uma linha de dados (essa linha é chamada de linha de saída), leva em conta que a linha mais uma ou mais linhas de dados (essas linhas são chamadas linhas de entrada) que estão associadas à mesma ID de rastreamento. Portanto, para uma determinada ID de rastreamento, o valor do campo de saída para cada linha de saída é baseado nos valores do campo de entrada para uma ou mais linhas de entrada.
+Para cada linha de dados, a transformação pega o valor do campo de entrada especificado, executa um conjunto de etapas de processamento e registra o resultado no campo de saída especificado. No entanto, quando a variável [!DNL CrossRows] a transformação funciona em uma linha de dados (essa linha é chamada de linha de saída), e leva em conta que a linha mais uma ou mais linhas de dados (essas linhas são chamadas linhas de entrada) associadas à mesma ID de rastreamento. Portanto, para uma determinada ID de rastreamento, o valor do campo de saída para cada linha de saída é baseado nos valores do campo de entrada para uma ou mais linhas de entrada.
 
-A transformação fornece várias condições e restrições que permitem limitar as linhas de entrada da transformação. Você pode expressar esses limites em termos das condições do servidor do Data Workbench (consulte [Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), um intervalo de linhas de entrada em relação à linha de saída ou um intervalo de vezes em relação ao tempo da linha de saída. Para essas linhas de entrada que atendem às condições e restrições da transformação, é possível aplicar uma operação (como SUM) que determine o valor do campo de saída.
+A transformação fornece várias condições e restrições que permitem limitar as linhas de entrada da transformação. Você pode expressar esses limites em termos das condições do servidor do Data Workbench (consulte [Condições](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), um intervalo de linhas de entrada em relação à linha de saída ou um intervalo de vezes em relação ao tempo da linha de saída. Para essas linhas de entrada que atendem às condições e restrições da transformação, é possível aplicar uma operação (como SUM) que determine o valor do campo de saída.
 
 >[!NOTE]
 >
->Para funcionar, a transformação [!DNL CrossRows] exige que os dados sejam solicitados no tempo e agrupados pela ID de rastreamento nos dados de origem. Portanto, [!DNL CrossRows] funciona somente quando definido no arquivo [!DNL Transformation.cfg] ou em um arquivo [!DNL Transformation Dataset Include].
+>Para trabalhar, o [!DNL CrossRows] a transformação exige que os dados sejam solicitados no tempo e agrupados pela ID de rastreamento nos dados de origem. Por conseguinte, [!DNL CrossRows] funciona somente quando definido no [!DNL Transformation.cfg] ou em um [!DNL Transformation Dataset Include] arquivo.
 
 À medida que revisa as descrições dos parâmetros na tabela a seguir, lembre-se do seguinte:
 
@@ -63,7 +65,7 @@ A transformação fornece várias condições e restrições que permitem limita
   </tr> 
   <tr> 
    <td colname="col1"> Chave </td> 
-   <td colname="col2"> <p>Opcional. O nome do campo a ser usado como a chave. </p> <p> Se uma chave for especificada, as linhas de entrada de uma determinada linha de saída serão limitadas ao bloco contíguo de linhas com o mesmo valor Chave da linha de saída. Essa restrição é adicional a todas as outras limitações colocadas nas linhas de entrada por outros parâmetros da transformação <span class="wintitle"> CrossRows</span>. </p> <p> Por exemplo, se estiver trabalhando com dados da Web e fizer com que o campo x-session-key (que tem um valor exclusivo para cada sessão) tenha a chave, as linhas de entrada da transformação serão limitadas às linhas que têm o mesmo valor x-session-key que a linha de saída. Portanto, você está considerando apenas as linhas de entrada que representam exibições de página que ocorrem durante a mesma sessão que a linha de saída. </p> </td> 
+   <td colname="col2"> <p>Opcional. O nome do campo a ser usado como a chave. </p> <p> Se uma chave for especificada, as linhas de entrada de uma determinada linha de saída serão limitadas ao bloco contíguo de linhas com o mesmo valor Chave da linha de saída. Essa restrição é adicional a todas as outras limitações colocadas nas linhas de entrada por outros parâmetros do <span class="wintitle"> CrossRows</span> transformação. </p> <p> Por exemplo, se estiver trabalhando com dados da Web e fizer com que o campo x-session-key (que tem um valor exclusivo para cada sessão) tenha a chave, as linhas de entrada da transformação serão limitadas às linhas que têm o mesmo valor x-session-key que a linha de saída. Portanto, você está considerando apenas as linhas de entrada que representam exibições de página que ocorrem durante a mesma sessão que a linha de saída. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -103,10 +105,10 @@ A transformação fornece várias condições e restrições que permitem limita
  </tbody> 
 </table>
 
-A transformação [!DNL CrossRows] neste exemplo é aplicada a linhas de dados da Web a serem encontradas para cada exibição de página no momento da próxima exibição de página. Como sabemos que [!DNL CrossRows] é aplicado somente durante a fase de transformação do processo de construção do conjunto de dados, as linhas de dados são solicitadas pelo visitante (cada visitante tem uma ID de rastreamento exclusiva) e pelo tempo.
+O [!DNL CrossRows] neste exemplo, a transformação é aplicada a linhas de dados da Web para localizar para cada exibição de página o tempo da próxima exibição de página. Porque nós sabemos disso [!DNL CrossRows] for aplicada somente durante a fase de transformação do processo de construção do conjunto de dados, as linhas de dados serão solicitadas pelo visitante (cada visitante tem uma ID de rastreamento exclusiva) e pelo tempo.
 
-O campo de entrada, x-timestamp, é considerado apenas para as linhas de entrada nas quais x-is-page-view é preenchido (indicando que a linha de dados representa uma exibição de página). O campo x-session-key (que tem um valor exclusivo para cada sessão) é especificado para o parâmetro Key . Portanto, as linhas de entrada (entradas de log) para a transformação são limitadas ao bloco contíguo de linhas que têm o mesmo valor de x-session-key que a linha de saída. Em outras palavras, para ser considerada para a transformação, uma linha de entrada deve representar uma exibição de página que ocorre durante a mesma sessão que a exibição de página na linha de saída. A primeira operação de linha obtém o valor do campo de saída da primeira linha de entrada que satisfaz a condição [!DNL Input] e tem o mesmo valor de x-session-key que a linha de saída.
+O campo de entrada, x-timestamp, é considerado apenas para as linhas de entrada nas quais x-is-page-view é preenchido (indicando que a linha de dados representa uma exibição de página). O campo x-session-key (que tem um valor exclusivo para cada sessão) é especificado para o parâmetro Key . Portanto, as linhas de entrada (entradas de log) para a transformação são limitadas ao bloco contíguo de linhas que têm o mesmo valor de x-session-key que a linha de saída. Em outras palavras, para ser considerada para a transformação, uma linha de entrada deve representar uma exibição de página que ocorre durante a mesma sessão que a exibição de página na linha de saída. A primeira operação de linha obtém o valor do campo de saída da primeira linha de entrada que satisfaz o [!DNL Input] Condição e com o mesmo valor x-session-key que a linha de saída.
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 
-[!DNL CrossRows] O é executado em uma quantidade de tempo proporcional ao tamanho de suas entradas mais o tamanho de suas saídas. Isso significa que para as operações SUM, FIRST ROW e LAST ROW, não é menos eficiente do que outras transformações. Para TODOS, a situação é mais complexa porque é possível configurar [!DNL CrossRows] para produzir uma quantidade de dados para cada linha de dados (entrada de log) que é proporcional ao número total de linhas (entradas de log) para uma determinada ID de rastreamento.
+[!DNL CrossRows] O é executado em uma quantidade de tempo proporcional ao tamanho de suas entradas mais o tamanho de suas saídas. Isso significa que para as operações SUM, FIRST ROW e LAST ROW, não é menos eficiente do que outras transformações. Para TODOS, a situação é mais complexa porque é possível configurar [!DNL CrossRows] para gerar uma quantidade de dados para cada linha de dados (entrada de log) que é proporcional ao número total de linhas (entradas de log) para uma determinada ID de rastreamento.

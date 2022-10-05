@@ -3,7 +3,7 @@ description: É possível criar facilmente uma definição de Exportação de se
 title: Exportar segmento
 uuid: 85c8aa72-23fe-424b-9580-6759dc8f8681
 exl-id: 49998b46-f3a6-43a3-a76e-468894b27ee4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -12,25 +12,27 @@ ht-degree: 0%
 
 # Exportar segmento{#segment-export}
 
+{{eol}}
+
 É possível criar facilmente uma definição de Exportação de segmento na visualização Tabela de detalhes no Cliente do Data Workbench.
 
-Além disso, [!DNL Segment Exports] combina automaticamente seus resultados a um único servidor, em vez de produzir resultados parciais em cada DPU que você deve combinar usando um processo externo. Você pode criar um arquivo de exportação de segmento, salvá-lo no [!DNL Profile Manager] e fazer upload do arquivo de saída para um servidor de sua escolha.
+Além disso, [!DNL Segment Exports] combinar automaticamente seus resultados em um único servidor, em vez de produzir resultados parciais em cada DPU que você deve combinar usando um processo externo. Você pode criar um arquivo de exportação de segmento, salvá-lo na [!DNL Profile Manager]e carregue o arquivo de saída em um servidor de sua escolha.
 
 **Para configurar o servidor de exportação de segmentos**
 
-O recurso [!DNL Segment Export] cria um único arquivo de saída no servidor de exportação de segmento, em vez de arquivos de saída separados criados em cada DPU. Normalmente, o servidor de exportação de segmentos é configurado para ser executado no FSU.
+O [!DNL Segment Export] cria um único arquivo de saída no servidor de exportação de segmento, em vez de arquivos de saída separados criados em cada DPU. Normalmente, o servidor de exportação de segmentos é configurado para ser executado no FSU.
 
-No diretório Dataset\ no [!DNL Profile Manager], abra o [!DNL Segment Export.cfg] na Workstation e especifique o endereço do servidor. (Seu endereço pode ser um IP ou um nome de domínio totalmente qualificado.):
+No diretório\ do conjunto de dados no [!DNL Profile Manager], abra o [!DNL Segment Export.cfg] na Workstation e especifique o endereço do servidor. (Seu endereço pode ser um IP ou um nome de domínio totalmente qualificado.):
 
 ![](assets/segment_export_cfg.png)
 
-Esse é o IP do servidor do Data Workbench que recebe os resultados da exportação do segmento. Essa é uma configuração única. Se [!DNL Segment Export.cfg] não estiver presente, as exportações não serão executadas.
+Esse é o IP do servidor do Data Workbench que recebe os resultados da exportação do segmento. Essa é uma configuração única. Se a variável [!DNL Segment Export.cfg] não estiver presente, as exportações não serão executadas.
 
 **Para configurar os diretórios de exportação**
 
 Para fins de segurança, os executáveis ou arquivos em lote executados após a exportação de um segmento devem residir no diretório Scripts\ configurável do servidor de exportação de segmento.
 
-O [!DNL .part] e a saída final devem residir no diretório de exportações configuráveis. O comando a ser executado existe em Argumentos de Comando e Comando. As instâncias do %file% nos Argumentos de Comando serão substituídas pelo caminho do arquivo de saída.
+O [!DNL .part] e a saída final deve residir no diretório configurável Exportações. O comando a ser executado existe em Argumentos de Comando e Comando. As instâncias do %file% nos Argumentos de Comando serão substituídas pelo caminho do arquivo de saída.
 
 >[!NOTE]
 >
@@ -48,11 +50,11 @@ O [!DNL .part] e a saída final devem residir no diretório de exportações con
 
    ![](assets/accesscontrol_cfg_example.png)
 
-1. Altere seus arquivos [!DNL .export]:
+1. Altere seu [!DNL .export] arquivos:
 
    ![](assets/segment_export_query_example.png)
 
-1. Para cada perfil, o [!DNL Segment Export.cfg] está localizado no diretório Dataset\, com o seguinte conteúdo:
+1. Para cada perfil, a variável [!DNL Segment Export.cfg] está localizado no diretório Dataset\, com o seguinte conteúdo:
 
    ```
    Segment Export = SegmentExport:
@@ -73,11 +75,11 @@ O [!DNL .part] e a saída final devem residir no diretório de exportações con
    ![](assets/create_segment_export_file.png)
 
 1. No cabeçalho da Tabela de detalhes, clique com o botão direito do mouse e selecione **[!UICONTROL Create Segment Export File]**.
-1. Em [!DNL Save as], digite um nome para o arquivo [!DNL .export].
-1. No arquivo [!DNL .export], configure os parâmetros conforme necessário.
+1. Em [!DNL Save as], digite um nome para a função [!DNL .export] arquivo.
+1. No [!DNL .export] , configure os parâmetros conforme necessário.
 
    Quaisquer seleções ou filtros no espaço de trabalho são incorporados no arquivo de exportação.
 
-1. Salve o arquivo [!DNL .export].
+1. Salve as [!DNL .export] arquivo.
 
-   O arquivo salvo é exibido no [!DNL Profile Manager] para que você salve no servidor. Quando você salva o arquivo no servidor, a exportação é iniciada.
+   O arquivo salvo é exibido na [!DNL Profile Manager] para salvar no servidor. Quando você salva o arquivo no servidor, a exportação é iniciada.

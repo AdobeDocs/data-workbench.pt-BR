@@ -3,7 +3,7 @@ description: Informações sobre como abrir um visualizador de campo para uma fo
 title: Abrir um visualizador de campo
 uuid: fcc839cd-21dc-4eb0-9b8e-55fc92e6d400
 exl-id: 32a7418e-ca31-4d56-89a4-11416135f3e2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Abrir um visualizador de campo{#open-a-field-viewer}
+
+{{eol}}
 
 Informações sobre como abrir um visualizador de campo para uma fonte de log, transformação ou dimensão estendida.
 

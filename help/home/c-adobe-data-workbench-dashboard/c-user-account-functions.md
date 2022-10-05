@@ -3,7 +3,7 @@ description: Informações sobre como acessar as configurações da sua conta e 
 title: Gerenciamento de conta de usuário
 uuid: 13fab0e2-e2db-442e-b139-e7b576d04dbb
 exl-id: b985a21b-6244-4e7d-86c2-14935c005335
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Gerenciamento de conta de usuário{#user-account-management}
+
+{{eol}}
 
 Informações sobre como acessar as configurações da sua conta e alterar a senha.
 
@@ -26,4 +28,4 @@ Será exibida uma janela que detalha suas informações de conta. Isso inclui se
 
 ## Alterar sua senha {#section-4ba1ee3d5d584455a1a77e992b7b876c}
 
-Para alterar a senha, acesse primeiro as informações da sua conta. Para acessar suas informações de conta, selecione **[!UICONTROL Account Settings]** no menu **[!UICONTROL User]**. Clique em **[!UICONTROL Change Password]**.
+Para alterar a senha, acesse primeiro as informações da sua conta. Para acessar suas informações de conta, selecione **[!UICONTROL Account Settings]** do **[!UICONTROL User]** menu. Clique em **[!UICONTROL Change Password]**.

@@ -3,7 +3,7 @@ description: Expressões regulares são usadas em todos os campos de pesquisa do
 title: Expressões regulares
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Expressões regulares{#regular-expressions}
+
+{{eol}}
 
 Expressões regulares são usadas em todos os campos de pesquisa do Data Workbench, incluindo os painéis de entidades de consulta.
 
@@ -26,15 +28,15 @@ Uma expressão regular é um padrão de texto, que consiste em uma combinação 
 
 Para identificar e extrair padrões complexos de string, o servidor do Data Workbench usa expressões regulares em algumas transformações e condições. O que segue é um breve guia para expressões regulares.
 
-Este apêndice não é uma introdução abrangente a expressões regulares. Uma referência particularmente boa é a publicação O&#39;Reilly *Mastering Regular Expression, 2ª Edição* de Jeffrey E. F. Friedl.
+Este apêndice não é uma introdução abrangente a expressões regulares. Uma referência particularmente boa é a publicação O&#39;Reilly *Dominar expressões regulares, segunda edição* por Jeffrey E. F. Friedl.
 
 ## Terminologia de expressão regular {#section-80b0d54f731e448391532ab3eb3c525c}
 
 | Termo | Definição |
 |---|---|
-| Literal | Um literal é um caractere usado em uma expressão regular para localizar uma sequência específica de caracteres. Por exemplo, para localizar o produto em [!DNL shop/products.html], o produto da string é um literal ou o que estamos literalmente procurando na string. |
+| Literal | Um literal é um caractere usado em uma expressão regular para localizar uma sequência específica de caracteres. Por exemplo, para encontrar produto em [!DNL shop/products.html], o produto de string é um literal ou o que estamos literalmente procurando na string. |
 | Metacaractere | Um metacaracter é um caractere especial que tem uma interpretação exclusiva no contexto de expressões regulares. Por exemplo, o ponto (.) é um metacaractere usado para corresponder a qualquer caractere. |
-| Sequência de escape | Uma sequência de escape é simplesmente uma maneira de dizer ao mecanismo de expressão regular que gostaríamos de usar um dos metacaracteres como um literal. As sequências de escape sempre começam com o caractere de barra invertida (`\`). Ao colocar a barra invertida (que também é um metacaractere) na frente de um metacaractere, o mecanismo de expressão regular interpreta o metacaractere escapado como um literal. Por exemplo, se você deseja corresponder ao período de metacaracter (`.`), é necessário usar uma sequência de escape. No entanto, para corresponder a um dos pontos na string 168.196.0.11, você pode usar a expressão regular que consiste em uma barra invertida e um ponto (`\.`). |
+| Sequência de escape | Uma sequência de escape é simplesmente uma maneira de dizer ao mecanismo de expressão regular que gostaríamos de usar um dos metacaracteres como um literal. As sequências de escape sempre começam com o caractere de barra invertida (`\`). Ao colocar a barra invertida (que também é um metacaractere) na frente de um metacaractere, o mecanismo de expressão regular interpreta o metacaractere escapado como um literal. Por exemplo, se você deseja corresponder ao período de metacaractere (`.`), é necessário usar uma sequência de escape. No entanto, para corresponder a um dos pontos na string 168.196.0.11, você pode usar a expressão regular que consiste em uma barra invertida e um ponto (`\.`). |
 | Padrão | Essa é a terminologia abreviada da expressão regular. Em essência, uma expressão regular é um padrão que você está tentando corresponder em relação à string de destino. |
 | String de destino | Esse termo se refere à string na qual estamos pesquisando para localizar o padrão desejado. |
 
@@ -88,7 +90,7 @@ A correspondência literal permite procurar uma única string, mas colchetes, tr
   </tr>
   <tr>
    <td colname="col1"> Traço (-) </td>
-   <td colname="col2"> <p>Corresponder a um intervalo de caracteres. Assim, em vez de escrever [0123456789], podíamos simplesmente escrever [0-9]. </p> <p> Isso pode ser estendido para intervalos de caracteres e vários intervalos dentro de um conjunto de colchetes. Por exemplo, [0-9A-C] corresponde aos caracteres de 0 a 9 e de A a C. </p> <p> <p>Observação:  Para testar se há um traço (-) como um literal dentro dos colchetes, ele deve vir primeiro ou por último. Por exemplo, [-0-9] testa - e 0 a 9. </p> </p> </td>
+   <td colname="col2"> <p>Corresponder a um intervalo de caracteres. Assim, em vez de escrever [0123456789], podíamos simplesmente escrever [0-9]. </p> <p> Isso pode ser estendido para intervalos de caracteres e vários intervalos dentro de um conjunto de colchetes. Por exemplo, [0-9A-C] corresponde aos caracteres de 0 a 9 e de A a C. </p> <p> <p>Observação: Para testar se há um traço (-) como um literal dentro dos colchetes, ele deve vir primeiro ou por último. Por exemplo, [-0-9] testa - e 0 a 9. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Estágio (|) </td>
@@ -99,7 +101,7 @@ A correspondência literal permite procurar uma única string, mas colchetes, tr
 
 Considere os exemplos a seguir:
 
-| Padrão | String | Corresponder |
+| Padrão | Sequência de caracteres | Corresponder |
 |---|---|---|
 | Win9`[58]` | OS=Win95 | Win95 |
 | Win95 | 8 | OS=Win98 | Win98 |
@@ -108,7 +110,7 @@ Considere os exemplos a seguir:
 
 **Negação**
 
-A negação é uma maneira de dizer que você gostaria de corresponder qualquer coisa exceto os caracteres em questão. O metacaractere de negação, o circunflexo ou sinal de interpolação (`^`), é usado como o primeiro caractere entre colchetes para dizer que você gostaria que a correspondência fosse tudo, exceto os caracteres restantes entre colchetes. Por exemplo, para corresponder qualquer caractere, exceto um ponto e vírgula (`;`), você gravaria
+A negação é uma maneira de dizer que você gostaria de corresponder qualquer coisa exceto os caracteres em questão. O metacaractere de negação, o circunflexo ou o cursor (`^`), é usado como o primeiro caractere entre colchetes para dizer que você gostaria que a correspondência fosse tudo, exceto os caracteres restantes entre colchetes. Por exemplo, para corresponder qualquer caractere, exceto um ponto e vírgula (`;`), você escreveria
 
 [`^;`]
 
@@ -121,7 +123,7 @@ Para forçar uma correspondência para o início ou o fim de uma string de desti
 | Para este metacarbonato... | O processador de expressão regular.. |
 |---|---|
 | Circunflexo ou Cursor (`^`) | Corresponder ao início da string. Por exemplo, ^`[Tt]`ele corresponderia à string de destino &quot;O Início&quot;, mas não corresponderia a &quot;Este é o início&quot;. |
-| Símbolo de moeda (`$`) | Corresponder ao final da string. Por exemplo, `[Ee]`nd$ corresponderia a &quot;Este é o fim&quot;, mas não corresponderia a &quot;O fim é um tempo especial&quot;. |
+| Símbolo de moeda (`$`) | Corresponder ao final da string. Por exemplo, `[Ee]`E$ corresponderia a &quot;Este é o fim&quot;, mas não corresponderia a &quot;O fim é um momento especial.&quot; |
 
 >[!NOTE]
 >
@@ -168,7 +170,7 @@ Os metacaracteres de iteração permitem que você corresponda a um padrão mais
 
 ## Extração de padrão {#section-4389779653b64f6cb7c47615b25c1a79}
 
-A correspondência de padrões é apenas parte do poder das expressões regulares. Expressões regulares também fornecem um mecanismo para extrair partes principais de uma string de destino. Isso é feito com o uso dos parênteses esquerdo e direito. Normalmente, essas extrações são usadas como entrada em outro processo e são acessadas por meio do uso de *%position%*, onde a posição é um número inteiro referindo-se à contagem de qual conjunto de parênteses foi correspondido.
+A correspondência de padrões é apenas parte do poder das expressões regulares. Expressões regulares também fornecem um mecanismo para extrair partes principais de uma string de destino. Isso é feito com o uso dos parênteses esquerdo e direito. Normalmente, essas extrações são usadas como entrada em outro processo e são acessadas por meio do uso de *%position%*, onde position é um número inteiro que se refere à contagem do conjunto de parênteses correspondente.
 
 Considere os seguintes exemplos de extração de padrão:
 
@@ -176,7 +178,7 @@ Considere os seguintes exemplos de extração de padrão:
  <thead>
   <tr>
    <th colname="col1" class="entry"> Padrão </th>
-   <th colname="col2" class="entry"> String </th>
+   <th colname="col2" class="entry"> Sequência de caracteres </th>
    <th colname="col3" class="entry"> Corresponder </th>
    <th colname="col4" class="entry"> Extração </th>
   </tr>

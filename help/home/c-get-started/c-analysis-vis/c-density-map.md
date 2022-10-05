@@ -3,14 +3,16 @@ description: A visualização do mapa de densidade exibe elementos como retângu
 title: Mapa de densidade
 uuid: c13cecee-f322-4757-aa90-12039173ff9f
 exl-id: da37d954-cadb-42a6-a44b-9b38c0354a5d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Mapa de densidade{#density-map}
+
+{{eol}}
 
 A visualização do mapa de densidade exibe elementos como retângulos sombreados em um mapa quadrado.
 
@@ -22,20 +24,20 @@ Para criar um mapa de densidade:
 
 1. Abra um novo espaço de trabalho.
 
-   Após abrir um novo espaço de trabalho, talvez seja necessário clicar em **Add** > **Temporariamente Unlock**.
+   Depois de abrir um novo espaço de trabalho, talvez seja necessário clicar em **Adicionar** > **Desbloquear temporariamente**.
 1. Clique em **[!UICONTROL Visualization]** > **[!UICONTROL Density Map]**.
 
-1. Selecione um **[!UICONTROL Dimension]** no menu.
+1. Selecione um **[!UICONTROL Dimension]** no menu .
 
    Por exemplo, selecione **[!UICONTROL Time]** > **[!UICONTROL Days]**.
 
-   Por outro lado, selecionar **[!UICONTROL Time]** > **[!UICONTROL Hours]** daria a você mais elementos com valores menores exibidos como retângulos menores.
+   Por outro lado, selecionar **[!UICONTROL Time]** > **[!UICONTROL Hours]** daria mais elementos com valores menores exibidos como retângulos menores.
 
    >[!NOTE]
    >
    >Você desejará escolher uma dimensão com vários elementos de acordo com suas necessidades. O limite atual é 200 dos maiores elementos para cada dimensão.
 
-1. Você pode alterar as visualizações de dimensão abrindo **[!UICONTROL Visualization]** > **[!UICONTROL Table]** e selecionando entre elementos da tabela a serem exibidos no mapa.
+1. Você pode alterar visualizações de dimensão abrindo **[!UICONTROL Visualization]** > **[!UICONTROL Table]** e selecionando entre elementos da tabela para exibir no mapa.
 
    ![](assets/density_map_day_selections.png)
 
@@ -60,7 +62,7 @@ Para criar um mapa de densidade:
 
    ![](assets/density_map_callout.png)
 
-1. Como em todas as visualizações, você pode clicar com o botão direito do mouse acima da barra de título para obter comandos básicos como Fechar, Salvar, Exportar para Microsoft Excel, Ordem, Copiar, Minimizar e Sem Borda para exibir uma visualização sem borda.
+1. Como em todas as visualizações, você pode clicar com o botão direito do mouse acima da barra de título para obter comandos básicos como Fechar, Salvar, Exportar para o Microsoft Excel, Ordem, Copiar, Minimizar e Sem Borda para exibir uma visualização sem borda.
 
    ![](assets/density_map_export.png)
 
@@ -71,7 +73,7 @@ Para criar um mapa de densidade:
 * Shift + clique para desmarcar um elemento.
 * Clique com o botão direito do mouse nos elementos selecionados para abrir um menu. Em seguida, escolha **[!UICONTROL Deselect]** ou **[!UICONTROL Deselect All]** para limpar os elementos selecionados.
 
-## Opções Adicionais {#section-d77defb012424de4a7ced8e5c93115bc}
+## Opções adicionais {#section-d77defb012424de4a7ced8e5c93115bc}
 
 Clique com o botão direito do mouse no Mapa de densidade para abrir um menu com estas opções:
 
@@ -89,11 +91,11 @@ Clique com o botão direito do mouse no Mapa de densidade para abrir um menu com
   </tr> 
   <tr> 
    <td colname="col1"> Máscara </td> 
-   <td colname="col2">As opções de mascaramento permitem ocultar os elementos selecionados. Clique com o botão direito do mouse para exibir as opções de Máscara. <p><span class="uicontrol"> Ocultar este elemento</span> — Escolha essa opção para mascarar um único elemento selecionado. </p> <p><span class="uicontrol"> Ocultar Selecionado</span> — Escolha essa opção para mascarar vários elementos que você selecionou. </p> <p><span class="uicontrol"> Mostrar principais</span> — Escolha essa opção para exibir apenas os 100, 50, 25 ou 10 elementos principais com base nos valores no Mapa de densidade. </p> <p><span class="uicontrol"> Mostrar abaixo</span> — Escolha essa opção para exibir apenas os 100, 50, 25 ou 10 elementos principais inferiores com base nos valores no Mapa de densidade. </p> </td> 
+   <td colname="col2">As opções de mascaramento permitem ocultar os elementos selecionados. Clique com o botão direito do mouse para exibir as opções de Máscara. <p><span class="uicontrol"> Ocultar este elemento</span>—Escolha essa opção para mascarar um único elemento selecionado. </p> <p><span class="uicontrol"> Ocultar selecionados</span>—Escolha essa opção para mascarar vários elementos que você selecionou. </p> <p><span class="uicontrol"> Mostrar parte superior</span>— escolha essa opção para exibir apenas os 100, 50, 25 ou 10 elementos principais com base nos valores no Mapa de densidade. </p> <p><span class="uicontrol"> Mostrar abaixo</span>—Escolha essa opção para exibir apenas os 100, 50, 25 ou 10 elementos principais inferiores com base nos valores no Mapa de densidade. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Spot </td> 
-   <td colname="col2"> O destaque permite que você destaque e escureça elementos em um intervalo. Clique com o botão direito do mouse para abrir um menu de opções. <p><span class="uicontrol"> Mostrar principais</span> — Escolha essa opção para realçar apenas os 100, 50, 25 ou 10 elementos principais com base nos valores do Mapa de densidade. </p> <p><span class="uicontrol"> Mostrar abaixo</span> — Escolha essa opção para realçar apenas os 100, 50, 25 ou 10 elementos principais inferiores, com base nos valores no Mapa de densidade. </p> </td> 
+   <td colname="col2"> O destaque permite que você destaque e escureça elementos em um intervalo. Clique com o botão direito do mouse para abrir um menu de opções. <p><span class="uicontrol"> Mostrar parte superior</span>— Escolha essa opção para realçar apenas os 100, 50, 25 ou 10 elementos principais com base nos valores no Mapa de densidade. </p> <p><span class="uicontrol"> Mostrar abaixo</span>—Escolha essa opção para realçar apenas os 100, 50, 25 ou 10 elementos principais inferiores com base nos valores no Mapa de densidade. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Desmarcar </p> <p>Desmarcar tudo </p> </td> 

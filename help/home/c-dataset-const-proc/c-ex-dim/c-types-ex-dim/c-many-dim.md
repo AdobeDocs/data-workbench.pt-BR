@@ -3,7 +3,7 @@ description: Uma dimensão muitos para muitos tem uma relação muitos para muit
 title: Dimensões de muitas para muitas
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Dimensões de muitas para muitas{#many-to-many-dimensions}
+
+{{eol}}
 
 Uma dimensão muitos para muitos tem uma relação muitos para muitos com sua dimensão contável.
 
@@ -49,7 +51,7 @@ As dimensões muitas para muitas são definidas pelos seguintes parâmetros:
   </tr> 
   <tr> 
    <td colname="col1"> Entrada </td> 
-   <td colname="col2"> <p>O valor relacionado à dimensão pai (Pai). Se esse campo for um vetor de sequências de caracteres, cada elemento do vetor terá seu próprio relacionamento com o pai. </p> <p> <p>Observação:  Se o valor de entrada para cada entrada de log de um elemento da dimensão pai estiver vazio, nenhum elemento da dimensão muitos para muitos se relacionará a esse elemento da dimensão pai. </p> </p> </td> 
+   <td colname="col2"> <p>O valor relacionado à dimensão pai (Pai). Se esse campo for um vetor de sequências de caracteres, cada elemento do vetor terá seu próprio relacionamento com o pai. </p> <p> <p>Observação: Se o valor de entrada para cada entrada de log de um elemento da dimensão pai estiver vazio, nenhum elemento da dimensão muitos para muitos se relacionará a esse elemento da dimensão pai. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

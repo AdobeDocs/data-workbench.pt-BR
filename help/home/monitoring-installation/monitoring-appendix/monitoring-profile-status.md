@@ -3,7 +3,7 @@ description: As seguintes dimensões estão disponíveis para uso no perfil de s
 title: Dimensões no perfil de status do perfil do Data Workbench
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
 exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Dimensões no perfil de status do perfil do Data Workbench{#dimensions-in-the-data-workbench-profile-status-profile}
+
+{{eol}}
 
 As seguintes dimensões estão disponíveis para uso no perfil de status do perfil do Data Workbench.
 
@@ -30,35 +32,35 @@ As seguintes dimensões estão disponíveis para uso no perfil de status do perf
   </tr> 
   <tr> 
    <td colname="col1"> <b>MegaBytes de Entrada Rápida por Minuto</b> </td> 
-   <td colname="col2"> O valor cs-uri-query(bj) é usado para essa dimensão. A Última linha de um bloco é usada como o valor da dimensão. Se o conjunto de dados estiver em Fast Input, esse valor numérico será exibido na MB por minuto, no qual o sistema está inserindo dados. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> O valor cs-uri-query(bj) é usado para essa dimensão. A Última linha de um bloco é usada como o valor da dimensão. Se o conjunto de dados estiver em Fast Input, esse valor numérico será exibido na MB por minuto, no qual o sistema está inserindo dados. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>MegaBytes de Mesclagem Rápida por Minuto</b> </td> 
-   <td colname="col2">O valor cs-uri-query(bk) é usado para essa dimensão. A Última linha de um bloco é usada como o valor da dimensão. Se o conjunto de dados estiver em Fast Merge Este valor Numérico de Mesclagem exibirá o MB por minuto no qual o sistema está se mesclando. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">O valor cs-uri-query(bk) é usado para essa dimensão. A Última linha de um bloco é usada como o valor da dimensão. Se o conjunto de dados estiver em Fast Merge Este valor Numérico de Mesclagem exibirá o MB por minuto no qual o sistema está se mesclando. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Campo GigaBytes</b> </td> 
-   <td colname="col2"> O valor cs-uri-query(bg) é usado para essa dimensão. O valor é dividido por 1000 e arredondado para o número inteiro mais próximo. Esse valor Numérico de Dimension exibirá a quantidade de espaço que os Campos no conjunto de dados estão usando. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> O valor cs-uri-query(bg) é usado para essa dimensão. O valor é dividido por 1000 e arredondado para o número inteiro mais próximo. Esse valor Numérico de Dimension exibirá a quantidade de espaço que os Campos no conjunto de dados estão usando. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Host</b> </td> 
-   <td colname="col2"> O valor cs-uri-query(b) é usado para essa dimensão. O valor da dimensão Simples é a Última Linha de um Bloco. </td> 
+   <td colname="col2"> O valor cs-uri-query(b) é usado para essa dimensão. O valor da dimensão Simples é a Última Linha para um Bloco. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Último ping</b> </td> 
-   <td colname="col2">O x-last-ping é o x-unixtime dividido por 10 (para acomodar restrições de tamanho de dimensões numéricas). Último Ping é a Última Linha de um Bloco específico e representa a última vez que o agente de monitoramento registrou o funcionamento do sistema. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">O x-last-ping é o x-unixtime dividido por 10 (para acomodar restrições de tamanho de dimensões numéricas). Último Ping é a Última Linha de um Bloco específico e representa a última vez que o agente de monitoramento registrou o funcionamento do sistema. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem de Leitura de Log</b> </td> 
-   <td colname="col2">o valor cs-uri-query(be) é usado para essa dimensão numérica. É a última linha de um determinado bloco. Essa dimensão é usada para calcular a porcentagem de logs que estão sendo lidos. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2">o valor cs-uri-query(be) é usado para essa dimensão numérica. É a última linha de um determinado bloco. Essa dimensão é usada para calcular a porcentagem de logs que estão sendo lidos. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>ID do modo de processamento</b> </td> 
-   <td colname="col2"> O valor cs-uri-query(bb) é usado para esse Dimension Simple. É a última linha de um determinado bloco. A ID do modo de processamento permite que você veja em que modo de processamento o sistema está (Fast Input, Fast Merge, Tempo Real). <p>Observação:  Essa dimensão é oculta e re-exposta com valores amigáveis na dimensão do cliente Modo de processamento. </p></td> 
+   <td colname="col2"> O valor cs-uri-query(bb) é usado para esse Dimension Simple. É a última linha de um determinado bloco. A ID do modo de processamento permite que você veja em que modo de processamento o sistema está (Fast Input, Fast Merge, Tempo Real). <p>Observação: Essa dimensão é oculta e re-exposta com valores amigáveis na dimensão do cliente Modo de processamento. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Processamento interrompido</b> </td> 
-   <td colname="col2"> O campo paralisado de processamento x é criado por meio de várias condições para indicar se o perfil está ou não em execução no momento. É uma dimensão simples. <p>Observação:  Essa dimensão funciona melhor quando há um grande número de logs de entrada para distribuir de forma justa entre as DPUs. Se houver, por exemplo, apenas um arquivo grande carregado por dia, o Data Workbench poderá parecer "parado" por uma hora ou mais, resultando em uma leitura falso positiva dessa dimensão. </p></td> 
+   <td colname="col2"> O campo paralisado de processamento x é criado por meio de várias condições para indicar se o perfil está ou não em execução no momento. É uma dimensão simples. <p>Observação: Essa dimensão funciona melhor quando há um grande número de logs de entrada para distribuir de forma justa entre as DPUs. Se houver, por exemplo, apenas um arquivo grande carregado por dia, o Data Workbench poderá parecer "parado" por uma hora ou mais, resultando em uma leitura falso positiva dessa dimensão. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Perfil</b> </td> 
@@ -70,7 +72,7 @@ As seguintes dimensões estão disponíveis para uso no perfil de status do perf
   </tr> 
   <tr> 
    <td colname="col1"> <b>Porcentagem de transformação</b> </td> 
-   <td colname="col2"> o valor cs-uri-query(bf) é usado para essa dimensão numérica. É a última linha de um determinado bloco. Essa dimensão é usada para calcular a porcentagem da transformação completa de dados. <p>Observação:  Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
+   <td colname="col2"> o valor cs-uri-query(bf) é usado para essa dimensão numérica. É a última linha de um determinado bloco. Essa dimensão é usada para calcular a porcentagem da transformação completa de dados. <p>Observação: Essa dimensão é oculta, pois só é útil quando avaliada como média em uma métrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Dimensões de tempo</b> </td> 

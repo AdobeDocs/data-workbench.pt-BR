@@ -3,7 +3,7 @@ description: Um espaço de trabalho é um contêiner de uma análise específica
 title: Exibir espaços de trabalho
 uuid: 848035e5-7b7f-4e33-b61d-3759335e459b
 exl-id: 18db0cd4-6cb0-4514-9056-1c1e82b2092e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Exibir espaços de trabalho{#display-workspaces}
 
+{{eol}}
+
 Um espaço de trabalho é um contêiner de uma análise específica e de uma tarefa de visualização.
 
 Um espaço de trabalho pode conter várias visualizações, todas elas operam em relação a um conjunto comum de dados (ou seja, todas as visualizações no espaço de trabalho renderizam o mesmo conjunto de resultados de query). Ao executar uma operação de filtragem em uma visualização, o subconjunto selecionado é refletido em todo o espaço de trabalho.
 
-Abaixo está um exemplo de várias miniaturas do espaço de trabalho no [!DNL Worktop].
+Abaixo está um exemplo de várias miniaturas do espaço de trabalho na variável [!DNL Worktop].
 
 ![](assets/client-wksp.png)
 
@@ -28,4 +30,4 @@ Você analisa seus dados combinando diferentes tipos de visualizações em um es
 
 >[!NOTE]
 >
->Após abrir um novo espaço de trabalho, talvez seja necessário clicar em **[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]** para desbloquear a tela.
+>Depois de abrir um novo espaço de trabalho, talvez seja necessário clicar em **[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]** para desbloquear a tela.

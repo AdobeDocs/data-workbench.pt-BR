@@ -3,14 +3,16 @@ description: Exiba uma lista de ações e teclas de atalho da interface do usuá
 title: Referência rápida
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 # Referência rápida{#quick-reference}
+
+{{eol}}
 
 Exiba uma lista de ações e teclas de atalho da interface do usuário do cliente do Data Workbench.
 
@@ -65,7 +67,7 @@ Use essas ações ao executar tarefas na interface do usuário do cliente.
 | Ctrl + selecionar | Adiciona texto à seleção |
 | Shift + selecionar | Remove o texto da seleção |
 
-## Atalhos de teclado para o cliente Data Workbench {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
+## Atalhos de teclado do cliente Data Workbench {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
 
 Use essas teclas de atalho para espaços de trabalho e arquivos de configuração.
 
@@ -105,7 +107,7 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b>Exibição em tela cheia</b>. O Workspace preenche a tela e se atualiza para o novo tamanho. </td> 
+   <td colname="col1"><b>Visualização em tela cheia</b>. O Workspace preenche a tela e se atualiza para o novo tamanho. </td> 
    <td colname="col2"><b>Ctrl +</b> <p>Ctrl + (no teclado numérico) </p> <p><i>ou</i> </p> <p>Ctrl Shift + (no teclado) </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
@@ -114,7 +116,7 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>Exibição</b> de janela. O Workspace é exibido em uma exibição de janela padrão e é atualizado para o novo tamanho. </td> 
+   <td colname="col1"><b>Exibição de janela</b>. O Workspace é exibido em uma exibição de janela padrão e é atualizado para o novo tamanho. </td> 
    <td colname="col2"><b>Ctrl menos</b> <p>Ctrl - </p> </td> 
    <td colname="col3"> 
     <ul id="ul_3474B9EFD69343C09BC84E485D896C28"> 
@@ -132,7 +134,7 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
 | Ctrl + S | Salva um espaço de trabalho. |
 | Ctrl + O | Abre um arquivo de visualização. É o mesmo que selecionar Adicionar > Abrir no menu do espaço de trabalho. |
 | Ctrl + E | Abra uma configuração (por padrão) ou outros arquivos. É o mesmo que selecionar Adicionar > Editar no menu do espaço de trabalho. Selecione Tudo para abrir outros arquivos. |
-| Menu de arquivos mais usados | Clique em **Adicionar > Abrir** de um espaço de trabalho para abrir arquivos recém-abertos (salva os últimos dez) ou arquivos que você &quot;fixa&quot; no novo menu. No menu, você pode clicar no ícone de pino na lista para salvar a visualização. |
+| Menu de arquivos mais usados | Clique em **Adicionar > Abrir** de um espaço de trabalho para abrir arquivos abertos recentemente (salva os últimos dez) ou arquivos que você &quot;fixa&quot; no novo menu. No menu, você pode clicar no ícone de pino na lista para salvar a visualização. |
 
 <table id="table_99414A5999F94A2EAB2BBBA27EE487F5"> 
  <thead> 
@@ -144,11 +146,11 @@ Use essas teclas de atalho para espaços de trabalho e arquivos de configuraçã
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Clique com o botão direito do mouse em um nó e clique em <span class="uicontrol"> Colar</span> </p> </td> 
-   <td colname="col2"> <p>Cola um nó em um arquivo <span class="filepath"> .cfg</span> </p> </td> 
+   <td colname="col2"> <p>Cola um nó em um <span class="filepath"> .cfg</span> arquivo </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1">Clique com o botão direito do mouse no vetor e clique em <span class="uicontrol"> Colar como filho</span> </td> 
-   <td colname="col2">Cola um vetor em um arquivo <span class="filepath"> .cfg</span> em um nível de vetor </td> 
+   <td colname="col2">Cola um vetor em um <span class="filepath"> .cfg</span> arquivo em nível de vetor </td> 
   </tr> 
  </tbody> 
 </table>

@@ -3,7 +3,7 @@ description: Este é um guia rápido que fornece as etapas mínimas necessárias
 title: Validação de servidores FTP internos e externos
 uuid: bc381c1d-df27-4009-920b-1a804b36c204
 exl-id: 8eecfda7-ffa0-458c-a518-434758344bfe
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 9%
@@ -12,16 +12,18 @@ ht-degree: 9%
 
 # Validação de servidores FTP internos e externos{#validation-of-internal-and-external-ftp-servers}
 
+{{eol}}
+
 Este é um guia rápido que fornece as etapas mínimas necessárias para validar a configuração de FTP interno e externo.
 
 Um FTP interno é usado quando um consultor/arquiteto interno do Adobe precisa se conectar ao site FTP para upload ou download de arquivos, enquanto um FTP externo é principalmente para você, como o usuário, fazer upload dos arquivos de dados necessários.
 
-Para obter informações adicionais sobre como configurar servidores FTP, consulte [File Transfer Protocol](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/ftp-overview.html?lang=pt-BR).
+Para obter mais informações sobre como configurar servidores FTP, consulte [Protocolo de transferência de arquivos](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/ftp-overview.html?lang=pt-BR).
 
 ## Etapas de validação - FTP externo {#section-24428111b5c542ce81a765cd63424b97}
 
 1. Abra um prompt de comando. (Windows+R e digite cmd)
-1. Digite ftp `<ftp server>`
+1. Tipo ftp `<ftp server>`
 1. Forneça o nome de usuário e a senha. ![](assets/dwb_impl_ftp1.png)
 
 1. Altere o diretório local de onde alguns arquivos podem ser movidos. Use este comando:

@@ -3,7 +3,7 @@ description: Criar um grupo de usuários
 title: Criar um grupo de usuários
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
 exl-id: 8af9d635-ff07-486f-845a-44541d577fad
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 9%
@@ -12,7 +12,9 @@ ht-degree: 9%
 
 # Criar um grupo de usuários{#creating-a-user-group}
 
-1. Clique em **[!UICONTROL Create Group]** para exibir o formulário **[!UICONTROL New Group]**.
+{{eol}}
+
+1. Clique em **[!UICONTROL Create Group]** para apresentar **[!UICONTROL New Group]** formulário.
 
    ![](assets/create_user_group.png)
 
@@ -37,11 +39,11 @@ ht-degree: 9%
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Permissões</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrador</span>: Salve, visualize, modifique e exclua todos os painéis de todos os perfis. Os privilégios de administrador permitem que um usuário faça logon na área de administração e execute todas as funções administrativas. </p> <p> <span class="uicontrol"> Somente</span> leitura: Restrinja permissões para somente leitura de painéis. O usuário não pode adicionar ou modificar visualizações ou salvar painéis. </p> <p> <b>Nenhuma permissão marcada  </b>(padrão): Nenhuma permissão marcada concede permissões regulares aos usuários do grupo. Esses usuários podem criar e modificar visualizações, salvar painéis e visualizar os painéis aos quais têm acesso. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrador</span>: Salve, visualize, modifique e exclua todos os painéis de todos os perfis. Os privilégios de administrador permitem que um usuário faça logon na área de administração e execute todas as funções administrativas. </p> <p> <span class="uicontrol"> Somente leitura</span>: Restrinja permissões para somente leitura de painéis. O usuário não pode adicionar ou modificar visualizações ou salvar painéis. </p> <p> <b>Nenhuma permissão marcada </b>(padrão): Nenhuma permissão marcada concede permissões regulares aos usuários do grupo. Esses usuários podem criar e modificar visualizações, salvar painéis e visualizar os painéis aos quais têm acesso. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Usuários/membros do grupo disponíveis</strong></td> 
-    <td class="chdesc stentry">Arraste e solte usuários da lista de <span class="uicontrol"> Usuários Disponíveis</span> na seção <span class="uicontrol"> Membros do Grupo </span>. Os membros do grupo podem ser modificados a qualquer momento. </td> 
+    <td class="chdesc stentry">Arraste e solte usuários da lista de <span class="uicontrol"> Usuários disponíveis</span> na <span class="uicontrol"> Membros do grupo </span>seção. Os membros do grupo podem ser modificados a qualquer momento. </td> 
     </tr> 
     </table>
 

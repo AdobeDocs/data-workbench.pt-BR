@@ -3,14 +3,16 @@ description: Informações conceituais sobre expressões de planilhas e uso de r
 title: Expressões de planilhas
 uuid: be57d6bd-3e13-4c90-9034-8e0f2b8315aa
 exl-id: 1ff3ec24-0363-4b6c-8c91-31e49ed0f7c4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '539'
 ht-degree: 2%
 
 ---
 
 # Expressões de planilhas{#worksheet-expressions}
+
+{{eol}}
 
 Informações conceituais sobre expressões de planilhas e uso de referências de células.
 
@@ -45,19 +47,19 @@ A tabela a seguir fornece fórmulas de exemplo para a planilha no exemplo anteri
   </tr> 
   <tr> 
    <td colname="col1"> <p>B4 </p> <p>Visitantes referenciados do Referenciador A que visualizaram a página Aplicar agora </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath"> Referrer="Ref A"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp" </span> </p> <p> E <span class="filepath"> Referrer="Ref A"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C2 </p> <p>Visitantes que visualizaram a página Aplicar agora e a página Assistente de aplicativo </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Visitors[Page="/applynow/default.asp"  </span> </p> <p> E <span class="filepath"> Página="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Visitors[Page="/applynow/default.asp" </span> </p> <p> E <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C3 </p> <p>Visitantes referenciados que visualizaram a página Aplicar agora e a página Assistente de aplicativo </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"  </span> </p> <p> E <span class="filepath"> Página="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp" </span> </p> <p> E <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C4 </p> <p>Visitantes referenciados do Referenciador A que visualizaram a página Aplicar agora e a página Assistente de aplicativo </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"</span> </p> <p> E <span class="filepath"> Página="/applynow/appwizard.asp"</span> </p> <p> AND <span class="filepath"> Referrer="Ref A"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"</span> </p> <p> E <span class="filepath"> Page="/applynow/appwizard.asp"</span> </p> <p> E <span class="filepath"> Referrer="Ref A"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>D2 </p> <p>Porcentagem de visitantes que visualizaram a página Aplicar agora e a página Assistente de aplicativo </p> </td> 
@@ -80,12 +82,12 @@ No exemplo de dados da Web a seguir, vários dias de dados de sessão foram sele
 
 ![](assets/client-exp.png)
 
-## Usando referências de célula {#section-0004e315c9c94d359b1a8a39794ba555}
+## Uso de referências de célula {#section-0004e315c9c94d359b1a8a39794ba555}
 
 É possível substituir qualquer string, seja ela própria ou em outra expressão da planilha, por uma referência de célula.
 
-* **Referência de célula simples:** A célula A2 contém o texto Visitantes, que é usado como um cabeçalho. A célula B2 contém [!DNL eval(A1)], que resulta em [!DNL =Visitors].
+* **Referência de célula simples:** A célula A2 contém o texto Visitantes, que é usado como um cabeçalho. A célula B2 contém [!DNL eval(A1)], que avalia como [!DNL =Visitors].
 
-* **Referência da célula de filtro:** A célula A5 contém a data de ontem. A célula B5 contém [!DNL Visitors[ Day=A5 ]], que avalia o número de Visitantes ontem.
+* **Filtrar referência da célula:** A célula A5 contém a data de ontem. A célula B5 contém [!DNL Visitors[ Day=A5 ]], que avalia o número de Visitantes ontem.
 
-* **Referência de célula concatenada:** A célula A5 contém a data de hoje e a Célula A6 contém o período de 8:00 a 8:59 de uma hora. A célula B6 contém [!DNL Visitors[ Hour=A5+&quot;&quot;+A6 ]], que avalia o número de Visitantes hoje entre as 8h e as 9h.
+* **Referência de célula concatenada:** A célula A5 contém a data de hoje e a Célula A6 contém o período de 8:00 a 8:59 de uma hora. A célula B6 contém [!DNL Visitors[ Hour=A5+” ”+A6 ]], que avalia o número de Visitantes hoje entre as 8h e 9h.

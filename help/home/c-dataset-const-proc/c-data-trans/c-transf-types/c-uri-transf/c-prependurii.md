@@ -3,7 +3,7 @@ description: Semelhante à transformação AppendURI , a transformação Prepend
 title: PrependURI
 uuid: 3f2fb1a7-83f7-481e-b892-0937acd379f9
 exl-id: c39d9241-ed66-446e-b59d-fdb11942d0e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 6%
@@ -12,9 +12,11 @@ ht-degree: 6%
 
 # PrependURI{#prependuri}
 
+{{eol}}
+
 Semelhante à transformação AppendURI , a transformação PrependURI afeta o campo interno usado pelo servidor do Data Workbench para criar a dimensão URI.
 
-A transformação [!DNL PrependURI] funciona adicionando o valor no campo de entrada identificado à frente do valor atualmente no URI.
+O [!DNL PrependURI] A transformação funciona adicionando o valor no campo de entrada identificado à frente do valor atualmente no URI.
 
 | Parâmetro | Descrição | Padrão |
 |---|---|---|

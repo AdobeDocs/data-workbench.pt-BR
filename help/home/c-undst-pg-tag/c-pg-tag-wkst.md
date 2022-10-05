@@ -3,7 +3,7 @@ description: Tabelas que contêm a lista de variáveis constantes e personalizad
 title: Planilha Mapeamento da variável de tag da página
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
 exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 13%
@@ -11,6 +11,8 @@ ht-degree: 13%
 ---
 
 # Planilha Mapeamento da variável de tag da página{#page-tag-variable-mapping-worksheet}
+
+{{eol}}
 
 Tabelas que contêm a lista de variáveis constantes e personalizadas.
 

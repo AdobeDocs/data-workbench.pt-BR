@@ -3,7 +3,7 @@ description: Comunicação do painel com servidores do Data Workbench
 title: Comunicação do painel com servidores do Data Workbench
 uuid: 8baa1057-8a03-4a99-a808-db1424342375
 exl-id: 35ad83ed-3fd4-4815-8f4c-e13bb4a3e636
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 15%
@@ -11,6 +11,8 @@ ht-degree: 15%
 ---
 
 # Comunicação do painel com servidores do Data Workbench{#dashboard-to-data-workbench-servers-communication}
+
+{{eol}}
 
 Você deve preparar sua instância do Data Workbench para permitir que o painel se comunique com seus servidores. No mínimo, você deve executar o servidor do Data Workbench v. 5.45 e ter uma licença válida de API de consulta do Data Workbench. Cada servidor a ser usado pelo painel deve ter uma licença válida da API de consulta instalada.
 

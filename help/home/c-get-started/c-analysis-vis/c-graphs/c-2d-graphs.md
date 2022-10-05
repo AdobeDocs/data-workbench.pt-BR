@@ -3,7 +3,7 @@ description: Os gráficos bidimensionais (2D) exibem uma métrica em duas dimens
 title: Gráficos 2D
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
 exl-id: 9767124b-8507-4b25-842b-8e2729e57461
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Gráficos 2D{#d-graphs}
+
+{{eol}}
 
 Os gráficos bidimensionais (2D) exibem uma métrica em duas dimensões.
 
@@ -31,4 +33,4 @@ Considere o exemplo a seguir:
 1. Mova o mouse sobre o eixo vertical para realçar um plano do gráfico.
 1. Enquanto o plano está realçado, clique e arraste o mouse para cima ou para baixo para dimensionar o eixo vertical do gráfico.
 
-Consulte [Zoom em Visualizações](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+Consulte [Ampliação de visualizações](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).

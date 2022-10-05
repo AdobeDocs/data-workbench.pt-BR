@@ -3,7 +3,7 @@ description: A sequência de consulta (cs-uri-query) é frequentemente usada por
 title: Compreender a sequência de consulta
 uuid: 7403277d-fbce-4e98-bd42-894142e38d0d
 exl-id: b5281e5f-3eb7-4d6a-a7b3-9958cb430621
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Compreender a sequência de consulta{#understanding-the-query-string}
 
+{{eol}}
+
 A sequência de consulta (cs-uri-query) é frequentemente usada por aplicativos da Web e desenvolvedores de sites para transmitir informações de página para página devido à natureza sem estado do HTTP.
 
-Em muitos casos, as informações podem ser passadas na string de consulta quando são adquiridas por [!DNL Sensor] no servidor da Web. Essas informações podem ser usadas por [!DNL Site] para iluminar a verdadeira estrutura do site, o caminho dos visitantes através dele, bem como outras informações.
+Em muitos casos, as informações podem ser passadas na sequência de consulta quando adquiridas por [!DNL Sensor] no servidor da Web. Essas informações podem ser utilizadas por [!DNL Site] iluminar a estrutura real do site, o caminho dos visitantes através dele, bem como outras informações.
 
 Em alguns sites dinâmicos, os pares name=value (variáveis) na sequência de consulta são importantes para determinar a página real que está sendo solicitada por um visitante. Nesses casos, os URLs podem ser estruturados da seguinte maneira ou de maneira semelhante:
 

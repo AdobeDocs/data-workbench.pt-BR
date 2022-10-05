@@ -3,7 +3,7 @@ description: Explica a Visualização de miniatura e a Visualização de lista.
 title: Visualizações do navegador de painéis
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
 exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Visualizações do navegador de painéis{#dashboard-browser-views}
+
+{{eol}}
 
 Explica a Visualização de miniatura e a Visualização de lista.
 
@@ -30,7 +32,7 @@ Também é possível explorar subpastas clicando na seta à esquerda da pasta de
 
 Você pode selecionar o painel de interesse clicando nele. Depois de clicar em uma miniatura do painel, o quadro à direita será preenchido com os detalhes sobre o painel. Os detalhes do painel contêm uma visualização em miniatura do painel selecionado, seu nome, uma breve descrição, o proprietário, data de criação, data da última modificação, perfil(s) usado(s) para compilar os dados, controles de visibilidade e oferecer uma seleção de operações.
 
-## Exibição em lista {#section-aa79d51168a7430ea2816413dc6cc73a}
+## Visualização de lista {#section-aa79d51168a7430ea2816413dc6cc73a}
 
 A Exibição de lista fornece informações baseadas em tabela sobre os painéis para os quais você tem acesso. Cada linha na tabela da Exibição de lista representa um painel exclusivo. Clicar em cabeçalhos de coluna permitirá classificar a tabela por essa coluna em ordem decrescente ou crescente.
 

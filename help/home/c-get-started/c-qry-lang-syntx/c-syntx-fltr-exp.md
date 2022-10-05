@@ -3,7 +3,7 @@ description: Um filtro é uma expressão que define um subconjunto de dados em u
 title: Sintaxe para expressões de filtro
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Sintaxe para expressões de filtro{#syntax-for-filter-expressions}
 
+{{eol}}
+
 Um filtro é uma expressão que define um subconjunto de dados em um conjunto de dados.
 
 Um filtro admite ou rejeita cada elemento de cada dimensão de acordo com as relações entre dimensões.
 
 Os filtros podem ser editados usando o [!DNL Filter Editor]. Consulte [Editores de filtro](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-Na tabela a seguir, cada descrição de sintaxe inclui um exemplo de expressão de métrica usando esse filtro. Por exemplo, Sessões[True] é uma métrica definida usando o filtro &quot;True&quot;. A métrica Sessões[True] é a mesma métrica Sessões porque o filtro Verdadeiro admite todos os elementos da dimensão Sessão .
+Na tabela a seguir, cada descrição de sintaxe inclui um exemplo de expressão de métrica usando esse filtro. Por exemplo, Sessões[Verdadeiro] é uma métrica definida usando o filtro &quot;Verdadeiro&quot;. As sessões[Verdadeiro] é igual à métrica Sessões , pois o filtro Verdadeiro admite cada elemento da dimensão Sessão .
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 

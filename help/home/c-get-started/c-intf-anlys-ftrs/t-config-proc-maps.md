@@ -3,25 +3,27 @@ description: Os mapas de processos podem ser configurados para funcionar com qua
 title: Configurar um mapa de processos
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
 exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Configurar um mapa de processos{#configure-a-process-map}
 
+{{eol}}
+
 Os mapas de processos podem ser configurados para funcionar com qualquer combinação de dimensão base, dimensão de grupo, dimensão de nível e métrica que faça sentido para seu aplicativo e conjunto de dados.
 
-Depois de configurar um mapa de processos, ele é listado com outros mapas de processos no [!DNL Add Visualization menu].
+Depois de configurar um mapa de processos, ele é listado com outros mapas de processos na [!DNL Add Visualization menu].
 
-1. No [!DNL Profile Manager], clique em **[!UICONTROL Menu]**, clique em **[!UICONTROL Add Visualization]**, em seguida, clique no tipo de mapa de processos que deseja configurar (Mapa de Métricas 2D, Mapa de Processos 2D ou Mapa de Processos 3D).
+1. No [!DNL Profile Manager], clique em **[!UICONTROL Menu]**, clique em **[!UICONTROL Add Visualization]**, clique no tipo de mapa de processos que deseja configurar (Mapa de Métricas 2D, Mapa de Processos 2D ou Mapa de Processos 3D).
 
-   Pelo menos um arquivo [!DNL *.vw] reside no diretório.
+   Pelo menos um [!DNL *.vw] O arquivo reside no diretório .
 
 1. Clique com o botão direito do mouse na marca de seleção do arquivo desejado e clique em **[!UICONTROL Make Local]**.
-1. Clique com o botão direito do mouse na marca de seleção do arquivo na coluna [!DNL User] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Clique com o botão direito do mouse na marca de seleção do arquivo na [!DNL User] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Edite os parâmetros do arquivo usando o arquivo de amostra e a tabela a seguir como guias:
 
    ```
@@ -84,10 +86,10 @@ Depois de configurar um mapa de processos, ele é listado com outros mapas de pr
 
 1. No Bloco de notas, clique em **[!UICONTROL File]** > **[!UICONTROL Save As]** para salvar o arquivo com um novo nome com base na dimensão base, ou seja, *Nome da dimensão base*.vw.
 
-   (Se você estiver configurando um mapa de métrica 2D, deverá salvar o arquivo com um nome baseado no nome da métrica para o mapa de métrica, ou seja, *Nome da métrica para mapa de métrica*.vw.) Salve o arquivo no diretório apropriado do mapa de processos.
+   (Se você estiver configurando um mapa de métrica 2D, deverá salvar o arquivo com um nome baseado no nome da métrica para o mapa de métrica, ou seja, *Nome da métrica para mapa de métricas*.vw.) Salve o arquivo no diretório apropriado do mapa de processos.
 
    >[!NOTE]
    >
-   >Para garantir que seu mapa de processos seja salvo como um arquivo [!DNL *.vw], na janela [!DNL Save As], defina o tipo Salvar como para Todos os arquivos.
+   >Para garantir que o mapa de processos seja salvo como um [!DNL *.vw] , na [!DNL Save As] , defina Salvar como tipo para Todos os arquivos.
 
-1. (Opcional) Para disponibilizar as alterações para todos os usuários do perfil de trabalho, no [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção do arquivo na coluna [!DNL User] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. (Opcional) Para disponibilizar as alterações para todos os usuários do perfil de trabalho, no [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção do arquivo no [!DNL User] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

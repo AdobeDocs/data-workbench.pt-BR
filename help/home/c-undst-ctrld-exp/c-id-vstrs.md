@@ -4,7 +4,7 @@ solution: Analytics
 title: Como o site identifica visitantes?
 uuid: e1e451b8-e827-4010-bda9-9147c3b09958
 exl-id: 2783ee11-6d6a-463d-86b5-dd63e490201f
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 3%
@@ -12,6 +12,8 @@ ht-degree: 3%
 ---
 
 # Como o site identifica visitantes?{#how-does-site-identify-visitors}
+
+{{eol}}
 
 Uma configuração típica do Site usa cookies para identificar de forma exclusiva os visitantes do site e rastrear o comportamento deles ao longo do tempo.
 

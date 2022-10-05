@@ -3,7 +3,7 @@ description: Usando o novo perfil de Atribuição baseado em regras no Data Work
 title: Perfil de atribuição
 uuid: 500e9e86-cffc-4f0d-a397-6521b493bf9a
 exl-id: 29946f22-1d39-44ca-9474-13dbe228751c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Perfil de atribuição{#attribution-profile}
+
+{{eol}}
 
 Usando o novo perfil de Atribuição baseado em regras no Data Workbench, é possível analisar rapidamente os eventos de atribuição e atribuir a responsabilidade que resultam em uma conversão bem-sucedida definida por você. O perfil Attribution vem completo com as informações necessárias para que o seu arquiteto de dados configure e estenda seus recursos e inclui espaços de trabalho pré-criados para que seu analista comece a analisar.
 
@@ -22,7 +24,7 @@ O perfil Attribution permite que você ganhe uma nova perspectiva sobre as rela�
 >
 >O perfil Atribuição é configurado para uso imediato pelos usuários que implementaram o perfil do Adobe SC que usa o feed de dados do Analytics (SC/Insight). Por padrão, os eventos de Marketing e Conversão são empregados como os tipos padrão de interações avaliadas nos modelos baseados em regras fornecidos.
 
-Consulte [Implantação do perfil de atribuição](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md#concept-fbcb5800cd6a40cc901e61f3882988c0) e [Modelos de atribuição](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md#concept-e209c7e86a5c4008ad6d78fdf4ea032d) para obter mais informações.
+Consulte [Implantar o perfil de atribuição](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md#concept-fbcb5800cd6a40cc901e61f3882988c0) e [Modelos de atribuição](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md#concept-e209c7e86a5c4008ad6d78fdf4ea032d) para obter mais informações.
 
 ## Espaços de trabalho de arquitetura e analista {#section-27c6aff70ba147cca6e11451e127afb4}
 
@@ -32,25 +34,25 @@ No perfil de Atribuição, você tem espaços de trabalho de Arquiteto e Analist
 
 **Espaços de trabalho da arquitetura**
 
-Na guia **Attribution**, clique na guia **[!UICONTROL Architect Workspace]** para abrir espaços de trabalho especificamente projetados para configurar seus arquivos de configuração para modelagem básica de atribuição.
+No **Atribuição** clique no botão **[!UICONTROL Architect Workspace]** para abrir espaços de trabalho especificamente projetados para configurar seus arquivos de configuração para modelagem básica de atribuição.
 
 ![](assets/attribution_profile_arch.png)
 
-A guia Arquitetura inclui espaços de trabalho para percorrer cada um dos arquivos de configuração na pasta do conjunto de dados do perfil. Por exemplo, **[!UICONTROL Attribution Configuration - Step 1]** permite identificar os valores de Atribuição na seção Transformation do arquivo [!DNL profile.cfg].
+A guia Arquitetura inclui espaços de trabalho para percorrer cada um dos arquivos de configuração na pasta do conjunto de dados do perfil. Por exemplo, **[!UICONTROL Attribution Configuration - Step 1]** permite identificar os valores de Atribuição na seção Transformation do [!DNL profile.cfg] arquivo.
 
 ![](assets/attribution_profile_arch_step1.png)
 
-**Analista** Espaços de trabalhoClique na  **[!UICONTROL Analyst]** **[!UICONTROL Workspaces]** guia para abrir a análise pré-criada dos espaços de trabalho utilizando as dimensões e métricas fornecidas com o perfil Atribuição.
+**Espaços de trabalho do analista** Clique no botão **[!UICONTROL Analyst]** **[!UICONTROL Workspaces]** para abrir a análise pré-criada dos espaços de trabalho usando as dimensões e métricas fornecidas com o perfil Atribuição.
 
 Esses espaços de trabalho são organizados em quatro categorias:
 
-1. **Reportagem básica** Representa um modelo único em um espaço de trabalho.
-1. **Os** Relatórios comparativos estenderam as análises ao apresentar vários modelos em uma única visualização.
-1. **Os** Relatórios de investigação expandem os modelos de relatórios para apresentar os modelos de atribuição em diferentes formatos. Esta seção também introduz e expõe as taxas de ponderação baseadas na posição.
-1. **Os** Relatórios de definição de caminho oferecem visibilidade sobre a jornada de marketing do cliente com várias visualizações de definição de caminho para explorar e expressar totalmente os fluxos de processo e os caminhos de interação
+1. **Relatórios básicos** expor um único modelo em um espaço de trabalho.
+1. **Relatórios comparativos** as análises foram estendidas apresentando vários modelos em uma única visualização.
+1. **Relatórios de investigação** expande os modelos de relatórios para apresentar os modelos de atribuição em diferentes formatos. Esta seção também introduz e expõe as taxas de ponderação baseadas na posição.
+1. **Relatórios de definição de caminho** forneça visibilidade sobre a jornada de marketing do cliente com várias visualizações de definição de caminho para explorar e expressar totalmente os fluxos de processos e os caminhos de interação
 
 ![](assets/attribution_profile_analyst.png)
 
-A guia Analista inclui espaços de trabalho pré-configurados com relatórios. Por exemplo, **[!UICONTROL First Attribution]** permite selecionar na tabela **[!UICONTROL Campaign]** para ver a atribuição **[!UICONTROL Revenue]** baseada em **[!UICONTROL Time]**.
+A guia Analista inclui espaços de trabalho pré-configurados com relatórios. Por exemplo, **[!UICONTROL First Attribution]** permite selecionar na **[!UICONTROL Campaign]** para ver a tabela **[!UICONTROL Revenue]** atribuição baseada em **[!UICONTROL Time]**.
 
 ![](assets/attribution_profile_analyst_step1.png)

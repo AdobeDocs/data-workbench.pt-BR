@@ -3,14 +3,16 @@ description: Usando uma anotação de imagem, você pode copiar uma imagem de qu
 title: Anotações de imagem
 uuid: 62a655f6-120b-4cf4-adaa-aa04f721a7dc
 exl-id: 905d3e9e-0d24-456e-af45-c29f12ed986d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 # Anotações de imagem{#image-annotations}
+
+{{eol}}
 
 Usando uma anotação de imagem, você pode copiar uma imagem de qualquer origem e colá-la diretamente em um espaço de trabalho.
 
@@ -39,7 +41,7 @@ Você pode então redimensionar, inverter o esquema de cores ou escurecer a imag
 
 * Clique com o botão direito do mouse na anotação e clique em **[!UICONTROL Display Mode]** > **[!UICONTROL Dim]** ou **[!UICONTROL Display Mode]** > **[!UICONTROL Very Dim]**.
 
-## Voltar ao modo de exibição original {#section-044fad7278bd4947b463deca1b94acfd}
+## Retornar ao modo de exibição original {#section-044fad7278bd4947b463deca1b94acfd}
 
 * Clique com o botão direito do mouse na anotação e clique em **[!UICONTROL Display Mode]** > **[!UICONTROL Original]**.
 
@@ -47,6 +49,6 @@ Você pode então redimensionar, inverter o esquema de cores ou escurecer a imag
 
 **Para ativar ou desativar a opção Ajustar à janela**
 
-A opção [!DNL Fit to Window], quando selecionada, permite que a anotação expanda ou diminua automaticamente para ajustar ao tamanho da imagem. A opção [!DNL Fit to Window] é ativada por padrão.
+O [!DNL Fit to Window] , quando selecionada, permite que a anotação expanda ou diminua automaticamente para ajustar-se ao tamanho da imagem. A opção [!DNL Fit to Window] é ativada por padrão.
 
-* Clique com o botão direito do mouse na anotação e clique em **[!UICONTROL Fit to Window]**. Quando ativado, um X é exibido à esquerda de [!DNL Fit to Window].
+* Clique com o botão direito do mouse dentro do clique de anotação **[!UICONTROL Fit to Window]**. Quando ativado, um X é exibido à esquerda de [!DNL Fit to Window].

@@ -3,7 +3,7 @@ description: Atualização de componentes do servidor para o Data Workbench 6.3.
 title: Atualização do servidor DWB 6.2 para 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 exl-id: 5106d9a3-179a-49f1-915a-c03b36ed5257
-source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -12,16 +12,18 @@ ht-degree: 2%
 
 # Atualização do servidor DWB: 6.2 para 6.3{#dwb-server-upgrade-to}
 
+{{eol}}
+
 Atualização de componentes do servidor para o Data Workbench 6.3.
 
 **Atualizar servidor**
 
-Se você tiver personalizado perfis que têm prioridade sobre os arquivos padrão fornecidos no pacote [!DNL Base], será necessário atualizar esses arquivos personalizados:
+Se você tiver personalizado perfis que tenham precedência sobre os arquivos padrão fornecidos no [!DNL Base] , será necessário atualizar esses arquivos personalizados:
 
-* **Atualize o arquivo Meta.cfg**  (  [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]para definir a criptografia de senha atualizada para a Unidade do Sistema de Arquivos (servidor FSU) e para adicionar entradas para as transformações do Par de Valor do Nome para aproveitar os agrupamentos [ de Cadeia de Caracteres de ](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)Consulta.
+* **Atualizar o arquivo Meta.cfg** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]para definir a criptografia de senha atualizada para a Unidade de Sistema de Arquivos (servidor FSU) e adicionar entradas para as transformações do Par de Valor do Nome para aproveitar [Grupos de sequência de consulta](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0).
 
-   1. Abra o arquivo [!DNL meta.cfg] no FSU.
-   1. Altere o tipo de dados para **[!UICONTROL Proxy Password]** de &quot; [!DNL string"] para &quot; [!DNL EncryptedString]&quot; na seção *Configuração da estação de trabalho*.
+   1. Abra o [!DNL meta.cfg] no FSU.
+   1. Alterar o tipo de dados para **[!UICONTROL Proxy Password]** de &quot; [!DNL string"] para &quot; [!DNL EncryptedString]&quot; na *Configuração da estação de trabalho* seção.
 
       ```
         Proxy User Name = string:
@@ -30,25 +32,25 @@ Se você tiver personalizado perfis que têm prioridade sobre os arquivos padrã
         Use Address File = bool: true
       ```
 
-   1. Adicione novas entradas para ativar as novas transformações do Par de Valor de Nome: *BuildNameValuePair* e *ExtractNameValuePairs*.
+   1. Adicione novas entradas para ativar as novas transformações do Par de Valor de Nome: *ParValorDoNomeDeBuild* e *ExtractNameValuePairs*.
 
-      Abra um espaço de trabalho e clique com o botão direito do mouse em **Admin** > **Gerenciador de perfis**.
+      Abra um espaço de trabalho e clique com o botão direito do mouse **Administrador** > **Gerenciador de perfis**.
 
-      Em **Contexto**, clique no arquivo **meta.cfg** na coluna **Base** e clique em **Tornar Local**. Na coluna Tabela do usuário , clique com o botão direito do mouse e selecione **Abrir** > **na estação de trabalho**.
+      Em **Contexto**, clique no botão **meta.cfg** no **Base** e clique em **Tornar local**. Na coluna User table , clique com o botão direito do mouse e selecione **Abrir** > **na estação de trabalho**.
 
       ![](assets/meta_cfg.png)
 
-      * Na nova janela, clique em **metadata** e adicione modelos secundários aceitáveis.
+      * Na nova janela, clique em **metadados** e adicionar modelos filhos aceitáveis.
 
          ![](assets/meta_cfg_child.png)
 
-      * Abra **transformation** e adicione novos templates.
+      * Abrir **transformação** e adicionar novos modelos.
 
          ![](assets/meta_cfg_template.png)
 
 * **Atualização para melhorias na Fast Merge**. Adicione parâmetros ou altere valores para os seguintes arquivos de configuração para aproveitar as melhorias de velocidade no Data Workbench durante uma transformação.
 
-   * **Communications.cfg** (  [!DNL E:\Server\Components\Communications.cfg])
+   * **Communications.cfg** ( [!DNL E:\Server\Components\Communications.cfg])
 
       ```
       18 = SourceListServer:
@@ -57,7 +59,7 @@ Se você tiver personalizado perfis que têm prioridade sobre os arquivos padrã
       <new>)
       ```
 
-   * **Disk Files.cfg**  (at  [!DNL E:\Server\Components] e  [!DNL E:\Server\Components for Processing Servers])
+   * **Arquivos de disco.cfg** a [!DNL E:\Server\Components] e [!DNL E:\Server\Components for Processing Servers])
 
       ```
       Disk Cache Size (MB) = double: 1024
@@ -95,7 +97,7 @@ Se você tiver personalizado perfis que têm prioridade sobre os arquivos padrã
    >
    >Para aproveitar os aprimoramentos de Fast Merge, verifique se você tem pelo menos 8 GB de RAM por DPU.
 
-* **Atualização da integração do Adobe Target com DWB**. Um novo arquivo de exportação, [!DNL ExportIntegration.exe], substitui o arquivo [!DNL TnTSend.exe] existente no Servidor Insight (`E:\Server\Scripts\TnTSend.exe`). Este novo arquivo de exportação oferece suporte à integração e coordenação do [Adobe Target](https://www.adobe.com/marketing/target.html) com o novo MMP (Perfil de Marketing Principal) e [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
+* **Atualização de integração do Adobe Target com DWB**. Um novo arquivo de exportação, [!DNL ExportIntegration.exe], substitui [!DNL TnTSend.exe] no servidor Insight (`E:\Server\Scripts\TnTSend.exe`). Este novo arquivo de exportação suporta ambos [Adobe Target](https://www.adobe.com/marketing/target.html) integração e coordenação com o novo Perfil de Marketing Principal (MMP) e [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
 
    Você precisará atualizar os seguintes comandos para exportações do Adobe Target.
 
@@ -116,13 +118,13 @@ Se você tiver personalizado perfis que têm prioridade sobre os arquivos padrã
    Você também pode tentar o seguinte para utilizar o processo de exportação antigo:
 
    * Crie uma nova exportação de Test&amp;Target na estação de trabalho.
-   * Modifique a exportação antiga do Test and Target localizada em [!DNL Server/Profiles/`<your profile>`/Export.]
+   * Modifique a exportação antiga do Test e Target encontrada em [!DNL Server/Profiles/`<your profile>`/Export.]
 
-* **Atualize o perfil do Adobe SC.** As alterações no  [!DNL Exclude Hit.cfg] arquivo exigem que um campo seja declarado no  [!DNL Decoding Instructions.cfg] arquivo associado.
+* **Atualize o perfil do Adobe SC.** Alterações à [!DNL Exclude Hit.cfg] O arquivo requer que um campo seja declarado no [!DNL Decoding Instructions.cfg] arquivo.
 
    >[!NOTE]
    >
-   >Se o seu perfil do Adobe SC incluir um arquivo [!DNL Decoding Instructions.cfg] personalizado, será necessário incluir um parâmetro [!DNL DelimitedDecoder] no arquivo personalizado.
+   >Se o seu perfil Adobe SC incluir um [!DNL Decoding Instructions.cfg] , será necessário incluir um [!DNL DelimitedDecoder] para seu arquivo personalizado.
 
    ```
    0 = DelimitedDecoder:
@@ -135,4 +137,4 @@ Se você tiver personalizado perfis que têm prioridade sobre os arquivos padrã
    5 = string: x-hit_source
    ```
 
-   Adicionar o campo [!DNL DelimitedDecoder] permite aproveitar as atualizações de recursos e evitar possíveis problemas de processamento de log resultantes dessas atualizações.
+   Adicionar a [!DNL DelimitedDecoder] permite aproveitar as atualizações de recursos e evitar possíveis problemas de processamento de log resultantes dessas atualizações.

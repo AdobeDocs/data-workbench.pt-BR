@@ -3,7 +3,7 @@ description: Para que alguns dos recursos do Servidor de relatórios funcionem, 
 title: Antes de começar
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Antes de começar{#before-you-begin}
+
+{{eol}}
 
 Para que alguns dos recursos do Servidor de relatórios funcionem, você deve fornecer e configurar o hardware ou software antes de instalar o.
 
@@ -22,13 +24,13 @@ Existem os seguintes requisitos para o Servidor de relatórios:
 
 * Acesso ao sistema de arquivos para saída de dados (compartilhamento de rede ou unidade local).
 * Acesso ao servidor SMTP configurado.
-* Microsoft Excel 2010 de 64 bits ou superior instalado no Servidor [!DNL Report]. Consulte [Considerações para automação do lado do servidor do Office](https://support.microsoft.com/kb/257757) para obter mais informações.
+* Microsoft Excel 2010 de 64 bits ou superior instalado em [!DNL Report] Servidor. Consulte [Considerações para a automação do Office no lado do servidor](https://support.microsoft.com/kb/257757) para obter mais informações.
 
 ## Requisitos adicionais {#section-f53d4388656a4dfc90aefe29dfabef89}
 
-* **Instale um adaptador gráfico apropriado.** Para renderizar os relatórios adequadamente, a máquina na qual você instala o  [!DNL Report] Servidor deve ter um adaptador gráfico apropriado instalado.
+* **Instale um adaptador gráfico apropriado.** Para renderizar os relatórios apropriadamente, o computador no qual você instala [!DNL Report] O servidor deve ter um adaptador gráfico apropriado instalado.
 
-* **Instale o Microsoft Excel para gerar relatórios como arquivos do Excel.** Para gerar e distribuir relatórios como arquivos do Microsoft Excel (  [!DNL .xls] ou  [!DNL .xlsx]), a máquina na qual você instala o Report Server deve ter a versão apropriada do Microsoft Excel de 64 bits instalada e registrada. Se o Excel não tiver sido registrado e o Servidor de Relatórios tentar acessá-lo pela primeira vez, o Excel exibirá uma caixa de diálogo de registro. Se não tiver certeza se a cópia está registrada, inicie o Excel manualmente e, se uma caixa de diálogo de registro for exibida, conclua o processo de registro.
+* **Instale o Microsoft Excel para gerar relatórios como arquivos do Excel.** Para gerar e distribuir relatórios como arquivos do Microsoft Excel ( [!DNL .xls] ou [!DNL .xlsx]), a máquina na qual você instala o Report Server deve ter a versão apropriada do Microsoft Excel de 64 bits instalada e registrada. Se o Excel não tiver sido registrado e o Servidor de Relatórios tentar acessá-lo pela primeira vez, o Excel exibirá uma caixa de diálogo de registro. Se não tiver certeza se a cópia está registrada, inicie o Excel manualmente e, se uma caixa de diálogo de registro for exibida, conclua o processo de registro.
 
    >[!NOTE]
    >

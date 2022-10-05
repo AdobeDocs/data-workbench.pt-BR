@@ -3,7 +3,7 @@ description: Os filtros de perfil restringem o escopo dos dados disponíveis em 
 title: Filtros de perfil embutidos
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Filtros de perfil embutidos{#built-in-profile-filters}
+
+{{eol}}
 
 Os filtros de perfil restringem o escopo dos dados disponíveis em um conjunto de dados.
 

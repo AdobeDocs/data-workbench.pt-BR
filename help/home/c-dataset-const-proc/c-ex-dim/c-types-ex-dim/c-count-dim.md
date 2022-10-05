@@ -3,7 +3,7 @@ description: Os elementos de uma dimensão contável podem ser contados pelo sis
 title: Dimensões contáveis
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
 exl-id: c607c15d-de85-4daf-af76-79b460f51b38
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Dimensões contáveis{#countable-dimensions}
+
+{{eol}}
 
 Os elementos de uma dimensão contável podem ser contados pelo sistema.
 
@@ -20,7 +22,7 @@ As dimensões contáveis podem ser pais de outras dimensões ou filhos de outras
 
 >[!NOTE]
 >
->Se você precisar de uma dimensão que forneça apenas uma contagem de algo, deverá usar uma dimensão numérica com uma operação de CONTAGEM. Consulte [Dimension numéricos](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed).
+>Se você precisar de uma dimensão que forneça apenas uma contagem de algo, deverá usar uma dimensão numérica com uma operação de CONTAGEM. Consulte [Dimension numéricas](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed).
 
 As dimensões contáveis são definidas pelos seguintes parâmetros:
 
@@ -60,7 +62,7 @@ As dimensões contáveis são definidas pelos seguintes parâmetros:
   </tr> 
   <tr> 
    <td colname="col1"> Pai </td> 
-   <td colname="col2"> <p>O nome da dimensão pai. Qualquer dimensão contável pode ser uma dimensão principal. Para tornar uma dimensão a dimensão de nível superior no esquema do conjunto de dados, defina o parâmetro como "raiz". A dimensão definida se torna a dimensão contável raiz do conjunto de dados. Por exemplo, se você estiver trabalhando com Site, a dimensão Visitante será a dimensão contável raiz do seu conjunto de dados. </p> <p> <p>Observação:  Embora sua dimensão contável de raiz não precise ser associada às IDs de rastreamento nos dados, o Adobe recomenda configurar a dimensão contável do conjunto de dados para usar o campo de ID de rastreamento (x-trackingid) como sua Chave. Como resultado, cada elemento da tabela raiz é associado a um valor exclusivo de x-trackingid e todos os dados sobre cada elemento são agrupados. Se quiser configurar seu conjunto de dados de forma diferente, entre em contato com o Adobe. </p> </p> </td> 
+   <td colname="col2"> <p>O nome da dimensão pai. Qualquer dimensão contável pode ser uma dimensão principal. Para tornar uma dimensão a dimensão de nível superior no esquema do conjunto de dados, defina o parâmetro como "raiz". A dimensão definida se torna a dimensão contável raiz do conjunto de dados. Por exemplo, se você estiver trabalhando com Site, a dimensão Visitante será a dimensão contável raiz do seu conjunto de dados. </p> <p> <p>Observação: Embora sua dimensão contável de raiz não precise ser associada às IDs de rastreamento nos dados, o Adobe recomenda configurar a dimensão contável do conjunto de dados para usar o campo de ID de rastreamento (x-trackingid) como sua Chave. Como resultado, cada elemento da tabela raiz é associado a um valor exclusivo de x-trackingid e todos os dados sobre cada elemento são agrupados. Se quiser configurar seu conjunto de dados de forma diferente, entre em contato com o Adobe. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -70,6 +72,6 @@ Este exemplo ilustra a definição de uma dimensão contável usando dados de ev
 
 ![](assets/cfg_Transformation_Dim_Countable.png)
 
-Este exemplo também ilustra a definição de uma dimensão contável usando dados de evento coletados do tráfego do site, mas tem um parâmetro Chave definido. A dimensão contável Sessão usa o campo x-session-key como sua chave. (O campo x-session-key é a saída da transformação [!DNL Sessionize] e tem um valor exclusivo para cada sessão.) Cada combinação exclusiva de um elemento da dimensão Visitante (o pai) e o campo x-session-key é um elemento da dimensão Sessão .
+Este exemplo também ilustra a definição de uma dimensão contável usando dados de evento coletados do tráfego do site, mas tem um parâmetro Chave definido. A dimensão contável Sessão usa o campo x-session-key como sua chave. (O campo x-session-key é a saída do [!DNL Sessionize] e tem um valor exclusivo para cada sessão.) Cada combinação exclusiva de um elemento da dimensão Visitante (o pai) e o campo x-session-key é um elemento da dimensão Sessão .
 
 ![](assets/cfg_Transformation_Dim_Countable2.png)

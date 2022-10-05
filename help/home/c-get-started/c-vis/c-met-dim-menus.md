@@ -3,7 +3,7 @@ description: Os menus acessados clicando com o botão direito do mouse na métri
 title: Menus de métrica e dimensão
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
 exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Menus de métrica e dimensão{#metric-and-dimension-menus}
+
+{{eol}}
 
 Os menus acessados clicando com o botão direito do mouse na métrica ou na área da dimensão em uma visualização fornecem acesso a ações relacionadas à métrica ou à dimensão nessa visualização.
 
@@ -38,15 +40,15 @@ Esse menu fornece opções diferentes dependendo do tipo de visualização em qu
   </tr> 
   <tr> 
    <td colname="col1"> <p>Zoom para todos </p> </td> 
-   <td colname="col2"> <p>Retorna a uma exibição de todos os dados no gráfico. Consulte <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Ampliação em Visualizações</a>. </p> </td> 
+   <td colname="col2"> <p>Retorna a uma exibição de todos os dados no gráfico. Consulte <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Ampliação de visualizações</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Zoom para seleção </p> </td> 
-   <td colname="col2"> <p>Amplia um subconjunto selecionado de dados em um gráfico de linhas. Consulte <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Ampliação em Visualizações</a>. Para obter mais informações sobre seleções, consulte <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> Fazer seleções em Visualizações</a>. </p> </td> 
+   <td colname="col2"> <p>Amplia um subconjunto selecionado de dados em um gráfico de linhas. Consulte <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Ampliação de visualizações</a>. Para obter mais informações sobre seleções, consulte <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> Fazer seleções em visualizações</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Editor de métricas </p> </td> 
-   <td colname="col2"> <p>Permite editar a definição da métrica identificada pelo campo de nome da métrica. Consulte <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> Editando Métricas Derivadas Existentes</a>. </p> </td> 
+   <td colname="col2"> <p>Permite editar a definição da métrica identificada pelo campo de nome da métrica. Consulte <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> Editar métricas derivadas existentes</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Métricas </p> </td> 
@@ -79,7 +81,7 @@ Esse menu fornece opções diferentes dependendo do tipo de visualização em qu
  </tbody> 
 </table>
 
-## Use o menu de dimensão {#section-e09de0aa6b74459a957b627ff7d07979}
+## Usar o menu de dimensões {#section-e09de0aa6b74459a957b627ff7d07979}
 
 Você acessa o menu de dimensão clicando com o botão direito do mouse em qualquer área relacionada à dimensão em uma visualização.
 
@@ -97,7 +99,7 @@ Esse menu fornece opções diferentes dependendo do tipo de visualização em qu
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Adicionar Chamada </p> </td> 
-   <td colname="col2"> <p>Adiciona uma chamada para o elemento selecionado, que chama a atenção para esse elemento. Consulte <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> Adicionando chamadas de retorno a um espaço de trabalho</a>. </p> </td> 
+   <td colname="col2"> <p>Adiciona uma chamada para o elemento selecionado, que chama a atenção para esse elemento. Consulte <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> Adicionar chamadas de retorno a um espaço de trabalho</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Renomear elemento </p> </td> 
@@ -129,7 +131,7 @@ Esse menu fornece opções diferentes dependendo do tipo de visualização em qu
   </tr> 
   <tr> 
    <td colname="col1"> <p>Legenda da série </p> </td> 
-   <td colname="col2"> <p>Codifica cores dos elementos dentro da dimensão selecionada como uma série. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> Usando Legendas de séries</a>. </p> </td> 
+   <td colname="col2"> <p>Codifica cores dos elementos dentro da dimensão selecionada como uma série. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> Uso de legendas de séries</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Adicionar visualização </p> </td> 
@@ -141,7 +143,7 @@ Esse menu fornece opções diferentes dependendo do tipo de visualização em qu
   </tr> 
   <tr> 
    <td colname="col1"> <p>Exibição de Hierarquia </p> </td> 
-   <td colname="col2"> <p>Altera a visualização da página atual para uma visualização de hierarquia de página, que exibe as páginas em um site organizado hierarquicamente por nome de arquivo e classificado alfabeticamente. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> Aplicando Visualizações de Hierarquia</a>. </p> </td> 
+   <td colname="col2"> <p>Altera a visualização da página atual para uma visualização de hierarquia de página, que exibe as páginas em um site organizado hierarquicamente por nome de arquivo e classificado alfabeticamente. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> Aplicação de Visualizações de Hierarquia</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Layout </p> </td> 

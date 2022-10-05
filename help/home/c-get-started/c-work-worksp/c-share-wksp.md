@@ -3,7 +3,7 @@ description: Você pode usar o menu Export workspace para imprimir e exportar es
 title: Compartilhar um espaço de trabalho
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
 exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Compartilhar um espaço de trabalho{#share-a-workspace}
+
+{{eol}}
 
 Você pode usar o menu Export workspace para imprimir e exportar espaços de trabalho para arquivos .png ou para o Excel.
 
@@ -45,15 +47,15 @@ Em um espaço de trabalho, clique em **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Exportar PNG </td> 
-   <td colname="col2">Salva um instantâneo de um espaço de trabalho no formato Portable Network Graphic (arquivo .png). Consulte <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-f9fbe0f0a1c341e2b063cce106cac35e"> Exportando espaços de trabalho como arquivos PNG</a>. </td> 
+   <td colname="col2">Salva um instantâneo de um espaço de trabalho no formato Portable Network Graphic (arquivo .png). Consulte <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-f9fbe0f0a1c341e2b063cce106cac35e"> Exportar espaços de trabalho como arquivos PNG</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> Se o Microsoft Excel estiver instalado no computador Data Workbench, o inicia automaticamente o Microsoft Excel e exporta os dados de determinadas visualizações, determinadas legendas e anotações de texto para um novo arquivo Excel (.xls ou .xlsx). Consulte <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Exportando dados do Workspace para o Microsoft Excel</a>. </td> 
+   <td colname="col2"> Se o Microsoft Excel estiver instalado na máquina do Data Workbench, o inicia automaticamente o Microsoft Excel e exporta os dados de determinadas visualizações, determinadas legendas e anotações de texto para um novo arquivo Excel (.xls ou .xlsx). Consulte <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Exportação de dados do Workspace para o Microsoft Excel</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Exportar (Excel) do modelo </td> 
-   <td colname="col2"> Se o Microsoft Excel estiver instalado no computador Data Workbench, o automaticamente inicia o Microsoft Excel e exporta os dados de determinadas visualizações, determinadas legendas e anotações de texto para o arquivo Excel de modelo (<span class="filepath"> .xls</span> ou <span class="filepath"> .xlsx</span>) selecionado. Consulte <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportar para um Arquivo Excel de modelo</a>. </td> 
+   <td colname="col2"> Se o Microsoft Excel estiver instalado na máquina do Data Workbench, o inicia automaticamente o Microsoft Excel e exporta os dados de determinadas visualizações, determinadas legendas e anotações de texto para o arquivo Excel de modelo (<span class="filepath"> .xls</span> ou <span class="filepath"> .xlsx</span>) que você selecionar. Consulte <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportar para um arquivo Excel de modelo</a>. </td> 
   </tr> 
  </tbody> 
 </table>

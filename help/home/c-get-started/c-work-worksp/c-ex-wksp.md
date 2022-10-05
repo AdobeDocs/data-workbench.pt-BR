@@ -3,7 +3,7 @@ description: Você pode exportar um espaço de trabalho como um arquivo de image
 title: Exportar um espaço de trabalho
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # Exportar um espaço de trabalho{#export-a-workspace}
 
+{{eol}}
+
 Você pode exportar um espaço de trabalho como um arquivo de imagem .png ou exportar os dados de determinadas janelas para um arquivo Excel (.xls ou .xlsx).
 
 ## Exportar espaços de trabalho como um arquivo PNG {#section-f9fbe0f0a1c341e2b063cce106cac35e}
 
-Você pode salvar um instantâneo de um espaço de trabalho no formato Portable Network Graphic (arquivos `.png`). As seguintes opções de cor estão disponíveis ao salvar espaços de trabalho como arquivos `.png`:
+Você pode salvar um instantâneo de um espaço de trabalho no formato Portable Network Graphic (`.png` arquivos). As seguintes opções de cor estão disponíveis ao salvar espaços de trabalho como `.png` arquivos:
 
-* **O** fundo preto copia o espaço de trabalho como exibido.
-* **O** fundo branco copia os elementos do espaço de trabalho em cores e os exibe em um plano de fundo branco.
-* **O plano de fundo branco (B&amp;W)**  copia os elementos do espaço de trabalho em escala de cinza e os exibe em um plano de fundo branco.
+* **Plano de fundo preto** copia o espaço de trabalho como exibido.
+* **Plano de fundo branco** copia os elementos do espaço de trabalho em cores e os exibe em um plano de fundo branco.
+* **Plano de fundo branco (B&amp;W)** copia os elementos do espaço de trabalho em tons de cinza e os exibe em um plano de fundo branco.
 
 **Para exportar um espaço de trabalho como um arquivo .png**
 
@@ -50,33 +52,33 @@ Se esses requisitos forem atendidos, o Data Workbench inicia automaticamente o M
 
 ## Aplicar títulos personalizados {#section-a332e157554546cb8e88922a8d7a4fa2}
 
-A menos que você tenha especificado um título Personalizado para a janela no menu [!UICONTROL Export], o [!UICONTROL Export title] listado (por exemplo, Tabela de Cidade) é usado como o nome da planilha.
+A menos que você tenha especificado um título Personalizado para a janela no [!UICONTROL Export] , o [!UICONTROL Export title] listada (por exemplo, Tabela de Cidade) é usada como o nome da planilha.
 
-1. Clique com o botão direito do mouse na borda superior da janela e clique no campo **[!UICONTROL Custom title]**.
+1. Clique com o botão direito do mouse na borda superior da janela e clique em no **[!UICONTROL Custom title]** campo.
 1. Digite o título que deseja aplicar à janela.
 
    ![](assets/mnu_window_TitleBar_Export.png)
 
 >[!NOTE]
 >
->Se você inserir um hífen (-) no campo [!UICONTROL Custom title], essa visualização não será exportada com o espaço de trabalho.
+>Se você inserir um hífen (-) na [!UICONTROL Custom title] , essa visualização não é exportada com o espaço de trabalho.
 
-Quando você exporta o espaço de trabalho para o Excel, a planilha que contém os dados desta janela é nomeada usando o título especificado em vez do título no campo [!UICONTROL Export title].
+Quando você exporta o espaço de trabalho para o Excel, a planilha que contém os dados desta janela é nomeada usando o título que você especificou em vez do título na [!UICONTROL Export title] campo.
 
 ## Exportar um espaço de trabalho ou barra lateral para o Excel {#section-360438b66d5f4734826ab463b4a01a75}
 
-**Para exportar dados do espaço de trabalho para um novo  [!DNL .xls] ou  [!DNL .xlsx] arquivo**
+**Para exportar dados do espaço de trabalho para um novo [!DNL .xls] ou [!DNL .xlsx] arquivo**
 
 1. Na barra de título do espaço de trabalho, clique em **[!UICONTROL Export]** > **[!UICONTROL Export]**.
 1. Especifique se deseja exportar o espaço de trabalho, a barra lateral ou ambos.
 
 ## Exportar para um arquivo Excel de modelo {#section-814772929ca64cf6b92b89d3fdd02302}
 
-Você pode exportar dados em seu espaço de trabalho para um arquivo Excel de modelo (`.xls` ou `.xlsx`). Usar um arquivo de modelo pode reduzir o tempo gasto com a formatação dos dados toda vez que o espaço de trabalho for exportado.
+Você pode exportar dados no seu espaço de trabalho para um arquivo Excel de modelo (`.xls` ou `.xlsx`). Usar um arquivo de modelo pode reduzir o tempo gasto com a formatação dos dados toda vez que o espaço de trabalho for exportado.
 
 >[!NOTE]
 >
->Esse arquivo de modelo deve ser um arquivo `.xls` ou `.xlsx`, não um arquivo `.xlt`.
+>Esse arquivo de modelo deve ser um `.xls` ou `.xlsx` arquivo, não um `.xlt` arquivo.
 
 Quando os dados são exportados, as planilhas com guias existentes no modelo (cada uma representando uma visualização) são preenchidas novamente com os dados mais recentes do espaço de trabalho, enquanto qualquer nova janela que não esteja presente no modelo como planilhas com guias é ignorada. Quaisquer outras folhas de guias no arquivo de modelo permanecem inalteradas.
 
@@ -84,23 +86,23 @@ Além disso, se você tiver uma macro definida no arquivo Excel de modelo que go
 
 Digamos que você queira usar os dados de campanha exportados de uma visualização de tabela em um gráfico de pizza em outra planilha com guias em um arquivo Excel e deseja atualizar essas informações toda semana. Você pode usar um modelo para não precisar recriar suas referências da planilha com guias da tabela na planilha com guias do gráfico de pizza sempre que quiser atualizar os dados. Os dados da tabela são atualizados após a exportação, o que atualiza automaticamente o gráfico de pizza.
 
-**Para exportar dados do espaço de trabalho para um modelo  [!DNL .xls] ou  [!DNL .xlsx] arquivo**
+**Para exportar dados do espaço de trabalho para um modelo [!DNL .xls] ou [!DNL .xlsx] arquivo**
 
 1. Clique com o botão direito do mouse na barra de título do espaço de trabalho e clique em **[!UICONTROL Export]** > **[!UICONTROL Export to Excel from Template]**.
 1. Especifique se deseja exportar um espaço de trabalho, uma barra lateral ou ambos.
 
-   A caixa de diálogo [!UICONTROL Select a template worksheet] é aberta.
+   O [!UICONTROL Select a template worksheet] será aberta.
 
 1. Conclua uma das seguintes etapas, conforme necessário:
 
-   * Se estiver usando um arquivo de modelo `.xls`:
+   * Se estiver usando um `.xls` arquivo de modelo:
 
-      1. Procure e selecione o arquivo de modelo `.xls` .
+      1. Procure e selecione o modelo `.xls` arquivo.
       1. Clique em **[!UICONTROL Open]**.
-   * Se estiver usando um arquivo de modelo `.xlsx`:
+   * Se estiver usando um `.xlsx` arquivo de modelo:
 
-      1. Navegue até o local do arquivo de modelo. O nome do arquivo `.xlsx` não é exibido.
-      1. No campo [!UICONTROL File name], digite `.xlsx` e clique em **[!UICONTROL Open]**. Todos os nomes de arquivo `.xlsx` são exibidos na lista de arquivos.
+      1. Navegue até o local do arquivo de modelo. O `.xlsx` o nome do arquivo não é exibido.
+      1. No [!UICONTROL File name] campo, tipo `.xlsx` e clique em **[!UICONTROL Open]**. Todos `.xlsx` os nomes de arquivo são exibidos na lista de arquivos.
 
-      1. Selecione o arquivo de modelo `.xlsx` .
+      1. Selecionar o modelo `.xlsx` arquivo.
       1. Clique em **[!UICONTROL Open]**.

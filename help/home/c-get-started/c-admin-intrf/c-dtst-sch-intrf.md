@@ -3,7 +3,7 @@ description: A interface do Esquema do conjunto de dados exibe as dimensões est
 title: Interface do esquema do conjunto de dados
 uuid: 3726e568-d3ea-47f8-8ac4-582c97fbbe0a
 exl-id: a8d4cf02-4ff7-4fcc-9062-425c1fe1fb28
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # Interface do esquema do conjunto de dados{#dataset-schema-interface}
 
+{{eol}}
+
 A interface do Esquema do conjunto de dados exibe as dimensões estendidas (contáveis, simples, muitas para muitas, numéricas, denormal e de tempo) definidas em qualquer arquivo de configuração do conjunto de dados de transformação e fornece uma visualização das relações entre essas dimensões.
 
-Além disso, a interface [!DNL Dataset Schema] mostra qualquer dimensão derivada que você tenha definido, bem como qualquer dimensão estendida que esteja configurada para ser oculta.
+Além disso, a variável [!DNL Dataset Schema] A interface do mostra qualquer dimensão derivada que você tenha definido, bem como qualquer dimensão estendida que esteja configurada para ser oculta.
 
 ![](assets/vis_DatasetSchema_Example2.png)
 
@@ -22,9 +24,9 @@ Além disso, a interface [!DNL Dataset Schema] mostra qualquer dimensão derivad
 >
 >Você pode pesquisar dimensões no diagrama de esquema. O nome das dimensões encontradas pela string de pesquisa são realçadas e as linhas da classe pai mudam de cor para qualquer ocorrência encontrada em dimensões filho secundárias. As dimensões contáveis permanecem visíveis à medida que você rolar para fornecer hierarquia e contexto visualizáveis.
 
-**Para interpretar um tipo de dimensão usando a  [!DNL Dataset Schema] interface**
+**Para interpretar um tipo de dimensão usando o [!DNL Dataset Schema] interface**
 
-A tabela a seguir lista os tipos de dimensão e as cores em que seus nomes aparecem na interface [!DNL Dataset Schema]. Os pais das dimensões de amostra (do exemplo acima) também são anotados.
+A tabela a seguir lista os tipos de dimensão e as cores em que seus nomes aparecem no [!DNL Dataset Schema] interface. Os pais das dimensões de amostra (do exemplo acima) também são anotados.
 
 <table id="table_CF888522626E49A4A10D87085CAB5CC1"> 
  <thead> 
@@ -78,16 +80,16 @@ A tabela a seguir lista os tipos de dimensão e as cores em que seus nomes apare
  </tbody> 
 </table>
 
-Para obter mais informações sobre esses tipos de dimensão, consulte o *Guia de Configuração de Conjunto de Dados*.
+Para obter mais informações sobre esses tipos de dimensões, consulte *Guia de configuração do conjunto de dados*.
 
 **Para exibir a visualização padrão de uma dimensão**
 
-* Na interface [!DNL Dataset Schema], clique na dimensão desejada. A visualização padrão é exibida. Por exemplo, se a visualização padrão for uma tabela que exibe Sessões e a dimensão selecionada e você clicar na dimensão URI, o Data Workbench exibirá uma tabela com URI por Sessões.
+* No [!DNL Dataset Schema] , clique na dimensão desejada. A visualização padrão é exibida. Por exemplo, se a visualização padrão for uma tabela que exibe Sessões e a dimensão selecionada e você clicar na dimensão URI, o Data Workbench exibirá uma tabela com URI por Sessões.
 
    >[!NOTE]
    >
-   >Se desejar alterar a visualização padrão que é exibida, consulte [A interface do esquema do conjunto de dados](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175).
+   >Se quiser alterar a visualização padrão que é exibida, consulte [A interface do esquema do conjunto de dados](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175).
 
 **Para exibir uma visualização específica de uma dimensão**
 
-* Na interface [!DNL Dataset Schema], clique com o botão direito do mouse na dimensão desejada e clique em **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.
+* No [!DNL Dataset Schema] clique com o botão direito do mouse na dimensão desejada e clique em **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.

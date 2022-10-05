@@ -3,7 +3,7 @@ description: As expressões Dimension nunca são usadas sozinhas, mas podem ser 
 title: Sintaxe para expressões de dimensão
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
@@ -12,12 +12,14 @@ ht-degree: 0%
 
 # Sintaxe para expressões de dimensão{#syntax-for-dimension-expressions}
 
+{{eol}}
+
 As expressões Dimension nunca são usadas sozinhas, mas podem ser usadas em qualquer lugar onde uma dimensão é chamada em uma métrica ou expressão de filtro.
 
 1. Palavras sublinhadas devem ser inseridas no texto da expressão literalmente.
-1. O formulário `{TEXT}?` representa o texto opcional.
-1. O formulário `{TEXT}*` representa um texto que pode ocorrer zero ou mais vezes.
-1. O formulário `{A | B | C |...}` representa o texto que consiste exatamente em uma das opções fornecidas, como A ou B ou C....
+1. O formulário `{TEXT}?` representa texto opcional.
+1. O formulário `{TEXT}*` representa texto que pode ocorrer zero ou mais vezes.
+1. O formulário `{A | B | C |...}` representa o texto que consiste em exatamente uma das opções fornecidas, como A ou B ou C....
 1. O formulário `[A,B)` representa um intervalo de números, de A até, mas não incluindo, B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
@@ -48,7 +50,7 @@ As expressões Dimension nunca são usadas sozinhas, mas podem ser usadas em qua
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>Define uma dimensão cujos elementos são intervalos de números (de tamanho fixo, por exemplo, [0-9], [10-19],...). Os elementos de Nível estão relacionados ao elemento do fluxo de bucket cujo intervalo contém o valor de Métrica para esse elemento de nível. Formato é a string de formato printf usada para formatar os elementos de Métrica. </p> <p>Exemplo: Se Page_Duration_Minutes for uma dimensão em nível de Exibição de página que representa o número de minutos gastos em cada página, então bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) é uma dimensão em nível de sessão que representa o número de minutos gastos em cada Sessão; seus elementos são intervalos de 5 minutos <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start é o valor inicial do primeiro intervalo (padrão: 0) e Size é o tamanho do intervalo (padrão: 1). </p> </td> 
+   <td colname="col2"> <p>Define uma dimensão cujos elementos são intervalos de números (de tamanho fixo, por exemplo, [0-9], [10-19],...). Os elementos de Nível estão relacionados ao elemento do fluxo de bucket cujo intervalo contém o valor de Métrica para esse elemento de nível. Formato é a string de formato printf usada para formatar os elementos de Métrica. </p> <p>Exemplo: Se Page_Duration_Minutes for uma dimensão em nível de Exibição de página que representa o número de minutos gastos em cada página, então bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) é uma dimensão em nível de sessão que representa o número de minutos gastos em cada Sessão; seus elementos têm intervalos de 5 minutos <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start é o valor inicial do primeiro intervalo (padrão: 0) e Size é o tamanho do intervalo (padrão: 1). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefixo(Nível {,ElementoName-&gt;(Prefixo{,Prefixo}* )}* ) </p> </td> 
@@ -56,7 +58,7 @@ As expressões Dimension nunca são usadas sozinhas, mas podem ser usadas em qua
   </tr> 
   <tr> 
    <td colname="col1"> <p>latência(Nível, Clipe, Dim, Filtro, MaxBefore, MaxAfter, FormatString) </p> </td> 
-   <td colname="col2"> <p>Consulte <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Criando Dimension de Latência </a>. </p> </td> 
+   <td colname="col2"> <p>Consulte <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Criação de Dimension de latência </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>produto_cartesiano(Separador {,Dim}*) </p> </td> 

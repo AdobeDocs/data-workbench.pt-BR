@@ -3,7 +3,7 @@ description: O Gráfico de barras na Data Workbench agora inclui uma comparaçã
 title: Gráfico de análise de regressão
 uuid: 8512890e-f42b-4dce-826a-2b4bf2a215f4
 exl-id: bfc76c4a-edd5-41fe-b875-c199ea3beab5
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Gráfico de análise de regressão{#regression-analysis-graph}
 
+{{eol}}
+
 O Gráfico de barras na Data Workbench agora inclui uma comparação de regressão para várias métricas em vários gráficos.
 
-[Os ](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) gráficos de barras na Data Workbench permitem que você registre métricas em um gráfico para métricas em outro gráfico. Se você tiver vários gráficos, é possível comparar uma métrica (como a variável independente) com um gráfico de avaliação de outras métricas (como variáveis dependentes). Isso permite determinar a força da relação entre uma variável dependente (a métrica estabelecida primeiro) e uma série de outras métricas em alteração (regressões com a métrica dependente estabelecida).
+[Gráficos de barras](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) no Data Workbench permite que você retorne métricas em um gráfico para métricas em outro gráfico. Se você tiver vários gráficos, é possível comparar uma métrica (como a variável independente) com um gráfico de avaliação de outras métricas (como variáveis dependentes). Isso permite determinar a força da relação entre uma variável dependente (a métrica estabelecida primeiro) e uma série de outras métricas em alteração (regressões com a métrica dependente estabelecida).
 
 A análise de regressão em uma visualização de gráfico permite que os analistas executem cenários de &quot;What-if&quot;. Por exemplo, se as visitas aumentarem para esse nível, que impacto terá esse aumento na receita?
 

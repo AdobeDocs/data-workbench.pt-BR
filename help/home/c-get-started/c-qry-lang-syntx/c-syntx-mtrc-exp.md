@@ -3,7 +3,7 @@ description: As métricas podem ser editadas usando o Editor de métricas e salv
 title: Sintaxe para expressões de métricas
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 
 # Sintaxe para expressões de métricas{#syntax-for-metric-expressions}
 
+{{eol}}
+
 As métricas podem ser editadas usando o Editor de métricas e salvas no diretório Métricas de um perfil.
 
 Para obter mais informações, consulte [Criação e edição de métricas derivadas](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Expressões de métricas também podem ser usadas em planilhas. Para obter mais informações, consulte [Planilhas](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). A sintaxe a seguir é usada para definir expressões de métricas.
@@ -19,9 +21,9 @@ Para obter mais informações, consulte [Criação e edição de métricas deriv
 Notas:
 
 1. Palavras sublinhadas devem ser inseridas no texto da expressão literalmente.
-1. O formulário `{TEXT}?` representa o texto opcional.
-1. O formulário `{TEXT}*` representa um texto que pode ocorrer zero ou mais vezes.
-1. O formulário `{A | B | C |...}` representa o texto que consiste exatamente em uma das opções fornecidas, como A ou B ou C....
+1. O formulário `{TEXT}?` representa texto opcional.
+1. O formulário `{TEXT}*` representa texto que pode ocorrer zero ou mais vezes.
+1. O formulário `{A | B | C |...}` representa o texto que consiste em exatamente uma das opções fornecidas, como A ou B ou C....
 1. O formulário `[A,B)` representa um intervalo de números, de A até, mas não incluindo, B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
@@ -56,7 +58,7 @@ Notas:
   </tr> 
   <tr> 
    <td colname="col1"> <p>confiança (métrica) </p> </td> 
-   <td colname="col2"> <p>Uma estimativa do desvio padrão da métrica. Isso é calculado usando uma técnica de amostragem conhecida como jackfacfing . </p> <p>Essa métrica consome muita memória e não deve ser usada em tabelas grandes. </p> <p>Para usar essa sintaxe, você deve ter uma dimensão jackfaca (chamada "jackfaca") com as propriedades apropriadas. Para obter mais informações, entre em contato com os Serviços de consultoria do Adobe. </p> <p>Exemplo: confidence(Average_Score) </p> <p> <p>Observação:  Os tipos de métricas de confiança, incluindo confiança (métrica) e confiança (métrica, jacknife), são especialmente úteis ao usar a funcionalidade de experimentação controlada do Adobe. Se uma métrica saltasse de 12% para 16% durante um experimento controlado, você poderia usar uma chamada de confiança para calcular a probabilidade do salto ser devido a variação aleatória. Isso pode ajudá-lo a evitar tirar as conclusões erradas de evidências limitadas e, inversamente, fornecer garantias de que uma mudança questionável é realmente real. </p> </p> </td> 
+   <td colname="col2"> <p>Uma estimativa do desvio padrão da métrica. Isso é calculado usando uma técnica de amostragem conhecida como jackfacfing . </p> <p>Essa métrica consome muita memória e não deve ser usada em tabelas grandes. </p> <p>Para usar essa sintaxe, você deve ter uma dimensão jackfaca (chamada "jackfaca") com as propriedades apropriadas. Para obter mais informações, entre em contato com os Serviços de consultoria do Adobe. </p> <p>Exemplo: confidence(Average_Score) </p> <p> <p>Observação: Os tipos de métricas de confiança, incluindo confiança (métrica) e confiança (métrica, jacknife), são especialmente úteis ao usar a funcionalidade de experimentação controlada do Adobe. Se uma métrica saltasse de 12% para 16% durante um experimento controlado, você poderia usar uma chamada de confiança para calcular a probabilidade do salto ser devido a variação aleatória. Isso pode ajudá-lo a evitar tirar as conclusões erradas de evidências limitadas e, inversamente, fornecer garantias de que uma mudança questionável é realmente real. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>confiança (métrica, canivete) </p> </td> 

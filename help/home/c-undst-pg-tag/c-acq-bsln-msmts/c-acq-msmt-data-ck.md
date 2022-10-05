@@ -3,7 +3,7 @@ description: Como parte dos dados de Avaliação da linha de base coletados, o S
 title: Adquirir dados de medição por meio de cookies
 uuid: 34cd6baf-6317-4774-8165-58208698b53c
 exl-id: 37c7b5f6-33bf-4373-963a-e08a826e05df
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 2%
@@ -12,15 +12,17 @@ ht-degree: 2%
 
 # Adquirir dados de medição por meio de cookies{#acquiring-measurement-data-through-cookies}
 
+{{eol}}
+
 Como parte dos dados de Avaliação da linha de base coletados, o Sensor coleta os cookies de domínio enviados de uma máquina do visitante ao fazer uma solicitação do servidor da Web.
 
 Isso inclui cookies persistentes e de sessão definidos pelo site quando um visitante interage com o sistema.
 
 Na maioria dos casos, os sites configuram cookies persistentes para identificar visitantes ou capturar entradas de usuários para uso em sessões de visitante subsequentes. Qualquer informação gravada e armazenada em cookies persistentes pode ser capturada e usada juntamente com todos os outros dados de medição no servidor do Data Workbench.
 
-Um exemplo desse cookie persistente pode envolver um identificador de cliente na forma de uma chave numérica presente em um cookie específico de domínio residente na máquina do visitante. Além de identificar o usuário como um visitante recorrente, o cookie persistente também pode ser usado para identificar ainda mais o visitante como um cliente recorrente ou para vincular o visitante às informações contidas em um banco de dados do cliente para permitir que as informações demográficas do cliente offline sejam exibidas dentro de [!DNL Site] e usadas para análise interativa.
+Um exemplo desse cookie persistente pode envolver um identificador de cliente na forma de uma chave numérica presente em um cookie específico de domínio residente na máquina do visitante. Além de identificar o usuário como um visitante recorrente, o cookie persistente também pode ser usado para identificar ainda mais o visitante como um cliente recorrente ou para vincular o visitante às informações contidas em um banco de dados do cliente para permitir que as informações demográficas do cliente offline sejam exibidas no [!DNL Site] e usados para análise interativa.
 
-Os cookies de sessão podem ser um bom mecanismo para coletar informações do usuário por meio de campos de formulário ou outros elementos interativos dinâmicos em seu site. No caso de um site que implementa formulários para capturar dados de entrada específicos do usuário, as informações permanecem no cookie da sessão somente enquanto a sessão estiver ativa. Quando um usuário deixa seu site ou, em seguida, encerra uma sessão, as informações não são mais armazenadas no computador do usuário. No entanto, as informações inseridas são capturadas por [!DNL Sensor] e disponibilizadas como dados de medição em [!DNL Site].
+Os cookies de sessão podem ser um bom mecanismo para coletar informações do usuário por meio de campos de formulário ou outros elementos interativos dinâmicos em seu site. No caso de um site que implementa formulários para capturar dados de entrada específicos do usuário, as informações permanecem no cookie da sessão somente enquanto a sessão estiver ativa. Quando um usuário deixa seu site ou, em seguida, encerra uma sessão, as informações não são mais armazenadas no computador do usuário. No entanto, as informações inseridas são capturadas por [!DNL Sensor] e disponibilizados como dados de medição no [!DNL Site].
 
 A seguir, um exemplo de uso de um cookie de sessão para capturar uma única variável de formulário inserida por um visitante.
 

@@ -3,7 +3,7 @@ description: A etapa final é executar o painel pela primeira vez para permitir 
 title: Inicializar o painel
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Inicializar o painel{#initializing-the-dashboard}
+
+{{eol}}
 
 A etapa final é executar o painel pela primeira vez para permitir que ele seja inicializado.
 
@@ -27,12 +29,12 @@ A instalação do painel está concluída. Caso ainda não o tenha feito, use as
 
 >[!NOTE]
 >
->O erro do painel e os logs de auditoria podem ser encontrados no diretório [!DNL logs] dentro do caminho de instalação.
+>O erro do painel e os logs de auditoria podem ser encontrados na [!DNL logs] no caminho de instalação.
 
 >[!NOTE]
 >
->Se precisar alterar a identidade do pool de aplicativos para uma conta diferente, certifique-se de conceder acesso ao banco de dados e conceder à identidade acesso de leitura/gravação à pasta [!DNL logs] no caminho de instalação.
+>Se precisar alterar a identidade do pool de aplicativos para uma conta diferente, certifique-se de conceder acesso ao banco de dados e conceder à identidade acesso de leitura/gravação ao [!DNL logs] no caminho de instalação.
 
 >[!NOTE]
 >
->Se precisar alterar a string de conexão do banco de dados, basta editar o valor usando o **[!UICONTROL IIS Management Console]**.
+>Se precisar alterar a string de conexão do banco de dados, basta editar o valor usando a variável **[!UICONTROL IIS Management Console]**.

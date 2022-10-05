@@ -3,14 +3,16 @@ description: Informações sobre as transformações que podem ser usadas para i
 title: Definir transformações de pesquisa
 uuid: 4f7358b1-9e6a-4d03-b0c6-411e454fc11e
 exl-id: 7b1504be-8669-4340-8400-e33f9663b602
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '2288'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 # Definir transformações de pesquisa{#defining-lookup-transformations}
+
+{{eol}}
 
 Informações sobre as transformações que podem ser usadas para incorporar dados de pesquisa ao conjunto de dados.
 
@@ -20,17 +22,17 @@ Observe que nem todos os tipos podem ser usados durante ambas as fases do proces
 * [FlatFileLookup](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md#section-e09b2eeb96444a859b14f03cdaab31f2)
 * [ODBCLookup](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md#section-4dcc3747e42e45c0a057e85f308a83cc)
 
-## Categorize {#section-8474376c14e54d14ae73749696ada468}
+## Categorizar {#section-8474376c14e54d14ae73749696ada468}
 
-A transformação [!DNL Categorize] usa uma tabela de pesquisa de duas colunas composta de pares de string/valor de padrão. Durante essa transformação, o servidor do Data Workbench lê cada registro de dados do evento e compara o conteúdo de um campo designado no registro a cada uma das strings de padrão listadas na primeira coluna da tabela de pesquisa. Se o campo designado corresponder a uma das strings de padrão, o servidor do Data Workbench gravará o valor (encontrado na segunda coluna) associado a essa string de padrão em um campo de saída designado no registro.
+O [!DNL Categorize] A transformação usa uma tabela de pesquisa de duas colunas composta por pares de string/valor de padrão. Durante essa transformação, o servidor do Data Workbench lê cada registro de dados do evento e compara o conteúdo de um campo designado no registro a cada uma das strings de padrão listadas na primeira coluna da tabela de pesquisa. Se o campo designado corresponder a uma das strings de padrão, o servidor do Data Workbench gravará o valor (encontrado na segunda coluna) associado a essa string de padrão em um campo de saída designado no registro.
 
 As cadeias de caracteres na primeira coluna da tabela de pesquisa podem, opcionalmente, começar com o caractere ^ e/ou terminar no caractere $ para forçar a correspondência no início e/ou no fim. Essa transformação não aceita expressões regulares para definir condições de correspondência na primeira coluna. Se o valor de entrada for um vetor de cadeias de caracteres, cada cadeia de caracteres será executada pela transformação e os resultados serão anexados a um vetor de cadeia de caracteres de saída.
 
-Uma transformação [!DNL Categorize] geralmente é mais fácil e rápida do que usar uma transformação [!DNL Regular Expression] para fazer a mesma coisa.
+A [!DNL Categorize] a transformação geralmente é mais fácil e rápida do que usar uma [!DNL Regular Expression] transformação para conseguir a mesma coisa.
 
 >[!NOTE]
 >
->O teste de substring usado em [!DNL Categorize] diferencia maiúsculas de minúsculas, a menos que especificado de outra forma usando o parâmetro [!DNL Case Sensitive].
+>O teste de substring usado em [!DNL Categorize] diferencia maiúsculas de minúsculas, a menos que especificado de outra forma usando a variável [!DNL Case Sensitive] parâmetro.
 
 <table id="table_1773344FAAE34BD4919CC4414249FDEE"> 
  <thead> 
@@ -68,11 +70,11 @@ Uma transformação [!DNL Categorize] geralmente é mais fácil e rápida do que
   </tr> 
   <tr> 
    <td colname="col1"> Delimitador </td> 
-   <td colname="col2"> <p>Sequência de caracteres usada para separar as colunas no arquivo de pesquisa. Deve ter um único caractere de comprimento. </p> <p> Se você pressionar a tecla Ctrl e clicar com o botão direito do mouse no parâmetro Delimitador, um menu <span class="wintitle"> Inserir</span> é exibido. Esse menu contém uma lista de caracteres especiais que geralmente são usados como delimitadores. </p> </td> 
+   <td colname="col2"> <p>Sequência de caracteres usada para separar as colunas no arquivo de pesquisa. Deve ter um único caractere de comprimento. </p> <p> Se você pressionar a tecla Ctrl e clicar com o botão direito do mouse no parâmetro Delimitador, uma <span class="wintitle"> Inserir</span> será exibido. Esse menu contém uma lista de caracteres especiais que geralmente são usados como delimitadores. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Múltiplos valores </td> 
+   <td colname="col1"> Vários valores </td> 
    <td colname="col2"> Verdadeiro ou falso. Se verdadeiro, quando várias linhas no arquivo correspondem à entrada, cada correspondência resulta em um valor anexado ao vetor de saída das cadeias de caracteres. Se false, somente a primeira linha correspondente no arquivo será usada na saída. Neste último caso, se a entrada for um vetor, a saída também será um vetor de comprimento equivalente. Se a entrada for uma string simples, a saída também será uma string simples. </td> 
    <td colname="col3"> false </td> 
   </tr> 
@@ -96,11 +98,11 @@ Uma transformação [!DNL Categorize] geralmente é mais fácil e rápida do que
 
 **Considerações para categorizar**
 
-* As alterações nos arquivos de pesquisa em [!DNL Categorize] transformações definidas no arquivo [!DNL Transformation.cfg] ou em um arquivo [!DNL Transformation Dataset Include] exigem a retransformação do conjunto de dados. Os arquivos de pesquisa para [!DNL Categorize] transformações definidas no arquivo [!DNL Log Processing.cfg] ou [!DNL Log Processing Dataset Include] não estão sujeitos a essa limitação. Para obter informações sobre como reprocessar seus dados, consulte [Reprocessando e Retransformação](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
+* Alterações nos arquivos de pesquisa em [!DNL Categorize] transformações definidas no [!DNL Transformation.cfg] ou em um [!DNL Transformation Dataset Include] O arquivo requer a retransformação do conjunto de dados. Arquivos de pesquisa para [!DNL Categorize] transformações definidas no [!DNL Log Processing.cfg] ou um [!DNL Log Processing Dataset Include] Os arquivos não estão sujeitos a essa limitação. Para obter informações sobre como reprocessar seus dados, consulte [Reprocessamento e retransformação](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
 
-* [!DNL Categorize] transformações definidas no  [!DNL Log Processing.cfg] arquivo ou um  [!DNL Log Processing Dataset Include] arquivo recarrega seus arquivos de pesquisa sempre que os arquivos de pesquisa são alterados. As alterações não são aplicadas retroativamente, mas se aplicam a todos os dados de log lidos após a alteração.
+* [!DNL Categorize] transformações definidas no [!DNL Log Processing.cfg] ou um [!DNL Log Processing Dataset Include] O arquivo recarrega seus arquivos de pesquisa sempre que os arquivos de pesquisa são alterados. As alterações não são aplicadas retroativamente, mas se aplicam a todos os dados de log lidos após a alteração.
 
-Este exemplo ilustra o uso da transformação [!DNL Categorize] para integrar dados de pesquisa com dados de evento coletados do tráfego do site. Suponha que um site específico tenha seções de negócios e que haja um requisito para poder observar e fazer comparações com base no fluxo de tráfego e no valor gerado pelas diferentes seções. Você pode criar um arquivo de pesquisa que lista as subsequências de caracteres usadas para identificar essas diferentes seções.
+Este exemplo ilustra o uso da variável [!DNL Categorize] transformação para integrar dados de pesquisa com dados de evento coletados do tráfego do site. Suponha que um site específico tenha seções de negócios e que haja um requisito para poder observar e fazer comparações com base no fluxo de tráfego e no valor gerado pelas diferentes seções. Você pode criar um arquivo de pesquisa que lista as subsequências de caracteres usadas para identificar essas diferentes seções.
 
 O arquivo de pesquisa [!DNL Lookups\custommap.txt] contém a seguinte tabela:
 
@@ -127,7 +129,7 @@ A saída é baseada na ordem das subsequências no arquivo de pesquisa. Por exem
 
 ## FlatFileLookup {#section-e09b2eeb96444a859b14f03cdaab31f2}
 
-A transformação [!DNL FlatFileLookup] usa uma tabela de pesquisa composta por qualquer número de colunas e linhas (embora, lembre-se de que ela reside na memória). Durante esse tipo de transformação, o servidor do Data Workbench lê cada registro de dados do evento e compara o conteúdo de um campo designado no registro a cada um dos valores em uma coluna designada da tabela de pesquisa. Se houver uma correspondência, o servidor do Data Workbench grava um ou mais valores da linha correspondente na tabela de pesquisa em um ou mais campos de saída designados no registro de dados do evento.
+O [!DNL FlatFileLookup] a transformação usa uma tabela de pesquisa composta por qualquer número de colunas e linhas (embora, lembre-se de que está na memória). Durante esse tipo de transformação, o servidor do Data Workbench lê cada registro de dados do evento e compara o conteúdo de um campo designado no registro a cada um dos valores em uma coluna designada da tabela de pesquisa. Se houver uma correspondência, o servidor do Data Workbench grava um ou mais valores da linha correspondente na tabela de pesquisa em um ou mais campos de saída designados no registro de dados do evento.
 
 A tabela de pesquisa usada durante essa transformação é preenchida a partir de um arquivo simples cujo local é especificado ao definir a transformação.
 
@@ -162,7 +164,7 @@ A tabela de pesquisa usada durante essa transformação é preenchida a partir d
   </tr> 
   <tr> 
    <td colname="col1"> Delimitador </td> 
-   <td colname="col2"> <p>Sequência de caracteres usada para separar as colunas no arquivo de pesquisa. Deve ter um único caractere de comprimento. </p> <p> Se você pressionar a tecla Ctrl e clicar com o botão direito do mouse no parâmetro Delimitador, um menu <span class="wintitle"> Inserir</span> é exibido. Esse menu contém uma lista de caracteres especiais que geralmente são usados como delimitadores. </p> </td> 
+   <td colname="col2"> <p>Sequência de caracteres usada para separar as colunas no arquivo de pesquisa. Deve ter um único caractere de comprimento. </p> <p> Se você pressionar a tecla Ctrl e clicar com o botão direito do mouse no parâmetro Delimitador, uma <span class="wintitle"> Inserir</span> será exibido. Esse menu contém uma lista de caracteres especiais que geralmente são usados como delimitadores. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -177,17 +179,17 @@ A tabela de pesquisa usada durante essa transformação é preenchida a partir d
   </tr> 
   <tr> 
    <td colname="col1"> Entrada </td> 
-   <td colname="col2"> <span class="wintitle"> Nome </span> da coluna é o nome da coluna usada para corresponder a entrada à(s) linha(s) no arquivo. Se Linha de cabeçalho for verdadeira, esse pode ser o nome de uma coluna no arquivo de pesquisa. Caso contrário, esse deve ser o número da coluna com base em zero para correspondência. <span class="wintitle"> Nome do </span> campo é o nome do campo usado para localizar a linha no arquivo de pesquisa. </td> 
+   <td colname="col2"> <span class="wintitle"> Nome da coluna</span> é o nome da coluna usada para corresponder a entrada às linhas no arquivo. Se Linha de cabeçalho for verdadeira, esse pode ser o nome de uma coluna no arquivo de pesquisa. Caso contrário, esse deve ser o número da coluna com base em zero para correspondência. <span class="wintitle"> Nome do campo</span> é o nome do campo usado para localizar a linha no arquivo de pesquisa. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Múltiplos valores </td> 
-   <td colname="col2"> <p>Verdadeiro ou falso. Determina se um único valor (uma linha correspondente) ou vários valores devem ser retornados (um para cada linha correspondente). </p> <p> <p>Observação:  Se <span class="wintitle"> Valores múltiplos</span> for definido como falso, você deve garantir que não haja várias correspondências. Quando ocorrem várias correspondências, não há garantia de qual correspondência será retornada. </p> </p> </td> 
+   <td colname="col1"> Vários valores </td> 
+   <td colname="col2"> <p>Verdadeiro ou falso. Determina se um único valor (uma linha correspondente) ou vários valores devem ser retornados (um para cada linha correspondente). </p> <p> <p>Observação: If <span class="wintitle"> Vários valores</span> for definido como false, você deverá garantir que não haja várias correspondências. Quando ocorrem várias correspondências, não há garantia de qual correspondência será retornada. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Saídas </td> 
-   <td colname="col2"> <p>Um vetor de objetos de coluna (resultados) no qual cada objeto é definido por nomes de coluna e campo. </p> <p> <span class="wintitle"> Nome </span> da coluna é a coluna da qual o valor de saída é obtido. Se <span class="wintitle"> Linha do cabeçalho</span> for verdadeiro, esse poderá ser o nome de uma coluna no arquivo de pesquisa. Caso contrário, esse deve ser o número da coluna com base em zero para correspondência. </p> <p> <span class="wintitle"> Nome do </span> campo é o nome do campo usado para capturar a saída. Observe que isso pode ser um vetor de resultados, um para cada linha identificada no caso em que o parâmetro Valores Múltiplos é verdadeiro. </p> </td> 
+   <td colname="col2"> <p>Um vetor de objetos de coluna (resultados) no qual cada objeto é definido por nomes de coluna e campo. </p> <p> <span class="wintitle"> Nome da coluna</span> é a coluna da qual o valor de saída é obtido. If <span class="wintitle"> Linha de cabeçalho</span> for true, poderá ser o nome de uma coluna no arquivo de pesquisa. Caso contrário, esse deve ser o número da coluna com base em zero para correspondência. </p> <p> <span class="wintitle"> Nome do campo</span> é o nome do campo usado para capturar a saída. Observe que isso pode ser um vetor de resultados, um para cada linha identificada no caso em que o parâmetro Valores Múltiplos é verdadeiro. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -196,13 +198,13 @@ A tabela de pesquisa usada durante essa transformação é preenchida a partir d
 **Considerações para[!DNL FlatFileLookup]**
 
 * A correspondência do campo de entrada ao arquivo de pesquisa sempre diferencia maiúsculas de minúsculas.
-* As alterações nos arquivos de pesquisa em [!DNL FlatFileLookup] transformações definidas no arquivo [!DNL Transformation.cfg] ou nos arquivos [!DNL Transformation Dataset Include] exigem a retransformação do conjunto de dados. Os arquivos de pesquisa para [!DNL FlatFileLookup] transformações definidas no arquivo [!DNL Log Processing.cfg] ou nos arquivos [!DNL Log Processing Dataset Include] não estão sujeitos a essa limitação. Para obter informações sobre como reprocessar seus dados, consulte [Reprocessando e Retransformação](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
+* Alterações nos arquivos de pesquisa em [!DNL FlatFileLookup] transformações definidas no [!DNL Transformation.cfg] ou [!DNL Transformation Dataset Include] os arquivos exigem a retransformação do conjunto de dados. Arquivos de pesquisa para [!DNL FlatFileLookup] transformações definidas no [!DNL Log Processing.cfg] ou [!DNL Log Processing Dataset Include] os arquivos não estão sujeitos a essa limitação. Para obter informações sobre como reprocessar seus dados, consulte [Reprocessamento e retransformação](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
 
-* [!DNL FlatFileLookup] transformações no  [!DNL Log Processing.cfg] arquivo ou  [!DNL Log Processing Dataset Include] arquivos recarregam seus arquivos de pesquisa sempre que os arquivos de pesquisa são alterados. As alterações não são aplicadas retroativamente, mas se aplicam a todos os dados de log lidos após a alteração.
+* [!DNL FlatFileLookup] transformações no [!DNL Log Processing.cfg] ou [!DNL Log Processing Dataset Include] os arquivos recarregam seus arquivos de pesquisa sempre que os arquivos de pesquisa são alterados. As alterações não são aplicadas retroativamente, mas se aplicam a todos os dados de log lidos após a alteração.
 
-Este exemplo ilustra o uso da transformação [!DNL FlatFileLookup] para integrar dados de pesquisa com dados de evento coletados do tráfego do site. Suponha que você queira isolar os parceiros do site que estão roteando o tráfego para o site e transformar suas IDs de parceiro em nomes mais amigáveis. Em seguida, é possível usar os nomes amigáveis para criar dimensões e visualizações estendidas que mapeiam mais claramente para o relacionamento comercial do que o relacionamento site a site usado para rotear o tráfego.
+Este exemplo ilustra o uso da variável [!DNL FlatFileLookup] transformação para integrar dados de pesquisa com dados de evento coletados do tráfego do site. Suponha que você queira isolar os parceiros do site que estão roteando o tráfego para o site e transformar suas IDs de parceiro em nomes mais amigáveis. Em seguida, é possível usar os nomes amigáveis para criar dimensões e visualizações estendidas que mapeiam mais claramente para o relacionamento comercial do que o relacionamento site a site usado para rotear o tráfego.
 
-A transformação de exemplo pesquisa o campo cs(referrer-query) pelo par de nome-valor PartnerID e, se estiver localizado, o arquivo de pesquisa [!DNL Lookups\partners.txt] é usado para comparar o valor de PartnerID com os valores na coluna [!DNL Partner] da tabela. Se uma linha estiver localizada, o campo de saída x-partner-name receberá o nome da coluna [!DNL PrintName] da linha identificada.
+A transformação de exemplo pesquisa o campo cs(referrer-query) para o par nome-valor do PartnerID e, se estiver localizado, o arquivo de pesquisa [!DNL Lookups\partners.txt] é usada para comparar o valor de PartnerID com os valores na variável [!DNL Partner] da tabela. Se uma linha estiver localizada, o campo de saída x-partner-name receberá o nome da variável [!DNL PrintName] da linha identificada.
 
 ![](assets/cfg_TransformationType_FlatFileLookup.png)
 
@@ -222,11 +224,11 @@ Os exemplos a seguir se transformariam da seguinte maneira:
 
 ## ODBCLookup {#section-4dcc3747e42e45c0a057e85f308a83cc}
 
-A transformação [!DNL ODBCLookup] funciona como uma transformação [!DNL FlatFileLookup]. A única diferença é que a tabela de pesquisa usada durante essa transformação é preenchida em um banco de dados ODBC e não em um arquivo simples.
+O [!DNL ODBCLookup] a transformação funciona como um [!DNL FlatFileLookup] transformação. A única diferença é que a tabela de pesquisa usada durante essa transformação é preenchida em um banco de dados ODBC e não em um arquivo simples.
 
 >[!NOTE]
 >
->[!DNL ODBCLookup] as transformações só podem ser executadas durante a fase de transformação do processo de construção do conjunto de dados. Quando possível, o Adobe recomenda usar a transformação [!DNL FlatFileLookup] em vez da transformação [!DNL ODBCLookup]. [!DNL FlatFileLookup] as transformações são inerentemente mais confiáveis porque não dependem da disponibilidade de um sistema externo. Além disso, há menos risco de a tabela de pesquisa ser modificada se residir em um arquivo simples que você controla localmente.
+>[!DNL ODBCLookup] as transformações só podem ser executadas durante a fase de transformação do processo de construção do conjunto de dados. Quando possível, o Adobe recomenda usar a variável [!DNL FlatFileLookup] transformação em vez de [!DNL ODBCLookup] transformação. [!DNL FlatFileLookup] as transformações são inerentemente mais confiáveis porque não dependem da disponibilidade de um sistema externo. Além disso, há menos risco de a tabela de pesquisa ser modificada se residir em um arquivo simples que você controla localmente.
 
 <table id="table_B903DB291BCC4F44B09D54300216D288"> 
  <thead> 
@@ -259,12 +261,12 @@ A transformação [!DNL ODBCLookup] funciona como uma transformação [!DNL Flat
   </tr> 
   <tr> 
    <td colname="col1"> Senha do banco de dados </td> 
-   <td colname="col2">A senha a ser usada na conexão com o banco de dados. Se uma senha tiver sido configurada para o DSN no <span class="wintitle"> Data Source Administrator</span>, isso pode ser deixado em branco. Qualquer senha fornecida aqui substitui a senha configurada para o DSN no <span class="wintitle"> Data Source Administrator</span>. </td> 
+   <td colname="col2">A senha a ser usada na conexão com o banco de dados. Se uma senha tiver sido configurada para o DSN no <span class="wintitle"> Administrador da fonte de dados</span>, pode ficar em branco. Qualquer senha fornecida aqui substitui a senha configurada para o DSN na <span class="wintitle"> Administrador da fonte de dados</span>. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ID de usuário do banco de dados </td> 
-   <td colname="col2">A ID de usuário a ser usada ao se conectar ao banco de dados. Se uma ID de usuário tiver sido configurada para o DSN no <span class="wintitle"> Administrador da Fonte de Dados</span>, isso pode ser deixado em branco. Qualquer ID de usuário fornecida aqui substitui a ID de usuário configurada para o DSN no <span class="wintitle"> Administrador da Fonte de Dados</span>. </td> 
+   <td colname="col2">A ID de usuário a ser usada ao se conectar ao banco de dados. Se uma ID de usuário tiver sido configurada para o DSN no <span class="wintitle"> Administrador da fonte de dados</span>, pode ficar em branco. Qualquer ID de usuário fornecida aqui substitui a ID de usuário configurada para o DSN na <span class="wintitle"> Administrador da fonte de dados</span>. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -274,17 +276,17 @@ A transformação [!DNL ODBCLookup] funciona como uma transformação [!DNL Flat
   </tr> 
   <tr> 
    <td colname="col1"> Coluna de entrada </td> 
-   <td colname="col2"> <span class="wintitle"> Nome </span> da Coluna é o nome da coluna ou a expressão SQL para os dados que são correspondidos em relação à entrada. <span class="wintitle"> Nome do </span> campo é o nome do campo que contém os dados que serão pesquisados. </td> 
+   <td colname="col2"> <span class="wintitle"> Nome da coluna</span> é o nome da coluna ou a expressão SQL para os dados que correspondem à entrada. <span class="wintitle"> Nome do campo</span> é o nome do campo que contém os dados a serem pesquisados. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Múltiplos valores </td> 
-   <td colname="col2"> <p>Verdadeiro ou falso. Determina se um único valor (uma linha correspondente) ou vários valores devem ser retornados (um para cada linha correspondente). </p> <p> <p>Observação:  Se <span class="wintitle"> Valores múltiplos</span> for definido como falso, você deve garantir que não haja várias correspondências. Quando ocorrem várias correspondências, não há garantia de qual correspondência será retornada. </p> </p> </td> 
+   <td colname="col1"> Vários valores </td> 
+   <td colname="col2"> <p>Verdadeiro ou falso. Determina se um único valor (uma linha correspondente) ou vários valores devem ser retornados (um para cada linha correspondente). </p> <p> <p>Observação: If <span class="wintitle"> Vários valores</span> for definido como false, você deverá garantir que não haja várias correspondências. Quando ocorrem várias correspondências, não há garantia de qual correspondência será retornada. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Colunas de Saída </td> 
-   <td colname="col2"> <p>Um vetor de objetos de coluna (resultados) em que cada objeto é definido por nomes de coluna e campo. </p> <p> <span class="wintitle"> Nome </span> da coluna é o nome da expressão ou SQL da coluna da qual o valor de saída é obtido. <span class="wintitle"> Nome do </span> campo é o nome do campo usado para capturar a saída. </p> </td> 
+   <td colname="col2"> <p>Um vetor de objetos de coluna (resultados) em que cada objeto é definido por nomes de coluna e campo. </p> <p> <span class="wintitle"> Nome da coluna</span> é o nome da expressão ou SQL da coluna da qual o valor de saída é obtido. <span class="wintitle"> Nome do campo</span> é o nome do campo usado para capturar a saída. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -295,12 +297,12 @@ A transformação [!DNL ODBCLookup] funciona como uma transformação [!DNL Flat
  </tbody> 
 </table>
 
-* Os parâmetros Nome da Fonte de Dados, [!DNL Database User ID], [!DNL Database Password] e Identificador de Tabela são iguais aos parâmetros dos mesmos nomes descritos para fontes de dados ODBC. Consulte [Fontes de Dados ODBC](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3).
+* O Nome Da Fonte De Dados, [!DNL Database User ID], [!DNL Database Password]e os parâmetros do Identificador de tabela são iguais aos parâmetros dos mesmos nomes descritos para fontes de dados ODBC. Consulte [Fontes de dados ODBC](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3).
 
-* Diferentemente das fontes de dados ODBC, as transformações [!DNL ODBCLookup] não exigem uma coluna ID crescente. Consulte [Fontes de Dados ODBC](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3). Isso ocorre porque o conteúdo da tabela de pesquisa não deve ser alterado de forma alguma enquanto o conjunto de dados está ativo. As alterações em uma tabela de pesquisa ou exibição não podem ser detectadas até que ocorra uma retransformação. Para obter informações sobre como reprocessar seus dados, consulte [Reprocessando e Retransformação](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
+* Diferente de fontes de dados ODBC, [!DNL ODBCLookup] as transformações não exigem uma coluna ID crescente. Consulte [Fontes de dados ODBC](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3). Isso ocorre porque o conteúdo da tabela de pesquisa não deve ser alterado de forma alguma enquanto o conjunto de dados está ativo. As alterações em uma tabela de pesquisa ou exibição não podem ser detectadas até que ocorra uma retransformação. Para obter informações sobre como reprocessar seus dados, consulte [Reprocessamento e retransformação](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
 
 Suponha que você deseja converter registros DNS desatualizados para os registros atualizados. Ambos os conjuntos de registros são armazenados em um banco de dados SQL. Para executar essa tarefa, você referenciaria uma tabela de pesquisa gerada a partir do banco de dados e substituiria os registros DNS desatualizados.
 
-Nossa transformação de exemplo pesquisa as entradas de log do campo s-dns e, se estiver localizada, a tabela de pesquisa VISUAL.LOOKUP é usada para comparar a entrada s-dns com as entradas na coluna [!DNL OLDDNS] da tabela. Se uma linha estiver localizada na tabela , o campo de saída s-dns receberá a entrada de registro DNS atualizada da coluna [!DNL NEWDNS] da linha identificada.
+Nossa transformação de exemplo pesquisa as entradas de log do campo s-dns e, se estiver localizada, a tabela de pesquisa VISUAL.LOOKUP é usada para comparar a entrada s-dns com as entradas no [!DNL OLDDNS] da tabela. Se uma linha estiver localizada na tabela , o campo de saída s-dns receberá a entrada de registro DNS atualizada da variável [!DNL NEWDNS] da linha identificada.
 
 ![](assets/cfg_TransformationType_ODBCLookup.png)

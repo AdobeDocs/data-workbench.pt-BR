@@ -3,7 +3,7 @@ description: Informações sobre os diferentes tipos de mapas de processos.
 title: Tipos de mapas de processos
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
 exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 1%
@@ -12,9 +12,11 @@ ht-degree: 1%
 
 # Tipos de mapas de processos{#types-of-process-maps}
 
+{{eol}}
+
 Informações sobre os diferentes tipos de mapas de processos.
 
-## Mapas de processo 2D {#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
+## Mapas de processos 2D {#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
 
 Os mapas de processos bidimensionais fornecem uma visualização bidimensional da atividade entre elementos de dimensão. O tamanho de um nó em um mapa de processo 2D é proporcional ao valor da métrica associada a esse nó. Além disso, a espessura e a intensidade de uma seta entre dois nós são proporcionais à média dos valores da métrica para esses nós.
 
@@ -32,7 +34,7 @@ O mapa de processos 2D no exemplo a seguir mostra nós correspondentes aos nomes
 
 ![](assets/vis_2DProcessMap_MovieNodes.png)
 
-No exemplo, o tamanho de cada nó e a espessura e intensidade de cada seta são proporcionais à métrica Classificações, que é uma contagem de classificações recebidas por um filme. Portanto, um filme com um nó grande, como *Dia da Independência*, tem mais classificações do que um filme com um nó pequeno, como *Horizonte de Eventos*. Você também pode ver que mais visualizadores de filmes classificados como *Dia da Independência* antes de *Montanha Fria* do que os mesmos filmes na ordem oposta. Observe que as setas não indicam que os visualizadores classificaram *Dia da Independência* e depois classificaram *Montanha Fria* imediatamente depois, ou vice-versa. Os visualizadores podem ter avaliado outros filmes no meio, mas esses filmes não são mostrados neste mapa.
+No exemplo, o tamanho de cada nó e a espessura e intensidade de cada seta são proporcionais à métrica Classificações, que é uma contagem de classificações recebidas por um filme. Portanto, um filme com um nó grande, como *Dia da Independência*, tem mais classificações do que um filme com um nó pequeno, como *Horizonte de Eventos*. Você também pode ver que mais espectadores classificaram *Dia da Independência* before *Montanha Fria* que classificou os mesmos filmes na ordem oposta. Observe que as setas não indicam que os visualizadores classificaram *Dia da Independência* e depois classificadas *Montanha Fria* imediatamente depois, ou vice-versa. Os visualizadores podem ter avaliado outros filmes no meio, mas esses filmes não são mostrados neste mapa.
 
 ## Mapas de métrica 2D {#section-a9b846fc71224058918fbc378315effe}
 

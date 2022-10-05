@@ -3,7 +3,7 @@ description: A seguir, são listadas as métricas incluídas no Perfil de monito
 title: Métricas no perfil de monitoramento histórico do Data Workbench
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Métricas no perfil de monitoramento histórico do Data Workbench{#metrics-in-the-data-workbench-historical-monitoring-profile}
+
+{{eol}}
 
 A seguir, são listadas as métricas incluídas no Perfil de monitoramento histórico do Data Workbench e como elas são derivadas.
 
@@ -45,10 +47,10 @@ A seguir, são listadas as métricas incluídas no Perfil de monitoramento hist�
 | **Pings x Capacidade Geral** | A métrica Pings multiplicada pela métrica Capacity Global . |
 | **Milissegundos de Latência da Pesquisa** | A soma da dimensão Centis de latência de pesquisa para cada Ping, dividida pela métrica Pings, todos multiplicados por 10. |
 | **Query em execução** | A soma de um para cada Ping, onde os Dekaseconds de Varredura Estimada é maior que &quot;0&quot;, dividido pela métrica Pings, onde o Tipo de Ping é igual a &quot;servidor&quot;. |
-| **Segundos de verificação rápida** | A soma de segundos de verificação rápida para cada Ping, onde o tipo de ping é igual a &quot;servidor&quot;, dividida pela métrica Pings. |
+| **Segundos de verificação rápida** | A soma de segundos de verificação rápida para cada ping em que o tipo de ping é igual a &quot;servidor&quot;, dividida pela métrica Pings. |
 | **Linhas de saída** | A soma da dimensão Linhas de saída para cada ping dividida pela métrica Pings, multiplicada por 100000. |
 | **Modo de tempo real** | O número de Pings em que a dimensão Modo de processamento é igual a &quot;tempo real&quot;, dividido pela métrica Pings, todos multiplicados por 100. |
 | **Modo de reprocessamento** | 100 menos o número de Pings, onde o Modo de processamento é igual a &quot;tempo real&quot; dividido pela métrica Pings, multiplicado por 100. |
-| **Paralisado** | A soma da dimensão Processamento paralisado no perfil Insight [Status do perfil](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64). |
+| **Paralisado** | A soma da dimensão Processamento paralisado no Insight [Status do perfil](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) perfil. |
 | **Banco de dados Temp** | A soma da Porcentagem de Espaço de Banco de Dados Temp para cada Ping, dividida pela métrica Pings. |
 | **Transformação** | A soma da Porcentagem de transformação para cada Ping dividida pela métrica de Pings dividida por 10. |

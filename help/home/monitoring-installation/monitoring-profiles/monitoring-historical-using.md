@@ -3,7 +3,7 @@ description: Use o perfil histórico do Data Workbench para ver como a configura
 title: Espaço de trabalho Histórico do Data Workbench
 uuid: 61c45cae-f255-4d20-bb6b-f318c8dd8214
 exl-id: e6d7e924-641e-468c-a828-16ebe1c8724f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 2%
@@ -12,15 +12,17 @@ ht-degree: 2%
 
 # Espaço de trabalho Histórico do Data Workbench{#data-workbench-historic-workspace}
 
+{{eol}}
+
 Use o perfil histórico do Data Workbench para ver como a configuração, o hardware e outras alterações afetam o desempenho, a estabilidade e a capacidade do servidor ao longo do tempo.
 
-O perfil Histórico inclui um conjunto de dados [Desempenho do perfil](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) baseado em perfil e o conjunto de dados [Desempenho do servidor](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) baseado em servidor, na guia **[!UICONTROL Performance]**. Esses são os conjuntos de dados mais usados, visualizados para uma perspectiva anterior do desempenho do servidor do Data Workbench. Além disso, é possível visualizar os [Componentes](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) e [Modo de processamento](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) selecionando a guia **[!UICONTROL Up Time]**.
+O perfil Historic inclui um perfil [Desempenho do perfil](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) conjunto de dados e baseado no servidor [Desempenho do servidor](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) conjunto de dados sob o **[!UICONTROL Performance]** guia . Esses são os conjuntos de dados mais usados, visualizados para uma perspectiva anterior do desempenho do servidor do Data Workbench. Além disso, é possível visualizar o [Componentes](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) e [Modo de processamento](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) selecionando o **[!UICONTROL Up Time]** guia .
 
 ![](assets/Historic_Performance.png)
 
-Além disso, é possível visualizar os [Componentes](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) e [Modo de processamento](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) selecionando a guia **[!UICONTROL Up Time]**.
+Além disso, é possível visualizar o [Componentes](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) e [Modo de processamento](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) selecionando o **[!UICONTROL Up Time]** guia .
 
-Para obter informações de referência adicionais sobre as dimensões usadas no perfil Histórico do Data Workbench, consulte [Dimension no perfil Histórico do Insight.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
+Para obter informações de referência adicionais sobre as dimensões usadas no perfil histórico do Data Workbench, consulte [Dimension no perfil histórico do Insight.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 
 ## Espaço de trabalho Desempenho do perfil {#section-184a86f9de054970bf68515bb9dea85d}
 

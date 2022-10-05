@@ -3,7 +3,7 @@ description: O clustering do visitante permite aproveitar as características do
 title: Cluster do visitante
 uuid: 0c16aaa0-1d86-43a6-a7e2-b43b3ea80dc5
 exl-id: 68c1845d-9c49-4ad9-adf3-c123d08cf758
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Cluster do visitante{#visitor-clustering}
+
+{{eol}}
 
 O clustering do visitante permite aproveitar as características do cliente para categorizar dinamicamente os visitantes e gerar conjuntos de clusters com base em entradas de dados selecionadas, identificando grupos que têm interesses e comportamentos semelhantes para análise e direcionamento do cliente.
 
@@ -25,7 +27,7 @@ O processo de clustering requer que você identifique métricas e elementos de d
 * A média de cada um dos clusters K torna-se o novo centro.
 * O algoritmo é repetido nas etapas 2 e 3 até que a convergência seja alcançada. Isso pode levar várias passagens.
 
-O **[!UICONTROL Maximum Iterations]** no menu **[!UICONTROL Options]** permite que o analista especifique o número máximo de iterações a serem executadas pelo algoritmo de cluster. Definir essa opção pode resultar em uma conclusão mais rápida do processo de cluster com base no limite máximo de iterações em detrimento da convergência exata dos centros de cluster.
+O **[!UICONTROL Maximum Iterations]** no **[!UICONTROL Options]** permite que o analista especifique o número máximo de iterações a serem executadas pelo algoritmo de cluster. Definir essa opção pode resultar em uma conclusão mais rápida do processo de cluster com base no limite máximo de iterações em detrimento da convergência exata dos centros de cluster.
 
 >[!NOTE]
 >
@@ -34,13 +36,13 @@ O **[!UICONTROL Maximum Iterations]** no menu **[!UICONTROL Options]** permite q
 No Construtor de Cluster, você pode selecionar **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** para selecionar algoritmos ao definir clusters. Atualmente, há 3 algoritmos compatíveis:
 
 * KMeans
-* KSignifica`++`
+* KMeia`++`
 * Maximização de expectativa
 
 Há duas maneiras de executar o processo de cluster:
 
-* Método 1 - Clique em **[!UICONTROL Go]** na janela de visualização do cluster.
-* Método 2 - Clique em **[!UICONTROL Submit]** na janela de visualização do cluster, que envia diretamente o trabalho de cluster para o Servidor. Você pode acompanhar o progresso através da opção &quot;Status Detalhado para Consulta&quot;.
+* Método 1 - Clique **[!UICONTROL Go]** na janela de visualização do cluster.
+* Método 2 - Clique **[!UICONTROL Submit]** na janela de visualização do cluster, que envia diretamente o trabalho de cluster para o Servidor. Você pode acompanhar o progresso através da opção &quot;Status Detalhado para Consulta&quot;.
 
 ![](assets/dwb_visitorclustering.png)
 
@@ -51,7 +53,7 @@ O algoritmo tem as seguintes restrições:
 
 >[!NOTE]
 >
->No arquivo [!DNL DPU.cfg], o valor de &#39;Query, Memory Limit&#39; é definido como 500 MB por padrão. Esse valor deve ser aumentado ao executar vários trabalhos de cluster. Por exemplo, se você estiver executando 5 trabalhos de cluster em paralelo, aumente esse valor para 1 GB. Não há como cancelar o trabalho de cluster sem reiniciar o Servidor.
+>No [!DNL DPU.cfg] , o valor de &#39;Query, Memory Limit&#39; é definido como 500 MB por padrão. Esse valor deve ser aumentado ao executar vários trabalhos de cluster. Por exemplo, se você estiver executando 5 trabalhos de cluster em paralelo, aumente esse valor para 1 GB. Não há como cancelar o trabalho de cluster sem reiniciar o Servidor.
 
 **Recomendações**
 

@@ -3,7 +3,7 @@ description: Informações sobre como exibir dados de desempenho para uma transf
 title: Exibir dados de desempenho
 uuid: 7149c565-79a6-4e01-acae-d6eea1f5fa39
 exl-id: 665716c7-08e2-4797-9e98-7b5dba5facb5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Exibir dados de desempenho{#display-performance-data}
+
+{{eol}}
 
 Informações sobre como exibir dados de desempenho para uma transformação ou dimensão estendida.
 

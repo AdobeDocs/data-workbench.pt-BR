@@ -3,7 +3,7 @@ description: Informações sobre os códigos e formatos de Fuso Horário.
 title: Códigos e formatos de fuso horário
 uuid: 5698882a-9682-41d8-88d3-8471578a22cc
 exl-id: 2829c4ca-af6f-4ddb-acce-b33c3b552ba7
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Códigos de fuso horário{#time-zone-codes}
+
+{{eol}}
 
 Informações sobre os códigos e formatos de Fuso Horário.
 

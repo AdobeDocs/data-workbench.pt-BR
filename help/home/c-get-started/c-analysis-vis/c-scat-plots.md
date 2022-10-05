@@ -3,7 +3,7 @@ description: Os gráficos de dispersão gráfico os elementos de uma dimensão d
 title: Gráficos de dispersão 2D
 uuid: 73c23d22-3c3a-4535-b66b-0e3508bd904c
 exl-id: 340f8c18-ce47-4f3a-aba4-3d6124505313
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Gráficos de dispersão 2D{#d-scatter-plots}
+
+{{eol}}
 
 Os gráficos de dispersão gráfico os elementos de uma dimensão de dados (como Página ou Cidade) em uma grade na qual os eixos x e y representam métricas diferentes.
 
@@ -24,7 +26,7 @@ Os gráficos de dispersão também podem ser usados para mostrar a consistência
 
 ![](assets/vis_ScatterPlot_SessionDuration.png)
 
-O tamanho de cada ponto no gráfico de dispersão é determinado pela métrica de raio. A métrica de raio padrão é diferente para cada aplicativo de Adobe. Por exemplo, em [!DNL Site], a métrica de raio é baseada em Sessões por padrão. Você pode alterar a métrica de raio para que os pontos nos gráficos de dispersão representem qualquer métrica disponível. Para obter etapas para fazer isso, consulte [Alteração das métricas do Raio](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a) A cor dos pontos é baseada na legenda de cores aberta no espaço de trabalho. Para obter mais informações sobre legendas de cores, consulte [Legendas de cores](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
+O tamanho de cada ponto no gráfico de dispersão é determinado pela métrica de raio. A métrica de raio padrão é diferente para cada aplicativo de Adobe. Por exemplo, em [!DNL Site], a métrica de raio é baseada em Sessões por padrão. Você pode alterar a métrica de raio para que os pontos nos gráficos de dispersão representem qualquer métrica disponível. Para obter etapas para fazer isso, consulte [Alteração das métricas de Raio](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a) A cor dos pontos é baseada na legenda de cores aberta no espaço de trabalho. Para obter mais informações sobre legendas de cores, consulte [Legendas de cores](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
 
 ## Selecionar pontos {#section-4b4d45f39b884d54bb7407b3b2f4ea50}
 
@@ -50,7 +52,7 @@ O tamanho de cada ponto no gráfico de dispersão é determinado pela métrica d
 
 * Clique com o botão direito do mouse no rótulo da métrica que deseja alterar e clique em **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
-## Alterar métricas de raio {#section-fd80576d583c430cb469daf12e39aa2a}
+## Alteração de métricas de raio {#section-fd80576d583c430cb469daf12e39aa2a}
 
 **Alteração da métrica de raio de um gráfico de dispersão**
 

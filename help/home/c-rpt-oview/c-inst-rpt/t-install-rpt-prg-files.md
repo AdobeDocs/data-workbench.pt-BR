@@ -3,7 +3,7 @@ description: Etapas para instalar os arquivos de programa do Servidor de relató
 title: Instalar arquivos do programa de relatório
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
 exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # Instalar arquivos do programa de relatório{#installing-the-report-program-files}
+
+{{eol}}
 
 Etapas para instalar os arquivos de programa do Servidor de relatórios.
 
@@ -31,4 +33,4 @@ O Report Server é um cliente do Data Workbench Server e está licenciado para s
 1. Selecionar **[!UICONTROL Security]**.
 1. Clique em **[!UICONTROL Edit]**.
 1. Adicionar **[!UICONTROL Everyone]**.
-1. Conceda controle total para **[!UICONTROL Everyone]**.
+1. Conceder controle total para **[!UICONTROL Everyone]**.

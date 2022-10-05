@@ -3,7 +3,7 @@ description: A visualização de Funil inclui recursos para criar um funil com v
 title: Recursos do funil
 uuid: 7d2f5ff9-95d3-41f5-931c-689f140714c2
 exl-id: e78dcefe-6f92-45de-9990-0beac09ad82f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Recursos do funil{#funnel-features}
+
+{{eol}}
 
 A visualização de Funil inclui recursos para criar um funil com várias dimensões, números brutos de visitantes, porcentagem de visitantes em cada etapa e escopos separados.
 
@@ -28,7 +30,7 @@ Estes são os recursos básicos da visualização de funil.
   <tr> 
    <td colname="col01"> <img id="image_EF8AF94D833B4A249959B76F8FAF2318" src="assets/funnel_visualization_capture_2.png" /> </td> 
    <td colname="col1"> Terceiro elemento </td> 
-   <td colname="col2">Terceira etapa do funil no processo. <p><p>Observação:  Os elementos selecionados não precisam ser da mesma dimensão. </p></p></td> 
+   <td colname="col2">Terceira etapa do funil no processo. <p><p>Observação: Os elementos selecionados não precisam ser da mesma dimensão. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col01"> <img id="image_F3C5130B52234FAC9DEB50279F94FF90" src="assets/funnel_visualization_capture_3.png" /> </td> 
@@ -38,7 +40,7 @@ Estes são os recursos básicos da visualização de funil.
   <tr> 
    <td colname="col01"> <img id="image_3F030396CEB14528980F5B965113BD36" src="assets/funnel_visualization_capture_4.png" /> </td> 
    <td colname="col1"> Navegador de fallout </td> 
-   <td colname="col2">Seta de fallout. Clique com o botão direito do mouse e selecione <span class="uicontrol"> Adicionar navegador de caminho</span> para ver o que outros visitantes de caminho tomaram. </td> 
+   <td colname="col2">Seta de fallout. Clique com o botão direito do mouse e selecione <span class="uicontrol"> Adicionar navegador de caminho</span> para ver o caminho que os visitantes tomaram. </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <img id="image_0DA7567BDBDF4BEF9CA840D2F88A414E" src="assets/funnel_visualization_capture_5.png" /> </td> 
@@ -48,7 +50,7 @@ Estes são os recursos básicos da visualização de funil.
  </tbody> 
 </table>
 
-## Etapas de funil {#section-96a6732558dd4740b73541844f06d3ef}
+## Etapas do funil {#section-96a6732558dd4740b73541844f06d3ef}
 
 Os discos em um funil representam as etapas na navegação, os cones representam o fallthrough de uma etapa para a próxima e as setas representam o fallout. Clicar em um cone selecionará os usuários que passaram por ele nesse ponto e os incluirá no filtro do espaço de trabalho atual. Clicar em uma seta selecionará os visitantes que desistiram.
 
@@ -62,16 +64,16 @@ Os discos em um funil representam as etapas na navegação, os cones representam
 
    ![](assets/funnel_path_browser_9.png)
 
-* **Arraste mais elementos**. Adicione mais elementos ao funil arrastando-os e soltando-os da tabela do Dimension para o funil usando as teclas `<Ctrl>` + `<Alt>`. Você pode arrastar várias etapas ao mesmo tempo da tabela Dimension selecionando vários itens (usando `<Ctrl>` + clique) e arrastando-os para a visualização de Funil usando as teclas `<Ctrl>` + `<Alt>`.
-* **Excluir uma etapa**: Exclua elementos clicando com o botão direito do mouse na etapa da visualização e clicando em  **Sim**.
+* **Arrastar mais elementos**. Adicione mais elementos ao funil arrastando-os e soltando-os da tabela de Dimension para o funil usando o `<Ctrl>` + `<Alt>` chaves. Você pode arrastar várias etapas ao mesmo tempo da tabela de Dimension selecionando vários itens (usando `<Ctrl>` + clique) e arraste-os para a visualização de Funil usando o `<Ctrl>` + `<Alt>` chaves.
+* **Excluir uma etapa**: Exclua elementos clicando com o botão direito do mouse na etapa da visualização e clicando em **Sim**.
 
    ![](assets/funnel_path_browser_4.png)
 
 * **Reorganize as etapas que você arrastou para o funil**. Basta clicar na etapa para selecioná-la e arrastá-la para outra posição para reorganizar as etapas.
-* **Abra um navegador de caminho**. Você pode ver mais detalhes sobre onde os clientes passam ou saem do processo por meio do recurso [Adicionar um navegador de caminho](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119).
+* **Abrir um navegador de caminho**. Você pode ver mais detalhes sobre onde os clientes passam ou saem do processo através do [Adicionar um navegador de caminho](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) recurso.
 
-* **Adicione mais etapas**. É possível adicionar no máximo oito etapas a cada visualização de funil.
+* **Adicionar mais etapas**. É possível adicionar no máximo oito etapas a cada visualização de funil.
 * **Alterar a métrica**. A métrica pode ser alterada para que as etapas estejam contando visitas ou alguma outra métrica em cada etapa. As opções disponíveis variam de acordo com o conjunto de dados.
-* **Exibir em uma exibição** tabular. Clique com o botão direito do mouse no título para exibir o menu Visualização de funil e clique em **[!UICONTROL Show Tabular View]**. Na exibição em tabela, você pode selecionar **[!UICONTROL Show Graph View]** para retornar à representação gráfica do funil. Para abrir a Exibição em tabela, clique com o botão direito no título e selecione Mostrar exibição em tabela no menu.
+* **Exibir em uma exibição em tabela**. Clique com o botão direito do mouse no título para exibir o menu Visualização de funil e clique em **[!UICONTROL Show Tabular View]**. Na exibição em tabelas, é possível selecionar **[!UICONTROL Show Graph View]** para retornar à representação gráfica do funil. Para abrir a Exibição em tabela, clique com o botão direito no título e selecione Mostrar exibição em tabela no menu.
 
 * **Comparar sequências**. Uma maneira eficiente de comparar duas sequências semelhantes é exibir suas duas visualizações lado a lado. Também é possível exibir a exibição em tabela e a exibição em gráfico lado a lado usando o recurso Duplicar . Para abrir, clique com o botão direito do mouse no título e selecione Duplicate no menu.

@@ -1,48 +1,50 @@
 ---
-description: Siga estas etapas para atualizar para o Análise de big data v6.4.
-title: Atualização de 6.3 para 6.4
+description: Siga estas etapas para atualizar para o Data Workbench v6.4.
+title: Atualização da versão 6.3 para 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
-translation-type: tm+mt
-source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+exl-id: 540deb86-2463-4820-b67a-a32d68b4346e
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
+# Atualização da versão 6.3 para 6.4{#upgrading-to}
 
-# Upgrading 6.3 to 6.4{#upgrading-to}
+{{eol}}
 
-Siga estas etapas para atualizar para o Análise de big data v6.4.
+Siga estas etapas para atualizar para o Data Workbench v6.4.
 
-## Requisitos e recomendações de atualização {#section-8704a9ac358246cd81233dd0982d534f}
+## Requisitos de atualização e Recommendations {#section-8704a9ac358246cd81233dd0982d534f}
 
-Siga estes requisitos e recomendações ao atualizar para o Análise de big data 6.4.
+Siga estes requisitos e recomendações ao atualizar para a Data Workbench 6.4.
 
 >[!IMPORTANT]
 >
->É recomendável usar os arquivos de configuração padrão recém-instalados e personalizá-los, em vez de mover arquivos de uma instalação anterior — com as seguintes exceções:
+>Recomenda-se usar os arquivos de configuração padrão recém-instalados e personalizá-los, em vez de mover os arquivos de uma instalação anterior — com estas exceções:
 
-* **Adicione** processos ****** excluídos para o *MS System Center Endpoint Protection nos servidores* Windows 2012 para os seguintes executáveis:
+* **Adicionar** ***Processos excluídos*** para *Proteção do Endpoint do MS System Center em servidores Windows 2012* para os seguintes executáveis:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Isso ativará os direitos permitidos para esses executáveis de interface.
 
-* **Atualize o certificado *Trust_ca_cert.pem*nos servidores**.
-* **Reorganização de Perfis** de Atribuição.
+   Isso habilitará lista de permissões direitos de  para esses executáveis de interface.
 
-   * A pasta *Atribuição* foi renomeada para ***Atribuição - Premium*** (encontrada na instalação padrão em *Perfis*\*Atribuição - Premium*).
+* **Atualize o *Trust_ca_cert.pem* certificado nos servidores**.
+* **Reorganização de perfis de atribuição**.
 
-   * O perfil *Premium* foi removido e o espaço de trabalho foi movido para a nova pasta ***Atribuição - Premium*** .
+   * O *Atribuição* a pasta foi renomeada para ***Atribuição - Premium*** (encontrado na instalação padrão em *Perfis*\*Atribuição - Premium*).
 
-* **Atualize as configurações *de Atribuição-Premium***. Se você personalizou perfis com configurações de parâmetro que substituem o perfil padrão *Adobe SC* , é necessário atualizar os campos personalizados nesses arquivos de configuração:
+   * O *Premium* O perfil foi removido e o espaço de trabalho foi movido para o novo ***Atribuição - Premium*** pasta.
+
+* **Atualizar *Attribution-Premium* configurações**. Se você tiver personalizado perfis com configurações de parâmetro que substituem o padrão *Adobe SC* , é necessário atualizar os campos personalizados nesses arquivos de configuração:
 
    * **[!DNL Decoding Instructions.cfg]**
    * **[!DNL SC Fields.cfg]**
 
-* Devido a essa reorganização, você desejará remover as antigas pastas *Atribuição* e *Premium* da instalação do servidor.
+* Devido a essa reorganização, você desejará remover o *Atribuição* e *Premium* da instalação do servidor.
 
    **Alterar estas definições**
 
@@ -72,11 +74,11 @@ Siga estes requisitos e recomendações ao atualizar para o Análise de big data
        4 = string: Attribution - Premium\\
    ```
 
-* **Atualize os arquivos** personalizados Meta.cfg (se necessário).
+* **Atualizar arquivos Meta.cfg personalizados** (se necessário).
 
-   Os **[!DNL Meta.cfg]** arquivos em **[!DNL Base\Context and AdobeSC\Context]** pastas foram atualizados nesta versão.
+   O **[!DNL Meta.cfg]** arquivos em **[!DNL Base\Context and AdobeSC\Context]** As pastas foram atualizadas nesta versão.
 
-   Se você substituir o arquivo **meta.cfg** durante a instalação, a cópia do perfil precisará ser atualizada com esses parâmetros e o vetor **de** metadados inserido adequadamente:
+   Se você substituir o **meta.cfg** durante a instalação, a cópia do perfil precisa ser atualizada com esses parâmetros e o **vetor de metadados** devidamente inscrito:
 
    ```
    94 = meta: 
@@ -97,9 +99,9 @@ Siga estes requisitos e recomendações ao atualizar para o Análise de big data
          value = string:
    ```
 
-* **Defina permissões** do Servidor de Relatório para gerar relatórios do Microsoft Excel em servidores Windows 2012.
+* **Definir permissões do Servidor de relatórios** para gerar relatórios do Microsoft Excel nos servidores do Windows 2012.
 
-   1. Defina a permissão da pasta raiz (**[!DNL E:\ReportServer\]**) como *Todos = controle* total.
+   1. Defina a permissão da pasta raiz (**[!DNL E:\ReportServer\]**) a *Todos = controle total*.
 
    1. Crie as seguintes pastas com as permissões apropriadas:
 
@@ -112,11 +114,11 @@ Siga estes requisitos e recomendações ao atualizar para o Análise de big data
 
       >[!NOTE]
       >
-      >Se você estiver executando o Servidor de relatórios no Windows Server 2012, precisará ter o Windows Server 2012 R2 instalado.
+      >Se você estiver executando o Report Server no Windows Server 2012, precisará ter o Windows Server 2012 R2 instalado.
 
-   1. Atribua &quot;SYSTEM&quot; como proprietário para estas pastas.
+   1. Atribua &quot;SYSTEM&quot; como proprietário para essas pastas.
 
-* **Adicionar fontes ao Servidor de relatórios.** No arquivo **[!DNL ReportServer.cfg]**s, adicione estas fontes (para todos os idiomas):
+* **Adicionar fontes ao servidor de relatórios.** No **[!DNL ReportServer.cfg]**arquivo, adicione essas fontes (para todos os idiomas):
 
    ```
    Fonts = vector: 3 items 
@@ -127,28 +129,28 @@ Siga estes requisitos e recomendações ao atualizar para o Análise de big data
 
 * **Atualize sua versão do Microsoft Excel ** (se necessário).
 
-   Com o lançamento do Análise de big data 6.4, o suporte ao Excel 2007 foi descontinuado. Além disso, como o Análise de big data só é executado no Microsoft Windows para a arquitetura de 64 bits, recomenda-se instalar uma versão de 64 bits do Microsoft Excel.
+   Com o lançamento do Data Workbench 6.4, o suporte para Excel 2007 foi descontinuado. Além disso, como o Data Workbench só é executado no Microsoft Windows para arquitetura de 64 bits, é recomendável também instalar uma versão de 64 bits do Microsoft Excel.
 
-* **Arquitetura** de 64 bits necessária para a instalação da Workstation (Cliente).
-* **Execute o Assistente** de configuração da estação de trabalho.
+* **Arquitetura de 64 bits** necessário para a instalação da estação de trabalho (cliente).
+* **Execute o Assistente de configuração da estação de trabalho**.
 
-   Instale a nova versão da estação de trabalho (cliente) baixando e iniciando o ***InsightSetup.exe*** e seguindo as instruções de configuração. Por padrão, o assistente de instalação instalará seus arquivos em um novo local:
+   Instale a nova versão da estação de trabalho (cliente) baixando e iniciando ***InsightSetup.exe*** e seguindo as instruções de configuração. Por padrão, o assistente de configuração instalará seus arquivos em um novo local:
 
-   Os arquivos de Programa agora são salvos por padrão em:
+   Os arquivos de programa agora são salvos por padrão em:
 
    ```
    C:\Program Files\Adobe\Adobe Analytics\Data Workbench
    ```
 
-   Os arquivos de dados (perfis, certificados, registros de rastreamento e arquivos de usuário) agora são salvos por padrão para:
+   Os arquivos de dados (perfis, certificados, logs de rastreamento e arquivos de usuário) agora são salvos por padrão em:
 
    ```
    C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
    ```
 
-* **Adicione fontes à estação de trabalho**.
+* **Adicionar fontes à estação de trabalho**.
 
-   No **[!DNL Insight.cfg]** arquivo, adicione essas fontes (para todos os idiomas):
+   No **[!DNL Insight.cfg]** , adicione essas fontes (para todos os idiomas):
 
    ```
    Fonts = vector: 3 items 
@@ -156,4 +158,3 @@ Siga estes requisitos e recomendações ao atualizar para o Análise de big data
      1 = string: SimSun 
      2 = string: MS Mincho
    ```
-

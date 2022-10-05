@@ -3,7 +3,7 @@ description: Árvores de decisão são uma visualização de análise preditiva 
 title: Construtor de árvore de decisão
 uuid: 1f7e91ea-e5d9-4d8e-9fcf-cae4de42dfdd
 exl-id: d93e6a34-be59-4af5-84c3-c13deb98b57b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 23%
@@ -11,6 +11,8 @@ ht-degree: 23%
 ---
 
 # Construtor de árvore de decisão{#decision-tree-builder}
+
+{{eol}}
 
 Árvores de decisão são uma visualização de análise preditiva usada para avaliar as características e os relacionamentos do visitante. O Construtor de árvore de decisão gera uma visualização da árvore com base em um caso positivo e um conjunto de entradas especificados.
 
@@ -32,7 +34,7 @@ Usar árvores de decisão para
 <table id="table_FCC5D63EF8A843D79B2338BD951025EA"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>Barra de ferramentas e menus</b> </p> <p>A barra de ferramentas inclui botões e comandos de menu para a Árvore de decisão, incluindo recursos para definir o Caso positivo e adicionar Listagens de entrada. </p> <p>Como outras visualizações, a caixa <span class="uicontrol"> Elemento</span> permite arrastar e soltar Dimension e Elementos, embora você também possa arrastar diretamente do painel Localizadores. </p> <p>Para obter mais informações, consulte <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> Opções da árvore de decisão</a>. </p> </td> 
+   <td colname="col1"> <p><b>Barra de ferramentas e menus</b> </p> <p>A barra de ferramentas inclui botões e comandos de menu para a Árvore de decisão, incluindo recursos para definir o Caso positivo e adicionar Listagens de entrada. </p> <p>Como outras visualizações, a variável <span class="uicontrol"> Elemento</span> permite arrastar e soltar Dimension e Elementos, embora também possa arrastar diretamente do painel Localizadores. </p> <p>Para obter mais informações, consulte <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> Opções de árvore de decisão</a>. </p> </td> 
    <td colname="col2"> <p><b>Listagem de entrada</b> </p> <p>Essa área exibe as entradas no modelo de árvore. Eles são codificados por cores para corresponder nós na área Exibição em árvore. </p> <p>Clicar com o botão direito do mouse em uma entrada permite remover a entrada do modelo e redefinir. </p> <p>Se você passar o mouse sobre um nó de árvore, ele exibirá as condições de divisão ao longo da ramificação para esse nó e a previsão nesse nó com seu valor de confiança. </p> </td> 
    <td colname="col3"> <p><b>Exibição em árvore</b> </p> <p>Essa área exibe o modelo de árvore com nós de folha codificados por cores com base em sua previsão: verde para uma previsão True do Caso Positivo e vermelho para uma previsão False. </p> <p>Os nós divididos são codificados por cores para as entradas que correspondem à condição de seleção. Passar o mouse sobre um nó exibe informações sobre a divisão e expande a listagem de entradas para exibir os pontos divididos na ramificação e a distribuição do conjunto de treinamento. </p> <p>Os nós abaixo de um limite não são exibidos por padrão. Clique em um nó expansível (indicado por um símbolo +) para explorar uma ramificação. Clique no nó raiz para retornar à exibição em árvore completa. </p> </td> 
   </tr> 

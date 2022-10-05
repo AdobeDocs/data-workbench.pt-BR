@@ -3,7 +3,7 @@ description: Os cálculos estatísticos da Pontuação de propensão são defini
 title: Calcular a pontuação de propensão
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
 exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Calcular a pontuação de propensão{#calculating-propensity-scoring}
 
+{{eol}}
+
 Os cálculos estatísticos da Pontuação de propensão são definidos.
 
 Conceitualmente, a pontuação calculada para cada visitante é uma probabilidade estimada de que o evento especificado (definido pelo filtro de direcionamento) possa ocorrer, resultando em um intervalo de valor de pontuação de 0 a 100%. O procedimento de pontuação usa amostras existentes como dados de treinamento para encontrar a relação entre a probabilidade do evento e as variáveis de interesse independentes selecionadas.
 
-Matematicamente, essas relações são refletidas em cada valor quantitativo associado a cada variável independente. Esses valores são chamados de coeficientes de modelo. Atualmente, o ScoreDim usa o algoritmo IRLS (Least Squares) com Reponderação Iterativa para estimar os coeficientes do modelo. O IRLS atravessa as amostras várias vezes até que a diferença de coeficientes entre a passagem atual e a passagem anterior seja inferior a 1.0e-6, altura em que é chamado **converged**. No entanto, dependendo dos dados, as IRLS poderão não conseguir alcançar a convergência.
+Matematicamente, essas relações são refletidas em cada valor quantitativo associado a cada variável independente. Esses valores são chamados de coeficientes de modelo. Atualmente, o ScoreDim usa o algoritmo IRLS (Least Squares) com Reponderação Iterativa para estimar os coeficientes do modelo. O IRLS atravessa as amostras várias vezes até que a diferença de coeficientes entre a passagem atual e a passagem anterior seja inferior a 1,0e-6, ponto em que é chamado **converged**. No entanto, dependendo dos dados, as IRLS poderão não conseguir alcançar a convergência.
 
 Nesse caso, a iteração de treinamento do modelo terminará quando
 

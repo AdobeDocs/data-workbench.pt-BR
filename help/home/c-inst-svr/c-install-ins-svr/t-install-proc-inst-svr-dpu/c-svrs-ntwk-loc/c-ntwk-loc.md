@@ -1,9 +1,9 @@
 ---
-description: Conceitualmente, o arquivo de endereço tem a mesma finalidade que o arquivo ETC&bsol;HOSTS em uma máquina em rede.
+description: Conceitualmente, o arquivo de endereço tem a mesma finalidade do arquivo ETC&bsol;HOSTS em uma máquina em rede.
 title: Locais de rede
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # Locais de rede{#network-locations}
 
-Conceitualmente, o arquivo de endereço tem a mesma finalidade que o arquivo ETC&amp;bsol;HOSTS em uma máquina em rede.
+{{eol}}
+
+Conceitualmente, o arquivo de endereço tem a mesma finalidade do arquivo ETC&amp;bsol;HOSTS em uma máquina em rede.
 
 No entanto, ao contrário do arquivo HOSTS, que descreve uma única coleção de nomes, o arquivo de endereço contém várias coleções de nomes chamadas locais de rede.
 
 Um local de rede é uma coleção nomeada de definições de endereço. Cada definição de endereço na coleção associa um nome comum a um endereço IP.
 
-No arquivo de endereço, um local de rede é definido em uma estrutura chamada NetworkLocation. O NetworkLocation no exemplo a seguir define um local de rede chamado &quot;MyCorporate Intranet&quot;. Ele contém uma definição de endereço que mapeia o nome comum [!DNL VS01.myCompany.com] para o endereço IP &quot;10.2.1.70&quot;.
+No arquivo de endereço, um local de rede é definido em uma estrutura chamada NetworkLocation. O NetworkLocation no exemplo a seguir define um local de rede chamado &quot;MyCorporate Intranet&quot;. Ele contém uma definição de endereço que mapeia o nome comum [!DNL VS01.myCompany.com] ao endereço IP &quot;10.2.1.70&quot;.
 
 ```
 0 = NetworkLocation: 

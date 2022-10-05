@@ -3,7 +3,7 @@ description: O menu Controles da janela permite que você controle uma janela in
 title: Menu de controles da janela
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
 exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Menu de controles da janela{#window-controls-menu}
+
+{{eol}}
 
 O menu Controles da janela permite que você controle uma janela individual.
 
@@ -34,19 +36,19 @@ Essas opções de menu variam por tipo de janela. A tabela no procedimento a seg
   </tr> 
   <tr> 
    <td colname="col1"> Salvar </td> 
-   <td colname="col2">Salva a visualização (como um arquivo <span class="filepath"> .vw</span>) em seu estado atual. A caixa de diálogo exibida permite salvar a visualização usando um nome diferente ou em um local diferente. O local padrão é a pasta User\<i>profile name</i>\Work no diretório de instalação do Data Workbench. </td> 
+   <td colname="col2">Salva a visualização (como uma <span class="filepath"> .vw</span> ) em seu estado atual. A caixa de diálogo exibida permite salvar a visualização usando um nome diferente ou em um local diferente. O local padrão é Usuário\<i>nome do perfil</i>\Pasta de trabalho no diretório de instalação do Data Workbench. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Exibir como </td> 
-   <td colname="col2">(Disponível somente para tabelas.) Exibe os dados em uma tabela como números, barras ou ambos ao mesmo tempo. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md#concept-c515caeefce9495f88873a10dc112770"> Alterando a exibição da tabela</a>. </td> 
+   <td colname="col2">(Disponível somente para tabelas.) Exibe os dados em uma tabela como números, barras ou ambos ao mesmo tempo. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md#concept-c515caeefce9495f88873a10dc112770"> Alterar a exibição da tabela</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Exibir </td> 
-   <td colname="col2">(Disponível somente para gráficos.) Exibe os dados em um gráfico como linhas ou barras. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-graphs/c-chg-graph-disp.md#concept-eaba669d90f64cfa872f1397205fe2f7"> Alterando a exibição do gráfico</a>. </td> 
+   <td colname="col2">(Disponível somente para gráficos.) Exibe os dados em um gráfico como linhas ou barras. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-graphs/c-chg-graph-disp.md#concept-eaba669d90f64cfa872f1397205fe2f7"> Alterar a exibição do gráfico</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ajustar à Janela </td> 
-   <td colname="col2">Permite que o conteúdo da janela expanda ou diminua automaticamente para ajustar a janela sempre que você redimensioná-la. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> Trabalhando com anotações de imagem</a> e <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> Ajustando dados à janela</a>. </td> 
+   <td colname="col2">Permite que o conteúdo da janela expanda ou diminua automaticamente para ajustar a janela sempre que você redimensioná-la. Consulte <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> Trabalhar com anotações de imagem</a> e <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> Ajustando dados à janela</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ordem </td> 
@@ -59,7 +61,7 @@ Essas opções de menu variam por tipo de janela. A tabela no procedimento a seg
   </tr> 
   <tr> 
    <td colname="col1"> Copiar </td> 
-   <td colname="col2">Copia janelas individuais para a área de transferência para uso em aplicativos de terceiros. Depois de copiar uma janela para a área de transferência, ela pode ser colada em aplicativos comuns do Office, incluindo Microsoft Word, Microsoft PowerPoint ou uma mensagem de email do Microsoft Outlook. Para copiar uma janela, clique com o botão direito do mouse na borda superior, clique em <span class="uicontrol"> Copiar</span> e clique na opção apropriada: 
+   <td colname="col2">Copia janelas individuais para a área de transferência para uso em aplicativos de terceiros. Depois de copiar uma janela para a área de transferência, ela pode ser colada em aplicativos comuns do Office, incluindo Microsoft Word, Microsoft PowerPoint ou uma mensagem de email do Microsoft Outlook. Para copiar uma janela, clique com o botão direito do mouse na borda superior e clique em <span class="uicontrol"> Copiar</span>e clique na opção apropriada: 
     <ul id="ul_ECCD6A70729E40998C64714E01504995"> 
      <li id="li_21D375DAE7BC4F449C8A3225296A6D26">O plano de fundo preto copia o espaço de trabalho como exibido. </li> 
      <li id="li_1B08C688678F42948E0952EEE0BF2B30">O plano de fundo branco copia os elementos do espaço de trabalho em cores e os exibe em um plano de fundo branco. </li> 

@@ -3,7 +3,7 @@ description: Se não quiser herdar um arquivo de configuração de um perfil int
 title: Ocultar arquivos de configuração do conjunto de dados
 uuid: eb33cf54-e067-4af2-a10e-7ffe43910e4f
 exl-id: 327847d1-421a-4ed1-9a5f-2491765a34bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Ocultar arquivos de configuração do conjunto de dados{#hiding-dataset-configuration-files}
+
+{{eol}}
 
 Se não quiser herdar um arquivo de configuração de um perfil interno ou de outro perfil herdado (ou seja, se quiser que as instruções no arquivo sejam ignoradas durante a construção do conjunto de dados), mas não quiser modificar o arquivo, crie um arquivo vazio (byte zero) com o mesmo nome e armazene o arquivo em outro perfil.
 
@@ -32,4 +34,4 @@ Ao reprocessar seu conjunto de dados, o conjunto de dados não contém os compon
 >
 >Se um arquivo de configuração de byte zero definir uma dimensão estendida usada em uma visualização ou definição de métrica, o Data Workbench produzirá um erro para essa visualização ou métrica, respectivamente.
 
-Também é possível usar arquivos de bytes zero para mover uma métrica, dimensão ou filtro para outro local no perfil ou para ocultar itens de menu. Para obter informações, consulte o *Guia do Usuário do Data Workbench*.
+Também é possível usar arquivos de bytes zero para mover uma métrica, dimensão ou filtro para outro local no perfil ou para ocultar itens de menu. Para obter informações, consulte o *Guia do usuário do Data Workbench*.

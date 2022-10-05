@@ -3,7 +3,7 @@ description: Selecione variáveis de entrada, o número de clusters e um públic
 title: Criar clusters
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
 exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -12,29 +12,31 @@ ht-degree: 1%
 
 # Criar clusters{#building-clusters}
 
+{{eol}}
+
 Selecione variáveis de entrada, o número de clusters e um público-alvo (se desejado) para definir clusters em seu conjunto de dados.
 
 **Criar clusters**
 
 1. Abra o **[!UICONTROL Cluster Builder]**.
 
-   Clique em **Visualização** > **Análise preditiva** > **Clustering** > **Cluster Builder**.
+   Clique em **Visualização** > **Análise preditiva** > **Geração de cluster** > **Cluster Builder**.
 
    ![](assets/cluster-builder-step1.png)
 
 1. Selecione as variáveis de entrada.
 
-   * Adicione métricas à lista **[!UICONTROL Input Variables]** selecionando no menu **[!UICONTROL Metric]** na barra de ferramentas.
+   * Adicionar métricas ao **[!UICONTROL Input Variables]** ao selecionar na **[!UICONTROL Metric]** na barra de ferramentas.
 
       ![](assets/cluster_metric_select.png)
 
-   * Adicione elementos de dimensão à lista **[!UICONTROL Input Variables]** arrastando-os de uma tabela do Dimension.
+   * Adicionar elementos de dimensão à **[!UICONTROL Input Variables]** arrastando-os de uma tabela do Dimension.
 
-      Pressione **[!UICONTROL Ctrl + Alt]** e arraste os elementos de dimensão selecionados para a lista **[!UICONTROL Input Variables]** ou para a caixa **[!UICONTROL Element]** na barra de ferramentas.
+      Press **[!UICONTROL Ctrl + Alt]** e arraste os elementos de dimensão selecionados para a **[!UICONTROL Input Variables]** ou à **[!UICONTROL Element]** na barra de ferramentas.
 
       ![](assets/cluster_dim_select.png)
-   Por padrão, o clustering é executado em todo o conjunto de dados. Você pode ver todas as variáveis de entrada no painel esquerdo **[!UICONTROL Preprocessing]**.
-1. Use o menu **[!UICONTROL Options]** para selecionar o número desejado de clusters.
+   Por padrão, o clustering é executado em todo o conjunto de dados. Você pode ver todas as variáveis de entrada à esquerda **[!UICONTROL Preprocessing]** painel.
+1. Use o **[!UICONTROL Options]** para selecionar o número desejado de clusters.
 
    ![](assets/build_cluster_2.png)
 
@@ -42,11 +44,11 @@ Selecione variáveis de entrada, o número de clusters e um público-alvo (se de
 
    ![](assets/build_cluster_3.png)
 
-   Comece definindo o subconjunto desejado usando seleções no Workspace ou usando o **[!UICONTROL Filter Editor]**. Depois de selecionar o subconjunto desejado, defina o Público alvo no menu **[!UICONTROL Options]** . É recomendável que você dê um nome de identificação ao grupo alvo.
+   Comece definindo o subconjunto desejado usando as seleções no Workspace ou usando o **[!UICONTROL Filter Editor]**. Após selecionar o subconjunto desejado, defina o Público alvo na variável **[!UICONTROL Options]** menu. É recomendável que você dê um nome de identificação ao grupo alvo.
 
-   O menu **[!UICONTROL Options]** também tem configurações para controlar o número máximo de passagens e o limite aceitável para convergência central.
+   O **[!UICONTROL Options]** O menu também tem configurações para controlar o número máximo de passagens e o limite aceitável para convergência central.
 
-1. Depois que as entradas e opções tiverem sido configuradas, clique no botão **Ir** para executar o clustering localmente ou pressione **[!UICONTROL Submit]** para enviar a tarefa para o Servidor Preditivo do Analytics. Os envios para o servidor salvarão a dimensão resultante no conjunto de dados quando a convergência for concluída.
+1. Após configurar as entradas e opções, clique no botão **Ir** para executar o clustering localmente ou pressione **[!UICONTROL Submit]** para enviar a tarefa para o Servidor preditivo do Analytics. Os envios para o servidor salvarão a dimensão resultante no conjunto de dados quando a convergência for concluída.
 
    Ao executar localmente, você verá o Construtor de Cluster mover-se por quatro estágios de clustering de cópia, pois ele define os centros inteligentes com base nas entradas.
 
@@ -62,7 +64,7 @@ Selecione variáveis de entrada, o número de clusters e um público-alvo (se de
 
    >[!NOTE]
    >
-   >Se você adicionar ou remover entradas durante a convergência, o processo será pausado até pressionar **Go** novamente.
+   >Se você adicionar ou remover entradas durante a convergência, o processo será pausado até que você pressione **Ir** novamente.
 
    Depois de criar grupos, você pode abrir o seletor de cores para atribuir cores a diferentes resultados de distribuição.
 
@@ -72,10 +74,10 @@ Selecione variáveis de entrada, o número de clusters e um público-alvo (se de
 
    ![](assets/build_cluster_6.png)
 
-1. Se quiser usar essa dimensão de cluster em outras visualizações, poderá **[!UICONTROL Save]** localmente ou **[!UICONTROL Submit]** no servidor.
+1. Se quiser usar essa dimensão de cluster em outras visualizações, é possível **[!UICONTROL Save]** no local ou **[!UICONTROL Submit]** para o servidor.
 
 Se você quiser executar a convergência novamente ou ver a relevância das entradas, o Construtor de Cluster também poderá carregar as dimensões do cluster existente.
 
 >[!TIP]
 >
->Quando selecionado, **[!UICONTROL Reset]** liberará completamente todas as variáveis de entrada e fornecerá uma visualização em branco do construtor de cluster para definir novos clusters.
+>Quando selecionado, **[!UICONTROL Reset]** liberará todas as variáveis de entrada e fornecerá uma visualização em branco do construtor de cluster para definir novos clusters.

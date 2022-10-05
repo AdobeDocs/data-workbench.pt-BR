@@ -3,7 +3,7 @@ description: Informações sobre a avaliação e o monitoramento da carga do esp
 title: Monitorar uso de memória
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # Monitorar uso de memória{#monitoring-memory-usage}
 
+{{eol}}
+
 Informações sobre a avaliação e o monitoramento da carga do espaço de endereços.
 
 **Monitorando a carga do espaço de endereço**
 
-**Frequência recomendada:** diariamente
+**Frequência recomendada:** Diariamente
 
-A carga do Espaço de Endereço é uma medida da fração do Espaço de Endereço máximo que um [!DNL Insight Server] configurado corretamente usa. Mesmo que os parâmetros de configuração sejam alterados para reduzir o uso de memória, geralmente não diminui até que o serviço [!DNL Insight Server] seja reiniciado.
+A carga do Espaço de Endereço é uma medida da fração do Espaço de Endereço máximo que é corretamente configurada [!DNL Insight Server] O usa o . Mesmo que os parâmetros de configuração sejam alterados para reduzir o uso da memória, geralmente não diminui até que o valor de [!DNL Insight Server] O serviço é reiniciado.
 
 Uma margem de segurança é incorporada no máximo de carga do Espaço de Endereço para levar em conta aumentos inesperados na utilização do Espaço de Endereço. Nunca se deve reduzir deliberadamente a esta margem de segurança. Ele existe para situações de emergência e não para o suporte de funcionalidade adicionada ao seu aplicativo Adobe.
 
@@ -26,7 +28,7 @@ Uma margem de segurança é incorporada no máximo de carga do Espaço de Endere
 >
 >Para disponibilizar mais Espaço de endereço e evitar erros de esgotamento de memória, verifique se o seu sistema operacional tem o Switch /3GB ativado e se o Heap de baixa fragmentação está funcionando.
 
-Erros registrados no log de dados do evento [!DNL Insight Server] podem fornecer uma pista de que os problemas estão sendo desenvolvidos com o carregamento do Espaço de endereço:
+Erros registrados no [!DNL Insight Server] o registro de dados do evento pode fornecer uma pista de que os problemas estão sendo desenvolvidos com o carregamento do Espaço de endereço:
 
 * Os erros &quot;O bloco de bytes X solicitado é muito grande&quot; indicam que algo pode estar tendo um impacto excessivo na carga do Espaço de Endereços, no desempenho e na largura de banda da rede. Esses blocos grandes podem contribuir muito para o uso do Espaço de Endereços, usando muita memória e exigindo grandes blocos contíguos de Espaço de Endereços.
 
@@ -39,13 +41,13 @@ Erros registrados no log de dados do evento [!DNL Insight Server] podem fornecer
 
 **Para avaliar a carga do espaço de endereço**
 
-Para avaliar com precisão a carga do Espaço de Endereço do seu sistema, o Adobe recomenda o reprocessamento do conjunto de dados, realizando algumas consultas normais sem reiniciar [!DNL Insight Server] posteriormente e visualizando a carga medida do Espaço de Endereço seguindo essas etapas.
+Para avaliar com precisão a carga do Espaço de endereço para seu sistema, o Adobe recomenda o reprocessamento do conjunto de dados, realizando algumas consultas normais sem reiniciar subsequentemente [!DNL Insight Server]e, em seguida, visualizando a carga medida do Espaço de endereço seguindo essas etapas.
 
-Se um [!DNL Insight Server] não tiver sido reprocessado e consultado significativamente desde a última reinicialização, você não deve tirar conclusões do carregamento do Espaço de endereço.
+Se uma [!DNL Insight Server] não tiver sido reprocessado e consultado significativamente desde que foi reiniciado pela última vez, você não deve tirar conclusões da carga do Espaço de Endereço.
 
-1. Em [!DNL Insight], na guia [!DNL Admin] > [!DNL Dataset and Profile], clique na miniatura **[!UICONTROL Servers Manager]** para abrir o espaço de trabalho do Gerenciador de Servidores.
-1. Clique com o botão direito do mouse no ícone do [!DNL Insight Server] que deseja configurar e clique em **[!UICONTROL Detailed Status]**.
-1. Na interface de Status detalhado, clique em **[!UICONTROL Memory Status]** para exibir seu conteúdo. No parâmetro Carregamento do Espaço de Endereços, você pode ver a carga do Espaço de Endereços expressa como uma porcentagem e uma descrição parênteses indicando o status.
+1. Em [!DNL Insight], no [!DNL Admin] > [!DNL Dataset and Profile] clique no botão **[!UICONTROL Servers Manager]** miniatura para abrir o espaço de trabalho do Gerenciador de Servidores.
+1. Clique com o botão direito do mouse no ícone do [!DNL Insight Server] você deseja configurar e clicar em **[!UICONTROL Detailed Status]**.
+1. Na interface de Status detalhado, clique em **[!UICONTROL Memory Status]** para visualizar seu conteúdo. No parâmetro Carregamento do Espaço de Endereços, você pode ver a carga do Espaço de Endereços expressa como uma porcentagem e uma descrição parênteses indicando o status.
 
    A tabela a seguir apresenta intervalos e status para a carga do Espaço de Endereço. Uma ação recomendada é listada para cada intervalo.
 

@@ -3,7 +3,7 @@ description: Sempre que for possível inserir texto em uma janela, é possível 
 title: Trabalhar com texto em janelas
 uuid: c0766fe3-3433-4409-bfae-325ec2f4c5ef
 exl-id: f786014d-c784-44f8-a399-f1d58bbb5f3d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Trabalhar com texto em janelas{#work-with-text-in-windows}
+
+{{eol}}
 
 Sempre que for possível inserir texto em uma janela, é possível executar muitas das funções que podem ser executadas em qualquer editor de texto, como o Bloco de notas ou o Microsoft Word.
 

@@ -3,7 +3,7 @@ description: Crie Dimension definidos por atributos de métrica (Dims de métric
 title: Assistente de atenuação de métrica (Dimension)
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Assistente de atenuação de métrica{#metric-dim-wizard}
+
+{{eol}}
 
 Crie Dimension definidos por atributos de métrica (Dims de métrica) usando um assistente passo a passo. Em seguida, teste, visualize e salve a nova atenuação de métrica na sua lista de Dimension.
 

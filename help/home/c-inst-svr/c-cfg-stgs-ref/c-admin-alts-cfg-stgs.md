@@ -3,7 +3,7 @@ description: Instruções para configurar alertas administrativos para Servidor 
 title: Configurações de alertas administrativos
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
 exl-id: c75e442e-33e6-4fc8-8368-29482f09e1cc
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Configurações de alertas administrativos{#administrative-alerts-configuration-settings}
+
+{{eol}}
 
 Instruções para configurar alertas administrativos para Servidor Insight, Repetidor ou Transformar.
 
@@ -32,11 +34,11 @@ Complete os parâmetros no seguinte arquivo:
   </tr> 
   <tr> 
    <td colname="col1"> Categorias de erros </td> 
-   <td colname="col2"> Permite categorizar os erros junto com o Arquivo de Categorização de erros. Cada Categoria de Erro pode ter seu próprio conjunto de Recipients e seu próprio Atraso de Controle. Por exemplo, você pode criar uma categoria Crítica com um atraso de aceleração de 0, para que cada erro crítico seja enviado por email imediatamente para os recipients especificados na lista Recipients. Erros que não correspondem a uma substring no Arquivo de Categorização de Erro são atribuídos à categoria Padrão. Para adicionar uma nova categoria, clique com o botão direito do mouse em um número e clique em <span class="uicontrol"> Adicionar Novo </span> &gt; <span class="uicontrol"> Categoria de Erro </span>. Também é possível copiá-los ou removê-los usando a ação de clique com o botão direito do mouse. </td> 
+   <td colname="col2"> Permite categorizar os erros junto com o Arquivo de Categorização de erros. Cada Categoria de Erro pode ter seu próprio conjunto de Recipients e seu próprio Atraso de Controle. Por exemplo, você pode criar uma categoria Crítica com um atraso de aceleração de 0, para que cada erro crítico seja enviado por email imediatamente para os recipients especificados na lista Recipients. Erros que não correspondem a uma substring no Arquivo de Categorização de Erro são atribuídos à categoria Padrão. Para adicionar uma nova categoria, clique com o botão direito do mouse em um número e clique em <span class="uicontrol"> Adicionar novo </span> &gt; <span class="uicontrol"> Categoria de erro </span>. Também é possível copiá-los ou removê-los usando a ação de clique com o botão direito do mouse. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Arquivo de Categorização de Erro </td> 
-   <td colname="col2"> <p>O nome do arquivo que deseja usar para categorizar cada alerta. Crie este arquivo usando o Bloco de notas. Esse arquivo deve ter três colunas em cada linha, separadas por guias. A primeira coluna é uma string que deve corresponder a erros. Um sinal ^ corresponde ao início e um $ corresponde ao final da string; todos os outros caracteres são correspondidos literalmente. A segunda coluna é uma categoria para erros que correspondem, que está em Categorias de erro. O terceiro é uma mensagem alternativa, que é anexada à mensagem de erro real em emails enviados. Se nenhum arquivo for especificado, todos os erros serão categorizados como Padrão. </p> <p>Para ver um exemplo desse arquivo, consulte o arquivo <span class="filepath"> Error Categories.txt </span> no diretório Lookups . </p> </td> 
+   <td colname="col2"> <p>O nome do arquivo que deseja usar para categorizar cada alerta. Crie este arquivo usando o Bloco de notas. Esse arquivo deve ter três colunas em cada linha, separadas por guias. A primeira coluna é uma string que deve corresponder a erros. Um sinal ^ corresponde ao início e um $ corresponde ao final da string; todos os outros caracteres são correspondidos literalmente. A segunda coluna é uma categoria para erros que correspondem, que está em Categorias de erro. O terceiro é uma mensagem alternativa, que é anexada à mensagem de erro real em emails enviados. Se nenhum arquivo for especificado, todos os erros serão categorizados como Padrão. </p> <p>Para ver um exemplo desse arquivo, consulte <span class="filepath"> Categorias de erro.txt </span> no diretório Lookups. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> De </td> 
@@ -48,7 +50,7 @@ Complete os parâmetros no seguinte arquivo:
   </tr> 
   <tr> 
    <td colname="col1"> Tempo limite do alerta do sensor (min) </td> 
-   <td colname="col2"> <p>O servidor gera um alerta de email quando não recebeu dados de um Sensor <span class="wintitle"> previamente conectado </span> configurado nessa janela de tempo. O valor padrão é 15. </p> <p> <p>Observação:  <span class="wintitle"> Tempo limite de alerta do sensor </span> funciona somente se uma conexão existente com um <span class="wintitle"> Sensor </span> for removida. Se o serviço do servidor for interrompido e reiniciado e os <span class="wintitle"> Sensores </span> não se conectarem, o servidor não gerará alertas de email. </p> </p> </td> 
+   <td colname="col2"> <p>O servidor gera um alerta de email quando não recebeu dados de um <span class="wintitle"> Sensor </span> dentro dessa janela de tempo. O valor padrão é 15. </p> <p> <p>Observação:  <span class="wintitle"> Sensor </span> O Tempo limite do alerta funciona somente se uma conexão existente com um <span class="wintitle"> Sensor </span> é solto. Se o serviço do servidor for interrompido e reiniciado e a variável <span class="wintitle"> Sensores </span> não se conectar, o servidor não gera alertas de email. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Endereço do servidor </td> 

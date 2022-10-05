@@ -3,7 +3,7 @@ description: Informações sobre as várias visualizações de análise disponí
 title: Visualizações de análise
 uuid: db003afa-b971-4510-b762-3ef9b29e0910
 exl-id: a455d3cc-8133-4a08-9656-91332765c6c3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Visualizações de análise{#analysis-visualizations}
+
+{{eol}}
 
 Informações sobre as várias visualizações de análise disponíveis no Data Workbench.
 

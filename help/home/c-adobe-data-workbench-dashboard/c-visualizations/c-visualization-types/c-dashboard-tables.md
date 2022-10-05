@@ -3,7 +3,7 @@ description: Tabelas
 title: Tabelas do painel
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Tabelas{#tables}
+
+{{eol}}
 
 As tabelas são as visualizações orientadas por detalhes mais disponíveis no aplicativo do painel. As tabelas permitem visualizar dados de métrica e dimensão com cada elemento de dados representado como uma linha em uma tabela. Uma coluna contém os valores de dimensão, enquanto as outras colunas contêm os valores de métrica correspondentes. Várias métricas podem ser exibidas e não há restrição no número de valores de dimensão que podem ser exibidos em uma tabela. Todos os valores de uma dimensão selecionada que existem nos dados do Data Workbench serão exibidos na tabela.
 

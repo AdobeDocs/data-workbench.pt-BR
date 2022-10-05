@@ -3,7 +3,7 @@ description: Você pode criar um navegador de caminho a partir de um gráfico, t
 title: Criar navegadores de caminho
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
 exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Criar navegadores de caminho{#creating-path-browsers}
+
+{{eol}}
 
 Você pode criar um navegador de caminho a partir de um gráfico, tabela ou mapa de processos.
 
@@ -22,7 +24,7 @@ Você pode criar um navegador de caminho a partir de um gráfico, tabela ou mapa
 
 >[!NOTE]
 >
->Arrastar um elemento para um navegador de caminho pode alterar a dimensão base associada ao navegador de caminho, mas não altera a dimensão de nível, a dimensão de grupo ou a métrica. Portanto, você deve ter cuidado ao escolher uma dimensão base que faça sentido quando usada com a dimensão de nível do navegador de caminho, dimensão de grupo e métrica. Para alterar a dimensão do nível, a dimensão do grupo ou a métrica, você deve editar o arquivo [!DNL *.vw] do navegador de caminho em um editor de texto como o Bloco de notas. Consulte [Configuração de navegadores de caminho](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+>Arrastar um elemento para um navegador de caminho pode alterar a dimensão base associada ao navegador de caminho, mas não altera a dimensão de nível, a dimensão de grupo ou a métrica. Portanto, você deve ter cuidado ao escolher uma dimensão base que faça sentido quando usada com a dimensão de nível do navegador de caminho, dimensão de grupo e métrica. Para alterar a dimensão do nível, a dimensão do grupo ou a métrica, você deve editar o navegador de caminho [!DNL *.vw] em um editor de texto, como o Bloco de notas. Consulte [Configuração de navegadores de caminho](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
 
 **Para criar um navegador de caminho a partir de um mapa de processos**
 
@@ -30,7 +32,7 @@ Você pode criar um navegador de caminho a partir de um gráfico, tabela ou mapa
 >
 >Um navegador de caminho criado a partir de um mapa de processos exibe apenas os elementos mostrados no mapa de processos. Outros elementos da dimensão base não são exibidos.
 
-1. Criar um mapa de processos. Consulte [Criando Mapas de Processos](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md#concept-daf5b14dae7a442191611b1b9c1122bf).
+1. Criar um mapa de processos. Consulte [Criação de mapas de processos](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md#concept-daf5b14dae7a442191611b1b9c1122bf).
 1. Arraste o elemento desejado do mapa de processos para o navegador de caminhos. O elemento se torna a raiz do navegador de caminho.
 
 >[!NOTE]

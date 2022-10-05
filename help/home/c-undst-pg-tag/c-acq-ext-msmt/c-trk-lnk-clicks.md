@@ -3,7 +3,7 @@ description: Etapas usadas para facilitar a coleta de cliques em links por meio 
 title: Rastrear cliques em links
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # Rastrear cliques em links{#tracking-link-clicks}
 
+{{eol}}
+
 Etapas usadas para facilitar a coleta de cliques em links por meio do uso da Tag da página de referência.
 
-Com a implantação do [!DNL Reference Page Tag], é possível coletar dados de medição indicando os links (ou valores de href) em que os visitantes clicam ao visitar páginas específicas. Normalmente, essa coleção não envolve a implementação de identificadores de links adicionais em suas páginas de HTML.
+Através da implantação do [!DNL Reference Page Tag], é possível coletar dados de medição indicando os links (ou valores de href) em que os visitantes clicam ao visitar páginas específicas. Normalmente, essa coleção não envolve a implementação de identificadores de links adicionais em suas páginas de HTML.
 
-Para facilitar a coleta de Cliques em links por meio do uso de [!DNL Reference Page Tag], conclua as seguintes etapas:
+Para facilitar a coleta de cliques em links por meio do uso da variável [!DNL Reference Page Tag], execute as seguintes etapas:
 
-1. Copie o seguinte código no arquivo existente chamado [!DNL zig.js]:
+1. Copie o código a seguir no arquivo existente chamado [!DNL zig.js]:
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG
@@ -77,12 +79,12 @@ Para facilitar a coleta de Cliques em links por meio do uso de [!DNL Reference P
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Crie ou coloque o arquivo de imagem de 1 pixel por 1 pixel chamado [!DNL zag2.gif] em um diretório presente no servidor da Web.
-1. Modifique a variável [!DNL lc.src] para fazer referência ao domínio apropriado do site a partir do qual o arquivo [!DNL zag2.gif]é referenciado.
+1. Crie ou coloque o arquivo de imagem de 1 pixel por 1 pixel com o nome [!DNL zag2.gif] em um diretório presente no servidor da Web.
+1. Modifique o [!DNL lc.src] para fazer referência ao domínio apropriado de seu site a partir do qual a variável [!DNL zag2.gif]o arquivo é referenciado.
 
-1. Certifique-se de que os cabeçalhos de controle de cache apropriados sejam estabelecidos para os arquivos [!DNL zag.gif] e [!DNL zig.js].
+1. Certifique-se de que os cabeçalhos de controle de cache apropriados sejam estabelecidos para o [!DNL zag.gif] e [!DNL zig.js] arquivos.
 
-1. Nos arquivos do HTML dos quais você deseja coletar valores de cliques em links, o [!DNL Reference Page Tag Execution Call] deve ser modificado para informar o [!DNL Page Tag Execution Script] para capturar cliques em links para essa página. Para fazer isso, altere o valor da variável vlc para &quot;1&quot;, conforme destacado no exemplo de código a seguir:
+1. Nos arquivos do HTML dos quais você deseja coletar valores de clique em links, a variável [!DNL Reference Page Tag Execution Call] deve ser modificado para informar o [!DNL Page Tag Execution Script] para capturar cliques em links para essa página. Para fazer isso, altere o valor da variável vlc para &quot;1&quot;, conforme destacado no exemplo de código a seguir:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG-->

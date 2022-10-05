@@ -3,7 +3,7 @@ description: As páginas da Web geralmente são estruturadas usando a linguagem 
 title: Informações específicas do ASP
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Informações específicas do ASP{#asp-specific-information}
+
+{{eol}}
 
 As páginas da Web geralmente são estruturadas usando a linguagem de programação ASP (Ative Server Pages).
 
@@ -32,7 +34,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-Esse processo anexaria os valores do formulário, conforme definido para os dados da solicitação para a página [!DNL Form Processing]. Nos dados de log, os valores anexados estariam disponíveis como sequências de consulta da página [!DNL Form Processing], conforme ilustrado abaixo. Por exemplo, v_1, v_2, v_3 e v_4 agora seriam cadeias de caracteres de consulta contendo os dados inseridos nos campos de formulário apropriados. A sintaxe descrita no exemplo acima pode ser duplicada para quaisquer campos e valores de formulário adicionais que você deseja capturar.
+Esse processo anexaria os valores do formulário, conforme definido para os dados da solicitação para a variável [!DNL Form Processing] página. Nos dados de log, os valores anexados ficariam disponíveis como sequências de consulta do [!DNL Form Processing] conforme ilustrado abaixo. Por exemplo, v_1, v_2, v_3 e v_4 agora seriam cadeias de caracteres de consulta contendo os dados inseridos nos campos de formulário apropriados. A sintaxe descrita no exemplo acima pode ser duplicada para quaisquer campos e valores de formulário adicionais que você deseja capturar.
 
 ```
 https://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +47,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues);
 ```
 
-Esse exemplo usaria todos os campos de formulário presentes no HTML, juntamente com seus respectivos valores e os anexaria como cadeias de caracteres de consulta à entrada de log da página [!DNL Form Processing]. Observe que isso incluiria quaisquer campos ocultos presentes no formulário.
+Esse exemplo usaria todos os campos de formulário presentes no HTML, juntamente com seus respectivos valores e os anexaria como cadeias de caracteres de consulta à entrada de log da variável [!DNL Form Processing] página. Observe que isso incluiria quaisquer campos ocultos presentes no formulário.
 
 Os dados de log seriam aumentados conforme detalhado na tabela a seguir:
 

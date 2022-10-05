@@ -1,9 +1,9 @@
 ---
-description: O servidor do Data Workbench (InsightServer64.exe) pode ler dados de eventos de qualquer banco de dados SQL (por exemplo, Oracle ou Microsoft SQL Server) que tenha um driver compatível com ODBC 3.0.
+description: O servidor do Data Workbench (InsightServer64.exe) pode ler dados de evento de qualquer banco de dados SQL (por exemplo, Oracle ou Microsoft SQL Server) que tenha um driver compatível com ODBC 3.0.
 title: Fontes de dados ODBC
 uuid: 5b37cd41-2d79-472c-8e6d-00ff894991a9
 exl-id: b22b1e27-9b6c-4708-b45c-a9605807689a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 1%
@@ -12,7 +12,9 @@ ht-degree: 1%
 
 # Fontes de dados ODBC{#odbc-data-sources}
 
-O servidor do Data Workbench (InsightServer64.exe) pode ler dados de eventos de qualquer banco de dados SQL (por exemplo, Oracle ou Microsoft SQL Server) que tenha um driver compatível com ODBC 3.0.
+{{eol}}
+
+O servidor do Data Workbench (InsightServer64.exe) pode ler dados de evento de qualquer banco de dados SQL (por exemplo, Oracle ou Microsoft SQL Server) que tenha um driver compatível com ODBC 3.0.
 
 O suporte ODBC do servidor do Data Workbench é semelhante ao suporte existente para carregar dados de Sensores ou de arquivos de log gerados por processos externos. No entanto, há algumas considerações e limitações adicionais:
 
@@ -22,12 +24,12 @@ O suporte ODBC do servidor do Data Workbench é semelhante ao suporte existente 
 
    >[!NOTE]
    >
-   >É possível que várias linhas tenham o mesmo valor na coluna [!DNL Increasing ID]. Uma possibilidade é uma coluna de carimbo de data e hora com precisão menor do que perfeita.
+   >É possível que várias linhas tenham o mesmo valor na variável [!DNL Increasing ID] coluna. Uma possibilidade é uma coluna de carimbo de data e hora com precisão menor do que perfeita.
 
 * O servidor do Data Workbench não pode carregar colunas com dados longos (dados acima de um determinado comprimento, conforme determinado pelo aplicativo de banco de dados específico em uso).
 * A recuperação de dados de um banco de dados é mais lenta do que lê-los a partir de um arquivo de disco. Os conjuntos de dados que carregam dados de uma fonte ODBC demoram muito mais para serem processados (principalmente ao reprocessar) do que conjuntos de dados de tamanho equivalente cujos dados vêm de Sensores ou outros arquivos de disco.
 
-Para obter informações sobre como reprocessar seus dados, consulte [Reprocessando e Retransformação](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
+Para obter informações sobre como reprocessar seus dados, consulte [Reprocessamento e retransformação](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
 
 **Para configurar o servidor Insight para ODBC[!DNL event data]**
 
@@ -37,13 +39,13 @@ A configuração do servidor do Data Workbench para carregar dados de um banco d
 
    >[!NOTE]
    >
-   >Se você estiver carregando dados de evento ODBC para processamento em um cluster de servidores do Data Workbench, deverá instalar o software cliente do banco de dados em todos os servidores de processamento no cluster. Para obter informações sobre como especificar servidores de processamento em um cluster, consulte o *Server Products Installation and Administration Guide*.
+   >Se você estiver carregando dados de evento ODBC para processamento em um cluster de servidores do Data Workbench, deverá instalar o software cliente do banco de dados em todos os servidores de processamento no cluster. Para obter informações sobre como especificar servidores de processamento em um cluster, consulte *Guia de Instalação e Administração de Produtos para Servidores*.
 
 1. Configure uma Fonte de Dados usando o Administrador da Fonte de Dados ODBC para Windows.
 
    É importante observar que o servidor do Data Workbench (InsightServer64.exe) é executado como um serviço do Windows. Portanto, a Fonte de Dados normalmente deve ser configurada como um DSN de Sistema em vez de um DSN de Usuário para que o servidor do Data Workbench possa usá-la. Você pode encontrar mais informações sobre essa etapa de configuração na documentação do software do seu banco de dados.
 
-Depois de instalar o software cliente do banco de dados na máquina do servidor do Data Workbench apropriada, você pode configurar o conjunto de dados para usar a fonte de dados ODBC editando os parâmetros apropriados no arquivo de configuração [!DNL Log Processing] para o perfil desejado.
+Depois de instalar o software cliente do banco de dados na máquina do servidor do Data Workbench apropriada, você pode configurar o conjunto de dados para usar a fonte de dados ODBC editando os parâmetros apropriados no [!DNL Log Processing] arquivo de configuração do perfil desejado.
 
 ## Parâmetros {#section-15c0218d93364693a565f2609a12f73e}
 
@@ -67,21 +69,21 @@ Para dados de bancos de dados que usam o padrão Open Database Connectivity (ODB
   </tr> 
   <tr> 
    <td colname="col1"> Senha do banco de dados </td> 
-   <td colname="col2"> A senha a ser usada na conexão com o banco de dados. Se uma senha tiver sido configurada para o DSN no <span class="wintitle"> Data Source Administrator</span>, isso pode ser deixado em branco. Qualquer senha fornecida aqui substitui a senha configurada para o DSN no <span class="wintitle"> Data Source Administrator</span>. </td> 
+   <td colname="col2"> A senha a ser usada na conexão com o banco de dados. Se uma senha tiver sido configurada para o DSN no <span class="wintitle"> Administrador da fonte de dados</span>, pode ficar em branco. Qualquer senha fornecida aqui substitui a senha configurada para o DSN na <span class="wintitle"> Administrador da fonte de dados</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ID de usuário do banco de dados </td> 
-   <td colname="col2"> A ID de usuário a ser usada ao se conectar ao banco de dados. Se uma ID de usuário tiver sido configurada para o DSN no <span class="wintitle"> Administrador da Fonte de Dados</span>, isso pode ser deixado em branco. Qualquer ID de usuário fornecida aqui substitui a ID de usuário configurada para o DSN no <span class="wintitle"> Administrador da Fonte de Dados</span>. </td> 
+   <td colname="col2"> A ID de usuário a ser usada ao se conectar ao banco de dados. Se uma ID de usuário tiver sido configurada para o DSN no <span class="wintitle"> Administrador da fonte de dados</span>, pode ficar em branco. Qualquer ID de usuário fornecida aqui substitui a ID de usuário configurada para o DSN na <span class="wintitle"> Administrador da fonte de dados</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Campos </td> 
-   <td colname="col2"> Um vetor de objetos de coluna que especifica um mapeamento de colunas de dados no banco de dados para campos de dados no mecanismo de execução do servidor do Data Workbench. Cada coluna tem entradas <span class="wintitle"> Nome da Coluna</span> e <span class="wintitle"> Nome do Campo</span>. <span class="wintitle"> O </span> Nome da Coluna é uma expressão da coluna SQL que deve ser válida no contexto da tabela identificada pelo  <span class="wintitle"> Identificador da </span> Tabela descrito acima. Pode ser um nome de coluna ou qualquer expressão SQL com base em qualquer número de colunas na tabela. Uma função de formatação pode ser necessária para converter valores de determinados tipos de dados em strings de uma maneira que não perca precisão. Todos os dados são convertidos implicitamente em strings usando o método de formatação padrão do banco de dados, o que pode causar perda de dados para alguns tipos de dados de coluna (como tipos de dados de data/hora) se expressões de formatação explícitas não forem usadas. </td> 
+   <td colname="col2"> Um vetor de objetos de coluna que especifica um mapeamento de colunas de dados no banco de dados para campos de dados no mecanismo de execução do servidor do Data Workbench. Cada coluna tem entradas <span class="wintitle"> Nome da coluna</span> e <span class="wintitle"> Nome do campo</span>. <span class="wintitle"> Nome da coluna</span> é uma expressão de coluna SQL que deve ser válida no contexto da tabela identificada por <span class="wintitle"> Identificador de tabela</span> descrito acima. Pode ser um nome de coluna ou qualquer expressão SQL com base em qualquer número de colunas na tabela. Uma função de formatação pode ser necessária para converter valores de determinados tipos de dados em strings de uma maneira que não perca precisão. Todos os dados são convertidos implicitamente em strings usando o método de formatação padrão do banco de dados, o que pode causar perda de dados para alguns tipos de dados de coluna (como tipos de dados de data/hora) se expressões de formatação explícitas não forem usadas. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Aumento da coluna ID </td> 
    <td colname="col2"> <p>Um nome de coluna ou expressão de coluna SQL que atende ao critério que aumenta (ou pelo menos não diminui) à medida que novas linhas são adicionadas. Ou seja, se a Linha B for adicionada à tabela em um momento posterior à Linha A, o valor dessa coluna (ou expressão da coluna) na Linha B deve ser maior (de acordo com a ordem de classificação nativa do banco de dados) do que o valor correspondente na Linha A. </p> <p> 
      <ul id="ul_EBF6AEE4746B41B3B5BB6CC74194DAED"> 
-      <li id="li_A5C9BE52B01649DE9726ECEC68B99828"> O nome <span class="wintitle"> Aumentando a coluna de ID </span>pode ser o mesmo que o nome de uma coluna existente, mas não é necessário. </li> 
+      <li id="li_A5C9BE52B01649DE9726ECEC68B99828"> O <span class="wintitle"> Aumento da coluna ID </span>pode ser o mesmo que o nome de uma coluna existente, mas não precisa ser. </li> 
       <li id="li_CF69EAB4AFB14F4894F7A5CDCAF06947"> Pressupõe-se que essa expressão tenha um tipo de dados de caractere SQL. Se a coluna ID que está aumentando for de algum outro tipo de dados, esse valor deve ser uma expressão de coluna para convertê-la em uma string. Como isso geralmente significa que as comparações são lexicográficas (caractere por caractere), é importante formatar o valor cuidadosamente. </li> 
       <li id="li_58977431962E48039C898CFC47C53323"> A expressão é usada nas cláusulas ORDER BY do SQL e comparada com as cláusulas WHERE do SQL. É extremamente importante ter um índice criado na expressão exata da coluna usada. </li> 
      </ul> </p> </td> 
@@ -92,7 +94,7 @@ Para dados de bancos de dados que usam o padrão Open Database Connectivity (ODB
   </tr> 
   <tr> 
    <td colname="col1"> Executar no servidor </td> 
-   <td colname="col2"> Valor de índice no arquivo <span class="filepath"> profile.cfg</span> do servidor de processamento que faz as consultas ODBC para obter dados do banco de dados. (O parâmetro Servidores de processamento no arquivo <span class="filepath"> profile.cfg</span> lista todos os servidores de processamento do conjunto de dados, e cada servidor tem um valor de índice, sendo o primeiro 0.) O valor padrão é 0. </td> 
+   <td colname="col2"> Valor de índice na variável <span class="filepath"> profile.cfg</span> do servidor de processamento que faz as consultas ODBC para obter dados do banco de dados. (O parâmetro Servidores de processamento na função <span class="filepath"> profile.cfg</span> O arquivo lista todos os servidores de processamento do conjunto de dados e cada servidor tem um valor de índice, sendo o primeiro 0.) O valor padrão é 0. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Identificador de tabela </td> 
@@ -101,6 +103,6 @@ Para dados de bancos de dados que usam o padrão Open Database Connectivity (ODB
  </tbody> 
 </table>
 
-Este exemplo mostra a janela de configuração [!DNL Log Processing] no Data Workbench com uma fonte de dados ODBC. Essa Fonte de Dados pega dados de uma tabela chamada [!DNL VISUAL.VSL] em um banco de dados com [!DNL Data Source Name] &quot;VSTestO&quot;. Cinco (5) objetos de coluna ( [!DNL Fields]) mapeiam dados das colunas de dados no banco de dados para o servidor do Data Workbench.
+Este exemplo mostra o [!DNL Log Processing] janela de configuração no Data Workbench com uma fonte de dados ODBC. Essa fonte de dados obtém dados de uma tabela chamada [!DNL VISUAL.VSL] em um banco de dados com [!DNL Data Source Name] &quot;VSTestO.&quot; Cinco (5) objetos de coluna ( [!DNL Fields]) mapeie dados das colunas de dados no banco de dados para o servidor do Data Workbench.
 
 ![](assets/cfg_LogProcessing_LogSources_ODBC.png)

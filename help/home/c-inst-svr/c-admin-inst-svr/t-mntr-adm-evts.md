@@ -3,7 +3,7 @@ description: Você deve monitorar regularmente seus arquivos de log de eventos p
 title: Monitorar eventos administrativos (servidor Insight)
 uuid: 92d71478-0857-4af8-909c-0cf800b081f4
 exl-id: e468a7d0-ed09-4367-88ce-b68964511e76
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Monitorar eventos administrativos{#monitoring-administrative-events}
+
+{{eol}}
 
 Você deve monitorar regularmente seus arquivos de log de eventos para rastrear mensagens de evento do sistema do Insight Server, que são registradas no `<YYYYMMDD>-event.txt` arquivos localizados por padrão na pasta Eventos no diretório de instalação do Insight Server.
 

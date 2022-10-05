@@ -3,7 +3,7 @@ description: Formatação de informações sobre o arquivo de camada do ponto de
 title: Formato de arquivo de camada de ponto de elemento
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # Formato de arquivo de camada de ponto de elemento{#element-point-layer-file-format}
 
+{{eol}}
+
 Formatação de informações sobre o arquivo de camada do ponto de elemento.
 
-Cada arquivo de camada [!DNL .layer] de ponto de elemento que faz referência a um arquivo de pesquisa deve ser formatado usando o seguinte modelo:
+Cada camada de ponto de elemento [!DNL .layer] arquivo que faz referência a um arquivo de pesquisa deve ser formatado usando o seguinte modelo:
 
 ```
 Layer = ElementPointLayer:
@@ -57,11 +59,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Coluna-chave </td> 
-   <td colname="col2"> <p>O nome da coluna no arquivo de pesquisa que contém os dados de chave comuns, que permite que o servidor do Data Workbench integre os dados no arquivo de pesquisa ao conjunto de dados. Esta deve ser a primeira coluna no arquivo de pesquisa. </p> <p>Cada linha nesta coluna é um elemento de uma dimensão. Essa dimensão deve ser definida no arquivo <span class="filepath"> Transformation.cfg</span> ou em um arquivo de inclusão do conjunto de dados de transformação e especificado no parâmetro Dimension desse arquivo. Para obter mais informações sobre arquivos de configuração de transformação, consulte o <i>Guia de Configuração do Conjunto de Dados</i>. </p> </td> 
+   <td colname="col2"> <p>O nome da coluna no arquivo de pesquisa que contém os dados de chave comuns, que permite que o servidor do Data Workbench integre os dados no arquivo de pesquisa ao conjunto de dados. Esta deve ser a primeira coluna no arquivo de pesquisa. </p> <p>Cada linha nesta coluna é um elemento de uma dimensão. Essa dimensão deve ser definida na variável <span class="filepath"> Transformation.cfg</span> arquivo ou conjunto de dados de transformação inclui arquivo e é especificado no parâmetro Dimension desse arquivo. Para obter mais informações sobre arquivos de configuração de transformação, consulte o <i>Guia de configuração do conjunto de dados</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimensão </td> 
-   <td colname="col2">O nome da dimensão (definido em um arquivo de configuração de transformação) que contém elementos que correspondem às linhas de dados na coluna <span class="wintitle"> Chave</span>. </td> 
+   <td colname="col2">O nome da dimensão (definido em um arquivo de configuração de transformação) que contém elementos que correspondem às linhas de dados no <span class="wintitle"> Chave</span> coluna. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Métrica </td> 
@@ -73,7 +75,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Cor do canal </td> 
-   <td colname="col2"> Opcional. O vetor de cores RGB, que é expresso como (vermelho, verde, azul). Para cada cor no vetor, você pode inserir um valor de 0,0 a 1,0. Por exemplo, (1,0, 0,0, 0,0) é vermelho vivo e (0,5, 0,5, 0,5) é cinza. </td> 
+   <td colname="col2"> Opcional. O vetor de cor RGB, que é expresso como (vermelho, verde, azul). Para cada cor no vetor, você pode inserir um valor de 0,0 a 1,0. Por exemplo, (1,0, 0,0, 0,0) é vermelho vivo e (0,5, 0,5, 0,5) é cinza. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Modo de renderização </td> 
@@ -87,7 +89,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-O arquivo [!DNL Zip Points.layer] é formatado da seguinte maneira:
+O [!DNL Zip Points.layer] O arquivo é formatado da seguinte maneira:
 
 ```
 Layer = ElementPointLayer:

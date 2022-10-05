@@ -3,7 +3,7 @@ description: O sensor adquire todos os dados de medição que são transportados
 title: Adquirir dados de solicitação de página
 uuid: 06cf2b14-8d2c-483e-8a75-ce772798978f
 exl-id: e42566a3-d5b4-4f1a-b8cd-1ea646041101
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 4%
@@ -12,15 +12,17 @@ ht-degree: 4%
 
 # Adquirir dados de solicitação de página{#acquiring-page-request-data}
 
+{{eol}}
+
 O sensor adquire todos os dados de medição que são transportados nas solicitações de página (solicitações do GET) feitas nos servidores da Web em que foi instalado.
 
-[!DNL Sensor] O adquire esses dados de medição por meio da interface de programação de aplicativos do servidor da Web, diretamente da instância ou instâncias do software do servidor da Web em execução no seu servidor da Web. [!DNL Sensor] não acessa os arquivos de log gerados pelo servidor da Web. Na verdade, depois que [!DNL Sensor] e o servidor do Data Workbench tiverem sido instalados e testados, o recurso de registro nativo do servidor da Web poderá ser desativado sem afetar a coleta de dados. Em muitos casos, desabilitar o registro de arquivos nos discos locais das máquinas do servidor da Web melhora a capacidade de fornecimento de página desses servidores da Web devido à quantidade relativamente grande de E/S de disco fixo necessária para registrar essas informações no disco local da máquina do servidor da Web.
+[!DNL Sensor] O adquire esses dados de medição por meio da interface de programação de aplicativos do servidor da Web, diretamente da instância ou instâncias do software do servidor da Web em execução no seu servidor da Web. [!DNL Sensor] não acessa os arquivos de log gerados pelo servidor da Web. Na verdade, depois de [!DNL Sensor] e o servidor do Data Workbench tiver sido instalado e testado, o recurso de registro nativo do servidor da Web poderá ser desativado sem afetar a coleta de dados. Em muitos casos, desabilitar o registro de arquivos nos discos locais das máquinas do servidor da Web melhora a capacidade de fornecimento de página desses servidores da Web devido à quantidade relativamente grande de E/S de disco fixo necessária para registrar essas informações no disco local da máquina do servidor da Web.
 
-[!DNL Sensor] coleta dados de medição e solicitação da Web diretamente de cada processo de servidor da Web e do servidor virtual (se aplicável) e grava temporariamente os dados em um arquivo de fila, uma fila de memória tolerante a falhas com backup de disco fixo, na máquina do servidor da Web. O serviço Transmissor do sensor (ou daemon dependendo da plataforma) recupera dados do Arquivo de fila e compacta e criptografa-os antes de transmiti-los para o servidor do Data Workbench para armazenamento de longo prazo. Com [!DNL Sensor], os dados são acumulados nas máquinas do servidor da Web no Arquivo de Fila somente se você estiver tendo um problema de rede ou outro que impeça a transmissão. O Arquivo de Fila permite o armazenamento local eficiente de horas a dias de dados de solicitação da Web para proteger os dados se uma falha de rede ou de sistema não permitir que os dados sejam transmitidos para o servidor do Data Workbench em tempo real.
+[!DNL Sensor] coleta dados de medição e solicitação da Web diretamente de cada processo de servidor da Web e do servidor virtual (se aplicável) e grava temporariamente os dados em um arquivo de fila, uma fila de memória tolerante a falhas com backup de disco fixo, na máquina do servidor da Web. O serviço Transmissor do sensor (ou daemon dependendo da plataforma) recupera dados do Arquivo de fila e compacta e criptografa-os antes de transmiti-los para o servidor do Data Workbench para armazenamento de longo prazo. Com [!DNL Sensor], os dados são acumulados nas máquinas do servidor da Web no Arquivo de Fila somente se você estiver tendo uma rede ou outro problema que impeça a transmissão. O Arquivo de Fila permite o armazenamento local eficiente de horas a dias de dados de solicitação da Web para proteger os dados se uma falha de rede ou de sistema não permitir que os dados sejam transmitidos para o servidor do Data Workbench em tempo real.
 
 [!DNL Sensor] coleta dados de medição de cada processo físico e lógico do servidor da Web, os filtra por tipo de conteúdo, compacta, criptografa e os envia para o servidor do Data Workbench.
 
-A tabela a seguir contém os campos de informações de log adquiridos por [!DNL Sensor] para cada solicitação de GET que não é filtrada com base no arquivo de configuração [!DNL Sensor’s]:
+A tabela a seguir contém os campos de informações de log que são adquiridas por [!DNL Sensor] para cada solicitação de GET que não é filtrada com base em [!DNL Sensor’s] arquivo de configuração:
 
 <table id="table_5F65474150EC41648B35D0B031FB9B15">
  <thead>
@@ -35,14 +37,14 @@ A tabela a seguir contém os campos de informações de log adquiridos por [!DNL
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Identificador de rastreamento (visitante único) </td>
-   <td colname="col3"> Identificador lido de um cookie colocado no navegador do usuário pelo <span class="wintitle"> Sensor </span> na solicitação inicial do Visitante </td>
+   <td colname="col3"> Identificador lido de um cookie colocado no navegador do usuário por <span class="wintitle"> Sensor </span> na solicitação inicial do visitante </td>
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Data </p> <p>Hora </p> </td>
    <td colname="col2"> Carimbo de data e hora </td>
    <td colname="col3"> Hora em que a solicitação foi processada pelo servidor (com precisão de 100ns; a precisão depende do ambiente do servidor e do NTP) </td>
-   <td colname="col4"> 2002-11-21 17:21:45.123 </td>
+   <td colname="col4"> 2002-11-21 17:21:45 123 </td>
   </tr>
   <tr>
    <td colname="col1"> sc(content-Type) </td>
@@ -60,7 +62,7 @@ A tabela a seguir contém os campos de informações de log adquiridos por [!DNL
    <td colname="col1"> cs-uri-stem </td>
    <td colname="col2"> Etapa URI </td>
    <td colname="col3"> A parte do sistema do URI solicitada pelo cliente </td>
-   <td colname="col4"> <span class="filepath"> pagedir/page.asp  </span> </td>
+   <td colname="col4"> <span class="filepath"> pagedir/page.asp </span> </td>
   </tr>
   <tr>
    <td colname="col1"> c-ip </td>
@@ -72,13 +74,13 @@ A tabela a seguir contém os campos de informações de log adquiridos por [!DNL
    <td colname="col1"> s-dns </td>
    <td colname="col2"> Nome de domínio do servidor </td>
    <td colname="col3"> Nome do domínio do servidor da Web que processa a solicitação </td>
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
    <td colname="col2"> URL de referência </td>
    <td colname="col3"> Conteúdo do campo do referenciador HTTP enviado pelo cliente </td>
-   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>

@@ -3,7 +3,7 @@ description: O vetor do monitor de recursos contém o Monitor de Orçamento de M
 title: Monitores de recursos da fila de query
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
 exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Monitores de recursos da fila de query{#query-queue-resource-monitors}
+
+{{eol}}
 
 O vetor do monitor de recursos contém o Monitor de Orçamento de Memória e o Monitor de Número de Consultas.
 
@@ -38,7 +40,7 @@ A tabela a seguir descreve os campos do monitor de recursos usados para fila de 
   <tr> 
    <td colname="col1"> <p>Limite baixo </p> </td> 
    <td colname="col2"> <p>double </p> </td> 
-   <td colname="col3"> <p>O limite baixo para uso de memória (bytes). Se o valor <span class="wintitle"> do Monitor de Orçamento de Memória</span> estiver abaixo desse valor, novos pacotes poderão ser agendados e pacotes agendados poderão crescer. Por exemplo, os pacotes aumentam quando um usuário adiciona uma visualização a um espaço de trabalho. </p> </td> 
+   <td colname="col3"> <p>O limite baixo para uso de memória (bytes). If <span class="wintitle"> Monitor de orçamento de memória</span> estiver abaixo desse valor, novos pacotes poderão ser agendados e pacotes agendados poderão crescer. Por exemplo, os pacotes aumentam quando um usuário adiciona uma visualização a um espaço de trabalho. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Tempo de reação </p> </td> 
@@ -58,7 +60,7 @@ A tabela a seguir descreve os campos do monitor de recursos usados para fila de 
   <tr> 
    <td colname="col1"> <p>Limite baixo </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>O limite baixo para uso de memória (bytes). Se o valor <span class="wintitle"> do Monitor de Orçamento de Memória</span> estiver abaixo desse valor, novos pacotes poderão ser agendados e os pacotes agendados poderão crescer. </p> </td> 
+   <td colname="col3"> <p>O limite baixo para uso de memória (bytes). If <span class="wintitle"> Monitor de orçamento de memória</span> estiver abaixo desse valor, novos pacotes poderão ser agendados e os pacotes agendados poderão crescer. </p> </td> 
   </tr> 
  </tbody> 
 </table>

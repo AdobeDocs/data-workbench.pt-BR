@@ -1,9 +1,9 @@
 ---
-description: Identifique os requisitos mínimos e recomendações para os componentes do servidor do Data Workbench (anteriormente  [!DNL Insight]) antes de planejar e implementar seu sistema.
+description: Identificar os requisitos mínimos e as recomendações para o Data Workbench (anteriormente [!DNL Insight]) componentes do servidor antes de planejar e implementar seu sistema.
 title: Requisitos de sistema do servidor
 uuid: c4487c76-03b9-4755-893b-555d451b1e69
 exl-id: 6dd78331-8370-400e-b580-9b9bad13e62c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Requisitos de sistema do servidor{#server-system-requirements}
+
+{{eol}}
 
 Identifique os requisitos mínimos e recomendações para os componentes do servidor do Data Workbench antes de planejar e implementar seu sistema.
 
@@ -20,15 +22,14 @@ A DPU (Data Processing Unit) do servidor é o principal componente de processame
 
 ### Capacidade licenciada {#section-71850e13783443798b3df9eb22cc63dc}
 
-Consulte a Descrição dos serviços no *Adobe [!DNL Data Workbench (Insight)] Contrato de serviço* para obter informações sobre a capacidade da licença.
+Consulte a Descrição dos serviços na *Adobe [!DNL Data Workbench (Insight)] Contrato de Serviço* para obter informações sobre a capacidade da licença.
 
 >[!NOTE]
 >
->Para *MS System Center Endpoint Protection* em servidores Windows 2012, esses executáveis precisam ser adicionados ao ***Processos excluídos:*** >
+>Para *Proteção do Ponto Final do Centro de Sistemas da MS* em servidores Windows 2012, esses executáveis precisam ser adicionados ao ***Processos excluídos:*** >
 >* [!DNL InsightServer64.exe]
 >* [!DNL ReportServer.exe]
 >* [!DNL ExportIntegration.exe]
-
 >
 
 
@@ -169,15 +170,15 @@ A tabela a seguir descreve as recomendações do sistema para [!DNL Sensor]:
   </tr>
   <tr>
    <td colname="col1"> <p>RAM </p> </td>
-   <td colname="col2"> <p>32 MB de RAM devem estar disponíveis para <span class="wintitle"> Sensor </span> no computador HTTP ou outro servidor que seja seu host. </p> </td>
+   <td colname="col2"> <p>32 MB de RAM devem estar disponíveis para <span class="wintitle"> Sensor </span> no computador HTTP ou outro servidor que seja o host. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Desempenho da rede </p> </td>
-   <td colname="col2"> <p>1 Mbps ou mais conexão de rede com um servidor repetidor ou <span class="keyword"> servidor do Data Workbench </span>. <span class="wintitle"> O sensor  </span> geralmente consome muito menos largura de banda do que um (1) Mbps. Seus consultores de Adobe ajudarão você a estimar a quantidade real de largura de banda que seria necessária de rotina. </p> </td>
+   <td colname="col2"> <p>1 Mbps ou maior conexão de rede com um servidor repetidor ou <span class="keyword"> servidor do Data Workbench </span>. <span class="wintitle"> Sensor </span> O geralmente consome muito menos largura de banda do que um (1) Mbps. Seus consultores de Adobe ajudarão você a estimar a quantidade real de largura de banda que seria necessária de rotina. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Portas de rede e firewalls </p> </td>
-   <td colname="col2"> <p> <span class="wintitle"> O sensor  </span> se conecta ao servidor do  <span class="keyword"> Data Workbench  </span> usando HTTPS (normalmente a porta 443, embora isso seja configurável) ou HTTP (normalmente a porta 80, embora isso seja configurável). </p> <p>A porta apropriada em qualquer firewall que resida entre um <span class="wintitle"> Sensor </span> e o <span class="keyword"> servidor do Data Workbench </span> ou servidor repetidor de dados deve ser aberta somente entre o respectivo <span class="wintitle"> Sensor </span> computador host e o <span class="keyword"> servidor do Data Workbench </span> ou servidor repetidor antes de iniciar o <span class="wintitle"> Sensor9/&gt; processo de instalação. </span> <span class="wintitle"> O sensor  </span> faz uma conexão HTTP ou HTTP unidirecional com um servidor do Data Workbench  <span class="keyword">   </span> ou com um servidor repetidor. </p> </td>
+   <td colname="col2"> <p> <span class="wintitle"> Sensor </span> conecta-se ao <span class="keyword"> servidor do Data Workbench </span> usando HTTPS (normalmente a porta 443, embora isso seja configurável) ou HTTP (normalmente a porta 80, embora isso seja configurável). </p> <p>A porta apropriada em qualquer firewall que esteja entre um <span class="wintitle"> Sensor </span> e o target <span class="keyword"> servidor do Data Workbench </span> ou o servidor repetidor deve ser aberto somente entre os respectivos <span class="wintitle"> Sensor </span> computador de hospedagem e o <span class="keyword"> servidor do Data Workbench </span> ou servidor repetidor antes de iniciar o <span class="wintitle"> Sensor </span> processo de instalação. <span class="wintitle"> Sensor </span> faz uma conexão HTTPS ou HTTP unidirecional com um <span class="keyword"> servidor do Data Workbench </span> ou servidor repetidor. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Sistemas de gerenciamento de rede </p> </td>
@@ -185,11 +186,11 @@ A tabela a seguir descreve as recomendações do sistema para [!DNL Sensor]:
   </tr>
   <tr>
    <td colname="col1"> <p>Sincronização de Tempo do Servidor </p> </td>
-   <td colname="col2"> <p>Certifique-se de que a hora do sistema do computador seja sincronizada continuamente em todos os computadores que hospedam um <span class="wintitle"> Sensor </span>. Os aplicativos e computadores do servidor da Web que são monitorados pelo <span class="wintitle"> Sensor </span> devem ter horários de sistema sincronizados para que os dados do evento coletados deles sejam precisos. Consulte a documentação do seu sistema operacional para ver as etapas de sincronização contínua dos horários do sistema com o NTP ou outro recurso de sincronização de tempo. </p> </td>
+   <td colname="col2"> <p>Certifique-se de que a hora do sistema do computador seja continuamente sincronizada em todos os computadores que hospedam uma <span class="wintitle"> Sensor </span>. Os aplicativos do servidor Web e os computadores monitorados por <span class="wintitle"> Sensor </span> deve ter horários do sistema sincronizados para que os dados do evento coletados deles sejam precisos. Consulte a documentação do seu sistema operacional para ver as etapas de sincronização contínua dos horários do sistema com o NTP ou outro recurso de sincronização de tempo. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Uso de nome DNS </p> </td>
-   <td colname="col2"> <p>O Adobe recomenda que <span class="wintitle"> Sensores </span> usem um nome DNS (em vez de um endereço IP) para resolver o endereço de rede de um <span class="keyword"> servidor do Data Workbench </span> ou servidor repetidor. Quando um <span class="wintitle"> Sensor </span> usa um nome DNS, o DNS do servidor Web host ou o arquivo de hosts locais precisa ser configurado para resolver o nome do <span class="keyword"> servidor do Data Workbench </span> ou do servidor repetidor. </p> </td>
+   <td colname="col2"> <p>Adobe recomenda que <span class="wintitle"> Sensores </span> use um nome DNS (em vez de um endereço IP) para resolver o endereço de rede de um <span class="keyword"> servidor do Data Workbench </span> ou servidor repetidor. Quando uma <span class="wintitle"> Sensor </span> O usa um nome DNS, o DNS do servidor Web host ou o arquivo de hosts local precisa ser configurado para resolver o nome da variável <span class="keyword"> servidor do Data Workbench </span> ou servidor repetidor. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -225,17 +226,17 @@ A tabela a seguir lista as combinações mais comuns que [!DNL Sensor] suporta:
  </tbody>
 </table>
 
-Para outras combinações de servidor e sistema operacional, consulte o Adobe em relação à disponibilidade. Nem todos os recursos de [!DNL Sensor] estão disponíveis com todas as combinações de servidor Web/aplicativo e sistema operacional. Para obter mais informações sobre versões específicas do [!DNL Sensor], entre em contato com o Suporte do Adobe.
+Para outras combinações de servidor e sistema operacional, consulte o Adobe em relação à disponibilidade. Nem todos os recursos da [!DNL Sensor] estão disponíveis com todas as combinações de servidor da web/aplicativo e sistema operacional. Para obter mais informações sobre [!DNL Sensor] , entre em contato com o Suporte Adobe.
 
 ## Requisitos do servidor de relatórios{#report-server-requirements}
 
-O servidor de relatório do Data Workbench é o componente que permite a saída de relatórios agendados. Os relatórios enviados podem estar na forma de imagens .PNG ou planilhas .XLS colocadas em um sistema de arquivos ou como emails. Seus requisitos de hardware são idênticos ao [Data Workbench Client](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html?lang=pt-BR).
+O servidor de relatório do Data Workbench é o componente que permite a saída de relatórios agendados. Os relatórios enviados podem estar na forma de imagens .PNG ou planilhas .XLS colocadas em um sistema de arquivos ou como emails. Seus requisitos de hardware são idênticos ao [Cliente do Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html?lang=pt-BR).
 
 Existem os seguintes requisitos para [!DNL report server]:
 
 * Acesso ao sistema de arquivos para saída de dados (compartilhamento de rede ou unidade local).
 * Acesso ao servidor SMTP configurado.
-* Microsoft Excel 2003 ou superior instalado no servidor [!DNL report]. Consulte [Considerações para automação do lado do servidor do Office](https://support.microsoft.com/kb/257757) para obter mais informações.
+* Microsoft Excel 2003 ou superior instalado em [!DNL report] servidor. Consulte [Considerações para a automação do Office no lado do servidor](https://support.microsoft.com/kb/257757) para obter mais informações.
 
 ## Gerenciamento de rede{#network-management}
 
@@ -259,6 +260,6 @@ Considerações a ter em mente ao trabalhar com redes DPU e FSU.
 
 * Para distribuição de arquivos de log em rede, qualquer arquivo de log de hospedagem do sistema de armazenamento em rede precisa fornecer pelo menos 10 MB por DPU de largura de banda sustentada.
 * DPU, FSU e Data Workbench intercomunicam bidirecionalmente via HTTP ou HTTPS na porta 80 ou 443 (por padrão; as portas podem ser configuradas como alternativa).
-* O Data Workbench [!DNL Sensor(s)] deve ser capaz de se conectar (unidirecional) aos servidores.
+* Data Workbench [!DNL Sensor(s)] deve ser capaz de se conectar (unidirecional) aos servidores.
 * Para permitir que a DPU envie mensagens de alerta via SMTP, ela deve ser capaz de entrar em contato com o servidor SMTP configurado.
 * O Adobe recomenda que FSUs e DPUs recebam nomes de rede como FSU01.CLIENT.COM para evitar a reconfiguração se o caso de uma alteração de endereço IP for alterado.

@@ -3,14 +3,16 @@ description: O painel do Data Workbench inclui uma Barra lateral e uma Barra de 
 title: Interface do usuário do painel
 uuid: cfa6c553-e223-4b0e-8b4a-255afa85c999
 exl-id: f80da6c7-02cb-4916-b139-617703cf27b6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
 # Interface do usuário do painel{#dashboard-user-interface}
+
+{{eol}}
 
 O painel do Data Workbench inclui uma Barra lateral e uma Barra de ferramentas com menus de recursos e uma Tela do painel, onde você exibe visualizações de dados.
 
@@ -42,7 +44,7 @@ A barra de ferramentas superior fornece acesso a esses menus específicos. Tamb�
 |---|---|
 | Menu do painel | Um menu suspenso para abrir, criar, salvar e exportar painéis. |
 | Menu Adicionar visualização | Um menu suspenso para adicionar visualizações ao painel. |
-| Título do Painel | Exibe o título do painel atual. |
-| Menu Atualizar | Clicar no indicador **[!UICONTROL Update]** atualizará o painel atual, levando em conta quaisquer novas seleções e/ou alterações de configuração. O menu permite ajustar o parâmetro **[!UICONTROL Query-to]**, juntamente com algumas funções avançadas para administradores. |
+| Título do painel | Exibe o título do painel atual. |
+| Menu Atualizar | Clicar no **[!UICONTROL Update]** O indicador atualizará o painel atual, levando em conta quaisquer novas seleções e/ou alterações de configuração. O menu permite ajustar a função **[!UICONTROL Query-to]** , juntamente com algumas funções avançadas para administradores do . |
 | Menu de ajuda | Esse menu suspenso é usado para acessar o Guia do usuário, as Perguntas frequentes e as seções Sobre do aplicativo. |
 | Menu do usuário | Um menu suspenso para fazer logoff, acessar configurações da conta e acessar a área de administração (somente para administradores). |

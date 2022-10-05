@@ -3,7 +3,7 @@ description: Antes de iniciar a instalação, faça logon no servidor da Web com
 title: Pré-requisitos de instalação
 uuid: 3f7ee690-ff91-4c4d-8d78-4dfb42856e8c
 exl-id: da9836eb-bbc8-49ae-a9c6-054051708c25
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Pré-requisitos de instalação{#installation-prerequisites}
+
+{{eol}}
 
 Antes de iniciar a instalação, faça logon no servidor da Web com uma conta de administrador com permissões para configurar o servidor e instalar o novo software.
 

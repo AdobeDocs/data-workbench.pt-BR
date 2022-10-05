@@ -2,17 +2,21 @@
 description: Informações sobre permissões de arquivo UNIX do sensor, como o módulo coletor, o processo do transmissor, o arquivo de configuração e muito mais.
 title: Permissões de arquivo UNIX do sensor
 uuid: 04d159b5-6569-48b6-a2db-9a0b40118ffe
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 07cbc7df-c628-437d-9ca1-b006da8de242
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 5%
 
 ---
 
-
 # Permissões de arquivo UNIX do sensor{#sensor-unix-file-permissions}
+
+{{eol}}
 
 Informações sobre permissões de arquivo UNIX do sensor, como o módulo coletor, o processo do transmissor, o arquivo de configuração e muito mais.
 
-## O módulo do coletor {#section-49c855baece24c4695184bfcbeeddebf}
+## O Módulo Coletor {#section-49c855baece24c4695184bfcbeeddebf}
 
 <table id="table_0B972ABD2A5342CA8A6FE80EB666298A"> 
  <thead> 
@@ -24,19 +28,19 @@ Informações sobre permissões de arquivo UNIX do sensor, como o módulo coleto
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Nome do arquivo </p> </td> 
-   <td colname="col2"> <p>mod_visual_sciences.so (nos servidores da Web Apache e IBM HTTP) </p> <p>libvisual_sciences.so e J2EECollector.jar (nos servidores de aplicativos J2EE) </p> <p>aol_visual_sciences.so (em servidores da Web AOL) </p> <p>saf_visual_sciences.so (em servidores Web Sun Java) </p> </td> 
+   <td colname="col2"> <p>mod_visual_sciences.so (nos servidores da Web Apache e servidores HTTP IBM) </p> <p>libvisual_sciences.so e J2EECollector.jar (nos servidores de aplicativos J2EE) </p> <p>aol_visual_sciences.so (em servidores da Web AOL) </p> <p>saf_visual_sciences.so (em servidores da Web Sun Java) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Permissões padrão </p> </td> 
    <td colname="col2"> <p>rwx r-x r-x (IBM HTTP e Apache 1.3.x) </p> <p>rwx rwx r-x (Apache 2.0.x) </p> <p>rwx —x —x (servidores Web J2EE, AOL e Sun Java) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Lido por </p> </td> 
-   <td colname="col2"> <p>O servidor da Web, que às vezes é executado como usuário raiz, mas com mais frequência é executado em uma conta de usuário específica </p> <p>Se o servidor da Web for executado em uma conta não raiz, as permissões nesse arquivo deverão permitir que essa conta a leia. </p> </td> 
+   <td colname="col1"> <p>Ler por </p> </td> 
+   <td colname="col2"> <p>O servidor da Web, que às vezes é executado como o usuário raiz, mas é executado com mais frequência em uma conta de usuário específica </p> <p>Se o servidor da Web for executado em uma conta não raiz, as permissões desse arquivo deverão permitir que essa conta a leia. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Funciona como </p> </td> 
-   <td colname="col2"> <p>Um processo filho no servidor da Web </p> <p>Processos filho são executados em uma conta de usuário especificada na configuração do servidor da Web. Em muitos servidores, esta é uma conta especial com privilégios muito limitados chamada "ninguém". mas nem todos os servidores da Web usam essa conta. Verifique o arquivo de configuração do servidor da Web para determinar qual conta de usuário está definida. </p> </td> 
+   <td colname="col1"> <p>Executa como </p> </td> 
+   <td colname="col2"> <p>Um processo filho no servidor da Web </p> <p>Processos filhos são executados em uma conta de usuário especificada na configuração do servidor da Web. Em muitos servidores, essa é uma conta especial com privilégios muito limitados chamada "ninguém" — mas nem todos os servidores da Web usam essa conta. Verifique o arquivo de configuração do servidor da Web para determinar qual conta de usuário está definida. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Leituras de </p> </td> 
@@ -49,7 +53,7 @@ Informações sobre permissões de arquivo UNIX do sensor, como o módulo coleto
  </tbody> 
 </table>
 
-## O processo do transmissor {#section-8af432472e9d4bd9a42270bf27adf33a}
+## O Processo Transmissor {#section-8af432472e9d4bd9a42270bf27adf33a}
 
 <table id="table_3028CC9640D54016BD8CA7F9CAA34280"> 
  <thead> 
@@ -65,15 +69,15 @@ Informações sobre permissões de arquivo UNIX do sensor, como o módulo coleto
   </tr> 
   <tr> 
    <td colname="col1"> <p>Permissões padrão </p> </td> 
-   <td colname="col2"> <p>rw- r— r— (IBM HTTP, AOL e servidores Web Sun Java) </p> <p>rw- rw- r— (servidores Web Apache e servidores de aplicativos J2EE) </p> </td> 
+   <td colname="col2"> <p>rw-r— r— (servidores da Web IBM HTTP, AOL e Sun Java) </p> <p>rw- rw- r— (servidores da Web Apache e servidores de aplicativos J2EE) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Lido por </td> 
+   <td colname="col1"> Ler por </td> 
    <td colname="col2"> O programa transmissor </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Escrito por </td> 
-   <td colname="col2"> -- </td> 
+   <td colname="col2"> — </td> 
   </tr> 
  </tbody> 
 </table>
@@ -94,15 +98,15 @@ Informações sobre permissões de arquivo UNIX do sensor, como o módulo coleto
   </tr> 
   <tr> 
    <td colname="col1"> <p>Permissões padrão </p> </td> 
-   <td colname="col2"> <p>rw- r— r— (IBM HTTP, AOL e servidores Web Sun Java) </p> <p>rw- rw- r— (servidores Web Apache e servidores de aplicativos J2EE) </p> </td> 
+   <td colname="col2"> <p>rw-r— r— (servidores da Web IBM HTTP, AOL e Sun Java) </p> <p>rw- rw- r— (servidores da Web Apache e servidores de aplicativos J2EE) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Lido por </td> 
-   <td colname="col2"> <p>O módulo do coletor </p> <p>O programa transmissor </p> <p>O administrador responsável pela instalação, configuração e manutenção do sensor </p> </td> 
+   <td colname="col1"> Ler por </td> 
+   <td colname="col2"> <p>O módulo coletor </p> <p>O programa transmissor </p> <p>O administrador responsável pela instalação, configuração e manutenção do Sensor </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Escrito por </td> 
-   <td colname="col2"> O administrador responsável pela instalação, configuração e manutenção do sensor </td> 
+   <td colname="col2"> O administrador responsável pela instalação, configuração e manutenção do Sensor </td> 
   </tr> 
  </tbody> 
 </table>
@@ -123,15 +127,15 @@ Informações sobre permissões de arquivo UNIX do sensor, como o módulo coleto
   </tr> 
   <tr> 
    <td colname="col1"> <p>Permissões padrão </p> </td> 
-   <td colname="col2"> <p>rw- r— r— (IBM HTTP, AOL e servidores Web Sun Java) </p> <p>rw- rw- r— (servidores Web Apache e servidores de aplicativos J2EE) </p> </td> 
+   <td colname="col2"> <p>rw-r— r— (servidores da Web IBM HTTP, AOL e Sun Java) </p> <p>rw- rw- r— (servidores da Web Apache e servidores de aplicativos J2EE) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Lido por </td> 
+   <td colname="col1"> Ler por </td> 
    <td colname="col2"> O programa transmissor </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Escrito por </td> 
-   <td colname="col2"> -- </td> 
+   <td colname="col2"> — </td> 
   </tr> 
  </tbody> 
 </table>
@@ -155,13 +159,12 @@ Informações sobre permissões de arquivo UNIX do sensor, como o módulo coleto
    <td colname="col2"> rw- rw- rw- (Todos os tipos de servidor) </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Lido por </p> </td> 
-   <td colname="col2"> <p>O módulo do coletor </p> <p>O programa transmissor </p> </td> 
+   <td colname="col1"> <p>Ler por </p> </td> 
+   <td colname="col2"> <p>O módulo coletor </p> <p>O programa transmissor </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Escrito por </p> </td> 
-   <td colname="col2"> <p>O módulo do coletor </p> <p>O programa transmissor </p> </td> 
+   <td colname="col2"> <p>O módulo coletor </p> <p>O programa transmissor </p> </td> 
   </tr> 
  </tbody> 
 </table>
-

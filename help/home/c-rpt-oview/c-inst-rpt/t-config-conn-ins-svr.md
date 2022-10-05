@@ -3,7 +3,7 @@ description: Antes de gerar relatórios e alertas, você deve configurar o Servi
 title: Configuração da conexão com o servidor Insight
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
 exl-id: a398a665-fe09-448a-977c-b0f9de4add09
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Configuração da conexão com o servidor Insight{#configuring-the-connection-to-the-insight-server}
+
+{{eol}}
 
 Antes de gerar relatórios e alertas, você deve configurar o Servidor de relatórios para especificar o endereço do servidor Insight e identificar os perfis para os quais deseja criar relatórios.
 
@@ -21,9 +23,9 @@ Antes de gerar relatórios e alertas, você deve configurar o Servidor de relat�
 **Configurar o servidor de relatórios**
 
 1. Com o Windows Explorer, navegue até o diretório onde você instalou o Report Server.
-1. Abra o arquivo [!DNL ReportServer.cfg] no Bloco de notas e modifique o arquivo conforme desejado.
+1. Abra o [!DNL ReportServer.cfg] no Bloco de notas e modifique o arquivo conforme desejado.
 
-   A amostra a seguir [!DNL Report Server.cfg] contém apenas os parâmetros incluídos no arquivo [!DNL Report Server.cfg] por padrão (e destaca as configurações de parâmetro necessárias). Se você entrar em contato com o Adobe License Server por meio de um servidor proxy, será necessário adicionar o vetor de Licenciamento e seus parâmetros. Consulte [Parâmetros do Report Server.cfg](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) para obter uma descrição detalhada.
+   A amostra seguinte [!DNL Report Server.cfg] contém apenas os parâmetros incluídos no [!DNL Report Server.cfg] por padrão (e destaca as configurações de parâmetro necessárias). Se você entrar em contato com o Adobe License Server por meio de um servidor proxy, será necessário adicionar o vetor de Licenciamento e seus parâmetros. Consulte [Parâmetros do Report Server.cfg](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) para obter uma descrição detalhada.
 
    ```
    Fonts = vector: 0 items

@@ -1,20 +1,24 @@
 ---
-description: Arquivos de amostra para os arquivos de configuração.
+description: Arquivos de exemplo dos arquivos de configuração.
 title: Arquivos de configuração de exemplo
 uuid: 9bc5c0a9-e67a-4c63-952d-9a39d75e6975
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8a9abadb-228b-4da6-bfe6-8e828bb6ace9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 
-
 # Arquivos de configuração de exemplo{#sample-configuration-files}
 
-Arquivos de amostra para os arquivos de configuração.
+{{eol}}
 
-## Amostra de arquivo Magnus.conf {#section-aec81c734d0f483591c3ede1fe588b6a}
+Arquivos de exemplo dos arquivos de configuração.
 
-Exemplo de um arquivo magnus.conf completo para a instalação e configuração do servidor Web Netscape Enterprise Server, iPlanet, Sun ONE e Sun Java System.
+## Exemplo de arquivo Magnus.conf {#section-aec81c734d0f483591c3ede1fe588b6a}
+
+Exemplo de um arquivo magnus.conf completo para instalação e configuração do servidor Web Netscape Enterprise Server, iPlanet, Sun ONE e Sun Java System.
 
 ```
 #ServerRoot /usr/iplanet/servers/https-nova.visualsciences.net
@@ -94,4 +98,3 @@ Exemplo de um arquivo obj.conf completo para instalação e configuração do se
   PathCheck fn="check-acl" acl="es-internal"
 </Object>
 ```
-

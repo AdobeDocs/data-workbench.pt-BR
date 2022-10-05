@@ -3,7 +3,7 @@ description: A primeira etapa é habilitar a função do IIS no servidor do pain
 title: Habilitar IIS
 uuid: fbd194db-3307-41ae-8ece-05eb261d74ad
 exl-id: 0d431302-1e69-49b6-8757-9823fd70a3b4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 4%
@@ -12,12 +12,14 @@ ht-degree: 4%
 
 # Habilitar IIS{#enabling-iis}
 
+{{eol}}
+
 A primeira etapa é habilitar a função do IIS no servidor do painel.
 
 1. Em **[!UICONTROL Administrative Tools]**, abra o **[!UICONTROL Server Manager]**.
-1. Clique com o botão direito do mouse no item de menu Funções na parte esquerda da janela **[!UICONTROL Server Manager]**.
+1. Clique com o botão direito do mouse no item de menu Funções na parte esquerda da **[!UICONTROL Server Manager]** janela.
 1. Selecionar **[!UICONTROL Add Roles]**.
-1. Selecione **[!UICONTROL Web Server (IIS)]** e continue com **[!UICONTROL Add Roles Wizard]**. Certifique-se de que os seguintes Serviços de função estejam habilitados:
+1. Selecionar **[!UICONTROL Web Server (IIS)]** e continuar com a **[!UICONTROL Add Roles Wizard]**. Certifique-se de que os seguintes Serviços de função estejam habilitados:
 
    | Recursos HTTP comuns |
    |---|

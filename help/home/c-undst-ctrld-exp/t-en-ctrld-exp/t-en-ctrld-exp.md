@@ -4,7 +4,7 @@ solution: Analytics
 title: Ativar experimento controlado
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 exl-id: 53c18524-6050-4708-af63-9e8ef8da389e
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 2%
@@ -12,6 +12,8 @@ ht-degree: 2%
 ---
 
 # Ativar experimento controlado{#enabling-controlled-experimentation}
+
+{{eol}}
 
 Para habilitar a experimentação controlada, alguém com acesso de administrador à Web ou aos servidores de aplicativos deve modificar o parâmetro ExpFile no arquivo de configuração do Sensor (normalmente nomeado usando txlogd.conf) em cada servidor da Web ou de aplicativos em seu cluster da Web em que um Sensor está instalado.
 

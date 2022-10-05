@@ -3,14 +3,16 @@ description: A transformação REMatch é uma transformação de correspondênci
 title: REMatch
 uuid: 8ef80bfa-aea2-45a1-a7d9-38ad33043886
 exl-id: 571e6f1c-f557-49c3-9e7c-c31f06132ec7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
 # REMatch{#rematch}
+
+{{eol}}
 
 A transformação REMatch é uma transformação de correspondência de padrões que usa expressões regulares para especificar um ou mais padrões para procurar e capturar na entrada.
 
@@ -18,9 +20,9 @@ A transformação constrói um campo de saída para cada subpadrão de captura n
 
 >[!NOTE]
 >
->A transformação [!DNL REMatch] opera de forma semelhante à transformação [!DNL RETransform] (consulte [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), que usa expressões regulares para capturar uma string e armazena essa string em um único campo de saída.
+>O [!DNL REMatch] a transformação funciona de forma semelhante à [!DNL RETransform] transformação (consulte [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), que usa expressões regulares para capturar uma string e armazena essa string em um único campo de saída.
 
-[!DNL REMatch] analisa uma string com mais eficiência do que várias  [!DNL RETransform] transformações ou uma única  [!DNL RETransform] transformação seguida de uma  [!DNL Flatten] transformação. Consulte [Nivelar](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
+[!DNL REMatch] analisa uma string com mais eficiência do que vários [!DNL RETransform] transformações ou uma única [!DNL RETransform] transformação seguida de uma [!DNL Flatten] transformação. Consulte [Nivelar](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
 
 <table id="table_7077578512B249E986BC79AE770CBD9A"> 
  <thead> 
@@ -73,6 +75,6 @@ A transformação constrói um campo de saída para cada subpadrão de captura n
 >
 >[!DNL REMatch] as transformações podem ser muito lentas e podem ser responsáveis por grande parte do tempo de processamento de dados.
 
-Neste exemplo, uma transformação [!DNL REMatch] analisa uma data do formato AAAA-MM-DD nos campos x-ano, x-mês e x-dia. Para 2007-01-02, os valores de x-ano, x-mês e x-dia seriam 2007, 01 e 02, respectivamente.
+Neste exemplo, um [!DNL REMatch] A transformação analisa uma data do formato AAAA-MM-DD nos campos x-ano, x-mês e x-dia. Para 2007-01-02, os valores de x-ano, x-mês e x-dia seriam 2007, 01 e 02, respectivamente.
 
 ![](assets/cfg_TransformationType_REMatch.png)

@@ -3,7 +3,7 @@ description: Explicação das contáveis no Data Workbench (DWB) para projetar e
 title: Estruturas contáveis de design de esquema
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Estruturas contáveis de design de esquema{#schema-design-countable-structures}
+
+{{eol}}
 
 Explicação das contáveis no Data Workbench (DWB) para projetar e implementar o schema.
 
@@ -93,4 +95,4 @@ Execute as seguintes etapas para criar o Contável no Data Workbench:
 
    Se Contável não for o nível superior, então no campo pai forneça o nome da Contável Pai. No exemplo abaixo, a Contabilidade de envolvimento é criada e o Pai desse contador é o Cliente. ![](assets/dwb_impl_arch_5.png)
 
-Para obter informações adicionais sobre a arquitetura de Data Workbench para design de esquema, estruturas contáveis e configurações de feed de dados offline, consulte a [Interface do esquema do conjunto de dados](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
+Para obter mais informações sobre a arquitetura de Data Workbench para o design do esquema, estruturas contáveis e configurações de feed de dados offline, consulte o [Interface do esquema do conjunto de dados](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).

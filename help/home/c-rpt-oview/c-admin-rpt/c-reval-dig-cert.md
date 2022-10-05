@@ -3,7 +3,7 @@ description: Após a instalação, o certificado digital emitido pelo Adobe atua
 title: Revalidar o certificado digital (visão geral)
 uuid: 6c8533df-f459-41eb-84ac-344bad9fecdc
 exl-id: 810e3057-26a9-413c-b77c-525035d37756
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # Revalidar o certificado digital{#re-validating-the-digital-certificate}
+
+{{eol}}
 
 Após a instalação, o certificado digital emitido pelo Adobe atua como uma chave que permite executar o Servidor de relatórios.
 

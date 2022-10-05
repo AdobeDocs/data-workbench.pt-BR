@@ -3,7 +3,7 @@ description: Instruções sobre como instalar e configurar o Sensor para Serviç
 title: Microsoft IIS no Windows Server 2000 ou posterior
 uuid: 26da0638-82c8-424f-9f00-aab3a940e5a9
 exl-id: e4b5ac44-b0ac-43be-9b9c-180a64354081
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Microsoft IIS no Windows Server 2000 ou posterior{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Instruções sobre como instalar e configurar o Sensor para Serviços de Informações da Internet (IIS) 5.x ou 6.x em execução no Microsoft Windows Server 2000 ou posterior.
 
@@ -80,11 +82,11 @@ O arquivo txlogd.conf contém os parâmetros de configuração do Sensor.
 Você deve editar o arquivo para especificar, entre outras coisas, o tamanho da fila de disco, o endereço do servidor Insight e a ID que será anexada aos dados produzidos por esse sensor. O arquivo de configuração contém parâmetros obrigatórios e parâmetros opcionais.
 
 * **Parâmetros obrigatórios** são configurações que você deve especificar ao instalar o Sensor. Sem essas configurações, o Sensor não é executado com êxito.
-* **Parâmetros opcionais** são configurações padrão para valores predefinidos (que podem ser modificados) ou habilitam recursos opcionais.
+* **Parâmetros opcionais** são configurações que assumem o padrão de valores predefinidos (que podem ser modificados) ou ativam recursos opcionais.
 
 **Para editar o arquivo de configuração do Sensor**
 
-1. Abra o arquivo `<SensorDirectory>/txlogd.conf` em um editor de texto e defina os parâmetros necessários, bem como quaisquer parâmetros opcionais desejados.
+1. Abra o `<SensorDirectory>/txlogd.conf` em um editor de texto e defina os parâmetros obrigatórios, bem como quaisquer parâmetros opcionais desejados.
 
    Para obter descrições dos parâmetros txlogd.conf, consulte Parâmetros do arquivo Txlogd.conf do sensor.
 

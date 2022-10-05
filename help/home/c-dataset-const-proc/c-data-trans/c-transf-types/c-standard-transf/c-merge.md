@@ -3,14 +3,16 @@ description: A transformação Merge pega os valores do campo de entrada (normal
 title: Mesclar
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 4%
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
 # Mesclar{#merge}
+
+{{eol}}
 
 A transformação Merge pega os valores do campo de entrada (normalmente um vetor de strings), os combina em uma única string separada pelo delimitador especificado e coloca a string resultante no campo de saída especificado.
 
@@ -45,7 +47,7 @@ A transformação Merge pega os valores do campo de entrada (normalmente um veto
   </tr> 
   <tr> 
    <td colname="col1"> Delimitador </td> 
-   <td colname="col2"> <p>Sequência de caracteres usada para separar os elementos individuais do vetor da cadeia de caracteres de entrada na cadeia de caracteres de saída única. </p> <p> Se você pressionar a tecla Ctrl e clicar com o botão direito do mouse no parâmetro Delimitador, um menu <span class="wintitle"> Inserir</span> é exibido. Esse menu contém uma lista de caracteres especiais que geralmente são usados como delimitadores. </p> </td> 
+   <td colname="col2"> <p>Sequência de caracteres usada para separar os elementos individuais do vetor da cadeia de caracteres de entrada na cadeia de caracteres de saída única. </p> <p> Se você pressionar a tecla Ctrl e clicar com o botão direito do mouse no parâmetro Delimitador, uma <span class="wintitle"> Inserir</span> será exibido. Esse menu contém uma lista de caracteres especiais que geralmente são usados como delimitadores. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

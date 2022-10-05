@@ -3,7 +3,7 @@ description: Uma dimensão simples tem uma relação um para muitos com sua dime
 title: Dimensões simples
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
 exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dimensões simples{#simple-dimensions}
+
+{{eol}}
 
 Uma dimensão simples tem uma relação um para muitos com sua dimensão contável pai.
 
@@ -69,7 +71,7 @@ As dimensões simples são definidas pelos seguintes parâmetros:
       <li id="li_0FBE7F0B7B9744D994ECEDAA08F0045C"> PRIMEIRA LINHA: O valor da primeira entrada de log relacionada ao elemento da dimensão pai é usado, mesmo se a entrada estiver em branco. Se Input for um campo vetorial, a primeira linha no vetor para a entrada de log relevante será usada. Se esse valor estiver em branco ou não for um número, ou se a entrada de log relevante não atender à condição da dimensão, nenhum valor será usado. </li> 
       <li id="li_C17190BC699D4A099DC5326C07D1044D"> ÚLTIMO NONBLANK: O último valor de entrada que não está em branco é usado, independentemente de ser proveniente da última entrada de log. Se Input for um campo vetorial, a primeira linha no vetor para a entrada de log relevante será usada. </li> 
       <li id="li_00BAE86F12004C098F6A455908DB7062"> ÚLTIMA LINHA: O valor da última entrada de log relacionada ao elemento da dimensão pai é usado, mesmo se a entrada estiver em branco. Se Input for um campo vetorial, a primeira linha no vetor para a entrada de log relevante será usada. Se esse valor estiver em branco ou não for um número, ou se a entrada de log relevante não atender à condição da dimensão, nenhum valor será usado. </li> 
-     </ul> </p> <p> <p>Observação:  Se Operation não gerar um valor ou um valor em branco para uma entrada de log específica, o elemento correspondente da dimensão pai se relacionará ao elemento "Nenhum" da dimensão simples. </p> </p> <p> Você deve especificar uma operação para garantir que a dimensão seja definida conforme esperado. </p> </td> 
+     </ul> </p> <p> <p>Observação: Se Operation não gerar um valor ou um valor em branco para uma entrada de log específica, o elemento correspondente da dimensão pai se relacionará ao elemento "Nenhum" da dimensão simples. </p> </p> <p> Você deve especificar uma operação para garantir que a dimensão seja definida conforme esperado. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

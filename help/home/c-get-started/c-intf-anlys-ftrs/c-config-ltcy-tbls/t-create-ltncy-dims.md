@@ -3,7 +3,7 @@ description: As dimensões de latência são construídas de uma dimensão cont�
 title: Criar uma dimensão de latência
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # Criar uma dimensão de latência{#create-a-latency-dimension}
 
+{{eol}}
+
 As dimensões de latência são construídas de uma dimensão contável principal, como Sessões, e uma dimensão de tempo, como Dia.
 
 Ao criar uma tabela de latência no Data Workbench, você adiciona automaticamente uma dimensão de latência ao arquivo de visualização (.vw). É possível editar a dimensão de latência de uma tabela seguindo as etapas abaixo.
 
 **Para editar uma dimensão de latência**
 
-1. Abra a tabela de latência criada em um editor de texto, como o Bloco de notas. Ela está localizada na pasta User > `working profile name` > Work no diretório de instalação do Data Workbench.
+1. Abra a tabela de latência criada em um editor de texto, como o Bloco de notas. Está localizado em Usuário > `working profile name` > Pasta de trabalho no diretório de instalação do Data Workbench.
 
    A dimensão de latência definida inclui os parâmetros mostrados no exemplo a seguir. (A definição da sua dimensão de latência pode incluir parâmetros adicionais.) O [!DNL line entity = LatencyDim:] indica o início da definição da dimensão de latência.
 
@@ -55,7 +57,7 @@ Ao criar uma tabela de latência no Data Workbench, você adiciona automaticamen
    </tr> 
    <tr> 
       <td colname="col1"> <p>Clip </p> </td> 
-      <td colname="col2"> <p>Uma dimensão contável que tem uma relação um para muitos com o nível da dimensão de latência. A latência não é calculada entre os limites dessa dimensão. Por exemplo, se você especificar um nível de Exibição de página e um clipe de Sessão, as latências são calculadas para as exibições de página que ocorreram durante a mesma sessão do evento. </p> <p>Para obter informações sobre as dimensões um para muitos (simples), consulte o <i>Guia de Configuração do Conjunto de Dados</i>. </p> </td> 
+      <td colname="col2"> <p>Uma dimensão contável que tem uma relação um para muitos com o nível da dimensão de latência. A latência não é calculada entre os limites dessa dimensão. Por exemplo, se você especificar um nível de Exibição de página e um clipe de Sessão, as latências são calculadas para as exibições de página que ocorreram durante a mesma sessão do evento. </p> <p>Para obter informações sobre dimensões um para muitos (simples), consulte o <i>Guia de configuração do conjunto de dados</i>. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Hora </p> </td> 
@@ -80,7 +82,7 @@ Ao criar uma tabela de latência no Data Workbench, você adiciona automaticamen
    </tbody> 
    </table>
 
-1. Salve o arquivo [!DNL .vw] na pasta User\*nome do perfil de trabalho*\Work .
+1. Salve as [!DNL .vw] para a pasta Usuário\*nome do perfil de trabalho*\Trabalho.
 
    A seguir estão as configurações para a dimensão de latência padrão:
 

@@ -3,7 +3,7 @@ description: A transformação Format usa um conjunto de entradas e as formata p
 title: Formato
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Formato{#format}
+
+{{eol}}
 
 A transformação Format usa um conjunto de entradas e as formata para criar uma saída correspondente à estrutura específica.
 
@@ -47,7 +49,7 @@ A transformação funciona em strings simples ou em vetores de string e produz a
   </tr> 
   <tr> 
    <td colname="col1"> Entradas </td> 
-   <td colname="col2"> <p>Campos contendo strings simples ou vetores de string. No caso de vetores de string como entradas, a saída também será um vetor de string resultante da aplicação do parâmetro <span class="wintitle"> Format</span> para cada conjunto de valores de entrada. </p> <p> <p>Observação:  A numeração de entradas começa em 0, mas a numeração dos valores de substituição de formato começa em %1%. </p> </p> </td> 
+   <td colname="col2"> <p>Campos contendo strings simples ou vetores de string. No caso de vetores de string como entradas, a saída também será um vetor de string resultante da aplicação do <span class="wintitle"> Formato</span> para cada conjunto de valores de entrada. </p> <p> <p>Observação: A numeração de entradas começa em 0, mas a numeração dos valores de substituição de formato começa em %1%. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

@@ -3,7 +3,7 @@ description: Mostra como configurar Título, Perfil, Dimension, Métrica, Filtro
 title: Configurar visualizações
 uuid: aca77188-8f28-4554-8913-412b252f688c
 exl-id: 153adf94-5689-4917-9d71-625caef49903
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Configurar visualizações{#configuring-visualizations}
+
+{{eol}}
 
 Mostra como configurar Título, Perfil, Dimension, Métrica, Filtro, Exibir parte superior, Classificar por e Período.
 
@@ -22,7 +24,7 @@ Cada visualização na tela do painel tem sua própria configuração. Quando um
 
 ## Título da visualização {#section-0414844283d745ae912e85f8ea14a51d}
 
-Este campo permite personalizar o título exibido na parte superior da visualização. Por padrão, o título é definido como **[!UICONTROL Automatic Title]**, o que gerará automaticamente um título para a janela de visualização. Ao limpar o botão **[!UICONTROL Automatic Title]**, você pode colocar qualquer título nesse campo. (Esse campo se aplica a todas as visualizações.)
+Este campo permite personalizar o título exibido na parte superior da visualização. Por padrão, o título é definido como **[!UICONTROL Automatic Title]**, que gerará automaticamente um título para a janela de visualização. Ao limpar o **[!UICONTROL Automatic Title]** , você pode colocar qualquer título nesse campo. (Esse campo se aplica a todas as visualizações.)
 
 ![](assets/title.png)
 
@@ -60,11 +62,11 @@ As visualizações de várias métricas têm uma janela de seleção de várias 
 
 A lista é preenchida na lista de métricas disponíveis no perfil selecionado no campo Perfil .
 
-Clique nas métricas desejadas e em **[!UICONTROL Select]**. (Esse campo não se aplica às visualizações de Rich Text.)
+Clique nas métricas desejadas e, em seguida, clique em **[!UICONTROL Select]**. (Esse campo não se aplica às visualizações de Rich Text.)
 
 ## Filtros {#section-f8619ae2f8e54735a2c1b0fbb8bb1281}
 
-Selecione os filtros que deseja aplicar à visualização. A janela de seleção de filtro permite selecionar vários filtros na lista de filtros. A lista é preenchida na lista de filtros disponíveis no perfil selecionado no campo Perfil . Clique no filtro desejado e em **[!UICONTROL Select]**.
+Selecione os filtros que deseja aplicar à visualização. A janela de seleção de filtro permite selecionar vários filtros na lista de filtros. A lista é preenchida na lista de filtros disponíveis no perfil selecionado no campo Perfil . Clique no filtro desejado e, em seguida, clique em **[!UICONTROL Select]**.
 
 >[!NOTE]
 >

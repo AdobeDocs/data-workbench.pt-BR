@@ -3,7 +3,7 @@ description: As sobreposições de página são configuradas somente no aplicati
 title: Configurar uma sobreposição de página
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Configurar uma sobreposição de página{#configure-a-page-overlay}
+
+{{eol}}
 
 As sobreposições de página são configuradas somente no aplicativo Site, mas podem ser configuradas para outros aplicativos.
 
@@ -43,13 +45,13 @@ Para configurar a sobreposição de página para [!DNL Site], você deve editar 
 
 1. I
 
-   No [!DNL Profile Manager], navegue até **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
+   n [!DNL Profile Manager], navegue até **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
 
    >[!NOTE]
    >
    >O diretório Dimension Element contém os itens do menu de contexto que são exibidos ao clicar com o botão direito do mouse em um elemento de dimensão. Por exemplo, abra uma tabela de URI e selecione um elemento de URI. Clique com o botão direito do mouse no URI e na sobreposição da página.
 
-1. Na pasta URI, clique com o botão direito do mouse na marca de seleção ao lado do arquivo [!DNL Page Overlay.vw] e clique em **[!UICONTROL Make Local]**. Uma marca de verificação para este arquivo aparece na coluna [!DNL User].
+1. Na pasta URI, clique com o botão direito do mouse na marca de seleção ao lado do [!DNL Page Overlay.vw] e clique em **[!UICONTROL Make Local]**. Uma marca de verificação para este arquivo aparece no [!DNL User] coluna.
 1. Clique com o botão direito do mouse na marca de seleção recém-criada e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Especifique o Domínio (e a Altura do Navegador, se necessário).
 
@@ -74,18 +76,18 @@ Para configurar a sobreposição de página para [!DNL Site], você deve editar 
    ```
 
 1. Salve o arquivo.
-1. Para disponibilizar essa alteração a todos os usuários do perfil de trabalho, no [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção do arquivo [!DNL .vw] na coluna [!DNL User] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. Para disponibilizar essa alteração para todos os usuários do perfil de trabalho, no [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção do [!DNL .vw] no [!DNL User] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
-   >Você pode criar arquivos de modelo adicionais para outros sites ou subdomínios. Cada modelo criado aparece no [!DNL Page Overlay menu].
+   >Você pode criar arquivos de modelo adicionais para outros sites ou subdomínios. Cada modelo criado é exibido na [!DNL Page Overlay menu].
 
-1. Na pasta Contexto do [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção ao lado do arquivo [!DNL Page Overlay Link Templates.cfg] e clique em **[!UICONTROL Make Local]**.
+1. Na pasta Contexto do [!DNL Profile Manager], clique com o botão direito do mouse na marca de seleção ao lado do [!DNL Page Overlay Link Templates.cfg] e clique em **[!UICONTROL Make Local]**.
 
-   Uma marca de verificação para este arquivo aparece na coluna [!DNL User].
+   Uma marca de verificação para este arquivo aparece no [!DNL User] coluna.
 
 1. Clique com o botão direito do mouse na marca de seleção recém-criada e clique em **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
-1. Clique com o botão direito do mouse em **[!UICONTROL Link Templates]** e clique em **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
+1. Clique com o botão direito do mouse **[!UICONTROL Link Templates]** e clique em **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. Edite os parâmetros do vetor LinkRegex conforme necessário:
 
 <table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
@@ -102,7 +104,7 @@ Para configurar a sobreposição de página para [!DNL Site], você deve editar 
   </tr>
   <tr>
    <td colname="col1"> <p>Expressão </p> </td>
-   <td colname="col2"> <p>A expressão regular usada para selecionar a parte relevante do link HTML para localizar o próximo elemento do Dimension. A expressão regular deve ser uma correspondência exata, e o padrão de saída desejado é agrupado com parênteses. Para obter detalhes sobre expressões regulares, consulte o <i>Guia de Configuração de Conjunto de Dados</i>. </p> </td>
+   <td colname="col2"> <p>A expressão regular usada para selecionar a parte relevante do link HTML para localizar o próximo elemento do Dimension. A expressão regular deve ser uma correspondência exata, e o padrão de saída desejado é agrupado com parênteses. Para obter detalhes sobre expressões regulares, consulte o <i>Guia de configuração do conjunto de dados</i>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Padrão de saída </p> </td>
@@ -116,4 +118,4 @@ O arquivo de exemplo a seguir mostra três expressões regulares:
 ![](assets/cfg_PageOverlayLinkTemplates_Example.png)
 
 1. Para salvar o arquivo, clique com o botão direito do mouse **[!UICONTROL (modified)]** na parte superior da janela e clique em **[!UICONTROL Save]**.
-1. Para disponibilizar essa alteração a todos os usuários do perfil de trabalho, clique com o botão direito do mouse na marca de seleção [!DNL Page Overlay Link Templates.cfg] na coluna [!DNL User] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. Para disponibilizar essa alteração para todos os usuários do perfil de trabalho, clique com o botão direito do mouse na marca de seleção de [!DNL Page Overlay Link Templates.cfg] no [!DNL User] e clique em **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

@@ -3,7 +3,7 @@ description: A interface do Esquema do conjunto de dados exibe as dimensões est
 title: Esquema do conjunto de dados
 uuid: 4ef5f14b-dc19-4118-a2f2-d680ded8092c
 exl-id: b80e6e8e-9147-46ec-8602-2d7e5d33f077
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # Esquema do conjunto de dados{#dataset-schema}
 
+{{eol}}
+
 A interface do Esquema do conjunto de dados exibe as dimensões estendidas (contáveis, simples, muitas para muitas, numéricas, denormal e de tempo) definidas em qualquer arquivo de Configuração do conjunto de dados de transformação e as relações entre essas dimensões.
 
-Além disso, a interface [!DNL Dataset Schema] mostra qualquer dimensão derivada que você tenha definido, bem como qualquer dimensão estendida que esteja configurada para ser oculta.
+Além disso, a variável [!DNL Dataset Schema] A interface do mostra qualquer dimensão derivada que você tenha definido, bem como qualquer dimensão estendida que esteja configurada para ser oculta.
 
 ![](assets/vis_DatasetSchema_Example.png)
 
@@ -24,9 +26,9 @@ Esta seção discute os seguintes tópicos:
 * [Para exibir a visualização padrão de uma dimensão](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-1bbb73a5cbb34ffb844eb1932db85318)
 * [Para exibir uma visualização específica de uma dimensão](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-d46626df90bc4c44ae60c4b71eaeac7f)
 
-## Para interpretar o tipo de Dimension usando a interface do esquema do conjunto de dados {#section-16a0a12b11334c07bec558c0b7d260b1}
+## Interpretação do tipo de Dimension usando a interface do esquema do conjunto de dados {#section-16a0a12b11334c07bec558c0b7d260b1}
 
-A tabela a seguir lista os tipos de dimensão e as cores em que seus nomes aparecem na interface [!DNL Dataset Schema]. Os pais das dimensões de amostra (do exemplo acima) também são anotados.
+A tabela a seguir lista os tipos de dimensão e as cores em que seus nomes aparecem no [!DNL Dataset Schema] interface. Os pais das dimensões de amostra (do exemplo acima) também são anotados.
 
 <table id="table_20D1A9EAAED247338476C475C63255F5"> 
  <thead> 
@@ -82,12 +84,12 @@ A tabela a seguir lista os tipos de dimensão e as cores em que seus nomes apare
 
 ## Para exibir a visualização padrão de um Dimension {#section-1bbb73a5cbb34ffb844eb1932db85318}
 
-* Na interface [!DNL Dataset Schema], clique na dimensão desejada. A visualização padrão é exibida. Por exemplo, se a visualização padrão for uma tabela que exibe Sessões e a dimensão selecionada, e você clicar na dimensão URI, o Data Workbench exibirá uma tabela com URI por Sessões.
+* No [!DNL Dataset Schema] , clique na dimensão desejada. A visualização padrão é exibida. Por exemplo, se a visualização padrão for uma tabela que exibe Sessões e a dimensão selecionada, e você clicar na dimensão URI, o Data Workbench exibirá uma tabela com URI por Sessões.
 
 >[!NOTE]
 >
->Se desejar alterar a visualização padrão que é exibida, consulte o capítulo Configuração da interface e recursos de análise no *Guia do usuário do Data Workbench*.
+>Se desejar alterar a visualização padrão exibida, consulte o capítulo Configuração da interface e recursos de análise na *Guia do usuário do Data Workbench*.
 
-## Para exibir uma visualização específica para um Dimension {#section-d46626df90bc4c44ae60c4b71eaeac7f}
+## Para exibir uma visualização específica de um Dimension {#section-d46626df90bc4c44ae60c4b71eaeac7f}
 
-* Na interface [!DNL Dataset Schema], clique com o botão direito do mouse na dimensão desejada e clique em **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.
+* No [!DNL Dataset Schema] clique com o botão direito do mouse na dimensão desejada e clique em **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.

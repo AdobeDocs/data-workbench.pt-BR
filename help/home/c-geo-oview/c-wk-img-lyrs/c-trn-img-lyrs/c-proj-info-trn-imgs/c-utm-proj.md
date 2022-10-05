@@ -3,7 +3,7 @@ description: A projeção Universal Transverse Mercator (UTM) é definida por oi
 title: Projeções Universais Transversas de Mercator
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 3%
@@ -12,19 +12,21 @@ ht-degree: 3%
 
 # Projeções Universais Transversas de Mercator{#universal-transverse-mercator-projections}
 
+{{eol}}
+
 A projeção Universal Transverse Mercator (UTM) é definida por oito parâmetros.
 
 Ao especificar uma projeção universal transversa de Mercator para uma camada de imagem do terreno, seus arquivos de imagem do terreno devem ser alinhados com false (projetado) norte, em direção à parte superior da imagem, e false, para leste, à direita da imagem.
 
-Para especificar uma projeção UTM para qualquer fonte de imagem do terreno, você deve abrir o arquivo [!DNL Terrain Images.cfg] em um editor de texto, como o Notepad, definir o parâmetro Informações da projeção como &quot;TransverseMercatorProjection&quot; e adicionar configurações para a projeção UTM.
+Para especificar uma projeção UTM para qualquer fonte de imagem do terreno, você deve abrir o [!DNL Terrain Images.cfg] em um editor de texto como o Notepad, defina o parâmetro Informações de projeção como &quot;TransverseMercatorProjection&quot; e adicione configurações para a projeção de UTM.
 
 **Especificar uma projeção universal transversa de Mercator**
 
-1. No [!DNL Server Files Manager], clique em **[!UICONTROL Components]** para visualizar seu conteúdo. O arquivo [!DNL Terrain Images.cfg] está localizado dentro desse diretório.
+1. No [!DNL Server Files Manager], clique em **[!UICONTROL Components]** para visualizar seu conteúdo. O [!DNL Terrain Images.cfg] O arquivo está localizado dentro desse diretório.
 
-1. Clique com o botão direito do mouse na marca de seleção na coluna *server name* para [!DNL Terrain Images.cfg] e clique em **[!UICONTROL Make Local]**. Uma marca de seleção aparece na coluna [!DNL Temp] para [!DNL Terrain Images.cfg].
+1. Clique com o botão direito do mouse na marca de seleção no *nome do servidor* coluna para [!DNL Terrain Images.cfg], depois clique em **[!UICONTROL Make Local]**. Uma marca de seleção aparece no [!DNL Temp] coluna para [!DNL Terrain Images.cfg].
 
-1. Clique com o botão direito do mouse na marca de seleção recém-criada na coluna [!DNL Temp] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. O arquivo [!DNL Terrain Images.cfg]aparece em uma janela Bloco de notas.
+1. Clique com o botão direito do mouse na marca de seleção recém-criada na [!DNL Temp] e clique em **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. O [!DNL Terrain Images.cfg]arquivo é exibido em uma janela Bloco de notas.
 
 1. Edite os parâmetros de Informações de projeção usando o fragmento de arquivo de amostra a seguir e a tabela de parâmetros como guias. Certifique-se de especificar o tipo de projeção, como destacado abaixo.
 
@@ -47,4 +49,4 @@ Para especificar uma projeção UTM para qualquer fonte de imagem do terreno, vo
 | Falsa Nórdica | O falso nada do equador na projeção, em metros. Para UTM, é 0 para zonas do hemisfério norte e 10.000 para zonas do hemisfério sul. |
 | Coordenadas do Canto Noroeste, Coordenadas do Canto Sudeste | As coordenadas (em metros projetados) dos cantos superior esquerdo e inferior direito da imagem. |
 | Prime Meridian | A longitude do meridiano central da projeção, especificada em graus a leste de Greenwich. Podem ser utilizados números negativos para especificar graus ocidentais. |
-| Fator de Escala | A relação entre o raio do cilindro de projeção e o eixo semimajante do elipsoide. Para projeções de Mercator Universal Transverse (UTM), é sempre 0,9996. |
+| Fator de escala | A relação entre o raio do cilindro de projeção e o eixo semimajante do elipsoide. Para projeções de Mercator Universal Transverse (UTM), é sempre 0,9996. |

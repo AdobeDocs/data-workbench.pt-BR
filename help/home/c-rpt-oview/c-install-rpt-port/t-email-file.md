@@ -3,7 +3,7 @@ description: O acesso a permissões e no Portal de relatórios é controlado usa
 title: Editar o arquivo Email.asp
 uuid: 18251170-0317-4a32-b9e1-4ebf2d7ad123
 exl-id: e984f12f-362a-4dee-9af3-6d7a38a178a4
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 2%
@@ -12,17 +12,19 @@ ht-degree: 2%
 
 # Editar o arquivo Email.asp{#edit-the-email-asp-file}
 
+{{eol}}
+
 O acesso a permissões e no Portal de relatórios é controlado usando contas de usuário e grupo individuais.
 
-Cada vez que você adiciona uma nova conta ou edita uma conta existente, um email de confirmação pode ser enviado para o endereço de email especificado para essa conta (consulte [Trabalhar com contas](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)) e copiado para os endereços de email especificados no arquivo [!DNL email.asp].
+Cada vez que você adiciona uma nova conta ou edita uma conta existente, um email de confirmação pode ser enviado para o endereço de email especificado para essa conta (consulte [Trabalhar com contas](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)) e copiadas para os endereços de email especificados na [!DNL email.asp] arquivo.
 
 >[!NOTE]
 >
->Os emails de notificação são enviados para usuários da conta somente quando você especifica um endereço de email para a conta e configura corretamente o arquivo [!DNL email.asp]. Se não quiser que emails de notificação sejam enviados para uma conta, deixe o campo de email da conta em branco.
+>Os emails de notificação são enviados para usuários da conta somente quando você tiver especificado um endereço de email para a conta e configurado corretamente a variável [!DNL email.asp] arquivo. Se não quiser que emails de notificação sejam enviados para uma conta, deixe o campo de email da conta em branco.
 
-Este arquivo reside na pasta `\*PortalName*\PortalASP`.
+Esse arquivo reside no `\*PortalName*\PortalASP` pasta.
 
-1. Na máquina em que o IIS está sendo executado, abra o arquivo [!DNL email.asp] em um editor de texto, como o Bloco de notas.
+1. Na máquina em que o IIS está em execução, abra o [!DNL email.asp] em um editor de texto, como o Bloco de notas.
 1. Defina as seguintes variáveis:
 
 <table id="table_44F52DA266364DF993C40678A28E0F0D">
@@ -47,12 +49,12 @@ Este arquivo reside na pasta `\*PortalName*\PortalASP`.
   </tr>
   <tr>
    <td colname="col1"> smtpconnectiontimeout </td>
-   <td colname="col2">O tempo que <span class="wintitle"> Relatório</span> deve aguardar uma resposta do servidor SMTP antes de expirar a conexão. </td>
+   <td colname="col2">A quantidade de tempo que <span class="wintitle"> Relatório</span> O deve aguardar uma resposta do servidor SMTP antes de expirar a conexão. </td>
   </tr>
  </tbody>
 </table>
 
-1. Para as funções [!DNL NewUserEmail()] e [!DNL UpdateUserEmail()], defina as seguintes variáveis:
+1. Para o [!DNL NewUserEmail()] e [!DNL UpdateUserEmail()] , defina as seguintes variáveis:
 
    <table id="table_91C5E36B84A94C4097EE5993592BE587">
    <thead>
@@ -64,11 +66,11 @@ Este arquivo reside na pasta `\*PortalName*\PortalASP`.
    <tbody>
    <tr>
       <td colname="col1"> De </td>
-      <td colname="col2">O texto que você deseja que apareça na linha de cabeçalho De nos emails de confirmação. Esse valor pode ser o mesmo do valor <span class="wintitle"> CC</span>. </td>
+      <td colname="col2">O texto que você deseja que apareça na linha de cabeçalho De nos emails de confirmação. Esse valor pode ser igual ao valor <span class="wintitle"> CC</span> valor. </td>
    </tr>
    <tr>
       <td colname="col1"> CC </td>
-      <td colname="col2"> <p>Opcional. O endereço de email válido da pessoa ou alias que deve receber uma cópia de todas as mensagens relacionadas às contas de usuário novas e alteradas. Você pode especificar vários endereços de email separando os endereços com vírgulas (sem espaços). </p> <p>Por exemplo: <span class="filepath"> admin@company.com,joemanager@company.com</span></p> <p> <p>Observação:  Os recipients recebem cópias de emails que contêm senhas de usuário. </p> </p> </td>
+      <td colname="col2"> <p>Opcional. O endereço de email válido da pessoa ou alias que deve receber uma cópia de todas as mensagens relacionadas às contas de usuário novas e alteradas. Você pode especificar vários endereços de email separando os endereços com vírgulas (sem espaços). </p> <p>Por exemplo: <span class="filepath"> admin@company.com,joemanager@company.com</span></p> <p> <p>Observação: Os recipients recebem cópias de emails que contêm senhas de usuário. </p> </p> </td>
    </tr>
    <tr>
       <td colname="col1"> Assunto </td>
@@ -85,7 +87,7 @@ Este arquivo reside na pasta `\*PortalName*\PortalASP`.
       <li id="li_7CBCC5CFF9E04776BBC893278785AEE7">As informações de logon do portal da Web são fornecidas abaixo: </li>
       <li id="li_5346F0AB3568444B88117C295D8E99C5"><p>UserName: username </p><p>Nova senha: senha </p></li>
       <li id="li_B0D1FAE818BA42CF8546796800A1AA08"><p>Você pode acessar o portal usando o seguinte URL: </p><p><span class="filepath"> https://WebPath</span></p></li>
-      <li id="li_7CD71EBDFA1D418F960040569CD511EB">Depois de fazer logon no portal, você pode alterar sua senha na guia <span class="wintitle"> Admin</span>. </li>
+      <li id="li_7CD71EBDFA1D418F960040569CD511EB">Depois de fazer logon no portal, você pode alterar sua senha no <span class="wintitle"> Administrador</span> guia . </li>
       </ul></p> </td>
    </tr>
    </tbody>

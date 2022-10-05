@@ -1,20 +1,24 @@
 ---
-description: Exemplos de arquivos txlogd.conf para as combinações de servidor da Web/SO suportadas.
-title: Amostras de arquivo Txlogd.conf
+description: Exemplos de arquivos txlogd.conf para as combinações de servidor da Web/SO compatíveis.
+title: Amostras do arquivo Txlogd.conf
 uuid: ba8f3938-b7d6-44bd-93ca-eb66f509ef4e
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 3bbb794f-c771-43c6-9ebf-8892c1d9a707
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
+# Amostras do arquivo Txlogd.conf{#txlogd-conf-file-samples}
 
-# Amostras de arquivo Txlogd.conf{#txlogd-conf-file-samples}
+{{eol}}
 
-Exemplos de arquivos txlogd.conf para as combinações de servidor da Web/SO suportadas.
+Exemplos de arquivos txlogd.conf para as combinações de servidor da Web/SO compatíveis.
 
 ## IIS no Microsoft Windows Server 2000 ou posterior {#section-d5d602c3e87b4ecf910e71772350e865}
 
-Amostra do arquivo txlogd.conf necessário para o Sensor for Internet Information Service (IIS) 5.x ou 6.x executado no Microsoft Windows Server 2000 ou posterior.
+Exemplo do arquivo txlogd.conf necessário para o Sensor para o Serviço de Informações da Internet (IIS) 5.x ou 6.x executado no Microsoft Windows Server 2000 ou posterior.
 
 ```
 # sample txlogd configuration file for IIS
@@ -117,7 +121,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Lotus Sametime no Windows Server 2000 ou posterior {#section-36265b8192484a268ebafc42e941fdf2}
 
-Amostra do arquivo txlogd.conf necessário para o Sensor do Lotus Sametime executado no Microsoft Windows Server 2000 ou posterior.
+Exemplo do arquivo txlogd.conf necessário para o Sensor do Lotus Sametime em execução no Microsoft Windows Server 2000 ou posterior.
 
 ```
 # sample txlogd configuration file for Lotus Sametime
@@ -193,7 +197,7 @@ SiteTest http,localhost,80,/test.html
 
 ## Lotus Domino no Windows Server 2000 ou posterior {#section-d2fd9e0684fe460bbccaaabc4197bb48}
 
-Amostra do arquivo txlogd.conf necessário para o Sensor do Lotus Domino executado no Microsoft Windows Server 2000 ou posterior.
+Exemplo do arquivo txlogd.conf necessário para o Sensor do Lotus Domino em execução no Microsoft Windows Server 2000 ou posterior.
 
 ```
 # sample txlogd configuration file for Lotus Domino
@@ -273,7 +277,7 @@ SpecialLogField cs(cert)=vars.certificate vys_log
 
 ## IBM HTTP Server no IBM AIX 5.2 {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
 
-Amostra do arquivo txlogd.conf necessário para o Sensor para o IBM HTTP Server 2.0.x em execução no IBM AIX 5.2.
+Amostra do arquivo txlogd.conf necessário para o Sensor do IBM HTTP Server 2.0.x executado no IBM AIX 5.2.
 
 ```
 # sample txlogd configuration file for IHS 2.0.x
@@ -410,9 +414,9 @@ DisableField cs(cookie)
 PrivacyID 0x1111111
 ```
 
-## Apache Server 1.3.x em RedHat Linux, Sun Solaris, FreeBSD ou Mac OSX {#section-36d0b6d761424d358280226a16e643d2}
+## Apache Server 1.3.x no RedHat Linux, Sun Solaris, FreeBSD ou Mac OSX {#section-36d0b6d761424d358280226a16e643d2}
 
-Amostra do arquivo txlogd.conf necessário para o Sensor do Apache Server 1.3.x executado em RedHat Linux 7.x, Sun Solaris 2.6 ou posterior, FreeBSD 4 ou posterior ou Mac OS X PowerPC.
+Exemplo do arquivo txlogd.conf necessário para o Sensor do Apache Server 1.3.x executado em RedHat Linux 7.x, Sun Solaris 2.6 ou posterior, FreeBSD 4 ou posterior ou Mac OS X PowerPC.
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -554,7 +558,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Apache Server 1.3.x no Windows 2000 Server ou posterior {#section-d225f200da28441895fb90a64c2a2ffd}
 
-Amostra do arquivo txlogd.conf necessário para o Sensor do Apache Server 1.3.x executado no Microsoft Windows Server 2000 ou posterior.
+Exemplo do arquivo txlogd.conf necessário para o Sensor do Apache Server 1.3.x executado no Microsoft Windows Server 2000 ou posterior.
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -695,9 +699,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Apache Server 2.0.x ou 2.2 em Linux, Sun Solaris ou FreeBSD {#section-b87565beba44472483348d442329c3fe}
+## Apache Server 2.0.x ou 2.2 no Linux, Sun Solaris ou FreeBSD {#section-b87565beba44472483348d442329c3fe}
 
-Amostra do arquivo txlogd.conf necessário para o Sensor para os seguintes servidores Apache.
+Amostra do arquivo txlogd.conf necessário para o Sensor nos seguintes servidores Apache.
 
 ```
 Apache Server 2.0.40 running under RedHat Linux 7.x or later or Sun Solaris SPARC 2.6 or later
@@ -844,7 +848,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Apache Server 2.0.x ou 2.2 no Windows Server 2000 ou posterior {#section-a1749d32a8aa4ca0b81f8b95c8dc511c}
 
-Amostra do arquivo txlogd.conf necessário para o Sensor do Apache Server 2.0.x ou 2.2 em execução no Microsoft Windows Server 2000 ou posterior.
+Exemplo do arquivo txlogd.conf necessário para o Sensor do Apache Server 2.0.x ou 2.2 em execução no Microsoft Windows Server 2000 ou posterior.
 
 ```
 # sample txlogd configuration file for Apache 2.0.x or 2.2
@@ -989,5 +993,4 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Título da seção {#section-f25d181e181e4bb7bf46d4410756e945}
-
+## Título da Seção {#section-f25d181e181e4bb7bf46d4410756e945}

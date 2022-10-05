@@ -3,7 +3,7 @@ description: Os benchmarks exibem diferenças qualitativas nos dados, comparando
 title: Referenciais
 uuid: 2e5255cd-eafd-45de-a16f-70d719d2ac0c
 exl-id: 6294c4f9-a338-409a-a157-86cdfbbb6f76
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Referenciais{#benchmarks}
+
+{{eol}}
 
 Os benchmarks exibem diferenças qualitativas nos dados, comparando a distribuição de uma métrica com base em todos os dados com a distribuição de uma métrica com base em uma seleção nos dados.
 

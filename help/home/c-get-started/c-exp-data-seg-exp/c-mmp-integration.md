@@ -3,7 +3,7 @@ description: O Data Workbench permite exportar arquivos para integração com a 
 title: Exportação de perfil de marketing principal
 uuid: bae0f0c5-a452-4afd-9f2c-5f3ab69a12d2
 exl-id: 9fc89815-d31d-41a7-a0c0-de1e84b24baa
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 3%
@@ -12,11 +12,13 @@ ht-degree: 3%
 
 # Exportação de perfil de marketing principal{#master-marketing-profile-export}
 
+{{eol}}
+
 O Data Workbench permite exportar arquivos para integração com Perfis e públicos-alvo como parte de uma Adobe Experience Cloud integrada.
 
 <!-- <a id="section_731922BC8628479198A41EF3EA72F2FF"></a> -->
 
-Perfis e públicos-alvo faz parte do [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR), um serviço principal do [!DNL Adobe Experience Cloud]. A exportação de Perfis e públicos-alvo permite que os públicos-alvo sejam compartilhados no Experience Cloud usando uma ID de Experience Cloud exclusiva (ECID) atribuída a cada visitante e, em seguida, usada por [Audience Manager](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.html). O aplicativo [!DNL ExportIntegration.exe] ( [!DNL E:\Server\Scripts]) é empregado para gerar exportações de MMP e Adobe Target.
+Perfis e públicos-alvo fazem parte do [Serviço de identidade do Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR), um serviço central da [!DNL Adobe Experience Cloud]. A exportação de Perfis e públicos-alvo permite que os públicos-alvo sejam compartilhados no Experience Cloud usando uma ID de Experience Cloud exclusiva (ECID) que é atribuída a cada visitante e, em seguida, usada por [Audience Manager](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.html). O [!DNL ExportIntegration.exe] pedido ( [!DNL E:\Server\Scripts]) é empregado para gerar exportações de MMP e Adobe Target.
 
 **Configuração do servidor FSU para usar perfis e públicos-alvo**
 
@@ -51,7 +53,7 @@ Perfis e públicos-alvo faz parte do [Experience Cloud Identity Service](https:/
 
    >[!NOTE]
    >
-   >O arquivo [!DNL MMPExport.cfg]também permite capturar todos os registros, dividi-los em conjuntos e criar partes de registros. As partes dos registros são então exportadas para o Amazon S3. Três parâmetros obrigatórios são necessários para criar partes de registros: [!DNL numRecordsPerChunk], [!DNL numThreads] e [!DNL maxRetriesOnSendFailure].
+   >O [!DNL MMPExport.cfg]também permite que você pegue todos os registros, divida-os em conjuntos e crie partes de registros. As partes dos registros são então exportadas para o Amazon S3. Três parâmetros obrigatórios são necessários para criar partes de registros: [!DNL numRecordsPerChunk], [!DNL numThreads]e [!DNL maxRetriesOnSendFailure].
 
 **Definição dos parâmetros**
 
@@ -65,23 +67,23 @@ Perfis e públicos-alvo faz parte do [Experience Cloud Identity Service](https:/
  <tbody> 
   <tr> 
    <td colname="col1"> <i>Bucket s3</i> </td> 
-   <td colname="col2"> O bucket AWS S3 para o qual a exportação é transferida. </td> 
+   <td colname="col2"> O bucket do AWS S3 para o qual a exportação é transferida. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>Diretório de objetos s3</i> </td> 
-   <td colname="col2"> Um caminho para salvar arquivos s3. Isso é compatível com subdiretórios. <p> <p>Importante:  Caracteres de espaço e multibyte não são permitidos no caminho e criarão erros na exportação. (O hífen é permitido). </p> </p> </td> 
+   <td colname="col2"> Um caminho para salvar arquivos s3. Isso é compatível com subdiretórios. <p> <p>Importante: Caracteres de espaço e multibyte não são permitidos no caminho e criarão erros na exportação. (O hífen é permitido). </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>Região s3</i> </td> 
-   <td colname="col2"> A região AWS s3 para a qual a exportação é enviada. Ex. us-east-1 </td> 
+   <td colname="col2"> A Região do AWS s3 para a qual a exportação é enviada. Ex. us-east-1 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>Chave de acesso s3</i> </td> 
-   <td colname="col2"> Chave de acesso AWS s3 </td> 
+   <td colname="col2"> Chave de acesso do AWS s3 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3 Chave Secreta</i> </td> 
-   <td colname="col2"> Chave secreta AWS s3 </td> 
+   <td colname="col2"> Chave secreta do AWS s3 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>Nome do provedor de dados</i> </td> 
@@ -105,7 +107,7 @@ Perfis e públicos-alvo faz parte do [Experience Cloud Identity Service](https:/
   </tr> 
   <tr> 
    <td colname="col1"> <i>numRecordsPerChunk</i> </td> 
-   <td colname="col2"> <p>Determina o tamanho do bloco em termos de número de registros. </p> <p>A implementação corta o valor especificado pelo usuário para mín = 1000 registros &amp; amp; nbsp;(~50 KB chunks)&amp;nbsp;e máx = 50000 registros (~2,5 MB chunks).&amp;nbsp;Um valor padrão de 10000 é usado caso o usuário não especifique essa propriedade de configuração. </p> </td> 
+   <td colname="col2"> <p>Determina o tamanho do bloco em termos de número de registros. </p> <p>A implementação corta o valor especificado pelo usuário para mín = 1000 registros &amp; nbsp;(~50 KB chunks) &amp; nbsp; e máx = 50000 registros (~2,5 MB chunks).&amp;nbsp;Um valor padrão de 10000 é usado caso o usuário não especifique essa propriedade de configuração. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>numThreads</i> </td> 
@@ -120,22 +122,22 @@ Perfis e públicos-alvo faz parte do [Experience Cloud Identity Service](https:/
 
 **Gerando exportação de MMP do cliente**
 
-1. No cliente, abra um espaço de trabalho e clique com o botão direito do mouse em **[!UICONTROL Tools]** **[!UICONTROL Detail Table]**.
-1. Adicione **Level**.
-1. Clique com o botão direito do mouse no cabeçalho e selecione **Adicionar Atributos**.
-1. Clique com o botão direito do mouse no cabeçalho e selecione **New Principal Marketing Profile Export**. ![](assets/mmp_mmp_export.png)
-1. Expanda **Consulta**.
+1. No cliente, abra um espaço de trabalho e clique com o botão direito do mouse **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
+1. Adicionar **Nível**.
+1. Clique com o botão direito do mouse no cabeçalho e selecione **Adicionar atributos**.
+1. Clique com o botão direito do mouse no cabeçalho e selecione **Nova exportação de perfil de marketing Principal**. ![](assets/mmp_mmp_export.png)
+1. Expandir **Query**.
 
    ![](assets/mmp_mmp_query.png)
 
-1. Expanda **Configuração MMP**.
-1. (obrigatório) Insira o **MMP Segment Name** e **MMP Visitor ID Field**. Esses parâmetros não podem ser deixados em branco.
+1. Expandir **Configuração MMP**.
+1. (obrigatório) Informe o **Nome do segmento MMP** e **Campo de ID de visitante MMP**. Esses parâmetros não podem ser deixados em branco.
 1. O **Nome do segmento MMP** deve corresponder à ID do segmento definida no MMP.
-1. A **ID de visitante MMP** é a coluna de atributo definida na etapa 4 que corresponde à **ID de visitante**.
-1. Depois que esses campos forem inseridos, poderá salvar a exportação clicando com o botão direito do mouse no cabeçalho da exportação e escolha **Save** como &quot;User\.export&quot;.
-1. Abra **Admin** > **Gerenciador de perfil** e salve a exportação para o perfil.
+1. O **ID de visitante MMP** é a coluna de atributo definida na etapa 4 que corresponde ao **ID de visitante**.
+1. Depois que esses campos forem inseridos, poderá salvar a exportação clicando com o botão direito do mouse no cabeçalho da exportação e escolha **Salvar** como &quot;User\.export&quot;.
+1. Abrir **Administrador** > **Gerenciador de perfis** e salve a exportação para o perfil.
 
-   Se todos os dados forem inseridos corretamente, isso gerará um arquivo de exportação no FSU ([!DNL Server/Exports]) e também transferirá a exportação para o AWS usando as informações em [!DNL MMPExport.cfg]. O log para isso é fornecido em [!DNL Server/Trace/]. por exemplo, [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
+   Se todos os dados forem inseridos corretamente, isso gerará um arquivo de exportação no FSU ([!DNL Server/Exports]) e também transferirá a exportação para a AWS usando as informações em [!DNL MMPExport.cfg]. O log para isso é fornecido em [!DNL Server/Trace/]. por exemplo, [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
 
 ```
 Query = SegmentExportQuery: 

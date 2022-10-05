@@ -3,14 +3,16 @@ description: As chamadas estatísticas avaliam relacionamentos significativos pa
 title: Chamadas estatísticas
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
 # Chamadas estatísticas{#statistical-callouts}
+
+{{eol}}
 
 As chamadas estatísticas avaliam relacionamentos significativos para identificar oportunidades ocultas e variáveis de interesse para recursos de mineração de dados mais avançados em clustering de público-alvo e pontuação de resposta do visitante.
 
@@ -19,7 +21,7 @@ As chamadas estatísticas expandem os algoritmos para que mais tipos de dados po
 Para adicionar chamadas estatísticas:
 
 1. Em uma tabela, clique com o botão direito do mouse no cabeçalho da métrica.
-1. Selecione **[!UICONTROL Statistics]** e depois selecione ou desmarque as marcas de seleção para cada configuração necessária. Todas as chamadas de exibição são selecionadas como a configuração padrão.
+1. Selecionar **[!UICONTROL Statistics]** e, em seguida, selecione ou desmarque as marcas de seleção de cada configuração necessária. Todas as chamadas de exibição são selecionadas como a configuração padrão.
 
    ![](assets/statistical_callouts.png)
 

@@ -3,7 +3,7 @@ description: Informações sobre exibição, ocultação e alteração do rótul
 title: Rotular um nó
 uuid: ded00cc8-2958-4aca-9d45-92afc441e9e2
 exl-id: e234aa1b-2f5d-42ec-bad7-2ada0db38702
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
@@ -12,15 +12,17 @@ ht-degree: 4%
 
 # Rotular um nó{#label-a-node}
 
+{{eol}}
+
 Informações sobre exibição, ocultação e alteração do rótulo de um nó.
 
 **Para exibir o rótulo de um nó**
 
-* Clique com o botão direito do mouse no nó e clique em **[!UICONTROL Label]***&lt; **[!UICONTROL node name]***. O rótulo do nó é exibido. Essa opção de menu só estará disponível se o nó não estiver rotulado.
+* Clique com o botão direito do mouse no nó e clique em **[!UICONTROL Label]***&lt; **[!UICONTROL node name]**>*. O rótulo do nó é exibido. Essa opção de menu só estará disponível se o nó não estiver rotulado.
 
 **Para ocultar o rótulo de um nó**
 
-* Clique com o botão direito do mouse no nó e clique em **[!UICONTROL Unlabel]***&lt; **[!UICONTROL node name]***. O rótulo do nó é removido. Essa opção de menu só estará disponível se o nó já estiver rotulado.
+* Clique com o botão direito do mouse no nó e clique em **[!UICONTROL Unlabel]***&lt; **[!UICONTROL node name]**>*. O rótulo do nó é removido. Essa opção de menu só estará disponível se o nó já estiver rotulado.
 
 **Para alterar o rótulo de um nó**
 

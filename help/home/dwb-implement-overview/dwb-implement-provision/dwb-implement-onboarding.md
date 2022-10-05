@@ -3,7 +3,7 @@ description: Siga estas etapas para iniciar o processo de integração do Adobe 
 title: Instruções básicas de integração para serviços gerenciados DWB
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
 exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Instruções básicas de integração para serviços gerenciados DWB{#basic-onboarding-instructions-for-dwb-managed-services}
+
+{{eol}}
 
 Siga estas etapas para iniciar o processo de integração do Adobe Data Workbench (DWB), um componente do Adobe Analytics Premium (AAP).
 
@@ -32,7 +34,7 @@ As equipes de marketing digital do Adobe receberão suas informações para cria
 * O Atendimento ao cliente do Adobe carrega o pacote de software para o portal de software e licença DWB (perfil SoftDocs/Software and Docs) a ser baixado para sua organização.
 * A equipe TechOps da Adobe prepara os ambientes de produção e desenvolvimento e seus perfis (por contrato) para o DWB.
 * A equipe TechOps do Adobe configura feeds de dados e scripts de gerenciamento de perfis.
-* A equipe TechOps do Adobe cria e envia o arquivo de configuração do DWB (Insight.cfg) para a equipe de integração do Adobe responsável pelas tarefas de integração associadas à sua organização.
+* A equipe TechOps do Adobe cria e envia o arquivo de configuração do DWB (Insight.cfg) para a equipe de integração do Adobe responsável por tarefas de integração associadas à sua organização.
 
 Depois de personalizar seus feeds de dados e gerar credenciais, certificados e uma configuração de perfil, o Atendimento ao cliente do Adobe enviará seu arquivo de configuração e credenciais para a próxima etapa.
 
@@ -55,14 +57,14 @@ Você receberá esses arquivos de configuração do Atendimento ao cliente do Ad
    >
    >O navegador pode solicitar que você apresente um certificado digital neste momento. Se isso acontecer, clique em Cancelar para fechar a caixa de diálogo.
 
-1. Localize o certificado emitido para a sua instância de Data Workbench do Adobe (`<PrimaryUser>`.pem) na seção Downloads e baixe.
+1. Localize o certificado emitido para a sua instância de Data Workbench de Adobe (`<PrimaryUser>`.pem) na seção Downloads e download.
 1. Localize o Instalador padrão do cliente na seção Downloads para baixar o Assistente de configuração do DWB (arquivo InsightSetup-x.xx.exe).
 1. Depois de receber e baixar arquivos do Adobe Customer Care, execute o Assistente de configuração DWB para instalar o software da estação de trabalho no computador cliente.
 
 >[!NOTE]
-O DWB Setup Wizard o guiará pela instalação da estação de trabalho do cliente DWB e ajudará a localizar os arquivos Insight.cfg e `<PrimaryUser>`.pem que serão colocados nas pastas necessárias. O arquivo Insight.cfg reside no arquivo Insight.exe na estação de trabalho do cliente instalada. O arquivo `<PrimaryUser>`.pem reside na pasta Certificados com o arquivo trust_ca_cert.pem. Todos os arquivos de certificado e configuração devem estar presentes para que o DWB funcione.
+O DWB Setup Wizard o guiará pela instalação da estação de trabalho do cliente DWB e ajudará a localizar o Insight.cfg e `<PrimaryUser>`Arquivos .pem a serem colocados nas pastas necessárias. O arquivo Insight.cfg reside no arquivo Insight.exe na estação de trabalho do cliente instalada. O `<PrimaryUser>`O arquivo .pem reside na pasta Certificados com o arquivo trust_ca_cert.pem. Todos os arquivos de certificado e configuração devem estar presentes para que o DWB funcione.
 
-Para obter mais informações, consulte o [Assistente de configuração do DWB](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
+Para obter mais informações, consulte o [Assistente de configuração DWB](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
 
 ## Conexão com seus servidores DWB {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
 
@@ -83,4 +85,4 @@ Na área de trabalho Configuração da estação de trabalho na estação de tra
 
 ・ A Adobe TechOps configurará o cluster de produção principal para conter três meses de dados em andamento para serem redefinidos e reprocessados mensalmente. Atualizações em pesquisas (Geografia, DeviceAtlas, Classificações padrão) também ocorrerão como parte da tarefa de reprocessamento. Por padrão, a tarefa é executada na primeira sexta-feira de cada mês. Se necessário, o cronograma pode ser modificado pelo Atendimento ao cliente.
 
-Para obter mais informações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+Para obter informações adicionais, entre em contato com [Atendimento ao cliente do Adobe](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).

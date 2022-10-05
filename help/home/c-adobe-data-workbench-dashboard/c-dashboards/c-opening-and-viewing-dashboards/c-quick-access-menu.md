@@ -3,7 +3,7 @@ description: Um dos métodos mais fáceis de abrir um painel é usar o menu de a
 title: Menu de acesso rápido
 uuid: 724a3cf5-94e9-4f4a-ba88-6e010015fe0d
 exl-id: 36717e0d-e0e4-4ec3-857c-59d01913363a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Menu de acesso rápido{#quick-access-menu}
+
+{{eol}}
 
 Um dos métodos mais fáceis de abrir um painel é usar o menu de acesso rápido no painel de navegação esquerdo da interface do painel.
 

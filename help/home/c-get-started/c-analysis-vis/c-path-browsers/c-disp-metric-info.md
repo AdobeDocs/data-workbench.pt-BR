@@ -3,7 +3,7 @@ description: Informações sobre como exibir informações de métrica em um nav
 title: Exibir informações de métrica
 uuid: 73d53159-482a-457f-988b-8618dc098fbc
 exl-id: 175beeb2-8790-4638-9d7b-adfba7993d11
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Exibir informações de métrica{#display-metric-information}
+
+{{eol}}
 
 Informações sobre como exibir informações de métrica em um navegador de caminho.
 

@@ -3,7 +3,7 @@ description: A transformação Split divide uma string em um vetor de subsequên
 title: Dividir
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Dividir{#split}
+
+{{eol}}
 
 A transformação Split divide uma string em um vetor de subsequências com base em um caractere delimitador específico.
 
@@ -62,7 +64,7 @@ Considere um site no qual os produtos comprados por um cliente são listados com
 
 * /checkout/confirmed.asp?prod_seleted=B57481,C46355,Z97123
 
-O campo cs-uri-stem é usado para determinar se a página que está sendo solicitada pela entrada de log é a página de confirmação. Os códigos dos produtos que o cliente comprou são listados como valores separados por vírgula do nome prod_seleted na consulta cs-uri. A transformação [!DNL Split] pode ser usada para extrair essas informações dividindo os códigos do produto na vírgula, se o valor de cs-uri-stem corresponder ao valor especificado na condição [!DNL String Match]. Consulte [Correspondência de sequência de caracteres](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). A transformação a seguir detalha a solução para esse problema.
+O campo cs-uri-stem é usado para determinar se a página que está sendo solicitada pela entrada de log é a página de confirmação. Os códigos dos produtos que o cliente comprou são listados como valores separados por vírgula do nome prod_seleted na consulta cs-uri. O [!DNL Split] a transformação pode ser usada para extrair essas informações dividindo os códigos do produto na vírgula, se o valor de cs-uri-stem corresponder ao valor especificado na variável [!DNL String Match] condição. Consulte [Correspondência de sequência](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). A transformação a seguir detalha a solução para esse problema.
 
 ![](assets/cfg_TransformationType_Split.png)
 

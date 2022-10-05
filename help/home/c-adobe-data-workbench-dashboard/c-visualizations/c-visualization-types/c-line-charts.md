@@ -3,7 +3,7 @@ description: Gráficos de linha
 title: Gráficos de linha
 uuid: 6f525c49-6679-4234-886b-52a3c7df98ff
 exl-id: 75532aff-15ff-4be8-8000-f503b2bf60a2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Gráficos de linha{#line-charts}
+
+{{eol}}
 
 As visualizações do gráfico de linha permitem visualizar dados de métrica e dimensão com cada elemento de dados representado como um ponto em um eixo x-y, e linhas que conectam pontos adjacentes. Os gráficos de linha permitem que até 200 elementos de dados exclusivos sejam exibidos no gráfico de uma só vez. Os valores de dimensão são rotulados ao longo do eixo x, enquanto os incrementos de métrica são rotulados ao longo do eixo y. Colocar o mouse sobre um ponto no gráfico de linha exibirá o valor exato da métrica nesse ponto.
 

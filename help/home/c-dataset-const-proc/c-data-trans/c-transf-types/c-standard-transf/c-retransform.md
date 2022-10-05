@@ -3,7 +3,7 @@ description: A transformação RETransform (expressão regular) é uma transform
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # RETransform{#retransform}
 
+{{eol}}
+
 A transformação RETransform (expressão regular) é uma transformação de correspondência de padrões que usa expressões regulares para especificar um padrão para procurar e capturar na entrada e armazena a string capturada em um campo de saída designado.
 
 Expressões regulares são avaliadas em relação a toda a string de entrada. Se a entrada não corresponder ao padrão especificado na expressão regular, nenhum dado será capturado. Para obter um breve guia sobre o uso de expressões regulares, consulte [Expressões regulares](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->A transformação [!DNL RETransform] opera de forma semelhante à transformação [!DNL REMatch] (consulte [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), que constrói um campo de saída para cada subpadrão de captura na expressão regular. Pense em [!DNL RETransform] como uma combinação de [!DNL REMatch] e [!DNL Format] transformações. Se o parâmetro Action (consulte Ação na tabela a seguir) estiver definido como &quot;RESULTADOS&quot;, [!DNL RETransform] funcionará como uma combinação de [!DNL REMatch] e [!DNL Union] transformações.
+>O [!DNL RETransform] a transformação funciona de forma semelhante à [!DNL REMatch] transformação (consulte [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), que constrói um campo de saída para cada subpadrão de captura na expressão regular. Você pode pensar em [!DNL RETransform] como uma combinação de [!DNL REMatch] e [!DNL Format] transformações. Se o parâmetro Action (consulte Ação na tabela a seguir) estiver definido como &quot;RESULTADOS&quot;, então [!DNL RETransform] funciona como uma combinação de [!DNL REMatch] e [!DNL Union] transformações.
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 

@@ -3,7 +3,7 @@ description: Uma dimensão numérica consiste em elementos ordenados e numérico
 title: Dimensões numéricas
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Dimensões numéricas{#numeric-dimensions}
+
+{{eol}}
 
 Uma dimensão numérica consiste em elementos ordenados e numéricos e tem uma relação um para muitos com sua dimensão contável.
 
@@ -85,14 +87,14 @@ As dimensões numéricas são definidas pelos seguintes parâmetros:
    <td colname="col1"> Operação </td> 
    <td colname="col2"> <p>As operações disponíveis são as seguintes: </p> <p> 
      <ul id="ul_E04733E5E8824A2BAAB90D9356078D99"> 
-      <li id="li_CAEE9167D45540BEAC538345F250B509"> CONTAGEM: O número total de valores que não estão em branco no campo <span class="wintitle"> Input</span> em todas as entradas de log que atendem à Condição da dimensão é usado. Se o campo <span class="wintitle"> Input</span> for um campo vetorial, será contado o número total de valores que não estejam em branco em cada entrada de log. </li> 
-      <li id="li_64A4D671E78642BD9A9334F8098450B9"> PRIMEIRO NÃO EM BRANCO: O primeiro valor de entrada que não está em branco é usado, independentemente de ser proveniente da primeira entrada de log. Se <span class="wintitle"> Input</span> for um campo vetorial, a primeira linha no vetor para a entrada de log relevante será usada. Se o valor não for um número, nenhum valor será usado. </li> 
-      <li id="li_C967964729BD4A638FF78D8883CE513F"> PRIMEIRA LINHA: O valor da primeira entrada de log relacionada ao elemento da dimensão pai é usado, mesmo se a entrada estiver em branco. Se <span class="wintitle"> Input</span> for um campo vetorial, a primeira linha no vetor para a entrada de log relevante será usada. Se esse valor estiver em branco ou não for um número, ou se a entrada de log relevante não atender à condição da dimensão, nenhum valor será usado. </li> 
-      <li id="li_74171B17F480478B8547E1A361B22DA4"> ÚLTIMO NONBLANK: O último valor de entrada que não está em branco é usado, independentemente de ser proveniente da última entrada de log. Se <span class="wintitle"> Input</span> for um campo vetorial, a primeira linha no vetor para a entrada de log relevante será usada. Se o valor não for um número, nenhum valor será usado. </li> 
-      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> ÚLTIMA LINHA: O valor da última entrada de log relacionada ao elemento da dimensão pai é usado, mesmo se a entrada estiver em branco. Se <span class="wintitle"> Input</span> for um campo vetorial, a primeira linha no vetor para a entrada de log relevante será usada. Se esse valor estiver em branco ou não for um número, ou se a entrada de log relevante não atender à condição da dimensão, nenhum valor será usado. </li> 
-      <li id="li_20819E3944544F98853D6A02814F47B2"> SOMA: O total de todos os valores numéricos no campo <span class="wintitle"> Input</span> em todas as entradas de log que atendem à Condição da dimensão é usado. Se não houver essas entradas de log ou nenhum valor numérico encontrado, o valor numérico 0 será usado. </li> 
-      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN ou MAX: O valor numérico mínimo ou máximo encontrado no campo <span class="wintitle"> Input</span> em todas as entradas de log que atendem à Condição da dimensão é usado. Se não houver essas entradas de log ou nenhum valor numérico, nenhum valor será usado. </li> 
-     </ul> </p> <p> <p>Observação:  Você deve especificar uma operação para garantir que a dimensão seja definida conforme esperado. </p> </p> </td> 
+      <li id="li_CAEE9167D45540BEAC538345F250B509"> CONTAGEM: O número total de valores que não estão em branco na variável <span class="wintitle"> Entrada</span> em todas as entradas de log que atendem à condição da dimensão é usada. Se a variável <span class="wintitle"> Entrada</span> for um campo de vetor, o número total de valores que não estão em branco em cada entrada de log será contado. </li> 
+      <li id="li_64A4D671E78642BD9A9334F8098450B9"> PRIMEIRO NÃO EM BRANCO: O primeiro valor de entrada que não está em branco é usado, independentemente de ser proveniente da primeira entrada de log. If <span class="wintitle"> Entrada</span> é um campo de vetor, a primeira linha no vetor para a entrada de log relevante é usada. Se o valor não for um número, nenhum valor será usado. </li> 
+      <li id="li_C967964729BD4A638FF78D8883CE513F"> PRIMEIRA LINHA: O valor da primeira entrada de log relacionada ao elemento da dimensão pai é usado, mesmo se a entrada estiver em branco. If <span class="wintitle"> Entrada</span> é um campo de vetor, a primeira linha no vetor para a entrada de log relevante é usada. Se esse valor estiver em branco ou não for um número, ou se a entrada de log relevante não atender à condição da dimensão, nenhum valor será usado. </li> 
+      <li id="li_74171B17F480478B8547E1A361B22DA4"> ÚLTIMO NONBLANK: O último valor de entrada que não está em branco é usado, independentemente de ser proveniente da última entrada de log. If <span class="wintitle"> Entrada</span> é um campo de vetor, a primeira linha no vetor para a entrada de log relevante é usada. Se o valor não for um número, nenhum valor será usado. </li> 
+      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> ÚLTIMA LINHA: O valor da última entrada de log relacionada ao elemento da dimensão pai é usado, mesmo se a entrada estiver em branco. If <span class="wintitle"> Entrada</span> é um campo de vetor, a primeira linha no vetor para a entrada de log relevante é usada. Se esse valor estiver em branco ou não for um número, ou se a entrada de log relevante não atender à condição da dimensão, nenhum valor será usado. </li> 
+      <li id="li_20819E3944544F98853D6A02814F47B2"> SOMA: O total de todos os valores numéricos na variável <span class="wintitle"> Entrada</span> em todas as entradas de log que atendem à condição da dimensão é usada. Se não houver essas entradas de log ou nenhum valor numérico encontrado, o valor numérico 0 será usado. </li> 
+      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN ou MAX: O valor numérico mínimo ou máximo encontrado na variável <span class="wintitle"> Entrada</span> em todas as entradas de log que atendem à condição da dimensão é usada. Se não houver essas entradas de log ou nenhum valor numérico, nenhum valor será usado. </li> 
+     </ul> </p> <p> <p>Observação: Você deve especificar uma operação para garantir que a dimensão seja definida conforme esperado. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -110,7 +112,7 @@ As dimensões numéricas são definidas pelos seguintes parâmetros:
 
 >[!NOTE]
 >
->Se [!DNL Operation] não gerar valor, ou [!DNL Clip Values] for falso e o valor não estiver entre [!DNL Min] e [!DNL Max], nenhum elemento da dimensão numérica estará relacionado ao elemento da dimensão pai.
+>If [!DNL Operation] não produza qualquer valor, ou [!DNL Clip Values] é falso e o valor não está entre [!DNL Min] e [!DNL Max], nenhum elemento da dimensão numérica está relacionado ao elemento da dimensão pai.
 
 Este exemplo ilustra a definição de uma dimensão numérica usando dados de evento coletados do tráfego do site. Essa dimensão numérica, chamada de &quot;Contador de exibição de anúncio&quot;, conta o número de vezes que o visitante vê um anúncio durante uma determinada sessão. A suposição é que todos os recursos de anúncio sejam solicitados do servidor da Web com ad= como parte da consulta cs-uri-query. No exemplo, o número de vezes (COUNT) em que o visitante é apresentado com um anúncio é o valor do interesse, não o valor real no campo .
 

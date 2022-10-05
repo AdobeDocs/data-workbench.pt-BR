@@ -3,7 +3,7 @@ description: Um Gráfico de dispersão 3D gráfico os elementos de uma dimensão
 title: Gráficos de dispersão 3D
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%
@@ -12,18 +12,20 @@ ht-degree: 1%
 
 # Gráficos de dispersão 3D{#d-scatter-plots}
 
+{{eol}}
+
 Um Gráfico de dispersão 3D gráfico os elementos de uma dimensão de dados (como Dias ou Site de referência) em uma grade tridimensional em que os eixos x, y e z representam várias métricas.
 
-Como o [Gráfico de dispersão 2D](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots), essa visualização é útil ao tentar entender a relação entre um grande número de itens diferentes usando métricas diferentes.
+Como a [Gráfico de Dispersão 2D](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots), essa visualização é útil ao tentar entender a relação entre um grande número de itens diferentes que utilizam métricas diferentes.
 
 **Para usar a visualização do Gráfico de dispersão 3D:**
 
 1. Abra um novo espaço de trabalho.
 
-   Após abrir um novo espaço de trabalho, talvez seja necessário clicar em **Add** > **Temporariamente Unlock**.
-1. Clique com o botão direito do mouse e selecione **Visualization** > **3D Scatter Plot**.
+   Depois de abrir um novo espaço de trabalho, talvez seja necessário clicar em **Adicionar** > **Desbloquear temporariamente**.
+1. Clique com o botão direito do mouse e selecione **Visualização** > **Gráfico de dispersão 3D**.
 
-   Um menu que lista **[!UICONTROL Dimensions]** abrirá.
+   Uma lista de menus **[!UICONTROL Dimensions]** abrirá.
 
 1. Selecione uma dimensão para a query.
 
@@ -31,7 +33,7 @@ Como o [Gráfico de dispersão 2D](https://experienceleague.adobe.com/docs/data-
 
    ![](assets/3D_main.png)
 
-   Selecionar o menu **[!UICONTROL Days]** exibe o seguinte Gráfico de dispersão 3D com essas métricas padrão nos seguintes eixos: **[!UICONTROL x=Visits]**, **[!UICONTROL y=Retention]** e **[!UICONTROL z=Visits]**.
+   Selecionar o **[!UICONTROL Days]** O menu exibe o seguinte Gráfico de dispersão 3D com essas métricas padrão nos seguintes eixos: **[!UICONTROL x=Visits]**, **[!UICONTROL y=Retention]** e **[!UICONTROL z=Visits]**.
 
 1. Alterar métricas. Clique com o botão direito do mouse no rótulo da métrica no eixo x, y ou z e selecione **[!UICONTROL Change Metric]**. Em seguida, selecione uma métrica diferente para o eixo selecionado.
 
@@ -57,13 +59,13 @@ Como o [Gráfico de dispersão 2D](https://experienceleague.adobe.com/docs/data-
 
    Quando o Gráfico de Dispersão 3D é exibido primeiro, ele é exibido em uma projeção rotativa tridimensional, o que causa alguma distorção para pontos mais próximos da perspectiva, ou &quot;câmera&quot; virtual. (Os gráficos mais próximos à câmera mostram-se muito maiores do que os pontos que giram mais longe da câmera.)
 
-   Para evitar essa distorção de perspectiva, selecione a opção **[!UICONTROL Orthographic Camera]** clicando com o botão direito do mouse no título e selecionando no menu . Isso permite representar os objetos tridimensionais em duas dimensões. Isso renderiza os pontos plotados como planos e exibe os pontos como relativos à métrica de raio, diminuindo os deslocamentos tridimensionais.
+   Para evitar essa distorção de perspectiva, é possível selecionar a variável **[!UICONTROL Orthographic Camera]** clicando com o botão direito do mouse no título e selecionando no menu . Isso permite representar os objetos tridimensionais em duas dimensões. Isso renderiza os pontos plotados como planos e exibe os pontos como relativos à métrica de raio, diminuindo os deslocamentos tridimensionais.
 
 1. Selecione pontos no gráfico de dispersão.
 
    * **Para remover um ponto ou grupo de pontos**: Clique no ponto.
-   * **Para adicionar outro ponto ou grupo de pontos à sua seleção**:  **Ctrl** +  **** clique no ponto ou  **Ctrl** +  **** arraste vários pontos.
+   * **Para adicionar outro ponto ou grupo de pontos à sua seleção**: **Ctrl** + **click** um ponto ou **Ctrl** + **arrastar** em vários pontos.
 
-   * **Para remover um ponto ou grupo de pontos de sua seleção**:  **Shift** + ponto de  **** cliques ou  **Shift** **+** **** arrastar em vários pontos.
+   * **Para remover um ponto ou grupo de pontos de sua seleção**: **Shift** + **click** um ponto ou **Shift** **+** **arrastar** em vários pontos.
 
 <!-- <a id="section_9C30F9799F1440F09278327002E6B47A"></a> -->
