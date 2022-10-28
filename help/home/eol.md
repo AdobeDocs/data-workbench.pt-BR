@@ -1,10 +1,10 @@
 ---
 title: Perguntas frequentes sobre o fim da vida útil do Data Workbench
 description: Saiba mais sobre o anúncio do fim da vida útil da Data Workbench.
-source-git-commit: 85aae0021cd8a3b55e75ca02a9d142138db538c2
+source-git-commit: 4f591a65d4cfbb69b3e5397cf27a9ed3ee498a30
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 7%
+source-wordcount: '393'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,17 @@ Esse anúncio afeta todas as soluções que dependem do Data Workbench, inclusiv
 
 ## Por que a Datas Workbench se aposentou?
 
-Com o lançamento e o contínuo aprimoramento do Adobe Experience Platform, os clientes podem combinar dados em vários canais e usá-los em várias soluções de Adobe. Especificamente, o Customer Journey Analytics permite utilizar dados entre canais para executar análises avançadas nesses dados. A maioria dos recursos e casos de uso atualmente disponíveis no Data Workbench está disponível nas soluções da Adobe Experience Platform. O Adobe planeja implementar qualquer lacuna de recursos na data de fim da vida útil da solução Adobe Experience Platform aplicável por Data Workbench.
+Com o lançamento e o contínuo aprimoramento do Adobe Experience Platform, os clientes podem combinar dados em vários canais e usá-los em várias soluções de Adobe. Especificamente, o Customer Journey Analytics permite utilizar dados entre canais para executar análises avançadas nesses dados.
+
+A maioria dos recursos e casos de uso atualmente disponíveis no Data Workbench está disponível nas soluções da Adobe Experience Platform. No entanto, há casos limitados em que a funcionalidade do Data Workbench não é replicada com uma respectiva solução da Adobe Experience Platform. Entre em contato com o Gerente de conta do Adobe de sua organização para discutir áreas específicas de recursos ou compatibilidade de casos de uso.
+
+## O que é orientação do Adobe para implantações locais?
+
+Os clientes são incentivados a migrar para as soluções atuais do Adobe para análises avançadas. Clientes de licença perpétua herdados podem decidir continuar usando o Data Workbench. No entanto, o Adobe não tem planos de oferecer suporte ou atualização ao produto, incluindo bugs críticos ou vulnerabilidades de segurança. O uso contínuo de implantações locais do Data Workbench após a data de término da vida útil é feito por conta própria e risco da empresa.
+
+## Posso comprar serviços de consultoria para ajudar com o Data Workbench?
+
+Você pode comprar o Adobe Professional Services até a data de término da vida útil. Após essa data, nenhum Adobe Professional Services estará disponível. Alguns parceiros externos podem optar por continuar oferecendo serviços para o Data Workbench. Se o fizerem, é feito exclusivamente por esse parceiro externo, sem qualquer apoio da Adobe.
 
 ## Quais soluções ou produtos o Adobe recomenda seguir em frente?
 
