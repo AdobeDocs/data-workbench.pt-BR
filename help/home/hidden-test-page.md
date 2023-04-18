@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,6 @@ Há dois tipos de emblemas, cada um com uma sintaxe diferente:
 
 * **Metadados** - Exibe o selo próximo à parte superior de uma página
 * **Inline** - Exibe o símbolo onde a sintaxe está localizada
-
-![exemplos de selo](assets/badge-examples.png "Exemplos de emblema"){width="200" zoomable="yes"}
 
 ### Selos de metadados
 
