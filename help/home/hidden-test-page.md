@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
+source-git-commit: c92c1e5688ca867caf1f3d4a6a3e44dafb5b3734
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '695'
 ht-degree: 2%
 
 ---
@@ -98,7 +98,7 @@ Exemplos de sintaxe
 
 A equipe do Workfront pediu para usar o realce amarelo para indicar a pré-visualização dos recursos futuros. Veja como funciona.
 
-Exemplo:
+Exemplo 1:
 
 ```
 This entire paragraph should NOT be highlighted. <span class="preview"> This word is **bold** inside a highlighted sentence.</span> And this is just the last sentence.
@@ -107,6 +107,42 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 Renderizado:
 
 Todo este parágrafo NÃO deve ser destacado. <span class="preview"> Esta palavra é **bold** dentro de uma frase realçada.</span> E esta é apenas a última frase.
+
+Exemplo 2:
+
+```
+Highlighting should start after this paragraph.
+
+<div class="preview">
+
+**This is a test**
+
+>[!TIP]
+>
+>Drink 6 cups of water a day.
+
+Last highlighted paragraph
+
+<\div>
+
+Not highlighted
+```
+
+Renderizado: O realce deve começar após este parágrafo.
+
+<div class="preview">
+
+**Este é um teste**
+
+>[!TIP]
+>
+>Beba 6 xícaras de água por dia.
+
+Último parágrafo destacado
+
+&lt;\div>
+
+Não destacado
 
 Como regra geral, use `<span class="preview">` para destacar um parágrafo ou texto em um parágrafo e usar `<div class="preview">` para vários parágrafos e componentes.
 
