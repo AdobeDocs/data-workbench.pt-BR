@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Ajuda do Data Workbench
 user-guide-description: Saiba mais sobre os recursos de vários canais do Data Workbench. Inclui Cliente do Data Workbench, Instalação, guias de Configuração de conjuntos de dados e muito mais.
-source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
+source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3501'
 ht-degree: 99%
 
 ---
@@ -963,3 +963,4 @@ ht-degree: 99%
 + [Consultar API](https://www.adobe.io/)
 + [Integração do Data Workbench com o Adobe Target](dwb-adobe-target.md)
 + [Glossário do Data Workbench](dwb-glossary.md)
++ [Página de teste oculta](hidden-test-page.md)
