@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
+source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 2%
 
 ---
 
@@ -113,7 +113,7 @@ Exemplo 2:
 ```
 Highlighting should start after this paragraph.
 
-<div class="preview">
+<span class="preview">
 
 **This is a test**
 
@@ -123,14 +123,16 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-</div>
+</span>
 
 Not highlighted
 ```
 
-Renderizado: O realce deve começar após este parágrafo.
+Renderizado:
 
-<div class="preview">
+O realce deve começar após este parágrafo.
+
+<span class="preview">
 
 **Este é um teste**
 
@@ -140,11 +142,9 @@ Renderizado: O realce deve começar após este parágrafo.
 
 Último parágrafo destacado
 
-</div>
+</span>
 
 Não destacado
-
-Como regra geral, use `<span class="preview">` para destacar um parágrafo ou texto em um parágrafo e usar `<div class="preview">` para vários parágrafos e componentes.
 
 ## Realce de sintaxe para blocos de código
 
