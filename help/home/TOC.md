@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Ajuda do Data Workbench
 user-guide-description: Saiba mais sobre os recursos de vários canais do Data Workbench. Inclui Cliente do Data Workbench, Instalação, guias de Configuração de conjuntos de dados e muito mais.
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 35cd94fdde735cc24f88083a16881a12bbc33f4f
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3504'
 ht-degree: 99%
 
 ---
@@ -859,7 +859,7 @@ ht-degree: 99%
          + [Bloquear e desbloquear visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md)
          + [Recolher e expandir visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-collapsing-and-expanding-visualizations.md)
          + [Exportar visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-exporting-visualizations.md)
-         + [Configuração e reconfiguração de visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
+         + [Configurar e reconfigurar visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
          + [Remover visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [Dimensionar visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [Mover visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
@@ -902,7 +902,7 @@ ht-degree: 99%
    + Comunicação com o servidor {#servers-communication}
       + [Comunicação do painel com servidores do Data Workbench](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Verificar a ativação da API de Query](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [Configurar o controle de acesso do painel](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [Configurar o controle de acesso ao painel](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + Implantação do painel {#dashboard-deployment}
       + [Implantação do painel](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [Implantar painel](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
@@ -964,3 +964,4 @@ ht-degree: 99%
 + [Integração do Data Workbench com o Adobe Target](dwb-adobe-target.md)
 + [Glossário do Data Workbench](dwb-glossary.md)
 + [Página de teste oculta](hidden-test-page.md)
++ [Visão geral do suporte oculto](hidden-support-overview.md)
