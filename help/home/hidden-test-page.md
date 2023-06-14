@@ -1,22 +1,21 @@
 ---
 title: Página de teste oculta
-description: Esta página está oculta da pesquisa e do TOC
+description: Esta página está oculta da pesquisa e do índice
 hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
+source-git-commit: 62b03629815f33344189c2562bc486301878a146
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 4%
+source-wordcount: '753'
+ht-degree: 3%
 
 ---
 
 # Página de teste oculta
 
-## Tipos de notas
-
+## Tipos de Notas
 
 Todos os tipos de notas compatíveis.
 
@@ -30,7 +29,7 @@ Todos os tipos de notas compatíveis.
 
 >[!IMPORTANT]
 >
->Trata-se de uma nota importante.
+>Essa é uma observação importante.
 
 >[!WARNING]
 >
@@ -38,11 +37,11 @@ Todos os tipos de notas compatíveis.
 
 >[!CAUTION]
 >
->Isso é uma advertência.
+>Isso é um aviso.
 
 >[!ADMIN]
 >
->Esta é uma nota de administrador. Somente EXL.
+>Esta é uma nota de administração que é renderizada como ADMINISTRAÇÃO. Somente EXL.
 
 >[!AVAILABILITY]
 >
@@ -50,42 +49,41 @@ Todos os tipos de notas compatíveis.
 
 >[!PREREQUISITES]
 >
->Esta é uma nota de Pré-requisitos. Somente EXL.
+>Esta é uma observação de Pré-requisitos. Somente EXL.
 
 >[!INFO]
 >
->Esta é uma nota Info. Somente EXL.
+>Esta é uma Nota informativa. Somente EXL.
 
 >[!ERROR]
 >
->Esta é uma Nota de erro. Somente EXL.
+>Esta é uma nota de erro. Somente EXL.
 
 >[!SUCCESS]
 >
->Esta é uma nota de sucesso. Somente EXL.
+>Esta é uma Nota de sucesso. Somente EXL.
 
 >[!MORELIKETHIS]
 >
 >* Página 1
 >* Página 2
 
+## Medalhas
 
-## Etiquetas
+Um selo é um rótulo colorido usado como indicador de conteúdo. Por exemplo, é possível adicionar um selo para marcar um artigo como _Beta_ ou uma seção como _Premium_. É possível alterar a cor de um selo e associar um URL e uma dica de ferramenta.
 
-Um selo é um rótulo colorido usado como um indicador de conteúdo. Por exemplo, você pode adicionar um selo para marcar um artigo como _Beta_ ou uma seção como _Premium_. Você pode alterar a cor de um selo e associar um URL e uma dica de ferramenta.
+[!BADGE Exemplo de medalha]
 
-[!BADGE Exemplo de selo]
-
-Há dois tipos de emblemas, cada um com uma sintaxe diferente:
+Há dois tipos de selos, cada um com sintaxe diferente:
 
 * **Metadados** - Exibe o selo próximo à parte superior de uma página
-* **Inline** - Exibe o símbolo onde a sintaxe está localizada
+* **Em linha** - Exibe o selo onde a sintaxe está localizada
 
 ### Selos de metadados
 
-Adicionar a sintaxe do selo nos metadados coloca um selo acima do título da página (H1) no artigo.
+A adição da sintaxe do selo nos metadados coloca um selo acima do título da página (H1) no artigo.
 
-É possível nomear emblemas, por exemplo, usando _selo1_ ou _badge2_. Ou você pode ser mais criativo (desde que o nome comece com _emblema_).
+É possível nomear selos, por exemplo, usando _selo1_ ou _selo2_. Ou você pode ser mais criativo (desde que o nome comece com _selo_).
 
 Exemplos de metadados:
 
@@ -94,11 +92,11 @@ badgePremium: label="Premium" type="Positive" url="https://www.premium-product.c
 badgeExam: label="Exam ADO-E903" type="neutral"
 ```
 
-* **badgePremium:** Este exemplo exibe um selo Premium com um URL e uma dica de ferramenta.
+* **seloPremium:** Este exemplo exibe um selo Premium com um URL e uma dica de ferramenta.
 
-* **badgeExam:** Este exemplo exibe um selo escuro com um número de ID de exame.
+* **badgeExam:** Este exemplo exibe um emblema escuro com um número de ID de exame.
 
-#### Etiquetas embutidas
+#### Medalhas em linha
 
 Especifique as informações do selo em sua própria linha ou em um cabeçalho, tabela ou outro elemento de página.
 
@@ -106,17 +104,17 @@ Esta é a sintaxe de um selo em linha com um rótulo beta, cor azul, URL e dica 
 
 `[!BADGE Beta]{type=Informative url="https://www.example.com" tooltip="Go to example.com"}`
 
-### Cores de selo disponíveis
+### Cores dos selos disponíveis
 
-Os emblemas usam as cores definidas no Adobe Spectrum:
+Os emblemas usam cores definidas no Espectro de Adobe:
 
-| Tipo | Símbolo |
+| Tipo | Medalha |
 |---|---|
 | Informativo (padrão) | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
-| Positiva | [!BADGE Novo recurso]{type=Positive url="https://www.example.com" tooltip="Vá para example.com"} |
-| Negativa | [!BADGE Descontinuação]{type=negative tooltip="Esse recurso agora está no fim da vida útil"} |
-| Neutra | [!BADGE Talvez]{type=Neutral tooltip="Um cavaleiro caiu do cavalo..."} |
-| Cuidado | [!BADGE Atenção]{type=Caution tooltip="Estado amarelo"} |
+| Positiva | [!BADGE Novo recurso]{type=Positive url="https://www.example.com" tooltip="Acesse example.com"} |
+| Negativa | [!BADGE Descontinuado]{type=negative tooltip="Este recurso chegou ao fim da vida útil"} |
+| Neutra | [!BADGE Talvez]{type=Neutral tooltip="Um cavaleiro caiu do cavalo."} |
+| Cuidado | [!BADGE Atenção]{type=Caution tooltip="Status amarelo"} |
 
 Exemplos de sintaxe
 
@@ -130,29 +128,29 @@ Exemplos de sintaxe
 |Caution|[!BADGE Attention]{type=Caution tooltip="Yellow status"}|
 ```
 
-### Requisitos para os cartões
+### Requisitos para selos
 
-* Somente dois emblemas são permitidos nos metadados. Essa regra é configurável, portanto, informe-nos se precisar de uma exceção.
-* Somente o rótulo do selo é necessário. O `type`, `url`e `tooltip` são opcionais. O `type` determina a cor. O `url` permite que os usuários cliquem no selo para abrir um artigo ou uma página. O `tooltip` exibe o texto da dica de ferramenta ao passar o mouse sobre ele.
-* Adicionar um selo ao `TOC.md` O arquivo exibe o selo em cada artigo no guia. Se você especificar um URL para o selo ir para um artigo, certifique-se de usar um link raiz (por exemplo, `/help/guide/article.md`) não é um link relativo (por exemplo, `article.md`) para considerar artigos em pastas diferentes.
-* Adicionar um selo a `metadata-new.md` exibe o selo em cada artigo em um acordo de recompra.
-* Para emblemas de metadados, verifique se todos os valores estão entre aspas. Para emblemas em linha, verifique se `url` e `tooltip` são encapsuladas entre aspas.
-* Os valores de tipo válidos incluem *Informativo* (padrão, azul), *Positivo* (verde), *Negativo* (vermelho), *Neutro* (cinza escuro) e *Cuidado* (amarelo).
-* Rótulos de emblema estão localizados.
-* Se vários selos de metadados forem especificados, os emblemas serão exibidos em ordem alfabética com base no nome do emblema, como `badge1:` ou `badgeWeb`.
-* Se desejar que o URL seja aberto em uma nova guia, use esta sintaxe:
+* Somente duas medalhas são permitidas nos metadados. Essa regra é configurável, portanto, informe-nos se você precisa de uma exceção.
+* Somente o rótulo do selo é obrigatório. A variável `type`, `url`, e `tooltip` parâmetros são opcionais. A variável `type` determina a cor. A variável `url` permite que os usuários cliquem no selo para abrir um artigo ou página. A variável `tooltip` exibe o texto da dica de ferramenta ao passar o mouse.
+* Adicionar um selo à `TOC.md` arquivo exibe o selo em cada artigo no guia. Se você especificar um URL para o selo pular para um artigo, certifique-se de usar um link raiz (por exemplo, `/help/guide/article.md`) não é um link relativo (por exemplo, `article.md`) para levar em conta os artigos em pastas diferentes.
+* Adicionar um selo a `metadata-new.md` exibe o selo em cada artigo em um repositório.
+* Para selos de metadados, verifique se todos os valores estão entre aspas. Para selos em linha, verifique se `url` e `tooltip` estão entre aspas.
+* Os valores de tipo válido incluem *Informativo* (padrão, azul), *Positivo* (verde), *Negativo* (vermelho), *Neutro* (cinzento escuro), e *Cuidado* (amarelo).
+* Os rótulos de selo estão localizados.
+* Se vários selos de metadados forem especificados, eles serão exibidos em ordem alfabética com base no nome do selo, como `badge1:` ou `badgeWeb`.
+* Se quiser que o URL seja aberto em uma nova guia, use esta sintaxe:
 
-   ```
-   [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
-   ```
+  ```
+  [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
+  ```
 
-   Renderizado:
+  Renderizado:
 
-   [!BADGE Abrir em uma nova guia]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Abra o adobe.com na nova guia"}
+  [!BADGE Abrir em nova guia]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Abrir adobe.com em nova guia"}
 
-## Destaque do texto
+## Realce do texto
 
-A equipe do Workfront pediu para usar o realce amarelo para indicar a pré-visualização dos recursos futuros. Veja como funciona.
+A equipe do Workfront pediu para usar o realce amarelo para indicar a pré-visualização dos recursos futuros. É assim que funciona.
 
 Exemplo 1:
 
@@ -162,7 +160,7 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 
 Renderizado:
 
-Todo este parágrafo NÃO deve ser destacado. <span class="preview"> Esta palavra é **bold** dentro de uma frase realçada.</span> E esta é apenas a última frase.
+Todo este parágrafo NÃO deve ser destacado. <span class="preview"> Esta palavra é **negrito** dentro de uma frase destacada.</span> E esta é apenas a última frase.
 
 Exemplo 2:
 
@@ -190,27 +188,27 @@ O realce deve começar após este parágrafo.
 
 <div class="preview">
 
-Início do DIV.
+Início de DIV.
 
 Este é um novo parágrafo, depois uma imagem
 
 ![imagem](/help/home/assets/analytics-icon-24.png)
 
-Último item destacado.
+Último item realçado.
 
 </div>
 
-Não destacado
+Não realçado
 
 ## Realce de sintaxe para blocos de código
 
-O Experience League oferece suporte ao realce da sintaxe para blocos de código. Certifique-se de especificar um idioma como `java` depois do conjunto de aberturas de acentos graves para garantir que a sintaxe seja realçada corretamente. Para obter uma lista de idiomas válidos, consulte [https://prismjs.com](https://prismjs.com/#supported-languages). Se algum idioma estiver faltando, registre um tíquete jira.
+O Experience League suporta realce de sintaxe para blocos de código. Certifique-se de especificar um idioma como `java` após o conjunto de acentos graves de abertura para verificar se a sintaxe está realçada corretamente. Para obter uma lista de idiomas válidos, consulte [https://prismjs.com](https://prismjs.com/#supported-languages). Se algum idioma estiver ausente, registre um tíquete jira.
 
 ### Numeração de linha em blocos de código
 
-Adicionar `{line-numbers="true"}` após o idioma para ativar a numeração de linha.
+Adicionar `{line-numbers="true"}` depois do idioma para ativar a numeração de linha.
 
-Exemplo com números de linha (&grave;&grave;&grave;;`html {line-numbers="true"}`):
+Exemplo com números de linha (&grave;&grave;&grave;`html {line-numbers="true"}`):
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -226,9 +224,9 @@ Exemplo com números de linha (&grave;&grave;&grave;;`html {line-numbers="true"}
 
 **Iniciar numeração na linha _**
 
-Adicionar `start-number="n"` após a sintaxe do número da linha para iniciar a numeração em um número diferente de 1.
+Adicionar `start-number="n"` após a sintaxe de número de linha para iniciar a numeração em um número diferente de 1.
 
-Exemplo com nova linha de início (&grave;&grave;&grave;;`html {line-numbers="true" start-line="7"}`):
+Exemplo com a nova linha inicial (&grave;&grave;&grave;`html {line-numbers="true" start-line="7"}`):
 
 ```html {line-numbers="true" start-line="7"}
 <!DOCTYPE html>
@@ -243,9 +241,9 @@ Exemplo com nova linha de início (&grave;&grave;&grave;;`html {line-numbers="tr
 </html>
 ```
 
-### Realce da linha em blocos de código
+### Realce de linha em blocos de código
 
-Adicionar `highlight="n"` após a sintaxe do número da linha para destacar linhas em um bloco de código. Especificação `11-13, 16` destacará as linhas 11 a 13 e 16.
+Adicionar `highlight="n"` sintaxe após número de linha para destacar linhas em um bloco de código. Especificação `11-13, 16` destacará as linhas 11 a 13 e 16.
 
 Exemplo com realce de linha (&grave;&grave;&grave;`html {line-numbers="true" start-line="7" highlight="11-13, 16"}`):
 
