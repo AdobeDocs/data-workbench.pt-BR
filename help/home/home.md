@@ -5,19 +5,19 @@ feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 541751e1b8966a0816b7a42e117f4c69db1ed002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Ajuda do Data Workbench {#data-workbench-help}
+# Ajuda do Data Workbench{#data-workbench-help}
 
 ![Banner](/help/home/assets/doc_banner_workbench.png)
 
 {{eol}}
 
-[O Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) faz parte do [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Ele oferece funcionalidades altamente flexíveis e eficientes projetadas para coletar, processar, analisar e visualizar dados de interações de clientes online e offline em todos os dados: Web, CRM, POS e outros. Relatório interativos no Data Workbench permitem que você analise e reaja à informações estatísticas pertinentes para monitorar e prever as tendências dos clientes.
+[O Data Workbench](https://www.adobe.com/br/solutions/digital-analytics/data-workbench.html) faz parte do [Adobe Analytics](https://www.adobe.com/br/solutions/digital-analytics.html). Ele oferece funcionalidades altamente flexíveis e eficientes projetadas para coletar, processar, analisar e visualizar dados de interações de clientes online e offline em todos os dados: Web, CRM, POS e outros. Relatório interativos no Data Workbench permitem que você analise e reaja à informações estatísticas pertinentes para monitorar e prever as tendências dos clientes.
 
 * ![ícone do analytics](assets/analytics-icon-24.png) [Documentação do Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=pt-BR)
 * ![ícone de pdf](assets/pdf_icon.png) [Baixe toda a documentação do Data Workbench em PDF](/help/home/assets/data-workbench.pdf)
@@ -30,14 +30,14 @@ O Data Workbench inclui esses recursos de análise preditiva, visualizações de
 * [Pontuação de propensão](/help/home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
 * [Árvores de decisão](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees.md)
 * [Matriz de correlação](/help/home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
-* [Geração de cluster](/help/home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
+* [Agrupamento](/help/home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
 * [Exibição de corda](/help/home/c-get-started/c-analysis-vis/c-chord-visualization.md)
 * [Perfil de atribuição](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
 * [Integração e exportação do Perfil de marketing principal](/help/home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
 
 ## Mais guias do usuário do Analytics
 
-[Guias do usuário do Analytics](https://experienceleague.adobe.com/docs/analytics.html)
+[Guias do usuário do Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=pt-BR)
 
 ## Notas de versão e novos recursos do Data Workbench
 
