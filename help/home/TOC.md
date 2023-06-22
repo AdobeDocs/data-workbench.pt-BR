@@ -7,9 +7,9 @@ feature: Data Workbench
 user-guide-title: Ajuda do Data Workbench
 user-guide-description: Saiba mais sobre os recursos de vários canais do Data Workbench. Inclui Cliente do Data Workbench, Instalação, guias de Configuração de conjuntos de dados e muito mais.
 source-git-commit: 0939146f59b86437027606aeaa824adf0c6b591c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3501'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ ht-degree: 99%
          + [Filtro binário na matriz de correlação](c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-binary-filter.md)
       + Construtor de árvore de decisão {#decision-trees}
          + [Visão geral do Construtor de árvore de decisão](c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees.md)
-         + [Criar uma árvore de decisão](c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-setting-up.md)
+         + [Criação de uma árvore de decisão](c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-setting-up.md)
          + [Opções de árvore de decisão](c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md)
          + [Opção de árvore de regressão para árvore de decisão](c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-regression.md)
       + [Mapa de densidade](c-get-started/c-analysis-vis/c-density-map.md)
@@ -859,7 +859,7 @@ ht-degree: 99%
          + [Bloquear e desbloquear visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md)
          + [Recolher e expandir visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-collapsing-and-expanding-visualizations.md)
          + [Exportar visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-exporting-visualizations.md)
-         + [Configurar e reconfigurar visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
+         + [Configuração e reconfiguração de visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
          + [Remover visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [Dimensionar visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [Mover visualizações](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
@@ -902,7 +902,7 @@ ht-degree: 99%
    + Comunicação com o servidor {#servers-communication}
       + [Comunicação do painel com servidores do Data Workbench](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Verificar a ativação da API de Query](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [Configurar o controle de acesso ao painel](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [Configuração do controle de acesso do painel](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + Implantação do painel {#dashboard-deployment}
       + [Implantação do painel](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [Implantar painel](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
