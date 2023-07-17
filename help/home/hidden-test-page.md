@@ -3,17 +3,23 @@ title: Página de teste oculta
 description: Esta página está oculta da pesquisa e do índice
 hide: true
 hidefromtoc: true
-badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
-badgeExam: label="Exam ADO-E903" type="neutral"
+badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Baixar Premium"
+badgeExam: label="Exame ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 62b03629815f33344189c2562bc486301878a146
+source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 3%
+source-wordcount: '796'
+ht-degree: 4%
 
 ---
 
 # Página de teste oculta
+
+## Visualizar problema
+
+O parágrafo a seguir não é renderizado corretamente na Visualização do VSC. Não sei por quê.
+
+Se sua senha for gerenciada por [!DNL Adobe], você pode [alterar a senha na sua conta Adobe](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## Tipos de Notas
 
