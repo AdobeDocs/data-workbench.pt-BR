@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Ajuda do Data Workbench {#using}
 
-+ [Ajuda do Data Workbench ](home.md)
++ [Ajuda do Data Workbench](home.md)
 + [Anúncio de fim da vida útil](eol.md)
 + Notas de versão {#release-notes}
    + [Visão geral das notas de versão](c-release-notes-insight/release-notes.md)
