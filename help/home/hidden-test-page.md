@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Baixar Premium"
 badgeExam: label="Exame ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '803'
 ht-degree: 4%
 
 ---
 
 # Página de teste oculta
 
-Ativar?
+Ativar? Repito, isso foi ativado automaticamente às 11h30?
 
 ## Visualizar problema
 
@@ -82,7 +82,7 @@ Um selo é um rótulo colorido usado como indicador de conteúdo. Por exemplo, �
 
 [!BADGE Exemplo de medalha]
 
-Há dois tipos de selos, cada um com sintaxe diferente:
+Há dois tipos of selos, cada um com sintaxe diferente:
 
 * **Metadados** - Exibe o selo próximo à parte superior de uma página
 * **Em linha** - Exibe o selo onde a sintaxe está localizada
@@ -118,7 +118,7 @@ Os emblemas usam cores definidas no Espectro de Adobe:
 
 | Tipo | Medalha |
 |---|---|
-| Informativo (padrão) | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
+| Informativo (padrão) | [!BADGE  Beta]{type=Informative url="https://www.example.com"} |
 | Positiva | [!BADGE Novo recurso]{type=Positive url="https://www.example.com" tooltip="Acesse example.com"} |
 | Negativa | [!BADGE Descontinuado]{type=negative tooltip="Este recurso chegou ao fim da vida útil"} |
 | Neutra | [!BADGE Talvez]{type=Neutral tooltip="Um cavaleiro caiu do cavalo."} |
