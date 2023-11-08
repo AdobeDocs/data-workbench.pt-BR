@@ -6,16 +6,16 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Baixar Premium"
 badgeExam: label="Exame ADO-E903" type="neutral"
 exl-id: 02245655-511e-4e89-8846-dac85681ea91
-source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
+source-git-commit: c71bf8c5b40b478c5b1901b79a29b3d1c3ca8fde
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 4%
 
 ---
 
 # Página de teste oculta
 
-Ativar? Repito, isso foi ativado automaticamente às 11h30?
+Ativar? Verifique novamente o envio por volta das 15h. Será que ele vai ao ar às 3:30?
 
 ## Visualizar problema
 
